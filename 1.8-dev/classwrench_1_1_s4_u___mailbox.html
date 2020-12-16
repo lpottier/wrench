@@ -120,12 +120,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a71ba39ec19960b3fca334836e19edb9f"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___mailbox.html#a71ba39ec19960b3fca334836e19edb9f">generateUniqueSequenceNumber</a> ()</td></tr>
 <tr class="memdesc:a71ba39ec19960b3fca334836e19edb9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a unique sequence number.  <a href="classwrench_1_1_s4_u___mailbox.html#a71ba39ec19960b3fca334836e19edb9f">More...</a><br /></td></tr>
 <tr class="separator:a71ba39ec19960b3fca334836e19edb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add51ac46be430cd18ba395ea1aedfaa2"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___mailbox.html#add51ac46be430cd18ba395ea1aedfaa2">getMessage</a> (std::string mailbox)</td></tr>
-<tr class="memdesc:add51ac46be430cd18ba395ea1aedfaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously receive a message from a mailbox.  <a href="classwrench_1_1_s4_u___mailbox.html#add51ac46be430cd18ba395ea1aedfaa2">More...</a><br /></td></tr>
-<tr class="separator:add51ac46be430cd18ba395ea1aedfaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf71050cad0d388b80ebde63f7fd76ae"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___mailbox.html#adf71050cad0d388b80ebde63f7fd76ae">getMessage</a> (std::string mailbox, double timeout)</td></tr>
-<tr class="memdesc:adf71050cad0d388b80ebde63f7fd76ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously receive a message from a mailbox, with a timeout.  <a href="classwrench_1_1_s4_u___mailbox.html#adf71050cad0d388b80ebde63f7fd76ae">More...</a><br /></td></tr>
-<tr class="separator:adf71050cad0d388b80ebde63f7fd76ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4885f542ac5e2744794b4df4b958f492"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___mailbox.html#a4885f542ac5e2744794b4df4b958f492">getMessage</a> (std::string mailbox)</td></tr>
+<tr class="memdesc:a4885f542ac5e2744794b4df4b958f492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously receive a message from a mailbox.  <a href="classwrench_1_1_s4_u___mailbox.html#a4885f542ac5e2744794b4df4b958f492">More...</a><br /></td></tr>
+<tr class="separator:a4885f542ac5e2744794b4df4b958f492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f9822527114f6af2aa5f8e16869768"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___mailbox.html#a12f9822527114f6af2aa5f8e16869768">getMessage</a> (std::string mailbox, double timeout)</td></tr>
+<tr class="memdesc:a12f9822527114f6af2aa5f8e16869768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously receive a message from a mailbox, with a timeout.  <a href="classwrench_1_1_s4_u___mailbox.html#a12f9822527114f6af2aa5f8e16869768">More...</a><br /></td></tr>
+<tr class="separator:a12f9822527114f6af2aa5f8e16869768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e25753207135f1323df89fbe99c86ba"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwrench_1_1_s4_u___pending_communication.html">S4U_PendingCommunication</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___mailbox.html#a9e25753207135f1323df89fbe99c86ba">igetMessage</a> (std::string mailbox_name)</td></tr>
 <tr class="memdesc:a9e25753207135f1323df89fbe99c86ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously receive a message from a mailbox.  <a href="classwrench_1_1_s4_u___mailbox.html#a9e25753207135f1323df89fbe99c86ba">More...</a><br /></td></tr>
 <tr class="separator:a9e25753207135f1323df89fbe99c86ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,8 +247,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="add51ac46be430cd18ba395ea1aedfaa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add51ac46be430cd18ba395ea1aedfaa2">&#9670;&nbsp;</a></span>getMessage() <span class="overload">[1/2]</span></h2>
+<a id="a4885f542ac5e2744794b4df4b958f492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4885f542ac5e2744794b4df4b958f492">&#9670;&nbsp;</a></span>getMessage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +257,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt; wrench::S4U_Mailbox::getMessage </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt; wrench::S4U_Mailbox::getMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>mailbox_name</em></td><td>)</td>
@@ -288,8 +288,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adf71050cad0d388b80ebde63f7fd76ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf71050cad0d388b80ebde63f7fd76ae">&#9670;&nbsp;</a></span>getMessage() <span class="overload">[2/2]</span></h2>
+<a id="a12f9822527114f6af2aa5f8e16869768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f9822527114f6af2aa5f8e16869768">&#9670;&nbsp;</a></span>getMessage() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +298,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt; wrench::S4U_Mailbox::getMessage </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt; wrench::S4U_Mailbox::getMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>mailbox_name</em>, </td>

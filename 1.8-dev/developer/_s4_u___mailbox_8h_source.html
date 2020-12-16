@@ -122,8 +122,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">class </span>S4U_Mailbox {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keyword">static</span> std::unique_ptr&lt;SimulationMessage&gt; getMessage(std::string mailbox);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keyword">static</span> std::unique_ptr&lt;SimulationMessage&gt; getMessage(std::string mailbox, <span class="keywordtype">double</span> timeout);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keyword">static</span> std::shared_ptr&lt;SimulationMessage&gt; getMessage(std::string mailbox);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keyword">static</span> std::shared_ptr&lt;SimulationMessage&gt; getMessage(std::string mailbox, <span class="keywordtype">double</span> timeout);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keyword">static</span> <span class="keywordtype">void</span> putMessage(std::string mailbox, SimulationMessage *m);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keyword">static</span> <span class="keywordtype">void</span> dputMessage(std::string mailbox_name, SimulationMessage *msg);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keyword">static</span> std::shared_ptr&lt;S4U_PendingCommunication&gt; iputMessage(std::string mailbox_name, SimulationMessage *msg);</div>

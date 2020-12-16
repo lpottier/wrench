@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                Simulation *simulation,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                std::string callback_mailbox,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                std::string hostname,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                std::shared_ptr&lt;StandardJob&gt; job,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                StandardJob *job,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                std::map&lt;std::string, std::tuple&lt;unsigned long, double&gt;&gt; compute_resources,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                std::shared_ptr&lt;StorageService&gt; scratch_space,</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordtype">bool</span> part_of_pilot_job,</div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> kill(<span class="keywordtype">bool</span> job_termination);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::shared_ptr&lt;StandardJob&gt; getJob();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        StandardJob *getJob();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::map&lt;std::string, std::tuple&lt;unsigned long, double&gt;&gt; getComputeResources();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// Get the set of files stored in scratch space by a standardjob job</span></div>
@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> cleanup(<span class="keywordtype">bool</span> has_returned_from_main, <span class="keywordtype">int</span> return_value) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::string callback_mailbox;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::shared_ptr&lt;StandardJob&gt; job;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        StandardJob *job;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        std::map&lt;std::string, std::tuple&lt;unsigned long, double&gt;&gt; compute_resources;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> total_num_cores;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">double</span> total_ram;</div>

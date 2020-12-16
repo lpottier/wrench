@@ -121,16 +121,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">        /***********************/</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classwrench_1_1_job_type_not_supported.html">JobTypeNotSupported</a>(std::shared_ptr&lt;WorkflowJob&gt; job, std::shared_ptr&lt;ComputeService&gt;  compute_service);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classwrench_1_1_job_type_not_supported.html">JobTypeNotSupported</a>(<a class="code" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> *job, std::shared_ptr&lt;ComputeService&gt;  compute_service);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">        /***********************/</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">        /***********************/</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::shared_ptr&lt;WorkflowJob&gt; <a class="code" href="classwrench_1_1_job_type_not_supported.html#a7c24da6ebc57e4fe10bf86aecb1ec711">getJob</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> *<a class="code" href="classwrench_1_1_job_type_not_supported.html#ade89cf1d1f2a676f5d552b909ef30e5e">getJob</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::shared_ptr&lt;ComputeService&gt;  <a class="code" href="classwrench_1_1_job_type_not_supported.html#adfb7b7915e5da6095fea4d00f1c41109">getComputeService</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string <a class="code" href="classwrench_1_1_job_type_not_supported.html#ab6a302367f2db332484da0c256e3ae5c">toString</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::shared_ptr&lt;WorkflowJob&gt; job;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> *job;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::shared_ptr&lt;ComputeService&gt;  compute_service;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -146,8 +146,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="aclasswrench_1_1_job_type_not_supported_html_ab6a302367f2db332484da0c256e3ae5c"><div class="ttname"><a href="classwrench_1_1_job_type_not_supported.html#ab6a302367f2db332484da0c256e3ae5c">wrench::JobTypeNotSupported::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Get the human-readable failure message.</div><div class="ttdef"><b>Definition:</b> JobTypeNotSupported.cpp:55</div></div>
 <div class="ttc" id="aclasswrench_1_1_job_type_not_supported_html_adfb7b7915e5da6095fea4d00f1c41109"><div class="ttname"><a href="classwrench_1_1_job_type_not_supported.html#adfb7b7915e5da6095fea4d00f1c41109">wrench::JobTypeNotSupported::getComputeService</a></div><div class="ttdeci">std::shared_ptr&lt; ComputeService &gt; getComputeService()</div><div class="ttdoc">Getter.</div><div class="ttdef"><b>Definition:</b> JobTypeNotSupported.cpp:47</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
+<div class="ttc" id="aclasswrench_1_1_job_type_not_supported_html_ade89cf1d1f2a676f5d552b909ef30e5e"><div class="ttname"><a href="classwrench_1_1_job_type_not_supported.html#ade89cf1d1f2a676f5d552b909ef30e5e">wrench::JobTypeNotSupported::getJob</a></div><div class="ttdeci">WorkflowJob * getJob()</div><div class="ttdoc">Getter.</div><div class="ttdef"><b>Definition:</b> JobTypeNotSupported.cpp:39</div></div>
 <div class="ttc" id="aclasswrench_1_1_failure_cause_html"><div class="ttname"><a href="classwrench_1_1_failure_cause.html">wrench::FailureCause</a></div><div class="ttdoc">A top-level class to describe all simulation-valid failures that can occur during workflow execution ...</div><div class="ttdef"><b>Definition:</b> FailureCause.h:31</div></div>
-<div class="ttc" id="aclasswrench_1_1_job_type_not_supported_html_a7c24da6ebc57e4fe10bf86aecb1ec711"><div class="ttname"><a href="classwrench_1_1_job_type_not_supported.html#a7c24da6ebc57e4fe10bf86aecb1ec711">wrench::JobTypeNotSupported::getJob</a></div><div class="ttdeci">std::shared_ptr&lt; WorkflowJob &gt; getJob()</div><div class="ttdoc">Getter.</div><div class="ttdef"><b>Definition:</b> JobTypeNotSupported.cpp:39</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_job_html"><div class="ttname"><a href="classwrench_1_1_workflow_job.html">wrench::WorkflowJob</a></div><div class="ttdoc">Abstraction of a job used for executing tasks in a Workflow.</div><div class="ttdef"><b>Definition:</b> WorkflowJob.h:34</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

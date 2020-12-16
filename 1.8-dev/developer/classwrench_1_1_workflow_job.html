@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwrench_1_1_workflow_job-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -119,6 +120,14 @@ Inheritance diagram for wrench::WorkflowJob:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5dcf81c50b5d221ef2a48126bf45d08b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">Type</a> { <a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08ba12e4d89be33b16c05c2628f09e1ac0de">STANDARD</a>, 
+<a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08ba3eab6a0caa1eae9cbb7321a083125543">PILOT</a>
+ }</td></tr>
+<tr class="memdesc:a5dcf81c50b5d221ef2a48126bf45d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Job types.  <a href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">More...</a><br /></td></tr>
+<tr class="separator:a5dcf81c50b5d221ef2a48126bf45d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a567b35eaf3952997a71eeedd97138794"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a567b35eaf3952997a71eeedd97138794">getName</a> ()</td></tr>
@@ -127,10 +136,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a05f015d4d97263662bf2d6d617611a34"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a05f015d4d97263662bf2d6d617611a34">getSubmitDate</a> ()</td></tr>
 <tr class="memdesc:a05f015d4d97263662bf2d6d617611a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job was last submitted (&lt;0 means "never submitted")  <a href="classwrench_1_1_workflow_job.html#a05f015d4d97263662bf2d6d617611a34">More...</a><br /></td></tr>
 <tr class="separator:a05f015d4d97263662bf2d6d617611a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1883671a4e72877bb7fcb0ce771fdc7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a1883671a4e72877bb7fcb0ce771fdc7e">getType</a> ()</td></tr>
+<tr class="memdesc:a1883671a4e72877bb7fcb0ce771fdc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job type.  <a href="classwrench_1_1_workflow_job.html#a1883671a4e72877bb7fcb0ce771fdc7e">More...</a><br /></td></tr>
+<tr class="separator:a1883671a4e72877bb7fcb0ce771fdc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8162ab7d79c56373d610f8cb7b3f1f07"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a8162ab7d79c56373d610f8cb7b3f1f07">getTypeAsString</a> ()</td></tr>
+<tr class="memdesc:a8162ab7d79c56373d610f8cb7b3f1f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job type name.  <a href="classwrench_1_1_workflow_job.html#a8162ab7d79c56373d610f8cb7b3f1f07">More...</a><br /></td></tr>
+<tr class="separator:a8162ab7d79c56373d610f8cb7b3f1f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstraction of a job used for executing tasks in a <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5dcf81c50b5d221ef2a48126bf45d08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcf81c50b5d221ef2a48126bf45d08b">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">wrench::WorkflowJob::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Job types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5dcf81c50b5d221ef2a48126bf45d08ba12e4d89be33b16c05c2628f09e1ac0de"></a>STANDARD&#160;</td><td class="fielddoc"><p>A standard job that can be submitted directly to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> for execution. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5dcf81c50b5d221ef2a48126bf45d08ba3eab6a0caa1eae9cbb7321a083125543"></a>PILOT&#160;</td><td class="fielddoc"><p>A pilot job that can be submitted to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> and that, once started, will act as a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> (likely a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a>) with an expiration date. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a567b35eaf3952997a71eeedd97138794"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a567b35eaf3952997a71eeedd97138794">&#9670;&nbsp;</a></span>getName()</h2>
 
@@ -168,6 +206,52 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the date at which the job was last submitted (&lt;0 means "never submitted") </p>
 <dl class="section return"><dt>Returns</dt><dd>the submit date </dd></dl>
+
+</div>
+</div>
+<a id="a1883671a4e72877bb7fcb0ce771fdc7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1883671a4e72877bb7fcb0ce771fdc7e">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">WorkflowJob::Type</a> wrench::WorkflowJob::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the job type. </p>
+<dl class="section return"><dt>Returns</dt><dd>the type </dd></dl>
+
+</div>
+</div>
+<a id="a8162ab7d79c56373d610f8cb7b3f1f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8162ab7d79c56373d610f8cb7b3f1f07">&#9670;&nbsp;</a></span>getTypeAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrench::WorkflowJob::getTypeAsString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the job type name. </p>
+<dl class="section return"><dt>Returns</dt><dd>the type name as a string</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

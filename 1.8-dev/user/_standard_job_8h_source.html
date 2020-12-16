@@ -101,8 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef WRENCH_STANDARDJOB_H</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_STANDARDJOB_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef WRENCH_MULTITASKJOB_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_MULTITASKJOB_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;WorkflowJob.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;wrench/services/storage/storage_helpers/FileLocation.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;wrench/services/storage/StorageService.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -163,26 +163,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>StandardJobExecutor;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>BareMetalComputeService;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> incrementNumCompletedTasks();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>JobManager;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        StandardJob(Workflow *workflow,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    std::vector&lt;WorkflowTask *&gt; tasks, std::map&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  &gt; &amp;file_locations,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;pre_file_copies,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;post_file_copies,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;cleanup_file_deletions);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        State state;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    };</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif //WRENCH_MULTITASKJOB_H</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span> incrementNumCompletedTasks();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>JobManager;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        StandardJob(Workflow *workflow,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    std::vector&lt;WorkflowTask *&gt; tasks, std::map&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  &gt; &amp;file_locations,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;pre_file_copies,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;post_file_copies,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;cleanup_file_deletions);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        State state;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    };</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif //WRENCH_MULTITASKJOB_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
 <!-- HTML footer for doxygen 1.8.8-->

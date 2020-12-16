@@ -130,77 +130,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        };</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classwrench_1_1_h_t_condor_central_manager_service.html#a9adbc3be10cb4e0fb7a8fc9c65199002">HTCondorCentralManagerService</a>(<span class="keyword">const</span> std::string &amp;hostname,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classwrench_1_1_h_t_condor_central_manager_service.html#a1e2344c89261dbb505e50e8087890197">HTCondorCentralManagerService</a>(<span class="keyword">const</span> std::string &amp;hostname,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      std::set&lt;ComputeService *&gt; compute_resources,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                      std::map&lt;std::string, std::string&gt; property_list = {},</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                      std::map&lt;std::string, double&gt; messagepayload_list = {});</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> submitStandardJob(std::shared_ptr&lt;StandardJob&gt; job,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                               <span class="keyword">const</span> std::map&lt;std::string, std::string&gt; &amp;service_specific_arguments) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> submitPilotJob(std::shared_ptr&lt;PilotJob&gt; job, <span class="keyword">const</span> std::map&lt;std::string, std::string&gt; &amp;service_specific_arguments) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                      std::map&lt;std::string, double&gt; messagepayload_list = {},</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                      <a class="code" href="classwrench_1_1_compute_service.html">ComputeService</a> *grid_universe_batch_service = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> submitStandardJob(StandardJob *job,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                               <span class="keyword">const</span> std::map&lt;std::string, std::string&gt; &amp;service_specific_arguments) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> submitPilotJob(PilotJob *job, <span class="keyword">const</span> std::map&lt;std::string, std::string&gt; &amp;service_specific_arguments) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        ~<a class="code" href="classwrench_1_1_h_t_condor_central_manager_service.html">HTCondorCentralManagerService</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> terminateStandardJob(std::shared_ptr&lt;StandardJob&gt; job) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> terminatePilotJob(std::shared_ptr&lt;PilotJob&gt; job) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        ~<a class="code" href="classwrench_1_1_h_t_condor_central_manager_service.html">HTCondorCentralManagerService</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> terminateStandardJob(StandardJob *job) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">void</span> terminatePilotJob(PilotJob *job) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">int</span> main() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">bool</span> processNextMessage();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">int</span> main() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> processSubmitStandardJob(<span class="keyword">const</span> std::string &amp;answer_mailbox, std::shared_ptr&lt;StandardJob&gt; job,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                      std::map&lt;std::string, std::string&gt; &amp;service_specific_args);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> processSubmitPilotJob(<span class="keyword">const</span> std::string &amp;answer_mailbox, std::shared_ptr&lt;PilotJob&gt; job,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                   std::map&lt;std::string, std::string&gt; &amp;service_specific_args);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">void</span> processPilotJobStarted(std::shared_ptr&lt;PilotJob&gt;job);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">bool</span> processNextMessage();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span> processSubmitStandardJob(<span class="keyword">const</span> std::string &amp;answer_mailbox, StandardJob *job,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                      std::map&lt;std::string, std::string&gt; &amp;service_specific_args);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> processSubmitPilotJob(<span class="keyword">const</span> std::string &amp;answer_mailbox, PilotJob *job,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                   std::map&lt;std::string, std::string&gt; &amp;service_specific_args);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> processPilotJobCompletion(std::shared_ptr&lt;PilotJob&gt;job);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> processPilotJobStarted(PilotJob *job);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span> processStandardJobCompletion(std::shared_ptr&lt;StandardJob&gt;job);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span> processPilotJobCompletion(PilotJob *job);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> processNegotiatorCompletion(std::vector&lt;std::shared_ptr&lt;WorkflowJob&gt;&gt; &amp;pending_jobs);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> processStandardJobCompletion(StandardJob *job);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> terminate();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> processNegotiatorCompletion(std::vector&lt;WorkflowJob *&gt; &amp;pending_jobs);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        std::set&lt;ComputeService *&gt; compute_resources;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::vector&lt;std::tuple&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::map&lt;std::string, std::string&gt;&gt;&gt; pending_jobs;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">bool</span> dispatching_jobs = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">bool</span> resources_unavailable = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        std::map&lt;std::shared_ptr&lt;ComputeService&gt;, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>&gt; compute_resources_map;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::map&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::shared_ptr&lt;ComputeService&gt;&gt; running_jobs;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    };</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif //WRENCH_HTCONDORCENTRALMANAGERSERVICE_H</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">void</span> terminate();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::set&lt;ComputeService *&gt; compute_resources;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classwrench_1_1_compute_service.html">ComputeService</a> *grid_universe_batch_service;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::shared_ptr&lt;ComputeService&gt; grid_universe_batch_service_shared_ptr;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        std::vector&lt;std::tuple&lt;WorkflowJob *, std::map&lt;std::string, std::string&gt;&gt;&gt; pending_jobs;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">bool</span> dispatching_jobs = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">bool</span> resources_unavailable = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        std::map&lt;std::shared_ptr&lt;ComputeService&gt;, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>&gt; compute_resources_map;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::map&lt;WorkflowJob *, std::shared_ptr&lt;ComputeService&gt;&gt; running_jobs;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif //WRENCH_HTCONDORCENTRALMANAGERSERVICE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_a1f5b40748d7fe90fb682d735395de3af"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#a1f5b40748d7fe90fb682d735395de3af">wrench::ComputeServiceMessagePayload::PILOT_JOB_EXPIRED_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string PILOT_JOB_EXPIRED_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent by the daemon to state that a pilot job has expired.</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:44</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_a86cb39a4741f03121d6c8254d8cbaf1c"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#a86cb39a4741f03121d6c8254d8cbaf1c">wrench::ComputeServiceMessagePayload::SUBMIT_STANDARD_JOB_REQUEST_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string SUBMIT_STANDARD_JOB_REQUEST_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent to the daemon to submit a standard job.</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:26</div></div>
 <div class="ttc" id="aclasswrench_1_1_service_message_payload_html_aec363c9226bc8285c41d9fff8c2814a9"><div class="ttname"><a href="classwrench_1_1_service_message_payload.html#aec363c9226bc8285c41d9fff8c2814a9">wrench::ServiceMessagePayload::DAEMON_STOPPED_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string DAEMON_STOPPED_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent by the daemon to confirm it has terminated.</div><div class="ttdef"><b>Definition:</b> ServiceMessagePayload.h:33</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_abfd5cdb62efb21fb3ebf7764b9c7ad47"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#abfd5cdb62efb21fb3ebf7764b9c7ad47">wrench::ComputeServiceMessagePayload::RESOURCE_DESCRIPTION_REQUEST_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string RESOURCE_DESCRIPTION_REQUEST_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent to the daemon to ask it for information on its resour...</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:56</div></div>
-<div class="ttc" id="aclasswrench_1_1_h_t_condor_central_manager_service_html_a9adbc3be10cb4e0fb7a8fc9c65199002"><div class="ttname"><a href="classwrench_1_1_h_t_condor_central_manager_service.html#a9adbc3be10cb4e0fb7a8fc9c65199002">wrench::HTCondorCentralManagerService::HTCondorCentralManagerService</a></div><div class="ttdeci">HTCondorCentralManagerService(const std::string &amp;hostname, std::set&lt; ComputeService * &gt; compute_resources, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> HTCondorCentralManagerService.cpp:38</div></div>
-<div class="ttc" id="aclasswrench_1_1_compute_service_html"><div class="ttname"><a href="classwrench_1_1_compute_service.html">wrench::ComputeService</a></div><div class="ttdoc">The compute service base class.</div><div class="ttdef"><b>Definition:</b> ComputeService.h:33</div></div>
+<div class="ttc" id="aclasswrench_1_1_compute_service_html"><div class="ttname"><a href="classwrench_1_1_compute_service.html">wrench::ComputeService</a></div><div class="ttdoc">The compute service base class.</div><div class="ttdef"><b>Definition:</b> ComputeService.h:35</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_a3ba0560d8901349f0fbd2ab7e6eb3862"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#a3ba0560d8901349f0fbd2ab7e6eb3862">wrench::ComputeServiceMessagePayload::STANDARD_JOB_DONE_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string STANDARD_JOB_DONE_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent by the daemon to state that it has completed a standa...</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:30</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_a421715521f0d2837e24e9e150da0de4a"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#a421715521f0d2837e24e9e150da0de4a">wrench::ComputeServiceMessagePayload::SUBMIT_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string SUBMIT_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent from the daemon to acknowledge a pilot job submission...</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:40</div></div>
+<div class="ttc" id="aclasswrench_1_1_h_t_condor_central_manager_service_html_a1e2344c89261dbb505e50e8087890197"><div class="ttname"><a href="classwrench_1_1_h_t_condor_central_manager_service.html#a1e2344c89261dbb505e50e8087890197">wrench::HTCondorCentralManagerService::HTCondorCentralManagerService</a></div><div class="ttdeci">HTCondorCentralManagerService(const std::string &amp;hostname, std::set&lt; ComputeService * &gt; compute_resources, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={}, ComputeService *grid_universe_batch_service=nullptr)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> HTCondorCentralManagerService.cpp:38</div></div>
 <div class="ttc" id="aclasswrench_1_1_h_t_condor_central_manager_service_html"><div class="ttname"><a href="classwrench_1_1_h_t_condor_central_manager_service.html">wrench::HTCondorCentralManagerService</a></div><div class="ttdoc">A HTCondor central manager service implementation.</div><div class="ttdef"><b>Definition:</b> HTCondorCentralManagerService.h:23</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_a110f501ef6361a70627833e8ab5ab511"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#a110f501ef6361a70627833e8ab5ab511">wrench::ComputeServiceMessagePayload::RESOURCE_DESCRIPTION_ANSWER_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string RESOURCE_DESCRIPTION_ANSWER_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent by the daemon to state information on its resources.</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:58</div></div>
 <div class="ttc" id="aclasswrench_1_1_service_message_payload_html_a9efb4a6b2c8876e17a3f636ba5ac17f6"><div class="ttname"><a href="classwrench_1_1_service_message_payload.html#a9efb4a6b2c8876e17a3f636ba5ac17f6">wrench::ServiceMessagePayload::STOP_DAEMON_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string STOP_DAEMON_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent to the daemon to terminate it.</div><div class="ttdef"><b>Definition:</b> ServiceMessagePayload.h:31</div></div>

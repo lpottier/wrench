@@ -128,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        S4U_PendingCommunication(std::string mailbox_name, OperationType operation_type) : mailbox_name(mailbox_name), operation_type(operation_type) {}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::unique_ptr&lt;SimulationMessage&gt; wait();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::shared_ptr&lt;SimulationMessage&gt; wait();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> waitForSomethingToHappen(</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                std::vector&lt;std::shared_ptr&lt;S4U_PendingCommunication&gt;&gt; pending_comms,</div>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//        ~S4U_PendingCommunication() default;</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        simgrid::s4u::CommPtr comm_ptr;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::unique_ptr&lt;SimulationMessage&gt; simulation_message;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::shared_ptr&lt;SimulationMessage&gt; simulation_message;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::string mailbox_name;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        OperationType operation_type;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    };</div>

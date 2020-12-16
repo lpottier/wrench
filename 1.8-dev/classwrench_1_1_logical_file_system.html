@@ -111,9 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1a35d0c805294938731c6cf0c34244c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_logical_file_system.html#aa1a35d0c805294938731c6cf0c34244c">LogicalFileSystem</a> (std::string hostname, <a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> *storage_service, std::string mount_point)</td></tr>
-<tr class="memdesc:aa1a35d0c805294938731c6cf0c34244c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_logical_file_system.html#aa1a35d0c805294938731c6cf0c34244c">More...</a><br /></td></tr>
-<tr class="separator:aa1a35d0c805294938731c6cf0c34244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac90b566af5011644e195e2d7ca7e76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_logical_file_system.html#a9ac90b566af5011644e195e2d7ca7e76">LogicalFileSystem</a> (std::string hostname, std::string ss_name, std::string mount_point)</td></tr>
+<tr class="memdesc:a9ac90b566af5011644e195e2d7ca7e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_logical_file_system.html#a9ac90b566af5011644e195e2d7ca7e76">More...</a><br /></td></tr>
+<tr class="separator:a9ac90b566af5011644e195e2d7ca7e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8832fbedba81b1df215c41f5fc7923"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_logical_file_system.html#a1b8832fbedba81b1df215c41f5fc7923">createDirectory</a> (std::string absolute_path)</td></tr>
 <tr class="memdesc:a1b8832fbedba81b1df215c41f5fc7923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new directory.  <a href="classwrench_1_1_logical_file_system.html#a1b8832fbedba81b1df215c41f5fc7923">More...</a><br /></td></tr>
 <tr class="separator:a1b8832fbedba81b1df215c41f5fc7923"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +164,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that implements a weak file system abstraction. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa1a35d0c805294938731c6cf0c34244c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1a35d0c805294938731c6cf0c34244c">&#9670;&nbsp;</a></span>LogicalFileSystem()</h2>
+<a id="a9ac90b566af5011644e195e2d7ca7e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac90b566af5011644e195e2d7ca7e76">&#9670;&nbsp;</a></span>LogicalFileSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,8 +182,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> *&#160;</td>
-          <td class="paramname"><em>storage_service</em>, </td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>ss_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -208,7 +208,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the host on which the file system is located </td></tr>
-    <tr><td class="paramname">storage_service</td><td>the storage service this file system is for </td></tr>
+    <tr><td class="paramname">ss_name</td><td>the storage service this file system is for </td></tr>
     <tr><td class="paramname">mount_point</td><td>the mount point </td></tr>
   </table>
   </dd>

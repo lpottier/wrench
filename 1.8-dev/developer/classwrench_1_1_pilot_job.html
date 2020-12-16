@@ -133,6 +133,12 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a0540139dbc8b0a8506a87b2f55020fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pilot job states.  <a href="classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8">More...</a><br /></td></tr>
 <tr class="separator:a0540139dbc8b0a8506a87b2f55020fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classwrench_1_1_workflow_job"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwrench_1_1_workflow_job')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwrench_1_1_workflow_job.html">wrench::WorkflowJob</a></td></tr>
+<tr class="memitem:a5dcf81c50b5d221ef2a48126bf45d08b inherit pub_types_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">Type</a> { <a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08ba12e4d89be33b16c05c2628f09e1ac0de">STANDARD</a>, 
+<a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08ba3eab6a0caa1eae9cbb7321a083125543">PILOT</a>
+ }</td></tr>
+<tr class="memdesc:a5dcf81c50b5d221ef2a48126bf45d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Job types.  <a href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">More...</a><br /></td></tr>
+<tr class="separator:a5dcf81c50b5d221ef2a48126bf45d08b inherit pub_types_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -152,6 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a05f015d4d97263662bf2d6d617611a34 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a05f015d4d97263662bf2d6d617611a34">getSubmitDate</a> ()</td></tr>
 <tr class="memdesc:a05f015d4d97263662bf2d6d617611a34 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job was last submitted (&lt;0 means "never submitted")  <a href="classwrench_1_1_workflow_job.html#a05f015d4d97263662bf2d6d617611a34">More...</a><br /></td></tr>
 <tr class="separator:a05f015d4d97263662bf2d6d617611a34 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1883671a4e72877bb7fcb0ce771fdc7e inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_job.html#a5dcf81c50b5d221ef2a48126bf45d08b">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a1883671a4e72877bb7fcb0ce771fdc7e">getType</a> ()</td></tr>
+<tr class="memdesc:a1883671a4e72877bb7fcb0ce771fdc7e inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job type.  <a href="classwrench_1_1_workflow_job.html#a1883671a4e72877bb7fcb0ce771fdc7e">More...</a><br /></td></tr>
+<tr class="separator:a1883671a4e72877bb7fcb0ce771fdc7e inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8162ab7d79c56373d610f8cb7b3f1f07 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a8162ab7d79c56373d610f8cb7b3f1f07">getTypeAsString</a> ()</td></tr>
+<tr class="memdesc:a8162ab7d79c56373d610f8cb7b3f1f07 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job type name.  <a href="classwrench_1_1_workflow_job.html#a8162ab7d79c56373d610f8cb7b3f1f07">More...</a><br /></td></tr>
+<tr class="separator:a8162ab7d79c56373d610f8cb7b3f1f07 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A pilot (i.e., non-standard) workflow job that can be submitted to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> by a <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> (via a <a class="el" href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by a WMS), which is used to handle all job ex...">JobManager</a>) </p>
