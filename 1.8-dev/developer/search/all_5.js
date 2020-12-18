@@ -30,8 +30,7 @@ var searchData=
   ['flop_5frate_5fanswer_5fmessage_5fpayload_130',['FLOP_RATE_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_bare_metal_compute_service_message_payload.html#a10eabc33f0fc2110737b3cf151623250',1,'wrench::BareMetalComputeServiceMessagePayload']]],
   ['flop_5frate_5frequest_5fmessage_5fpayload_131',['FLOP_RATE_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_bare_metal_compute_service_message_payload.html#a1ab951377c6247c9b58c0f4494cf2950',1,'wrench::BareMetalComputeServiceMessagePayload']]],
   ['flush_132',['flush',['../classwrench_1_1_memory_manager.html#ad0a6290b3017839e5b350e2c7f98057e',1,'wrench::MemoryManager']]],
-  ['forgetjob_133',['forgetJob',['../classwrench_1_1_job_manager.html#ab10f770cc7ce3c022f889ad9cc3fcf0b',1,'wrench::JobManager']]],
-  ['free_5fspace_5fanswer_5fmessage_5fpayload_134',['FREE_SPACE_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_storage_service_message_payload.html#a00fa84710c6e868ff41ab593562e16c6',1,'wrench::StorageServiceMessagePayload']]],
-  ['free_5fspace_5frequest_5fmessage_5fpayload_135',['FREE_SPACE_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_storage_service_message_payload.html#a681e602d270caf31ca9173de0bd09ac8',1,'wrench::StorageServiceMessagePayload']]],
-  ['functionalitynotavailable_136',['FunctionalityNotAvailable',['../classwrench_1_1_functionality_not_available.html',1,'wrench']]]
+  ['free_5fspace_5fanswer_5fmessage_5fpayload_133',['FREE_SPACE_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_storage_service_message_payload.html#a00fa84710c6e868ff41ab593562e16c6',1,'wrench::StorageServiceMessagePayload']]],
+  ['free_5fspace_5frequest_5fmessage_5fpayload_134',['FREE_SPACE_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_storage_service_message_payload.html#a681e602d270caf31ca9173de0bd09ac8',1,'wrench::StorageServiceMessagePayload']]],
+  ['functionalitynotavailable_135',['FunctionalityNotAvailable',['../classwrench_1_1_functionality_not_available.html',1,'wrench']]]
 ];

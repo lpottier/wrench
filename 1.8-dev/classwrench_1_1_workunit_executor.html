@@ -122,15 +122,15 @@ Inheritance diagram for wrench::WorkunitExecutor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19988cfb2baf7cb42b75c08a515d1fef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workunit_executor.html#a19988cfb2baf7cb42b75c08a515d1fef">WorkunitExecutor</a> (std::string <a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, unsigned long num_cores, double ram_utilization, std::string callback_mailbox, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workunit.html">Workunit</a> &gt; <a class="el" href="classwrench_1_1_workunit_executor.html#abac121d8cd6ad39a8c1301fc478e8a2d">workunit</a>, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> &gt; scratch_space, <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> *job, double thread_startup_overhead, bool simulate_computation_as_sleep)</td></tr>
-<tr class="memdesc:a19988cfb2baf7cb42b75c08a515d1fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_workunit_executor.html#a19988cfb2baf7cb42b75c08a515d1fef">More...</a><br /></td></tr>
-<tr class="separator:a19988cfb2baf7cb42b75c08a515d1fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ab28aeecdf4854aadc55f4e67e950c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workunit_executor.html#a03ab28aeecdf4854aadc55f4e67e950c">WorkunitExecutor</a> (std::string <a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, unsigned long num_cores, double ram_utilization, std::string callback_mailbox, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workunit.html">Workunit</a> &gt; <a class="el" href="classwrench_1_1_workunit_executor.html#abac121d8cd6ad39a8c1301fc478e8a2d">workunit</a>, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> &gt; scratch_space, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> &gt; job, double thread_startup_overhead, bool simulate_computation_as_sleep)</td></tr>
+<tr class="memdesc:a03ab28aeecdf4854aadc55f4e67e950c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_workunit_executor.html#a03ab28aeecdf4854aadc55f4e67e950c">More...</a><br /></td></tr>
+<tr class="separator:a03ab28aeecdf4854aadc55f4e67e950c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa78ea4fb4b87bb2f8d1c874ce2866b4f"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workunit_executor.html#aa78ea4fb4b87bb2f8d1c874ce2866b4f">getFilesStoredInScratch</a> ()</td></tr>
 <tr class="memdesc:aa78ea4fb4b87bb2f8d1c874ce2866b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of files stored in scratch space storage.  <a href="classwrench_1_1_workunit_executor.html#aa78ea4fb4b87bb2f8d1c874ce2866b4f">More...</a><br /></td></tr>
 <tr class="separator:aa78ea4fb4b87bb2f8d1c874ce2866b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e9b881062a18d8316695d8d7ce02b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workunit_executor.html#a20e9b881062a18d8316695d8d7ce02b5">getJob</a> ()</td></tr>
-<tr class="memdesc:a20e9b881062a18d8316695d8d7ce02b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the job the <a class="el" href="classwrench_1_1_workunit_executor.html" title="An service that performs a WorkUnit.">WorkunitExecutor</a> is working for.  <a href="classwrench_1_1_workunit_executor.html#a20e9b881062a18d8316695d8d7ce02b5">More...</a><br /></td></tr>
-<tr class="separator:a20e9b881062a18d8316695d8d7ce02b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fed840681cc766d0e1d95281a77e2b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workunit_executor.html#aa5fed840681cc766d0e1d95281a77e2b">getJob</a> ()</td></tr>
+<tr class="memdesc:aa5fed840681cc766d0e1d95281a77e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the job the <a class="el" href="classwrench_1_1_workunit_executor.html" title="An service that performs a WorkUnit.">WorkunitExecutor</a> is working for.  <a href="classwrench_1_1_workunit_executor.html#aa5fed840681cc766d0e1d95281a77e2b">More...</a><br /></td></tr>
+<tr class="separator:aa5fed840681cc766d0e1d95281a77e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5992f298e0eb07604af3061d7d6b2fd9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workunit_executor.html#a5992f298e0eb07604af3061d7d6b2fd9">getMemoryUtilization</a> ()</td></tr>
 <tr class="memdesc:a5992f298e0eb07604af3061d7d6b2fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RAM the service has been allocated.  <a href="classwrench_1_1_workunit_executor.html#a5992f298e0eb07604af3061d7d6b2fd9">More...</a><br /></td></tr>
 <tr class="separator:a5992f298e0eb07604af3061d7d6b2fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,8 +369,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An service that performs a WorkUnit. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a19988cfb2baf7cb42b75c08a515d1fef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19988cfb2baf7cb42b75c08a515d1fef">&#9670;&nbsp;</a></span>WorkunitExecutor()</h2>
+<a id="a03ab28aeecdf4854aadc55f4e67e950c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ab28aeecdf4854aadc55f4e67e950c">&#9670;&nbsp;</a></span>WorkunitExecutor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,7 +414,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em>, </td>
         </tr>
         <tr>
@@ -476,14 +476,14 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a20e9b881062a18d8316695d8d7ce02b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20e9b881062a18d8316695d8d7ce02b5">&#9670;&nbsp;</a></span>getJob()</h2>
+<a id="aa5fed840681cc766d0e1d95281a77e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5fed840681cc766d0e1d95281a77e2b">&#9670;&nbsp;</a></span>getJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> * wrench::WorkunitExecutor::getJob </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> &gt; wrench::WorkunitExecutor::getJob </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

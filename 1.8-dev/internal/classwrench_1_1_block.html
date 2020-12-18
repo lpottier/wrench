@@ -109,9 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a114e299bf7ac7469b770ca29dac7111c"><td class="memItemLeft" align="right" valign="top"><a id="a114e299bf7ac7469b770ca29dac7111c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Block</b> (<a class="el" href="classwrench_1_1_block.html">Block</a> *blk)</td></tr>
 <tr class="separator:a114e299bf7ac7469b770ca29dac7111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71e569ec680d7008d4f3605f9ba783d4"><td class="memItemLeft" align="right" valign="top"><a id="a71e569ec680d7008d4f3605f9ba783d4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Block</b> (std::string fid, std::string mount_point, double sz, double last_access, bool is_dirty, double dirty_time)</td></tr>
-<tr class="separator:a71e569ec680d7008d4f3605f9ba783d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28996f8af2e0e09a01fb472d4360abf7"><td class="memItemLeft" align="right" valign="top"><a id="a28996f8af2e0e09a01fb472d4360abf7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Block</b> (std::string fid, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location, double sz, double last_access, bool is_dirty, double dirty_time)</td></tr>
+<tr class="separator:a28996f8af2e0e09a01fb472d4360abf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e85a2ce6e1bce8ed525658b46414495"><td class="memItemLeft" align="right" valign="top"><a id="a9e85a2ce6e1bce8ed525658b46414495"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getDirtyTime</b> () const</td></tr>
 <tr class="separator:a9e85a2ce6e1bce8ed525658b46414495"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +121,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getFileId</b> 
 <tr class="memitem:aa70f9bdd3d5e712243d6eabd0ca1ef11"><td class="memItemLeft" align="right" valign="top"><a id="aa70f9bdd3d5e712243d6eabd0ca1ef11"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getLastAccess</b> () const</td></tr>
 <tr class="separator:aa70f9bdd3d5e712243d6eabd0ca1ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693a2b7076a6b04bb06b14d6fc702392"><td class="memItemLeft" align="right" valign="top"><a id="a693a2b7076a6b04bb06b14d6fc702392"></a>
+const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLocation</b> () const</td></tr>
+<tr class="separator:a693a2b7076a6b04bb06b14d6fc702392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8756dfc8c278571cec63a724e31032d"><td class="memItemLeft" align="right" valign="top"><a id="ac8756dfc8c278571cec63a724e31032d"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getMountpoint</b> ()</td></tr>
 <tr class="separator:ac8756dfc8c278571cec63a724e31032d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +145,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setFileId</b> (std::s
 <tr class="memitem:a05a9fad9e2f7401c22dd1f932ee8bcb3"><td class="memItemLeft" align="right" valign="top"><a id="a05a9fad9e2f7401c22dd1f932ee8bcb3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLastAccess</b> (double lastAccess)</td></tr>
 <tr class="separator:a05a9fad9e2f7401c22dd1f932ee8bcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be8ada2dd86e8901457dccdfd5d3633"><td class="memItemLeft" align="right" valign="top"><a id="a1be8ada2dd86e8901457dccdfd5d3633"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMountpoint</b> (std::string mountpoint)</td></tr>
-<tr class="separator:a1be8ada2dd86e8901457dccdfd5d3633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492b6edf14b23679b10d30f77066b384"><td class="memItemLeft" align="right" valign="top"><a id="a492b6edf14b23679b10d30f77066b384"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSize</b> (double sz)</td></tr>
 <tr class="separator:a492b6edf14b23679b10d30f77066b384"><td class="memSeparator" colspan="2">&#160;</td></tr>

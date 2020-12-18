@@ -120,12 +120,12 @@ Inheritance diagram for wrench::JobTimeout:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a352548111a16343238a1376913e80bc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_timeout.html#a352548111a16343238a1376913e80bc6">JobTimeout</a> (<a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> *job)</td></tr>
-<tr class="memdesc:a352548111a16343238a1376913e80bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_job_timeout.html#a352548111a16343238a1376913e80bc6">More...</a><br /></td></tr>
-<tr class="separator:a352548111a16343238a1376913e80bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c3fdde31850803e7eb2e159be735880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_timeout.html#a6c3fdde31850803e7eb2e159be735880">getJob</a> ()</td></tr>
-<tr class="memdesc:a6c3fdde31850803e7eb2e159be735880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="classwrench_1_1_job_timeout.html#a6c3fdde31850803e7eb2e159be735880">More...</a><br /></td></tr>
-<tr class="separator:a6c3fdde31850803e7eb2e159be735880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57667217b3251c3b4f2a38096b26921e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_timeout.html#a57667217b3251c3b4f2a38096b26921e">JobTimeout</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job)</td></tr>
+<tr class="memdesc:a57667217b3251c3b4f2a38096b26921e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_job_timeout.html#a57667217b3251c3b4f2a38096b26921e">More...</a><br /></td></tr>
+<tr class="separator:a57667217b3251c3b4f2a38096b26921e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ad9083a9f8edfa66223dbee6a0be61"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_timeout.html#ac9ad9083a9f8edfa66223dbee6a0be61">getJob</a> ()</td></tr>
+<tr class="memdesc:ac9ad9083a9f8edfa66223dbee6a0be61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="classwrench_1_1_job_timeout.html#ac9ad9083a9f8edfa66223dbee6a0be61">More...</a><br /></td></tr>
+<tr class="separator:ac9ad9083a9f8edfa66223dbee6a0be61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91515ca59f71777de74a4b0b169d12e7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_timeout.html#a91515ca59f71777de74a4b0b169d12e7">toString</a> ()</td></tr>
 <tr class="memdesc:a91515ca59f71777de74a4b0b169d12e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the human-readable failure message.  <a href="classwrench_1_1_job_timeout.html#a91515ca59f71777de74a4b0b169d12e7">More...</a><br /></td></tr>
 <tr class="separator:a91515ca59f71777de74a4b0b169d12e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A "job has timed out" failure cause. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a352548111a16343238a1376913e80bc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352548111a16343238a1376913e80bc6">&#9670;&nbsp;</a></span>JobTimeout()</h2>
+<a id="a57667217b3251c3b4f2a38096b26921e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57667217b3251c3b4f2a38096b26921e">&#9670;&nbsp;</a></span>JobTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">wrench::JobTimeout::JobTimeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em></td><td>)</td>
           <td></td>
         </tr>
@@ -160,14 +160,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6c3fdde31850803e7eb2e159be735880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c3fdde31850803e7eb2e159be735880">&#9670;&nbsp;</a></span>getJob()</h2>
+<a id="ac9ad9083a9f8edfa66223dbee6a0be61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ad9083a9f8edfa66223dbee6a0be61">&#9670;&nbsp;</a></span>getJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> * wrench::JobTimeout::getJob </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; wrench::JobTimeout::getJob </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

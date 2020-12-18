@@ -101,8 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef WRENCH_MULTITASKJOB_H</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_MULTITASKJOB_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef WRENCH_STANDARDJOB_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_STANDARDJOB_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;WorkflowJob.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;wrench/services/storage/StorageService.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;wrench/services/storage/storage_helpers/FileLocation.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -163,27 +163,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwrench_1_1_standard_job_executor.html">StandardJobExecutor</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwrench_1_1_bare_metal_compute_service.html">BareMetalComputeService</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span> incrementNumCompletedTasks();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwrench_1_1_job_manager.html">JobManager</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classwrench_1_1_standard_job.html">StandardJob</a>(<a class="code" href="classwrench_1_1_workflow.html">Workflow</a> *<a class="code" href="classwrench_1_1_workflow_job.html#a18dad640a929bcb2ad6838c81a7dc3a8">workflow</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    std::vector&lt;WorkflowTask *&gt; <a class="code" href="classwrench_1_1_standard_job.html#a5e5952459506f8cd52cc611ea8e4505a">tasks</a>, std::map&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  &gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a4619a6a85e60d68f5f520d2c47ba7a75">file_locations</a>,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    std::vector&lt;std::tuple&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a4e24580ce489bdd6f8e15afc48cf10d3">pre_file_copies</a>,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    std::vector&lt;std::tuple&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a0cd69d494f961c28809a5d4ebb30f4f4">post_file_copies</a>,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    std::vector&lt;std::tuple&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a99d8056d004ff7db810873b7d110aa06">cleanup_file_deletions</a>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67">State</a> state;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    };</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif //WRENCH_MULTITASKJOB_H</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> incrementNumCompletedTasks();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classwrench_1_1_job_manager.html">JobManager</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classwrench_1_1_standard_job.html">StandardJob</a>(<a class="code" href="classwrench_1_1_workflow.html">Workflow</a> *<a class="code" href="classwrench_1_1_workflow_job.html#a18dad640a929bcb2ad6838c81a7dc3a8">workflow</a>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    std::vector&lt;WorkflowTask *&gt; <a class="code" href="classwrench_1_1_standard_job.html#a5e5952459506f8cd52cc611ea8e4505a">tasks</a>, std::map&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  &gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a4619a6a85e60d68f5f520d2c47ba7a75">file_locations</a>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    std::vector&lt;std::tuple&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a4e24580ce489bdd6f8e15afc48cf10d3">pre_file_copies</a>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    std::vector&lt;std::tuple&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  , std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a0cd69d494f961c28809a5d4ebb30f4f4">post_file_copies</a>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    std::vector&lt;std::tuple&lt;<a class="code" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt;FileLocation&gt;  &gt;&gt; &amp;<a class="code" href="classwrench_1_1_standard_job.html#a99d8056d004ff7db810873b7d110aa06">cleanup_file_deletions</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67">State</a> state;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    };</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif //WRENCH_MULTITASKJOB_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_standard_job_html_a5e5952459506f8cd52cc611ea8e4505a"><div class="ttname"><a href="classwrench_1_1_standard_job.html#a5e5952459506f8cd52cc611ea8e4505a">wrench::StandardJob::tasks</a></div><div class="ttdeci">std::vector&lt; WorkflowTask * &gt; tasks</div><div class="ttdoc">The job's computational tasks.</div><div class="ttdef"><b>Definition:</b> StandardJob.h:71</div></div>
 <div class="ttc" id="aclasswrench_1_1_standard_job_html_a99d8056d004ff7db810873b7d110aa06"><div class="ttname"><a href="classwrench_1_1_standard_job.html#a99d8056d004ff7db810873b7d110aa06">wrench::StandardJob::cleanup_file_deletions</a></div><div class="ttdeci">std::vector&lt; std::tuple&lt; WorkflowFile *, std::shared_ptr&lt; FileLocation &gt; &gt; &gt; cleanup_file_deletions</div><div class="ttdoc">The ordered file deletion operations to perform at the end.</div><div class="ttdef"><b>Definition:</b> StandardJob.h:86</div></div>
@@ -208,7 +207,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="aclasswrench_1_1_standard_job_executor_html"><div class="ttname"><a href="classwrench_1_1_standard_job_executor.html">wrench::StandardJobExecutor</a></div><div class="ttdoc">A service that knows how to execute a standard job on a multi-node multi-core platform....</div><div class="ttdef"><b>Definition:</b> StandardJobExecutor.h:45</div></div>
 <div class="ttc" id="aclasswrench_1_1_standard_job_html_adad8bdfd5eb774da5be290864ce89c67a1647a0fb0dfebd8405f1efce1c053ec3"><div class="ttname"><a href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67a1647a0fb0dfebd8405f1efce1c053ec3">wrench::StandardJob::RUNNING</a></div><div class="ttdeci">@ RUNNING</div><div class="ttdoc">Running.</div><div class="ttdef"><b>Definition:</b> StandardJob.h:47</div></div>
 <div class="ttc" id="aclasswrench_1_1_standard_job_html_a122e212d0136c5559b7fc38b58f8c377"><div class="ttname"><a href="classwrench_1_1_standard_job.html#a122e212d0136c5559b7fc38b58f8c377">wrench::StandardJob::getTasks</a></div><div class="ttdeci">std::vector&lt; WorkflowTask * &gt; getTasks()</div><div class="ttdoc">Get the workflow tasks in the job.</div><div class="ttdef"><b>Definition:</b> StandardJob.cpp:120</div></div>
-<div class="ttc" id="aclasswrench_1_1_workflow_job_html_a18dad640a929bcb2ad6838c81a7dc3a8"><div class="ttname"><a href="classwrench_1_1_workflow_job.html#a18dad640a929bcb2ad6838c81a7dc3a8">wrench::WorkflowJob::workflow</a></div><div class="ttdeci">Workflow * workflow</div><div class="ttdoc">The workflow this job belong to.</div><div class="ttdef"><b>Definition:</b> WorkflowJob.h:90</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_job_html_a18dad640a929bcb2ad6838c81a7dc3a8"><div class="ttname"><a href="classwrench_1_1_workflow_job.html#a18dad640a929bcb2ad6838c81a7dc3a8">wrench::WorkflowJob::workflow</a></div><div class="ttdeci">Workflow * workflow</div><div class="ttdoc">The workflow this job belong to.</div><div class="ttdef"><b>Definition:</b> WorkflowJob.h:91</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_job_html"><div class="ttname"><a href="classwrench_1_1_workflow_job.html">wrench::WorkflowJob</a></div><div class="ttdoc">Abstraction of a job used for executing tasks in a Workflow.</div><div class="ttdef"><b>Definition:</b> WorkflowJob.h:34</div></div>
 <div class="ttc" id="aclasswrench_1_1_standard_job_html_a828c40483b8d94cfbedf09bddddc31be"><div class="ttname"><a href="classwrench_1_1_standard_job.html#a828c40483b8d94cfbedf09bddddc31be">wrench::StandardJob::total_flops</a></div><div class="ttdeci">double total_flops</div><div class="ttdoc">The job's total computational cost (in flops)</div><div class="ttdef"><b>Definition:</b> StandardJob.h:74</div></div>
 <div class="ttc" id="aclasswrench_1_1_standard_job_html_a1fd45aa2f3ab8818d7bbf6d8d6a31a5c"><div class="ttname"><a href="classwrench_1_1_standard_job.html#a1fd45aa2f3ab8818d7bbf6d8d6a31a5c">wrench::StandardJob::getState</a></div><div class="ttdeci">StandardJob::State getState()</div><div class="ttdoc">Get the state of the standard job.</div><div class="ttdef"><b>Definition:</b> StandardJob.cpp:152</div></div>

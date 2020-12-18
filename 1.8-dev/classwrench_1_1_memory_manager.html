@@ -117,6 +117,9 @@ Inheritance diagram for wrench::MemoryManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a76c2ca24b7bcdfb93f9c2aa37d656bac"><td class="memItemLeft" align="right" valign="top"><a id="a76c2ca24b7bcdfb93f9c2aa37d656bac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addToCache</b> (std::string filename, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location, double amount, bool is_dirty)</td></tr>
+<tr class="separator:a76c2ca24b7bcdfb93f9c2aa37d656bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa802a6b855b154847fce12eeffa61ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#aaa802a6b855b154847fce12eeffa61ce">evict</a> (double amount, std::string excluded_filename)</td></tr>
 <tr class="separator:aaa802a6b855b154847fce12eeffa61ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf5938cbe18397a0bd070d3ce52303e"><td class="memItemLeft" align="right" valign="top"><a id="a8cf5938cbe18397a0bd070d3ce52303e"></a>
@@ -127,9 +130,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>export_log</b> (std::
 <tr class="memitem:af4bc70fa5e6ae3b3830db0803850d97c"><td class="memItemLeft" align="right" valign="top"><a id="af4bc70fa5e6ae3b3830db0803850d97c"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getAvailableMemory</b> ()</td></tr>
 <tr class="separator:af4bc70fa5e6ae3b3830db0803850d97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcbf23ab25e29dd216d34dfcd01baf02"><td class="memItemLeft" align="right" valign="top"><a id="adcbf23ab25e29dd216d34dfcd01baf02"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getCached</b> () const</td></tr>
-<tr class="separator:adcbf23ab25e29dd216d34dfcd01baf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ba410d531c8d025605c951e4cae6de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a95ba410d531c8d025605c951e4cae6de">getCachedAmount</a> (std::string filename)</td></tr>
 <tr class="separator:a95ba410d531c8d025605c951e4cae6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93fbf3e7cff435b380940368baa6877b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_block.html">Block</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a93fbf3e7cff435b380940368baa6877b">getCachedBlocks</a> (std::string filename)</td></tr>
@@ -149,6 +149,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getFreeMemory</b> (
 <tr class="memitem:aff36e7215610795adab059a34e15ebe5"><td class="memItemLeft" align="right" valign="top"><a id="aff36e7215610795adab059a34e15ebe5"></a>
 s4u_Disk *&#160;</td><td class="memItemRight" valign="bottom"><b>getMemory</b> () const</td></tr>
 <tr class="separator:aff36e7215610795adab059a34e15ebe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d620715cfc39b3786f74d92b9f5f10"><td class="memItemLeft" align="right" valign="top"><a id="a04d620715cfc39b3786f74d92b9f5f10"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalCachedAmount</b> () const</td></tr>
+<tr class="separator:a04d620715cfc39b3786f74d92b9f5f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb293d6f6c8fb6d422b89401e36d7e0"><td class="memItemLeft" align="right" valign="top"><a id="aafb293d6f6c8fb6d422b89401e36d7e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#aafb293d6f6c8fb6d422b89401e36d7e0">kill</a> ()</td></tr>
 <tr class="memdesc:aafb293d6f6c8fb6d422b89401e36d7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately terminate periodical flushing. <br /></td></tr>
@@ -158,10 +161,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>log</b> ()</td></tr>
 <tr class="separator:a4c729a7a655e2827d0f6e03dacbc0727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636bed6fc43fd37f60be7e02d56d594f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a636bed6fc43fd37f60be7e02d56d594f">readChunkFromCache</a> (std::string filename, double amount)</td></tr>
 <tr class="separator:a636bed6fc43fd37f60be7e02d56d594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9c9da82f462ef4ac316b7a27445c4b"><td class="memItemLeft" align="right" valign="top">simgrid::s4u::IoPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#aaa9c9da82f462ef4ac316b7a27445c4b">readFromCache</a> (std::string filename, bool async)</td></tr>
-<tr class="separator:aaa9c9da82f462ef4ac316b7a27445c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d235745c6a0b7f1056c9c39208c0b43"><td class="memItemLeft" align="right" valign="top">simgrid::s4u::IoPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a4d235745c6a0b7f1056c9c39208c0b43">readToCache</a> (std::string filename, std::string mount_point, double amount, bool async)</td></tr>
-<tr class="separator:a4d235745c6a0b7f1056c9c39208c0b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a95e8be38b5826ad183b311a4fb77c"><td class="memItemLeft" align="right" valign="top">simgrid::s4u::IoPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a01a95e8be38b5826ad183b311a4fb77c">readToCache</a> (std::string filename, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location, double amount, bool async)</td></tr>
+<tr class="separator:a01a95e8be38b5826ad183b311a4fb77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cfc5f60b23b8bdc4b69da31dffb262f"><td class="memItemLeft" align="right" valign="top"><a id="a2cfc5f60b23b8bdc4b69da31dffb262f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseMemory</b> (double released_amt)</td></tr>
 <tr class="separator:a2cfc5f60b23b8bdc4b69da31dffb262f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +175,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setMemory</b> (s4u_Di
 <tr class="memitem:a24a8589e50c0f365f7212555011161ae"><td class="memItemLeft" align="right" valign="top"><a id="a24a8589e50c0f365f7212555011161ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>useAnonymousMemory</b> (double used_amt)</td></tr>
 <tr class="separator:a24a8589e50c0f365f7212555011161ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d3ab521211f798ebff30ff33d0faa90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a0d3ab521211f798ebff30ff33d0faa90">writeToCache</a> (std::string filename, std::string mnt_pt, double amount)</td></tr>
-<tr class="separator:a0d3ab521211f798ebff30ff33d0faa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6bbfc327d09f6e0b22d52666dd4b926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#ac6bbfc327d09f6e0b22d52666dd4b926">writebackToCache</a> (std::string filename, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location, double amount, bool is_dirty)</td></tr>
+<tr class="separator:ac6bbfc327d09f6e0b22d52666dd4b926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwrench_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_service.html">wrench::Service</a></td></tr>
 <tr class="memitem:a7d7280ca209668863c3f82bd40a94439 inherit pub_methods_classwrench_1_1_service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_service.html#a7d7280ca209668863c3f82bd40a94439">assertServiceIsUp</a> ()</td></tr>
 <tr class="memdesc:a7d7280ca209668863c3f82bd40a94439 inherit pub_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception if the service is not up.  <a href="classwrench_1_1_service.html#a7d7280ca209668863c3f82bd40a94439">More...</a><br /></td></tr>
@@ -626,11 +627,11 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initialize and start the memory manager</p>
+<p>Initialize and start the memory_manager_service manager</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">simulation</td><td></td></tr>
-    <tr><td class="paramname">memory</td><td>disk model used to simulate memory </td></tr>
+    <tr><td class="paramname">memory</td><td>disk model used to simulate memory_manager_service </td></tr>
     <tr><td class="paramname">dirty_ratio</td><td>dirty_ratio parameter as in the Linux kernel </td></tr>
     <tr><td class="paramname">interval</td><td>the interval that periodical flushing awakes in milliseconds </td></tr>
     <tr><td class="paramname">expired_time</td><td>the expired time of dirty data to be flushed in milliseconds </td></tr>
@@ -676,42 +677,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="aaa9c9da82f462ef4ac316b7a27445c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa9c9da82f462ef4ac316b7a27445c4b">&#9670;&nbsp;</a></span>readFromCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">simgrid::s4u::IoPtr wrench::MemoryManager::readFromCache </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>async</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Simulate a read from cache, re-access and update cached file data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>name of the file read </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4d235745c6a0b7f1056c9c39208c0b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d235745c6a0b7f1056c9c39208c0b43">&#9670;&nbsp;</a></span>readToCache()</h2>
+<a id="a01a95e8be38b5826ad183b311a4fb77c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a95e8be38b5826ad183b311a4fb77c">&#9670;&nbsp;</a></span>readToCache()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -725,8 +692,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>mount_point</em>, </td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -757,14 +724,14 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a0d3ab521211f798ebff30ff33d0faa90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d3ab521211f798ebff30ff33d0faa90">&#9670;&nbsp;</a></span>writeToCache()</h2>
+<a id="ac6bbfc327d09f6e0b22d52666dd4b926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bbfc327d09f6e0b22d52666dd4b926">&#9670;&nbsp;</a></span>writebackToCache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void wrench::MemoryManager::writeToCache </td>
+          <td class="memname">void wrench::MemoryManager::writebackToCache </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
@@ -772,14 +739,20 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>mnt_pt</em>, </td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
+          <td class="paramname"><em>amount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_dirty</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

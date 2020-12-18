@@ -211,10 +211,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adf23b90b33c06dfaf8af4884a140de47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a control dependency between tasks (does nothing if none)  <a href="classwrench_1_1_workflow.html#adf23b90b33c06dfaf8af4884a140de47">More...</a><br /></td></tr>
 <tr class="separator:adf23b90b33c06dfaf8af4884a140de47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a343edce64d90995088075b6cf25adc25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a343edce64d90995088075b6cf25adc25">removeFile</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file)</td></tr>
-<tr class="memdesc:a343edce64d90995088075b6cf25adc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a file from the workflow. WARNING: this method de-allocated memory for the file, making any pointer to the file invalid.  <a href="classwrench_1_1_workflow.html#a343edce64d90995088075b6cf25adc25">More...</a><br /></td></tr>
+<tr class="memdesc:a343edce64d90995088075b6cf25adc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a file from the workflow. WARNING: this method de-allocated memory_manager_service for the file, making any pointer to the file invalid.  <a href="classwrench_1_1_workflow.html#a343edce64d90995088075b6cf25adc25">More...</a><br /></td></tr>
 <tr class="separator:a343edce64d90995088075b6cf25adc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2361b641261ea13079902bef91e11f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#af2361b641261ea13079902bef91e11f4">removeTask</a> (<a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *task)</td></tr>
-<tr class="memdesc:af2361b641261ea13079902bef91e11f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a task from the workflow. WARNING: this method de-allocated memory for the task, making any pointer to the task invalid.  <a href="classwrench_1_1_workflow.html#af2361b641261ea13079902bef91e11f4">More...</a><br /></td></tr>
+<tr class="memdesc:af2361b641261ea13079902bef91e11f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a task from the workflow. WARNING: this method de-allocated memory_manager_service for the task, making any pointer to the task invalid.  <a href="classwrench_1_1_workflow.html#af2361b641261ea13079902bef91e11f4">More...</a><br /></td></tr>
 <tr class="separator:af2361b641261ea13079902bef91e11f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -371,7 +371,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">flops</td><td>number of flops </td></tr>
     <tr><td class="paramname">min_num_cores</td><td>the minimum number of cores required to run the task </td></tr>
     <tr><td class="paramname">max_num_cores</td><td>the maximum number of cores that can be used by the task (use INT_MAX for infinity) </td></tr>
-    <tr><td class="paramname">memory_requirement</td><td>memory requirement (in bytes)</td></tr>
+    <tr><td class="paramname">memory_requirement</td><td>memory_manager_service requirement (in bytes)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1109,7 +1109,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a file from the workflow. WARNING: this method de-allocated memory for the file, making any pointer to the file invalid. </p>
+<p>Remove a file from the workflow. WARNING: this method de-allocated memory_manager_service for the file, making any pointer to the file invalid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>a file</td></tr>
@@ -1141,7 +1141,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a task from the workflow. WARNING: this method de-allocated memory for the task, making any pointer to the task invalid. </p>
+<p>Remove a task from the workflow. WARNING: this method de-allocated memory_manager_service for the task, making any pointer to the task invalid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">task</td><td>a task</td></tr>

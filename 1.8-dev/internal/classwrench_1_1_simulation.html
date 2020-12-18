@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory being de-allocated).  
+<p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory_manager_service being de-allocated).  
  <a href="classwrench_1_1_simulation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_simulation_8h_source.html">Simulation.h</a>&gt;</code></p>
@@ -159,8 +159,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6889f73264af113e4196ca22e511d51f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a6889f73264af113e4196ca22e511d51f">readFromDiskAndWriteToDiskConcurrently</a> (double num_bytes_to_read, double num_bytes_to_write, std::string hostname, std::string read_mount_point, std::string write_mount_point)</td></tr>
 <tr class="memdesc:a6889f73264af113e4196ca22e511d51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper enabling timestamps for concurrent disk read/writes.  <a href="classwrench_1_1_simulation.html#a6889f73264af113e4196ca22e511d51f">More...</a><br /></td></tr>
 <tr class="separator:a6889f73264af113e4196ca22e511d51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a318fb114498cb06987c2094a96b9565a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a318fb114498cb06987c2094a96b9565a">readWithMemoryCache</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, double n_bytes, std::string mountpoint)</td></tr>
-<tr class="separator:a318fb114498cb06987c2094a96b9565a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725f4b64501a1e7fb80e0be64dfc1a70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a725f4b64501a1e7fb80e0be64dfc1a70">readWithMemoryCache</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, double n_bytes, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location)</td></tr>
+<tr class="separator:a725f4b64501a1e7fb80e0be64dfc1a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4675a8c9c62c93bfbd3dc4a4e46556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#adf4675a8c9c62c93bfbd3dc4a4e46556">setPstate</a> (const std::string &amp;hostname, int pstate)</td></tr>
 <tr class="memdesc:adf4675a8c9c62c93bfbd3dc4a4e46556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the power state of the host.  <a href="classwrench_1_1_simulation.html#adf4675a8c9c62c93bfbd3dc4a4e46556">More...</a><br /></td></tr>
 <tr class="separator:adf4675a8c9c62c93bfbd3dc4a4e46556"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,17 +176,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5aee9b87344fb0002d5cd78f2329b16e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a5aee9b87344fb0002d5cd78f2329b16e">startNewService</a> (<a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> *service)</td></tr>
 <tr class="memdesc:a5aee9b87344fb0002d5cd78f2329b16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new file registry service during <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor.  <a href="classwrench_1_1_simulation.html#a5aee9b87344fb0002d5cd78f2329b16e">More...</a><br /></td></tr>
 <tr class="separator:a5aee9b87344fb0002d5cd78f2329b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78cba89cf5009f501cb9f7e23897a8b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ab78cba89cf5009f501cb9f7e23897a8b">startNewService</a> (<a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> *service)</td></tr>
+<tr class="memdesc:ab78cba89cf5009f501cb9f7e23897a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new memory_manager_service manager service during execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor.  <a href="classwrench_1_1_simulation.html#ab78cba89cf5009f501cb9f7e23897a8b">More...</a><br /></td></tr>
+<tr class="separator:ab78cba89cf5009f501cb9f7e23897a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b270d41349ae13ea02eb68a519dc2bd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_network_proximity_service.html">NetworkProximityService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a3b270d41349ae13ea02eb68a519dc2bd">startNewService</a> (<a class="el" href="classwrench_1_1_network_proximity_service.html">NetworkProximityService</a> *service)</td></tr>
 <tr class="memdesc:a3b270d41349ae13ea02eb68a519dc2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new network proximity service during <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor.  <a href="classwrench_1_1_simulation.html#a3b270d41349ae13ea02eb68a519dc2bd">More...</a><br /></td></tr>
 <tr class="separator:a3b270d41349ae13ea02eb68a519dc2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74cad703850cb0b3521e07de28d90826"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a74cad703850cb0b3521e07de28d90826">startNewService</a> (<a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> *service)</td></tr>
 <tr class="memdesc:a74cad703850cb0b3521e07de28d90826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new storage service during <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor.  <a href="classwrench_1_1_simulation.html#a74cad703850cb0b3521e07de28d90826">More...</a><br /></td></tr>
 <tr class="separator:a74cad703850cb0b3521e07de28d90826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f52843121c55e6341ab6bbf585288c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a2f52843121c55e6341ab6bbf585288c9">writebackWithMemoryCache</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, double n_bytes, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location, bool is_dirty)</td></tr>
+<tr class="separator:a2f52843121c55e6341ab6bbf585288c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade19345aed10813e50d43052de60f96a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ade19345aed10813e50d43052de60f96a">writeThroughWithMemoryCache</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, double n_bytes, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location)</td></tr>
+<tr class="separator:ade19345aed10813e50d43052de60f96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc3c97ca35314f5436d4533e48eac1f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#abc3c97ca35314f5436d4533e48eac1f8">writeToDisk</a> (double num_bytes, std::string hostname, std::string mount_point)</td></tr>
 <tr class="memdesc:abc3c97ca35314f5436d4533e48eac1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper enabling timestamps for disk writes.  <a href="classwrench_1_1_simulation.html#abc3c97ca35314f5436d4533e48eac1f8">More...</a><br /></td></tr>
 <tr class="separator:abc3c97ca35314f5436d4533e48eac1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63119b4511c7198469fdec2aaaac77c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a63119b4511c7198469fdec2aaaac77c4">writeWithMemoryCache</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, double n_bytes, std::string mountpoint)</td></tr>
-<tr class="separator:a63119b4511c7198469fdec2aaaac77c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -212,7 +217,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a736b72b8fb5343f93d3a461f85f221ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flop rate of one core of a host given a hostname.  <a href="classwrench_1_1_simulation.html#a736b72b8fb5343f93d3a461f85f221ef">More...</a><br /></td></tr>
 <tr class="separator:a736b72b8fb5343f93d3a461f85f221ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757dde71d164a89ff52e49c4c52af0b5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">getHostMemoryCapacity</a> (std::string hostname)</td></tr>
-<tr class="memdesc:a757dde71d164a89ff52e49c4c52af0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory capacity of a host given a hostname.  <a href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">More...</a><br /></td></tr>
+<tr class="memdesc:a757dde71d164a89ff52e49c4c52af0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory_manager_service capacity of a host given a hostname.  <a href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">More...</a><br /></td></tr>
 <tr class="separator:a757dde71d164a89ff52e49c4c52af0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47bc946424d2957733f8d053a4b3ef60"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a47bc946424d2957733f8d053a4b3ef60">getHostName</a> ()</td></tr>
 <tr class="memdesc:a47bc946424d2957733f8d053a4b3ef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the host on which the calling process is running.  <a href="classwrench_1_1_simulation.html#a47bc946424d2957733f8d053a4b3ef60">More...</a><br /></td></tr>
@@ -242,7 +247,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae76b92ce868c6e6c1683377d869a5b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum power consumption for the host (i.e., 100% utilization) at its current pstate.  <a href="classwrench_1_1_simulation.html#ae76b92ce868c6e6c1683377d869a5b34">More...</a><br /></td></tr>
 <tr class="separator:ae76b92ce868c6e6c1683377d869a5b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a5ca7331875bc551fc2cf1896e9dd4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ac0a5ca7331875bc551fc2cf1896e9dd4">getMemoryCapacity</a> ()</td></tr>
-<tr class="memdesc:ac0a5ca7331875bc551fc2cf1896e9dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory capacity of the host on which the calling process is running.  <a href="classwrench_1_1_simulation.html#ac0a5ca7331875bc551fc2cf1896e9dd4">More...</a><br /></td></tr>
+<tr class="memdesc:ac0a5ca7331875bc551fc2cf1896e9dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory_manager_service capacity of the host on which the calling process is running.  <a href="classwrench_1_1_simulation.html#ac0a5ca7331875bc551fc2cf1896e9dd4">More...</a><br /></td></tr>
 <tr class="separator:ac0a5ca7331875bc551fc2cf1896e9dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdf2ae84f6b3c8b51c5189199bebb52e"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#afdf2ae84f6b3c8b51c5189199bebb52e">getMinPowerConsumption</a> (const std::string &amp;hostname)</td></tr>
 <tr class="memdesc:afdf2ae84f6b3c8b51c5189199bebb52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum power consumption for the host (i.e., idling) at its current pstate.  <a href="classwrench_1_1_simulation.html#afdf2ae84f6b3c8b51c5189199bebb52e">More...</a><br /></td></tr>
@@ -259,8 +264,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8d3bac626795f838dd6a752d7fb57e4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ad8d3bac626795f838dd6a752d7fb57e4">isLinkOn</a> (std::string linkname)</td></tr>
 <tr class="memdesc:ad8d3bac626795f838dd6a752d7fb57e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a link is on or not.  <a href="classwrench_1_1_simulation.html#ad8d3bac626795f838dd6a752d7fb57e4">More...</a><br /></td></tr>
 <tr class="separator:ad8d3bac626795f838dd6a752d7fb57e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319b4e7b4023a2cd9445e57015c86efd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a319b4e7b4023a2cd9445e57015c86efd">isWriteback</a> ()</td></tr>
-<tr class="separator:a319b4e7b4023a2cd9445e57015c86efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995af69a2f4436c71ee2693b6ec6f198"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a995af69a2f4436c71ee2693b6ec6f198">isPageCachingEnabled</a> ()</td></tr>
+<tr class="separator:a995af69a2f4436c71ee2693b6ec6f198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04ced81e9eb97587a2affee4e7e210ef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a04ced81e9eb97587a2affee4e7e210ef">sleep</a> (double duration)</td></tr>
 <tr class="memdesc:a04ced81e9eb97587a2affee4e7e210ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the calling process sleep for a number of (simulated) seconds.  <a href="classwrench_1_1_simulation.html#a04ced81e9eb97587a2affee4e7e210ef">More...</a><br /></td></tr>
 <tr class="separator:a04ced81e9eb97587a2affee4e7e210ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a82da9ee7a2c23039d5d7d95521d18a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory being de-allocated). </p>
+<div class="textblock"><p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory_manager_service being de-allocated). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7cf70e5793758149a8bf29992d870c91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cf70e5793758149a8bf29992d870c91">&#9670;&nbsp;</a></span>add()</h2>
@@ -731,14 +736,14 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the memory capacity of a host given a hostname. </p>
+<p>Get the memory_manager_service capacity of a host given a hostname. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the hostname </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a memory capacity in bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a memory_manager_service capacity in bytes </dd></dl>
 
 </div>
 </div>
@@ -1104,8 +1109,8 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Get the memory capacity of the host on which the calling process is running. </p>
-<dl class="section return"><dt>Returns</dt><dd>a memory capacity in bytes </dd></dl>
+<p>Get the memory_manager_service capacity of the host on which the calling process is running. </p>
+<dl class="section return"><dt>Returns</dt><dd>a memory_manager_service capacity in bytes </dd></dl>
 
 </div>
 </div>
@@ -1397,8 +1402,8 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
-<a id="a319b4e7b4023a2cd9445e57015c86efd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a319b4e7b4023a2cd9445e57015c86efd">&#9670;&nbsp;</a></span>isWriteback()</h2>
+<a id="a995af69a2f4436c71ee2693b6ec6f198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995af69a2f4436c71ee2693b6ec6f198">&#9670;&nbsp;</a></span>isPageCachingEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1407,7 +1412,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool wrench::Simulation::isWriteback </td>
+          <td class="memname">bool wrench::Simulation::isPageCachingEnabled </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1562,8 +1567,8 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
-<a id="a318fb114498cb06987c2094a96b9565a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a318fb114498cb06987c2094a96b9565a">&#9670;&nbsp;</a></span>readWithMemoryCache()</h2>
+<a id="a725f4b64501a1e7fb80e0be64dfc1a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725f4b64501a1e7fb80e0be64dfc1a70">&#9670;&nbsp;</a></span>readWithMemoryCache()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1583,8 +1588,8 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>mountpoint</em>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1771,7 +1776,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 </div>
 </div>
 <a id="a48b17f4976b033ca1703611a0910f336"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48b17f4976b033ca1703611a0910f336">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b17f4976b033ca1703611a0910f336">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1805,7 +1810,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 </div>
 </div>
 <a id="a5aee9b87344fb0002d5cd78f2329b16e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5aee9b87344fb0002d5cd78f2329b16e">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aee9b87344fb0002d5cd78f2329b16e">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1838,8 +1843,42 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
+<a id="ab78cba89cf5009f501cb9f7e23897a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78cba89cf5009f501cb9f7e23897a8b">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> &gt; wrench::Simulation::startNewService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> *&#160;</td>
+          <td class="paramname"><em>service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts a new memory_manager_service manager service during execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>An instance of a service </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the service instance </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3b270d41349ae13ea02eb68a519dc2bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b270d41349ae13ea02eb68a519dc2bd">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b270d41349ae13ea02eb68a519dc2bd">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1873,7 +1912,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 </div>
 </div>
 <a id="a74cad703850cb0b3521e07de28d90826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74cad703850cb0b3521e07de28d90826">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a74cad703850cb0b3521e07de28d90826">&#9670;&nbsp;</a></span>startNewService() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2042,6 +2081,96 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
+<a id="a2f52843121c55e6341ab6bbf585288c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f52843121c55e6341ab6bbf585288c9">&#9670;&nbsp;</a></span>writebackWithMemoryCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::Simulation::writebackWithMemoryCache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>n_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_dirty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write a file locally with writeback strategy, only available if writeback is activated. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>name of the file written. </td></tr>
+    <tr><td class="paramname">n_bytes</td><td>amount of written data in byte. </td></tr>
+    <tr><td class="paramname">mountpoint</td><td>mount point where file is located. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade19345aed10813e50d43052de60f96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade19345aed10813e50d43052de60f96a">&#9670;&nbsp;</a></span>writeThroughWithMemoryCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::Simulation::writeThroughWithMemoryCache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>n_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write-through a file locally, only available if writeback is activated. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>name of the file written. </td></tr>
+    <tr><td class="paramname">n_bytes</td><td>amount of written data in byte. </td></tr>
+    <tr><td class="paramname">mountpoint</td><td>mount point where file is located. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abc3c97ca35314f5436d4533e48eac1f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc3c97ca35314f5436d4533e48eac1f8">&#9670;&nbsp;</a></span>writeToDisk()</h2>
 
@@ -2086,48 +2215,6 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">invalid_argument</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a63119b4511c7198469fdec2aaaac77c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63119b4511c7198469fdec2aaaac77c4">&#9670;&nbsp;</a></span>writeWithMemoryCache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wrench::Simulation::writeWithMemoryCache </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>n_bytes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>mountpoint</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write a file locally, only available if writeback is activated. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>name of the file written. </td></tr>
-    <tr><td class="paramname">n_bytes</td><td>amount of written data in byte. </td></tr>
-    <tr><td class="paramname">mountpoint</td><td>mount point where file is located. </td></tr>
   </table>
   </dd>
 </dl>

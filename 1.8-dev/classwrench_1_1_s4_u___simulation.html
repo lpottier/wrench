@@ -177,7 +177,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a6ced6004e86834c5f89f553a17d8cb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flop rate of a host.  <a href="classwrench_1_1_s4_u___simulation.html#a6ced6004e86834c5f89f553a17d8cb64">More...</a><br /></td></tr>
 <tr class="separator:a6ced6004e86834c5f89f553a17d8cb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5619ac678a185fd7031d6f13d7ec463a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a5619ac678a185fd7031d6f13d7ec463a">getHostMemoryCapacity</a> (std::string hostname)</td></tr>
-<tr class="memdesc:a5619ac678a185fd7031d6f13d7ec463a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory capacity of a host given a hostname.  <a href="classwrench_1_1_s4_u___simulation.html#a5619ac678a185fd7031d6f13d7ec463a">More...</a><br /></td></tr>
+<tr class="memdesc:a5619ac678a185fd7031d6f13d7ec463a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory_manager_service capacity of a host given a hostname.  <a href="classwrench_1_1_s4_u___simulation.html#a5619ac678a185fd7031d6f13d7ec463a">More...</a><br /></td></tr>
 <tr class="separator:a5619ac678a185fd7031d6f13d7ec463a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79d6550a2d924c37f6f58533d15518e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#aa79d6550a2d924c37f6f58533d15518e">getHostName</a> ()</td></tr>
 <tr class="memdesc:aa79d6550a2d924c37f6f58533d15518e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hostname on which the calling actor is running.  <a href="classwrench_1_1_s4_u___simulation.html#aa79d6550a2d924c37f6f58533d15518e">More...</a><br /></td></tr>
@@ -201,7 +201,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a386ca90dcf205eb01fd145f837dbe153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum power consumption (i.e., 100% load) for a host at its current pstate.  <a href="classwrench_1_1_s4_u___simulation.html#a386ca90dcf205eb01fd145f837dbe153">More...</a><br /></td></tr>
 <tr class="separator:a386ca90dcf205eb01fd145f837dbe153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3336a395e2463b4fcfd921d9fec190f9"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a3336a395e2463b4fcfd921d9fec190f9">getMemoryCapacity</a> ()</td></tr>
-<tr class="memdesc:a3336a395e2463b4fcfd921d9fec190f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory capacity of the current host.  <a href="classwrench_1_1_s4_u___simulation.html#a3336a395e2463b4fcfd921d9fec190f9">More...</a><br /></td></tr>
+<tr class="memdesc:a3336a395e2463b4fcfd921d9fec190f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory_manager_service capacity of the current host.  <a href="classwrench_1_1_s4_u___simulation.html#a3336a395e2463b4fcfd921d9fec190f9">More...</a><br /></td></tr>
 <tr class="separator:a3336a395e2463b4fcfd921d9fec190f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833e019cc24b6e8d99446211d4061b13"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a833e019cc24b6e8d99446211d4061b13">getMinPowerConsumption</a> (const std::string &amp;hostname)</td></tr>
 <tr class="memdesc:a833e019cc24b6e8d99446211d4061b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum power consumption (i.e., idling) for a host at its current pstate.  <a href="classwrench_1_1_s4_u___simulation.html#a833e019cc24b6e8d99446211d4061b13">More...</a><br /></td></tr>
@@ -690,14 +690,14 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </table>
 </div><div class="memdoc">
 
-<p>Get the memory capacity of a host given a hostname. </p>
+<p>Get the memory_manager_service capacity of a host given a hostname. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the name of the host </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a memory capacity in bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a memory_manager_service capacity in bytes </dd></dl>
 
 </div>
 </div>
@@ -993,8 +993,8 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </table>
 </div><div class="memdoc">
 
-<p>Get the memory capacity of the current host. </p>
-<dl class="section return"><dt>Returns</dt><dd>a memory capacity in bytes </dd></dl>
+<p>Get the memory_manager_service capacity of the current host. </p>
+<dl class="section return"><dt>Returns</dt><dd>a memory_manager_service capacity in bytes </dd></dl>
 
 </div>
 </div>

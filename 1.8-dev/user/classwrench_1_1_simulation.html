@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory being de-allocated).  
+<p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory_manager_service being de-allocated).  
  <a href="classwrench_1_1_simulation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_simulation_8h_source.html">Simulation.h</a>&gt;</code></p>
@@ -155,7 +155,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a736b72b8fb5343f93d3a461f85f221ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flop rate of one core of a host given a hostname.  <a href="classwrench_1_1_simulation.html#a736b72b8fb5343f93d3a461f85f221ef">More...</a><br /></td></tr>
 <tr class="separator:a736b72b8fb5343f93d3a461f85f221ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757dde71d164a89ff52e49c4c52af0b5"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">getHostMemoryCapacity</a> (std::string hostname)</td></tr>
-<tr class="memdesc:a757dde71d164a89ff52e49c4c52af0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory capacity of a host given a hostname.  <a href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">More...</a><br /></td></tr>
+<tr class="memdesc:a757dde71d164a89ff52e49c4c52af0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory_manager_service capacity of a host given a hostname.  <a href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">More...</a><br /></td></tr>
 <tr class="separator:a757dde71d164a89ff52e49c4c52af0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b4a28cfb0391525f3dba70317189be"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a15b4a28cfb0391525f3dba70317189be">getHostnameList</a> ()</td></tr>
 <tr class="memdesc:a15b4a28cfb0391525f3dba70317189be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of names of all the hosts in the platform.  <a href="classwrench_1_1_simulation.html#a15b4a28cfb0391525f3dba70317189be">More...</a><br /></td></tr>
@@ -180,7 +180,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a5e8d5b963d2278c79b49a0ed7db2b933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory being de-allocated). </p>
+<div class="textblock"><p>A class that provides basic simulation methods. Once the simulation object has been explicitly or implicitly destroyed, then any call to the WRENCH APIs has undefied behavior (due to memory_manager_service being de-allocated). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7cf70e5793758149a8bf29992d870c91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cf70e5793758149a8bf29992d870c91">&#9670;&nbsp;</a></span>add()</h2>
@@ -350,14 +350,14 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the memory capacity of a host given a hostname. </p>
+<p>Get the memory_manager_service capacity of a host given a hostname. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the hostname </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a memory capacity in bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a memory_manager_service capacity in bytes </dd></dl>
 
 </div>
 </div>
