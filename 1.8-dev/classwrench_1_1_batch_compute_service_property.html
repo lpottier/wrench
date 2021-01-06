@@ -234,11 +234,12 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 <ul>
 <li>If ENABLE_BATSCHED is set to off / not set:<ul>
 <li>"fcfs": First Come First Serve</li>
-<li>"conservative_bf": a home-grown implementation of FCFS with conservative backfilling, which only allocates resources at the node level</li>
+<li>"conservative_bf": a home-grown implementation of FCFS with conservative backfilling, which only allocates resources at the node level (i.e., two jobs can never run on the same node even if that node has enough cores to support both jobs)</li>
 </ul>
 </li>
 <li>If ENABLE_BATSCHED is set to on:<ul>
-<li>whatever scheduling algorithm is supported by Batsched (by default: "conservative_bf", other options include "easy_bf" and "easy_bf_fast") </li>
+<li>whatever scheduling algorithm is supported by Batsched (by default: "conservative_bf", other options include "easy_bf" and "easy_bf_fast")</li>
+<li>These only allocate resources at the node level (i.e., two jobs can never run on the same node even if that node has enough cores to support both jobs) </li>
 </ul>
 </li>
 </ul>
