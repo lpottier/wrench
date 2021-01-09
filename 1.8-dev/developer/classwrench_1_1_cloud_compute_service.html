@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3f1a159adfc39649ca699265ad184df"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classwrench_1_1_bare_metal_compute_service.html">BareMetalComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#ad3f1a159adfc39649ca699265ad184df">getVMComputeService</a> (const std::string &amp;vm_name)</td></tr>
 <tr class="memdesc:ad3f1a159adfc39649ca699265ad184df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the compute service running on a VM, if any.  <a href="classwrench_1_1_cloud_compute_service.html#ad3f1a159adfc39649ca699265ad184df">More...</a><br /></td></tr>
 <tr class="separator:ad3f1a159adfc39649ca699265ad184df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5660a127c7e060da16292c9e18ac0320"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#a5660a127c7e060da16292c9e18ac0320">getVMPhysicalHostname</a> (const std::string &amp;vm_name)</td></tr>
+<tr class="memdesc:a5660a127c7e060da16292c9e18ac0320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the physical host on which a VM is running.  <a href="classwrench_1_1_cloud_compute_service.html#a5660a127c7e060da16292c9e18ac0320">More...</a><br /></td></tr>
+<tr class="separator:a5660a127c7e060da16292c9e18ac0320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36d3e3e184acf4163cfdc52cea8fc1c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#ab36d3e3e184acf4163cfdc52cea8fc1c">isVMDown</a> (const std::string &amp;vm_name)</td></tr>
 <tr class="memdesc:ab36d3e3e184acf4163cfdc52cea8fc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check whether a VM is currently down.  <a href="classwrench_1_1_cloud_compute_service.html#ab36d3e3e184acf4163cfdc52cea8fc1c">More...</a><br /></td></tr>
 <tr class="separator:ab36d3e3e184acf4163cfdc52cea8fc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -593,6 +596,48 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that runs on the VM, or nullptr if none</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5660a127c7e060da16292c9e18ac0320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5660a127c7e060da16292c9e18ac0320">&#9670;&nbsp;</a></span>getVMPhysicalHostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrench::CloudComputeService::getVMPhysicalHostname </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>vm_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the name of the physical host on which a VM is running. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vm_name</td><td>the name of the VM</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>physical host name</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>

@@ -125,9 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40a78b7e0efc2fc8bdd40196cb380b49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_virtualized_cluster_compute_service.html#a40a78b7e0efc2fc8bdd40196cb380b49">VirtualizedClusterComputeService</a> (const std::string &amp;hostname, std::vector&lt; std::string &gt; &amp;<a class="el" href="classwrench_1_1_cloud_compute_service.html#a1030e438ff1c5b044290359aa1291a29">execution_hosts</a>, std::string scratch_space_mount_point, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
 <tr class="memdesc:a40a78b7e0efc2fc8bdd40196cb380b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_virtualized_cluster_compute_service.html#a40a78b7e0efc2fc8bdd40196cb380b49">More...</a><br /></td></tr>
 <tr class="separator:a40a78b7e0efc2fc8bdd40196cb380b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e48b3245250f3cdb338e69757dff94f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_virtualized_cluster_compute_service.html#a9e48b3245250f3cdb338e69757dff94f">getVMPhysicalHostname</a> (const std::string &amp;vm_name)</td></tr>
-<tr class="memdesc:a9e48b3245250f3cdb338e69757dff94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the physical host on which a VM is running.  <a href="classwrench_1_1_virtualized_cluster_compute_service.html#a9e48b3245250f3cdb338e69757dff94f">More...</a><br /></td></tr>
-<tr class="separator:a9e48b3245250f3cdb338e69757dff94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e07f4185465a44f2e021fcd3a71c5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_virtualized_cluster_compute_service.html#a72e07f4185465a44f2e021fcd3a71c5a">migrateVM</a> (const std::string &amp;vm_name, const std::string &amp;dest_pm_hostname)</td></tr>
 <tr class="memdesc:a72e07f4185465a44f2e021fcd3a71c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously migrate a VM to another physical host.  <a href="classwrench_1_1_virtualized_cluster_compute_service.html#a72e07f4185465a44f2e021fcd3a71c5a">More...</a><br /></td></tr>
 <tr class="separator:a72e07f4185465a44f2e021fcd3a71c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3f1a159adfc39649ca699265ad184df inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classwrench_1_1_bare_metal_compute_service.html">BareMetalComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#ad3f1a159adfc39649ca699265ad184df">getVMComputeService</a> (const std::string &amp;vm_name)</td></tr>
 <tr class="memdesc:ad3f1a159adfc39649ca699265ad184df inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the compute service running on a VM, if any.  <a href="classwrench_1_1_cloud_compute_service.html#ad3f1a159adfc39649ca699265ad184df">More...</a><br /></td></tr>
 <tr class="separator:ad3f1a159adfc39649ca699265ad184df inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5660a127c7e060da16292c9e18ac0320 inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#a5660a127c7e060da16292c9e18ac0320">getVMPhysicalHostname</a> (const std::string &amp;vm_name)</td></tr>
+<tr class="memdesc:a5660a127c7e060da16292c9e18ac0320 inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the physical host on which a VM is running.  <a href="classwrench_1_1_cloud_compute_service.html#a5660a127c7e060da16292c9e18ac0320">More...</a><br /></td></tr>
+<tr class="separator:a5660a127c7e060da16292c9e18ac0320 inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36d3e3e184acf4163cfdc52cea8fc1c inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#ab36d3e3e184acf4163cfdc52cea8fc1c">isVMDown</a> (const std::string &amp;vm_name)</td></tr>
 <tr class="memdesc:ab36d3e3e184acf4163cfdc52cea8fc1c inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check whether a VM is currently down.  <a href="classwrench_1_1_cloud_compute_service.html#ab36d3e3e184acf4163cfdc52cea8fc1c">More...</a><br /></td></tr>
 <tr class="separator:ab36d3e3e184acf4163cfdc52cea8fc1c inherit pub_methods_classwrench_1_1_cloud_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,33 +366,6 @@ std::map&lt; std::string, std::pair&lt; std::shared_ptr&lt; S4U_VirtualMachine &
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9e48b3245250f3cdb338e69757dff94f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e48b3245250f3cdb338e69757dff94f">&#9670;&nbsp;</a></span>getVMPhysicalHostname()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string wrench::VirtualizedClusterComputeService::getVMPhysicalHostname </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>vm_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the name of the physical host on which a VM is running. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vm_name</td><td>virtual machine name </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>physical host name </dd></dl>
-
-</div>
-</div>
 <a id="a72e07f4185465a44f2e021fcd3a71c5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72e07f4185465a44f2e021fcd3a71c5a">&#9670;&nbsp;</a></span>migrateVM()</h2>
 
