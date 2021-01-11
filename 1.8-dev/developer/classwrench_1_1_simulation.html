@@ -220,9 +220,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e8d5b963d2278c79b49a0ed7db2b933"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a5e8d5b963d2278c79b49a0ed7db2b933">getNumberofPstates</a> (const std::string &amp;hostname)</td></tr>
 <tr class="memdesc:a5e8d5b963d2278c79b49a0ed7db2b933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of power states of a host.  <a href="classwrench_1_1_simulation.html#a5e8d5b963d2278c79b49a0ed7db2b933">More...</a><br /></td></tr>
 <tr class="separator:a5e8d5b963d2278c79b49a0ed7db2b933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a9cbb690a37f2366f7584b4266d1ee"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a85a9cbb690a37f2366f7584b4266d1ee">getRoute</a> (std::string src_host, std::string dst_host)</td></tr>
-<tr class="memdesc:a85a9cbb690a37f2366f7584b4266d1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of link names on the route between two hosts.  <a href="classwrench_1_1_simulation.html#a85a9cbb690a37f2366f7584b4266d1ee">More...</a><br /></td></tr>
-<tr class="separator:a85a9cbb690a37f2366f7584b4266d1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f599176d2a71d6fd735f0d4084b607d"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a4f599176d2a71d6fd735f0d4084b607d">getRoute</a> (std::string &amp;src_host, std::string &amp;dst_host)</td></tr>
+<tr class="memdesc:a4f599176d2a71d6fd735f0d4084b607d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of link names on the route between two hosts.  <a href="classwrench_1_1_simulation.html#a4f599176d2a71d6fd735f0d4084b607d">More...</a><br /></td></tr>
+<tr class="separator:a4f599176d2a71d6fd735f0d4084b607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea87ea367873efdb53478945b880fc72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#aea87ea367873efdb53478945b880fc72">isHostOn</a> (std::string hostname)</td></tr>
 <tr class="memdesc:aea87ea367873efdb53478945b880fc72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a host is on or not.  <a href="classwrench_1_1_simulation.html#aea87ea367873efdb53478945b880fc72">More...</a><br /></td></tr>
 <tr class="separator:aea87ea367873efdb53478945b880fc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -993,8 +993,8 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
-<a id="a85a9cbb690a37f2366f7584b4266d1ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85a9cbb690a37f2366f7584b4266d1ee">&#9670;&nbsp;</a></span>getRoute()</h2>
+<a id="a4f599176d2a71d6fd735f0d4084b607d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f599176d2a71d6fd735f0d4084b607d">&#9670;&nbsp;</a></span>getRoute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1005,13 +1005,13 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
         <tr>
           <td class="memname">std::vector&lt; std::string &gt; wrench::Simulation::getRoute </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
           <td class="paramname"><em>src_host</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
           <td class="paramname"><em>dst_host</em>&#160;</td>
         </tr>
         <tr>

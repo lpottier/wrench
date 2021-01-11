@@ -162,7 +162,7 @@ var searchData=
   ['getrequestedtime_436',['getRequestedTime',['../classwrench_1_1_batch_job.html#a042b20122d8b9d77b3e3a1a0dadf4a51',1,'wrench::BatchJob']]],
   ['getresourcesallocated_437',['getResourcesAllocated',['../classwrench_1_1_batch_job.html#a22557f2dea0008e1f985b4a373868490',1,'wrench::BatchJob']]],
   ['getreturnvalue_438',['getReturnValue',['../classwrench_1_1_s4_u___daemon.html#ae57da908ef8ab32db453dffe291af05d',1,'wrench::S4U_Daemon']]],
-  ['getroute_439',['getRoute',['../classwrench_1_1_s4_u___simulation.html#a9014da7ce55302cafe2cbef8117ff239',1,'wrench::S4U_Simulation::getRoute()'],['../classwrench_1_1_simulation.html#a85a9cbb690a37f2366f7584b4266d1ee',1,'wrench::Simulation::getRoute()']]],
+  ['getroute_439',['getRoute',['../classwrench_1_1_s4_u___simulation.html#a7d052eb6cd62512369464146a09679b8',1,'wrench::S4U_Simulation::getRoute()'],['../classwrench_1_1_simulation.html#a4f599176d2a71d6fd735f0d4084b607d',1,'wrench::Simulation::getRoute()']]],
   ['getrunningpilotjobs_440',['getRunningPilotJobs',['../classwrench_1_1_job_manager.html#a12869fad01d1ba3e7bf0ee6b4c753315',1,'wrench::JobManager']]],
   ['getscratch_441',['getScratch',['../classwrench_1_1_compute_service.html#af63a7c769c5d617e9eb5e649741e00c2',1,'wrench::ComputeService']]],
   ['getscratchsharedptr_442',['getScratchSharedPtr',['../classwrench_1_1_compute_service.html#a6532846cd02094b6095341d37d5b2bf7',1,'wrench::ComputeService']]],
