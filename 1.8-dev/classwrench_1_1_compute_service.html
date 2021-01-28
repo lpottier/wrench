@@ -961,7 +961,7 @@ a pointer to the shared scratch space </dd></dl>
   <table class="params">
     <tr><td class="paramname">job</td><td>the job </td></tr>
     <tr><td class="paramname">service_specific_args</td><td>arguments specific to compute services when needed:<ul>
-<li>to a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a>: {}<ul>
+<li>to a bare_metal: {}<ul>
 <li>If no entry is provided for a taskID, the service will pick on which host and with how many cores to run the task</li>
 <li>If a number of cores is provided (e.g., {"task1", "12"}), the service will pick the host on which to run the task</li>
 <li>If a hostname and a number of cores is provided (e.g., {"task1", "host1:12"}, the service will run the task on that host with the specified number of cores</li>

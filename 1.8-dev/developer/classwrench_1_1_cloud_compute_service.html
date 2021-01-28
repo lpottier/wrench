@@ -127,10 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad4a6ef48539aaa658dd5942188db2b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_cloud_compute_service.html#ad4a6ef48539aaa658dd5942188db2b48">More...</a><br /></td></tr>
 <tr class="separator:ad4a6ef48539aaa658dd5942188db2b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b81ccd09bbaa0c48351c13cf116e3e"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#a12b81ccd09bbaa0c48351c13cf116e3e">createVM</a> (unsigned long num_cores, double ram_memory, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
-<tr class="memdesc:a12b81ccd09bbaa0c48351c13cf116e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> VM (balances load on execution hosts)  <a href="classwrench_1_1_cloud_compute_service.html#a12b81ccd09bbaa0c48351c13cf116e3e">More...</a><br /></td></tr>
+<tr class="memdesc:a12b81ccd09bbaa0c48351c13cf116e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a bare_metal VM (balances load on execution hosts)  <a href="classwrench_1_1_cloud_compute_service.html#a12b81ccd09bbaa0c48351c13cf116e3e">More...</a><br /></td></tr>
 <tr class="separator:a12b81ccd09bbaa0c48351c13cf116e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532d53afc282c73425d4928c104f2763"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#a532d53afc282c73425d4928c104f2763">createVM</a> (unsigned long num_cores, double ram_memory, std::string desired_vm_name, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
-<tr class="memdesc:a532d53afc282c73425d4928c104f2763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> VM (balances load on execution hosts)  <a href="classwrench_1_1_cloud_compute_service.html#a532d53afc282c73425d4928c104f2763">More...</a><br /></td></tr>
+<tr class="memdesc:a532d53afc282c73425d4928c104f2763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a bare_metal VM (balances load on execution hosts)  <a href="classwrench_1_1_cloud_compute_service.html#a532d53afc282c73425d4928c104f2763">More...</a><br /></td></tr>
 <tr class="separator:a532d53afc282c73425d4928c104f2763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8778343de392ce6f1ec1f1d9b52183be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#a8778343de392ce6f1ec1f1d9b52183be">destroyVM</a> (const std::string &amp;vm_name)</td></tr>
 <tr class="memdesc:a8778343de392ce6f1ec1f1d9b52183be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a VM.  <a href="classwrench_1_1_cloud_compute_service.html#a8778343de392ce6f1ec1f1d9b52183be">More...</a><br /></td></tr>
@@ -402,13 +402,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> VM (balances load on execution hosts) </p>
+<p>Create a bare_metal VM (balances load on execution hosts) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_cores</td><td>the number of cores for the VM </td></tr>
     <tr><td class="paramname">ram_memory</td><td>the VM's RAM memory_manager_service capacity </td></tr>
-    <tr><td class="paramname">property_list</td><td>a property list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults")</td></tr>
+    <tr><td class="paramname">property_list</td><td>a property list for the bare_metal that will run on the VM ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">messagepayload_list</td><td>a message payload list for the bare_metal that will run on the VM ({} means "use all defaults")</td></tr>
   </table>
   </dd>
 </dl>
@@ -475,14 +475,14 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> VM (balances load on execution hosts) </p>
+<p>Create a bare_metal VM (balances load on execution hosts) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_cores</td><td>the number of cores for the VM </td></tr>
     <tr><td class="paramname">ram_memory</td><td>the VM's RAM memory_manager_service capacity </td></tr>
     <tr><td class="paramname">desired_vm_name</td><td>the VM's desired name ("" means "pick a name for me") </td></tr>
-    <tr><td class="paramname">property_list</td><td>a property list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults")</td></tr>
+    <tr><td class="paramname">property_list</td><td>a property list for the bare_metal that will run on the VM ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">messagepayload_list</td><td>a message payload list for the bare_metal that will run on the VM ({} means "use all defaults")</td></tr>
   </table>
   </dd>
 </dl>
@@ -595,7 +595,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that runs on the VM, or nullptr if none</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A bare_metal that runs on the VM, or nullptr if none</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
@@ -884,7 +884,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that runs on the VM</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A bare_metal that runs on the VM</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>

@@ -147,7 +147,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:afca2bfcf57aea07bc06311b1b1f79052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803c6dbf80c3cb31479ebab3ac06f8b0"><td class="memItemLeft" align="right" valign="top"><a id="a803c6dbf80c3cb31479ebab3ac06f8b0"></a>
 std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service_create_v_m_request_message.html#a803c6dbf80c3cb31479ebab3ac06f8b0">messagepayload_list</a></td></tr>
-<tr class="memdesc:a803c6dbf80c3cb31479ebab3ac06f8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message payload list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults") <br /></td></tr>
+<tr class="memdesc:a803c6dbf80c3cb31479ebab3ac06f8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message payload list for the bare_metal that will run on the VM ({} means "use all defaults") <br /></td></tr>
 <tr class="separator:a803c6dbf80c3cb31479ebab3ac06f8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade81c0d7622603ac53f642757d769f9d"><td class="memItemLeft" align="right" valign="top"><a id="ade81c0d7622603ac53f642757d769f9d"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service_create_v_m_request_message.html#ade81c0d7622603ac53f642757d769f9d">num_cores</a></td></tr>
@@ -155,7 +155,7 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="separator:ade81c0d7622603ac53f642757d769f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13a532ead863a9e75e2ed490d071f721"><td class="memItemLeft" align="right" valign="top"><a id="a13a532ead863a9e75e2ed490d071f721"></a>
 std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service_create_v_m_request_message.html#a13a532ead863a9e75e2ed490d071f721">property_list</a></td></tr>
-<tr class="memdesc:a13a532ead863a9e75e2ed490d071f721"><td class="mdescLeft">&#160;</td><td class="mdescRight">A property list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults") <br /></td></tr>
+<tr class="memdesc:a13a532ead863a9e75e2ed490d071f721"><td class="mdescLeft">&#160;</td><td class="mdescRight">A property list for the bare_metal that will run on the VM ({} means "use all defaults") <br /></td></tr>
 <tr class="separator:a13a532ead863a9e75e2ed490d071f721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ae6dbd5b8d4bedf23ffd8834c63bd3"><td class="memItemLeft" align="right" valign="top"><a id="a87ae6dbd5b8d4bedf23ffd8834c63bd3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service_create_v_m_request_message.html#a87ae6dbd5b8d4bedf23ffd8834c63bd3">ram_memory</a></td></tr>
@@ -252,8 +252,8 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">num_cores</td><td>the number of cores the service can use (use <a class="el" href="classwrench_1_1_compute_service.html#a1160f521623440ad4e0e0823e08a7d22" title="A convenient constant to mean &quot;use all cores of a physical host&quot; whenever a number of cores is needed...">ComputeService::ALL_CORES</a> to use all cores available on the host) </td></tr>
     <tr><td class="paramname">ram_memory</td><td>the VM's RAM memory_manager_service capacity (use <a class="el" href="classwrench_1_1_compute_service.html#abc4fe0bad59f544b4b34d0e7d4012d44" title="A convenient constant to mean &quot;use all ram of a physical host&quot; whenever a ram capacity is needed when...">ComputeService::ALL_RAM</a> to use all RAM available on the host, this can be lead to an out of memory_manager_service issue) </td></tr>
     <tr><td class="paramname">desired_vm_name</td><td>the desired VM name ("" means "pick a name for me") </td></tr>
-    <tr><td class="paramname">property_list</td><td>a property list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list for the <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> that will run on the VM ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">property_list</td><td>a property list for the bare_metal that will run on the VM ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">messagepayload_list</td><td>a message payload list for the bare_metal that will run on the VM ({} means "use all defaults") </td></tr>
     <tr><td class="paramname">payload</td><td>the message size in bytes</td></tr>
   </table>
   </dd>
