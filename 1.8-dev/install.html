@@ -116,7 +116,7 @@ Required Dependencies</h2>
 <h2><a class="anchor" id="install-prerequisites-opt-dependencies"></a>
 Optional Dependencies</h2>
 <ul>
-<li><a href="https://github.com/google/googletest">Google Test</a> &ndash; version 1.8 or higher (only required for running test cases)</li>
+<li><a href="https://github.com/google/googletest">Google Test</a> &ndash; version 1.8 or higher (only required for running tests)</li>
 <li><a href="http://www.doxygen.org">Doxygen</a> &ndash; version 1.8 or higher (only required for generating documentation)</li>
 <li><a href="https://gitlab.inria.fr/batsim/batsched">Batsched</a> &ndash; only needed for realistic simulation of compute resources managed by production batch schedulers</li>
 </ul>
@@ -124,7 +124,7 @@ Optional Dependencies</h2>
 Source Install</h1>
 <h2><a class="anchor" id="install-source-build"></a>
 Building WRENCH</h2>
-<p>You can download the <em>@WRENCHRelease.tar.gz</em> archive from the <a href="https://github.com/wrench-project/wrench/releases">GitHub releases</a> page and install it as follows:</p>
+<p>You can download the <em>@WRENCHRelease.tar.gz</em> archive from the <a href="https://github.com/wrench-project/wrench/releases">GitHub releases</a> page. Once you have installed dependencies (see above), you can install WRENCH as follows:</p>
 <div class="fragment"><div class="line">tar xf wrench-1.8-dev.tar.gz</div>
 <div class="line">cd wrench-1.8-dev</div>
 <div class="line">cmake .</div>
@@ -142,7 +142,7 @@ Compiling and running unit tests</h2>
 <div class="line">./unit_tests</div>
 </div><!-- fragment --><h2><a class="anchor" id="install-troubleshooting"></a>
 Installation Troubleshooting</h2>
-<h5><code>Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE)</code></h5>
+<h4>Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE)</h4>
 <ul>
 <li>This error on MacOS is because the <code>pkg-config</code> package is not installed</li>
 <li>Solution: install this package<ul>
@@ -150,6 +150,11 @@ Installation Troubleshooting</h2>
 <li>Brew: <code>sudo brew install pkg-config</code></li>
 </ul>
 </li>
+</ul>
+<h4>Could not find libgfortran when building the SimGrid dependency</h4>
+<ul>
+<li>This is an error that sometimes occurs on MacOS</li>
+<li>A quick fix is to disable the SMPI feature of SimGrid when configuring it: <code>cmake -Denable_smpi=off .</code></li>
 </ul>
 <h1><a class="anchor" id="install-docker"></a>
 Docker Containers</h1>
