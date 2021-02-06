@@ -157,5 +157,7 @@ var searchData=
   ['getvmphysicalhostname_288',['getVMPhysicalHostname',['../classwrench_1_1_cloud_compute_service.html#a5660a127c7e060da16292c9e18ac0320',1,'wrench::CloudComputeService']]],
   ['getworkflow_289',['getWorkflow',['../classwrench_1_1_w_m_s.html#a44b586fe5f584755375691a12d815aa3',1,'wrench::WMS::getWorkflow()'],['../classwrench_1_1_workflow_file.html#ac8c018abfade90cb0594c812ec5e5eaf',1,'wrench::WorkflowFile::getWorkflow()'],['../classwrench_1_1_workflow_task.html#aea29ebd47e1e3a1b955fafc0e72dff50',1,'wrench::WorkflowTask::getWorkflow()']]],
   ['getwriteoutputenddate_290',['getWriteOutputEndDate',['../classwrench_1_1_workflow_task.html#aa9a538645c4946f7a257d66a80d45401',1,'wrench::WorkflowTask']]],
-  ['getwriteoutputstartdate_291',['getWriteOutputStartDate',['../classwrench_1_1_workflow_task.html#a2905c939f467778439fea8a956b0381b',1,'wrench::WorkflowTask']]]
+  ['getwriteoutputstartdate_291',['getWriteOutputStartDate',['../classwrench_1_1_workflow_task.html#a2905c939f467778439fea8a956b0381b',1,'wrench::WorkflowTask']]],
+  ['grid_5fpost_5fexecution_5fdelay_292',['GRID_POST_EXECUTION_DELAY',['../classwrench_1_1_batch_compute_service_property.html#a855fa059970bb2736c65d29eac7f90cb',1,'wrench::BatchComputeServiceProperty']]],
+  ['grid_5fpre_5fexecution_5fdelay_293',['GRID_PRE_EXECUTION_DELAY',['../classwrench_1_1_batch_compute_service_property.html#a4d90e181e9b4652810caf854c6ca3239',1,'wrench::BatchComputeServiceProperty']]]
 ];

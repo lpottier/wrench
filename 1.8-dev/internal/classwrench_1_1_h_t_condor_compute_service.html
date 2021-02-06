@@ -122,9 +122,9 @@ Inheritance diagram for wrench::HTCondorComputeService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a687adceda91ce8241cf81245172eb56a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a687adceda91ce8241cf81245172eb56a">HTCondorComputeService</a> (const std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, const std::string &amp;pool_name, std::set&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> * &gt; compute_resources, std::map&lt; std::string, std::string &gt; <a class="el" href="classwrench_1_1_service.html#a032143b1e2d7296dde9b4ca1e34845ce">property_list</a>={}, std::map&lt; std::string, double &gt; <a class="el" href="classwrench_1_1_service.html#a0c5f5e448ffb18f17f70a34b376b6640">messagepayload_list</a>={})</td></tr>
-<tr class="memdesc:a687adceda91ce8241cf81245172eb56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a687adceda91ce8241cf81245172eb56a">More...</a><br /></td></tr>
-<tr class="separator:a687adceda91ce8241cf81245172eb56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd9fd0584e743729732933503f5a429"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a3bd9fd0584e743729732933503f5a429">HTCondorComputeService</a> (const std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, const std::string &amp;pool_name, std::set&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> * &gt; compute_resources, std::map&lt; std::string, std::string &gt; <a class="el" href="classwrench_1_1_service.html#a032143b1e2d7296dde9b4ca1e34845ce">property_list</a>={}, std::map&lt; std::string, double &gt; <a class="el" href="classwrench_1_1_service.html#a0c5f5e448ffb18f17f70a34b376b6640">messagepayload_list</a>={}, <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> *grid_universe_batch_service=nullptr)</td></tr>
+<tr class="memdesc:a3bd9fd0584e743729732933503f5a429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a3bd9fd0584e743729732933503f5a429">More...</a><br /></td></tr>
+<tr class="separator:a3bd9fd0584e743729732933503f5a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8725e8b620e5341d8dba31e21b53b84e"><td class="memItemLeft" align="right" valign="top"><a id="a8725e8b620e5341d8dba31e21b53b84e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a8725e8b620e5341d8dba31e21b53b84e">~HTCondorComputeService</a> () override</td></tr>
 <tr class="memdesc:a8725e8b620e5341d8dba31e21b53b84e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad19a1b6127d2b011ffeab6e90b35d724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#ad19a1b6127d2b011ffeab6e90b35d724">submitStandardJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> &gt; job, const std::map&lt; std::string, std::string &gt; &amp;service_specific_arguments) override</td></tr>
 <tr class="memdesc:ad19a1b6127d2b011ffeab6e90b35d724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a standard job to the HTCondor service.  <a href="classwrench_1_1_h_t_condor_compute_service.html#ad19a1b6127d2b011ffeab6e90b35d724">More...</a><br /></td></tr>
 <tr class="separator:ad19a1b6127d2b011ffeab6e90b35d724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cbd5d91df27465e276edd3e0d8a245"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a44cbd5d91df27465e276edd3e0d8a245">supportsGridUniverse</a> ()</td></tr>
+<tr class="memdesc:a44cbd5d91df27465e276edd3e0d8a245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether Condor supports Grid Universe for jobs.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a44cbd5d91df27465e276edd3e0d8a245">More...</a><br /></td></tr>
+<tr class="separator:a44cbd5d91df27465e276edd3e0d8a245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79eab174e9164324a3bfa198393dbf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#ad79eab174e9164324a3bfa198393dbf0">terminatePilotJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_pilot_job.html">PilotJob</a> &gt; job) override</td></tr>
 <tr class="memdesc:ad79eab174e9164324a3bfa198393dbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a pilot job to the compute service.  <a href="classwrench_1_1_h_t_condor_compute_service.html#ad79eab174e9164324a3bfa198393dbf0">More...</a><br /></td></tr>
 <tr class="separator:ad79eab174e9164324a3bfa198393dbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,8 +452,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A workload management framework compute service. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a687adceda91ce8241cf81245172eb56a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a687adceda91ce8241cf81245172eb56a">&#9670;&nbsp;</a></span>HTCondorComputeService()</h2>
+<a id="a3bd9fd0584e743729732933503f5a429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd9fd0584e743729732933503f5a429">&#9670;&nbsp;</a></span>HTCondorComputeService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +486,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::map&lt; std::string, double &gt;&#160;</td>
-          <td class="paramname"><em>messagepayload_list</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>messagepayload_list</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> *&#160;</td>
+          <td class="paramname"><em>grid_universe_batch_service</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -500,7 +509,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">pool_name</td><td>HTCondor pool name </td></tr>
     <tr><td class="paramname">compute_resources</td><td>a set of compute resources available via the HTCondor pool </td></tr>
     <tr><td class="paramname">property_list</td><td>a property list ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list ({} means "use all defaults")</td></tr>
+    <tr><td class="paramname">messagepayload_list</td><td>a message payload list ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">grid_universe_batch_service</td><td>batch service for grid universe jobs to be sent. Not used for vanilla or unspecified universe jobs</td></tr>
   </table>
   </dd>
 </dl>
@@ -665,6 +675,26 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 
 <p>Implements <a class="el" href="classwrench_1_1_compute_service.html#a895705b71df229310ea52dc3acb7d77f">wrench::ComputeService</a>.</p>
+
+</div>
+</div>
+<a id="a44cbd5d91df27465e276edd3e0d8a245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44cbd5d91df27465e276edd3e0d8a245">&#9670;&nbsp;</a></span>supportsGridUniverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::HTCondorComputeService::supportsGridUniverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get whether Condor supports Grid Universe for jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
 
 </div>
 </div>
