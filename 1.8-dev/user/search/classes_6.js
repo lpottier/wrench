@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['memorymanager_367',['MemoryManager',['../classwrench_1_1_memory_manager.html',1,'wrench']]]
+  ['networkproximityservice_356',['NetworkProximityService',['../classwrench_1_1_network_proximity_service.html',1,'wrench']]],
+  ['networkproximityservicemessagepayload_357',['NetworkProximityServiceMessagePayload',['../classwrench_1_1_network_proximity_service_message_payload.html',1,'wrench']]],
+  ['networkproximityserviceproperty_358',['NetworkProximityServiceProperty',['../classwrench_1_1_network_proximity_service_property.html',1,'wrench']]]
 ];

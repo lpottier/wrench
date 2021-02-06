@@ -133,9 +133,9 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_homegrown_batch_scheduler.html#abf41c44ea1591591aeb198aac41a6a1d">launch</a> () override</td></tr>
 <tr class="memdesc:abf41c44ea1591591aeb198aac41a6a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch method. <br /></td></tr>
 <tr class="separator:abf41c44ea1591591aeb198aac41a6a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4c492617bb1dbedbf5050a588b026f"><td class="memItemLeft" align="right" valign="top"><a id="a3f4c492617bb1dbedbf5050a588b026f"></a>
-virtual std::map&lt; std::string, std::tuple&lt; unsigned long, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scheduleOnHosts</b> (unsigned long, unsigned long, double)=0</td></tr>
-<tr class="separator:a3f4c492617bb1dbedbf5050a588b026f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb8e0fb68c6f563db59d959d50c9d1b"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, std::tuple&lt; unsigned long, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_homegrown_batch_scheduler.html#aabb8e0fb68c6f563db59d959d50c9d1b">scheduleOnHosts</a> (unsigned long num_nodes, unsigned long cores_per_node, double ram_per_node)=0</td></tr>
+<tr class="memdesc:aabb8e0fb68c6f563db59d959d50c9d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method to figure out on which actual resources a job could be scheduled right now.  <a href="classwrench_1_1_homegrown_batch_scheduler.html#aabb8e0fb68c6f563db59d959d50c9d1b">More...</a><br /></td></tr>
+<tr class="separator:aabb8e0fb68c6f563db59d959d50c9d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad897a8a61fac7ed11e25dad07938b4cf"><td class="memItemLeft" align="right" valign="top"><a id="ad897a8a61fac7ed11e25dad07938b4cf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_homegrown_batch_scheduler.html#ad897a8a61fac7ed11e25dad07938b4cf">shutdown</a> () override</td></tr>
 <tr class="memdesc:ad897a8a61fac7ed11e25dad07938b4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown method. <br /></td></tr>
@@ -241,6 +241,61 @@ Additional Inherited Members</h2></td></tr>
 <p>Virtual methods to override </p>
 
 <p>Implements <a class="el" href="classwrench_1_1_batch_scheduler.html#af2ef2ee3c9c08f04bb1436347f732f3c">wrench::BatchScheduler</a>.</p>
+
+</div>
+</div>
+<a id="aabb8e0fb68c6f563db59d959d50c9d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb8e0fb68c6f563db59d959d50c9d1b">&#9670;&nbsp;</a></span>scheduleOnHosts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::map&lt;std::string, std::tuple&lt;unsigned long, double&gt; &gt; wrench::HomegrownBatchScheduler::scheduleOnHosts </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>num_nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>cores_per_node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ram_per_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method to figure out on which actual resources a job could be scheduled right now. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_nodes</td><td>number of nodes </td></tr>
+    <tr><td class="paramname">cores_per_node</td><td>number of cores per node </td></tr>
+    <tr><td class="paramname">ram_per_node</td><td>amount of RAM </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a host:&lt;core,RAM&gt; map </dd></dl>
+
+<p>Implemented in <a class="el" href="classwrench_1_1_f_c_f_s_batch_scheduler.html#aa430e1cd63f23b5cab8b4f8a54286fa6">wrench::FCFSBatchScheduler</a>, <a class="el" href="classwrench_1_1_c_o_n_s_e_r_v_a_t_i_v_e_b_f_batch_scheduler.html#aaf75f26828fa2e11c7542a20e27e8efd">wrench::CONSERVATIVEBFBatchScheduler</a>, and <a class="el" href="classwrench_1_1_c_o_n_s_e_r_v_a_t_i_v_e_b_f_batch_scheduler_core_level.html#a44a5c4f9338eb7414892c7a214eafcfa">wrench::CONSERVATIVEBFBatchSchedulerCoreLevel</a>.</p>
 
 </div>
 </div>

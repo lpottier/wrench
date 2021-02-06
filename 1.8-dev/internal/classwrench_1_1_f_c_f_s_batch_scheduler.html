@@ -121,8 +121,8 @@ Inheritance diagram for wrench::FCFSBatchScheduler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeff58aa2b21aa12ef01a14acb20d0732"><td class="memItemLeft" align="right" valign="top"><a id="aeff58aa2b21aa12ef01a14acb20d0732"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FCFSBatchScheduler</b> (<a class="el" href="classwrench_1_1_batch_compute_service.html">BatchComputeService</a> *<a class="el" href="classwrench_1_1_batch_scheduler.html#a8d7fc2963b0e9abd58c7b72ead16f6cb">cs</a>)</td></tr>
+<tr class="memitem:aeff58aa2b21aa12ef01a14acb20d0732"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_f_c_f_s_batch_scheduler.html#aeff58aa2b21aa12ef01a14acb20d0732">FCFSBatchScheduler</a> (<a class="el" href="classwrench_1_1_batch_compute_service.html">BatchComputeService</a> *<a class="el" href="classwrench_1_1_batch_scheduler.html#a8d7fc2963b0e9abd58c7b72ead16f6cb">cs</a>)</td></tr>
+<tr class="memdesc:aeff58aa2b21aa12ef01a14acb20d0732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_f_c_f_s_batch_scheduler.html#aeff58aa2b21aa12ef01a14acb20d0732">More...</a><br /></td></tr>
 <tr class="separator:aeff58aa2b21aa12ef01a14acb20d0732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1390aca0a32d5de3dd8862a6f6390460"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_f_c_f_s_batch_scheduler.html#a1390aca0a32d5de3dd8862a6f6390460">getStartTimeEstimates</a> (std::set&lt; std::tuple&lt; std::string, unsigned long, unsigned long, double &gt;&gt; set_of_jobs) override</td></tr>
 <tr class="memdesc:a1390aca0a32d5de3dd8862a6f6390460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get start time estimates.  <a href="classwrench_1_1_f_c_f_s_batch_scheduler.html#a1390aca0a32d5de3dd8862a6f6390460">More...</a><br /></td></tr>
@@ -183,7 +183,42 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that implements a FCFS batch scheduler. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aeff58aa2b21aa12ef01a14acb20d0732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff58aa2b21aa12ef01a14acb20d0732">&#9670;&nbsp;</a></span>FCFSBatchScheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wrench::FCFSBatchScheduler::FCFSBatchScheduler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwrench_1_1_batch_compute_service.html">BatchComputeService</a> *&#160;</td>
+          <td class="paramname"><em>cs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td>the batch compute service for which this scheduler is operating </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1390aca0a32d5de3dd8862a6f6390460"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1390aca0a32d5de3dd8862a6f6390460">&#9670;&nbsp;</a></span>getStartTimeEstimates()</h2>
 
@@ -436,7 +471,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A resource list </dd></dl>
 
-<p>Implements <a class="el" href="classwrench_1_1_homegrown_batch_scheduler.html">wrench::HomegrownBatchScheduler</a>.</p>
+<p>Implements <a class="el" href="classwrench_1_1_homegrown_batch_scheduler.html#aabb8e0fb68c6f563db59d959d50c9d1b">wrench::HomegrownBatchScheduler</a>.</p>
 
 </div>
 </div>

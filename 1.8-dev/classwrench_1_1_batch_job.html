@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#afcf5fc0d1cc1531937a2a4ec91d13919">BatchJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job, unsigned long job_id, unsigned long time_in_minutes, unsigned long number_nodes, unsigned long cores_per_node, std::string username, double ending_time_stamp, double arrival_time_stamp)</td></tr>
 <tr class="memdesc:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_job.html#afcf5fc0d1cc1531937a2a4ec91d13919">More...</a><br /></td></tr>
 <tr class="separator:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af309cf782163dc32c9fb57e353d8fe12"><td class="memItemLeft" align="right" valign="top"><a id="af309cf782163dc32c9fb57e353d8fe12"></a>
-std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllocatedNodeIndices</b> ()</td></tr>
+<tr class="memitem:af309cf782163dc32c9fb57e353d8fe12"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#af309cf782163dc32c9fb57e353d8fe12">getAllocatedNodeIndices</a> ()</td></tr>
+<tr class="memdesc:af309cf782163dc32c9fb57e353d8fe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of allocated nodes.  <a href="classwrench_1_1_batch_job.html#af309cf782163dc32c9fb57e353d8fe12">More...</a><br /></td></tr>
 <tr class="separator:af309cf782163dc32c9fb57e353d8fe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c826d8904363f2f72eb3007012c974d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a2c826d8904363f2f72eb3007012c974d">getArrivalTimestamp</a> ()</td></tr>
 <tr class="memdesc:a2c826d8904363f2f72eb3007012c974d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the arrival time stamp.  <a href="classwrench_1_1_batch_job.html#a2c826d8904363f2f72eb3007012c974d">More...</a><br /></td></tr>
@@ -151,8 +151,8 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>g
 <tr class="memitem:a6cc03795c6c4d27d7685938171bfaaf3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a6cc03795c6c4d27d7685938171bfaaf3">getWorkflowJob</a> ()</td></tr>
 <tr class="memdesc:a6cc03795c6c4d27d7685938171bfaaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow job corresponding to this batch job.  <a href="classwrench_1_1_batch_job.html#a6cc03795c6c4d27d7685938171bfaaf3">More...</a><br /></td></tr>
 <tr class="separator:a6cc03795c6c4d27d7685938171bfaaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memItemLeft" align="right" valign="top"><a id="ab7bccaf60203ea3164bb80e6be7831b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAllocatedNodeIndices</b> (std::vector&lt; int &gt; indices)</td></tr>
+<tr class="memitem:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#ab7bccaf60203ea3164bb80e6be7831b3">setAllocatedNodeIndices</a> (std::vector&lt; int &gt; indices)</td></tr>
+<tr class="memdesc:ab7bccaf60203ea3164bb80e6be7831b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the indices of the allocated nodes.  <a href="classwrench_1_1_batch_job.html#ab7bccaf60203ea3164bb80e6be7831b3">More...</a><br /></td></tr>
 <tr class="separator:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622540aa4a1015e480731953b4111131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a622540aa4a1015e480731953b4111131">setAllocatedResources</a> (std::map&lt; std::string, std::tuple&lt; unsigned long, double &gt;&gt; resources)</td></tr>
 <tr class="memdesc:a622540aa4a1015e480731953b4111131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the resources allocated to this batch job.  <a href="classwrench_1_1_batch_job.html#a622540aa4a1015e480731953b4111131">More...</a><br /></td></tr>
@@ -261,6 +261,34 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af309cf782163dc32c9fb57e353d8fe12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af309cf782163dc32c9fb57e353d8fe12">&#9670;&nbsp;</a></span>getAllocatedNodeIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; wrench::BatchJob::getAllocatedNodeIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the indices of allocated nodes. </p>
+<dl class="section return"><dt>Returns</dt><dd>a list of indices </dd></dl>
+
+</div>
+</div>
 <a id="a2c826d8904363f2f72eb3007012c974d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c826d8904363f2f72eb3007012c974d">&#9670;&nbsp;</a></span>getArrivalTimestamp()</h2>
 
@@ -478,6 +506,40 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Get the workflow job corresponding to this batch job. </p>
 <dl class="section return"><dt>Returns</dt><dd>a workflow job </dd></dl>
+
+</div>
+</div>
+<a id="ab7bccaf60203ea3164bb80e6be7831b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bccaf60203ea3164bb80e6be7831b3">&#9670;&nbsp;</a></span>setAllocatedNodeIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::BatchJob::setAllocatedNodeIndices </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>indices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the indices of the allocated nodes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indices</td><td>a list of indices </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

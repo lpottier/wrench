@@ -7,7 +7,6 @@ var searchData=
   ['enableworkflowtasktimestamps_62',['enableWorkflowTaskTimestamps',['../classwrench_1_1_simulation_output.html#a53017a8582b00f0488dabb8d2a37410d',1,'wrench::SimulationOutput']]],
   ['endpoint_63',['endpoint',['../classwrench_1_1_simulation_timestamp_pair.html#ab0bbbd2bd759db2a86a9f7857c4de2f8',1,'wrench::SimulationTimestampPair']]],
   ['energymeterservice_64',['EnergyMeterService',['../classwrench_1_1_energy_meter_service.html',1,'wrench::EnergyMeterService'],['../classwrench_1_1_energy_meter_service.html#a0f221ab858c7e7ec58796e464f6d090b',1,'wrench::EnergyMeterService::EnergyMeterService(std::string hostname, const std::vector&lt; std::string &gt; &amp;hostnames, double period)'],['../classwrench_1_1_energy_meter_service.html#af0ea09d43795f1fb4f8cf00bcd0e2763',1,'wrench::EnergyMeterService::EnergyMeterService(std::string hostname, const std::map&lt; std::string, double &gt; &amp;measurement_periods)']]],
-  ['evict_65',['evict',['../classwrench_1_1_memory_manager.html#aaa802a6b855b154847fce12eeffa61ce',1,'wrench::MemoryManager']]],
-  ['execution_5fhosts_66',['execution_hosts',['../classwrench_1_1_cloud_compute_service.html#a1030e438ff1c5b044290359aa1291a29',1,'wrench::CloudComputeService']]],
-  ['exporttoeps_67',['exportToEPS',['../classwrench_1_1_workflow.html#a73a5f2898f4fdda4cb38933c2c485b28',1,'wrench::Workflow']]]
+  ['execution_5fhosts_65',['execution_hosts',['../classwrench_1_1_cloud_compute_service.html#a1030e438ff1c5b044290359aa1291a29',1,'wrench::CloudComputeService']]],
+  ['exporttoeps_66',['exportToEPS',['../classwrench_1_1_workflow.html#a73a5f2898f4fdda4cb38933c2c485b28',1,'wrench::Workflow']]]
 ];

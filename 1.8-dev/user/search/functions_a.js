@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['launch_555',['launch',['../classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985',1,'wrench::Simulation']]]
+  ['networkproximityservice_539',['NetworkProximityService',['../classwrench_1_1_network_proximity_service.html#a9b22deb4b19d5a3287c0d5b02b7f4447',1,'wrench::NetworkProximityService']]]
 ];

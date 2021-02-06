@@ -12,7 +12,6 @@ var searchData=
   ['batchcomputeserviceproperty_25',['BatchComputeServiceProperty',['../classwrench_1_1_batch_compute_service_property.html',1,'wrench']]],
   ['batsched_5fcontiguous_5fallocation_26',['BATSCHED_CONTIGUOUS_ALLOCATION',['../classwrench_1_1_batch_compute_service_property.html#aa3d144deb356f416880972388b948178',1,'wrench::BatchComputeServiceProperty']]],
   ['batsched_5flogging_5fmuted_27',['BATSCHED_LOGGING_MUTED',['../classwrench_1_1_batch_compute_service_property.html#ae98de31c14d414bd7ae0ccfb9bf72d37',1,'wrench::BatchComputeServiceProperty']]],
-  ['block_28',['Block',['../classwrench_1_1_block.html',1,'wrench']]],
-  ['buffer_5fsize_29',['BUFFER_SIZE',['../classwrench_1_1_storage_service_property.html#a4a15fb8290bd904973c923a6e7d7ca39',1,'wrench::StorageServiceProperty']]],
-  ['bytes_30',['bytes',['../classwrench_1_1_simulation_timestamp_disk_read.html#a5caf9e27d53fd0dec38c4e858564c01d',1,'wrench::SimulationTimestampDiskRead::bytes()'],['../classwrench_1_1_simulation_timestamp_disk_write.html#ac81c88f13cb3bf027aedd55d64e2d56e',1,'wrench::SimulationTimestampDiskWrite::bytes()']]]
+  ['buffer_5fsize_28',['BUFFER_SIZE',['../classwrench_1_1_storage_service_property.html#a4a15fb8290bd904973c923a6e7d7ca39',1,'wrench::StorageServiceProperty']]],
+  ['bytes_29',['bytes',['../classwrench_1_1_simulation_timestamp_disk_read.html#a5caf9e27d53fd0dec38c4e858564c01d',1,'wrench::SimulationTimestampDiskRead::bytes()'],['../classwrench_1_1_simulation_timestamp_disk_write.html#ac81c88f13cb3bf027aedd55d64e2d56e',1,'wrench::SimulationTimestampDiskWrite::bytes()']]]
 ];

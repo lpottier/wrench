@@ -126,8 +126,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html">BatchComputeServiceProperty</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurable properties for a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>.  <a href="classwrench_1_1_batch_compute_service_property.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_block.html">Block</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html">CloudComputeService</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cloud-based compute service that manages a set of physical hosts and controls access to their resources by (transparently) executing jobs in VM instances.  <a href="classwrench_1_1_cloud_compute_service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,8 +230,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_type_not_supported.html">JobTypeNotSupported</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A "compute service does not support requested job type" failure cause.  <a href="classwrench_1_1_job_type_not_supported.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_network_error.html">NetworkError</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A "network error (or endpoint is down)" failure cause.  <a href="classwrench_1_1_network_error.html#details">More...</a><br /></td></tr>
@@ -463,8 +459,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e53728d5f6dc18195c2686c4f628cbd"><td class="memItemLeft" align="right" valign="top"><a id="a7e53728d5f6dc18195c2686c4f628cbd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>compare_last_access</b> (<a class="el" href="classwrench_1_1_block.html">Block</a> *blk1, <a class="el" href="classwrench_1_1_block.html">Block</a> *blk2)</td></tr>
+<tr class="memitem:a7e53728d5f6dc18195c2686c4f628cbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a7e53728d5f6dc18195c2686c4f628cbd">compare_last_access</a> (Block *blk1, Block *blk2)</td></tr>
+<tr class="memdesc:a7e53728d5f6dc18195c2686c4f628cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to compare block by last access.  <a href="namespacewrench.html#a7e53728d5f6dc18195c2686c4f628cbd">More...</a><br /></td></tr>
 <tr class="separator:a7e53728d5f6dc18195c2686c4f628cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac68554a5edcdb1b4fda24cf84616fd6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#ac68554a5edcdb1b4fda24cf84616fd6b">generateHostUtilizationGraphLayout</a> (std::vector&lt; WorkflowTaskExecutionInstance &gt; &amp;data)</td></tr>
 <tr class="memdesc:ac68554a5edcdb1b4fda24cf84616fd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates graph layout for host utilization and adds that information to the JSON object.  <a href="namespacewrench.html#ac68554a5edcdb1b4fda24cf84616fd6b">More...</a><br /></td></tr>
@@ -511,6 +507,44 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>compare_last_access</
 <p>Copyright (c) 2020. The WRENCH Team.</p>
 <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7e53728d5f6dc18195c2686c4f628cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e53728d5f6dc18195c2686c4f628cbd">&#9670;&nbsp;</a></span>compare_last_access()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::compare_last_access </td>
+          <td>(</td>
+          <td class="paramtype">Block *&#160;</td>
+          <td class="paramname"><em>blk1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Block *&#160;</td>
+          <td class="paramname"><em>blk2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to compare block by last access. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blk1</td><td>: a block </td></tr>
+    <tr><td class="paramname">blk2</td><td>: another block </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if blk1 was accessed before blk2, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="ac68554a5edcdb1b4fda24cf84616fd6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac68554a5edcdb1b4fda24cf84616fd6b">&#9670;&nbsp;</a></span>generateHostUtilizationGraphLayout()</h2>
 

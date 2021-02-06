@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['use_5freal_5fruntimes_5fas_5frequested_5fruntimes_5fin_5fworkload_5ftrace_5ffile_323',['USE_REAL_RUNTIMES_AS_REQUESTED_RUNTIMES_IN_WORKLOAD_TRACE_FILE',['../classwrench_1_1_batch_compute_service_property.html#ab23395cb693747a3766ce80f78c5c6a4',1,'wrench::BatchComputeServiceProperty']]],
-  ['used_5fcores_5fper_5fexecution_5fhost_324',['used_cores_per_execution_host',['../classwrench_1_1_cloud_compute_service.html#ae07945be3083be37f20aac82fda69ff5',1,'wrench::CloudComputeService']]],
-  ['used_5fram_5fper_5fexecution_5fhost_325',['used_ram_per_execution_host',['../classwrench_1_1_cloud_compute_service.html#a4496fc0357c0dd8886a3a1a87c2d06a3',1,'wrench::CloudComputeService']]]
+  ['virtualizedclustercomputeservice_317',['VirtualizedClusterComputeService',['../classwrench_1_1_virtualized_cluster_compute_service.html',1,'wrench::VirtualizedClusterComputeService'],['../classwrench_1_1_virtualized_cluster_compute_service.html#a40a78b7e0efc2fc8bdd40196cb380b49',1,'wrench::VirtualizedClusterComputeService::VirtualizedClusterComputeService()']]],
+  ['virtualizedclustercomputeservicemessagepayload_318',['VirtualizedClusterComputeServiceMessagePayload',['../classwrench_1_1_virtualized_cluster_compute_service_message_payload.html',1,'wrench']]],
+  ['virtualizedclustercomputeserviceproperty_319',['VirtualizedClusterComputeServiceProperty',['../classwrench_1_1_virtualized_cluster_compute_service_property.html',1,'wrench']]],
+  ['vm_5fboot_5foverhead_5fin_5fseconds_320',['VM_BOOT_OVERHEAD_IN_SECONDS',['../classwrench_1_1_cloud_compute_service_property.html#abe4ada614f43f5d8cc5cfbbeaaaa21f0',1,'wrench::CloudComputeServiceProperty']]],
+  ['vm_5flist_321',['vm_list',['../classwrench_1_1_cloud_compute_service.html#a9cc6528d46f1f65b249ed16452f1e587',1,'wrench::CloudComputeService']]],
+  ['vm_5fresource_5fallocation_5falgorithm_322',['VM_RESOURCE_ALLOCATION_ALGORITHM',['../classwrench_1_1_cloud_compute_service_property.html#afb10f34e1cf1714393bd451e52de926c',1,'wrench::CloudComputeServiceProperty']]]
 ];

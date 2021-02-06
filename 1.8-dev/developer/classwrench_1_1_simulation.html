@@ -136,9 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5793ec3ecd2975ddfa86ba29143d032"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ab5793ec3ecd2975ddfa86ba29143d032">getEnergyConsumed</a> (const std::vector&lt; std::string &gt; &amp;hostnames, bool record_as_time_stamps)</td></tr>
 <tr class="memdesc:ab5793ec3ecd2975ddfa86ba29143d032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the current energy consumption of a host and will add <a class="el" href="classwrench_1_1_simulation_timestamp_energy_consumption.html" title="A simulation timestamp class for energy consumption.">SimulationTimestampEnergyConsumption</a> to simulation output if can_record is set to true.  <a href="classwrench_1_1_simulation.html#ab5793ec3ecd2975ddfa86ba29143d032">More...</a><br /></td></tr>
 <tr class="separator:ab5793ec3ecd2975ddfa86ba29143d032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8089146d03fa483914ff235f3706f73d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a8089146d03fa483914ff235f3706f73d">getLinkUsage</a> (const std::string &amp;linkname, bool record_as_time_stamp)</td></tr>
-<tr class="memdesc:a8089146d03fa483914ff235f3706f73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current usage of a particular link.  <a href="classwrench_1_1_simulation.html#a8089146d03fa483914ff235f3706f73d">More...</a><br /></td></tr>
-<tr class="separator:a8089146d03fa483914ff235f3706f73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647a151eb076a622fe7dcc12375b5210"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a647a151eb076a622fe7dcc12375b5210">getLinkUsage</a> (const std::string &amp;link_name, bool record_as_time_stamp)</td></tr>
+<tr class="memdesc:a647a151eb076a622fe7dcc12375b5210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current usage of a particular link.  <a href="classwrench_1_1_simulation.html#a647a151eb076a622fe7dcc12375b5210">More...</a><br /></td></tr>
+<tr class="separator:a647a151eb076a622fe7dcc12375b5210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff0338aa6831c6ac252cf0673fe68f44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_simulation_output.html">SimulationOutput</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#aff0338aa6831c6ac252cf0673fe68f44">getOutput</a> ()</td></tr>
 <tr class="memdesc:aff0338aa6831c6ac252cf0673fe68f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the simulation output object.  <a href="classwrench_1_1_simulation.html#aff0338aa6831c6ac252cf0673fe68f44">More...</a><br /></td></tr>
 <tr class="separator:aff0338aa6831c6ac252cf0673fe68f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5aee9b87344fb0002d5cd78f2329b16e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a5aee9b87344fb0002d5cd78f2329b16e">startNewService</a> (<a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> *service)</td></tr>
 <tr class="memdesc:a5aee9b87344fb0002d5cd78f2329b16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new file registry service during <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor.  <a href="classwrench_1_1_simulation.html#a5aee9b87344fb0002d5cd78f2329b16e">More...</a><br /></td></tr>
 <tr class="separator:a5aee9b87344fb0002d5cd78f2329b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab78cba89cf5009f501cb9f7e23897a8b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ab78cba89cf5009f501cb9f7e23897a8b">startNewService</a> (<a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> *service)</td></tr>
+<tr class="memitem:ab78cba89cf5009f501cb9f7e23897a8b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; MemoryManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ab78cba89cf5009f501cb9f7e23897a8b">startNewService</a> (MemoryManager *service)</td></tr>
 <tr class="memdesc:ab78cba89cf5009f501cb9f7e23897a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new memory_manager_service manager service during execution (i.e., one that was not passed to <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91" title="Method to add a service to the simulation.">Simulation::add()</a> before <a class="el" href="classwrench_1_1_simulation.html#ae9589632de9a2311ed1d7f7747478985" title="Launch the simulation.">Simulation::launch()</a> was called). The simulation takes ownership of the reference and will call the destructor.  <a href="classwrench_1_1_simulation.html#ab78cba89cf5009f501cb9f7e23897a8b">More...</a><br /></td></tr>
 <tr class="separator:ab78cba89cf5009f501cb9f7e23897a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b270d41349ae13ea02eb68a519dc2bd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_network_proximity_service.html">NetworkProximityService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a3b270d41349ae13ea02eb68a519dc2bd">startNewService</a> (<a class="el" href="classwrench_1_1_network_proximity_service.html">NetworkProximityService</a> *service)</td></tr>
@@ -734,7 +734,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Get the list of names of all the hosts in each cluster composing the platform. </p>
-<p>Retrieve <a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> by hostname </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieve MemoryManager by hostname </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td></td></tr>
   </table>
@@ -781,8 +781,8 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
-<a id="a8089146d03fa483914ff235f3706f73d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8089146d03fa483914ff235f3706f73d">&#9670;&nbsp;</a></span>getLinkUsage()</h2>
+<a id="a647a151eb076a622fe7dcc12375b5210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a647a151eb076a622fe7dcc12375b5210">&#9670;&nbsp;</a></span>getLinkUsage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -791,7 +791,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
           <td class="memname">double wrench::Simulation::getLinkUsage </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>linkname</em>, </td>
+          <td class="paramname"><em>link_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -818,7 +818,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a bandwidth usage</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">linkname</td><td>the link name </td></tr>
+    <tr><td class="paramname">link_name</td><td>the link name </td></tr>
     <tr><td class="paramname">record_as_time_stamp</td><td>bool signaling whether or not to record a <a class="el" href="classwrench_1_1_simulation_timestamp_link_usage.html" title="A simulation timestamp class for link usage.">SimulationTimestampLinkUsage</a> object </td></tr>
   </table>
   </dd>
@@ -1450,9 +1450,9 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> &gt; wrench::Simulation::startNewService </td>
+          <td class="memname">std::shared_ptr&lt; MemoryManager &gt; wrench::Simulation::startNewService </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_memory_manager.html">MemoryManager</a> *&#160;</td>
+          <td class="paramtype">MemoryManager *&#160;</td>
           <td class="paramname"><em>service</em></td><td>)</td>
           <td></td>
         </tr>

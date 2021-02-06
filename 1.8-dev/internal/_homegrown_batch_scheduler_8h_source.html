@@ -124,20 +124,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classwrench_1_1_homegrown_batch_scheduler.html#ad897a8a61fac7ed11e25dad07938b4cf">   40</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classwrench_1_1_homegrown_batch_scheduler.html#ad897a8a61fac7ed11e25dad07938b4cf">shutdown</a>()<span class="keyword"> override </span>{};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> std::map&lt;std::string, std::tuple&lt;unsigned long, double&gt;&gt; scheduleOnHosts(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>, <span class="keywordtype">double</span>) = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/***********************/</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/***********************/</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> std::map&lt;std::string, std::tuple&lt;unsigned long, double&gt;&gt; <a class="code" href="classwrench_1_1_homegrown_batch_scheduler.html#aabb8e0fb68c6f563db59d959d50c9d1b">scheduleOnHosts</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_nodes, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cores_per_node, <span class="keywordtype">double</span> ram_per_node) = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif //WRENCH_HOMEGROWNBATCHSCHEDULER_H</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/***********************/</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/***********************/</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif //WRENCH_HOMEGROWNBATCHSCHEDULER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_batch_scheduler_html_a8d7fc2963b0e9abd58c7b72ead16f6cb"><div class="ttname"><a href="classwrench_1_1_batch_scheduler.html#a8d7fc2963b0e9abd58c7b72ead16f6cb">wrench::BatchScheduler::cs</a></div><div class="ttdeci">BatchComputeService * cs</div><div class="ttdoc">Compute service for which this scheduler is operating.</div><div class="ttdef"><b>Definition:</b> BatchScheduler.h:106</div></div>
 <div class="ttc" id="aclasswrench_1_1_homegrown_batch_scheduler_html_ad897a8a61fac7ed11e25dad07938b4cf"><div class="ttname"><a href="classwrench_1_1_homegrown_batch_scheduler.html#ad897a8a61fac7ed11e25dad07938b4cf">wrench::HomegrownBatchScheduler::shutdown</a></div><div class="ttdeci">void shutdown() override</div><div class="ttdoc">Shutdown method.</div><div class="ttdef"><b>Definition:</b> HomegrownBatchScheduler.h:40</div></div>
+<div class="ttc" id="aclasswrench_1_1_homegrown_batch_scheduler_html_aabb8e0fb68c6f563db59d959d50c9d1b"><div class="ttname"><a href="classwrench_1_1_homegrown_batch_scheduler.html#aabb8e0fb68c6f563db59d959d50c9d1b">wrench::HomegrownBatchScheduler::scheduleOnHosts</a></div><div class="ttdeci">virtual std::map&lt; std::string, std::tuple&lt; unsigned long, double &gt; &gt; scheduleOnHosts(unsigned long num_nodes, unsigned long cores_per_node, double ram_per_node)=0</div><div class="ttdoc">Virtual method to figure out on which actual resources a job could be scheduled right now.</div></div>
 <div class="ttc" id="aclasswrench_1_1_batch_compute_service_html"><div class="ttname"><a href="classwrench_1_1_batch_compute_service.html">wrench::BatchComputeService</a></div><div class="ttdoc">A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...</div><div class="ttdef"><b>Definition:</b> BatchComputeService.h:49</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
 <div class="ttc" id="aclasswrench_1_1_batch_scheduler_html"><div class="ttname"><a href="classwrench_1_1_batch_scheduler.html">wrench::BatchScheduler</a></div><div class="ttdoc">An abstract class that defines a batch scheduler.</div><div class="ttdef"><b>Definition:</b> BatchScheduler.h:27</div></div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['networkproximityservice_556',['NetworkProximityService',['../classwrench_1_1_network_proximity_service.html#a9b22deb4b19d5a3287c0d5b02b7f4447',1,'wrench::NetworkProximityService']]]
+  ['operator_3d_3d_540',['operator==',['../namespacewrench.html#ad0ff2710896f50b3198ed4c9c0441cb4',1,'wrench::operator==(const BatchJobSet &amp;left, const BatchJobSet &amp;right)'],['../namespacewrench.html#ab9b0fb84bec27b5c447c8199cac217ff',1,'wrench::operator==(const BatchJobSetCoreLevel &amp;left, const BatchJobSetCoreLevel &amp;right)']]]
 ];

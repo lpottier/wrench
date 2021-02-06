@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['cloudcomputeservice_31',['CloudComputeService',['../classwrench_1_1_cloud_compute_service.html',1,'wrench::CloudComputeService'],['../classwrench_1_1_cloud_compute_service.html#ad4a6ef48539aaa658dd5942188db2b48',1,'wrench::CloudComputeService::CloudComputeService()']]],
-  ['cloudcomputeservicemessagepayload_32',['CloudComputeServiceMessagePayload',['../classwrench_1_1_cloud_compute_service_message_payload.html',1,'wrench']]],
-  ['cloudcomputeserviceproperty_33',['CloudComputeServiceProperty',['../classwrench_1_1_cloud_compute_service_property.html',1,'wrench']]],
+  ['cloudcomputeservice_30',['CloudComputeService',['../classwrench_1_1_cloud_compute_service.html',1,'wrench::CloudComputeService'],['../classwrench_1_1_cloud_compute_service.html#ad4a6ef48539aaa658dd5942188db2b48',1,'wrench::CloudComputeService::CloudComputeService()']]],
+  ['cloudcomputeservicemessagepayload_31',['CloudComputeServiceMessagePayload',['../classwrench_1_1_cloud_compute_service_message_payload.html',1,'wrench']]],
+  ['cloudcomputeserviceproperty_32',['CloudComputeServiceProperty',['../classwrench_1_1_cloud_compute_service_property.html',1,'wrench']]],
+  ['compare_5flast_5faccess_33',['compare_last_access',['../namespacewrench.html#a7e53728d5f6dc18195c2686c4f628cbd',1,'wrench']]],
   ['computeservice_34',['ComputeService',['../classwrench_1_1_compute_service.html',1,'wrench']]],
   ['computeservicemessagepayload_35',['ComputeServiceMessagePayload',['../classwrench_1_1_compute_service_message_payload.html',1,'wrench']]],
   ['computeserviceproperty_36',['ComputeServiceProperty',['../classwrench_1_1_compute_service_property.html',1,'wrench']]],
