@@ -125,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11544f6fad77b499b63fc809c75d78f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a11544f6fad77b499b63fc809c75d78f4">BatchComputeService</a> (const std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, std::vector&lt; std::string &gt; compute_hosts, std::string scratch_space_mount_point, std::map&lt; std::string, std::string &gt; <a class="el" href="classwrench_1_1_service.html#a032143b1e2d7296dde9b4ca1e34845ce">property_list</a>={}, std::map&lt; std::string, double &gt; <a class="el" href="classwrench_1_1_service.html#a0c5f5e448ffb18f17f70a34b376b6640">messagepayload_list</a>={})</td></tr>
 <tr class="memdesc:a11544f6fad77b499b63fc809c75d78f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_compute_service.html#a11544f6fad77b499b63fc809c75d78f4">More...</a><br /></td></tr>
 <tr class="separator:a11544f6fad77b499b63fc809c75d78f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b518d1b691ecf812f1a1cd5bfbfc3ba"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; std::string, int, int, int, int, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a8b518d1b691ecf812f1a1cd5bfbfc3ba">getQueue</a> ()</td></tr>
-<tr class="memdesc:a8b518d1b691ecf812f1a1cd5bfbfc3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the state of the batch queue.  <a href="classwrench_1_1_batch_compute_service.html#a8b518d1b691ecf812f1a1cd5bfbfc3ba">More...</a><br /></td></tr>
-<tr class="separator:a8b518d1b691ecf812f1a1cd5bfbfc3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59683d049159f4ab2a9d018feeaacc9e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; std::string, std::string, int, int, int, double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a59683d049159f4ab2a9d018feeaacc9e">getQueue</a> ()</td></tr>
+<tr class="memdesc:a59683d049159f4ab2a9d018feeaacc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the state of the batch queue.  <a href="classwrench_1_1_batch_compute_service.html#a59683d049159f4ab2a9d018feeaacc9e">More...</a><br /></td></tr>
+<tr class="separator:a59683d049159f4ab2a9d018feeaacc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aca94e9b53087e8a8adcc0edf1ae589"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a5aca94e9b53087e8a8adcc0edf1ae589">getStartTimeEstimates</a> (std::set&lt; std::tuple&lt; std::string, unsigned long, unsigned long, double &gt;&gt; resources)</td></tr>
 <tr class="memdesc:a5aca94e9b53087e8a8adcc0edf1ae589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve start time estimates for a set of job configurations.  <a href="classwrench_1_1_batch_compute_service.html#a5aca94e9b53087e8a8adcc0edf1ae589">More...</a><br /></td></tr>
 <tr class="separator:a5aca94e9b53087e8a8adcc0edf1ae589"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -495,14 +495,14 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8b518d1b691ecf812f1a1cd5bfbfc3ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b518d1b691ecf812f1a1cd5bfbfc3ba">&#9670;&nbsp;</a></span>getQueue()</h2>
+<a id="a59683d049159f4ab2a9d018feeaacc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59683d049159f4ab2a9d018feeaacc9e">&#9670;&nbsp;</a></span>getQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::tuple&lt; std::string, int, int, int, int, double, double &gt; &gt; wrench::BatchComputeService::getQueue </td>
+          <td class="memname">std::vector&lt; std::tuple&lt; std::string, std::string, int, int, int, double, double &gt; &gt; wrench::BatchComputeService::getQueue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -513,7 +513,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Gets the state of the batch queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>A vector of tuples:<ul>
 <li>std::string: username</li>
-<li>int: job id</li>
+<li>string: job name</li>
 <li>int: num hosts</li>
 <li>int: num cores per host</li>
 <li>int: time in seconds</li>

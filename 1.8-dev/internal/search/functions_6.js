@@ -159,7 +159,7 @@ var searchData=
   ['getpropertyvalueasstring_1648',['getPropertyValueAsString',['../classwrench_1_1_service.html#af7da6bc9cb5d322bfdc6467941f2372f',1,'wrench::Service']]],
   ['getpropertyvalueasunsignedlong_1649',['getPropertyValueAsUnsignedLong',['../classwrench_1_1_service.html#a09e93fb8b57f06dab771ce61b17eaa58',1,'wrench::Service']]],
   ['getpstate_1650',['getPstate',['../classwrench_1_1_simulation_timestamp_pstate_set.html#aa16b326fe7c60ec75ed6468d94183c0d',1,'wrench::SimulationTimestampPstateSet']]],
-  ['getqueue_1651',['getQueue',['../classwrench_1_1_batch_compute_service.html#a8b518d1b691ecf812f1a1cd5bfbfc3ba',1,'wrench::BatchComputeService']]],
+  ['getqueue_1651',['getQueue',['../classwrench_1_1_batch_compute_service.html#a59683d049159f4ab2a9d018feeaacc9e',1,'wrench::BatchComputeService']]],
   ['getreadinputenddate_1652',['getReadInputEndDate',['../classwrench_1_1_workflow_task.html#a15bbd1fca442b459073164b52dcc44b0',1,'wrench::WorkflowTask']]],
   ['getreadinputstartdate_1653',['getReadInputStartDate',['../classwrench_1_1_workflow_task.html#a752f0e9cf1bcab72e41de185931dbf9a',1,'wrench::WorkflowTask']]],
   ['getreadyclusters_1654',['getReadyClusters',['../classwrench_1_1_workflow.html#a875d3d3a26eba6316e249169814b853f',1,'wrench::Workflow']]],
