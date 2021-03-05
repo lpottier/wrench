@@ -265,9 +265,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f599176d2a71d6fd735f0d4084b607d"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a4f599176d2a71d6fd735f0d4084b607d">getRoute</a> (std::string &amp;src_host, std::string &amp;dst_host)</td></tr>
 <tr class="memdesc:a4f599176d2a71d6fd735f0d4084b607d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of link names on the route between two hosts.  <a href="classwrench_1_1_simulation.html#a4f599176d2a71d6fd735f0d4084b607d">More...</a><br /></td></tr>
 <tr class="separator:a4f599176d2a71d6fd735f0d4084b607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4283844acaa4232b17f48f3af2f1b06"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ad4283844acaa4232b17f48f3af2f1b06">isEnergySimulationEnabled</a> ()</td></tr>
+<tr class="separator:ad4283844acaa4232b17f48f3af2f1b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea87ea367873efdb53478945b880fc72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#aea87ea367873efdb53478945b880fc72">isHostOn</a> (std::string hostname)</td></tr>
 <tr class="memdesc:aea87ea367873efdb53478945b880fc72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a host is on or not.  <a href="classwrench_1_1_simulation.html#aea87ea367873efdb53478945b880fc72">More...</a><br /></td></tr>
 <tr class="separator:aea87ea367873efdb53478945b880fc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab905c85414fb56d05fc15516751e6205"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ab905c85414fb56d05fc15516751e6205">isHostShutdownSimulationEnabled</a> ()</td></tr>
+<tr class="separator:ab905c85414fb56d05fc15516751e6205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d3bac626795f838dd6a752d7fb57e4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ad8d3bac626795f838dd6a752d7fb57e4">isLinkOn</a> (std::string linkname)</td></tr>
 <tr class="memdesc:ad8d3bac626795f838dd6a752d7fb57e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a link is on or not.  <a href="classwrench_1_1_simulation.html#ad8d3bac626795f838dd6a752d7fb57e4">More...</a><br /></td></tr>
 <tr class="separator:ad8d3bac626795f838dd6a752d7fb57e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1387,6 +1391,32 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
 
 </div>
 </div>
+<a id="ad4283844acaa4232b17f48f3af2f1b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4283844acaa4232b17f48f3af2f1b06">&#9670;&nbsp;</a></span>isEnergySimulationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::Simulation::isEnergySimulationEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if energy simulation is activated </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="aea87ea367873efdb53478945b880fc72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea87ea367873efdb53478945b880fc72">&#9670;&nbsp;</a></span>isHostOn()</h2>
 
@@ -1419,6 +1449,32 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="ab905c85414fb56d05fc15516751e6205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab905c85414fb56d05fc15516751e6205">&#9670;&nbsp;</a></span>isHostShutdownSimulationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::Simulation::isHostShutdownSimulationEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if host shutdown simulation is activated </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -1479,7 +1535,7 @@ a map of lists of hosts, indexed by cluster name </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check if writeback mode is activated </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Check if page caching is activated </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
