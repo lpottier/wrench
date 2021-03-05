@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad0a6290b3017839e5b350e2c7f98057e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush dirty data from cache.  <a href="classwrench_1_1_memory_manager.html#ad0a6290b3017839e5b350e2c7f98057e">More...</a><br /></td></tr>
 <tr class="separator:ad0a6290b3017839e5b350e2c7f98057e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4bc70fa5e6ae3b3830db0803850d97c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#af4bc70fa5e6ae3b3830db0803850d97c">getAvailableMemory</a> ()</td></tr>
-<tr class="memdesc:af4bc70fa5e6ae3b3830db0803850d97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get currently available cache memory.  <a href="classwrench_1_1_memory_manager.html#af4bc70fa5e6ae3b3830db0803850d97c">More...</a><br /></td></tr>
+<tr class="memdesc:af4bc70fa5e6ae3b3830db0803850d97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get currently available memory.  <a href="classwrench_1_1_memory_manager.html#af4bc70fa5e6ae3b3830db0803850d97c">More...</a><br /></td></tr>
 <tr class="separator:af4bc70fa5e6ae3b3830db0803850d97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ba410d531c8d025605c951e4cae6de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a95ba410d531c8d025605c951e4cae6de">getCachedAmount</a> (std::string filename)</td></tr>
 <tr class="memdesc:a95ba410d531c8d025605c951e4cae6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get amount of cached data of a file in cache.  <a href="classwrench_1_1_memory_manager.html#a95ba410d531c8d025605c951e4cae6de">More...</a><br /></td></tr>
@@ -161,9 +161,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04d620715cfc39b3786f74d92b9f5f10"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a04d620715cfc39b3786f74d92b9f5f10">getTotalCachedAmount</a> () const</td></tr>
 <tr class="memdesc:a04d620715cfc39b3786f74d92b9f5f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of cached bytes.  <a href="classwrench_1_1_memory_manager.html#a04d620715cfc39b3786f74d92b9f5f10">More...</a><br /></td></tr>
 <tr class="separator:a04d620715cfc39b3786f74d92b9f5f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a084a10d93348ac2fe2af118fbe814e56"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a084a10d93348ac2fe2af118fbe814e56">getTotalMemory</a> ()</td></tr>
-<tr class="memdesc:a084a10d93348ac2fe2af118fbe814e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total available cache memory.  <a href="classwrench_1_1_memory_manager.html#a084a10d93348ac2fe2af118fbe814e56">More...</a><br /></td></tr>
-<tr class="separator:a084a10d93348ac2fe2af118fbe814e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb293d6f6c8fb6d422b89401e36d7e0"><td class="memItemLeft" align="right" valign="top"><a id="aafb293d6f6c8fb6d422b89401e36d7e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#aafb293d6f6c8fb6d422b89401e36d7e0">kill</a> ()</td></tr>
 <tr class="memdesc:aafb293d6f6c8fb6d422b89401e36d7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately terminate periodical flushing. <br /></td></tr>
@@ -595,7 +592,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 
-<p>Get currently available cache memory. </p>
+<p>Get currently available memory. </p>
 <dl class="section return"><dt>Returns</dt><dd>a number of bytes </dd></dl>
 
 </div>
@@ -816,26 +813,6 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Get total number of cached bytes. </p>
-<dl class="section return"><dt>Returns</dt><dd>a number of bytes </dd></dl>
-
-</div>
-</div>
-<a id="a084a10d93348ac2fe2af118fbe814e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a084a10d93348ac2fe2af118fbe814e56">&#9670;&nbsp;</a></span>getTotalMemory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double wrench::MemoryManager::getTotalMemory </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get total available cache memory. </p>
 <dl class="section return"><dt>Returns</dt><dd>a number of bytes </dd></dl>
 
 </div>
