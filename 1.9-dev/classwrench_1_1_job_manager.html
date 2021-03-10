@@ -713,7 +713,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">job</td><td>a workflow job </td></tr>
     <tr><td class="paramname">compute_service</td><td>a compute service </td></tr>
     <tr><td class="paramname">service_specific_args</td><td>arguments specific for compute services:<ul>
-<li>to a bare_metal: {{"taskID", "[hostname:][num_cores]}, ...}<ul>
+<li>to a <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a>: {{"taskID", "[hostname:][num_cores]}, ...}<ul>
 <li>If no value is not provided for a task, then the service will choose a host and use as many cores as possible on that host.</li>
 <li>If a "" value is provided for a task, then the service will choose a host and use as many cores as possible on that host.</li>
 <li>If a "hostname" value is provided for a task, then the service will run the task on that host, using as many of its cores as possible</li>
