@@ -150,6 +150,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batsched_batch_scheduler.html#a8639725d6cfce7a851b7d4023b569193">processQueuedJobs</a> () override</td></tr>
 <tr class="memdesc:a8639725d6cfce7a851b7d4023b569193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to process queued jobs. <br /></td></tr>
 <tr class="separator:a8639725d6cfce7a851b7d4023b569193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9edd17b7c61056a17900f72565cc385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batsched_batch_scheduler.html#af9edd17b7c61056a17900f72565cc385">processUnknownJobTermination</a> (std::string job_id) override</td></tr>
+<tr class="memdesc:af9edd17b7c61056a17900f72565cc385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to process a job termination when the job is already forgotten (useful for batsched)  <a href="classwrench_1_1_batsched_batch_scheduler.html#af9edd17b7c61056a17900f72565cc385">More...</a><br /></td></tr>
+<tr class="separator:af9edd17b7c61056a17900f72565cc385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9946b622d5a42b5f89fc1fcfe12b684e"><td class="memItemLeft" align="right" valign="top"><a id="a9946b622d5a42b5f89fc1fcfe12b684e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batsched_batch_scheduler.html#a9946b622d5a42b5f89fc1fcfe12b684e">shutdown</a> () override</td></tr>
 <tr class="memdesc:a9946b622d5a42b5f89fc1fcfe12b684e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown method. <br /></td></tr>
@@ -387,6 +390,42 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classwrench_1_1_batch_scheduler.html#a4148a1d76d78ed161cd9575566ff93d1">wrench::BatchScheduler</a>.</p>
+
+</div>
+</div>
+<a id="af9edd17b7c61056a17900f72565cc385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9edd17b7c61056a17900f72565cc385">&#9670;&nbsp;</a></span>processUnknownJobTermination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::BatschedBatchScheduler::processUnknownJobTermination </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>job_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method to process a job termination when the job is already forgotten (useful for batsched) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">job_id</td><td>the id of the batch job that was terminated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classwrench_1_1_batch_scheduler.html#a1c3702e1f890b08c5c7e82026ae882e9">wrench::BatchScheduler</a>.</p>
 
 </div>
 </div>
