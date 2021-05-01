@@ -56,7 +56,7 @@ var searchData=
   ['setjobmanager_813',['setJobManager',['../classwrench_1_1_pilot_job_scheduler.html#a02447f3acd66fb22d2abaeb3ab4876c4',1,'wrench::PilotJobScheduler::setJobManager()'],['../classwrench_1_1_standard_job_scheduler.html#abf603073811fa3ef34a985215b553bbf',1,'wrench::StandardJobScheduler::setJobManager()']]],
   ['setlastaccess_814',['setLastAccess',['../classwrench_1_1_block.html#a94cd19cce0bfd42143c67d9780a358fa',1,'wrench::Block']]],
   ['setlocalstorageservice_815',['setLocalStorageService',['../classwrench_1_1_h_t_condor_compute_service.html#a26ee7448273c4fa1269156aafb6bbe87',1,'wrench::HTCondorComputeService']]],
-  ['setmemory_816',['setMemory',['../classwrench_1_1_memory_manager.html#a0de1723fe132160600c93670d5ba533e',1,'wrench::MemoryManager']]],
+  ['setmemory_816',['setMemory',['../classwrench_1_1_memory_manager.html#aaa2b28cb85cdf7c69d14e5cd52f673b9',1,'wrench::MemoryManager']]],
   ['setmessagepayload_817',['setMessagePayload',['../classwrench_1_1_service.html#a544e779afa278c10ab7187890d92c5ae',1,'wrench::Service']]],
   ['setmessagepayloads_818',['setMessagePayloads',['../classwrench_1_1_service.html#aedba0d6a5624b653e2e05a8e90ed186b',1,'wrench::Service']]],
   ['setnetworktimeoutvalue_819',['setNetworkTimeoutValue',['../classwrench_1_1_service.html#a2bdf99201280d83b44a03c0b78ebdf90',1,'wrench::Service']]],
