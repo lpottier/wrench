@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a76c2ca24b7bcdfb93f9c2aa37d656bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to cache.  <a href="classwrench_1_1_memory_manager.html#a76c2ca24b7bcdfb93f9c2aa37d656bac">More...</a><br /></td></tr>
 <tr class="separator:a76c2ca24b7bcdfb93f9c2aa37d656bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa802a6b855b154847fce12eeffa61ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#aaa802a6b855b154847fce12eeffa61ce">evict</a> (double amount, std::string excluded_filename)</td></tr>
-<tr class="memdesc:aaa802a6b855b154847fce12eeffa61ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evicted clean data from cache.  <a href="classwrench_1_1_memory_manager.html#aaa802a6b855b154847fce12eeffa61ce">More...</a><br /></td></tr>
+<tr class="memdesc:aaa802a6b855b154847fce12eeffa61ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evicted clean data from page cache.  <a href="classwrench_1_1_memory_manager.html#aaa802a6b855b154847fce12eeffa61ce">More...</a><br /></td></tr>
 <tr class="separator:aaa802a6b855b154847fce12eeffa61ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf5938cbe18397a0bd070d3ce52303e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_memory_manager.html#a8cf5938cbe18397a0bd070d3ce52303e">export_log</a> (std::string filename)</td></tr>
 <tr class="memdesc:a8cf5938cbe18397a0bd070d3ce52303e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the log to a file.  <a href="classwrench_1_1_memory_manager.html#a8cf5938cbe18397a0bd070d3ce52303e">More...</a><br /></td></tr>
@@ -504,15 +504,15 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 
-<p>Evicted clean data from cache. </p>
+<p>Evicted clean data from page cache. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">amount</td><td>the requested amount of data to be flushed </td></tr>
-    <tr><td class="paramname">excluded_filename</td><td>name of file that cannot be flushed </td></tr>
+    <tr><td class="paramname">amount</td><td>the requested amount of data to be evicted </td></tr>
+    <tr><td class="paramname">excluded_filename</td><td>name of file that cannot be evicted </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>flushed amount </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>evicted amount </dd></dl>
 
 </div>
 </div>
