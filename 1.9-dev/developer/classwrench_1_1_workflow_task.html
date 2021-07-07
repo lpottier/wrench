@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a69dc57568ee24ef1d2824e9f6d919d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the execution history of this task.  <a href="classwrench_1_1_workflow_task.html#a69dc57568ee24ef1d2824e9f6d919d48">More...</a><br /></td></tr>
 <tr class="separator:a69dc57568ee24ef1d2824e9f6d919d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af166a3b9b4b9d7a62711d3431961cd4f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#af166a3b9b4b9d7a62711d3431961cd4f">getExecutionHost</a> ()</td></tr>
-<tr class="memdesc:af166a3b9b4b9d7a62711d3431961cd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the host on which the task has most recently been executed, or "" if the task has never been executed yet.  <a href="classwrench_1_1_workflow_task.html#af166a3b9b4b9d7a62711d3431961cd4f">More...</a><br /></td></tr>
+<tr class="memdesc:af166a3b9b4b9d7a62711d3431961cd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the host on which the task has most recently been executed, or "" if the task has never been executed yet. Could be a virtual hostname.  <a href="classwrench_1_1_workflow_task.html#af166a3b9b4b9d7a62711d3431961cd4f">More...</a><br /></td></tr>
 <tr class="separator:af166a3b9b4b9d7a62711d3431961cd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6103d36486855fb8caabb008bcfaacd4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a6103d36486855fb8caabb008bcfaacd4">getFailureCount</a> ()</td></tr>
 <tr class="memdesc:a6103d36486855fb8caabb008bcfaacd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of times a task has failed.  <a href="classwrench_1_1_workflow_task.html#a6103d36486855fb8caabb008bcfaacd4">More...</a><br /></td></tr>
@@ -211,6 +211,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11b6cbdcbd0e1bcaa4ac7b91b551b2fe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a11b6cbdcbd0e1bcaa4ac7b91b551b2fe">getParents</a> () const</td></tr>
 <tr class="memdesc:a11b6cbdcbd0e1bcaa4ac7b91b551b2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parents of a task.  <a href="classwrench_1_1_workflow_task.html#a11b6cbdcbd0e1bcaa4ac7b91b551b2fe">More...</a><br /></td></tr>
 <tr class="separator:a11b6cbdcbd0e1bcaa4ac7b91b551b2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadb3822e68e9427b29ff96e72318d6a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#afadb3822e68e9427b29ff96e72318d6a">getPhysicalExecutionHost</a> ()</td></tr>
+<tr class="memdesc:afadb3822e68e9427b29ff96e72318d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the PHYSICAL host on which the task has most recently been executed, or "" if the task has never been executed yet.  <a href="classwrench_1_1_workflow_task.html#afadb3822e68e9427b29ff96e72318d6a">More...</a><br /></td></tr>
+<tr class="separator:afadb3822e68e9427b29ff96e72318d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2bf4cb0ae629478351f9e4ccd6e2bf6"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#af2bf4cb0ae629478351f9e4ccd6e2bf6">getPriority</a> () const</td></tr>
 <tr class="memdesc:af2bf4cb0ae629478351f9e4ccd6e2bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the task priority. By default, priority is 0.  <a href="classwrench_1_1_workflow_task.html#af2bf4cb0ae629478351f9e4ccd6e2bf6">More...</a><br /></td></tr>
 <tr class="separator:af2bf4cb0ae629478351f9e4ccd6e2bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -574,7 +577,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the host on which the task has most recently been executed, or "" if the task has never been executed yet. </p>
+<p>Returns the name of the host on which the task has most recently been executed, or "" if the task has never been executed yet. Could be a virtual hostname. </p>
 <dl class="section return"><dt>Returns</dt><dd>hostname </dd></dl>
 
 </div>
@@ -876,6 +879,26 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get the parents of a task. </p>
 <dl class="section return"><dt>Returns</dt><dd>a list of workflow tasks </dd></dl>
+
+</div>
+</div>
+<a id="afadb3822e68e9427b29ff96e72318d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afadb3822e68e9427b29ff96e72318d6a">&#9670;&nbsp;</a></span>getPhysicalExecutionHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrench::WorkflowTask::getPhysicalExecutionHost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the name of the PHYSICAL host on which the task has most recently been executed, or "" if the task has never been executed yet. </p>
+<dl class="section return"><dt>Returns</dt><dd>hostname </dd></dl>
 
 </div>
 </div>

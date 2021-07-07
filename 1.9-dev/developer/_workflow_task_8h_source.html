@@ -222,140 +222,143 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        std::string <a class="code" href="classwrench_1_1_workflow_task.html#af166a3b9b4b9d7a62711d3431961cd4f">getExecutionHost</a>();</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a> <a class="code" href="classwrench_1_1_workflow_task.html#a990a3e96d944c37cb896a7ca0d84a4db">getState</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        std::string <a class="code" href="classwrench_1_1_workflow_task.html#afadb3822e68e9427b29ff96e72318d6a">getPhysicalExecutionHost</a>();</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        std::string <a class="code" href="classwrench_1_1_workflow_task.html#ad22e8ee53e3dbee069d844d3e42a2310">getColor</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a> <a class="code" href="classwrench_1_1_workflow_task.html#a990a3e96d944c37cb896a7ca0d84a4db">getState</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classwrench_1_1_workflow_task.html#a92a6ab9f646d20c5a1cb32cea77f1524">setColor</a>(std::string);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        std::string <a class="code" href="classwrench_1_1_workflow_task.html#ad22e8ee53e3dbee069d844d3e42a2310">getColor</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classwrench_1_1_workflow_task.html#a92a6ab9f646d20c5a1cb32cea77f1524">setColor</a>(std::string);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">enum</span> InternalState {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            TASK_NOT_READY,</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            TASK_READY,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            TASK_RUNNING,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            TASK_COMPLETED,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            TASK_FAILED</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        };</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classwrench_1_1_workflow_task.html#a542a6f96bea2d2e67d21bc32c0151e73">stateToString</a>(WorkflowTask::InternalState state);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">enum</span> InternalState {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            TASK_NOT_READY,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            TASK_READY,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            TASK_RUNNING,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            TASK_COMPLETED,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            TASK_FAILED</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        };</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> updateTopLevel();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classwrench_1_1_workflow_task.html#a542a6f96bea2d2e67d21bc32c0151e73">stateToString</a>(WorkflowTask::InternalState state);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordtype">void</span> setInternalState(WorkflowTask::InternalState);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> updateTopLevel();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordtype">void</span> setState(<a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordtype">void</span> setInternalState(WorkflowTask::InternalState);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">void</span> setUpcomingState(<a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">void</span> setState(<a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a>);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a> getUpcomingState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">void</span> setUpcomingState(<a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a>);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        WorkflowTask::InternalState getInternalState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">WorkflowTask::State</a> getUpcomingState() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordtype">void</span> setJob(WorkflowJob *job);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        WorkflowTask::InternalState getInternalState() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">void</span> setStartDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">void</span> setJob(WorkflowJob *job);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordtype">void</span> setEndDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordtype">void</span> setStartDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">void</span> setReadInputStartDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">void</span> setEndDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> setReadInputEndDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> setReadInputStartDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">void</span> setComputationStartDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">void</span> setReadInputEndDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span> setComputationEndDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">void</span> setComputationStartDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">void</span> setWriteOutputStartDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">void</span> setComputationEndDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">void</span> setWriteOutputEndDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">void</span> setWriteOutputStartDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">void</span> setFailureDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">void</span> setWriteOutputEndDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> setTerminationDate(<span class="keywordtype">double</span> date);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> setFailureDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordtype">void</span> incrementFailureCount();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordtype">void</span> setTerminationDate(<span class="keywordtype">double</span> date);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">void</span> setExecutionHost(std::string hostname);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">void</span> incrementFailureCount();</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordtype">void</span> setNumCoresAllocated(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_cores);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordtype">void</span> setExecutionHost(std::string hostname);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keyword">struct </span>WorkflowTaskExecution {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordtype">double</span> task_start = -1.0;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordtype">double</span> read_input_start = -1.0;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordtype">double</span> read_input_end = -1.0;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordtype">double</span> computation_start = -1.0;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordtype">double</span> computation_end = -1.0;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordtype">double</span> write_output_start = -1.0;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordtype">double</span> write_output_end = -1.0;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordtype">double</span> task_end = -1.0;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordtype">double</span> task_failed = -1.0;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordtype">double</span> task_terminated = -1.0;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            std::string execution_host = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_cores_allocated = 0;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            WorkflowTaskExecution(<span class="keywordtype">double</span> task_start) : task_start(task_start) {}</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        };</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordtype">void</span> setNumCoresAllocated(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_cores);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keyword">struct </span>WorkflowTaskExecution {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordtype">double</span> task_start = -1.0;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordtype">double</span> read_input_start = -1.0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordtype">double</span> read_input_end = -1.0;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordtype">double</span> computation_start = -1.0;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordtype">double</span> computation_end = -1.0;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordtype">double</span> write_output_start = -1.0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordtype">double</span> write_output_end = -1.0;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordtype">double</span> task_end = -1.0;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordtype">double</span> task_failed = -1.0;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordtype">double</span> task_terminated = -1.0;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            std::string execution_host = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            std::string physical_execution_host = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_cores_allocated = 0;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            WorkflowTaskExecution(<span class="keywordtype">double</span> task_start) : task_start(task_start) {}</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        };</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>Workflow;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        std::string id;                    <span class="comment">// Task ID</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        std::string cluster_id;            <span class="comment">// ID for clustered task</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        std::string color;                 <span class="comment">// A RGB color formatted as &quot;#rrggbb&quot;</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordtype">double</span> flops;                      <span class="comment">// Number of flops</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordtype">double</span> average_cpu = -1;           <span class="comment">// Average CPU utilization</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> bytes_read = -1;     <span class="comment">// Total bytes read in KB</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> bytes_written = -1;  <span class="comment">// Total bytes written in KB</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> min_num_cores;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> max_num_cores;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        std::shared_ptr&lt;ParallelModel&gt; parallel_model;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordtype">double</span> memory_requirement;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> priority = 0;        <span class="comment">// Task priority</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> toplevel;            <span class="comment">// 0 if entry task</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> failure_count = 0;    <span class="comment">// Number of times the tasks has failed</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        std::string execution_host;        <span class="comment">// Host on which the task executed (&quot;&quot; if not executed successfully - yet)</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">State</a> visible_state;               <span class="comment">// To be exposed to developer level</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">State</a> upcoming_visible_state;      <span class="comment">// A visible state that will become active once a WMS has process a previously sent workflow execution event</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        InternalState internal_state;      <span class="comment">// Not to be exposed to developer level</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        Workflow *workflow;                <span class="comment">// Containing workflow</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        std::map&lt;std::string, WorkflowFile *&gt; output_files;   <span class="comment">// List of output files</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        std::map&lt;std::string, WorkflowFile *&gt; input_files;    <span class="comment">// List of input files</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="comment">// Private constructor (called by Workflow)</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        WorkflowTask(std::string <span class="keywordtype">id</span>,</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                     <span class="keywordtype">double</span> t,</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> min_num_cores,</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> max_num_cores,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                     <span class="keywordtype">double</span> memory_requirement);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">// Containing job</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        WorkflowJob *job;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        std::stack&lt;WorkflowTaskExecution&gt; execution_history;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>DagOfTasks;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    };</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;};</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>Workflow;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        std::string id;                    <span class="comment">// Task ID</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        std::string cluster_id;            <span class="comment">// ID for clustered task</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        std::string color;                 <span class="comment">// A RGB color formatted as &quot;#rrggbb&quot;</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">double</span> flops;                      <span class="comment">// Number of flops</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordtype">double</span> average_cpu = -1;           <span class="comment">// Average CPU utilization</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> bytes_read = -1;     <span class="comment">// Total bytes read in KB</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> bytes_written = -1;  <span class="comment">// Total bytes written in KB</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> min_num_cores;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> max_num_cores;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        std::shared_ptr&lt;ParallelModel&gt; parallel_model;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">double</span> memory_requirement;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> priority = 0;        <span class="comment">// Task priority</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> toplevel;            <span class="comment">// 0 if entry task</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> failure_count = 0;    <span class="comment">// Number of times the tasks has failed</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        std::string execution_host;        <span class="comment">// Host on which the task executed (&quot;&quot; if not executed successfully - yet)</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">State</a> visible_state;               <span class="comment">// To be exposed to developer level</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <a class="code" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">State</a> upcoming_visible_state;      <span class="comment">// A visible state that will become active once a WMS has process a previously sent workflow execution event</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        InternalState internal_state;      <span class="comment">// Not to be exposed to developer level</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        Workflow *workflow;                <span class="comment">// Containing workflow</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        std::map&lt;std::string, WorkflowFile *&gt; output_files;   <span class="comment">// List of output files</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        std::map&lt;std::string, WorkflowFile *&gt; input_files;    <span class="comment">// List of input files</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">// Private constructor (called by Workflow)</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        WorkflowTask(std::string <span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                     <span class="keywordtype">double</span> t,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> min_num_cores,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> max_num_cores,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                     <span class="keywordtype">double</span> memory_requirement);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">// Containing job</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        WorkflowJob *job;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        std::stack&lt;WorkflowTaskExecution&gt; execution_history;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif //WRENCH_WORKFLOWTASK_H</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>DagOfTasks;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    };</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#endif //WRENCH_WORKFLOWTASK_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a1184f3d7aea21e1c87a9b17e84f1f92aaa5207e01401874a04d2ddae6191fd9af"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92aaa5207e01401874a04d2ddae6191fd9af">wrench::WorkflowTask::PENDING</a></div><div class="ttdeci">@ PENDING</div><div class="ttdoc">Pending (has been submitted to a compute service)</div><div class="ttdef"><b>Definition:</b> WorkflowTask.h:74</div></div>
-<div class="ttc" id="aclasswrench_1_1_workflow_task_html_aebcc914c5d2e8907ece7c65a01cc8b01"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aebcc914c5d2e8907ece7c65a01cc8b01">wrench::WorkflowTask::getParallelModel</a></div><div class="ttdeci">std::shared_ptr&lt; ParallelModel &gt; getParallelModel()</div><div class="ttdoc">Get the task's parallel model.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:819</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_task_html_aebcc914c5d2e8907ece7c65a01cc8b01"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aebcc914c5d2e8907ece7c65a01cc8b01">wrench::WorkflowTask::getParallelModel</a></div><div class="ttdeci">std::shared_ptr&lt; ParallelModel &gt; getParallelModel()</div><div class="ttdoc">Get the task's parallel model.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:832</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a1184f3d7aea21e1c87a9b17e84f1f92aae983a946ee97e094f18524d6b392d2f9"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92aae983a946ee97e094f18524d6b392d2f9">wrench::WorkflowTask::READY</a></div><div class="ttdeci">@ READY</div><div class="ttdoc">Ready (parents have completed)</div><div class="ttdef"><b>Definition:</b> WorkflowTask.h:72</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_aa02796c5c85aa9fb9a1467eb06506a59"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aa02796c5c85aa9fb9a1467eb06506a59">wrench::WorkflowTask::getComputationEndDate</a></div><div class="ttdeci">double getComputationEndDate()</div><div class="ttdoc">Get the task's most recent computation end date.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:659</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a1184f3d7aea21e1c87a9b17e84f1f92aa1229246389ad56793373ebd4384ee05d"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92aa1229246389ad56793373ebd4384ee05d">wrench::WorkflowTask::UNKNOWN</a></div><div class="ttdeci">@ UNKNOWN</div><div class="ttdoc">Some Unknown state (should not happen)</div><div class="ttdef"><b>Definition:</b> WorkflowTask.h:78</div></div>
@@ -364,12 +367,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a1184f3d7aea21e1c87a9b17e84f1f92a"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">wrench::WorkflowTask::State</a></div><div class="ttdeci">State</div><div class="ttdoc">Task states.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.h:68</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_af00a94dc20c6b2b6028aa13fce7581c6"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#af00a94dc20c6b2b6028aa13fce7581c6">wrench::WorkflowTask::getAverageCPU</a></div><div class="ttdeci">double getAverageCPU() const</div><div class="ttdoc">Get the task average CPU usage.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:395</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_ab8d621c9cf50b489fd6b092bea59872a"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#ab8d621c9cf50b489fd6b092bea59872a">wrench::WorkflowTask::setClusterID</a></div><div class="ttdeci">void setClusterID(std::string)</div><div class="ttdoc">Set the cluster id for the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:371</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_task_html_afadb3822e68e9427b29ff96e72318d6a"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#afadb3822e68e9427b29ff96e72318d6a">wrench::WorkflowTask::getPhysicalExecutionHost</a></div><div class="ttdeci">std::string getPhysicalExecutionHost()</div><div class="ttdoc">Returns the name of the PHYSICAL host on which the task has most recently been executed,...</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:756</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_ae14f725d2a2ee9a75ded0e617c16ce9c"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#ae14f725d2a2ee9a75ded0e617c16ce9c">wrench::WorkflowTask::getChildren</a></div><div class="ttdeci">std::vector&lt; WorkflowTask * &gt; getChildren() const</div><div class="ttdoc">Get the children of a task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:171</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a924961b2ae2ee254373cdea7c9c4511f"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a924961b2ae2ee254373cdea7c9c4511f">wrench::WorkflowTask::getOutputFiles</a></div><div class="ttdeci">std::vector&lt; WorkflowFile * &gt; getOutputFiles()</div><div class="ttdoc">Get the list of output WorkflowFile objects for the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:622</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a3498047afb74ea6ce2132d44f8c678e8"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a3498047afb74ea6ce2132d44f8c678e8">wrench::WorkflowTask::addInputFile</a></div><div class="ttdeci">void addInputFile(WorkflowFile *file)</div><div class="ttdoc">Add an input file to the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:57</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_aa470fe4c0a34211165989afabcba795f"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aa470fe4c0a34211165989afabcba795f">wrench::WorkflowTask::getMaxNumCores</a></div><div class="ttdeci">unsigned long getMaxNumCores() const</div><div class="ttdoc">Get the maximum number of cores that the task can use.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:144</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a818a5bea6a62544879b6aff3a1284e87"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a818a5bea6a62544879b6aff3a1284e87">wrench::WorkflowTask::getNumberOfChildren</a></div><div class="ttdeci">unsigned long getNumberOfChildren() const</div><div class="ttdoc">Get the number of children of a task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:162</div></div>
-<div class="ttc" id="aclasswrench_1_1_workflow_task_html_ad22e8ee53e3dbee069d844d3e42a2310"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#ad22e8ee53e3dbee069d844d3e42a2310">wrench::WorkflowTask::getColor</a></div><div class="ttdeci">std::string getColor()</div><div class="ttdoc">Get the task's color (&quot;&quot; if none)</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:795</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_task_html_ad22e8ee53e3dbee069d844d3e42a2310"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#ad22e8ee53e3dbee069d844d3e42a2310">wrench::WorkflowTask::getColor</a></div><div class="ttdeci">std::string getColor()</div><div class="ttdoc">Get the task's color (&quot;&quot; if none)</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:808</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a8291e3248b7246eab498fc0378199b76"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a8291e3248b7246eab498fc0378199b76">wrench::WorkflowTask::setBytesWritten</a></div><div class="ttdeci">void setBytesWritten(unsigned long)</div><div class="ttdoc">Set the number of bytes written by the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:435</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a2905c939f467778439fea8a956b0381b"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a2905c939f467778439fea8a956b0381b">wrench::WorkflowTask::getWriteOutputStartDate</a></div><div class="ttdeci">double getWriteOutputStartDate()</div><div class="ttdoc">Get the task's most recent write output start date.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:683</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a17462dd156a6080653f96a1abbbb379d"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a17462dd156a6080653f96a1abbbb379d">wrench::WorkflowTask::getStartDate</a></div><div class="ttdeci">double getStartDate()</div><div class="ttdoc">Get the task's most recent start date.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:635</div></div>
@@ -381,10 +385,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_ae5101ae5e4e386705a549e4e91432049"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#ae5101ae5e4e386705a549e4e91432049">wrench::WorkflowTask::setPriority</a></div><div class="ttdeci">void setPriority(long)</div><div class="ttdoc">Set the task priority.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:387</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a05d06d1988745735016dcf19d38e2398"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a05d06d1988745735016dcf19d38e2398">wrench::WorkflowTask::getMinNumCores</a></div><div class="ttdeci">unsigned long getMinNumCores() const</div><div class="ttdoc">Get the minimum number of cores required for running the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:135</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_afe222b599fa4ba072aa6162d9c8287ab"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#afe222b599fa4ba072aa6162d9c8287ab">wrench::WorkflowTask::getBytesWritten</a></div><div class="ttdeci">unsigned long getBytesWritten() const</div><div class="ttdoc">Get the number of bytes written by the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:427</div></div>
-<div class="ttc" id="aclasswrench_1_1_workflow_task_html_a0c897ccd9bf60ae8e30ad28d99e573f9"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a0c897ccd9bf60ae8e30ad28d99e573f9">wrench::WorkflowTask::getNumCoresAllocated</a></div><div class="ttdeci">unsigned long getNumCoresAllocated()</div><div class="ttdoc">Returns the number of cores allocated for this task's most recent execution or 0 if an execution atte...</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:755</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_task_html_a0c897ccd9bf60ae8e30ad28d99e573f9"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a0c897ccd9bf60ae8e30ad28d99e573f9">wrench::WorkflowTask::getNumCoresAllocated</a></div><div class="ttdeci">unsigned long getNumCoresAllocated()</div><div class="ttdoc">Returns the number of cores allocated for this task's most recent execution or 0 if an execution atte...</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:764</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_aea29ebd47e1e3a1b955fafc0e72dff50"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aea29ebd47e1e3a1b955fafc0e72dff50">wrench::WorkflowTask::getWorkflow</a></div><div class="ttdeci">Workflow * getWorkflow() const</div><div class="ttdoc">Get the workflow that contains the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:268</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_aa9a538645c4946f7a257d66a80d45401"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aa9a538645c4946f7a257d66a80d45401">wrench::WorkflowTask::getWriteOutputEndDate</a></div><div class="ttdeci">double getWriteOutputEndDate()</div><div class="ttdoc">Get the task's most recent write output end date.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:691</div></div>
-<div class="ttc" id="aclasswrench_1_1_workflow_task_html_a789d01615f762cca3d1da32ac6b3d725"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a789d01615f762cca3d1da32ac6b3d725">wrench::WorkflowTask::setParallelModel</a></div><div class="ttdeci">void setParallelModel(std::shared_ptr&lt; ParallelModel &gt; model)</div><div class="ttdoc">Set the task's parallel model.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:811</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_task_html_a789d01615f762cca3d1da32ac6b3d725"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a789d01615f762cca3d1da32ac6b3d725">wrench::WorkflowTask::setParallelModel</a></div><div class="ttdeci">void setParallelModel(std::shared_ptr&lt; ParallelModel &gt; model)</div><div class="ttdoc">Set the task's parallel model.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:824</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html"><div class="ttname"><a href="classwrench_1_1_workflow_task.html">wrench::WorkflowTask</a></div><div class="ttdoc">A computational task in a Workflow.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.h:31</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a2c413ff97c665416c2c68898ef986df0"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a2c413ff97c665416c2c68898ef986df0">wrench::WorkflowTask::getEndDate</a></div><div class="ttdeci">double getEndDate()</div><div class="ttdoc">Get the task's most recent end date.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:643</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a6103d36486855fb8caabb008bcfaacd4"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a6103d36486855fb8caabb008bcfaacd4">wrench::WorkflowTask::getFailureCount</a></div><div class="ttdeci">unsigned int getFailureCount()</div><div class="ttdoc">Get the number of times a task has failed.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:594</div></div>
@@ -408,7 +412,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a010261493abd154fe6354381f9458c5e"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a010261493abd154fe6354381f9458c5e">wrench::WorkflowTask::getNumberOfParents</a></div><div class="ttdeci">unsigned long getNumberOfParents() const</div><div class="ttdoc">Get the number of parents of a task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:180</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_file_html"><div class="ttname"><a href="classwrench_1_1_workflow_file.html">wrench::WorkflowFile</a></div><div class="ttdoc">A data file used/produced by a WorkflowTask in a Workflow.</div><div class="ttdef"><b>Definition:</b> WorkflowFile.h:26</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_aec0aab3ed552960729a60d1d3c4a3de2"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#aec0aab3ed552960729a60d1d3c4a3de2">wrench::WorkflowTask::getFlops</a></div><div class="ttdeci">double getFlops() const</div><div class="ttdoc">Get the number of flops of the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:126</div></div>
-<div class="ttc" id="aclasswrench_1_1_workflow_task_html_a92a6ab9f646d20c5a1cb32cea77f1524"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a92a6ab9f646d20c5a1cb32cea77f1524">wrench::WorkflowTask::setColor</a></div><div class="ttdeci">void setColor(std::string)</div><div class="ttdoc">Set the task's color.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:803</div></div>
+<div class="ttc" id="aclasswrench_1_1_workflow_task_html_a92a6ab9f646d20c5a1cb32cea77f1524"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a92a6ab9f646d20c5a1cb32cea77f1524">wrench::WorkflowTask::setColor</a></div><div class="ttdeci">void setColor(std::string)</div><div class="ttdoc">Set the task's color.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:816</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a8abc30bf4c96d948f4cf291a4e307f70"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a8abc30bf4c96d948f4cf291a4e307f70">wrench::WorkflowTask::getInputFiles</a></div><div class="ttdeci">std::vector&lt; WorkflowFile * &gt; getInputFiles()</div><div class="ttdoc">Get the list of input WorkflowFile objects for the task.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:609</div></div>
 <div class="ttc" id="aclasswrench_1_1_workflow_task_html_a15bbd1fca442b459073164b52dcc44b0"><div class="ttname"><a href="classwrench_1_1_workflow_task.html#a15bbd1fca442b459073164b52dcc44b0">wrench::WorkflowTask::getReadInputEndDate</a></div><div class="ttdeci">double getReadInputEndDate()</div><div class="ttdoc">Get the task's most recent read input end date.</div><div class="ttdef"><b>Definition:</b> WorkflowTask.cpp:675</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
