@@ -263,18 +263,19 @@ Public Member Functions</h2></td></tr>
      "energy_consumption": {
      {
          hostname: &lt;string&gt;,
-         pstates: [                 &lt;-- if this host is a single core host, items in this list will be formatted as
-             {                          the first item, else if this is a multi core host, items will be formatted as
-                 pstate: &lt;int&gt;,         the second item
+         pstates: [
+             {
+                 pstate: &lt;int&gt;,
                  idle: &lt;double&gt;,
-                 running: &lt;double&gt;,   &lt;-- if single core host
+                 epsilon: &lt;double&gt;,
+                 all_cores: &lt;double&gt;,
                  speed: &lt;double&gt;
              },
              {
                  pstate: &lt;int&gt;,
                  idle: &lt;double&gt;,
-                 one_core: &lt;double&gt;,  &lt;-- if multi core host
-                 all_cores: &lt;double&gt;, &lt;-- if multi core host
+                 epsilon: &lt;double&gt;,
+                 all_cores: &lt;double&gt;,
                  speed: &lt;double&gt;
              } ...
          ],

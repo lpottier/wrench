@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3662628f589ffe44e17921e60971fd6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#ac3662628f589ffe44e17921e60971fd6">getFreeScratchSpaceSize</a> ()</td></tr>
 <tr class="memdesc:ac3662628f589ffe44e17921e60971fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free space on the compute service's scratch storage space.  <a href="classwrench_1_1_compute_service.html#ac3662628f589ffe44e17921e60971fd6">More...</a><br /></td></tr>
 <tr class="separator:ac3662628f589ffe44e17921e60971fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63dfefb141fe35b6d4783af7d53c49a2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a63dfefb141fe35b6d4783af7d53c49a2">getHosts</a> ()</td></tr>
+<tr class="memdesc:a63dfefb141fe35b6d4783af7d53c49a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of the compute service's compute host.  <a href="classwrench_1_1_compute_service.html#a63dfefb141fe35b6d4783af7d53c49a2">More...</a><br /></td></tr>
+<tr class="separator:a63dfefb141fe35b6d4783af7d53c49a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113d9698fc83cefd78121e279b99b51e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a113d9698fc83cefd78121e279b99b51e">getMemoryCapacity</a> ()</td></tr>
 <tr class="memdesc:a113d9698fc83cefd78121e279b99b51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RAM capacities for each of the compute service's hosts.  <a href="classwrench_1_1_compute_service.html#a113d9698fc83cefd78121e279b99b51e">More...</a><br /></td></tr>
 <tr class="separator:a113d9698fc83cefd78121e279b99b51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -606,6 +609,33 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Get the free space on the compute service's scratch storage space. </p>
 <dl class="section return"><dt>Returns</dt><dd>a size (in bytes) </dd></dl>
+
+</div>
+</div>
+<a id="a63dfefb141fe35b6d4783af7d53c49a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63dfefb141fe35b6d4783af7d53c49a2">&#9670;&nbsp;</a></span>getHosts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; wrench::ComputeService::getHosts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the list of the compute service's compute host. </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of hostnames</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
