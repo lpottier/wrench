@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classwrench_1_1_batch_compute_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">wrench::BatchComputeService Class Reference</div>  </div>
@@ -281,15 +282,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ab90d5a79d3d098cd26d7caf7b357ccb9 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend the daemon/actor. <br /></td></tr>
 <tr class="separator:ab90d5a79d3d098cd26d7caf7b357ccb9 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classwrench_1_1_s4_u___daemon"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwrench_1_1_s4_u___daemon')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></td></tr>
-<tr class="memitem:a534c9875b6a15e2eb83781007120be03 inherit pub_types_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03">State</a> { <a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a63084048f75c3e55a04ad63b2ee3a565">UP</a>, 
-<a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a6ea633d992dc7f72fb0a69c6e80a2a66">DOWN</a>, 
-<a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a9ec29d34fbc8882c1c7078845132ba02">SUSPENDED</a>
- }</td></tr>
-<tr class="memdesc:a534c9875b6a15e2eb83781007120be03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Daemon states.  <a href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03">More...</a><br /></td></tr>
-<tr class="separator:a534c9875b6a15e2eb83781007120be03 inherit pub_types_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa3b18cc34476fe8fbeda700b1ee59e7b"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#aa3b18cc34476fe8fbeda700b1ee59e7b">parseUnsignedLongServiceSpecificArgument</a> (std::string key, const std::map&lt; std::string, std::string &gt; &amp;args)</td></tr>
+<tr class="memdesc:aa3b18cc34476fe8fbeda700b1ee59e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for service-specific job arguments.  <a href="classwrench_1_1_batch_compute_service.html#aa3b18cc34476fe8fbeda700b1ee59e7b">More...</a><br /></td></tr>
+<tr class="separator:aa3b18cc34476fe8fbeda700b1ee59e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classwrench_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classwrench_1_1_service')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classwrench_1_1_service.html">wrench::Service</a></td></tr>
 <tr class="memitem:a3e66d91957dd0816d8f5a1adab968d24 inherit pub_static_methods_classwrench_1_1_service"><td class="memItemLeft" align="right" valign="top"><a id="a3e66d91957dd0816d8f5a1adab968d24"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_service.html#a3e66d91957dd0816d8f5a1adab968d24">cleanupTrackedServices</a> ()</td></tr>
@@ -303,6 +300,16 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_service.html#a2e35a0e9482edc7cb3011db9238377e5">increaseNumCompletedServicesCount</a> ()</td></tr>
 <tr class="memdesc:a2e35a0e9482edc7cb3011db9238377e5 inherit pub_static_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the completed service count. <br /></td></tr>
 <tr class="separator:a2e35a0e9482edc7cb3011db9238377e5 inherit pub_static_methods_classwrench_1_1_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classwrench_1_1_s4_u___daemon"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwrench_1_1_s4_u___daemon')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></td></tr>
+<tr class="memitem:a534c9875b6a15e2eb83781007120be03 inherit pub_types_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03">State</a> { <a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a63084048f75c3e55a04ad63b2ee3a565">UP</a>, 
+<a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a6ea633d992dc7f72fb0a69c6e80a2a66">DOWN</a>, 
+<a class="el" href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a9ec29d34fbc8882c1c7078845132ba02">SUSPENDED</a>
+ }</td></tr>
+<tr class="memdesc:a534c9875b6a15e2eb83781007120be03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Daemon states.  <a href="classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03">More...</a><br /></td></tr>
+<tr class="separator:a534c9875b6a15e2eb83781007120be03 inherit pub_types_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classwrench_1_1_s4_u___daemon"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classwrench_1_1_s4_u___daemon')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></td></tr>
 <tr class="memitem:a52bc0b9a6cd248310749dac086819f00 inherit pub_attribs_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a52bc0b9a6cd248310749dac086819f00"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a></td></tr>
@@ -557,6 +564,58 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>start date predictions in seconds (as a map of ids). A prediction that's negative means that the job configuration can not run on the service (e.g., not enough hosts, not enough cores per host) </dd></dl>
+
+</div>
+</div>
+<a id="aa3b18cc34476fe8fbeda700b1ee59e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b18cc34476fe8fbeda700b1ee59e7b">&#9670;&nbsp;</a></span>parseUnsignedLongServiceSpecificArgument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long wrench::BatchComputeService::parseUnsignedLongServiceSpecificArgument </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper function for service-specific job arguments. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the argument key ("-N", "-c", "-t") </td></tr>
+    <tr><td class="paramname">args</td><td>the argument map </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the argument </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

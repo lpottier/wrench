@@ -121,9 +121,9 @@ Inheritance diagram for wrench::HTCondorNegotiatorService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a45dbbffc1bfdc7931a039eed3d1c0d8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html#a45dbbffc1bfdc7931a039eed3d1c0d8b">HTCondorNegotiatorService</a> (std::string &amp;hostname, std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;, unsigned long &gt; &amp;compute_resources, std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;running_jobs, std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::map&lt; std::string, std::string &gt;&gt;&gt; &amp;pending_jobs, std::string &amp;reply_mailbox, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; &amp;grid_universe_batch_service)</td></tr>
-<tr class="memdesc:a45dbbffc1bfdc7931a039eed3d1c0d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_negotiator_service.html#a45dbbffc1bfdc7931a039eed3d1c0d8b">More...</a><br /></td></tr>
-<tr class="separator:a45dbbffc1bfdc7931a039eed3d1c0d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee15c5ef572a9b91ea35ef2ba24a264"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html#a3ee15c5ef572a9b91ea35ef2ba24a264">HTCondorNegotiatorService</a> (std::string &amp;hostname, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;compute_services, std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;running_jobs, std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::map&lt; std::string, std::string &gt;&gt;&gt; &amp;pending_jobs, std::string &amp;reply_mailbox)</td></tr>
+<tr class="memdesc:a3ee15c5ef572a9b91ea35ef2ba24a264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_negotiator_service.html#a3ee15c5ef572a9b91ea35ef2ba24a264">More...</a><br /></td></tr>
+<tr class="separator:a3ee15c5ef572a9b91ea35ef2ba24a264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbf969719d1b43ccfce10e7546eecea0"><td class="memItemLeft" align="right" valign="top"><a id="abbf969719d1b43ccfce10e7546eecea0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html#abbf969719d1b43ccfce10e7546eecea0">~HTCondorNegotiatorService</a> ()</td></tr>
 <tr class="memdesc:abbf969719d1b43ccfce10e7546eecea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -173,8 +173,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A HTCondor negotiator service. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a45dbbffc1bfdc7931a039eed3d1c0d8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45dbbffc1bfdc7931a039eed3d1c0d8b">&#9670;&nbsp;</a></span>HTCondorNegotiatorService()</h2>
+<a id="a3ee15c5ef572a9b91ea35ef2ba24a264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee15c5ef572a9b91ea35ef2ba24a264">&#9670;&nbsp;</a></span>HTCondorNegotiatorService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,8 +188,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;, unsigned long &gt; &amp;&#160;</td>
-          <td class="paramname"><em>compute_resources</em>, </td>
+          <td class="paramtype">std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>compute_services</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -207,13 +207,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>reply_mailbox</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>grid_universe_batch_service</em>&#160;</td>
+          <td class="paramname"><em>reply_mailbox</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -227,8 +221,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the hostname on which to start the service </td></tr>
-    <tr><td class="paramname">compute_resources</td><td>a set of compute resources available via the HTCondor pool </td></tr>
-    <tr><td class="paramname">running_jobs</td><td></td></tr>
+    <tr><td class="paramname">compute_services</td><td>a set of 'child' compute services available to and via the HTCondor pool </td></tr>
+    <tr><td class="paramname">running_jobs</td><td>a list of currently running jobs </td></tr>
     <tr><td class="paramname">pending_jobs</td><td>a list of pending jobs </td></tr>
     <tr><td class="paramname">reply_mailbox</td><td>the mailbox to which the "done/failed" message should be sent </td></tr>
   </table>

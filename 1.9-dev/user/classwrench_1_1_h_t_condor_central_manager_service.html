@@ -97,7 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwrench_1_1_h_t_condor_central_manager_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">wrench::HTCondorCentralManagerService Class Reference</div>  </div>
@@ -119,12 +118,6 @@ Inheritance diagram for wrench::HTCondorCentralManagerService:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e2344c89261dbb505e50e8087890197"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#a1e2344c89261dbb505e50e8087890197">HTCondorCentralManagerService</a> (const std::string &amp;hostname, std::set&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> * &gt; compute_resources, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={}, <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> *grid_universe_batch_service=nullptr)</td></tr>
-<tr class="memdesc:a1e2344c89261dbb505e50e8087890197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#a1e2344c89261dbb505e50e8087890197">More...</a><br /></td></tr>
-<tr class="separator:a1e2344c89261dbb505e50e8087890197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classwrench_1_1_compute_service"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classwrench_1_1_compute_service')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classwrench_1_1_compute_service.html">wrench::ComputeService</a></td></tr>
@@ -139,71 +132,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A HTCondor central manager service implementation. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1e2344c89261dbb505e50e8087890197"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e2344c89261dbb505e50e8087890197">&#9670;&nbsp;</a></span>HTCondorCentralManagerService()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">wrench::HTCondorCentralManagerService::HTCondorCentralManagerService </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>hostname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::set&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> * &gt;&#160;</td>
-          <td class="paramname"><em>compute_resources</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
-          <td class="paramname"><em>property_list</em> = <code>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; std::string, double &gt;&#160;</td>
-          <td class="paramname"><em>messagepayload_list</em> = <code>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> *&#160;</td>
-          <td class="paramname"><em>grid_universe_batch_service</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hostname</td><td>the hostname on which to start the service </td></tr>
-    <tr><td class="paramname">compute_resources</td><td>a set of compute resources available via the HTCondor pool </td></tr>
-    <tr><td class="paramname">property_list</td><td>a property list ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list ({} means "use all defaults")</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_h_t_condor_central_manager_service_8h_source.html">HTCondorCentralManagerService.h</a></li>
 <li>HTCondorCentralManagerService.cpp</li>
 </ul>
