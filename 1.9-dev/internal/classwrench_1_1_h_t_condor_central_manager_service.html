@@ -122,9 +122,9 @@ Inheritance diagram for wrench::HTCondorCentralManagerService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93a44e9068bb4f6c508cbaf3769b97bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#a93a44e9068bb4f6c508cbaf3769b97bc">HTCondorCentralManagerService</a> (const std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; compute_services, std::map&lt; std::string, std::string &gt; <a class="el" href="classwrench_1_1_service.html#a032143b1e2d7296dde9b4ca1e34845ce">property_list</a>={}, std::map&lt; std::string, double &gt; <a class="el" href="classwrench_1_1_service.html#a0c5f5e448ffb18f17f70a34b376b6640">messagepayload_list</a>={})</td></tr>
-<tr class="memdesc:a93a44e9068bb4f6c508cbaf3769b97bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#a93a44e9068bb4f6c508cbaf3769b97bc">More...</a><br /></td></tr>
-<tr class="separator:a93a44e9068bb4f6c508cbaf3769b97bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a2490b7e49fcfe43c4cee08c93dddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#a57a2490b7e49fcfe43c4cee08c93dddd">HTCondorCentralManagerService</a> (const std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, double negotiator_startup_overhead, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; compute_services, std::map&lt; std::string, std::string &gt; <a class="el" href="classwrench_1_1_service.html#a032143b1e2d7296dde9b4ca1e34845ce">property_list</a>={}, std::map&lt; std::string, double &gt; <a class="el" href="classwrench_1_1_service.html#a0c5f5e448ffb18f17f70a34b376b6640">messagepayload_list</a>={})</td></tr>
+<tr class="memdesc:a57a2490b7e49fcfe43c4cee08c93dddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#a57a2490b7e49fcfe43c4cee08c93dddd">More...</a><br /></td></tr>
+<tr class="separator:a57a2490b7e49fcfe43c4cee08c93dddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b956f9e6702d1531595feae39677979"><td class="memItemLeft" align="right" valign="top"><a id="a3b956f9e6702d1531595feae39677979"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#a3b956f9e6702d1531595feae39677979">~HTCondorCentralManagerService</a> () override</td></tr>
 <tr class="memdesc:a3b956f9e6702d1531595feae39677979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -132,6 +132,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeada677db45ac79f77304d8d23d9e669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#aeada677db45ac79f77304d8d23d9e669">addComputeService</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service)</td></tr>
 <tr class="memdesc:aeada677db45ac79f77304d8d23d9e669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new 'child' compute service.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#aeada677db45ac79f77304d8d23d9e669">More...</a><br /></td></tr>
 <tr class="separator:aeada677db45ac79f77304d8d23d9e669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be86ac8228d7e9aae2c0813a534914e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#a8be86ac8228d7e9aae2c0813a534914e">jobCanRunSomewhere</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job, std::map&lt; std::string, std::string &gt; service_specific_arguments)</td></tr>
+<tr class="memdesc:a8be86ac8228d7e9aae2c0813a534914e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to check whether a job can run on at least one child compute service.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#a8be86ac8228d7e9aae2c0813a534914e">More...</a><br /></td></tr>
+<tr class="separator:a8be86ac8228d7e9aae2c0813a534914e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94f2662fcf814e78bb6dda9319bcaca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#ac94f2662fcf814e78bb6dda9319bcaca">jobKindIsSupported</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; &amp;job, std::map&lt; std::string, std::string &gt; service_specific_arguments)</td></tr>
+<tr class="memdesc:ac94f2662fcf814e78bb6dda9319bcaca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to check whether a job kind is supported.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#ac94f2662fcf814e78bb6dda9319bcaca">More...</a><br /></td></tr>
+<tr class="separator:ac94f2662fcf814e78bb6dda9319bcaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9cb066ebf2f2ae0892eb42bfd3f29f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html#ab9cb066ebf2f2ae0892eb42bfd3f29f8">submitPilotJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_pilot_job.html">PilotJob</a> &gt; job, const std::map&lt; std::string, std::string &gt; &amp;service_specific_arguments) override</td></tr>
 <tr class="memdesc:ab9cb066ebf2f2ae0892eb42bfd3f29f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously submit a pilot job to the cloud service.  <a href="classwrench_1_1_h_t_condor_central_manager_service.html#ab9cb066ebf2f2ae0892eb42bfd3f29f8">More...</a><br /></td></tr>
 <tr class="separator:ab9cb066ebf2f2ae0892eb42bfd3f29f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,8 +455,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A HTCondor central manager service implementation. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a93a44e9068bb4f6c508cbaf3769b97bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a44e9068bb4f6c508cbaf3769b97bc">&#9670;&nbsp;</a></span>HTCondorCentralManagerService()</h2>
+<a id="a57a2490b7e49fcfe43c4cee08c93dddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57a2490b7e49fcfe43c4cee08c93dddd">&#9670;&nbsp;</a></span>HTCondorCentralManagerService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,6 +466,12 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>negotiator_startup_overhead</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -491,6 +503,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the hostname on which to start the service </td></tr>
+    <tr><td class="paramname">negotiator_startup_overhead</td><td>negotiator startup overhead </td></tr>
     <tr><td class="paramname">compute_services</td><td>a set of 'child' compute resources available to and via the HTCondor pool </td></tr>
     <tr><td class="paramname">property_list</td><td>a property list ({} means "use all defaults") </td></tr>
     <tr><td class="paramname">messagepayload_list</td><td>a message payload list ({} means "use all defaults")</td></tr>
@@ -530,6 +543,82 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8be86ac8228d7e9aae2c0813a534914e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be86ac8228d7e9aae2c0813a534914e">&#9670;&nbsp;</a></span>jobCanRunSomewhere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::HTCondorCentralManagerService::jobCanRunSomewhere </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td>
+          <td class="paramname"><em>job</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>service_specific_arguments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to check whether a job can run on at least one child compute service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">job</td><td>the job </td></tr>
+    <tr><td class="paramname">service_specific_arguments</td><td>the service-specific argument </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="ac94f2662fcf814e78bb6dda9319bcaca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94f2662fcf814e78bb6dda9319bcaca">&#9670;&nbsp;</a></span>jobKindIsSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::HTCondorCentralManagerService::jobKindIsSupported </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>job</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramname"><em>service_specific_arguments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper function to check whether a job kind is supported. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">job</td><td>the job </td></tr>
+    <tr><td class="paramname">service_specific_arguments</td><td>the service-specific argument </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
 
 </div>
 </div>

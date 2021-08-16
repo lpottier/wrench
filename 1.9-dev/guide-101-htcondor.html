@@ -98,24 +98,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="guide-htcondor-overview"></a>
 Overview</h1>
-<p><a href="http://htcondor.org">HTCondor</a> is a workload management framework that supervises task executions on local and remote resources. HTCondor is composed of six main service daemons (<code>startd</code>, <code>starter</code>, <code>schedd</code>, <code>shadow</code>, <code>negotiator</code>, and <code>collector</code>). In addition, each host on which one or more of these daemons is spawned must also run a <code>master</code> daemon, which controls the execution of all other daemons (including initialization and completion).</p>
+<p><a href="http://htcondor.org">HTCondor</a> is a workload management framework that supervises task executions on various sets of resources. HTCondor is composed of six main service daemons (<code>startd</code>, <code>starter</code>, <code>schedd</code>, <code>shadow</code>, <code>negotiator</code>, and <code>collector</code>). In addition, each host on which one or more of these daemons is spawned must also run a <code>master</code> daemon, which controls the execution of all other daemons (including initialization and completion).</p>
 <h1><a class="anchor" id="guide-htcondor-creating"></a>
 Creating an HTCondor Service</h1>
 <p>HTCondor is composed of a pool of resources in which jobs are submitted to perform their computation. In WRENCH, an HTCondor service represents a compute service (<code><a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">wrench::ComputeService</a></code>), which is defined by the <code><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">wrench::HTCondorComputeService</a></code> class. An instantiation of an HTCondor service requires the following parameters:</p>
 <ul>
 <li>The name of a host on which to start the service;</li>
-<li>The HTCondor pool name;</li>
-<li>A <code>std::set</code> of <code><a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">wrench::ComputeService</a></code> available to the HTCondor pool; and</li>
+<li>A <code>std::set</code> of 'child' <code><a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">wrench::ComputeService</a></code> instances available to the HTCondor pool; and</li>
 <li>A <code>std::map</code> of properties (<code><a class="el" href="classwrench_1_1_h_t_condor_compute_service_property.html" title="Properties for an HTCondor service.">wrench::HTCondorComputeServiceProperty</a></code>) and message payloads (<code><a class="el" href="classwrench_1_1_h_t_condor_compute_service_message_payload.html" title="Configurable message payloads for an htcondor.">wrench::HTCondorComputeServiceMessagePayload</a></code>).</li>
 </ul>
-<p>The set of compute services may represent any computing instance natively provided by WRENCH (e.g., bare-metal servers, cloud platforms, batch-scheduled clusters, etc.) or additional services derived from the <code><a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">wrench::ComputeService</a></code> base class. The example below creates an instance of an HTCondor service with a pool of resources containing a Bare-metal server:</p>
+<p>The set of compute services may include compute service instances that are either <code><a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">wrench::BareMetalComputeService</a></code> or <code><a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">wrench::BatchComputeService</a></code> instances. The example below creates an instance of an HTCondor service with a pool of resources containing a Bare-metal server:</p>
 <div class="fragment"><div class="line"><span class="comment">// Simulation </span></div>
 <div class="line"><a class="code" href="classwrench_1_1_simulation.html">wrench::Simulation</a> simulation;</div>
 <div class="line">simulation.<a class="code" href="classwrench_1_1_simulation.html#a3c6d35f1f77f35cbc727ce31e5689992">init</a>(&amp;argc, argv);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create bare-metal service</span></div>
-<div class="line">std::set&lt;wrench::ComputeService *&gt; compute_services;</div>
-<div class="line">compute_services.insert(<span class="keyword">new</span> <a class="code" href="classwrench_1_1_bare_metal_compute_service.html">wrench::BareMetalComputeService</a>(</div>
+<div class="line"><span class="comment">// Create a bare-metal service</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> baremetal_service = simulation.<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(</div>
+<div class="line">    <span class="keyword">new</span> <a class="code" href="classwrench_1_1_bare_metal_compute_service.html">wrench::BareMetalComputeService</a>(</div>
 <div class="line">          <span class="stringliteral">&quot;execution_hostname&quot;</span>,</div>
 <div class="line">          {std::make_pair(</div>
 <div class="line">                  <span class="stringliteral">&quot;execution_hostname&quot;</span>,</div>
@@ -123,19 +123,16 @@ Creating an HTCondor Service</h1>
 <div class="line">                                  <a class="code" href="classwrench_1_1_simulation.html#a757dde71d164a89ff52e49c4c52af0b5">wrench::Simulation::getHostMemoryCapacity</a>(<span class="stringliteral">&quot;execution_hostname&quot;</span>)))},</div>
 <div class="line">          <span class="stringliteral">&quot;/scratch/&quot;</span>));</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">auto</span> compute_service = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(</div>
+<div class="line">std::set&lt;std::shared_ptr&lt;wrench::ComputeService&gt;&gt; compute_services;</div>
+<div class="line">compute_services.insert(baremetal_service);</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> htcondor_compute_service = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(</div>
 <div class="line">          <span class="keyword">new</span> <a class="code" href="classwrench_1_1_h_t_condor_compute_service.html">wrench::HTCondorComputeService</a>(hostname, </div>
-<div class="line">                                      <span class="stringliteral">&quot;local&quot;</span>, </div>
 <div class="line">                                      std::move(compute_services),</div>
 <div class="line">                                      {{<a class="code" href="classwrench_1_1_compute_service_property.html#af0abab1e3bce4932c4482031f0c31ce8">wrench::HTCondorComputeServiceProperty::SUPPORTS_PILOT_JOBS</a>, <span class="stringliteral">&quot;false&quot;</span>}}</div>
 <div class="line">                                      ));</div>
-</div><!-- fragment --><h1><a class="anchor" id="guide-htcondor-anatomy"></a>
-Anatomy of the HTCondor Service</h1>
-<p>In WRENCH, we implement the 3 fundamental HTCondor services, implemented as particular sets of daemons. The <em>Job Execution Service</em> consists of a <code>startd</code> daemon, which adds the host on which it is running to the HTCondor pool, and of a <code>starter</code> daemon, which manages task executions on this host. The <em>Central Manager Service</em> consists of a <code>collector</code> daemon, which collects information about all other daemons, and of a <code>negotiator</code> daemon, which performs task/resource matchmaking. The <em>Job Submission Service</em> consists of a <code>schedd</code> daemon, which maintains a queue of tasks, and of several instances of a <code>shadow</code> daemon, each of which corresponds to a task submitted to the Condor pool for execution.</p>
-<div class="image">
-<img src="htcondor-architecture.png" alt=""/>
-</div>
-    </div></div><!-- contents -->
+</div><!-- fragment --><p>Jobs submitted to the <code><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">wrench::HTCondorComputeService</a></code> instance will be dispatched automatically to one of the 'child' compute services available to that instance (only one in the above example). </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 <div class="ttc" id="aclasswrench_1_1_simulation_html_a7cf70e5793758149a8bf29992d870c91"><div class="ttname"><a href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">wrench::Simulation::add</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; add(T *t)</div><div class="ttdoc">Method to add a service to the simulation.</div><div class="ttdef"><b>Definition:</b> Simulation.h:73</div></div>
 <div class="ttc" id="aclasswrench_1_1_h_t_condor_compute_service_html"><div class="ttname"><a href="classwrench_1_1_h_t_condor_compute_service.html">wrench::HTCondorComputeService</a></div><div class="ttdoc">A workload management framework compute service.</div><div class="ttdef"><b>Definition:</b> HTCondorComputeService.h:27</div></div>

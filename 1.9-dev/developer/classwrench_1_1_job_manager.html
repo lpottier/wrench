@@ -497,6 +497,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>to a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>: {{"-t":"&lt;int&gt;" (requested number of minutes)},{"-N":"&lt;int&gt;" (number of requested hosts)},{"-c":"&lt;int&gt;" (number of requested cores per host)}[,{"-u":"&lt;string&gt;" (username)}]}</li>
 <li>to a <a class="el" href="classwrench_1_1_virtualized_cluster_compute_service.html" title="A virtualized cluster-based compute service.">VirtualizedClusterComputeService</a>: {} (jobs should not be submitted directly to the service)}</li>
 <li>to a <a class="el" href="classwrench_1_1_cloud_compute_service.html" title="A cloud-based compute service that manages a set of physical hosts and controls access to their resou...">CloudComputeService</a>: {} (jobs should not be submitted directly to the service)}</li>
+<li>to a <a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">HTCondorComputeService</a>:<ul>
+<li>For a "grid universe" job that will be submitted to a child <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>: {{"universe":"grid", {"-t":"&lt;int&gt;" (requested number of minutes)},{"-N":"&lt;int&gt;" (number of requested hosts)},{"-c":"&lt;int&gt;" (number of requested cores per host)}[,{"-service":"&lt;string&gt;" (batch service name)}, {"-u":"&lt;string&gt;" (username)}]}</li>
+<li>For a "non-grid universe" job that will be submitted to a child <a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a>: {}</li>
+</ul>
+</li>
 </ul>
 </td></tr>
   </table>

@@ -96,11 +96,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Interacting with a HTCondor compute service </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>This section of the documentation is a work in progress</b></p>
-<p>WRENCH HTCondor service implementation spawns two additional services during execution: <a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html" title="A HTCondor central manager service implementation.">wrench::HTCondorCentralManagerService</a> and <a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html" title="A HTCondor negotiator service.">wrench::HTCondorNegotiatorService</a>.</p>
-<p>The <a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html" title="A HTCondor central manager service implementation.">wrench::HTCondorCentralManagerService</a> coordinates the execution of jobs submitted to the HTCondor pool. Jobs submitted to the <a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">wrench::HTCondorComputeService</a> are then queued in a <code>std::vector&lt;<a class="el" href="classwrench_1_1_standard_job.html" title="A standard (i.e., non-pilot) workflow job that can be submitted to a ComputeService by a WMS (via a J...">wrench::StandardJob</a> *&gt;</code>, which are then consumed as resources become available. The Central Manager also spawns the execution of the <a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html" title="A HTCondor negotiator service.">wrench::HTCondorNegotiatorService</a>, which performs matchmaking between jobs and compute resources available in the pool. Note that job submission in HTCondor is asynchronous, thus our simulated services operates independently of each other </p>
+<div class="textblock"><p>A <code><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">wrench::HTCondorComputeService</a></code> instance is essentially a front-end to several "child" compute services. As such, one can submit jobs to it, just like one would do to any compute service, but it then "decides" to which service these jobs will be delegated. In fact, a WMS can even add new child compute services to be used by HTCondor dynamically. Which child service is used is dictated/influenced by service-specific arguments passed or not passed to the <code><a class="el" href="classwrench_1_1_job_manager.html#a6e93d85718187a15fff1f02d83db52e4" title="Submit a job to compute service.">wrench::JobManager::submitJob()</a></code> method.</p>
+<p>The examples code fragments below showcase the creation of a <code><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">wrench::HTCondorComputeService</a></code> instance and its use by a WMS. Let's start with the creation (in main). Note that arguments to service constructors are omitted for brevity (see the WMS implementation in <code>examples/condor-grid-example/CondorWMS.cp</code> for a complete and working example).</p>
+<div class="fragment"><div class="line"><span class="comment">// Create a BareMetalComputeService instance</span></div>
+<div class="line"><span class="keyword">auto</span> baremetal_cs = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(<span class="keyword">new</span> <a class="code" href="classwrench_1_1_bare_metal_compute_service.html">wrench::BareMetalComputeService</a>(...));</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create two BatchComputeService instances</span></div>
+<div class="line"><span class="keyword">auto</span> batch1_cs = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(<span class="keyword">new</span> <a class="code" href="classwrench_1_1_batch_compute_service.html">wrench::BatchComputeService</a>(...));</div>
+<div class="line"><span class="keyword">auto</span> batch2_cs = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(<span class="keyword">new</span> <a class="code" href="classwrench_1_1_batch_compute_service.html">wrench::BatchComputeService</a>(...));</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a HTCondorComputeService instance with the above </span></div>
+<div class="line"><span class="comment">// three services as &quot;child&quot; services</span></div>
+<div class="line"><span class="keyword">auto</span> htcondor_cs = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(</div>
+<div class="line">     <span class="keyword">new</span> <a class="code" href="classwrench_1_1_h_t_condor_compute_service.html">wrench::HTCondorComputeService</a>(<span class="stringliteral">&quot;some_host&quot;</span>, </div>
+<div class="line">                                        {baremetal_cs, batch1_cs, batch2_cs}, </div>
+<div class="line">                                        <span class="stringliteral">&quot;/scratch&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a CloudComputeService instance</span></div>
+<div class="line"><span class="keyword">auto</span> cloud_cs = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(<span class="keyword">new</span> <a class="code" href="classwrench_1_1_cloud_compute_service.html">wrench::CloudComputeService</a>(...));</div>
+</div><!-- fragment --><p>Let's now say that a WMS was created that has access to all 5 above services, but will choose to submit all jobs via HTCondor. The first thing to do, so as to make the use of the cloud service possible, is to create a few VM instances and add them as child services to the HTCondor service:</p>
+<div class="fragment"><div class="line"><span class="comment">// Create and start to VMs on the cloud service</span></div>
+<div class="line"><span class="keyword">auto</span> vm1 = cloud_cs-&gt;createVM(...);</div>
+<div class="line"><span class="keyword">auto</span> vm2 = cloud_cs-&gt;createVM(...);</div>
+<div class="line"><span class="keyword">auto</span> vm1_cs = cloud_cs-&gt;startVM(vm1); </div>
+<div class="line"><span class="keyword">auto</span> vm2_cs = cloud_cs-&gt;startVM(vm2);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Add the two VM&#39;s bare-metal compute services to HTCondor</span></div>
+<div class="line">htcondor_cs-&gt;addComputeService(vm1_cs);</div>
+<div class="line">htcondor_cs-&gt;addComputeService(vm2_cs);</div>
+</div><!-- fragment --><p>So, at this point, HTCondor has access to 3 bare-metal compute services (2 of which are running inside VMs), and 2 batch compute services.</p>
+<p>Let's consider a WMS that will submit <code><a class="el" href="classwrench_1_1_standard_job.html" title="A standard (i.e., non-pilot) workflow job that can be submitted to a ComputeService by a WMS (via a J...">wrench::StandardJob</a></code> instances to HTCondor. These jobs can be of two kinds or, in HTCondor parlance, belong to one of two universes: <b>grid</b> jobs and <b>non-grid</b> jobs. By default a job is considered to be in the non-grid universe. But if the service-specific arguments passed to <code><a class="el" href="classwrench_1_1_job_manager.html#a6e93d85718187a15fff1f02d83db52e4" title="Submit a job to compute service.">wrench::JobManager::submitJob()</a></code> include a "universe":"grid" key:value pair, then the submitted job is in the grid universe. HTCondor handles both kinds of jobs differently:</p>
+<ul>
+<li>Non-grid universe jobs are queued and dispatched by HTCondor whenever possible to idle resources managed by one of the child bare-metal services. HTCondor chooses the service to use based on availability of resources.</li>
+<li>Grid universe jobs are dispatched by HTCondor immediately to a specific child batch compute service. As a result, these jobs must be submitted with service-specific arguments that provide values for "-N", "-c", and "-t" keys (like for any job submitted to a batch compute service), as well as a "-service" key that specifies the name of the batch service that should run the job (this argument is optional if there is a single child batch compute service).</li>
+</ul>
+<p>In the example below, we show both kinds of job submissions:</p>
+<div class="fragment"><div class="line"><span class="comment">// Create a standard job and submit it to HTCondor as a non-grid job,</span></div>
+<div class="line"><span class="comment">// which will thus run it on one of its 3 child bare-metal compute services</span></div>
+<div class="line"><span class="keyword">auto</span> ng_job = job_manager-&gt;createStandardJob(...);</div>
+<div class="line">job_manager-&gt;submitJob(ng_job, htcondor_cs, {}); <span class="comment">// no service-specific arguments</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a standard job and submit it to HTCondor as a grid job,</span></div>
+<div class="line"><span class="comment">// which will run it on the specified child batch compute service. </span></div>
+<div class="line"><span class="keyword">auto</span> g_job = job_manager-&gt;createStandardJob(...);</div>
+<div class="line"> </div>
+<div class="line">std::map&lt;std::string, std::string&gt; service_specific_args;</div>
+<div class="line">service_specific_args[<span class="stringliteral">&quot;-N&quot;</span>] = <span class="stringliteral">&quot;2&quot;</span>; <span class="comment">// 2 compute nodes</span></div>
+<div class="line">service_specific_args[<span class="stringliteral">&quot;-c&quot;</span>] = <span class="stringliteral">&quot;4&quot;</span>; <span class="comment">// 4 cores per compute nodes</span></div>
+<div class="line">service_specific_args[<span class="stringliteral">&quot;-t&quot;</span>] = <span class="stringliteral">&quot;60&quot;</span>; <span class="comment">// runs for one hour</span></div>
+<div class="line">service_specific_args[<span class="stringliteral">&quot;universe&quot;</span>] = <span class="stringliteral">&quot;grid&quot;</span>; <span class="comment">// Grid universe</span></div>
+<div class="line"><span class="comment">// Set it to run on the first batch compute service</span></div>
+<div class="line">service_specific_args[<span class="stringliteral">&quot;-service&quot;</span>] = batch1_cs-&gt;getName(); </div>
+<div class="line"> </div>
+<div class="line">job_manager-&gt;submitJob(g_job, htcondor_cs, service_specific_args);</div>
+</div><!-- fragment --><p>The above covers the essentials. See the API documnetation for more options, and the code in the <code>examples/condor-grid-example/</code> directory for working/usable code.</p>
+<h1><a class="anchor" id="guide-htcondor-anatomy"></a>
+Anatomy of the HTCondor Service</h1>
+<p>The in-simulation implementation of HTCondor in WRENCH is simplified in terms of its functionality and design when compared to the actual implementation of HTCondor. The <code><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service.">wrench::HTCondorComputeService</a></code> spawns two additional services during execution, <code><a class="el" href="classwrench_1_1_h_t_condor_central_manager_service.html" title="A HTCondor central manager service implementation.">wrench::HTCondorCentralManagerService</a></code> and <code><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html" title="A HTCondor negotiator service.">wrench::HTCondorNegotiatorService</a></code>, both of which loosely correspond to actual HTCondor daemons (<code>collector</code>, <code>negotiator</code>, <code>schedd</code>). Their use is fully automated and transparent to the WRENCH developer. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+<div class="ttc" id="aclasswrench_1_1_simulation_html_a7cf70e5793758149a8bf29992d870c91"><div class="ttname"><a href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">wrench::Simulation::add</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; add(T *t)</div><div class="ttdoc">Method to add a service to the simulation.</div><div class="ttdef"><b>Definition:</b> Simulation.h:73</div></div>
+<div class="ttc" id="aclasswrench_1_1_h_t_condor_compute_service_html"><div class="ttname"><a href="classwrench_1_1_h_t_condor_compute_service.html">wrench::HTCondorComputeService</a></div><div class="ttdoc">A workload management framework compute service.</div><div class="ttdef"><b>Definition:</b> HTCondorComputeService.h:27</div></div>
+<div class="ttc" id="aclasswrench_1_1_cloud_compute_service_html"><div class="ttname"><a href="classwrench_1_1_cloud_compute_service.html">wrench::CloudComputeService</a></div><div class="ttdoc">A cloud-based compute service that manages a set of physical hosts and controls access to their resou...</div><div class="ttdef"><b>Definition:</b> CloudComputeService.h:36</div></div>
+<div class="ttc" id="aclasswrench_1_1_bare_metal_compute_service_html"><div class="ttname"><a href="classwrench_1_1_bare_metal_compute_service.html">wrench::BareMetalComputeService</a></div><div class="ttdoc">A compute service that manages a set of multi-core compute hosts and provides access to their resourc...</div><div class="ttdef"><b>Definition:</b> BareMetalComputeService.h:48</div></div>
+<div class="ttc" id="aclasswrench_1_1_batch_compute_service_html"><div class="ttname"><a href="classwrench_1_1_batch_compute_service.html">wrench::BatchComputeService</a></div><div class="ttdoc">A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...</div><div class="ttdef"><b>Definition:</b> BatchComputeService.h:49</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

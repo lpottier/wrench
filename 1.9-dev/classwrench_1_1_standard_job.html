@@ -140,8 +140,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ff5f3f87f9c0b855f2ceaf0f104a9cb"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a6ff5f3f87f9c0b855f2ceaf0f104a9cb">getFileLocations</a> ()</td></tr>
 <tr class="memdesc:a6ff5f3f87f9c0b855f2ceaf0f104a9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file location map for the job.  <a href="classwrench_1_1_standard_job.html#a6ff5f3f87f9c0b855f2ceaf0f104a9cb">More...</a><br /></td></tr>
 <tr class="separator:a6ff5f3f87f9c0b855f2ceaf0f104a9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a9e0b3f8cf3eb98da92617944bb1f7513">getMinimumRequiredMemory</a> ()</td></tr>
+<tr class="memdesc:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum RAM capacity required to run the job (i.e., at least one task in the job cannot run if less ram than this minimum is available)  <a href="classwrench_1_1_standard_job.html#a9e0b3f8cf3eb98da92617944bb1f7513">More...</a><br /></td></tr>
+<tr class="separator:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">getMinimumRequiredNumCores</a> ()</td></tr>
-<tr class="memdesc:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum number of cores required, over all tasks in the job (i.e., at least one task in the job cannot run if fewer cores than this minimum are available)  <a href="classwrench_1_1_standard_job.html#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">More...</a><br /></td></tr>
+<tr class="memdesc:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum number of cores required to run the job (i.e., at least one task in the job cannot run if fewer cores than this minimum are available)  <a href="classwrench_1_1_standard_job.html#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">More...</a><br /></td></tr>
 <tr class="separator:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfe8f307875dcf375fea01bbd9b0fb6"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a7dfe8f307875dcf375fea01bbd9b0fb6">getNumCompletedTasks</a> ()</td></tr>
 <tr class="memdesc:a7dfe8f307875dcf375fea01bbd9b0fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of completed tasks in the job.  <a href="classwrench_1_1_standard_job.html#a7dfe8f307875dcf375fea01bbd9b0fb6">More...</a><br /></td></tr>
@@ -311,6 +314,26 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a id="a9e0b3f8cf3eb98da92617944bb1f7513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0b3f8cf3eb98da92617944bb1f7513">&#9670;&nbsp;</a></span>getMinimumRequiredMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long wrench::StandardJob::getMinimumRequiredMemory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum RAM capacity required to run the job (i.e., at least one task in the job cannot run if less ram than this minimum is available) </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of cores </dd></dl>
+
+</div>
+</div>
 <a id="a5b49ae2d2fcf93e5d5b452b9d14d0a1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">&#9670;&nbsp;</a></span>getMinimumRequiredNumCores()</h2>
 
@@ -326,7 +349,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
 </div><div class="memdoc">
 
-<p>Returns the minimum number of cores required, over all tasks in the job (i.e., at least one task in the job cannot run if fewer cores than this minimum are available) </p>
+<p>Returns the minimum number of cores required to run the job (i.e., at least one task in the job cannot run if fewer cores than this minimum are available) </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of cores </dd></dl>
 
 </div>
