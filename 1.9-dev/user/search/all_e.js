@@ -13,5 +13,6 @@ var searchData=
   ['pilot_5fjob_5fexpired_5fmessage_5fpayload_226',['PILOT_JOB_EXPIRED_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a1f5b40748d7fe90fb682d735395de3af',1,'wrench::ComputeServiceMessagePayload']]],
   ['pilot_5fjob_5ffailed_5fmessage_5fpayload_227',['PILOT_JOB_FAILED_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a6b614da3139f4735421ed8e918556c0c',1,'wrench::ComputeServiceMessagePayload']]],
   ['pilot_5fjob_5fstarted_5fmessage_5fpayload_228',['PILOT_JOB_STARTED_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a0a91a957ed0eeba0bb35daea55b25fa5',1,'wrench::ComputeServiceMessagePayload']]],
-  ['pilotjobscheduler_229',['PilotJobScheduler',['../classwrench_1_1_pilot_job_scheduler.html',1,'wrench::PilotJobScheduler'],['../classwrench_1_1_pilot_job_scheduler.html#ab230034aa98439169dc78bcf82bfced8',1,'wrench::PilotJobScheduler::PilotJobScheduler()']]]
+  ['pilotjobscheduler_229',['PilotJobScheduler',['../classwrench_1_1_pilot_job_scheduler.html',1,'wrench::PilotJobScheduler'],['../classwrench_1_1_pilot_job_scheduler.html#ab230034aa98439169dc78bcf82bfced8',1,'wrench::PilotJobScheduler::PilotJobScheduler()']]],
+  ['processunknownjobtermination_230',['processUnknownJobTermination',['../namespacewrench.html#a2523a69db2b2754eae6e115cba3d7773',1,'wrench']]]
 ];

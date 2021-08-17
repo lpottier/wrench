@@ -27,5 +27,6 @@ var searchData=
   ['processeventstandardjobcompletion_391',['processEventStandardJobCompletion',['../classwrench_1_1_w_m_s.html#a82c2bd2dda1b2af798299274551e8afd',1,'wrench::WMS']]],
   ['processeventstandardjobfailure_392',['processEventStandardJobFailure',['../classwrench_1_1_w_m_s.html#a3f5aa823aa73f0881393457720f0a26f',1,'wrench::WMS']]],
   ['processeventtimer_393',['processEventTimer',['../classwrench_1_1_w_m_s.html#a4e2db794368665bcbcf40271c094668d',1,'wrench::WMS']]],
-  ['properpathprefix_394',['properPathPrefix',['../classwrench_1_1_file_location.html#a700b870565a0db27aed81cbe5a1960a5',1,'wrench::FileLocation']]]
+  ['processunknownjobtermination_394',['processUnknownJobTermination',['../namespacewrench.html#a2523a69db2b2754eae6e115cba3d7773',1,'wrench']]],
+  ['properpathprefix_395',['properPathPrefix',['../classwrench_1_1_file_location.html#a700b870565a0db27aed81cbe5a1960a5',1,'wrench::FileLocation']]]
 ];

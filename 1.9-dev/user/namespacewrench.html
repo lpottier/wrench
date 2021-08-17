@@ -411,8 +411,8 @@ std::shared_ptr&lt; <a class="el" href="classwrench_1_1_service.html">Service</a
 <tr class="memitem:a3fc54549aba2210e001bd1ec6206f048"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; std::string, unsigned long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a3fc54549aba2210e001bd1ec6206f048">parseResourceSpec</a> (const std::string &amp;spec)</td></tr>
 <tr class="memdesc:a3fc54549aba2210e001bd1ec6206f048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper static method to parse resource specifications to the &lt;cores,ram&gt; format.  <a href="namespacewrench.html#a3fc54549aba2210e001bd1ec6206f048">More...</a><br /></td></tr>
 <tr class="separator:a3fc54549aba2210e001bd1ec6206f048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2523a69db2b2754eae6e115cba3d7773"><td class="memItemLeft" align="right" valign="top"><a id="a2523a69db2b2754eae6e115cba3d7773"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>processUnknownJobTermination</b> (std::string job_id)</td></tr>
+<tr class="memitem:a2523a69db2b2754eae6e115cba3d7773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a2523a69db2b2754eae6e115cba3d7773">processUnknownJobTermination</a> (std::string job_id)</td></tr>
+<tr class="memdesc:a2523a69db2b2754eae6e115cba3d7773"><td class="mdescLeft">&#160;</td><td class="mdescRight">No-op method.  <a href="namespacewrench.html#a2523a69db2b2754eae6e115cba3d7773">More...</a><br /></td></tr>
 <tr class="separator:a2523a69db2b2754eae6e115cba3d7773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4785cb60f8ee73703f5d00578ce1fb59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a4785cb60f8ee73703f5d00578ce1fb59">searchForLayout</a> (std::vector&lt; WorkflowTaskExecutionInstance &gt; &amp;data, std::size_t index)</td></tr>
 <tr class="memdesc:a4785cb60f8ee73703f5d00578ce1fb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a possible host utilization gantt chart layout and updates the data to include what vertical position to plot each rectangle.  <a href="namespacewrench.html#a4785cb60f8ee73703f5d00578ce1fb59">More...</a><br /></td></tr>
@@ -986,6 +986,32 @@ the storage service </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2523a69db2b2754eae6e115cba3d7773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2523a69db2b2754eae6e115cba3d7773">&#9670;&nbsp;</a></span>processUnknownJobTermination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::BatschedBatchScheduler::processUnknownJobTermination </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>job_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No-op method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">job_id</td><td>a batch job id </td></tr>
   </table>
   </dd>
 </dl>

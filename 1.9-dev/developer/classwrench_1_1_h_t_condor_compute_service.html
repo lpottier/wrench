@@ -124,9 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a20bcbe116b84473797ff71f7ffd0be6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a20bcbe116b84473797ff71f7ffd0be6b">HTCondorComputeService</a> (const std::string &amp;hostname, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; compute_services, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
 <tr class="memdesc:a20bcbe116b84473797ff71f7ffd0be6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a20bcbe116b84473797ff71f7ffd0be6b">More...</a><br /></td></tr>
 <tr class="separator:a20bcbe116b84473797ff71f7ffd0be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1d77fd52a43fa82bae86cd24e8b666"><td class="memItemLeft" align="right" valign="top"><a id="acc1d77fd52a43fa82bae86cd24e8b666"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#acc1d77fd52a43fa82bae86cd24e8b666">addComputeService</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service)</td></tr>
-<tr class="memdesc:acc1d77fd52a43fa82bae86cd24e8b666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new 'child' compute service. <br /></td></tr>
+<tr class="memitem:acc1d77fd52a43fa82bae86cd24e8b666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#acc1d77fd52a43fa82bae86cd24e8b666">addComputeService</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service)</td></tr>
+<tr class="memdesc:acc1d77fd52a43fa82bae86cd24e8b666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new 'child' compute service.  <a href="classwrench_1_1_h_t_condor_compute_service.html#acc1d77fd52a43fa82bae86cd24e8b666">More...</a><br /></td></tr>
 <tr class="separator:acc1d77fd52a43fa82bae86cd24e8b666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2cbdab2588de30b2d4181a6e7be10a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a0d2cbdab2588de30b2d4181a6e7be10a">getLocalStorageService</a> () const</td></tr>
 <tr class="memdesc:a0d2cbdab2588de30b2d4181a6e7be10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the service's local storage service.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a0d2cbdab2588de30b2d4181a6e7be10a">More...</a><br /></td></tr>
@@ -313,6 +312,32 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc1d77fd52a43fa82bae86cd24e8b666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1d77fd52a43fa82bae86cd24e8b666">&#9670;&nbsp;</a></span>addComputeService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::HTCondorComputeService::addComputeService </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td>
+          <td class="paramname"><em>compute_service</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new 'child' compute service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">compute_service</td><td>the compute service to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0d2cbdab2588de30b2d4181a6e7be10a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d2cbdab2588de30b2d4181a6e7be10a">&#9670;&nbsp;</a></span>getLocalStorageService()</h2>
 
