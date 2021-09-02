@@ -130,6 +130,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:a45c0b59f3792d3d6de90efedbff064bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a45c0b59f3792d3d6de90efedbff064bc">getCallbackMailbox</a> ()</td></tr>
 <tr class="memdesc:a45c0b59f3792d3d6de90efedbff064bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "next" callback mailbox (returns the origin (i.e., workflow) mailbox if the mailbox stack is empty)  <a href="classwrench_1_1_workflow_job.html#a45c0b59f3792d3d6de90efedbff064bc">More...</a><br /></td></tr>
 <tr class="separator:a45c0b59f3792d3d6de90efedbff064bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696c3e75679a5b1a7062c4a1324d2d35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a696c3e75679a5b1a7062c4a1324d2d35">getEndDate</a> ()</td></tr>
+<tr class="memdesc:a696c3e75679a5b1a7062c4a1324d2d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job ended (&lt;0 means "never submitted")  <a href="classwrench_1_1_workflow_job.html#a696c3e75679a5b1a7062c4a1324d2d35">More...</a><br /></td></tr>
+<tr class="separator:a696c3e75679a5b1a7062c4a1324d2d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a567b35eaf3952997a71eeedd97138794"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a567b35eaf3952997a71eeedd97138794">getName</a> ()</td></tr>
 <tr class="memdesc:a567b35eaf3952997a71eeedd97138794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job's name.  <a href="classwrench_1_1_workflow_job.html#a567b35eaf3952997a71eeedd97138794">More...</a><br /></td></tr>
 <tr class="separator:a567b35eaf3952997a71eeedd97138794"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,10 @@ Protected Attributes</h2></td></tr>
 std::stack&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ab2c1544d499e081a35f2998f53a02278">callback_mailbox_stack</a></td></tr>
 <tr class="memdesc:ab2c1544d499e081a35f2998f53a02278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack of callback mailboxes (to pop notifications) <br /></td></tr>
 <tr class="separator:ab2c1544d499e081a35f2998f53a02278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17408466d759dcb0beaae69ffc106e1"><td class="memItemLeft" align="right" valign="top"><a id="ab17408466d759dcb0beaae69ffc106e1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ab17408466d759dcb0beaae69ffc106e1">end_date</a></td></tr>
+<tr class="memdesc:ab17408466d759dcb0beaae69ffc106e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date at which the job ended (with success or failure) <br /></td></tr>
+<tr class="separator:ab17408466d759dcb0beaae69ffc106e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a098ede62860e053e09ae646500e1e8c7"><td class="memItemLeft" align="right" valign="top"><a id="a098ede62860e053e09ae646500e1e8c7"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a098ede62860e053e09ae646500e1e8c7">name</a></td></tr>
 <tr class="memdesc:a098ede62860e053e09ae646500e1e8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's name. <br /></td></tr>
@@ -248,6 +255,26 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 <p>Get the "next" callback mailbox (returns the origin (i.e., workflow) mailbox if the mailbox stack is empty) </p>
 <dl class="section return"><dt>Returns</dt><dd>the next callback mailbox </dd></dl>
+
+</div>
+</div>
+<a id="a696c3e75679a5b1a7062c4a1324d2d35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696c3e75679a5b1a7062c4a1324d2d35">&#9670;&nbsp;</a></span>getEndDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double wrench::WorkflowJob::getEndDate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the date at which the job ended (&lt;0 means "never submitted") </p>
+<dl class="section return"><dt>Returns</dt><dd>the end date </dd></dl>
 
 </div>
 </div>
