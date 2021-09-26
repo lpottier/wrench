@@ -6,76 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
     <meta name="generator" content="Doxygen 1.8.17"/>
-    <title>WRENCH: Creating a bare-metal compute service</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+    <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
-    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-    <script type="text/javascript" src="jquery.smartmenus.bootstrap.js"></script>
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+    <!--    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>-->
+    <!--    <link rel="stylesheet" href="bootstrap.min.css">-->
+    <!--    <script src="bootstrap.min.js"></script>-->
+    <!--    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
+    <!--    <script type="text/javascript" src="jquery.smartmenus.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery.smartmenus.bootstrap.js"></script>-->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a href="https://wrench-project.org" class="navbar-brand">
-                <img alt="Logo" src="logo-horizontal.png" width="160" style="float: left"/>
-                1.10-dev
-            </a>
-        </div>
-        <div id="main-nav" class="nav navbar-nav navbar-right">
-            <ul class="sm sm-dox nav navbar-nav navbar-right" id="main-menu">
-                <li class="nav-item"><a class="nav-link" href="/wrench/1.10-dev/index.html">Overview</a></li>
-                <li class="nav-item"><a class="nav-link" href="/wrench/1.10-dev/install.html">Installation</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/wrench/1.10-dev/getting-started.html">Getting
-                    Started</a></li>
-                <li class="nav-item"><a class="nav-link" href="/wrench/1.10-dev/wrench-101.html">WRENCH 101</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/wrench/1.10-dev/wrench-102.html">WRENCH 102</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="true" aria-expanded="false">APIs Reference</a>
-                    <div class="dropdown-menu">
-                        <a class="small dropdown-item" href="/wrench/1.10-dev/user/annotated.html">User</a>
-                        <a class="small dropdown-item"
-                           href="/wrench/1.10-dev/developer/annotated.html">Developer</a>
-                        <a class="small dropdown-item"
-                           href="/wrench/1.10-dev/internal/annotated.html">Internal</a>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea" style="width: 100%">
+        <table cellspacing="0" cellpadding="0" style="margin-bottom: 1em; width: 100%">
+            <tbody>
+            <tr>
+                <td id="projectlogo"><img alt="Logo" src="wrench-logo.png"/></td>
+                <td id="projectalign" style="padding-left: 0.5em; margin-bottom: 1em; min-width: 270px">
+                    <div id="projectname">WRENCH
+                        &#160;<span id="projectnumber">1.10-dev</span>
                     </div>
-                </li>
-            </ul>
+                    <div id="projectbrief">Cyberinfrastructure Simulation Workbench</div>
+                </td>
+                <td style="vertical-align: bottom">
+                    <a class="link" href="/wrench/1.10-dev/index.html">Overview</a>
+                </td>
+                <td style="vertical-align: bottom">
+                    <a class="link" href="/wrench/1.10-dev/install.html">Installation</a>
+                </td>
+                <td style="vertical-align: bottom">
+                    <a class="link" href="/wrench/1.10-dev/getting-started.html">Getting Started</a>
+                </td>
+                <td style="vertical-align: bottom">
+                    <a class="link" href="/wrench/1.10-dev/wrench-101.html">WRENCH 101</a>
+                </td>
+                <td style="vertical-align: bottom">
+                    <a class="link" href="/wrench/1.10-dev/wrench-102.html">WRENCH 102</a>
+                </td>
+                <td style="vertical-align: bottom">
+                    <div class="dropdown">
+                        <button class="dropbtn link">APIs Reference</button>
+                        <div class="dropdown-content">
+                            <a class="small dropdown-item link"
+                               href="/wrench/1.10-dev/user/annotated.html">User</a>
+                            <a class="small dropdown-item link"
+                               href="/wrench/1.10-dev/developer/annotated.html">Developer</a>
+                            <a class="small dropdown-item link"
+                               href="/wrench/1.10-dev/internal/annotated.html">Internal</a>
+                        </div>
+                    </div>
+                </td>
+                <!--                        <li class="nav-item dropdown">-->
+                <!--                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"-->
+                <!--                               aria-haspopup="true" aria-expanded="false">APIs Reference</a>-->
+                <!--                            <div class="dropdown-menu">-->
+                <!--                                <a class="small dropdown-item" href="/wrench/1.10-dev/user/annotated.html">User</a>-->
+                <!--                                <a class="small dropdown-item"-->
+                <!--                                   href="/wrench/1.10-dev/developer/annotated.html">Developer</a>-->
+                <!--                                <a class="small dropdown-item"-->
+                <!--                                   href="/wrench/1.10-dev/internal/annotated.html">Internal</a>-->
+                <!--                            </div>-->
+                <!--                        </li>-->
+                <td style="float: right; min-width: 230px; padding-top: 1em">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
         </div>
+</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-</nav>
-<div id="top" style="padding-top: 4em !important"><!-- do not remove this div, it is closed by doxygen! -->
-    <div class="content" id="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 panel " style="padding-bottom: 15px;">
-                    <div style="margin-bottom: 15px;">
-                        <!-- end header part -->
+    <!--</div>-->
+    <!--<div id="side-nav" class="ui-resizable side-nav-resizable" style="height: 794px;">-->
+    <!--    <div id="nav-tree" style="height: 794px;">-->
+    <!--        <div id="nav-tree-contents">-->
+    <!--            <div id="nav-sync" class="sync" style="top: 30px;"><img src="sync_on.png"-->
+    <!--                                                                    title="click to disable panel synchronisation">-->
+    <!--            </div>-->
+    <!--            <ul style="display: block;">-->
+    <!--                <li>-->
+    <!--                    <div class="item selected" id="selected"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                                style="padding-left: 0px;">▼</span></a><span-->
+    <!--                            class="label"><a class="index.html" href="index.html">WRENCH</a></span></div>-->
+    <!--                    <ul class="children_ul" style="">-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="index.html" href="index.html">Overview</a></span></div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="install.html"-->
+    <!--                                                     href="install.html">Installing WRENCH</a></span>-->
+    <!--                            </div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="getting-started.html" href="getting-started.html">Getting started</a></span>-->
+    <!--                            </div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="wrench-101.html"-->
+    <!--                                                     href="wrench-101.html">WRENCH 101</a></span></div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="wrench-102.html"-->
+    <!--                                                     href="wrench-102.html">WRENCH 102</a></span></div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="namespaces.html"-->
+    <!--                                                     href="namespaces.html">Namespaces</a></span></div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="annotated.html" href="annotated.html">Classes</a></span>-->
+    <!--                            </div>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <div class="item"><a href="javascript:void(0)"><span class="arrow"-->
+    <!--                                                                                 style="padding-left: 16px;">►</span></a><span-->
+    <!--                                    class="label"><a class="files.html" href="files.html">Files</a></span></div>-->
+    <!--                        </li>-->
+    <!--                    </ul>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">-->
+    <!--    </div>-->
+    <!--    <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>-->
+    <!--    <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>-->
+    <!--    <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"-->
+    <!--         style="z-index: 90;"></div>-->
 <!-- Generated by Doxygen 1.8.17 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
 /* @license-end */
 </script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -96,6 +204,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Creating a bare-metal compute service </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#guide-baremetal-overview">Overview</a></li>
+<li class="level1"><a href="#guide-baremetal-creating">Creating a bare-metal compute service</a></li>
+</ul>
+</div>
 <div class="textblock"><h1><a class="anchor" id="guide-baremetal-overview"></a>
 Overview</h1>
 <p>A bare-metal compute service makes it possible to run tasks directly on hardware resources. Think of it as a set of multi-core hosts on which multi-threaded processes can be started using something like Ssh. The service does not perform any space-sharing among the jobs. In other words, jobs submitted to the service execute concurrently in a time-shared manner. It is the responsibility of the job submitter to pick hosts and/or numbers of cores for each task, e.g., to enforce space-sharing of cores. But by default the compute service operates as a "jungle" in which tasks share cores at will. The only resource allocation performed by the service is that it ensures that the RAM capacity of a hosts are not exceeded. Tasks that have non-zero RAM requirements are queued in FCFS fashion at each host until there is enough RAM to execute them (think of this as each host running an OS that disallows swapping and implements a FCFS access policy for RAM allocation).</p>
@@ -109,7 +222,7 @@ Creating a bare-metal compute service</h1>
 <li>Maps (<code>std::map</code>) of configurable properties (<code><a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html" title="Configurable properties for a bare_metal.">wrench::BareMetalComputeServiceProperty</a></code>) and configurable message payloads (<code><a class="el" href="classwrench_1_1_bare_metal_compute_service_message_payload.html" title="Configurable message payloads for a MultiHostMulticoreComputeService.">wrench::BareMetalComputeServiceMessagePayload</a></code>).</li>
 </ul>
 <p>The example below creates an instance of a bare-metal service that runs on host <code>Gateway</code>, provides access to all cores and 1GiB of RAM on host <code>Node1</code> and to 8 cores and all RAM on host <code>Node2</code>, and has a scratch space on the disk mounted at path <code>/scratch</code> on host <code>Gateway</code>. Furthermore, the thread startup overhead is configured to be one hundredth of a second, and the message with which the service answers resource request description requests is configured to be 1KiB:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> baremetal_cs = simulation-&gt;add(</div>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> baremetal_cs = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(</div>
 <div class="line">          <span class="keyword">new</span> <a class="code" href="classwrench_1_1_bare_metal_compute_service.html">wrench::BareMetalComputeService</a>(<span class="stringliteral">&quot;Gateway&quot;</span>, </div>
 <div class="line">                                       {{<span class="stringliteral">&quot;Node1&quot;</span>, std::make_tuple(<a class="code" href="classwrench_1_1_compute_service.html#a1160f521623440ad4e0e0823e08a7d22">wrench::ComputeService::ALL_CORES</a>, pow(2,30))}, </div>
 <div class="line">                                       {<span class="stringliteral">&quot;Node2&quot;</span>, std::make_tuple(8, <a class="code" href="classwrench_1_1_compute_service.html#abc4fe0bad59f544b4b34d0e7d4012d44">wrench::ComputeService::ALL_RAM</a>}},</div>
@@ -120,59 +233,55 @@ Creating a bare-metal compute service</h1>
 <p>Also see the simulators in the <code>examples/basic-examples/bare-metal-*/</code> directories, which use bare-metal compute services. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+<div class="ttc" id="aclasswrench_1_1_simulation_html_a7cf70e5793758149a8bf29992d870c91"><div class="ttname"><a href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">wrench::Simulation::add</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; add(T *t)</div><div class="ttdoc">Method to add a service to the simulation.</div><div class="ttdef"><b>Definition:</b> Simulation.h:73</div></div>
 <div class="ttc" id="aclasswrench_1_1_bare_metal_compute_service_html"><div class="ttname"><a href="classwrench_1_1_bare_metal_compute_service.html">wrench::BareMetalComputeService</a></div><div class="ttdoc">A compute service that manages a set of multi-core compute hosts and provides access to their resourc...</div><div class="ttdef"><b>Definition:</b> BareMetalComputeService.h:48</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_message_payload_html_a110f501ef6361a70627833e8ab5ab511"><div class="ttname"><a href="classwrench_1_1_compute_service_message_payload.html#a110f501ef6361a70627833e8ab5ab511">wrench::ComputeServiceMessagePayload::RESOURCE_DESCRIPTION_ANSWER_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string RESOURCE_DESCRIPTION_ANSWER_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent by the daemon to state information on its resources.</div><div class="ttdef"><b>Definition:</b> ComputeServiceMessagePayload.h:58</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_html_a1160f521623440ad4e0e0823e08a7d22"><div class="ttname"><a href="classwrench_1_1_compute_service.html#a1160f521623440ad4e0e0823e08a7d22">wrench::ComputeService::ALL_CORES</a></div><div class="ttdeci">static constexpr unsigned long ALL_CORES</div><div class="ttdoc">A convenient constant to mean &quot;use all cores of a physical host&quot; whenever a number of cores is needed...</div><div class="ttdef"><b>Definition:</b> ComputeService.h:52</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_service_html_abc4fe0bad59f544b4b34d0e7d4012d44"><div class="ttname"><a href="classwrench_1_1_compute_service.html#abc4fe0bad59f544b4b34d0e7d4012d44">wrench::ComputeService::ALL_RAM</a></div><div class="ttdeci">static constexpr double ALL_RAM</div><div class="ttdoc">A convenient constant to mean &quot;use all ram of a physical host&quot; whenever a ram capacity is needed when...</div><div class="ttdef"><b>Definition:</b> ComputeService.h:57</div></div>
-<!-- HTML footer for doxygen 1.8.8-->
-<!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <p>
-                    <strong>&copy;2017-2020 WRENCH. All Rights Reserved.</strong><br />
-                </p>
-                <p style="padding-top: 1em">
-                    <a href="mailto:support@wrench-project.org" class="fa-stack fa-2x" style="font-size: 1.5em">
-                        <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
-                        <i class="fa fa-envelope fa-stack-1x"></i>
-                    </a>
-                    <a href="http://twitter.com/wrenchproject" target="_blank" class="fa-stack fa-2x"
-                       style="font-size: 1.5em">
-                        <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                    <a href="https://github.com/wrench-project/wrench" target="_blank" class="fa-stack fa-2x"
-                       style="font-size: 1.5em">
-                        <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
-                        <i class="fab fa-github fa-stack-1x"></i>
-                    </a>
-                </p>
-            </div>
-            <div class="col-sm-4 text-center">
-            </div>
-            <div class="col-sm-4">
-                <p>WRENCH is funded by the National Science Foundation (NSF) under grants number <a
-                        href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642369" target="_blank">1642369</a>,
-                    <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1642335" target="_blank">1642335</a>,
-                    <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923539" target="_blank">1923539</a>, and
-                    <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923621" target="_blank">1923621</a>;
-                    and the National Center for Scientific Research (CNRS) under grant number PICS07239.
-                </p>
-                <p style="font-weight: normal; font-size: 0.8em; margin-top: 1em">
-                    Any opinions, findings, and conclusions or recommendations expressed in this material are those
-                    of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-                </p>
-            </div>
-        </div>
+    <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
+        <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>
+        <p style="padding-top: 1em">
+            <a href="mailto:support@wrench-project.org" class="fa-stack fa-2x" style="font-size: 1.5em">
+                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                <i class="fa fa-envelope fa-stack-1x"></i>
+            </a>
+            <a href="https://twitter.com/wrenchproject" target="_blank" class="fa-stack fa-2x"
+               style="font-size: 1.5em">
+                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+            <a href="https://github.com/wrench-project/wrench" target="_blank" class="fa-stack fa-2x"
+               style="font-size: 1.5em">
+                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                <i class="fab fa-github fa-stack-1x"></i>
+            </a>
+        </p>
+    </div>
+    <div style="float: right; width: 40%; padding-right: 2em">
+        <p style="font-size: 0.8em">
+            WRENCH is funded by the National Science Foundation (NSF) under grants number <a
+                href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103489" target="_blank">2103489</a>,
+            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=2103508" target="_blank">2103508</a>,
+            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923539" target="_blank">1923539</a>, and
+            <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1923621" target="_blank">1923621</a>;
+            and the National Center for Scientific Research (CNRS) under grant number PICS07239.
+        </p>
+        <p style="font-weight: normal; font-size: 0.7em; margin-top: 1em">
+            Any opinions, findings, and conclusions or recommendations expressed in this material are those
+            of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+        </p>
     </div>
 </div>
+<!-- add the button to toggle the theme -->
+<script>
+    $(document).ready(function () {
+        toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+        toggleButton.title = "Toggle Light/Dark Mode"
+        document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+    })
+</script>
+<!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -189,5 +298,4 @@ Creating a bare-metal compute service</h1>
     ga('send', 'pageview');
 </script>
 </body>
-<script type="text/javascript" src="doxy-boot.js"></script>
 </html>
