@@ -16,7 +16,7 @@ var searchData=
   ['workflowtaskexecution_2066',['WorkflowTaskExecution',['../structwrench_1_1_workflow_task_1_1_workflow_task_execution.html#a4c2fbd22157f771e925e28cf89874b93',1,'wrench::WorkflowTask::WorkflowTaskExecution']]],
   ['workloadtracefilereplayer_2067',['WorkloadTraceFileReplayer',['../classwrench_1_1_workload_trace_file_replayer.html#a9931d1d68d42edc4bef128d8e11a5ac1',1,'wrench::WorkloadTraceFileReplayer']]],
   ['workloadtracefilereplayereventreceiver_2068',['WorkloadTraceFileReplayerEventReceiver',['../classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d',1,'wrench::WorkloadTraceFileReplayerEventReceiver']]],
-  ['workunit_2069',['Workunit',['../classwrench_1_1_workunit.html#a9891138164725c76ba41b69ca87df177',1,'wrench::Workunit']]],
+  ['workunit_2069',['Workunit',['../classwrench_1_1_workunit.html#a8c4723b6a488e4023206a253c535ce46',1,'wrench::Workunit']]],
   ['workunitexecutor_2070',['WorkunitExecutor',['../classwrench_1_1_workunit_executor.html#a03ab28aeecdf4854aadc55f4e67e950c',1,'wrench::WorkunitExecutor']]],
   ['workunitexecutordonemessage_2071',['WorkunitExecutorDoneMessage',['../classwrench_1_1_workunit_executor_done_message.html#a03cd2f2a5b503367e828f0f7b9be608a',1,'wrench::WorkunitExecutorDoneMessage']]],
   ['workunitexecutorfailedmessage_2072',['WorkunitExecutorFailedMessage',['../classwrench_1_1_workunit_executor_failed_message.html#a56235e5ced989482a55b00f5fdb4e2eb',1,'wrench::WorkunitExecutorFailedMessage']]],

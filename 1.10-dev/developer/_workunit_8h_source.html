@@ -151,7 +151,7 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordtype">double</span> sleep_time,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;, std::shared_ptr&lt;FileLocation&gt;&gt;&gt; pre_file_copies,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                WorkflowTask *task,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                std::map&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;&gt; file_locations,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                std::map&lt;WorkflowFile *, std::vector&lt;std::shared_ptr&lt;FileLocation&gt;&gt;&gt; file_locations,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;, std::shared_ptr&lt;FileLocation&gt;&gt;&gt; post_file_copies,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;&gt;&gt; cleanup_file_deletions);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -169,7 +169,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">double</span> sleep_time;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;, std::shared_ptr&lt;FileLocation&gt;&gt;&gt; pre_file_copies;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        WorkflowTask *task = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::map&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;&gt; file_locations;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::map&lt;WorkflowFile *, std::vector&lt;std::shared_ptr&lt;FileLocation&gt;&gt;&gt; file_locations;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;, std::shared_ptr&lt;FileLocation&gt;&gt;&gt; post_file_copies;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        std::vector&lt;std::tuple&lt;WorkflowFile *, std::shared_ptr&lt;FileLocation&gt;&gt;&gt; cleanup_file_deletions;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>

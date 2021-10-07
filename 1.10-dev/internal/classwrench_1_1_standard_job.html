@@ -157,9 +157,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ff5f3f87f9c0b855f2ceaf0f104a9cb"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a6ff5f3f87f9c0b855f2ceaf0f104a9cb">getFileLocations</a> ()</td></tr>
-<tr class="memdesc:a6ff5f3f87f9c0b855f2ceaf0f104a9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file location map for the job.  <a href="classwrench_1_1_standard_job.html#a6ff5f3f87f9c0b855f2ceaf0f104a9cb">More...</a><br /></td></tr>
-<tr class="separator:a6ff5f3f87f9c0b855f2ceaf0f104a9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bfafc79868422cb6573ceeed072a29"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#ad6bfafc79868422cb6573ceeed072a29">getFileLocations</a> ()</td></tr>
+<tr class="memdesc:ad6bfafc79868422cb6573ceeed072a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file location map for the job.  <a href="classwrench_1_1_standard_job.html#ad6bfafc79868422cb6573ceeed072a29">More...</a><br /></td></tr>
+<tr class="separator:ad6bfafc79868422cb6573ceeed072a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a9e0b3f8cf3eb98da92617944bb1f7513">getMinimumRequiredMemory</a> ()</td></tr>
 <tr class="memdesc:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum RAM capacity required to run the job (i.e., at least one task in the job cannot run if less ram than this minimum is available)  <a href="classwrench_1_1_standard_job.html#a9e0b3f8cf3eb98da92617944bb1f7513">More...</a><br /></td></tr>
 <tr class="separator:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,10 +235,10 @@ Public Attributes</h2></td></tr>
 std::vector&lt; std::tuple&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a99d8056d004ff7db810873b7d110aa06">cleanup_file_deletions</a></td></tr>
 <tr class="memdesc:a99d8056d004ff7db810873b7d110aa06"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file deletion operations to perform at the end. <br /></td></tr>
 <tr class="separator:a99d8056d004ff7db810873b7d110aa06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4619a6a85e60d68f5f520d2c47ba7a75"><td class="memItemLeft" align="right" valign="top"><a id="a4619a6a85e60d68f5f520d2c47ba7a75"></a>
-std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a4619a6a85e60d68f5f520d2c47ba7a75">file_locations</a></td></tr>
-<tr class="memdesc:a4619a6a85e60d68f5f520d2c47ba7a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file locations that tasks should read/write files from/to. <br /></td></tr>
-<tr class="separator:a4619a6a85e60d68f5f520d2c47ba7a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e881b0fd5c52cf26eaefc4c14f8020"><td class="memItemLeft" align="right" valign="top"><a id="a22e881b0fd5c52cf26eaefc4c14f8020"></a>
+std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a22e881b0fd5c52cf26eaefc4c14f8020">file_locations</a></td></tr>
+<tr class="memdesc:a22e881b0fd5c52cf26eaefc4c14f8020"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file locations that tasks should read/write files from/to. Each file is given a list of locations, in preferred order. <br /></td></tr>
+<tr class="separator:a22e881b0fd5c52cf26eaefc4c14f8020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbb08d57f0b36a87dcb1d77c89de103b"><td class="memItemLeft" align="right" valign="top"><a id="acbb08d57f0b36a87dcb1d77c89de103b"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#acbb08d57f0b36a87dcb1d77c89de103b">num_completed_tasks</a></td></tr>
 <tr class="memdesc:acbb08d57f0b36a87dcb1d77c89de103b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of computational tasks that have completed. <br /></td></tr>
@@ -333,14 +333,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ff5f3f87f9c0b855f2ceaf0f104a9cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff5f3f87f9c0b855f2ceaf0f104a9cb">&#9670;&nbsp;</a></span>getFileLocations()</h2>
+<a id="ad6bfafc79868422cb6573ceeed072a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bfafc79868422cb6573ceeed072a29">&#9670;&nbsp;</a></span>getFileLocations()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; wrench::StandardJob::getFileLocations </td>
+          <td class="memname">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt; wrench::StandardJob::getFileLocations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
