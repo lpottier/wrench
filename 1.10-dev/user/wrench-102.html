@@ -195,7 +195,7 @@ The Job abstraction</h3>
 </ul>
 <p>Any of the above can actually be empty, and in the extreme a standard job can do nothing.</p>
 <p>Standard jobs and pilot jobs are created via the job manager, which provides a <code>wrench::JobManager::createPilotJob()</code> member function and several versions of a <code>wrench::JobManager::createStandardJob()</code> member function. Briefly put, the job manager is a job factory.</p>
-<p>The job manager provides the following expected member functions:</p>
+<p>In addition to member functions for job creation, the job manager also provides the following:</p>
 <ul>
 <li><code>wrench::JobManager::submitJob()</code>: asynchronous submission of a job to a compute service.</li>
 <li><code>wrench::JobManager::terminateJob()</code>: synchronous termination of a previously submitted job.</li>

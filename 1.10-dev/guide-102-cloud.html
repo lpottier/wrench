@@ -141,7 +141,7 @@ $(function() {
 <div class="line"><span class="keyword">auto</span> job_manager = this-&gt;createJobManager();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a job</span></div>
-<div class="line"><span class="keyword">auto</span> job = job_manager-&gt;createStandardJob({... some tasks ...}, {});</div>
+<div class="line"><span class="keyword">auto</span> job = job_manager-&gt;createStandardJob({... some tasks ...});</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Submit the job to the 1st VM (i.e., to its bare-metal compute service)</span></div>
 <div class="line">job_manager-&gt;submitJob(job, vm1_cs);</div>
