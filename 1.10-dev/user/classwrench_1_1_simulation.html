@@ -156,6 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c6d35f1f77f35cbc727ce31e5689992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#a3c6d35f1f77f35cbc727ce31e5689992">init</a> (int *, char **)</td></tr>
 <tr class="memdesc:a3c6d35f1f77f35cbc727ce31e5689992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the simulation, which parses out WRENCH-specific and SimGrid-specific command-line arguments, if any.  <a href="classwrench_1_1_simulation.html#a3c6d35f1f77f35cbc727ce31e5689992">More...</a><br /></td></tr>
 <tr class="separator:a3c6d35f1f77f35cbc727ce31e5689992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd47288a02e96c0eb11e61d9518f369c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#abd47288a02e96c0eb11e61d9518f369c">instantiatePlatform</a> (const std::function&lt; void()&gt; &amp;)</td></tr>
+<tr class="memdesc:abd47288a02e96c0eb11e61d9518f369c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a simulated platform.  <a href="classwrench_1_1_simulation.html#abd47288a02e96c0eb11e61d9518f369c">More...</a><br /></td></tr>
+<tr class="separator:abd47288a02e96c0eb11e61d9518f369c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae22639abf6ede9f345b382f5ffe19b0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation.html#ae22639abf6ede9f345b382f5ffe19b0e">instantiatePlatform</a> (std::string)</td></tr>
 <tr class="memdesc:ae22639abf6ede9f345b382f5ffe19b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a simulated platform.  <a href="classwrench_1_1_simulation.html#ae22639abf6ede9f345b382f5ffe19b0e">More...</a><br /></td></tr>
 <tr class="separator:ae22639abf6ede9f345b382f5ffe19b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -676,8 +679,34 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="abd47288a02e96c0eb11e61d9518f369c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd47288a02e96c0eb11e61d9518f369c">&#9670;&nbsp;</a></span>instantiatePlatform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::Simulation::instantiatePlatform </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
+          <td class="paramname"><em>creation_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiate a simulated platform. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">creation_function</td><td>void() function to create the platform </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae22639abf6ede9f345b382f5ffe19b0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae22639abf6ede9f345b382f5ffe19b0e">&#9670;&nbsp;</a></span>instantiatePlatform()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22639abf6ede9f345b382f5ffe19b0e">&#9670;&nbsp;</a></span>instantiatePlatform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

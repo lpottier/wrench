@@ -149,6 +149,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a7658128602b3a342bc0daecff9459f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a7658128602b3a342bc0daecff9459f36">runSimulation</a> ()</td></tr>
 <tr class="memdesc:a7658128602b3a342bc0daecff9459f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the simulation.  <a href="classwrench_1_1_s4_u___simulation.html#a7658128602b3a342bc0daecff9459f36">More...</a><br /></td></tr>
 <tr class="separator:a7658128602b3a342bc0daecff9459f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d91e3c1aa6b9d7dededeae95be12fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a8d91e3c1aa6b9d7dededeae95be12fae">setupPlatform</a> (const std::function&lt; void()&gt; &amp;creation_function)</td></tr>
+<tr class="memdesc:a8d91e3c1aa6b9d7dededeae95be12fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the simulated platform. Must only be called once.  <a href="classwrench_1_1_s4_u___simulation.html#a8d91e3c1aa6b9d7dededeae95be12fae">More...</a><br /></td></tr>
+<tr class="separator:a8d91e3c1aa6b9d7dededeae95be12fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787dce31d634da739172a9f0fb0e8e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a787dce31d634da739172a9f0fb0e8e30">setupPlatform</a> (std::string &amp;)</td></tr>
 <tr class="memdesc:a787dce31d634da739172a9f0fb0e8e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the simulated platform. Must only be called once.  <a href="classwrench_1_1_s4_u___simulation.html#a787dce31d634da739172a9f0fb0e8e30">More...</a><br /></td></tr>
 <tr class="separator:a787dce31d634da739172a9f0fb0e8e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1649,8 +1652,40 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 </div>
 </div>
+<a id="a8d91e3c1aa6b9d7dededeae95be12fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d91e3c1aa6b9d7dededeae95be12fae">&#9670;&nbsp;</a></span>setupPlatform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::S4U_Simulation::setupPlatform </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void()&gt; &amp;&#160;</td>
+          <td class="paramname"><em>creation_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the simulated platform. Must only be called once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">creation_function</td><td>void() function to create the platform</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a787dce31d634da739172a9f0fb0e8e30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a787dce31d634da739172a9f0fb0e8e30">&#9670;&nbsp;</a></span>setupPlatform()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a787dce31d634da739172a9f0fb0e8e30">&#9670;&nbsp;</a></span>setupPlatform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

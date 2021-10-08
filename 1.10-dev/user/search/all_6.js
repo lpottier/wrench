@@ -60,7 +60,7 @@ var searchData=
   ['getoutputfilemap_143',['getOutputFileMap',['../classwrench_1_1_workflow.html#a52a4d7e4ec7e6415def5cd7b55ed1e3e',1,'wrench::Workflow']]],
   ['getoutputfiles_144',['getOutputFiles',['../classwrench_1_1_workflow.html#a23b8214f43ca8d0052f3e46ec780a773',1,'wrench::Workflow']]],
   ['getoutputof_145',['getOutputOf',['../classwrench_1_1_workflow_file.html#a37f8fb29dac0d933bc0ae7d138baad31',1,'wrench::WorkflowFile']]],
-  ['getparallelmodel_146',['getParallelModel',['../classwrench_1_1_workflow_task.html#aebcc914c5d2e8907ece7c65a01cc8b01',1,'wrench::WorkflowTask']]],
+  ['getparallelmodel_146',['getParallelModel',['../classwrench_1_1_workflow_task.html#abae833e97264899fc61bf8f18b46ef47',1,'wrench::WorkflowTask']]],
   ['getparents_147',['getParents',['../classwrench_1_1_workflow_task.html#a11b6cbdcbd0e1bcaa4ac7b91b551b2fe',1,'wrench::WorkflowTask']]],
   ['getpilotjobscheduler_148',['getPilotJobScheduler',['../classwrench_1_1_w_m_s.html#ab84692140428dd81a6eccc115bf557e7',1,'wrench::WMS']]],
   ['getpstate_149',['getPstate',['../classwrench_1_1_simulation_timestamp_pstate_set.html#aa16b326fe7c60ec75ed6468d94183c0d',1,'wrench::SimulationTimestampPstateSet']]],
