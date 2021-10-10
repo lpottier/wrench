@@ -196,9 +196,12 @@ Creating a CMakeLists.txt file by hand</h1>
 <div class="line">                      )</div>
 </div><!-- fragment --><h1><a class="anchor" id="getting-started-example"></a>
 Example WRENCH simulators</h1>
-<p>The examples in the <code>examples</code> directory provide good starting points for developing your own simulators. Typing <code>make</code> in the top-level directory compiles the examples in the <code>examples</code> directory.</p>
+<p>The examples in the <code>examples</code> directory provide good starting points for developing your own simulators. Typing <code>make</code> in the top-level directory compiles the examples in the <code>examples</code> directory (note that examples are already installed as executables programs in the container, so there is no need to compile them).</p>
 <p>Let us run the <code>examples/basic-examples/bare-metal-bag-of-tasks</code> by navigating to that directory and typing:</p>
-<div class="fragment"><div class="line">./wrench-example-bare-metal-bag-of-tasks 6 ./two_hosts.xml --log=custom_wms.threshold=info</div>
+<div class="fragment"><div class="line">$ ./wrench-example-bare-metal-bag-of-tasks 6 ./two_hosts.xml --log=custom_wms.threshold=info</div>
+<div class="line"> </div>
+<div class="line"># or if in the container just call the executable directly:</div>
+<div class="line">$ wrench-example-bare-metal-bag-of-tasks 6 ./two_hosts.xml --log=custom_wms.threshold=info</div>
 </div><!-- fragment --><p>You should see some output in the terminal. The output in white is produced by the simulator implemented with the WRENCH user API. The output in green is produced by the workflow management system implemented with the WRENCH developer API.</p>
 <p>Although you can inspect the codes of the examples on your own, we highly recommend that you go through the <a class="el" href="wrench-101.html">WRENCH 101</a> and <a class="el" href="wrench-102.html">WRENCH 102</a> pages first. These pages make direct references to the examples, a description of which is available in <code>examples/README.md</code> in the WRENCH distribution. </p>
 </div></div><!-- contents -->
