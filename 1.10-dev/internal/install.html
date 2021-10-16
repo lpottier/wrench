@@ -151,16 +151,21 @@ Optional Dependencies</h2>
 Source Install</h1>
 <h2><a class="anchor" id="install-source-build"></a>
 Building WRENCH</h2>
-<p>You can download the <code>wrench-1.10-dev.tar.gz</code> archive from the <a href="https://github.com/wrench-project/wrench/releases">GitHub releases</a> page. Once you have installed dependencies (see above), you can install WRENCH as follows:</p>
-<div class="fragment"> <div class="line">tar xf wrench-1.10-dev.tar.gz</div> <div class="line">cd wrench-1.10-dev</div> <div class="line">cmake .</div> <div class="line">make -j8</div> <div class="line">make install # try "sudo make install" if you do not have write privileges</div> </div><p>If you want to see actual compiler and linker invocations, add VERBOSE=1 to the compilation command:</p>
-<div class="fragment"><div class="line">make -j8 VERBOSE=1</div>
+<p>You can download the <em>@WRENCHRelease.tar.gz</em> archive from the <a href="https://github.com/wrench-project/wrench/releases">GitHub releases</a> page. Once you have installed dependencies (see above), you can install WRENCH as follows:</p>
+<div class="fragment"><div class="line">tar xf wrench-1.10-dev.tar.gz</div>
+<div class="line">cd wrench-1.10-dev</div>
+<div class="line">cmake .</div>
+<div class="line">make</div>
+<div class="line">make install # try &quot;sudo make install&quot; if you do not have write privileges</div>
+</div><!-- fragment --><p>If you want to see actual compiler and linker invocations, add VERBOSE=1 to the compilation command:</p>
+<div class="fragment"><div class="line">make VERBOSE=1</div>
 </div><!-- fragment --><p>To enable the use of Batsched (provided you have installed that package, see above): </p><div class="fragment"><div class="line">cmake -DENABLE_BATSCHED=on .</div>
 </div><!-- fragment --><p>If you want to stay on the bleeding edge, you should get the latest git version, and recompile it as you would do for an official archive:</p>
 <div class="fragment"><div class="line">git clone https://github.com/wrench-project/wrench</div>
 </div><!-- fragment --><h2><a class="anchor" id="install-unit-tests"></a>
 Compiling and running unit tests</h2>
 <p>Building and running the unit tests, which requires Google Test, is done as:</p>
-<div class="fragment"><div class="line">make -j8 unit_tests      </div>
+<div class="fragment"><div class="line">make unit_tests      </div>
 <div class="line">./unit_tests</div>
 </div><!-- fragment --><h2><a class="anchor" id="install-troubleshooting"></a>
 Installation Troubleshooting</h2>
