@@ -279,6 +279,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a09e00013323772ba58c88e137e6b81c8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a09e00013323772ba58c88e137e6b81c8">copyFile</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; src_location, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; dst_location)</td></tr>
 <tr class="memdesc:a09e00013323772ba58c88e137e6b81c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously ask the storage service to read a file from another storage service.  <a href="classwrench_1_1_storage_service.html#a09e00013323772ba58c88e137e6b81c8">More...</a><br /></td></tr>
 <tr class="separator:a09e00013323772ba58c88e137e6b81c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66277ca4fd9d1097d69f6a915b61f225"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a66277ca4fd9d1097d69f6a915b61f225">createFile</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location)</td></tr>
+<tr class="memdesc:a66277ca4fd9d1097d69f6a915b61f225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a file at a particular mount point ex nihilo (this instantly creates the file at the storage service - zero simulation time). Will do nothing (and won't complain) if the file already exists at that location.  <a href="classwrench_1_1_storage_service.html#a66277ca4fd9d1097d69f6a915b61f225">More...</a><br /></td></tr>
+<tr class="separator:a66277ca4fd9d1097d69f6a915b61f225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f560f5495e575efac5aeb441678503e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a7f560f5495e575efac5aeb441678503e">deleteFile</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; location, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt; file_registry_service=nullptr)</td></tr>
 <tr class="memdesc:a7f560f5495e575efac5aeb441678503e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously delete a file at a location.  <a href="classwrench_1_1_storage_service.html#a7f560f5495e575efac5aeb441678503e">More...</a><br /></td></tr>
 <tr class="separator:a7f560f5495e575efac5aeb441678503e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -556,6 +559,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66277ca4fd9d1097d69f6a915b61f225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66277ca4fd9d1097d69f6a915b61f225">&#9670;&nbsp;</a></span>createFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::StorageService::createFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store a file at a particular mount point ex nihilo (this instantly creates the file at the storage service - zero simulation time). Will do nothing (and won't complain) if the file already exists at that location. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>a file </td></tr>
+    <tr><td class="paramname">location</td><td>a file location</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
     <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
   </table>
   </dd>
