@@ -19,7 +19,7 @@ var searchData=
   ['addedge_16',['addEdge',['../classwrench_1_1_dag_of_tasks.html#ad40cc69e67edb48a1947b3a0633b8636',1,'wrench::DagOfTasks']]],
   ['addentry_17',['addEntry',['../classwrench_1_1_file_registry_service.html#ae64f00cb5db45e7af6247aa269dcaa58',1,'wrench::FileRegistryService']]],
   ['addfile_18',['addFile',['../classwrench_1_1_workflow.html#a0e1f7dc16f875f18c0990e6bd1843932',1,'wrench::Workflow']]],
-  ['addfilereadaction_19',['addFileReadAction',['../classwrench_1_1_compound_job.html#a14e0a787f4f46f4f4f189cdb43a88430',1,'wrench::CompoundJob']]],
+  ['addfilereadaction_19',['addFileReadAction',['../classwrench_1_1_compound_job.html#a14e0a787f4f46f4f4f189cdb43a88430',1,'wrench::CompoundJob::addFileReadAction(std::string name, std::shared_ptr&lt; WorkflowFile &gt; file, std::shared_ptr&lt; FileLocation &gt; file_location)'],['../classwrench_1_1_compound_job.html#a183914d1ca46d29822106144cf71a64e',1,'wrench::CompoundJob::addFileReadAction(std::string name, std::shared_ptr&lt; WorkflowFile &gt; file, std::vector&lt; std::shared_ptr&lt; FileLocation &gt;&gt; file_locations)']]],
   ['addinputfile_20',['addInputFile',['../classwrench_1_1_workflow_task.html#a3498047afb74ea6ce2132d44f8c678e8',1,'wrench::WorkflowTask']]],
   ['addoutputfile_21',['addOutputFile',['../classwrench_1_1_workflow_task.html#ac774b4fddc07753f5fc7daa31ae28fd3',1,'wrench::WorkflowTask']]],
   ['addsleepaction_22',['addSleepAction',['../classwrench_1_1_compound_job.html#a0ac04c4c578c4d41229e179eb5fed354',1,'wrench::CompoundJob']]],

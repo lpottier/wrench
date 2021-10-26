@@ -164,6 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14e0a787f4f46f4f4f189cdb43a88430"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a14e0a787f4f46f4f4f189cdb43a88430">addFileReadAction</a> (std::string <a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a>, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
 <tr class="memdesc:a14e0a787f4f46f4f4f189cdb43a88430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a14e0a787f4f46f4f4f189cdb43a88430">More...</a><br /></td></tr>
 <tr class="separator:a14e0a787f4f46f4f4f189cdb43a88430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183914d1ca46d29822106144cf71a64e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a183914d1ca46d29822106144cf71a64e">addFileReadAction</a> (std::string <a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a>, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> &gt; file, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&gt; file_locations)</td></tr>
+<tr class="memdesc:a183914d1ca46d29822106144cf71a64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a183914d1ca46d29822106144cf71a64e">More...</a><br /></td></tr>
+<tr class="separator:a183914d1ca46d29822106144cf71a64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac04c4c578c4d41229e179eb5fed354"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_sleep_action.html">SleepAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a0ac04c4c578c4d41229e179eb5fed354">addSleepAction</a> (std::string <a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a>, double sleep_time)</td></tr>
 <tr class="memdesc:a0ac04c4c578c4d41229e179eb5fed354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a sleep action to the job.  <a href="classwrench_1_1_compound_job.html#a0ac04c4c578c4d41229e179eb5fed354">More...</a><br /></td></tr>
 <tr class="separator:a0ac04c4c578c4d41229e179eb5fed354"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,7 +432,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div>
 </div>
 <a id="a14e0a787f4f46f4f4f189cdb43a88430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e0a787f4f46f4f4f189cdb43a88430">&#9670;&nbsp;</a></span>addFileReadAction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e0a787f4f46f4f4f189cdb43a88430">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,6 +469,51 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
     <tr><td class="paramname">name</td><td>the action's name (if empty, a unique name will be picked for you) </td></tr>
     <tr><td class="paramname">file</td><td>the file </td></tr>
     <tr><td class="paramname">file_location</td><td>the file's location </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a file read action </dd></dl>
+
+</div>
+</div>
+<a id="a183914d1ca46d29822106144cf71a64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183914d1ca46d29822106144cf71a64e">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt; wrench::CompoundJob::addFileReadAction </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> &gt;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>file_locations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a file read action to the job. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the action's name (if empty, a unique name will be picked for you) </td></tr>
+    <tr><td class="paramname">file</td><td>the file </td></tr>
+    <tr><td class="paramname">file_locations</td><td>the locations to read the file from (will be tried in order until one succeeds) </td></tr>
   </table>
   </dd>
 </dl>

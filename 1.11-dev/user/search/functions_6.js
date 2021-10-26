@@ -25,7 +25,7 @@ var searchData=
   ['getfailurecount_514',['getFailureCount',['../classwrench_1_1_workflow_task.html#a6103d36486855fb8caabb008bcfaacd4',1,'wrench::WorkflowTask']]],
   ['getfile_515',['getFile',['../classwrench_1_1_file_read_action.html#ab1b475abe1513b228ad9475f22b10cdc',1,'wrench::FileReadAction::getFile()'],['../classwrench_1_1_simulation_timestamp_file_read.html#a6bba6c73d48c69b6adf6c84229e66ae1',1,'wrench::SimulationTimestampFileRead::getFile()'],['../classwrench_1_1_simulation_timestamp_file_write.html#a3959084fdffdba107e1ae40fa8870e59',1,'wrench::SimulationTimestampFileWrite::getFile()'],['../classwrench_1_1_simulation_timestamp_file_copy.html#a20275ad1b9f85099fed946e656420e1c',1,'wrench::SimulationTimestampFileCopy::getFile()']]],
   ['getfilebyid_516',['getFileByID',['../classwrench_1_1_workflow.html#a19b3b6f36f684f8c367f42a818b0a0c2',1,'wrench::Workflow']]],
-  ['getfilelocation_517',['getFileLocation',['../classwrench_1_1_file_read_action.html#a3b26be3b28318c164b64ee66c4e311f0',1,'wrench::FileReadAction']]],
+  ['getfilelocations_517',['getFileLocations',['../classwrench_1_1_file_read_action.html#ab45fa508df0a3acbdcbfd2ac3aea3b9a',1,'wrench::FileReadAction']]],
   ['getfilemap_518',['getFileMap',['../classwrench_1_1_workflow.html#a2bd4d4f93a5c3da0bd727dba12e6405a',1,'wrench::Workflow']]],
   ['getfiles_519',['getFiles',['../classwrench_1_1_workflow.html#a52e102422ea021f798426f2f44830e09',1,'wrench::Workflow']]],
   ['getflops_520',['getFlops',['../classwrench_1_1_compute_action.html#aa87a2b37a436196b510bedff275dc734',1,'wrench::ComputeAction::getFlops()'],['../classwrench_1_1_workflow_task.html#aec0aab3ed552960729a60d1d3c4a3de2',1,'wrench::WorkflowTask::getFlops()']]],
