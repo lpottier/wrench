@@ -112,7 +112,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f7fef775f7301921a54ff1af899ae71f.html">wrench</a></li><li class="navelem"><a class="el" href="dir_1cb6c66ee3e26daa553920ee788a6b92.html">helper_services</a></li><li class="navelem"><a class="el" href="dir_35643e3ce15ad43e19e5db6fa9380faf.html">work_unit_executor</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a946ec3d4951f0462f08b8eca24d53fc.html">wrench</a></li><li class="navelem"><a class="el" href="dir_78f69c8f37113f3c52ce286c8cb26c80.html">services</a></li><li class="navelem"><a class="el" href="dir_d93a1f623651d61fb41302876ee7da8c.html">helper_services</a></li><li class="navelem"><a class="el" href="dir_8e4e12b1117a4a78d1fa1749b1bdcefe.html">compute_thread</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -121,12 +121,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef WRENCH_COMPUTETHREADTEST_H</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_COMPUTETHREADTEST_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef WRENCH_COMPUTE_THREAD_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_COMPUTE_THREAD_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;wrench/simgrid_S4U_util/S4U_Mailbox.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;wrench/simgrid_S4U_util/S4U_Mailbox.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;wrench/simgrid_S4U_util/S4U_Simulation.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;helper_services/standard_job_executor/StandardJobExecutorMessage.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wrench/services/helper_services/standard_job_executor/StandardJobExecutorMessage.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
@@ -158,15 +158,15 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    /***********************/</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif //WRENCH_COMPUTETHREADTEST_H</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif //WRENCH_COMPUTE_THREAD_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_compute_thread_html_a5d96b02af2a69f6c444241c23696a1a3"><div class="ttname"><a href="classwrench_1_1_compute_thread.html#a5d96b02af2a69f6c444241c23696a1a3">wrench::ComputeThread::ComputeThread</a></div><div class="ttdeci">ComputeThread(std::string hostname, double flops, std::string reply_mailbox)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> ComputeThread.cpp:26</div></div>
-<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
+<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:17</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_thread_html_aae43a83a656caf607342b248ee5cde2a"><div class="ttname"><a href="classwrench_1_1_compute_thread.html#aae43a83a656caf607342b248ee5cde2a">wrench::ComputeThread::main</a></div><div class="ttdeci">int main() override</div><div class="ttdoc">The main method of the compute thread.</div><div class="ttdef"><b>Definition:</b> ComputeThread.cpp:37</div></div>
-<div class="ttc" id="aclasswrench_1_1_compute_thread_html_aae6ca8e1ef22282405d02edd026059c7"><div class="ttname"><a href="classwrench_1_1_compute_thread.html#aae6ca8e1ef22282405d02edd026059c7">wrench::ComputeThread::cleanup</a></div><div class="ttdeci">void cleanup(bool has_returned_from_main, int return_value) override</div><div class="ttdoc">Cleanup method that overrides the base method and does nothing as a compute thread does not need to i...</div><div class="ttdef"><b>Definition:</b> ComputeThread.cpp:66</div></div>
+<div class="ttc" id="aclasswrench_1_1_compute_thread_html_aae6ca8e1ef22282405d02edd026059c7"><div class="ttname"><a href="classwrench_1_1_compute_thread.html#aae6ca8e1ef22282405d02edd026059c7">wrench::ComputeThread::cleanup</a></div><div class="ttdeci">void cleanup(bool has_returned_from_main, int return_value) override</div><div class="ttdoc">Cleanup method that overrides the base method and does nothing as a compute thread does not need to i...</div><div class="ttdef"><b>Definition:</b> ComputeThread.cpp:71</div></div>
 <div class="ttc" id="aclasswrench_1_1_s4_u___daemon_html_a52bc0b9a6cd248310749dac086819f00"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">wrench::S4U_Daemon::hostname</a></div><div class="ttdeci">std::string hostname</div><div class="ttdoc">The name of the host on which the daemon is running.</div><div class="ttdef"><b>Definition:</b> S4U_Daemon.h:51</div></div>
 <div class="ttc" id="aclasswrench_1_1_compute_thread_html"><div class="ttname"><a href="classwrench_1_1_compute_thread.html">wrench::ComputeThread</a></div><div class="ttdoc">A one-shot service that simulates a CPU-bound thread that performs a given number of flops and then r...</div><div class="ttdef"><b>Definition:</b> ComputeThread.h:32</div></div>
-<div class="ttc" id="aclasswrench_1_1_compute_thread_html_a89973c4cd2c9ec39a1d26c05a1bc3b11"><div class="ttname"><a href="classwrench_1_1_compute_thread.html#a89973c4cd2c9ec39a1d26c05a1bc3b11">wrench::ComputeThread::kill</a></div><div class="ttdeci">void kill()</div><div class="ttdoc">Terminate (brutally) the compute thread.</div><div class="ttdef"><b>Definition:</b> ComputeThread.cpp:55</div></div>
+<div class="ttc" id="aclasswrench_1_1_compute_thread_html_a89973c4cd2c9ec39a1d26c05a1bc3b11"><div class="ttname"><a href="classwrench_1_1_compute_thread.html#a89973c4cd2c9ec39a1d26c05a1bc3b11">wrench::ComputeThread::kill</a></div><div class="ttdeci">void kill()</div><div class="ttdoc">Terminate (brutally) the compute thread.</div><div class="ttdef"><b>Definition:</b> ComputeThread.cpp:60</div></div>
 <div class="ttc" id="aclasswrench_1_1_service_html"><div class="ttname"><a href="classwrench_1_1_service.html">wrench::Service</a></div><div class="ttdoc">A service that can be added to the simulation and that can be used by a WMS when executing a workflow...</div><div class="ttdef"><b>Definition:</b> Service.h:26</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">

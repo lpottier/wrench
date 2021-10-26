@@ -146,6 +146,9 @@ $(function() {
 <li>setColor()
 : <a class="el" href="classwrench_1_1_workflow_task.html#a92a6ab9f646d20c5a1cb32cea77f1524">wrench::WorkflowTask</a>
 </li>
+<li>setEndDate()
+: <a class="el" href="classwrench_1_1_action.html#a0c46eacf12fb75be760c3953466a36b7">wrench::Action</a>
+</li>
 <li>setEndpoints()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_disk_read.html#a0c5aa13e807a2153dce1f02de6f3268c">wrench::SimulationTimestampDiskRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_disk_write.html#ae62d87d1bf0577774597ed14949d94f3">wrench::SimulationTimestampDiskWrite</a>
@@ -153,6 +156,9 @@ $(function() {
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a5912e3d097907cee17bfb2938897bd15">wrench::SimulationTimestampFileRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#af5e0fface3667623e9f0f1b278099257">wrench::SimulationTimestampFileWrite</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_task.html#a8d509ab4bfc8c1ae1ad9bf44dd085969">wrench::SimulationTimestampTask</a>
+</li>
+<li>setFailureCause()
+: <a class="el" href="classwrench_1_1_action.html#a4d8e92229ac28dbe26b92254ac240b8e">wrench::Action</a>
 </li>
 <li>setLocalStorageService()
 : <a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a26ee7448273c4fa1269156aafb6bbe87">wrench::HTCondorComputeService</a>
@@ -169,8 +175,20 @@ $(function() {
 <li>setPstate()
 : <a class="el" href="classwrench_1_1_simulation.html#adf4675a8c9c62c93bfbd3dc4a4e46556">wrench::Simulation</a>
 </li>
+<li>setSimulateComputationAsSleep()
+: <a class="el" href="classwrench_1_1_action.html#a5b62fd49fa77b8cb354d894ccda453fb">wrench::Action</a>
+</li>
+<li>setStartDate()
+: <a class="el" href="classwrench_1_1_action.html#a28fdb091bf63b54bd01b892bd0843982">wrench::Action</a>
+</li>
+<li>setState()
+: <a class="el" href="classwrench_1_1_action.html#a4105e3a573c92c3c659c6c36cbc9f5fd">wrench::Action</a>
+</li>
 <li>setThisProcessLoggingColor()
 : <a class="el" href="classwrench_1_1_terminal_output.html#a07c9d9aaefaf7d79fc2cafaa92162813">wrench::TerminalOutput</a>
+</li>
+<li>setThreadCreationOverhead()
+: <a class="el" href="classwrench_1_1_action.html#ad69121b38c1808d479242047fab5fea0">wrench::Action</a>
 </li>
 <li>setTimer()
 : <a class="el" href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">wrench::WMS</a>
@@ -232,6 +250,9 @@ $(function() {
 <li>sleep()
 : <a class="el" href="classwrench_1_1_simulation.html#a04ced81e9eb97587a2affee4e7e210ef">wrench::Simulation</a>
 </li>
+<li>SleepAction()
+: <a class="el" href="classwrench_1_1_sleep_action.html#a8fb8e7e743b5a0fde9cd31249752580c">wrench::SleepAction</a>
+</li>
 <li>source
 : <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a2b2806c8956bb1dc7f504648564fe636">wrench::SimulationTimestampFileCopy</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a4a8a4ee52b9959666407f0ce4b8e3ddb">wrench::SimulationTimestampFileRead</a>
@@ -265,15 +286,19 @@ $(function() {
 <li>START_VM_REQUEST_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a3ca3dbc25faa31c21f81b9387e6e6b76">wrench::CloudComputeServiceMessagePayload</a>
 </li>
+<li>STARTED
+: <a class="el" href="classwrench_1_1_action.html#a83e356b3485d383e3e3f0c97e1a4267bad42eeaf5df843d07d7f6590dc9bfaf87">wrench::Action</a>
+</li>
 <li>startNewService()
-: <a class="el" href="classwrench_1_1_simulation.html#a74cad703850cb0b3521e07de28d90826">wrench::Simulation</a>
+: <a class="el" href="classwrench_1_1_simulation.html#a48b17f4976b033ca1703611a0910f336">wrench::Simulation</a>
 </li>
 <li>startVM()
 : <a class="el" href="classwrench_1_1_cloud_compute_service.html#ae7f1f62a32e2b6a7008c9e28da7ced31">wrench::CloudComputeService</a>
 , <a class="el" href="classwrench_1_1_virtualized_cluster_compute_service.html#a08764660c4a242f107087ee166a346e8">wrench::VirtualizedClusterComputeService</a>
 </li>
 <li>State
-: <a class="el" href="classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8">wrench::PilotJob</a>
+: <a class="el" href="classwrench_1_1_action.html#a83e356b3485d383e3e3f0c97e1a4267b">wrench::Action</a>
+, <a class="el" href="classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8">wrench::PilotJob</a>
 , <a class="el" href="classwrench_1_1_workflow_task.html#a1184f3d7aea21e1c87a9b17e84f1f92a">wrench::WorkflowTask</a>
 </li>
 <li>stateToString()
@@ -307,7 +332,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a019f1c83ac3125a6340a776f762395ca">wrench::BatchComputeServiceProperty</a>
 </li>
 <li>submitJob()
-: <a class="el" href="classwrench_1_1_job_manager.html#a6e93d85718187a15fff1f02d83db52e4">wrench::JobManager</a>
+: <a class="el" href="classwrench_1_1_job_manager.html#a059bd75d37584c1c917af437a2ecbbd2">wrench::JobManager</a>
 </li>
 <li>submitPilotJob()
 : <a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a11e30eabcb8c606f23772a4a17184b2c">wrench::HTCondorComputeService</a>

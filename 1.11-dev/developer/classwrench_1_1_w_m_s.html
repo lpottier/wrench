@@ -270,7 +270,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a6ce8628812f5bd8c813c92ad51265f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform static optimizations. Optimizations are executed in order of insertion. <br /></td></tr>
 <tr class="separator:a6ce8628812f5bd8c813c92ad51265f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ae3abfb1350a9319b9878a8e805733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">setTimer</a> (double date, std::string message)</td></tr>
-<tr class="memdesc:a47ae3abfb1350a9319b9878a8e805733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a>)  <a href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">More...</a><br /></td></tr>
+<tr class="memdesc:a47ae3abfb1350a9319b9878a8e805733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a>)  <a href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">More...</a><br /></td></tr>
 <tr class="separator:a47ae3abfb1350a9319b9878a8e805733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2923b4ec6f7e233693199154d5206d5f"><td class="memItemLeft" align="right" valign="top"><a id="a2923b4ec6f7e233693199154d5206d5f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#a2923b4ec6f7e233693199154d5206d5f">waitForAndProcessNextEvent</a> ()</td></tr>
@@ -279,12 +279,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aaa452080dca6ec289ca9e7317db4be44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#aaa452080dca6ec289ca9e7317db4be44">waitForAndProcessNextEvent</a> (double timeout)</td></tr>
 <tr class="memdesc:aaa452080dca6ec289ca9e7317db4be44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event and then call the associated function to process that event.  <a href="classwrench_1_1_w_m_s.html#aaa452080dca6ec289ca9e7317db4be44">More...</a><br /></td></tr>
 <tr class="separator:aaa452080dca6ec289ca9e7317db4be44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54466eb301f2de97061d259cb5a8158"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#ab54466eb301f2de97061d259cb5a8158">waitForNextEvent</a> ()</td></tr>
-<tr class="memdesc:ab54466eb301f2de97061d259cb5a8158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#ab54466eb301f2de97061d259cb5a8158">More...</a><br /></td></tr>
-<tr class="separator:ab54466eb301f2de97061d259cb5a8158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b5eca273ca72b6d1c3904ec97aea3c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#ad3b5eca273ca72b6d1c3904ec97aea3c">waitForNextEvent</a> (double timeout)</td></tr>
-<tr class="memdesc:ad3b5eca273ca72b6d1c3904ec97aea3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#ad3b5eca273ca72b6d1c3904ec97aea3c">More...</a><br /></td></tr>
-<tr class="separator:ad3b5eca273ca72b6d1c3904ec97aea3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24057c6d832dee56e4de9cf695130a2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#ac24057c6d832dee56e4de9cf695130a2">waitForNextEvent</a> ()</td></tr>
+<tr class="memdesc:ac24057c6d832dee56e4de9cf695130a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#ac24057c6d832dee56e4de9cf695130a2">More...</a><br /></td></tr>
+<tr class="separator:ac24057c6d832dee56e4de9cf695130a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20196c6f42e6e30851f9097ab911d89a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#a20196c6f42e6e30851f9097ab911d89a">waitForNextEvent</a> (double timeout)</td></tr>
+<tr class="memdesc:a20196c6f42e6e30851f9097ab911d89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#a20196c6f42e6e30851f9097ab911d89a">More...</a><br /></td></tr>
+<tr class="separator:a20196c6f42e6e30851f9097ab911d89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A workflow management system (<a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a>) </p>
@@ -937,7 +937,7 @@ template&lt;class T &gt; </div>
 <p>Process a file copy completion event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_completed_event.html" title="A &quot;file copy has completed&quot; WorkflowExecutionEvent.">FileCopyCompletedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_completed_event.html" title="A &quot;file copy has completed&quot; ExecutionEvent.">FileCopyCompletedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -971,7 +971,7 @@ template&lt;class T &gt; </div>
 <p>Process a file copy failure event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_failed_event.html" title="A &quot;file copy has failed&quot; WorkflowExecutionEvent.">FileCopyFailedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_failed_event.html" title="A &quot;file copy has failed&quot; ExecutionEvent.">FileCopyFailedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1005,7 +1005,7 @@ template&lt;class T &gt; </div>
 <p>Process a pilot job expiration event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_expired_event.html" title="A &quot;pilot job has expired&quot; WorkflowExecutionEvent.">PilotJobExpiredEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_expired_event.html" title="A &quot;pilot job has expired&quot; ExecutionEvent.">PilotJobExpiredEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1039,7 +1039,7 @@ template&lt;class T &gt; </div>
 <p>Process a pilot job start event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_started_event.html" title="A &quot;pilot job has started&quot; WorkflowExecutionEvent.">PilotJobStartedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_started_event.html" title="A &quot;pilot job has started&quot; ExecutionEvent.">PilotJobStartedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1073,7 +1073,7 @@ template&lt;class T &gt; </div>
 <p>Process a standard job completion event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_completed_event.html" title="A &quot;standard job has completed&quot; WorkflowExecutionEvent.">StandardJobCompletedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_completed_event.html" title="A &quot;standard job has completed&quot; ExecutionEvent.">StandardJobCompletedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1107,7 +1107,7 @@ template&lt;class T &gt; </div>
 <p>Process a standard job failure event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_failed_event.html" title="A &quot;standard job has failed&quot; WorkflowExecutionEvent.">StandardJobFailedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_failed_event.html" title="A &quot;standard job has failed&quot; ExecutionEvent.">StandardJobFailedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1141,7 +1141,7 @@ template&lt;class T &gt; </div>
 <p>Process a timer event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1182,11 +1182,11 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a>) </p>
+<p>Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a>) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">date</td><td>the date at which the timer should go off </td></tr>
-    <tr><td class="paramname">message</td><td>a string message that will be in the generated <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a> </td></tr>
+    <tr><td class="paramname">message</td><td>a string message that will be in the generated <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1227,15 +1227,15 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>false if a timeout occurred (in which case no event was received/processed) </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">wrench::WorkflowExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">wrench::ExecutionException</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab54466eb301f2de97061d259cb5a8158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab54466eb301f2de97061d259cb5a8158">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[1/2]</span></h2>
+<a id="ac24057c6d832dee56e4de9cf695130a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24057c6d832dee56e4de9cf695130a2">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1244,7 +1244,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1262,8 +1262,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ad3b5eca273ca72b6d1c3904ec97aea3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b5eca273ca72b6d1c3904ec97aea3c">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[2/2]</span></h2>
+<a id="a20196c6f42e6e30851f9097ab911d89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20196c6f42e6e30851f9097ab911d89a">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1272,7 +1272,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>

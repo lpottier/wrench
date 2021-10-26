@@ -127,7 +127,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;wrench/services/Service.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;wrench/services/compute/ComputeService.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;wrench/services/compute/htcondor/HTCondorCentralManagerServiceMessagePayload.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wrench/workflow/job/WorkflowJob.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wrench/job/Job.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -146,8 +146,8 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        HTCondorNegotiatorService(std::string &amp;hostname,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                  <span class="keywordtype">double</span> startup_overhead,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                  std::set&lt;std::shared_ptr&lt;ComputeService&gt;&gt; &amp;compute_services,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                  std::map&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::shared_ptr&lt;ComputeService&gt;&gt; &amp;running_jobs,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                  std::vector&lt;std::tuple&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::map&lt;std::string, std::string&gt;&gt;&gt; &amp;pending_jobs,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                  std::map&lt;std::shared_ptr&lt;Job&gt;, std::shared_ptr&lt;ComputeService&gt;&gt; &amp;running_jobs,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                  std::vector&lt;std::tuple&lt;std::shared_ptr&lt;Job&gt;, std::map&lt;std::string, std::string&gt;&gt;&gt; &amp;pending_jobs,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                  std::string &amp;reply_mailbox);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ~HTCondorNegotiatorService();</div>
@@ -156,19 +156,19 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> main() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">struct </span>JobPriorityComparator {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">bool</span> operator()(std::tuple&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::map&lt;std::string, std::string&gt;&gt; &amp;lhs,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                            std::tuple&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::map&lt;std::string, std::string&gt;&gt; &amp;rhs);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">bool</span> operator()(std::tuple&lt;std::shared_ptr&lt;Job&gt;, std::map&lt;std::string, std::string&gt;&gt; &amp;lhs,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                            std::tuple&lt;std::shared_ptr&lt;Job&gt;, std::map&lt;std::string, std::string&gt;&gt; &amp;rhs);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        };</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::shared_ptr&lt;ComputeService&gt; pickTargetComputeService(std::shared_ptr&lt;WorkflowJob&gt; job, std::map&lt;std::string, std::string&gt; service_specific_arguments);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::shared_ptr&lt;ComputeService&gt; pickTargetComputeServiceGridUniverse(std::shared_ptr&lt;WorkflowJob&gt; job, std::map&lt;std::string, std::string&gt; service_specific_arguments);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::shared_ptr&lt;ComputeService&gt; pickTargetComputeServiceNonGridUniverse(std::shared_ptr&lt;WorkflowJob&gt; job, std::map&lt;std::string, std::string&gt; service_specific_arguments);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::shared_ptr&lt;ComputeService&gt; pickTargetComputeService(std::shared_ptr&lt;Job&gt; job, std::map&lt;std::string, std::string&gt; service_specific_arguments);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::shared_ptr&lt;ComputeService&gt; pickTargetComputeServiceGridUniverse(std::shared_ptr&lt;Job&gt; job, std::map&lt;std::string, std::string&gt; service_specific_arguments);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::shared_ptr&lt;ComputeService&gt; pickTargetComputeServiceNonGridUniverse(std::shared_ptr&lt;Job&gt; job, std::map&lt;std::string, std::string&gt; service_specific_arguments);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">double</span> startup_overhead;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::string reply_mailbox;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::set&lt;std::shared_ptr&lt;ComputeService&gt;&gt; compute_services;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::map&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::shared_ptr&lt;ComputeService&gt;&gt; running_jobs;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::vector&lt;std::tuple&lt;std::shared_ptr&lt;WorkflowJob&gt;, std::map&lt;std::string, std::string&gt;&gt;&gt; pending_jobs;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::map&lt;std::shared_ptr&lt;Job&gt;, std::shared_ptr&lt;ComputeService&gt;&gt; running_jobs;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::vector&lt;std::tuple&lt;std::shared_ptr&lt;Job&gt;, std::map&lt;std::string, std::string&gt;&gt;&gt; pending_jobs;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    /***********************/</span></div>
@@ -177,7 +177,7 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif //WRENCH_HTCONDORNEGOTIATORSERVICE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
+<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:17</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
         <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>

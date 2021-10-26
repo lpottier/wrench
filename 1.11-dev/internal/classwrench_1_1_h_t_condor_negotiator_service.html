@@ -142,9 +142,9 @@ Inheritance diagram for wrench::HTCondorNegotiatorService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a63a4ac87d3fdc2c4462742d0d75a09a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html#a63a4ac87d3fdc2c4462742d0d75a09a1">HTCondorNegotiatorService</a> (std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, double startup_overhead, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;compute_services, std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;running_jobs, std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::map&lt; std::string, std::string &gt;&gt;&gt; &amp;pending_jobs, std::string &amp;reply_mailbox)</td></tr>
-<tr class="memdesc:a63a4ac87d3fdc2c4462742d0d75a09a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_negotiator_service.html#a63a4ac87d3fdc2c4462742d0d75a09a1">More...</a><br /></td></tr>
-<tr class="separator:a63a4ac87d3fdc2c4462742d0d75a09a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e8695ac7529a22ac025d1ac25dc338"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html#a16e8695ac7529a22ac025d1ac25dc338">HTCondorNegotiatorService</a> (std::string &amp;<a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, double startup_overhead, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;compute_services, std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;running_jobs, std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;, std::map&lt; std::string, std::string &gt;&gt;&gt; &amp;pending_jobs, std::string &amp;reply_mailbox)</td></tr>
+<tr class="memdesc:a16e8695ac7529a22ac025d1ac25dc338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_negotiator_service.html#a16e8695ac7529a22ac025d1ac25dc338">More...</a><br /></td></tr>
+<tr class="separator:a16e8695ac7529a22ac025d1ac25dc338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbf969719d1b43ccfce10e7546eecea0"><td class="memItemLeft" align="right" valign="top"><a id="abbf969719d1b43ccfce10e7546eecea0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_negotiator_service.html#abbf969719d1b43ccfce10e7546eecea0">~HTCondorNegotiatorService</a> ()</td></tr>
 <tr class="memdesc:abbf969719d1b43ccfce10e7546eecea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -203,6 +203,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af63c270457dcf4a48ac9711c1fc2dc2e inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5196a532f21f892ce5681034cf2c2db inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ad5196a532f21f892ce5681034cf2c2db">~S4U_Daemon</a> ()</td></tr>
 <tr class="separator:ad5196a532f21f892ce5681034cf2c2db inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">acquireDaemonLock</a> ()</td></tr>
+<tr class="memdesc:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to acquire the daemon's lock.  <a href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">More...</a><br /></td></tr>
+<tr class="separator:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">cleanup</a> (bool has_returned_from_main, int return_value)</td></tr>
 <tr class="memdesc:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup function called when the daemon terminates (for whatever reason). The default behavior is to throw an exception if the host is off. This method should be overriden in a daemons implements some fault-tolerant behavior, or is naturally tolerant.  <a href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">More...</a><br /></td></tr>
 <tr class="separator:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,13 +233,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a617d62af4eefc04b0a0c967c9cdcf56b">join</a> ()</td></tr>
 <tr class="memdesc:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join (i.e., wait for) the daemon.  <a href="classwrench_1_1_s4_u___daemon.html#a617d62af4eefc04b0a0c967c9cdcf56b">More...</a><br /></td></tr>
 <tr class="separator:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">releaseDaemonLock</a> ()</td></tr>
+<tr class="memdesc:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to release the daemon's lock.  <a href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">More...</a><br /></td></tr>
+<tr class="separator:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="abd80bf9b1f2895adccbd2688885a1e33"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#abd80bf9b1f2895adccbd2688885a1e33">resumeActor</a> ()</td></tr>
 <tr class="memdesc:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the daemon/actor. <br /></td></tr>
 <tr class="separator:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a264635f7c1b8f2e6d25b6910047f90c4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a264635f7c1b8f2e6d25b6910047f90c4">setupOnExitFunction</a> ()</td></tr>
-<tr class="memdesc:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the on_exit functionf for the actor. <br /></td></tr>
+<tr class="memdesc:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the on_exit function for the actor. <br /></td></tr>
 <tr class="separator:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4d20d7ec2c3f173d139176b569afef inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#abc4d20d7ec2c3f173d139176b569afef">startDaemon</a> (bool _daemonized, bool _auto_restart)</td></tr>
 <tr class="memdesc:abc4d20d7ec2c3f173d139176b569afef inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the daemon.  <a href="classwrench_1_1_s4_u___daemon.html#abc4d20d7ec2c3f173d139176b569afef">More...</a><br /></td></tr>
@@ -321,17 +327,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a0b05fdef3ddb499a537d55f046a396d7 inherit pro_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a property of the <a class="el" href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow...">Service</a>.  <a href="classwrench_1_1_service.html#a0b05fdef3ddb499a537d55f046a396d7">More...</a><br /></td></tr>
 <tr class="separator:a0b05fdef3ddb499a537d55f046a396d7 inherit pro_methods_classwrench_1_1_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwrench_1_1_s4_u___daemon"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwrench_1_1_s4_u___daemon')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></td></tr>
-<tr class="memitem:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a438a44d941326d6df21d56ec1579f688"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">acquireDaemonLock</a> ()</td></tr>
-<tr class="memdesc:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the daemon's lock. <br /></td></tr>
-<tr class="separator:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">killActor</a> ()</td></tr>
 <tr class="memdesc:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">More...</a><br /></td></tr>
 <tr class="separator:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a872a3739833bc4034fe729877c258dcd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">releaseDaemonLock</a> ()</td></tr>
-<tr class="memdesc:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the daemon's lock. <br /></td></tr>
-<tr class="separator:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2a5b056c6f2f19e6b4b8787eab9d9d inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a2f2a5b056c6f2f19e6b4b8787eab9d9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">runMainMethod</a> ()</td></tr>
 <tr class="memdesc:a2f2a5b056c6f2f19e6b4b8787eab9d9d inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that run's the user-defined main method (that's called by the S4U actor class) <br /></td></tr>
@@ -374,8 +372,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A HTCondor negotiator service. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a63a4ac87d3fdc2c4462742d0d75a09a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63a4ac87d3fdc2c4462742d0d75a09a1">&#9670;&nbsp;</a></span>HTCondorNegotiatorService()</h2>
+<a id="a16e8695ac7529a22ac025d1ac25dc338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e8695ac7529a22ac025d1ac25dc338">&#9670;&nbsp;</a></span>HTCondorNegotiatorService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,13 +399,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>running_jobs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;, std::map&lt; std::string, std::string &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;, std::map&lt; std::string, std::string &gt;&gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>pending_jobs</em>, </td>
         </tr>
         <tr>

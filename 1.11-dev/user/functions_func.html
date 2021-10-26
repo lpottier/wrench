@@ -115,6 +115,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
+<li>Action()
+: <a class="el" href="classwrench_1_1_action.html#a761b372ed37c82ededfaef251961b134">wrench::Action</a>
+</li>
 <li>add()
 : <a class="el" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">wrench::Simulation</a>
 </li>
@@ -153,7 +156,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_bandwidth_meter_service.html#af32382c5378ec5e1684ea15f90d33a65">wrench::BandwidthMeterService</a>
 </li>
 <li>BareMetalComputeService()
-: <a class="el" href="classwrench_1_1_bare_metal_compute_service.html#a3ced541ccbf9556d7249e14a5876c8a2">wrench::BareMetalComputeService</a>
+: <a class="el" href="classwrench_1_1_bare_metal_compute_service.html#a5cae8159ac4375ff15c138790d49dda0">wrench::BareMetalComputeService</a>
 </li>
 <li>BatchComputeService()
 : <a class="el" href="classwrench_1_1_batch_compute_service.html#a11544f6fad77b499b63fc809c75d78f4">wrench::BatchComputeService</a>
@@ -164,6 +167,9 @@ $(function() {
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>CloudComputeService()
 : <a class="el" href="classwrench_1_1_cloud_compute_service.html#acf18b962ab4cc0495ebdc8cda63a6bfa">wrench::CloudComputeService</a>
+</li>
+<li>ComputeAction()
+: <a class="el" href="classwrench_1_1_compute_action.html#a712c18a444302cd7421f6c34cdb487cd">wrench::ComputeAction</a>
 </li>
 <li>CONSTANTEFFICIENCY()
 : <a class="el" href="classwrench_1_1_parallel_model.html#a01d4f7eb0b4876a778a46861b2861395">wrench::ParallelModel</a>
@@ -227,6 +233,11 @@ $(function() {
 <li>EnergyMeterService()
 : <a class="el" href="classwrench_1_1_energy_meter_service.html#a0f221ab858c7e7ec58796e464f6d090b">wrench::EnergyMeterService</a>
 </li>
+<li>execute()
+: <a class="el" href="classwrench_1_1_compute_action.html#abc2999bece7c1a4fbc43b9886c930f3b">wrench::ComputeAction</a>
+, <a class="el" href="classwrench_1_1_file_read_action.html#a2ca86dd9be6f8e3c074fd855c5ba4de7">wrench::FileReadAction</a>
+, <a class="el" href="classwrench_1_1_sleep_action.html#a9539f575209489947c922cdba692b369">wrench::SleepAction</a>
+</li>
 <li>exportToEPS()
 : <a class="el" href="classwrench_1_1_workflow.html#a73a5f2898f4fdda4cb38933c2c485b28">wrench::Workflow</a>
 </li>
@@ -234,6 +245,9 @@ $(function() {
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>FileReadAction()
+: <a class="el" href="classwrench_1_1_file_read_action.html#a210a9a54c0ec400387831613e716d397">wrench::FileReadAction</a>
+</li>
 <li>FileRegistryService()
 : <a class="el" href="classwrench_1_1_file_registry_service.html#a8a263bc403bb4f1f581ac20ac9498a75">wrench::FileRegistryService</a>
 </li>
@@ -275,6 +289,9 @@ $(function() {
 <li>getEfficiency()
 : <a class="el" href="classwrench_1_1_constant_efficiency_parallel_model.html#af46c459ffb034eb319f5ecc25854e869">wrench::ConstantEfficiencyParallelModel</a>
 </li>
+<li>getEndDate()
+: <a class="el" href="classwrench_1_1_action.html#ac6a3d78873d6a2f03994d7f0303f1a0a">wrench::Action</a>
+</li>
 <li>getEndpoint()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_disk_read.html#aebf9d849a57df871278d2bf8238798c0">wrench::SimulationTimestampDiskRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_disk_write.html#a63e93401e92d50684ef94128829469ff">wrench::SimulationTimestampDiskWrite</a>
@@ -299,16 +316,23 @@ $(function() {
 <li>getExitTasks()
 : <a class="el" href="classwrench_1_1_workflow.html#a767fc6c829491ad0da476bd50a9d8cd5">wrench::Workflow</a>
 </li>
+<li>getFailureCause()
+: <a class="el" href="classwrench_1_1_action.html#a05f6f6fd0c51e5b2a7586a925a65bc78">wrench::Action</a>
+</li>
 <li>getFailureCount()
 : <a class="el" href="classwrench_1_1_workflow_task.html#a6103d36486855fb8caabb008bcfaacd4">wrench::WorkflowTask</a>
 </li>
 <li>getFile()
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a20275ad1b9f85099fed946e656420e1c">wrench::SimulationTimestampFileCopy</a>
+: <a class="el" href="classwrench_1_1_file_read_action.html#ab1b475abe1513b228ad9475f22b10cdc">wrench::FileReadAction</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a20275ad1b9f85099fed946e656420e1c">wrench::SimulationTimestampFileCopy</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a6bba6c73d48c69b6adf6c84229e66ae1">wrench::SimulationTimestampFileRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a3959084fdffdba107e1ae40fa8870e59">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>getFileByID()
 : <a class="el" href="classwrench_1_1_workflow.html#a19b3b6f36f684f8c367f42a818b0a0c2">wrench::Workflow</a>
+</li>
+<li>getFileLocation()
+: <a class="el" href="classwrench_1_1_file_read_action.html#a3b26be3b28318c164b64ee66c4e311f0">wrench::FileReadAction</a>
 </li>
 <li>getFileMap()
 : <a class="el" href="classwrench_1_1_workflow.html#a2bd4d4f93a5c3da0bd727dba12e6405a">wrench::Workflow</a>
@@ -317,7 +341,8 @@ $(function() {
 : <a class="el" href="classwrench_1_1_workflow.html#a52e102422ea021f798426f2f44830e09">wrench::Workflow</a>
 </li>
 <li>getFlops()
-: <a class="el" href="classwrench_1_1_workflow_task.html#aec0aab3ed552960729a60d1d3c4a3de2">wrench::WorkflowTask</a>
+: <a class="el" href="classwrench_1_1_compute_action.html#aa87a2b37a436196b510bedff275dc734">wrench::ComputeAction</a>
+, <a class="el" href="classwrench_1_1_workflow_task.html#aec0aab3ed552960729a60d1d3c4a3de2">wrench::WorkflowTask</a>
 </li>
 <li>getHostFlopRate()
 : <a class="el" href="classwrench_1_1_simulation.html#a736b72b8fb5343f93d3a461f85f221ef">wrench::Simulation</a>
@@ -353,6 +378,9 @@ $(function() {
 <li>getInputOf()
 : <a class="el" href="classwrench_1_1_workflow_file.html#aa264b4e60713848ed45701d1a5403b35">wrench::WorkflowFile</a>
 </li>
+<li>getJob()
+: <a class="el" href="classwrench_1_1_action.html#af0338400a3964d99a1335873ca71d884">wrench::Action</a>
+</li>
 <li>getLinkname()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_link_usage.html#a2716151690b9d54fb73a49513e92e1dd">wrench::SimulationTimestampLinkUsage</a>
 </li>
@@ -360,7 +388,8 @@ $(function() {
 : <a class="el" href="classwrench_1_1_simulation.html#abb75fd040236995186d9ad45434fe069">wrench::Simulation</a>
 </li>
 <li>getMaxNumCores()
-: <a class="el" href="classwrench_1_1_workflow_task.html#aa470fe4c0a34211165989afabcba795f">wrench::WorkflowTask</a>
+: <a class="el" href="classwrench_1_1_compute_action.html#aaf6fa3cce94ae33f3b1f05629128c7bd">wrench::ComputeAction</a>
+, <a class="el" href="classwrench_1_1_workflow_task.html#aa470fe4c0a34211165989afabcba795f">wrench::WorkflowTask</a>
 </li>
 <li>getMaxPowerConsumption()
 : <a class="el" href="classwrench_1_1_simulation.html#ae76b92ce868c6e6c1683377d869a5b34">wrench::Simulation</a>
@@ -369,7 +398,8 @@ $(function() {
 : <a class="el" href="classwrench_1_1_workflow_task.html#aeafc6e6f0bce5853a3fd1e4818638908">wrench::WorkflowTask</a>
 </li>
 <li>getMinNumCores()
-: <a class="el" href="classwrench_1_1_workflow_task.html#a05d06d1988745735016dcf19d38e2398">wrench::WorkflowTask</a>
+: <a class="el" href="classwrench_1_1_compute_action.html#af47b339370e4b2d883477f3e6d5d7a0a">wrench::ComputeAction</a>
+, <a class="el" href="classwrench_1_1_workflow_task.html#a05d06d1988745735016dcf19d38e2398">wrench::WorkflowTask</a>
 </li>
 <li>getMinPowerConsumption()
 : <a class="el" href="classwrench_1_1_simulation.html#afdf2ae84f6b3c8b51c5189199bebb52e">wrench::Simulation</a>
@@ -377,6 +407,9 @@ $(function() {
 <li>getMount()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_disk_read.html#ae5651131524898fcb446b61a5cfd6fca">wrench::SimulationTimestampDiskRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_disk_write.html#a8c167b4f6ea10622703bfb568eee3d8e">wrench::SimulationTimestampDiskWrite</a>
+</li>
+<li>getName()
+: <a class="el" href="classwrench_1_1_action.html#ae40542a82b8a867001a61bb2004dae92">wrench::Action</a>
 </li>
 <li>getNumberOfChildren()
 : <a class="el" href="classwrench_1_1_workflow_task.html#a818a5bea6a62544879b6aff3a1284e87">wrench::WorkflowTask</a>
@@ -406,7 +439,8 @@ $(function() {
 : <a class="el" href="classwrench_1_1_workflow_file.html#a37f8fb29dac0d933bc0ae7d138baad31">wrench::WorkflowFile</a>
 </li>
 <li>getParallelModel()
-: <a class="el" href="classwrench_1_1_workflow_task.html#abae833e97264899fc61bf8f18b46ef47">wrench::WorkflowTask</a>
+: <a class="el" href="classwrench_1_1_compute_action.html#a1303d2cd7e698d3f12155896302c1ae2">wrench::ComputeAction</a>
+, <a class="el" href="classwrench_1_1_workflow_task.html#abae833e97264899fc61bf8f18b46ef47">wrench::WorkflowTask</a>
 </li>
 <li>getParents()
 : <a class="el" href="classwrench_1_1_workflow_task.html#a11b6cbdcbd0e1bcaa4ac7b91b551b2fe">wrench::WorkflowTask</a>
@@ -417,6 +451,9 @@ $(function() {
 <li>getPstate()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_pstate_set.html#aa16b326fe7c60ec75ed6468d94183c0d">wrench::SimulationTimestampPstateSet</a>
 </li>
+<li>getRAM()
+: <a class="el" href="classwrench_1_1_compute_action.html#afc01ec44bfd20dd124165741a3a87ce7">wrench::ComputeAction</a>
+</li>
 <li>getService()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#ab8d8f78e3c3485e8da536d37bbc45697">wrench::SimulationTimestampFileRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a7d62e801812469159d58caa6a6dd753b">wrench::SimulationTimestampFileWrite</a>
@@ -424,12 +461,24 @@ $(function() {
 <li>getSize()
 : <a class="el" href="classwrench_1_1_workflow_file.html#a97d236163b9a70b95a30f6949f38e81e">wrench::WorkflowFile</a>
 </li>
+<li>getSleepTime()
+: <a class="el" href="classwrench_1_1_sleep_action.html#a38c2bb1bb96a63ed30844f468de0090d">wrench::SleepAction</a>
+</li>
 <li>getSource()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#ac8fa9512e36585e71e2563834200d2fd">wrench::SimulationTimestampFileCopy</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a2d2fc3dce4008562fdf6db9ee4f4d5f1">wrench::SimulationTimestampFileRead</a>
 </li>
 <li>getStandardJobScheduler()
 : <a class="el" href="classwrench_1_1_w_m_s.html#ae350b1268c2122d5094852d3b6241e7a">wrench::WMS</a>
+</li>
+<li>getStartDate()
+: <a class="el" href="classwrench_1_1_action.html#adf7c7557308c419865bfc74e38c186b0">wrench::Action</a>
+</li>
+<li>getState()
+: <a class="el" href="classwrench_1_1_action.html#a278b13cb24a8e5e2fc1da47c66a1b0b8">wrench::Action</a>
+</li>
+<li>getStateAsString()
+: <a class="el" href="classwrench_1_1_action.html#ab3f989a19b5829eca37fdf641dcb805d">wrench::Action</a>
 </li>
 <li>getSumFlops()
 : <a class="el" href="classwrench_1_1_workflow.html#a24f35326f4693a9623e669333b9b556b">wrench::Workflow</a>
@@ -537,6 +586,9 @@ $(function() {
 <li>scheduleTasks()
 : <a class="el" href="classwrench_1_1_standard_job_scheduler.html#a97e8e3bef6e4eae41ff2996bc09ed2d9">wrench::StandardJobScheduler</a>
 </li>
+<li>setEndDate()
+: <a class="el" href="classwrench_1_1_action.html#a0c46eacf12fb75be760c3953466a36b7">wrench::Action</a>
+</li>
 <li>setEndpoints()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_disk_read.html#a0c5aa13e807a2153dce1f02de6f3268c">wrench::SimulationTimestampDiskRead</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_disk_write.html#ae62d87d1bf0577774597ed14949d94f3">wrench::SimulationTimestampDiskWrite</a>
@@ -545,8 +597,23 @@ $(function() {
 , <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#af5e0fface3667623e9f0f1b278099257">wrench::SimulationTimestampFileWrite</a>
 , <a class="el" href="classwrench_1_1_simulation_timestamp_task.html#a8d509ab4bfc8c1ae1ad9bf44dd085969">wrench::SimulationTimestampTask</a>
 </li>
+<li>setFailureCause()
+: <a class="el" href="classwrench_1_1_action.html#a4d8e92229ac28dbe26b92254ac240b8e">wrench::Action</a>
+</li>
 <li>setParallelModel()
 : <a class="el" href="classwrench_1_1_workflow_task.html#a789d01615f762cca3d1da32ac6b3d725">wrench::WorkflowTask</a>
+</li>
+<li>setSimulateComputationAsSleep()
+: <a class="el" href="classwrench_1_1_action.html#a5b62fd49fa77b8cb354d894ccda453fb">wrench::Action</a>
+</li>
+<li>setStartDate()
+: <a class="el" href="classwrench_1_1_action.html#a28fdb091bf63b54bd01b892bd0843982">wrench::Action</a>
+</li>
+<li>setState()
+: <a class="el" href="classwrench_1_1_action.html#a4105e3a573c92c3c659c6c36cbc9f5fd">wrench::Action</a>
+</li>
+<li>setThreadCreationOverhead()
+: <a class="el" href="classwrench_1_1_action.html#ad69121b38c1808d479242047fab5fea0">wrench::Action</a>
 </li>
 <li>SimpleStorageService()
 : <a class="el" href="classwrench_1_1_simple_storage_service.html#a1d883b2ef968e9c8e77dd7e9b928b4b7">wrench::SimpleStorageService</a>
@@ -584,11 +651,23 @@ $(function() {
 <li>SimulationTimestampType()
 : <a class="el" href="classwrench_1_1_simulation_timestamp_type.html#af76f9a7280137c31859657dfdf859880">wrench::SimulationTimestampType</a>
 </li>
+<li>SleepAction()
+: <a class="el" href="classwrench_1_1_sleep_action.html#a8fb8e7e743b5a0fde9cd31249752580c">wrench::SleepAction</a>
+</li>
 <li>stageFile()
-: <a class="el" href="classwrench_1_1_simulation.html#a29ba3a0dc542055368aac4edad93156a">wrench::Simulation</a>
+: <a class="el" href="classwrench_1_1_simulation.html#a2b3017119ebe22dfea36423138bb6fa8">wrench::Simulation</a>
 </li>
 <li>StandardJobScheduler()
 : <a class="el" href="classwrench_1_1_standard_job_scheduler.html#ac71c8f05963604731837d324061bde0b">wrench::StandardJobScheduler</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>terminate()
+: <a class="el" href="classwrench_1_1_compute_action.html#aa4f48621887e6065abc5785eec9286f0">wrench::ComputeAction</a>
+, <a class="el" href="classwrench_1_1_file_read_action.html#a2205549bfb6c2b4bfe5fa1cfa72b360e">wrench::FileReadAction</a>
+, <a class="el" href="classwrench_1_1_sleep_action.html#af3dd4c5abf52b186889a484d2e4fd731">wrench::SleepAction</a>
 </li>
 </ul>
 
