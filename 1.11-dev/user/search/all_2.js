@@ -18,5 +18,6 @@ var searchData=
   ['createworkflowfromdax_46',['createWorkflowFromDAX',['../classwrench_1_1_pegasus_workflow_parser.html#a37d1caee202697f8fcb4a319b94af3cc',1,'wrench::PegasusWorkflowParser']]],
   ['createworkflowfromjson_47',['createWorkflowFromJSON',['../classwrench_1_1_pegasus_workflow_parser.html#ab8c86be0d2d98c64a3d45384621510b2',1,'wrench::PegasusWorkflowParser']]],
   ['custom_48',['CUSTOM',['../classwrench_1_1_parallel_model.html#ac21a98fa14693e5425a5ce5121636498',1,'wrench::ParallelModel']]],
-  ['customparallelmodel_49',['CustomParallelModel',['../classwrench_1_1_custom_parallel_model.html',1,'wrench']]]
+  ['customaction_49',['CustomAction',['../classwrench_1_1_custom_action.html',1,'wrench::CustomAction'],['../classwrench_1_1_custom_action.html#ac501cb1168c38b499266c2045d26a47d',1,'wrench::CustomAction::CustomAction()']]],
+  ['customparallelmodel_50',['CustomParallelModel',['../classwrench_1_1_custom_parallel_model.html',1,'wrench']]]
 ];

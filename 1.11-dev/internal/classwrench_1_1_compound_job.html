@@ -161,6 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32d2847c0363a59575fb791b5daf83b4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_action.html">ComputeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a32d2847c0363a59575fb791b5daf83b4">addComputeAction</a> (std::string <a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a>, double flops, double ram, int min_num_cores, int max_num_cores, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_parallel_model.html">ParallelModel</a> &gt; parallel_model)</td></tr>
 <tr class="memdesc:a32d2847c0363a59575fb791b5daf83b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a compute action to the job.  <a href="classwrench_1_1_compound_job.html#a32d2847c0363a59575fb791b5daf83b4">More...</a><br /></td></tr>
 <tr class="separator:a32d2847c0363a59575fb791b5daf83b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af674fc576e08eb70a457a016d0bddd7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#af674fc576e08eb70a457a016d0bddd7a">addDependency</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; parent, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; child)</td></tr>
+<tr class="memdesc:af674fc576e08eb70a457a016d0bddd7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a dependency between two actions (does nothing if dependency already exists)  <a href="classwrench_1_1_compound_job.html#af674fc576e08eb70a457a016d0bddd7a">More...</a><br /></td></tr>
+<tr class="separator:af674fc576e08eb70a457a016d0bddd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e0a787f4f46f4f4f189cdb43a88430"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a14e0a787f4f46f4f4f189cdb43a88430">addFileReadAction</a> (std::string <a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a>, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
 <tr class="memdesc:a14e0a787f4f46f4f4f189cdb43a88430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a14e0a787f4f46f4f4f189cdb43a88430">More...</a><br /></td></tr>
 <tr class="separator:a14e0a787f4f46f4f4f189cdb43a88430"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +182,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af6bddc4d0cdf85e58ac7b78cfa134b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_compound_job.html#abd9194d84b704e30370b51db1737fe01">CompoundJob::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#af6bddc4d0cdf85e58ac7b78cfa134b8e">getState</a> ()</td></tr>
 <tr class="memdesc:af6bddc4d0cdf85e58ac7b78cfa134b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of the standard job.  <a href="classwrench_1_1_compound_job.html#af6bddc4d0cdf85e58ac7b78cfa134b8e">More...</a><br /></td></tr>
 <tr class="separator:af6bddc4d0cdf85e58ac7b78cfa134b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314d976d69c89a19f19a879e0356fea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a314d976d69c89a19f19a879e0356fea3">removeDependency</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; parent, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; child)</td></tr>
+<tr class="memdesc:a314d976d69c89a19f19a879e0356fea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a dependency between two actions (does nothing if dependency does not exist)  <a href="classwrench_1_1_compound_job.html#a314d976d69c89a19f19a879e0356fea3">More...</a><br /></td></tr>
+<tr class="separator:a314d976d69c89a19f19a879e0356fea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1469372f9bead5ae638b2aa6c25e323f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a1469372f9bead5ae638b2aa6c25e323f">setPriority</a> (unsigned long priority)</td></tr>
 <tr class="memdesc:a1469372f9bead5ae638b2aa6c25e323f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the job's priority (which may be used by some services)  <a href="classwrench_1_1_compound_job.html#a1469372f9bead5ae638b2aa6c25e323f">More...</a><br /></td></tr>
 <tr class="separator:a1469372f9bead5ae638b2aa6c25e323f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +437,43 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a id="af674fc576e08eb70a457a016d0bddd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af674fc576e08eb70a457a016d0bddd7a">&#9670;&nbsp;</a></span>addDependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::CompoundJob::addDependency </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt;&#160;</td>
+          <td class="paramname"><em>child</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a dependency between two actions (does nothing if dependency already exists) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent action </td></tr>
+    <tr><td class="paramname">child</td><td>the child action </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a14e0a787f4f46f4f4f189cdb43a88430"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14e0a787f4f46f4f4f189cdb43a88430">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[1/2]</span></h2>
 
@@ -626,6 +669,43 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 <p>Get the state of the standard job. </p>
 <dl class="section return"><dt>Returns</dt><dd>the state </dd></dl>
+
+</div>
+</div>
+<a id="a314d976d69c89a19f19a879e0356fea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314d976d69c89a19f19a879e0356fea3">&#9670;&nbsp;</a></span>removeDependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::CompoundJob::removeDependency </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt;&#160;</td>
+          <td class="paramname"><em>child</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a dependency between two actions (does nothing if dependency does not exist) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent action </td></tr>
+    <tr><td class="paramname">child</td><td>the child action </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

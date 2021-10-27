@@ -103,13 +103,14 @@ var searchData=
   ['csv_5fallocated_5fprocessors_190',['csv_allocated_processors',['../classwrench_1_1_batch_job.html#ad585cfa131dd16dae43509c0afad4db6',1,'wrench::BatchJob']]],
   ['csv_5fmetadata_191',['csv_metadata',['../classwrench_1_1_batch_job.html#a3b1994a6233be477d05d23115cdfd580',1,'wrench::BatchJob']]],
   ['custom_192',['CUSTOM',['../classwrench_1_1_parallel_model.html#ac21a98fa14693e5425a5ce5121636498',1,'wrench::ParallelModel']]],
-  ['customparallelmodel_193',['CustomParallelModel',['../classwrench_1_1_custom_parallel_model.html',1,'wrench']]],
-  ['creating_20a_20bare_2dmetal_20compute_20service_194',['Creating a bare-metal compute service',['../guide-101-baremetal.html',1,'']]],
-  ['creating_20a_20batch_20compute_20service_195',['Creating a batch compute service',['../guide-101-batch.html',1,'']]],
-  ['creating_20a_20cloud_20compute_20service_196',['Creating a cloud compute service',['../guide-101-cloud.html',1,'']]],
-  ['creating_20a_20file_20registry_20service_197',['Creating a file registry service',['../guide-101-fileregistry.html',1,'']]],
-  ['creating_20a_20htcondor_20compute_20service_198',['Creating a HTCondor compute service',['../guide-101-htcondor.html',1,'']]],
-  ['creating_20a_20network_20proximity_20service_199',['Creating a network proximity service',['../guide-101-networkproximity.html',1,'']]],
-  ['creating_20a_20simple_20storage_20service_200',['Creating a simple storage service',['../guide-101-simplestorage.html',1,'']]],
-  ['creating_20a_20virtualized_20cluster_20compute_20service_201',['Creating a virtualized cluster compute service',['../guide-101-virtualizedcluster.html',1,'']]]
+  ['customaction_193',['CustomAction',['../classwrench_1_1_custom_action.html',1,'wrench::CustomAction'],['../classwrench_1_1_custom_action.html#ac501cb1168c38b499266c2045d26a47d',1,'wrench::CustomAction::CustomAction()']]],
+  ['customparallelmodel_194',['CustomParallelModel',['../classwrench_1_1_custom_parallel_model.html',1,'wrench']]],
+  ['creating_20a_20bare_2dmetal_20compute_20service_195',['Creating a bare-metal compute service',['../guide-101-baremetal.html',1,'']]],
+  ['creating_20a_20batch_20compute_20service_196',['Creating a batch compute service',['../guide-101-batch.html',1,'']]],
+  ['creating_20a_20cloud_20compute_20service_197',['Creating a cloud compute service',['../guide-101-cloud.html',1,'']]],
+  ['creating_20a_20file_20registry_20service_198',['Creating a file registry service',['../guide-101-fileregistry.html',1,'']]],
+  ['creating_20a_20htcondor_20compute_20service_199',['Creating a HTCondor compute service',['../guide-101-htcondor.html',1,'']]],
+  ['creating_20a_20network_20proximity_20service_200',['Creating a network proximity service',['../guide-101-networkproximity.html',1,'']]],
+  ['creating_20a_20simple_20storage_20service_201',['Creating a simple storage service',['../guide-101-simplestorage.html',1,'']]],
+  ['creating_20a_20virtualized_20cluster_20compute_20service_202',['Creating a virtualized cluster compute service',['../guide-101-virtualizedcluster.html',1,'']]]
 ];

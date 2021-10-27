@@ -132,9 +132,13 @@ Inheritance diagram for wrench::Action:</div>
  <div class="center">
   <img src="classwrench_1_1_action.png" usemap="#wrench::Action_map" alt=""/>
   <map id="wrench::Action_map" name="wrench::Action_map">
-<area href="classwrench_1_1_compute_action.html" alt="wrench::ComputeAction" shape="rect" coords="0,56,146,80"/>
-<area href="classwrench_1_1_file_read_action.html" alt="wrench::FileReadAction" shape="rect" coords="156,56,302,80"/>
-<area href="classwrench_1_1_sleep_action.html" alt="wrench::SleepAction" shape="rect" coords="312,56,458,80"/>
+<area href="classwrench_1_1_compute_action.html" alt="wrench::ComputeAction" shape="rect" coords="0,56,153,80"/>
+<area href="classwrench_1_1_custom_action.html" alt="wrench::CustomAction" shape="rect" coords="163,56,316,80"/>
+<area href="classwrench_1_1_file_copy_action.html" alt="wrench::FileCopyAction" shape="rect" coords="326,56,479,80"/>
+<area href="classwrench_1_1_file_delete_action.html" alt="wrench::FileDeleteAction" shape="rect" coords="489,56,642,80"/>
+<area href="classwrench_1_1_file_read_action.html" alt="wrench::FileReadAction" shape="rect" coords="652,56,805,80"/>
+<area href="classwrench_1_1_file_write_action.html" alt="wrench::FileWriteAction" shape="rect" coords="815,56,968,80"/>
+<area href="classwrench_1_1_sleep_action.html" alt="wrench::SleepAction" shape="rect" coords="978,56,1131,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -206,9 +210,19 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (
 <tr class="memitem:a7e4e60f8a9925de913ddc5cc0684e6d2"><td class="memItemLeft" align="right" valign="top"><a id="a7e4e60f8a9925de913ddc5cc0684e6d2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>terminate</b> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action_executor.html">ActionExecutor</a> &gt; action_executor)=0</td></tr>
 <tr class="separator:a7e4e60f8a9925de913ddc5cc0684e6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcb732cac8dc6554ca234a3eac951cb"><td class="memItemLeft" align="right" valign="top"><a id="a7bcb732cac8dc6554ca234a3eac951cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#a7bcb732cac8dc6554ca234a3eac951cb">updateReadiness</a> ()</td></tr>
+<tr class="memdesc:a7bcb732cac8dc6554ca234a3eac951cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the action's readiness. <br /></td></tr>
+<tr class="separator:a7bcb732cac8dc6554ca234a3eac951cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a4dc2d59c73b233b817e7441aee7a0393"><td class="memItemLeft" align="right" valign="top"><a id="a4dc2d59c73b233b817e7441aee7a0393"></a>
+std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>children</b></td></tr>
+<tr class="separator:a4dc2d59c73b233b817e7441aee7a0393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac836c657dd39385035bb3266082ddd37"><td class="memItemLeft" align="right" valign="top"><a id="ac836c657dd39385035bb3266082ddd37"></a>
+std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parents</b></td></tr>
+<tr class="separator:ac836c657dd39385035bb3266082ddd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7d91cb4353e3df27680b7186128158"><td class="memItemLeft" align="right" valign="top"><a id="a0e7d91cb4353e3df27680b7186128158"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>simulate_computation_as_sleep</b></td></tr>
 <tr class="separator:a0e7d91cb4353e3df27680b7186128158"><td class="memSeparator" colspan="2">&#160;</td></tr>

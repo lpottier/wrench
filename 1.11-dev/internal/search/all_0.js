@@ -14,7 +14,7 @@ var searchData=
   ['addcomputeaction_11',['addComputeAction',['../classwrench_1_1_compound_job.html#a32d2847c0363a59575fb791b5daf83b4',1,'wrench::CompoundJob']]],
   ['addcomputeservice_12',['addComputeService',['../classwrench_1_1_h_t_condor_central_manager_service.html#aeada677db45ac79f77304d8d23d9e669',1,'wrench::HTCondorCentralManagerService::addComputeService()'],['../classwrench_1_1_h_t_condor_compute_service.html#acc1d77fd52a43fa82bae86cd24e8b666',1,'wrench::HTCondorComputeService::addComputeService()']]],
   ['addcontroldependency_13',['addControlDependency',['../classwrench_1_1_workflow.html#a1249e2430c541344d622d75519e4851b',1,'wrench::Workflow']]],
-  ['adddependency_14',['addDependency',['../classwrench_1_1_workunit.html#a4f62f6f68dd5da5aebf45c27a4bed465',1,'wrench::Workunit']]],
+  ['adddependency_14',['addDependency',['../classwrench_1_1_compound_job.html#af674fc576e08eb70a457a016d0bddd7a',1,'wrench::CompoundJob::addDependency()'],['../classwrench_1_1_workunit.html#a4f62f6f68dd5da5aebf45c27a4bed465',1,'wrench::Workunit::addDependency()']]],
   ['adddynamicoptimization_15',['addDynamicOptimization',['../classwrench_1_1_w_m_s.html#a036f0865c72e8dfe4e40b9419f0dc735',1,'wrench::WMS']]],
   ['addedge_16',['addEdge',['../classwrench_1_1_dag_of_tasks.html#ad40cc69e67edb48a1947b3a0633b8636',1,'wrench::DagOfTasks']]],
   ['addentry_17',['addEntry',['../classwrench_1_1_file_registry_service.html#ae64f00cb5db45e7af6247aa269dcaa58',1,'wrench::FileRegistryService']]],
