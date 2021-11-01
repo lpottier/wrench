@@ -124,6 +124,9 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html">Action</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_execution_service.html">ActionExecutionService</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An action execution service that:  <a href="classwrench_1_1_action_execution_service.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_amdahl_parallel_model.html">AmdahlParallelModel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that defines an Amdahl's Law-based parallel task performance model.  <a href="classwrench_1_1_amdahl_parallel_model.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +187,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_delete_action.html">FileDeleteAction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_registry_action.html">FileRegistryAction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_registry_add_entry_action.html">FileRegistryAddEntryAction</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_registry_delete_entry_action.html">FileRegistryDeleteEntryAction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A file registry service (a.k.a. replica catalog) that holds a database of which files are available at which storage services. Specifically, the database holds a set of &lt;file, storage service&gt; entries. A <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> can add, lookup, and remove entries at will from this database.  <a href="classwrench_1_1_file_registry_service.html#details">More...</a><br /></td></tr>
@@ -387,9 +396,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a300f2a995829507b2f7a56ea8efe3b03"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a300f2a995829507b2f7a56ea8efe3b03">generateRandomUsername</a> (unsigned long userid)</td></tr>
 <tr class="memdesc:a300f2a995829507b2f7a56ea8efe3b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to generate a random username, so that generated workload traces look more realistic.  <a href="namespacewrench.html#a300f2a995829507b2f7a56ea8efe3b03">More...</a><br /></td></tr>
 <tr class="separator:a300f2a995829507b2f7a56ea8efe3b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6231ae7b98dbbe82d35e6aba90fc4b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#aae6231ae7b98dbbe82d35e6aba90fc4b">getComputeService</a> ()</td></tr>
-<tr class="memdesc:aae6231ae7b98dbbe82d35e6aba90fc4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="namespacewrench.html#aae6231ae7b98dbbe82d35e6aba90fc4b">More...</a><br /></td></tr>
-<tr class="separator:aae6231ae7b98dbbe82d35e6aba90fc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b12fcf9ae09b2465a4540f0b0070cbd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a6b12fcf9ae09b2465a4540f0b0070cbd">getComputeService</a> ()</td></tr>
+<tr class="memdesc:a6b12fcf9ae09b2465a4540f0b0070cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="namespacewrench.html#a6b12fcf9ae09b2465a4540f0b0070cbd">More...</a><br /></td></tr>
+<tr class="separator:a6b12fcf9ae09b2465a4540f0b0070cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a247117c8b171c49eec2b08ce05acb73b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; FileLocation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a247117c8b171c49eec2b08ce05acb73b">getDestinationLocation</a> ()</td></tr>
 <tr class="memdesc:a247117c8b171c49eec2b08ce05acb73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="namespacewrench.html#a247117c8b171c49eec2b08ce05acb73b">More...</a><br /></td></tr>
 <tr class="separator:a247117c8b171c49eec2b08ce05acb73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -438,6 +447,9 @@ std::shared_ptr&lt; <a class="el" href="classwrench_1_1_service.html">Service</a
 <tr class="memitem:ab9b0fb84bec27b5c447c8199cac217ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#ab9b0fb84bec27b5c447c8199cac217ff">operator==</a> (const BatchJobSetCoreLevel &amp;left, const BatchJobSetCoreLevel &amp;right)</td></tr>
 <tr class="memdesc:ab9b0fb84bec27b5c447c8199cac217ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded operator.  <a href="namespacewrench.html#ab9b0fb84bec27b5c447c8199cac217ff">More...</a><br /></td></tr>
 <tr class="separator:ab9b0fb84bec27b5c447c8199cac217ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc54549aba2210e001bd1ec6206f048"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; std::string, unsigned long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a3fc54549aba2210e001bd1ec6206f048">parseResourceSpec</a> (const std::string &amp;spec)</td></tr>
+<tr class="memdesc:a3fc54549aba2210e001bd1ec6206f048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper static method to parse resource specifications to the &lt;cores,ram&gt; format.  <a href="namespacewrench.html#a3fc54549aba2210e001bd1ec6206f048">More...</a><br /></td></tr>
+<tr class="separator:a3fc54549aba2210e001bd1ec6206f048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc54549aba2210e001bd1ec6206f048"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; std::string, unsigned long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewrench.html#a3fc54549aba2210e001bd1ec6206f048">parseResourceSpec</a> (const std::string &amp;spec)</td></tr>
 <tr class="memdesc:a3fc54549aba2210e001bd1ec6206f048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper static method to parse resource specifications to the &lt;cores,ram&gt; format.  <a href="namespacewrench.html#a3fc54549aba2210e001bd1ec6206f048">More...</a><br /></td></tr>
 <tr class="separator:a3fc54549aba2210e001bd1ec6206f048"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -571,14 +583,14 @@ std::shared_ptr&lt; <a class="el" href="classwrench_1_1_service.html">Service</a
 
 </div>
 </div>
-<a id="aae6231ae7b98dbbe82d35e6aba90fc4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae6231ae7b98dbbe82d35e6aba90fc4b">&#9670;&nbsp;</a></span>getComputeService()</h2>
+<a id="a6b12fcf9ae09b2465a4540f0b0070cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b12fcf9ae09b2465a4540f0b0070cbd">&#9670;&nbsp;</a></span>getComputeService()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; wrench::getComputeService </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; wrench::PilotJob::getComputeService </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -952,7 +964,48 @@ the storage service </dd></dl>
 </div>
 </div>
 <a id="a3fc54549aba2210e001bd1ec6206f048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fc54549aba2210e001bd1ec6206f048">&#9670;&nbsp;</a></span>parseResourceSpec()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc54549aba2210e001bd1ec6206f048">&#9670;&nbsp;</a></span>parseResourceSpec() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::tuple&lt;std::string, unsigned long&gt; wrench::parseResourceSpec </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>spec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper static method to parse resource specifications to the &lt;cores,ram&gt; format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spec</td><td>specification string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a &lt;cores, ram&gt; tuple </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3fc54549aba2210e001bd1ec6206f048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc54549aba2210e001bd1ec6206f048">&#9670;&nbsp;</a></span>parseResourceSpec() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1118,7 +1171,7 @@ the storage service </dd></dl>
 </div><div class="memdoc">
 
 <p>Return an error message that describes the failure cause (to be overridden) </p>
-<p>Give a &lt;ss name&gt;:&lt;mount point&gt;:&lt;dir&gt;" string for the location.</p>
+<p>Give a &lt;ss1 name&gt;:&lt;mount point&gt;:&lt;dir&gt;" string for the location.</p>
 <p>Get the human-readable failure message.</p>
 <dl class="section return"><dt>Returns</dt><dd>an error message</dd>
 <dd>

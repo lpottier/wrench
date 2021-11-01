@@ -140,26 +140,27 @@ Inheritance diagram for wrench::S4U_Daemon:</div>
   <img src="classwrench_1_1_s4_u___daemon.png" usemap="#wrench::S4U_5FDaemon_map" alt=""/>
   <map id="wrench::S4U_5FDaemon_map" name="wrench::S4U_5FDaemon_map">
 <area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="0,56,220,80"/>
-<area href="classwrench_1_1_action_executor.html" title="An service that performs an Action." alt="wrench::ActionExecutor" shape="rect" coords="230,112,450,136"/>
-<area href="classwrench_1_1_alarm.html" title="A one-shot service that sends a message to a mailbox after some specified amount of time and terminat..." alt="wrench::Alarm" shape="rect" coords="230,168,450,192"/>
-<area href="classwrench_1_1_bandwidth_meter_service.html" title="A service that measures and records bandwidth usage on a set of links at regular time intervals." alt="wrench::BandwidthMeterService" shape="rect" coords="230,224,450,248"/>
-<area href="classwrench_1_1_compute_service.html" title="The compute service base class." alt="wrench::ComputeService" shape="rect" coords="230,280,450,304"/>
-<area href="classwrench_1_1_compute_thread.html" title="A one-shot service that simulates a CPU-bound thread that performs a given number of flops and then r..." alt="wrench::ComputeThread" shape="rect" coords="230,336,450,360"/>
-<area href="classwrench_1_1_data_movement_manager.html" title="A helper daemon (co-located with a WMS) that handles data movement operations." alt="wrench::DataMovementManager" shape="rect" coords="230,392,450,416"/>
-<area href="classwrench_1_1_energy_meter_service.html" title="A service that measures and records energy consumption on a set of hosts at regular time intervals." alt="wrench::EnergyMeterService" shape="rect" coords="230,448,450,472"/>
-<area href="classwrench_1_1_file_registry_service.html" title="A file registry service (a.k.a. replica catalog) that holds a database of which files are available a..." alt="wrench::FileRegistryService" shape="rect" coords="230,504,450,528"/>
-<area href="classwrench_1_1_file_transfer_thread.html" title="A helper class that implements the concept of a communication thread that performs a file transfer." alt="wrench::FileTransferThread" shape="rect" coords="230,560,450,584"/>
-<area href="classwrench_1_1_host_state_change_detector.html" title="A service that detects and reports on host state changes (turned on, turned off)" alt="wrench::HostStateChangeDetector" shape="rect" coords="230,616,450,640"/>
-<area href="classwrench_1_1_h_t_condor_negotiator_service.html" title="A HTCondor negotiator service." alt="wrench::HTCondorNegotiatorService" shape="rect" coords="230,672,450,696"/>
-<area href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by a WMS), which is used to handle all job ex..." alt="wrench::JobManager" shape="rect" coords="230,728,450,752"/>
-<area href="classwrench_1_1_memory_manager.html" title="A class that implemnets a MemoryManager service to simulate Linux in-memory page caching for I/O oper..." alt="wrench::MemoryManager" shape="rect" coords="230,784,450,808"/>
-<area href="classwrench_1_1_network_proximity_daemon.html" title="A daemon used by a NetworkProximityService to run network measurements (proximity is computed between..." alt="wrench::NetworkProximityDaemon" shape="rect" coords="230,840,450,864"/>
-<area href="classwrench_1_1_network_proximity_service.html" title="A network proximity service that continuously estimates inter-host latencies and can be queried for s..." alt="wrench::NetworkProximityService" shape="rect" coords="230,896,450,920"/>
-<area href="classwrench_1_1_service_termination_detector.html" title="A service that immediately detects when some service crashes and then notifies some other service of ..." alt="wrench::ServiceTerminationDetector" shape="rect" coords="230,952,450,976"/>
-<area href="classwrench_1_1_standard_job_executor.html" title="A service that knows how to execute a standard job on a multi-node multi-core platform...." alt="wrench::StandardJobExecutor" shape="rect" coords="230,1008,450,1032"/>
-<area href="classwrench_1_1_storage_service.html" title="The storage service base class." alt="wrench::StorageService" shape="rect" coords="230,1064,450,1088"/>
-<area href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)" alt="wrench::WMS" shape="rect" coords="230,1120,450,1144"/>
-<area href="classwrench_1_1_workunit_executor.html" title="An service that performs a WorkUnit." alt="wrench::WorkunitExecutor" shape="rect" coords="230,1176,450,1200"/>
+<area href="classwrench_1_1_action_execution_service.html" title="An action execution service that:" alt="wrench::ActionExecutionService" shape="rect" coords="230,112,450,136"/>
+<area href="classwrench_1_1_action_executor.html" title="An service that performs an Action." alt="wrench::ActionExecutor" shape="rect" coords="230,168,450,192"/>
+<area href="classwrench_1_1_alarm.html" title="A one-shot service that sends a message to a mailbox after some specified amount of time and terminat..." alt="wrench::Alarm" shape="rect" coords="230,224,450,248"/>
+<area href="classwrench_1_1_bandwidth_meter_service.html" title="A service that measures and records bandwidth usage on a set of links at regular time intervals." alt="wrench::BandwidthMeterService" shape="rect" coords="230,280,450,304"/>
+<area href="classwrench_1_1_compute_service.html" title="The compute service base class." alt="wrench::ComputeService" shape="rect" coords="230,336,450,360"/>
+<area href="classwrench_1_1_compute_thread.html" title="A one-shot service that simulates a CPU-bound thread that performs a given number of flops and then r..." alt="wrench::ComputeThread" shape="rect" coords="230,392,450,416"/>
+<area href="classwrench_1_1_data_movement_manager.html" title="A helper daemon (co-located with a WMS) that handles data movement operations." alt="wrench::DataMovementManager" shape="rect" coords="230,448,450,472"/>
+<area href="classwrench_1_1_energy_meter_service.html" title="A service that measures and records energy consumption on a set of hosts at regular time intervals." alt="wrench::EnergyMeterService" shape="rect" coords="230,504,450,528"/>
+<area href="classwrench_1_1_file_registry_service.html" title="A file registry service (a.k.a. replica catalog) that holds a database of which files are available a..." alt="wrench::FileRegistryService" shape="rect" coords="230,560,450,584"/>
+<area href="classwrench_1_1_file_transfer_thread.html" title="A helper class that implements the concept of a communication thread that performs a file transfer." alt="wrench::FileTransferThread" shape="rect" coords="230,616,450,640"/>
+<area href="classwrench_1_1_host_state_change_detector.html" title="A service that detects and reports on host state changes (turned on, turned off)" alt="wrench::HostStateChangeDetector" shape="rect" coords="230,672,450,696"/>
+<area href="classwrench_1_1_h_t_condor_negotiator_service.html" title="A HTCondor negotiator service." alt="wrench::HTCondorNegotiatorService" shape="rect" coords="230,728,450,752"/>
+<area href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by a WMS), which is used to handle all job ex..." alt="wrench::JobManager" shape="rect" coords="230,784,450,808"/>
+<area href="classwrench_1_1_memory_manager.html" title="A class that implemnets a MemoryManager service to simulate Linux in-memory page caching for I/O oper..." alt="wrench::MemoryManager" shape="rect" coords="230,840,450,864"/>
+<area href="classwrench_1_1_network_proximity_daemon.html" title="A daemon used by a NetworkProximityService to run network measurements (proximity is computed between..." alt="wrench::NetworkProximityDaemon" shape="rect" coords="230,896,450,920"/>
+<area href="classwrench_1_1_network_proximity_service.html" title="A network proximity service that continuously estimates inter-host latencies and can be queried for s..." alt="wrench::NetworkProximityService" shape="rect" coords="230,952,450,976"/>
+<area href="classwrench_1_1_service_termination_detector.html" title="A service that immediately detects when some service crashes and then notifies some other service of ..." alt="wrench::ServiceTerminationDetector" shape="rect" coords="230,1008,450,1032"/>
+<area href="classwrench_1_1_standard_job_executor.html" title="A service that knows how to execute a standard job on a multi-node multi-core platform...." alt="wrench::StandardJobExecutor" shape="rect" coords="230,1064,450,1088"/>
+<area href="classwrench_1_1_storage_service.html" title="The storage service base class." alt="wrench::StorageService" shape="rect" coords="230,1120,450,1144"/>
+<area href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)" alt="wrench::WMS" shape="rect" coords="230,1176,450,1200"/>
+<area href="classwrench_1_1_workunit_executor.html" title="An service that performs a WorkUnit." alt="wrench::WorkunitExecutor" shape="rect" coords="230,1232,450,1256"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -260,9 +261,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afb9bb97186d92374fa8cb16dbc1c6737"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">killActor</a> ()</td></tr>
-<tr class="memdesc:afb9bb97186d92374fa8cb16dbc1c6737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">More...</a><br /></td></tr>
-<tr class="separator:afb9bb97186d92374fa8cb16dbc1c6737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a828920d1217c73f0c4dfb2ab70fff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ac4a828920d1217c73f0c4dfb2ab70fff">killActor</a> ()</td></tr>
+<tr class="memdesc:ac4a828920d1217c73f0c4dfb2ab70fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#ac4a828920d1217c73f0c4dfb2ab70fff">More...</a><br /></td></tr>
+<tr class="separator:ac4a828920d1217c73f0c4dfb2ab70fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2a5b056c6f2f19e6b4b8787eab9d9d"><td class="memItemLeft" align="right" valign="top"><a id="a2f2a5b056c6f2f19e6b4b8787eab9d9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">runMainMethod</a> ()</td></tr>
 <tr class="memdesc:a2f2a5b056c6f2f19e6b4b8787eab9d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that run's the user-defined main method (that's called by the S4U actor class) <br /></td></tr>
@@ -617,8 +618,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="afb9bb97186d92374fa8cb16dbc1c6737"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb9bb97186d92374fa8cb16dbc1c6737">&#9670;&nbsp;</a></span>killActor()</h2>
+<a id="ac4a828920d1217c73f0c4dfb2ab70fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a828920d1217c73f0c4dfb2ab70fff">&#9670;&nbsp;</a></span>killActor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,7 +628,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wrench::S4U_Daemon::killActor </td>
+          <td class="memname">bool wrench::S4U_Daemon::killActor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -641,6 +642,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Kill the daemon/actor (does nothing if already dead) </p>
+<dl class="section return"><dt>Returns</dt><dd>true if actor was killed, false if not (e.g., daemon was already dead) </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::shared_ptr&lt;FatalFailure&gt;</td><td></td></tr>
