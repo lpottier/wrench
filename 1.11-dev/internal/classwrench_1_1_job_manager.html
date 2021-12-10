@@ -146,9 +146,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a59921ec2a0e4fff2054dc4c03434e938">~JobManager</a> () override</td></tr>
 <tr class="memdesc:a59921ec2a0e4fff2054dc4c03434e938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor, which kills the daemon (and clears all the jobs) <br /></td></tr>
 <tr class="separator:a59921ec2a0e4fff2054dc4c03434e938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b853f16abeb2214579852d10e8bae77"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a0b853f16abeb2214579852d10e8bae77">createCompoundJob</a> (std::string <a class="el" href="classwrench_1_1_service.html#aaef1b34d99953a0d9aa7ec1e4560600b">name</a>)</td></tr>
-<tr class="memdesc:a0b853f16abeb2214579852d10e8bae77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Compound job.  <a href="classwrench_1_1_job_manager.html#a0b853f16abeb2214579852d10e8bae77">More...</a><br /></td></tr>
-<tr class="separator:a0b853f16abeb2214579852d10e8bae77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67d399462bd9636c50e201d277303bab"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_pilot_job.html">PilotJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a67d399462bd9636c50e201d277303bab">createPilotJob</a> ()</td></tr>
 <tr class="memdesc:a67d399462bd9636c50e201d277303bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pilot job.  <a href="classwrench_1_1_job_manager.html#a67d399462bd9636c50e201d277303bab">More...</a><br /></td></tr>
 <tr class="separator:a67d399462bd9636c50e201d277303bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,12 +186,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a9ee6f1b8e4669847cd83829e29c91f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a9ee6f1b8e4669847cd83829e29c91f2e">stop</a> () override</td></tr>
 <tr class="memdesc:a9ee6f1b8e4669847cd83829e29c91f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the job manager.  <a href="classwrench_1_1_job_manager.html#a9ee6f1b8e4669847cd83829e29c91f2e">More...</a><br /></td></tr>
 <tr class="separator:a9ee6f1b8e4669847cd83829e29c91f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a059bd75d37584c1c917af437a2ecbbd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a059bd75d37584c1c917af437a2ecbbd2">submitJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt; job, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service, std::map&lt; std::string, std::string &gt; service_specific_args={})</td></tr>
-<tr class="memdesc:a059bd75d37584c1c917af437a2ecbbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a job to compute service.  <a href="classwrench_1_1_job_manager.html#a059bd75d37584c1c917af437a2ecbbd2">More...</a><br /></td></tr>
-<tr class="separator:a059bd75d37584c1c917af437a2ecbbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad96e34c3e54751d4b8332817c884fb77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#ad96e34c3e54751d4b8332817c884fb77">terminateJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt; job)</td></tr>
-<tr class="memdesc:ad96e34c3e54751d4b8332817c884fb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a job (standard or pilot) that hasn't completed/expired/failed yet.  <a href="classwrench_1_1_job_manager.html#ad96e34c3e54751d4b8332817c884fb77">More...</a><br /></td></tr>
-<tr class="separator:ad96e34c3e54751d4b8332817c884fb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e93d85718187a15fff1f02d83db52e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a6e93d85718187a15fff1f02d83db52e4">submitJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service, std::map&lt; std::string, std::string &gt; service_specific_args={})</td></tr>
+<tr class="memdesc:a6e93d85718187a15fff1f02d83db52e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a job to compute service.  <a href="classwrench_1_1_job_manager.html#a6e93d85718187a15fff1f02d83db52e4">More...</a><br /></td></tr>
+<tr class="separator:a6e93d85718187a15fff1f02d83db52e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4e87c0744e1914d7f606a30eb5f0f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job_manager.html#a1a4e87c0744e1914d7f606a30eb5f0f7">terminateJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job)</td></tr>
+<tr class="memdesc:a1a4e87c0744e1914d7f606a30eb5f0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a job (standard or pilot) that hasn't completed/expired/failed yet.  <a href="classwrench_1_1_job_manager.html#a1a4e87c0744e1914d7f606a30eb5f0f7">More...</a><br /></td></tr>
+<tr class="separator:a1a4e87c0744e1914d7f606a30eb5f0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwrench_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_service.html">wrench::Service</a></td></tr>
 <tr class="memitem:a7d7280ca209668863c3f82bd40a94439 inherit pub_methods_classwrench_1_1_service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_service.html#a7d7280ca209668863c3f82bd40a94439">assertServiceIsUp</a> ()</td></tr>
 <tr class="memdesc:a7d7280ca209668863c3f82bd40a94439 inherit pub_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception if the service is not up.  <a href="classwrench_1_1_service.html#a7d7280ca209668863c3f82bd40a94439">More...</a><br /></td></tr>
@@ -246,9 +243,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af63c270457dcf4a48ac9711c1fc2dc2e inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5196a532f21f892ce5681034cf2c2db inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ad5196a532f21f892ce5681034cf2c2db">~S4U_Daemon</a> ()</td></tr>
 <tr class="separator:ad5196a532f21f892ce5681034cf2c2db inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">acquireDaemonLock</a> ()</td></tr>
-<tr class="memdesc:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to acquire the daemon's lock.  <a href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">More...</a><br /></td></tr>
-<tr class="separator:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">cleanup</a> (bool has_returned_from_main, int return_value)</td></tr>
 <tr class="memdesc:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup function called when the daemon terminates (for whatever reason). The default behavior is to throw an exception if the host is off. This method should be overriden in a daemons implements some fault-tolerant behavior, or is naturally tolerant.  <a href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">More...</a><br /></td></tr>
 <tr class="separator:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,16 +270,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a617d62af4eefc04b0a0c967c9cdcf56b">join</a> ()</td></tr>
 <tr class="memdesc:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join (i.e., wait for) the daemon.  <a href="classwrench_1_1_s4_u___daemon.html#a617d62af4eefc04b0a0c967c9cdcf56b">More...</a><br /></td></tr>
 <tr class="separator:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">releaseDaemonLock</a> ()</td></tr>
-<tr class="memdesc:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to release the daemon's lock.  <a href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">More...</a><br /></td></tr>
-<tr class="separator:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="abd80bf9b1f2895adccbd2688885a1e33"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#abd80bf9b1f2895adccbd2688885a1e33">resumeActor</a> ()</td></tr>
 <tr class="memdesc:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the daemon/actor. <br /></td></tr>
 <tr class="separator:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a264635f7c1b8f2e6d25b6910047f90c4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a264635f7c1b8f2e6d25b6910047f90c4">setupOnExitFunction</a> ()</td></tr>
-<tr class="memdesc:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the on_exit function for the actor. <br /></td></tr>
+<tr class="memdesc:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the on_exit functionf for the actor. <br /></td></tr>
 <tr class="separator:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4d20d7ec2c3f173d139176b569afef inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#abc4d20d7ec2c3f173d139176b569afef">startDaemon</a> (bool _daemonized, bool _auto_restart)</td></tr>
 <tr class="memdesc:abc4d20d7ec2c3f173d139176b569afef inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the daemon.  <a href="classwrench_1_1_s4_u___daemon.html#abc4d20d7ec2c3f173d139176b569afef">More...</a><br /></td></tr>
@@ -328,9 +319,17 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a0b05fdef3ddb499a537d55f046a396d7 inherit pro_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a property of the <a class="el" href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow...">Service</a>.  <a href="classwrench_1_1_service.html#a0b05fdef3ddb499a537d55f046a396d7">More...</a><br /></td></tr>
 <tr class="separator:a0b05fdef3ddb499a537d55f046a396d7 inherit pro_methods_classwrench_1_1_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwrench_1_1_s4_u___daemon"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwrench_1_1_s4_u___daemon')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></td></tr>
-<tr class="memitem:ac4a828920d1217c73f0c4dfb2ab70fff inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ac4a828920d1217c73f0c4dfb2ab70fff">killActor</a> ()</td></tr>
-<tr class="memdesc:ac4a828920d1217c73f0c4dfb2ab70fff inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#ac4a828920d1217c73f0c4dfb2ab70fff">More...</a><br /></td></tr>
-<tr class="separator:ac4a828920d1217c73f0c4dfb2ab70fff inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a438a44d941326d6df21d56ec1579f688"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">acquireDaemonLock</a> ()</td></tr>
+<tr class="memdesc:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the daemon's lock. <br /></td></tr>
+<tr class="separator:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">killActor</a> ()</td></tr>
+<tr class="memdesc:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">More...</a><br /></td></tr>
+<tr class="separator:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a872a3739833bc4034fe729877c258dcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">releaseDaemonLock</a> ()</td></tr>
+<tr class="memdesc:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the daemon's lock. <br /></td></tr>
+<tr class="separator:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2a5b056c6f2f19e6b4b8787eab9d9d inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a2f2a5b056c6f2f19e6b4b8787eab9d9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">runMainMethod</a> ()</td></tr>
 <tr class="memdesc:a2f2a5b056c6f2f19e6b4b8787eab9d9d inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that run's the user-defined main method (that's called by the S4U actor class) <br /></td></tr>
@@ -456,33 +455,6 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0b853f16abeb2214579852d10e8bae77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b853f16abeb2214579852d10e8bae77">&#9670;&nbsp;</a></span>createCompoundJob()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; wrench::JobManager::createCompoundJob </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a Compound job. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>the job's name (if empty, a unique job name will be picked for you) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the job </dd></dl>
-
-</div>
-</div>
 <a id="a67d399462bd9636c50e201d277303bab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67d399462bd9636c50e201d277303bab">&#9670;&nbsp;</a></span>createPilotJob()</h2>
 
@@ -794,7 +766,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Stop the job manager. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classwrench_1_1_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">ExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
     <tr><td class="paramname">std::runtime_error</td><td></td></tr>
   </table>
   </dd>
@@ -804,8 +776,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="a059bd75d37584c1c917af437a2ecbbd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a059bd75d37584c1c917af437a2ecbbd2">&#9670;&nbsp;</a></span>submitJob()</h2>
+<a id="a6e93d85718187a15fff1f02d83db52e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e93d85718187a15fff1f02d83db52e4">&#9670;&nbsp;</a></span>submitJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -813,7 +785,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">void wrench::JobManager::submitJob </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em>, </td>
         </tr>
         <tr>
@@ -866,15 +838,15 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
-    <tr><td class="paramname"><a class="el" href="classwrench_1_1_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">ExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ad96e34c3e54751d4b8332817c884fb77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad96e34c3e54751d4b8332817c884fb77">&#9670;&nbsp;</a></span>terminateJob()</h2>
+<a id="a1a4e87c0744e1914d7f606a30eb5f0f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4e87c0744e1914d7f606a30eb5f0f7">&#9670;&nbsp;</a></span>terminateJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +854,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">void wrench::JobManager::terminateJob </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em></td><td>)</td>
           <td></td>
         </tr>
@@ -898,7 +870,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classwrench_1_1_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">ExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">WorkflowExecutionException</a></td><td></td></tr>
     <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
     <tr><td class="paramname">std::runtime_error</td><td></td></tr>
   </table>

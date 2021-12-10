@@ -216,9 +216,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af63c270457dcf4a48ac9711c1fc2dc2e inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5196a532f21f892ce5681034cf2c2db inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ad5196a532f21f892ce5681034cf2c2db">~S4U_Daemon</a> ()</td></tr>
 <tr class="separator:ad5196a532f21f892ce5681034cf2c2db inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">acquireDaemonLock</a> ()</td></tr>
-<tr class="memdesc:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to acquire the daemon's lock.  <a href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">More...</a><br /></td></tr>
-<tr class="separator:a438a44d941326d6df21d56ec1579f688 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">cleanup</a> (bool has_returned_from_main, int return_value)</td></tr>
 <tr class="memdesc:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup function called when the daemon terminates (for whatever reason). The default behavior is to throw an exception if the host is off. This method should be overriden in a daemons implements some fault-tolerant behavior, or is naturally tolerant.  <a href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">More...</a><br /></td></tr>
 <tr class="separator:ab6fe4db53ea5c0a934b507b146c504d1 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,16 +243,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a617d62af4eefc04b0a0c967c9cdcf56b">join</a> ()</td></tr>
 <tr class="memdesc:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join (i.e., wait for) the daemon.  <a href="classwrench_1_1_s4_u___daemon.html#a617d62af4eefc04b0a0c967c9cdcf56b">More...</a><br /></td></tr>
 <tr class="separator:a617d62af4eefc04b0a0c967c9cdcf56b inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">releaseDaemonLock</a> ()</td></tr>
-<tr class="memdesc:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to release the daemon's lock.  <a href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">More...</a><br /></td></tr>
-<tr class="separator:a872a3739833bc4034fe729877c258dcd inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="abd80bf9b1f2895adccbd2688885a1e33"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#abd80bf9b1f2895adccbd2688885a1e33">resumeActor</a> ()</td></tr>
 <tr class="memdesc:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the daemon/actor. <br /></td></tr>
 <tr class="separator:abd80bf9b1f2895adccbd2688885a1e33 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a264635f7c1b8f2e6d25b6910047f90c4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a264635f7c1b8f2e6d25b6910047f90c4">setupOnExitFunction</a> ()</td></tr>
-<tr class="memdesc:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the on_exit function for the actor. <br /></td></tr>
+<tr class="memdesc:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the on_exit functionf for the actor. <br /></td></tr>
 <tr class="separator:a264635f7c1b8f2e6d25b6910047f90c4 inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4d20d7ec2c3f173d139176b569afef inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#abc4d20d7ec2c3f173d139176b569afef">startDaemon</a> (bool _daemonized, bool _auto_restart)</td></tr>
 <tr class="memdesc:abc4d20d7ec2c3f173d139176b569afef inherit pub_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the daemon.  <a href="classwrench_1_1_s4_u___daemon.html#abc4d20d7ec2c3f173d139176b569afef">More...</a><br /></td></tr>
@@ -334,7 +328,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a6ce8628812f5bd8c813c92ad51265f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform static optimizations. Optimizations are executed in order of insertion. <br /></td></tr>
 <tr class="separator:a6ce8628812f5bd8c813c92ad51265f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ae3abfb1350a9319b9878a8e805733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">setTimer</a> (double date, std::string message)</td></tr>
-<tr class="memdesc:a47ae3abfb1350a9319b9878a8e805733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a>)  <a href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">More...</a><br /></td></tr>
+<tr class="memdesc:a47ae3abfb1350a9319b9878a8e805733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a>)  <a href="classwrench_1_1_w_m_s.html#a47ae3abfb1350a9319b9878a8e805733">More...</a><br /></td></tr>
 <tr class="separator:a47ae3abfb1350a9319b9878a8e805733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2923b4ec6f7e233693199154d5206d5f"><td class="memItemLeft" align="right" valign="top"><a id="a2923b4ec6f7e233693199154d5206d5f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#a2923b4ec6f7e233693199154d5206d5f">waitForAndProcessNextEvent</a> ()</td></tr>
@@ -343,12 +337,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aaa452080dca6ec289ca9e7317db4be44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#aaa452080dca6ec289ca9e7317db4be44">waitForAndProcessNextEvent</a> (double timeout)</td></tr>
 <tr class="memdesc:aaa452080dca6ec289ca9e7317db4be44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event and then call the associated function to process that event.  <a href="classwrench_1_1_w_m_s.html#aaa452080dca6ec289ca9e7317db4be44">More...</a><br /></td></tr>
 <tr class="separator:aaa452080dca6ec289ca9e7317db4be44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24057c6d832dee56e4de9cf695130a2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#ac24057c6d832dee56e4de9cf695130a2">waitForNextEvent</a> ()</td></tr>
-<tr class="memdesc:ac24057c6d832dee56e4de9cf695130a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#ac24057c6d832dee56e4de9cf695130a2">More...</a><br /></td></tr>
-<tr class="separator:ac24057c6d832dee56e4de9cf695130a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20196c6f42e6e30851f9097ab911d89a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#a20196c6f42e6e30851f9097ab911d89a">waitForNextEvent</a> (double timeout)</td></tr>
-<tr class="memdesc:a20196c6f42e6e30851f9097ab911d89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#a20196c6f42e6e30851f9097ab911d89a">More...</a><br /></td></tr>
-<tr class="separator:a20196c6f42e6e30851f9097ab911d89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54466eb301f2de97061d259cb5a8158"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#ab54466eb301f2de97061d259cb5a8158">waitForNextEvent</a> ()</td></tr>
+<tr class="memdesc:ab54466eb301f2de97061d259cb5a8158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#ab54466eb301f2de97061d259cb5a8158">More...</a><br /></td></tr>
+<tr class="separator:ab54466eb301f2de97061d259cb5a8158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b5eca273ca72b6d1c3904ec97aea3c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_w_m_s.html#ad3b5eca273ca72b6d1c3904ec97aea3c">waitForNextEvent</a> (double timeout)</td></tr>
+<tr class="memdesc:ad3b5eca273ca72b6d1c3904ec97aea3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a workflow execution event.  <a href="classwrench_1_1_w_m_s.html#ad3b5eca273ca72b6d1c3904ec97aea3c">More...</a><br /></td></tr>
+<tr class="separator:ad3b5eca273ca72b6d1c3904ec97aea3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwrench_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwrench_1_1_service')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwrench_1_1_service.html">wrench::Service</a></td></tr>
 <tr class="memitem:a405ee888a74f503d9d99ef87964dc814 inherit pro_methods_classwrench_1_1_service"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_service.html#a405ee888a74f503d9d99ef87964dc814">Service</a> (std::string <a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, std::string process_name_prefix, std::string mailbox_name_prefix)</td></tr>
 <tr class="memdesc:a405ee888a74f503d9d99ef87964dc814 inherit pro_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_service.html#a405ee888a74f503d9d99ef87964dc814">More...</a><br /></td></tr>
@@ -377,9 +371,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a0b05fdef3ddb499a537d55f046a396d7 inherit pro_methods_classwrench_1_1_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a property of the <a class="el" href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow...">Service</a>.  <a href="classwrench_1_1_service.html#a0b05fdef3ddb499a537d55f046a396d7">More...</a><br /></td></tr>
 <tr class="separator:a0b05fdef3ddb499a537d55f046a396d7 inherit pro_methods_classwrench_1_1_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwrench_1_1_s4_u___daemon"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwrench_1_1_s4_u___daemon')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></td></tr>
-<tr class="memitem:ac4a828920d1217c73f0c4dfb2ab70fff inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#ac4a828920d1217c73f0c4dfb2ab70fff">killActor</a> ()</td></tr>
-<tr class="memdesc:ac4a828920d1217c73f0c4dfb2ab70fff inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#ac4a828920d1217c73f0c4dfb2ab70fff">More...</a><br /></td></tr>
-<tr class="separator:ac4a828920d1217c73f0c4dfb2ab70fff inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a438a44d941326d6df21d56ec1579f688"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a438a44d941326d6df21d56ec1579f688">acquireDaemonLock</a> ()</td></tr>
+<tr class="memdesc:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the daemon's lock. <br /></td></tr>
+<tr class="separator:a438a44d941326d6df21d56ec1579f688 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">killActor</a> ()</td></tr>
+<tr class="memdesc:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the daemon/actor (does nothing if already dead)  <a href="classwrench_1_1_s4_u___daemon.html#afb9bb97186d92374fa8cb16dbc1c6737">More...</a><br /></td></tr>
+<tr class="separator:afb9bb97186d92374fa8cb16dbc1c6737 inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a872a3739833bc4034fe729877c258dcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a872a3739833bc4034fe729877c258dcd">releaseDaemonLock</a> ()</td></tr>
+<tr class="memdesc:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the daemon's lock. <br /></td></tr>
+<tr class="separator:a872a3739833bc4034fe729877c258dcd inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2a5b056c6f2f19e6b4b8787eab9d9d inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="memItemLeft" align="right" valign="top"><a id="a2f2a5b056c6f2f19e6b4b8787eab9d9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">runMainMethod</a> ()</td></tr>
 <tr class="memdesc:a2f2a5b056c6f2f19e6b4b8787eab9d9d inherit pro_methods_classwrench_1_1_s4_u___daemon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that run's the user-defined main method (that's called by the S4U actor class) <br /></td></tr>
@@ -1118,7 +1120,7 @@ template&lt;class T &gt; </div>
 <p>Process a file copy completion event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_completed_event.html" title="A &quot;file copy has completed&quot; ExecutionEvent.">FileCopyCompletedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_completed_event.html" title="A &quot;file copy has completed&quot; WorkflowExecutionEvent.">FileCopyCompletedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1152,7 +1154,7 @@ template&lt;class T &gt; </div>
 <p>Process a file copy failure event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_failed_event.html" title="A &quot;file copy has failed&quot; ExecutionEvent.">FileCopyFailedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_file_copy_failed_event.html" title="A &quot;file copy has failed&quot; WorkflowExecutionEvent.">FileCopyFailedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1186,7 +1188,7 @@ template&lt;class T &gt; </div>
 <p>Process a pilot job expiration event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_expired_event.html" title="A &quot;pilot job has expired&quot; ExecutionEvent.">PilotJobExpiredEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_expired_event.html" title="A &quot;pilot job has expired&quot; WorkflowExecutionEvent.">PilotJobExpiredEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1220,7 +1222,7 @@ template&lt;class T &gt; </div>
 <p>Process a pilot job start event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_started_event.html" title="A &quot;pilot job has started&quot; ExecutionEvent.">PilotJobStartedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_pilot_job_started_event.html" title="A &quot;pilot job has started&quot; WorkflowExecutionEvent.">PilotJobStartedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1254,7 +1256,7 @@ template&lt;class T &gt; </div>
 <p>Process a standard job completion event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_completed_event.html" title="A &quot;standard job has completed&quot; ExecutionEvent.">StandardJobCompletedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_completed_event.html" title="A &quot;standard job has completed&quot; WorkflowExecutionEvent.">StandardJobCompletedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1288,7 +1290,7 @@ template&lt;class T &gt; </div>
 <p>Process a standard job failure event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_failed_event.html" title="A &quot;standard job has failed&quot; ExecutionEvent.">StandardJobFailedEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_standard_job_failed_event.html" title="A &quot;standard job has failed&quot; WorkflowExecutionEvent.">StandardJobFailedEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1322,7 +1324,7 @@ template&lt;class T &gt; </div>
 <p>Process a timer event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a> </td></tr>
+    <tr><td class="paramname">event</td><td>a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1363,11 +1365,11 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a>) </p>
+<p>Sets a timer (which, when it goes off, will generate a <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a>) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">date</td><td>the date at which the timer should go off </td></tr>
-    <tr><td class="paramname">message</td><td>a string message that will be in the generated <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; ExecutionEvent.">TimerEvent</a> </td></tr>
+    <tr><td class="paramname">message</td><td>a string message that will be in the generated <a class="el" href="classwrench_1_1_timer_event.html" title="A &quot;timer went off&quot; WorkflowExecutionEvent.">TimerEvent</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1408,15 +1410,15 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>false if a timeout occurred (in which case no event was received/processed) </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classwrench_1_1_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">wrench::ExecutionException</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="classwrench_1_1_workflow_execution_exception.html" title="An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...">wrench::WorkflowExecutionException</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ac24057c6d832dee56e4de9cf695130a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac24057c6d832dee56e4de9cf695130a2">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[1/2]</span></h2>
+<a id="ab54466eb301f2de97061d259cb5a8158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54466eb301f2de97061d259cb5a8158">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1425,7 +1427,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1443,8 +1445,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a20196c6f42e6e30851f9097ab911d89a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20196c6f42e6e30851f9097ab911d89a">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[2/2]</span></h2>
+<a id="ad3b5eca273ca72b6d1c3904ec97aea3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b5eca273ca72b6d1c3904ec97aea3c">&#9670;&nbsp;</a></span>waitForNextEvent() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1453,7 +1455,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_execution_event.html">ExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt; wrench::WMS::waitForNextEvent </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>

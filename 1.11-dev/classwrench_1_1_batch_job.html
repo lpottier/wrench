@@ -125,16 +125,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A batch job, which encapsulates a <a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> and additional information used by a batch.  
+<p>A batch job, which encapsulates a <a class="el" href="classwrench_1_1_workflow_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">WorkflowJob</a> and additional information used by a batch.  
  <a href="classwrench_1_1_batch_job.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_batch_job_8h_source.html">BatchJob.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c2f34e20c552fe7b6b22bad10c230ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a2c2f34e20c552fe7b6b22bad10c230ef">BatchJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt; job, unsigned long job_id, unsigned long time_in_minutes, unsigned long number_nodes, unsigned long cores_per_node, std::string username, double ending_time_stamp, double arrival_time_stamp)</td></tr>
-<tr class="memdesc:a2c2f34e20c552fe7b6b22bad10c230ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_job.html#a2c2f34e20c552fe7b6b22bad10c230ef">More...</a><br /></td></tr>
-<tr class="separator:a2c2f34e20c552fe7b6b22bad10c230ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#afcf5fc0d1cc1531937a2a4ec91d13919">BatchJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job, unsigned long job_id, unsigned long time_in_minutes, unsigned long number_nodes, unsigned long cores_per_node, std::string username, double ending_time_stamp, double arrival_time_stamp)</td></tr>
+<tr class="memdesc:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_job.html#afcf5fc0d1cc1531937a2a4ec91d13919">More...</a><br /></td></tr>
+<tr class="separator:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af309cf782163dc32c9fb57e353d8fe12"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#af309cf782163dc32c9fb57e353d8fe12">getAllocatedNodeIndices</a> ()</td></tr>
 <tr class="memdesc:af309cf782163dc32c9fb57e353d8fe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of allocated nodes.  <a href="classwrench_1_1_batch_job.html#af309cf782163dc32c9fb57e353d8fe12">More...</a><br /></td></tr>
 <tr class="separator:af309cf782163dc32c9fb57e353d8fe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,9 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae76704f19914ddb392243860fd2700fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#ae76704f19914ddb392243860fd2700fd">getUsername</a> ()</td></tr>
 <tr class="memdesc:ae76704f19914ddb392243860fd2700fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the username.  <a href="classwrench_1_1_batch_job.html#ae76704f19914ddb392243860fd2700fd">More...</a><br /></td></tr>
 <tr class="separator:ae76704f19914ddb392243860fd2700fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd52f87e2c31ca44675581bbb8fb5a3a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#afd52f87e2c31ca44675581bbb8fb5a3a">getWorkflowJob</a> ()</td></tr>
-<tr class="memdesc:afd52f87e2c31ca44675581bbb8fb5a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow job corresponding to this batch job.  <a href="classwrench_1_1_batch_job.html#afd52f87e2c31ca44675581bbb8fb5a3a">More...</a><br /></td></tr>
-<tr class="separator:afd52f87e2c31ca44675581bbb8fb5a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc03795c6c4d27d7685938171bfaaf3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a6cc03795c6c4d27d7685938171bfaaf3">getWorkflowJob</a> ()</td></tr>
+<tr class="memdesc:a6cc03795c6c4d27d7685938171bfaaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow job corresponding to this batch job.  <a href="classwrench_1_1_batch_job.html#a6cc03795c6c4d27d7685938171bfaaf3">More...</a><br /></td></tr>
+<tr class="separator:a6cc03795c6c4d27d7685938171bfaaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#ab7bccaf60203ea3164bb80e6be7831b3">setAllocatedNodeIndices</a> (std::vector&lt; int &gt; indices)</td></tr>
 <tr class="memdesc:ab7bccaf60203ea3164bb80e6be7831b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the indices of the allocated nodes.  <a href="classwrench_1_1_batch_job.html#ab7bccaf60203ea3164bb80e6be7831b3">More...</a><br /></td></tr>
 <tr class="separator:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,10 +199,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a3b1994a6233be477d05d23115cdfd580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A batch job, which encapsulates a <a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> and additional information used by a batch. </p>
+<div class="textblock"><p>A batch job, which encapsulates a <a class="el" href="classwrench_1_1_workflow_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">WorkflowJob</a> and additional information used by a batch. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2c2f34e20c552fe7b6b22bad10c230ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c2f34e20c552fe7b6b22bad10c230ef">&#9670;&nbsp;</a></span>BatchJob()</h2>
+<a id="afcf5fc0d1cc1531937a2a4ec91d13919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf5fc0d1cc1531937a2a4ec91d13919">&#9670;&nbsp;</a></span>BatchJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         <tr>
           <td class="memname">wrench::BatchJob::BatchJob </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em>, </td>
         </tr>
         <tr>
@@ -509,14 +509,14 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="afd52f87e2c31ca44675581bbb8fb5a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd52f87e2c31ca44675581bbb8fb5a3a">&#9670;&nbsp;</a></span>getWorkflowJob()</h2>
+<a id="a6cc03795c6c4d27d7685938171bfaaf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc03795c6c4d27d7685938171bfaaf3">&#9670;&nbsp;</a></span>getWorkflowJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job.html">Job</a> &gt; wrench::BatchJob::getWorkflowJob </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; wrench::BatchJob::getWorkflowJob </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['whilereceiving_684',['whileReceiving',['../namespacewrench.html#a1fa6782fde91dab538f577d2608eb640',1,'wrench']]],
-  ['whilesending_685',['whileSending',['../namespacewrench.html#a98a2da5f34bd18fc2c245b364e884b34',1,'wrench']]],
-  ['workflow_686',['Workflow',['../classwrench_1_1_workflow.html#a8447e0cbd59b4874bf47f8e2480a5a4d',1,'wrench::Workflow']]]
+  ['_7esimulation_579',['~Simulation',['../classwrench_1_1_simulation.html#a9ff9d68136e0234eab82592290b7f459',1,'wrench::Simulation']]]
 ];

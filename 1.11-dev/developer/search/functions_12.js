@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatestate_1085',['updateState',['../classwrench_1_1_action.html#a0772b660fc9fa7d2318b0138947dab07',1,'wrench::Action']]]
+  ['virtualizedclustercomputeservice_992',['VirtualizedClusterComputeService',['../classwrench_1_1_virtualized_cluster_compute_service.html#a40a78b7e0efc2fc8bdd40196cb380b49',1,'wrench::VirtualizedClusterComputeService']]]
 ];

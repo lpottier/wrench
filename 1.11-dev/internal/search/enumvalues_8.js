@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['started_2545',['STARTED',['../classwrench_1_1_action.html#a83e356b3485d383e3e3f0c97e1a4267bad42eeaf5df843d07d7f6590dc9bfaf87',1,'wrench::Action']]],
-  ['submitted_2546',['SUBMITTED',['../classwrench_1_1_compound_job.html#abd9194d84b704e30370b51db1737fe01a910a2dddc1564cb4fef3d28b4bb1a99b',1,'wrench::CompoundJob']]],
-  ['suspended_2547',['SUSPENDED',['../classwrench_1_1_s4_u___daemon.html#a534c9875b6a15e2eb83781007120be03a9ec29d34fbc8882c1c7078845132ba02',1,'wrench::S4U_Daemon']]]
+  ['terminated_2373',['TERMINATED',['../classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8a21352143c29095d065e7a042b5dc453c',1,'wrench::PilotJob::TERMINATED()'],['../classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67a0dc6dd4429f05d26102cc6b749a93349',1,'wrench::StandardJob::TERMINATED()']]]
 ];
