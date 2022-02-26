@@ -116,7 +116,7 @@ $(function() {
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>pathExists()
-: <a class="el" href="classwrench_1_1_workflow.html#af96abc2152c2b4defe6c664834567169">wrench::Workflow</a>
+: <a class="el" href="classwrench_1_1_workflow.html#ac065483045550ac62b47f6bd6ef27b9c">wrench::Workflow</a>
 </li>
 <li>PENDING
 : <a class="el" href="classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8ad580f9552e724bb04d8ce76b1577efa9">wrench::PilotJob</a>
@@ -129,16 +129,19 @@ $(function() {
 : <a class="el" href="classwrench_1_1_simulation_timestamp_disk_write.html#a5038fbdcc2a252409e6c01fa2658cd51">wrench::SimulationTimestampDiskWrite</a>
 </li>
 <li>pending_file_copies
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a1684ecd4d796de22aaa0e85a80691248">wrench::SimulationTimestampFileCopy</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#af3b9468524e77703feb7ab3b61a0c5b0">wrench::SimulationTimestampFileCopy</a>
 </li>
 <li>pending_file_reads
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a1f8ecc92dd1c46830e9e66b33a858877">wrench::SimulationTimestampFileRead</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a9eb619a9619c7448527c81868e2e3913">wrench::SimulationTimestampFileRead</a>
 </li>
 <li>pending_file_writes
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a459e2f6138c6b0040ca199756a5f1414">wrench::SimulationTimestampFileWrite</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a117bc39b15a2e03c27e313bd806dffd1">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>pending_task_timestamps
 : <a class="el" href="classwrench_1_1_simulation_timestamp_task.html#a2700cf4cf255e0c7e5fbccf0cdc13ae5">wrench::SimulationTimestampTask</a>
+</li>
+<li>physical_execution_host
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a8437e74f66324ca44f9f66f1cb5adc2b">wrench::Action::ActionExecution</a>
 </li>
 <li>pilot_job
 : <a class="el" href="classwrench_1_1_pilot_job_expired_event.html#ad5a639996156b09e960443f4fbce2b5d">wrench::PilotJobExpiredEvent</a>
@@ -153,33 +156,32 @@ $(function() {
 <li>PILOT_JOB_STARTED_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a0a91a957ed0eeba0bb35daea55b25fa5">wrench::ComputeServiceMessagePayload</a>
 </li>
-<li>PilotJobScheduler()
-: <a class="el" href="classwrench_1_1_pilot_job_scheduler.html#ab230034aa98439169dc78bcf82bfced8">wrench::PilotJobScheduler</a>
+<li>processEventCompoundJobCompletion()
+: <a class="el" href="classwrench_1_1_execution_controller.html#ae2b00372ae12571348ea44cfd15d070b">wrench::ExecutionController</a>
 </li>
-<li>process()
-: <a class="el" href="classwrench_1_1_dynamic_optimization.html#a996a15c4c05df94fdf01303bea4bb6aa">wrench::DynamicOptimization</a>
-, <a class="el" href="classwrench_1_1_static_optimization.html#aa3912fb98c9681c72069f7878e8dd790">wrench::StaticOptimization</a>
+<li>processEventCompoundJobFailure()
+: <a class="el" href="classwrench_1_1_execution_controller.html#a276f40cccdc4c93a97a9254eb5a0ec48">wrench::ExecutionController</a>
 </li>
 <li>processEventFileCopyCompletion()
-: <a class="el" href="classwrench_1_1_w_m_s.html#a7717333339928727d0879c91367c369f">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#a93eaf0d8f49e50a309f6f3bdab8e1fd2">wrench::ExecutionController</a>
 </li>
 <li>processEventFileCopyFailure()
-: <a class="el" href="classwrench_1_1_w_m_s.html#abe410dec36a3829c510e76b8067a4a75">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#a5729d2784256c67b4d8e6a4a50aea94e">wrench::ExecutionController</a>
 </li>
 <li>processEventPilotJobExpiration()
-: <a class="el" href="classwrench_1_1_w_m_s.html#ac908a5e53a1200e61383ec24e61e7ee6">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#a6bde40c8cd06a95616af9f5e6c5d3647">wrench::ExecutionController</a>
 </li>
 <li>processEventPilotJobStart()
-: <a class="el" href="classwrench_1_1_w_m_s.html#a3360a68730410846bb1d4480277d7085">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#a06e09faf8ea0c7ae04d641d6e8ac55a3">wrench::ExecutionController</a>
 </li>
 <li>processEventStandardJobCompletion()
-: <a class="el" href="classwrench_1_1_w_m_s.html#a82c2bd2dda1b2af798299274551e8afd">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#add6dcc7b978158725de48a603ae8f06f">wrench::ExecutionController</a>
 </li>
 <li>processEventStandardJobFailure()
-: <a class="el" href="classwrench_1_1_w_m_s.html#a3f5aa823aa73f0881393457720f0a26f">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#a577f7f155398b24d731c7707ba57dbb4">wrench::ExecutionController</a>
 </li>
 <li>processEventTimer()
-: <a class="el" href="classwrench_1_1_w_m_s.html#a4e2db794368665bcbcf40271c094668d">wrench::WMS</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#ac74a1a0eed87820fe104a9ffccd13024">wrench::ExecutionController</a>
 </li>
 <li>properPathPrefix()
 : <a class="el" href="classwrench_1_1_file_location.html#a700b870565a0db27aed81cbe5a1960a5">wrench::FileLocation</a>

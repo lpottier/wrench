@@ -160,8 +160,16 @@ $(function() {
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>COMPOUND_JOB_DONE_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a80902dbaba0f390c4d3e97c3e1b53400">wrench::ComputeServiceMessagePayload</a>
+</li>
+<li>COMPOUND_JOB_FAILED_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a2249f61e2193366465243bb6231b4abe">wrench::ComputeServiceMessagePayload</a>
+</li>
 <li>compute_service
-: <a class="el" href="classwrench_1_1_pilot_job_expired_event.html#a1f7164eb87dd3e5b59fbc861951ff605">wrench::PilotJobExpiredEvent</a>
+: <a class="el" href="classwrench_1_1_compound_job_completed_event.html#a6d0f97484e6d3a2b1300cecf84b46974">wrench::CompoundJobCompletedEvent</a>
+, <a class="el" href="classwrench_1_1_compound_job_failed_event.html#a1b676256b38f0df240ecae5a131c2eb6">wrench::CompoundJobFailedEvent</a>
+, <a class="el" href="classwrench_1_1_pilot_job_expired_event.html#a1f7164eb87dd3e5b59fbc861951ff605">wrench::PilotJobExpiredEvent</a>
 , <a class="el" href="classwrench_1_1_pilot_job_started_event.html#a92ac1e6ebd7749f7a4b2b39badb32805">wrench::PilotJobStartedEvent</a>
 , <a class="el" href="classwrench_1_1_standard_job_completed_event.html#ae92d03eb05039e9c5be7c4a5bb03f08f">wrench::StandardJobCompletedEvent</a>
 , <a class="el" href="classwrench_1_1_standard_job_failed_event.html#a94ba6a27c63181b8f25467032d45808b">wrench::StandardJobFailedEvent</a>
@@ -183,9 +191,12 @@ $(function() {
 <li>DAEMON_STOPPED_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_service_message_payload.html#aec363c9226bc8285c41d9fff8c2814a9">wrench::ServiceMessagePayload</a>
 </li>
+<li>date
+: <a class="el" href="classwrench_1_1_simulation_timestamp_type.html#a8bbc3714e2962ddbc210c60c05687cfd">wrench::SimulationTimestampType</a>
+</li>
 <li>destination
 : <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a0d64addd3fe3bde2ce27ffb041fe6730">wrench::SimulationTimestampFileCopy</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a257c868b98cfcba24eaa74e604baab17">wrench::SimulationTimestampFileWrite</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a70e55ac8ef03045cc927c5474517e82b">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>DESTROY_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a4225b346cd3982c466621e19dd83019c">wrench::CloudComputeServiceMessagePayload</a>
@@ -201,8 +212,14 @@ $(function() {
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>end_date
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a3977aabc52008f43c3f400f47e74c8d9">wrench::Action::ActionExecution</a>
+</li>
 <li>endpoint
 : <a class="el" href="classwrench_1_1_simulation_timestamp_pair.html#ab0bbbd2bd759db2a86a9f7857c4de2f8">wrench::SimulationTimestampPair</a>
+</li>
+<li>execution_host
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a8e89e0295d09819819e497d21e78db70">wrench::Action::ActionExecution</a>
 </li>
 <li>execution_hosts
 : <a class="el" href="classwrench_1_1_cloud_compute_service.html#a1030e438ff1c5b044290359aa1291a29">wrench::CloudComputeService</a>
@@ -211,16 +228,21 @@ $(function() {
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>FAIL_ACTION_AFTER_ACTION_EXECUTOR_CRASH
+: <a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html#a271dd7485d3ec6d6a98c698bcda5234c">wrench::BareMetalComputeServiceProperty</a>
+</li>
 <li>failure_cause
-: <a class="el" href="classwrench_1_1_file_copy_failed_event.html#a8d3e5e8ce73f3ac145eb5046e0e79833">wrench::FileCopyFailedEvent</a>
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#aa805a6ce4095e1b1815a693eac34807d">wrench::Action::ActionExecution</a>
+, <a class="el" href="classwrench_1_1_compound_job_failed_event.html#a0917847b404d55dd38e25070bab5c5a7">wrench::CompoundJobFailedEvent</a>
+, <a class="el" href="classwrench_1_1_file_copy_failed_event.html#a8d3e5e8ce73f3ac145eb5046e0e79833">wrench::FileCopyFailedEvent</a>
 , <a class="el" href="classwrench_1_1_standard_job_failed_event.html#afb29868b158656f877f4737de4e8313b">wrench::StandardJobFailedEvent</a>
 </li>
 <li>file
-: <a class="el" href="classwrench_1_1_file_copy_completed_event.html#aed62752926d496a4335ec83dd5b8b028">wrench::FileCopyCompletedEvent</a>
-, <a class="el" href="classwrench_1_1_file_copy_failed_event.html#ab15883f629da5271f8cb3f0e2add0345">wrench::FileCopyFailedEvent</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#aaf6fab52084bae83e672a8247acdf118">wrench::SimulationTimestampFileCopy</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#ac913beb0218504db315ae765df679462">wrench::SimulationTimestampFileRead</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a5d1fe2729a886a92c76f6cb980f4b9c3">wrench::SimulationTimestampFileWrite</a>
+: <a class="el" href="classwrench_1_1_file_copy_completed_event.html#af6c41f10fa936203e7cbe2149771a46b">wrench::FileCopyCompletedEvent</a>
+, <a class="el" href="classwrench_1_1_file_copy_failed_event.html#ac25b3ccb75c63d8bcc1e70a73a59d9d0">wrench::FileCopyFailedEvent</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#ac181cdc76f643a2acebfe20c611ba762">wrench::SimulationTimestampFileCopy</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a0e1c5e4bdec96f880834b976b5720b84">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a38780786a8bc3b16ec028657a0c9ba0a">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>FILE_COPY_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_storage_service_message_payload.html#a5adc626683a5ca4e144d3c9fba1e87a2">wrench::StorageServiceMessagePayload</a>
@@ -306,6 +328,9 @@ $(function() {
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>id
+: <a class="el" href="classwrench_1_1_data_file.html#afe0d04367c19851211f329f7dbc6bf3d">wrench::DataFile</a>
+</li>
 <li>IGNORE_INVALID_JOBS_IN_WORKLOAD_TRACE_FILE
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a493c47199d12e12d41db176b39b1ea12">wrench::BatchComputeServiceProperty</a>
 </li>
@@ -319,6 +344,10 @@ $(function() {
 
 
 <h3><a id="index_j"></a>- j -</h3><ul>
+<li>job
+: <a class="el" href="classwrench_1_1_compound_job_completed_event.html#a55d5da08427e435bad1181c711d39a99">wrench::CompoundJobCompletedEvent</a>
+, <a class="el" href="classwrench_1_1_compound_job_failed_event.html#afc2cdf2bff4e0d81039712b61f0e3bb2">wrench::CompoundJobFailedEvent</a>
+</li>
 <li>JOB_TYPE_NOT_SUPPORTED_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#af1dc4d2c2f784a5b2a29034567254ba7">wrench::ComputeServiceMessagePayload</a>
 </li>
@@ -383,6 +412,9 @@ $(function() {
 <li>NETWORK_PROXIMITY_MEASUREMENT_PERIOD_MAX_NOISE
 : <a class="el" href="classwrench_1_1_network_proximity_service_property.html#a4a8f7599edf8a3983a0ff5ddfa3c8e2e">wrench::NetworkProximityServiceProperty</a>
 </li>
+<li>NETWORK_PROXIMITY_MEASUREMENT_PERIOD_NOISE_SEED
+: <a class="el" href="classwrench_1_1_network_proximity_service_property.html#abce2811765d2735a7398f91139bd2be4">wrench::NetworkProximityServiceProperty</a>
+</li>
 <li>NETWORK_PROXIMITY_MESSAGE_SIZE
 : <a class="el" href="classwrench_1_1_network_proximity_service_property.html#ad29e681b572ce963991844a75794e4c2">wrench::NetworkProximityServiceProperty</a>
 </li>
@@ -404,6 +436,9 @@ $(function() {
 <li>NOT_ENOUGH_STORAGE_SPACE_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_storage_service_message_payload.html#ae0d8ee8f07c557944f77e8363ec8334a">wrench::StorageServiceMessagePayload</a>
 </li>
+<li>num_cores_allocated
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#ab5b26165a2e1d2ccf5ed83bc515db9f7">wrench::Action::ActionExecution</a>
+</li>
 </ul>
 
 
@@ -422,16 +457,19 @@ $(function() {
 : <a class="el" href="classwrench_1_1_simulation_timestamp_disk_write.html#a5038fbdcc2a252409e6c01fa2658cd51">wrench::SimulationTimestampDiskWrite</a>
 </li>
 <li>pending_file_copies
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a1684ecd4d796de22aaa0e85a80691248">wrench::SimulationTimestampFileCopy</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#af3b9468524e77703feb7ab3b61a0c5b0">wrench::SimulationTimestampFileCopy</a>
 </li>
 <li>pending_file_reads
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a1f8ecc92dd1c46830e9e66b33a858877">wrench::SimulationTimestampFileRead</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a9eb619a9619c7448527c81868e2e3913">wrench::SimulationTimestampFileRead</a>
 </li>
 <li>pending_file_writes
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a459e2f6138c6b0040ca199756a5f1414">wrench::SimulationTimestampFileWrite</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a117bc39b15a2e03c27e313bd806dffd1">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>pending_task_timestamps
 : <a class="el" href="classwrench_1_1_simulation_timestamp_task.html#a2700cf4cf255e0c7e5fbccf0cdc13ae5">wrench::SimulationTimestampTask</a>
+</li>
+<li>physical_execution_host
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a8437e74f66324ca44f9f66f1cb5adc2b">wrench::Action::ActionExecution</a>
 </li>
 <li>pilot_job
 : <a class="el" href="classwrench_1_1_pilot_job_expired_event.html#ad5a639996156b09e960443f4fbce2b5d">wrench::PilotJobExpiredEvent</a>
@@ -450,6 +488,9 @@ $(function() {
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
+<li>ram_allocated
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a7f82438dc73657e4e8e30e4604582f98">wrench::Action::ActionExecution</a>
+</li>
 <li>REMOVE_ENTRY_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_file_registry_service_message_payload.html#a143ee2e1ad8b0861b040fa67efb17db8">wrench::FileRegistryServiceMessagePayload</a>
 </li>
@@ -479,8 +520,8 @@ $(function() {
 : <a class="el" href="classwrench_1_1_file_location.html#a7dd382c599ef44a68528be08985c1145">wrench::FileLocation</a>
 </li>
 <li>service
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#aa49edb0de0b2203395e8de98167e31c9">wrench::SimulationTimestampFileRead</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a879078b59915d018bf127eac7853b1ec">wrench::SimulationTimestampFileWrite</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#aa6f875a496bd1d92571452863d33253a">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#ab9ab701e2256af36101ce295f4719490">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>SHUTDOWN_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#ad2e8891c37b6269969a7c64542b24bd4">wrench::CloudComputeServiceMessagePayload</a>
@@ -488,15 +529,21 @@ $(function() {
 <li>SHUTDOWN_VM_REQUEST_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a0a15e60d6cc2acbb2b9301bf31b50865">wrench::CloudComputeServiceMessagePayload</a>
 </li>
+<li>simulate_computation_as_sleep
+: <a class="el" href="classwrench_1_1_action.html#a0e7d91cb4353e3df27680b7186128158">wrench::Action</a>
+</li>
 <li>SIMULATE_COMPUTATION_AS_SLEEP
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a2072267c164d046104868ad00aaadc51">wrench::BatchComputeServiceProperty</a>
 </li>
 <li>SIMULATED_WORKLOAD_TRACE_FILE
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a05cb4a094c38a599591af5b34873394b">wrench::BatchComputeServiceProperty</a>
 </li>
+<li>size
+: <a class="el" href="classwrench_1_1_data_file.html#ad171e10bb7d3b3bcf77250d9999952b1">wrench::DataFile</a>
+</li>
 <li>source
 : <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a2b2806c8956bb1dc7f504648564fe636">wrench::SimulationTimestampFileCopy</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a4a8a4ee52b9959666407f0ce4b8e3ddb">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a486f25af4189d6e844f9667a187b9241">wrench::SimulationTimestampFileRead</a>
 </li>
 <li>src
 : <a class="el" href="classwrench_1_1_file_copy_completed_event.html#ad5e17716ff3bd5c08904d34113a7a2e7">wrench::FileCopyCompletedEvent</a>
@@ -512,14 +559,26 @@ $(function() {
 <li>STANDARD_JOB_FAILED_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#aafb88e732f10b7e26bd1fe39356457bf">wrench::ComputeServiceMessagePayload</a>
 </li>
+<li>start_date
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a773e2d7641c5e75c7f9a44258121d843">wrench::Action::ActionExecution</a>
+</li>
 <li>START_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a68c56fe5237c1ccfa397dbd7f7679c06">wrench::CloudComputeServiceMessagePayload</a>
 </li>
 <li>START_VM_REQUEST_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a3ca3dbc25faa31c21f81b9387e6e6b76">wrench::CloudComputeServiceMessagePayload</a>
 </li>
+<li>state
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#aeaaa0f119f6c24f605f19933fbf97edd">wrench::Action::ActionExecution</a>
+</li>
 <li>STOP_DAEMON_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_service_message_payload.html#a9efb4a6b2c8876e17a3f636ba5ac17f6">wrench::ServiceMessagePayload</a>
+</li>
+<li>SUBMIT_COMPOUND_JOB_ANSWER_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#ac76447f222124633082cc820706ed557">wrench::ComputeServiceMessagePayload</a>
+</li>
+<li>SUBMIT_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a575d4c76575bd6623bbc7f8a235ef9d5">wrench::ComputeServiceMessagePayload</a>
 </li>
 <li>SUBMIT_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a421715521f0d2837e24e9e150da0de4a">wrench::ComputeServiceMessagePayload</a>
@@ -536,12 +595,6 @@ $(function() {
 <li>SUBMIT_TIME_OF_FIRST_JOB_IN_WORKLOAD_TRACE_FILE
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a019f1c83ac3125a6340a776f762395ca">wrench::BatchComputeServiceProperty</a>
 </li>
-<li>SUPPORTS_PILOT_JOBS
-: <a class="el" href="classwrench_1_1_compute_service_property.html#af0abab1e3bce4932c4482031f0c31ce8">wrench::ComputeServiceProperty</a>
-</li>
-<li>SUPPORTS_STANDARD_JOBS
-: <a class="el" href="classwrench_1_1_compute_service_property.html#a4e1b5e2e1effa86cfac0da608f112c14">wrench::ComputeServiceProperty</a>
-</li>
 <li>SUSPEND_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#aa32a7bd0331f1919551ccd0efef42a25">wrench::CloudComputeServiceMessagePayload</a>
 </li>
@@ -553,8 +606,8 @@ $(function() {
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>task
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#ace157e6185c5eea2cc9fb5f6abe3bdad">wrench::SimulationTimestampFileRead</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a830b0777a4aea6fa0f87405ce715f574">wrench::SimulationTimestampFileWrite</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a02a5ba9a38ba88653ccc7d4b1d0aeb76">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a935cc33dff5f2e61b85ea83a9ee63115">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>TASK_SELECTION_ALGORITHM
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a3f56c6740a8edc7189e617db1333b87b">wrench::BatchComputeServiceProperty</a>
@@ -562,6 +615,12 @@ $(function() {
 <li>TASK_STARTUP_OVERHEAD
 : <a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html#adb5768d70f5152bc85ade58cce4f8b47">wrench::BareMetalComputeServiceProperty</a>
 , <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a4e126dd30a49ac032ec083f1c420f389">wrench::BatchComputeServiceProperty</a>
+</li>
+<li>TERMINATE_COMPOUND_JOB_ANSWER_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a5b36b5e4e676431b443a1629fc5b148e">wrench::ComputeServiceMessagePayload</a>
+</li>
+<li>TERMINATE_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a28fe167820a9383562e56df3a30a92c5">wrench::ComputeServiceMessagePayload</a>
 </li>
 <li>TERMINATE_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#ad0bf94135d0c642785f4ce490a0dde0b">wrench::ComputeServiceMessagePayload</a>
@@ -577,6 +636,9 @@ $(function() {
 </li>
 <li>TERMINATE_WHENEVER_ALL_RESOURCES_ARE_DOWN
 : <a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html#a906dfcf7e533b13e20fa087c9eaddfa6">wrench::BareMetalComputeServiceProperty</a>
+</li>
+<li>thread_creation_overhead
+: <a class="el" href="classwrench_1_1_action.html#a7038ac15d4bcf40d07ea6e40bc688d5b">wrench::Action</a>
 </li>
 <li>TTL_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a79d0d40e02d24145252b7afb2c526cc5">wrench::ComputeServiceMessagePayload</a>

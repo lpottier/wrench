@@ -112,7 +112,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f7fef775f7301921a54ff1af899ae71f.html">wrench</a></li><li class="navelem"><a class="el" href="dir_c01bdc996d85f367769b5c653ac601b7.html">simgrid_S4U_util</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a946ec3d4951f0462f08b8eca24d53fc.html">wrench</a></li><li class="navelem"><a class="el" href="dir_ae5a5f0682bc5f0418121fa6ef668743.html">simgrid_S4U_util</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;wrench-dev.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;wrench-dev.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;wrench/simgrid_S4U_util/S4U_Mailbox.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -150,28 +150,30 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classwrench_1_1_s4_u___daemon_actor.html#a02de8ede3faf436548ca0469b8833df0">   51</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classwrench_1_1_s4_u___daemon_actor.html#a02de8ede3faf436548ca0469b8833df0">operator()</a>() {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            this-&gt;daemon-&gt;<a class="code" href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">runMainMethod</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            this-&gt;daemon-&gt;<a class="code" href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">runMainMethod</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classwrench_1_1_s4_u___daemon.html">S4U_Daemon</a> *daemon;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classwrench_1_1_s4_u___daemon.html">S4U_Daemon</a> *daemon;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif //WRENCH_SIM4U_DAEMONWITHMAILBOXACTOR_H</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif //WRENCH_SIM4U_DAEMONWITHMAILBOXACTOR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
+<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
 <div class="ttc" id="aclasswrench_1_1_s4_u___daemon_actor_html_a93470293602b656229cf003da3ecbae8"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon_actor.html#a93470293602b656229cf003da3ecbae8">wrench::S4U_DaemonActor::S4U_DaemonActor</a></div><div class="ttdeci">S4U_DaemonActor(S4U_Daemon *d)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> S4U_DaemonActor.h:44</div></div>
 <div class="ttc" id="aclasswrench_1_1_s4_u___daemon_html"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon.html">wrench::S4U_Daemon</a></div><div class="ttdoc">A generic &quot;running daemon&quot; abstraction that serves as a basis for all simulated processes.</div><div class="ttdef"><b>Definition:</b> S4U_Daemon.h:32</div></div>
 <div class="ttc" id="aclasswrench_1_1_s4_u___daemon_actor_html_a02de8ede3faf436548ca0469b8833df0"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon_actor.html#a02de8ede3faf436548ca0469b8833df0">wrench::S4U_DaemonActor::operator()</a></div><div class="ttdeci">void operator()()</div><div class="ttdoc">The S4U way of defining the actor's &quot;main&quot; method.</div><div class="ttdef"><b>Definition:</b> S4U_DaemonActor.h:51</div></div>
 <div class="ttc" id="aclasswrench_1_1_s4_u___daemon_actor_html"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon_actor.html">wrench::S4U_DaemonActor</a></div><div class="ttdoc">The S4U actor that's the foundation for the S4U_Daemon abstraction.</div><div class="ttdef"><b>Definition:</b> S4U_DaemonActor.h:36</div></div>
-<div class="ttc" id="aclasswrench_1_1_s4_u___daemon_html_a2f2a5b056c6f2f19e6b4b8787eab9d9d"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">wrench::S4U_Daemon::runMainMethod</a></div><div class="ttdeci">void runMainMethod()</div><div class="ttdoc">Method that run's the user-defined main method (that's called by the S4U actor class)</div><div class="ttdef"><b>Definition:</b> S4U_Daemon.cpp:247</div></div>
+<div class="ttc" id="aclasswrench_1_1_s4_u___daemon_html_a2f2a5b056c6f2f19e6b4b8787eab9d9d"><div class="ttname"><a href="classwrench_1_1_s4_u___daemon.html#a2f2a5b056c6f2f19e6b4b8787eab9d9d">wrench::S4U_Daemon::runMainMethod</a></div><div class="ttdeci">void runMainMethod()</div><div class="ttdoc">Method that run's the user-defined main method (that's called by the S4U actor class)</div><div class="ttdef"><b>Definition:</b> S4U_Daemon.cpp:239</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
         <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>

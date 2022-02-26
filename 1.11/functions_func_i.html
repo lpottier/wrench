@@ -116,10 +116,7 @@ $(function() {
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>igetMessage()
-: <a class="el" href="classwrench_1_1_s4_u___mailbox.html#a9e25753207135f1323df89fbe99c86ba">wrench::S4U_Mailbox</a>
-</li>
-<li>increaseNumCompletedServicesCount()
-: <a class="el" href="classwrench_1_1_service.html#a2e35a0e9482edc7cb3011db9238377e5">wrench::Service</a>
+: <a class="el" href="classwrench_1_1_s4_u___mailbox.html#a065877ea4220e305ccabcffef9d6b67f">wrench::S4U_Mailbox</a>
 </li>
 <li>incrementFailureCount()
 : <a class="el" href="classwrench_1_1_workflow_task.html#a0af741652c38f6165bdf03195b84becf">wrench::WorkflowTask</a>
@@ -138,10 +135,13 @@ $(function() {
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#a70b123a78f90e8e1f432111c3ce93929">wrench::S4U_Simulation</a>
 </li>
 <li>initiateAsynchronousFileCopy()
-: <a class="el" href="classwrench_1_1_data_movement_manager.html#aca33489c06e05260fe0a73fb7ee660e0">wrench::DataMovementManager</a>
+: <a class="el" href="classwrench_1_1_data_movement_manager.html#a26c190b3b15978f2e498522ebbc859e9">wrench::DataMovementManager</a>
 </li>
 <li>initiateFileCopy()
-: <a class="el" href="classwrench_1_1_storage_service.html#a77196a752e86105a3061ec6a4251733a">wrench::StorageService</a>
+: <a class="el" href="classwrench_1_1_storage_service.html#a4baafd10ebe2f0d51f590a30e4333ae9">wrench::StorageService</a>
+</li>
+<li>initiateInstance()
+: <a class="el" href="classwrench_1_1_bare_metal_compute_service.html#a2e13a44358765717478b04836a163970">wrench::BareMetalComputeService</a>
 </li>
 <li>instantiatePlatform()
 : <a class="el" href="classwrench_1_1_simulation.html#ae22639abf6ede9f345b382f5ffe19b0e">wrench::Simulation</a>
@@ -150,7 +150,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_invalid_directory_path.html#a73b41026b29711d3f80e6b787fa4ea70">wrench::InvalidDirectoryPath</a>
 </li>
 <li>iputMessage()
-: <a class="el" href="classwrench_1_1_s4_u___mailbox.html#a49f881d23a38e2c48e1aa89155a65721">wrench::S4U_Mailbox</a>
+: <a class="el" href="classwrench_1_1_s4_u___mailbox.html#a37f193039f3d23c943cabd5cd8d69a1e">wrench::S4U_Mailbox</a>
 </li>
 <li>isDaemonized()
 : <a class="el" href="classwrench_1_1_s4_u___daemon.html#a14ffe0c5e4e6864c11c05f3455987d6c">wrench::S4U_Daemon</a>
@@ -168,7 +168,10 @@ $(function() {
 : <a class="el" href="classwrench_1_1_simulation.html#ad4283844acaa4232b17f48f3af2f1b06">wrench::Simulation</a>
 </li>
 <li>isFileInDirectory()
-: <a class="el" href="classwrench_1_1_logical_file_system.html#adec4299ed167fa0f6919e640f3adfa94">wrench::LogicalFileSystem</a>
+: <a class="el" href="classwrench_1_1_logical_file_system.html#a6f2e17e14b84bdfedfde2f1896ccf92a">wrench::LogicalFileSystem</a>
+</li>
+<li>isFileOutputOfSomeTask()
+: <a class="el" href="classwrench_1_1_workflow.html#ae83c2275d4e30e5be2e4d265268301e2">wrench::Workflow</a>
 </li>
 <li>isHostOn()
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#a0750045121f81a8d3881f369da1c29e8">wrench::S4U_Simulation</a>
@@ -179,13 +182,11 @@ $(function() {
 </li>
 <li>isInitialized()
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#a0139f6818fee5e36c1ac3cc18c417be7">wrench::S4U_Simulation</a>
+, <a class="el" href="classwrench_1_1_simulation.html#af7ef29fe89c0a2b3a7379da1af721fdc">wrench::Simulation</a>
 </li>
 <li>isLinkOn()
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#abb5876eb5ea77e99e37a35da1f7d7e32">wrench::S4U_Simulation</a>
 , <a class="el" href="classwrench_1_1_simulation.html#ad8d3bac626795f838dd6a752d7fb57e4">wrench::Simulation</a>
-</li>
-<li>isOutput()
-: <a class="el" href="classwrench_1_1_workflow_file.html#a192a7a39bef01be6fc5ab31b11bc86fa">wrench::WorkflowFile</a>
 </li>
 <li>isPageCachingEnabled()
 : <a class="el" href="classwrench_1_1_simulation.html#a995af69a2f4436c71ee2693b6ec6f198">wrench::Simulation</a>
@@ -193,11 +194,17 @@ $(function() {
 <li>isPlatformSetup()
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#a43730166b317647c4af355ebce2de5fc">wrench::S4U_Simulation</a>
 </li>
+<li>isReady()
+: <a class="el" href="classwrench_1_1_compound_job.html#ac1a00ac4f918090ec05198ca7b0f6efc">wrench::CompoundJob</a>
+</li>
 <li>isScratch()
 : <a class="el" href="classwrench_1_1_storage_service.html#a452ba2c00c381183949d00fb46ea2865">wrench::StorageService</a>
 </li>
 <li>isSetToAutoRestart()
 : <a class="el" href="classwrench_1_1_s4_u___daemon.html#ab500c3fa5bba4bdad7f03def7c6f453a">wrench::S4U_Daemon</a>
+</li>
+<li>IsThereAtLeastOneHostWithAvailableResources()
+: <a class="el" href="classwrench_1_1_action_execution_service.html#ab561eafafa45da87f46c8b8104af4cf4">wrench::ActionExecutionService</a>
 </li>
 <li>isThereAtLeastOneHostWithIdleResources()
 : <a class="el" href="classwrench_1_1_compute_service.html#a91a8a4773ab090c72427cafb3d08b516">wrench::ComputeService</a>

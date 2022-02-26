@@ -126,137 +126,146 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A workflow (to be executed by a <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a>)  
+<p>A workflow (to be executed by a WMS)  
  <a href="classwrench_1_1_workflow.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_workflow_8h_source.html">Workflow.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for wrench::Workflow:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classwrench_1_1_workflow.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8447e0cbd59b4874bf47f8e2480a5a4d"><td class="memItemLeft" align="right" valign="top"><a id="a8447e0cbd59b4874bf47f8e2480a5a4d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a8447e0cbd59b4874bf47f8e2480a5a4d">Workflow</a> ()</td></tr>
-<tr class="memdesc:a8447e0cbd59b4874bf47f8e2480a5a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a8447e0cbd59b4874bf47f8e2480a5a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1249e2430c541344d622d75519e4851b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a1249e2430c541344d622d75519e4851b">addControlDependency</a> (<a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *src, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *dest, bool redundant_dependencies=false)</td></tr>
-<tr class="memdesc:a1249e2430c541344d622d75519e4851b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a control dependency between two workflow tasks. Will not do anything if there is already a path between the two tasks.  <a href="classwrench_1_1_workflow.html#a1249e2430c541344d622d75519e4851b">More...</a><br /></td></tr>
-<tr class="separator:a1249e2430c541344d622d75519e4851b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e1f7dc16f875f18c0990e6bd1843932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a0e1f7dc16f875f18c0990e6bd1843932">addFile</a> (std::string, double)</td></tr>
-<tr class="memdesc:a0e1f7dc16f875f18c0990e6bd1843932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new file to the workflow.  <a href="classwrench_1_1_workflow.html#a0e1f7dc16f875f18c0990e6bd1843932">More...</a><br /></td></tr>
-<tr class="separator:a0e1f7dc16f875f18c0990e6bd1843932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a163d52de55fa70695447a40bd9dfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ae1a163d52de55fa70695447a40bd9dfe">addTask</a> (std::string, double flops, unsigned long min_num_cores, unsigned long max_num_cores, double memory_requirement)</td></tr>
-<tr class="memdesc:ae1a163d52de55fa70695447a40bd9dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and add a new computational task to the workflow.  <a href="classwrench_1_1_workflow.html#ae1a163d52de55fa70695447a40bd9dfe">More...</a><br /></td></tr>
-<tr class="separator:ae1a163d52de55fa70695447a40bd9dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb733338a7953c3893cf013a7b73cf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#aabb733338a7953c3893cf013a7b73cf9">addControlDependency</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;src, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;dest, bool redundant_dependencies=false)</td></tr>
+<tr class="memdesc:aabb733338a7953c3893cf013a7b73cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a control dependency between two workflow tasks. Will not do anything if there is already a path between the two tasks.  <a href="classwrench_1_1_workflow.html#aabb733338a7953c3893cf013a7b73cf9">More...</a><br /></td></tr>
+<tr class="separator:aabb733338a7953c3893cf013a7b73cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543a0b3ddf8b2abd1aad80caba51a788"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a543a0b3ddf8b2abd1aad80caba51a788">addFile</a> (std::string id, double size)</td></tr>
+<tr class="memdesc:a543a0b3ddf8b2abd1aad80caba51a788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the workflow.  <a href="classwrench_1_1_workflow.html#a543a0b3ddf8b2abd1aad80caba51a788">More...</a><br /></td></tr>
+<tr class="separator:a543a0b3ddf8b2abd1aad80caba51a788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13d091e48020f40c0ccf10c856c2299"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ad13d091e48020f40c0ccf10c856c2299">addTask</a> (std::string, double flops, unsigned long min_num_cores, unsigned long max_num_cores, double memory_requirement)</td></tr>
+<tr class="memdesc:ad13d091e48020f40c0ccf10c856c2299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and add a new computational task to the workflow.  <a href="classwrench_1_1_workflow.html#ad13d091e48020f40c0ccf10c856c2299">More...</a><br /></td></tr>
+<tr class="separator:ad13d091e48020f40c0ccf10c856c2299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebf8b242fbb41c4c6048539d958e894"><td class="memItemLeft" align="right" valign="top"><a id="abebf8b242fbb41c4c6048539d958e894"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#abebf8b242fbb41c4c6048539d958e894">clear</a> ()</td></tr>
+<tr class="memdesc:abebf8b242fbb41c4c6048539d958e894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that will delete all workflow tasks and all files used by these tasks. <br /></td></tr>
+<tr class="separator:abebf8b242fbb41c4c6048539d958e894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a5f2898f4fdda4cb38933c2c485b28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a73a5f2898f4fdda4cb38933c2c485b28">exportToEPS</a> (std::string)</td></tr>
 <tr class="memdesc:a73a5f2898f4fdda4cb38933c2c485b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the workflow's dependency graph to EPS.  <a href="classwrench_1_1_workflow.html#a73a5f2898f4fdda4cb38933c2c485b28">More...</a><br /></td></tr>
 <tr class="separator:a73a5f2898f4fdda4cb38933c2c485b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234829c4fa09adab0e5d91324cf118fe"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a234829c4fa09adab0e5d91324cf118fe">getCallbackMailbox</a> ()</td></tr>
-<tr class="memdesc:a234829c4fa09adab0e5d91324cf118fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mailbox name associated to this workflow.  <a href="classwrench_1_1_workflow.html#a234829c4fa09adab0e5d91324cf118fe">More...</a><br /></td></tr>
-<tr class="separator:a234829c4fa09adab0e5d91324cf118fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a1291469d2c0035352a99f0f964f3f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ac3a1291469d2c0035352a99f0f964f3f">getCompletionDate</a> ()</td></tr>
 <tr class="memdesc:ac3a1291469d2c0035352a99f0f964f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the workflow's completion date.  <a href="classwrench_1_1_workflow.html#ac3a1291469d2c0035352a99f0f964f3f">More...</a><br /></td></tr>
 <tr class="separator:ac3a1291469d2c0035352a99f0f964f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945a7abaaba58d66471d73c0593dfa34"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a945a7abaaba58d66471d73c0593dfa34">getEntryTaskMap</a> () const</td></tr>
-<tr class="memdesc:a945a7abaaba58d66471d73c0593dfa34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of exit tasks of the workflow, i.e., those tasks that don't have parents.  <a href="classwrench_1_1_workflow.html#a945a7abaaba58d66471d73c0593dfa34">More...</a><br /></td></tr>
-<tr class="separator:a945a7abaaba58d66471d73c0593dfa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26cfa6934b4278813a689f2b469af88c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a26cfa6934b4278813a689f2b469af88c">getEntryTasks</a> () const</td></tr>
-<tr class="memdesc:a26cfa6934b4278813a689f2b469af88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of exit tasks of the workflow, i.e., those tasks that don't have parents.  <a href="classwrench_1_1_workflow.html#a26cfa6934b4278813a689f2b469af88c">More...</a><br /></td></tr>
-<tr class="separator:a26cfa6934b4278813a689f2b469af88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ad1eb390a482254574ee06d65bc566"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a84ad1eb390a482254574ee06d65bc566">getExitTaskMap</a> () const</td></tr>
-<tr class="memdesc:a84ad1eb390a482254574ee06d65bc566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the exit tasks of the workflow, i.e., those tasks that don't have children.  <a href="classwrench_1_1_workflow.html#a84ad1eb390a482254574ee06d65bc566">More...</a><br /></td></tr>
-<tr class="separator:a84ad1eb390a482254574ee06d65bc566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a767fc6c829491ad0da476bd50a9d8cd5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a767fc6c829491ad0da476bd50a9d8cd5">getExitTasks</a> () const</td></tr>
-<tr class="memdesc:a767fc6c829491ad0da476bd50a9d8cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the exit tasks of the workflow, i.e., those tasks that don't have children.  <a href="classwrench_1_1_workflow.html#a767fc6c829491ad0da476bd50a9d8cd5">More...</a><br /></td></tr>
-<tr class="separator:a767fc6c829491ad0da476bd50a9d8cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b3b6f36f684f8c367f42a818b0a0c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a19b3b6f36f684f8c367f42a818b0a0c2">getFileByID</a> (const std::string &amp;id)</td></tr>
-<tr class="memdesc:a19b3b6f36f684f8c367f42a818b0a0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a <a class="el" href="classwrench_1_1_workflow_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">WorkflowFile</a> based on its ID.  <a href="classwrench_1_1_workflow.html#a19b3b6f36f684f8c367f42a818b0a0c2">More...</a><br /></td></tr>
-<tr class="separator:a19b3b6f36f684f8c367f42a818b0a0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd4d4f93a5c3da0bd727dba12e6405a"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a2bd4d4f93a5c3da0bd727dba12e6405a">getFileMap</a> () const</td></tr>
-<tr class="memdesc:a2bd4d4f93a5c3da0bd727dba12e6405a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all files in the workflow.  <a href="classwrench_1_1_workflow.html#a2bd4d4f93a5c3da0bd727dba12e6405a">More...</a><br /></td></tr>
-<tr class="separator:a2bd4d4f93a5c3da0bd727dba12e6405a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e102422ea021f798426f2f44830e09"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a52e102422ea021f798426f2f44830e09">getFiles</a> () const</td></tr>
-<tr class="memdesc:a52e102422ea021f798426f2f44830e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all files in the workflow.  <a href="classwrench_1_1_workflow.html#a52e102422ea021f798426f2f44830e09">More...</a><br /></td></tr>
-<tr class="separator:a52e102422ea021f798426f2f44830e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7966bf3435966993503c5762fd3c470"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#af7966bf3435966993503c5762fd3c470">getInputFileMap</a> () const</td></tr>
-<tr class="memdesc:af7966bf3435966993503c5762fd3c470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of the input files of the workflow (i.e., those files that are input to some tasks but output from none)  <a href="classwrench_1_1_workflow.html#af7966bf3435966993503c5762fd3c470">More...</a><br /></td></tr>
-<tr class="separator:af7966bf3435966993503c5762fd3c470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9af24c910d8148353d3b5296d5afb99"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ad9af24c910d8148353d3b5296d5afb99">getInputFiles</a> () const</td></tr>
-<tr class="memdesc:ad9af24c910d8148353d3b5296d5afb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of the input files of the workflow (i.e., those files that are input to some tasks but output from none)  <a href="classwrench_1_1_workflow.html#ad9af24c910d8148353d3b5296d5afb99">More...</a><br /></td></tr>
-<tr class="separator:ad9af24c910d8148353d3b5296d5afb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6849bf4c88721243055e7b90260a74"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#aed6849bf4c88721243055e7b90260a74">getEntryTaskMap</a> () const</td></tr>
+<tr class="memdesc:aed6849bf4c88721243055e7b90260a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of exit tasks of the workflow, i.e., those tasks that don't have parents.  <a href="classwrench_1_1_workflow.html#aed6849bf4c88721243055e7b90260a74">More...</a><br /></td></tr>
+<tr class="separator:aed6849bf4c88721243055e7b90260a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e3900ffaa74636e159fe9e1f67ac39"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a77e3900ffaa74636e159fe9e1f67ac39">getEntryTasks</a> () const</td></tr>
+<tr class="memdesc:a77e3900ffaa74636e159fe9e1f67ac39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of exit tasks of the workflow, i.e., those tasks that don't have parents.  <a href="classwrench_1_1_workflow.html#a77e3900ffaa74636e159fe9e1f67ac39">More...</a><br /></td></tr>
+<tr class="separator:a77e3900ffaa74636e159fe9e1f67ac39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff448c5e000ae44140f4422ee93e307"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a1ff448c5e000ae44140f4422ee93e307">getExitTaskMap</a> () const</td></tr>
+<tr class="memdesc:a1ff448c5e000ae44140f4422ee93e307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the exit tasks of the workflow, i.e., those tasks that don't have children.  <a href="classwrench_1_1_workflow.html#a1ff448c5e000ae44140f4422ee93e307">More...</a><br /></td></tr>
+<tr class="separator:a1ff448c5e000ae44140f4422ee93e307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9afcde3fb3b1d342dcf38fe5e52428a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ac9afcde3fb3b1d342dcf38fe5e52428a">getExitTasks</a> () const</td></tr>
+<tr class="memdesc:ac9afcde3fb3b1d342dcf38fe5e52428a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the exit tasks of the workflow, i.e., those tasks that don't have children.  <a href="classwrench_1_1_workflow.html#ac9afcde3fb3b1d342dcf38fe5e52428a">More...</a><br /></td></tr>
+<tr class="separator:ac9afcde3fb3b1d342dcf38fe5e52428a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269c683a7ced9d88f68bc7f3a1e5a6bc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a269c683a7ced9d88f68bc7f3a1e5a6bc">getFileByID</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a269c683a7ced9d88f68bc7f3a1e5a6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a file based on its ID.  <a href="classwrench_1_1_workflow.html#a269c683a7ced9d88f68bc7f3a1e5a6bc">More...</a><br /></td></tr>
+<tr class="separator:a269c683a7ced9d88f68bc7f3a1e5a6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248df7131f24b06eb35187dde13ff0c7"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a248df7131f24b06eb35187dde13ff0c7">getFileMap</a> ()</td></tr>
+<tr class="memdesc:a248df7131f24b06eb35187dde13ff0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all files in the workflow/simulation.  <a href="classwrench_1_1_workflow.html#a248df7131f24b06eb35187dde13ff0c7">More...</a><br /></td></tr>
+<tr class="separator:a248df7131f24b06eb35187dde13ff0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f16f48e3807e1e511917740901268b7"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a4f16f48e3807e1e511917740901268b7">getInputFileMap</a> () const</td></tr>
+<tr class="memdesc:a4f16f48e3807e1e511917740901268b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of the input files of the workflow (i.e., those files that are input to some tasks but output from none)  <a href="classwrench_1_1_workflow.html#a4f16f48e3807e1e511917740901268b7">More...</a><br /></td></tr>
+<tr class="separator:a4f16f48e3807e1e511917740901268b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452993317b0b9104c80867ec7832625c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a452993317b0b9104c80867ec7832625c">getInputFiles</a> () const</td></tr>
+<tr class="memdesc:a452993317b0b9104c80867ec7832625c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of the input files of the workflow (i.e., those files that are input to some tasks but output from none)  <a href="classwrench_1_1_workflow.html#a452993317b0b9104c80867ec7832625c">More...</a><br /></td></tr>
+<tr class="separator:a452993317b0b9104c80867ec7832625c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b98a21d67824c2fc17cdc71c7e3909"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ab2b98a21d67824c2fc17cdc71c7e3909">getNumberOfTasks</a> ()</td></tr>
 <tr class="memdesc:ab2b98a21d67824c2fc17cdc71c7e3909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of tasks in the workflow.  <a href="classwrench_1_1_workflow.html#ab2b98a21d67824c2fc17cdc71c7e3909">More...</a><br /></td></tr>
 <tr class="separator:ab2b98a21d67824c2fc17cdc71c7e3909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f12b7d5088e8e1e2130545c2b795ea"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a15f12b7d5088e8e1e2130545c2b795ea">getNumLevels</a> ()</td></tr>
 <tr class="memdesc:a15f12b7d5088e8e1e2130545c2b795ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of levels in the workflow.  <a href="classwrench_1_1_workflow.html#a15f12b7d5088e8e1e2130545c2b795ea">More...</a><br /></td></tr>
 <tr class="separator:a15f12b7d5088e8e1e2130545c2b795ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52a4d7e4ec7e6415def5cd7b55ed1e3e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a52a4d7e4ec7e6415def5cd7b55ed1e3e">getOutputFileMap</a> () const</td></tr>
-<tr class="memdesc:a52a4d7e4ec7e6415def5cd7b55ed1e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of the output files of the workflow (i.e., those files that are output from some tasks but input to none)  <a href="classwrench_1_1_workflow.html#a52a4d7e4ec7e6415def5cd7b55ed1e3e">More...</a><br /></td></tr>
-<tr class="separator:a52a4d7e4ec7e6415def5cd7b55ed1e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b8214f43ca8d0052f3e46ec780a773"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a23b8214f43ca8d0052f3e46ec780a773">getOutputFiles</a> () const</td></tr>
-<tr class="memdesc:a23b8214f43ca8d0052f3e46ec780a773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of the output files of the workflow (i.e., those files that are output from some tasks but input to none)  <a href="classwrench_1_1_workflow.html#a23b8214f43ca8d0052f3e46ec780a773">More...</a><br /></td></tr>
-<tr class="separator:a23b8214f43ca8d0052f3e46ec780a773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a875d3d3a26eba6316e249169814b853f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a875d3d3a26eba6316e249169814b853f">getReadyClusters</a> ()</td></tr>
-<tr class="memdesc:a875d3d3a26eba6316e249169814b853f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a map of clusters composed of ready tasks.  <a href="classwrench_1_1_workflow.html#a875d3d3a26eba6316e249169814b853f">More...</a><br /></td></tr>
-<tr class="separator:a875d3d3a26eba6316e249169814b853f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4834ec73e7a707338bad20d1da8a69ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a4834ec73e7a707338bad20d1da8a69ed">getReadyTasks</a> ()</td></tr>
-<tr class="memdesc:a4834ec73e7a707338bad20d1da8a69ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of ready tasks.  <a href="classwrench_1_1_workflow.html#a4834ec73e7a707338bad20d1da8a69ed">More...</a><br /></td></tr>
-<tr class="separator:a4834ec73e7a707338bad20d1da8a69ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d89af79196164d060115ee25200306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a43d89af79196164d060115ee25200306">getTaskByID</a> (const std::string &amp;id)</td></tr>
-<tr class="memdesc:a43d89af79196164d060115ee25200306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> based on its ID.  <a href="classwrench_1_1_workflow.html#a43d89af79196164d060115ee25200306">More...</a><br /></td></tr>
-<tr class="separator:a43d89af79196164d060115ee25200306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41bac6171a8698b355ffc90f0746d2fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a41bac6171a8698b355ffc90f0746d2fd">getTaskChildren</a> (const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *task)</td></tr>
-<tr class="memdesc:a41bac6171a8698b355ffc90f0746d2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of children for a task.  <a href="classwrench_1_1_workflow.html#a41bac6171a8698b355ffc90f0746d2fd">More...</a><br /></td></tr>
-<tr class="separator:a41bac6171a8698b355ffc90f0746d2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fc6283de87a8debf15ad2135b54a391"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a7fc6283de87a8debf15ad2135b54a391">getTaskMap</a> ()</td></tr>
-<tr class="memdesc:a7fc6283de87a8debf15ad2135b54a391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all tasks in the workflow.  <a href="classwrench_1_1_workflow.html#a7fc6283de87a8debf15ad2135b54a391">More...</a><br /></td></tr>
-<tr class="separator:a7fc6283de87a8debf15ad2135b54a391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74bd8a1d8e563da1b814261eb5a980bf"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a74bd8a1d8e563da1b814261eb5a980bf">getTaskNumberOfChildren</a> (const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *task)</td></tr>
-<tr class="memdesc:a74bd8a1d8e563da1b814261eb5a980bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of children for a task.  <a href="classwrench_1_1_workflow.html#a74bd8a1d8e563da1b814261eb5a980bf">More...</a><br /></td></tr>
-<tr class="separator:a74bd8a1d8e563da1b814261eb5a980bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542e2b014e0e7eba0d1fe1d52d1b1736"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a542e2b014e0e7eba0d1fe1d52d1b1736">getTaskNumberOfParents</a> (const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *task)</td></tr>
-<tr class="memdesc:a542e2b014e0e7eba0d1fe1d52d1b1736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of parents for a task.  <a href="classwrench_1_1_workflow.html#a542e2b014e0e7eba0d1fe1d52d1b1736">More...</a><br /></td></tr>
-<tr class="separator:a542e2b014e0e7eba0d1fe1d52d1b1736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e29741cd98e691cd2aba0038453176"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#af1e29741cd98e691cd2aba0038453176">getTaskParents</a> (const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *task)</td></tr>
-<tr class="memdesc:af1e29741cd98e691cd2aba0038453176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of parents for a task.  <a href="classwrench_1_1_workflow.html#af1e29741cd98e691cd2aba0038453176">More...</a><br /></td></tr>
-<tr class="separator:af1e29741cd98e691cd2aba0038453176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc742b44f0895ae2a42e60c63621f8aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#abc742b44f0895ae2a42e60c63621f8aa">getTasks</a> ()</td></tr>
-<tr class="memdesc:abc742b44f0895ae2a42e60c63621f8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all tasks in the workflow.  <a href="classwrench_1_1_workflow.html#abc742b44f0895ae2a42e60c63621f8aa">More...</a><br /></td></tr>
-<tr class="separator:abc742b44f0895ae2a42e60c63621f8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8044bd686157c24b89c53810cb2b1b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a7d8044bd686157c24b89c53810cb2b1b">getTasksInTopLevelRange</a> (unsigned long min, unsigned long max)</td></tr>
-<tr class="memdesc:a7d8044bd686157c24b89c53810cb2b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all tasks with top-levels in a range.  <a href="classwrench_1_1_workflow.html#a7d8044bd686157c24b89c53810cb2b1b">More...</a><br /></td></tr>
-<tr class="separator:a7d8044bd686157c24b89c53810cb2b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc681179b77660bcc42e69926d9a584"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a8cc681179b77660bcc42e69926d9a584">getOutputFileMap</a> () const</td></tr>
+<tr class="memdesc:a8cc681179b77660bcc42e69926d9a584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of the output files of the workflow (i.e., those files that are output from some tasks but input to none)  <a href="classwrench_1_1_workflow.html#a8cc681179b77660bcc42e69926d9a584">More...</a><br /></td></tr>
+<tr class="separator:a8cc681179b77660bcc42e69926d9a584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92a4880b42a54f324e5c7c6ae2a4d10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ab92a4880b42a54f324e5c7c6ae2a4d10">getOutputFiles</a> () const</td></tr>
+<tr class="memdesc:ab92a4880b42a54f324e5c7c6ae2a4d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of the output files of the workflow (i.e., those files that are output from some tasks but input to none)  <a href="classwrench_1_1_workflow.html#ab92a4880b42a54f324e5c7c6ae2a4d10">More...</a><br /></td></tr>
+<tr class="separator:ab92a4880b42a54f324e5c7c6ae2a4d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d78ad2d544d3230cc3917edca8cc57"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ae9d78ad2d544d3230cc3917edca8cc57">getReadyClusters</a> ()</td></tr>
+<tr class="memdesc:ae9d78ad2d544d3230cc3917edca8cc57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a map of clusters composed of ready tasks.  <a href="classwrench_1_1_workflow.html#ae9d78ad2d544d3230cc3917edca8cc57">More...</a><br /></td></tr>
+<tr class="separator:ae9d78ad2d544d3230cc3917edca8cc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fd51d8dde9ce071fbf4043623d9e1c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a46fd51d8dde9ce071fbf4043623d9e1c">getReadyTasks</a> ()</td></tr>
+<tr class="memdesc:a46fd51d8dde9ce071fbf4043623d9e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vector of ready tasks.  <a href="classwrench_1_1_workflow.html#a46fd51d8dde9ce071fbf4043623d9e1c">More...</a><br /></td></tr>
+<tr class="separator:a46fd51d8dde9ce071fbf4043623d9e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52e99244d031e011704c9784404ed58"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ad52e99244d031e011704c9784404ed58">getSharedPtr</a> ()</td></tr>
+<tr class="memdesc:ad52e99244d031e011704c9784404ed58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the shared pointer for this object.  <a href="classwrench_1_1_workflow.html#ad52e99244d031e011704c9784404ed58">More...</a><br /></td></tr>
+<tr class="separator:ad52e99244d031e011704c9784404ed58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa44965e4547e4921de4035e423ffd4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a7aa44965e4547e4921de4035e423ffd4">getTaskByID</a> (const std::string &amp;id)</td></tr>
+<tr class="memdesc:a7aa44965e4547e4921de4035e423ffd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> based on its ID.  <a href="classwrench_1_1_workflow.html#a7aa44965e4547e4921de4035e423ffd4">More...</a><br /></td></tr>
+<tr class="separator:a7aa44965e4547e4921de4035e423ffd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98db1fdd678bf390fefff61c0ee3d9e5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a98db1fdd678bf390fefff61c0ee3d9e5">getTaskChildren</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;task)</td></tr>
+<tr class="memdesc:a98db1fdd678bf390fefff61c0ee3d9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of children for a task.  <a href="classwrench_1_1_workflow.html#a98db1fdd678bf390fefff61c0ee3d9e5">More...</a><br /></td></tr>
+<tr class="separator:a98db1fdd678bf390fefff61c0ee3d9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3129625b20bb8cccf03300f537de6be3"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a3129625b20bb8cccf03300f537de6be3">getTaskMap</a> ()</td></tr>
+<tr class="memdesc:a3129625b20bb8cccf03300f537de6be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all tasks in the workflow.  <a href="classwrench_1_1_workflow.html#a3129625b20bb8cccf03300f537de6be3">More...</a><br /></td></tr>
+<tr class="separator:a3129625b20bb8cccf03300f537de6be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c326eab0ce58769098a91e8c9d4caf"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a35c326eab0ce58769098a91e8c9d4caf">getTaskNumberOfChildren</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;task)</td></tr>
+<tr class="memdesc:a35c326eab0ce58769098a91e8c9d4caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of children for a task.  <a href="classwrench_1_1_workflow.html#a35c326eab0ce58769098a91e8c9d4caf">More...</a><br /></td></tr>
+<tr class="separator:a35c326eab0ce58769098a91e8c9d4caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace32cd3c95aa5f9bc51734af700694ae"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ace32cd3c95aa5f9bc51734af700694ae">getTaskNumberOfParents</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;task)</td></tr>
+<tr class="memdesc:ace32cd3c95aa5f9bc51734af700694ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of parents for a task.  <a href="classwrench_1_1_workflow.html#ace32cd3c95aa5f9bc51734af700694ae">More...</a><br /></td></tr>
+<tr class="separator:ace32cd3c95aa5f9bc51734af700694ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747ac33220d18abd711fc290422727db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a747ac33220d18abd711fc290422727db">getTaskParents</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;task)</td></tr>
+<tr class="memdesc:a747ac33220d18abd711fc290422727db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of parents for a task.  <a href="classwrench_1_1_workflow.html#a747ac33220d18abd711fc290422727db">More...</a><br /></td></tr>
+<tr class="separator:a747ac33220d18abd711fc290422727db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3638f8019836c33d47ba19987f2c2dbe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a3638f8019836c33d47ba19987f2c2dbe">getTasks</a> ()</td></tr>
+<tr class="memdesc:a3638f8019836c33d47ba19987f2c2dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all tasks in the workflow.  <a href="classwrench_1_1_workflow.html#a3638f8019836c33d47ba19987f2c2dbe">More...</a><br /></td></tr>
+<tr class="separator:a3638f8019836c33d47ba19987f2c2dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ddd346ae6f20adf42ee3430bc7850b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#aa5ddd346ae6f20adf42ee3430bc7850b">getTasksInTopLevelRange</a> (unsigned long min, unsigned long max)</td></tr>
+<tr class="memdesc:aa5ddd346ae6f20adf42ee3430bc7850b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all tasks with top-levels in a range.  <a href="classwrench_1_1_workflow.html#aa5ddd346ae6f20adf42ee3430bc7850b">More...</a><br /></td></tr>
+<tr class="separator:aa5ddd346ae6f20adf42ee3430bc7850b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5892b949f1f7c1a06bf0fbc7f25dfea"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ae5892b949f1f7c1a06bf0fbc7f25dfea">getTasksThatInput</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file)</td></tr>
+<tr class="memdesc:ae5892b949f1f7c1a06bf0fbc7f25dfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find which tasks use a file as input.  <a href="classwrench_1_1_workflow.html#ae5892b949f1f7c1a06bf0fbc7f25dfea">More...</a><br /></td></tr>
+<tr class="separator:ae5892b949f1f7c1a06bf0fbc7f25dfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3678851f9cdcaf55f4380329e989e3bf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a3678851f9cdcaf55f4380329e989e3bf">getTaskThatOutputs</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file)</td></tr>
+<tr class="memdesc:a3678851f9cdcaf55f4380329e989e3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow task for which a file is an output.  <a href="classwrench_1_1_workflow.html#a3678851f9cdcaf55f4380329e989e3bf">More...</a><br /></td></tr>
+<tr class="separator:a3678851f9cdcaf55f4380329e989e3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc59b67119511acac649652d560f238a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#afc59b67119511acac649652d560f238a">isDone</a> ()</td></tr>
 <tr class="memdesc:afc59b67119511acac649652d560f238a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether all tasks are complete.  <a href="classwrench_1_1_workflow.html#afc59b67119511acac649652d560f238a">More...</a><br /></td></tr>
 <tr class="separator:afc59b67119511acac649652d560f238a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96abc2152c2b4defe6c664834567169"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#af96abc2152c2b4defe6c664834567169">pathExists</a> (const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *src, const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *dst)</td></tr>
-<tr class="memdesc:af96abc2152c2b4defe6c664834567169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether one source is an ancestor of a destination task.  <a href="classwrench_1_1_workflow.html#af96abc2152c2b4defe6c664834567169">More...</a><br /></td></tr>
-<tr class="separator:af96abc2152c2b4defe6c664834567169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf23b90b33c06dfaf8af4884a140de47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#adf23b90b33c06dfaf8af4884a140de47">removeControlDependency</a> (<a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *src, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *dest)</td></tr>
-<tr class="memdesc:adf23b90b33c06dfaf8af4884a140de47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a control dependency between tasks (does nothing if none)  <a href="classwrench_1_1_workflow.html#adf23b90b33c06dfaf8af4884a140de47">More...</a><br /></td></tr>
-<tr class="separator:adf23b90b33c06dfaf8af4884a140de47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a343edce64d90995088075b6cf25adc25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a343edce64d90995088075b6cf25adc25">removeFile</a> (<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *file)</td></tr>
-<tr class="memdesc:a343edce64d90995088075b6cf25adc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a file from the workflow. WARNING: this method de-allocated memory_manager_service for the file, making any pointer to the file invalid.  <a href="classwrench_1_1_workflow.html#a343edce64d90995088075b6cf25adc25">More...</a><br /></td></tr>
-<tr class="separator:a343edce64d90995088075b6cf25adc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2361b641261ea13079902bef91e11f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#af2361b641261ea13079902bef91e11f4">removeTask</a> (<a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *task)</td></tr>
-<tr class="memdesc:af2361b641261ea13079902bef91e11f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a task from the workflow. WARNING: this method de-allocated memory_manager_service for the task, making any pointer to the task invalid.  <a href="classwrench_1_1_workflow.html#af2361b641261ea13079902bef91e11f4">More...</a><br /></td></tr>
-<tr class="separator:af2361b641261ea13079902bef91e11f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f4f1fc619ef73d279ab6473ee66731b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a6f4f1fc619ef73d279ab6473ee66731b">waitForNextExecutionEvent</a> ()</td></tr>
-<tr class="memdesc:a6f4f1fc619ef73d279ab6473ee66731b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the next workflow execution event.  <a href="classwrench_1_1_workflow.html#a6f4f1fc619ef73d279ab6473ee66731b">More...</a><br /></td></tr>
-<tr class="separator:a6f4f1fc619ef73d279ab6473ee66731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2a3a2c0347491f1ae8a9d1088c92f2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a7d2a3a2c0347491f1ae8a9d1088c92f2">waitForNextExecutionEvent</a> (double timeout)</td></tr>
-<tr class="memdesc:a7d2a3a2c0347491f1ae8a9d1088c92f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the next worklow execution event.  <a href="classwrench_1_1_workflow.html#a7d2a3a2c0347491f1ae8a9d1088c92f2">More...</a><br /></td></tr>
-<tr class="separator:a7d2a3a2c0347491f1ae8a9d1088c92f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83c2275d4e30e5be2e4d265268301e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ae83c2275d4e30e5be2e4d265268301e2">isFileOutputOfSomeTask</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file)</td></tr>
+<tr class="memdesc:ae83c2275d4e30e5be2e4d265268301e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a file is output of some task.  <a href="classwrench_1_1_workflow.html#ae83c2275d4e30e5be2e4d265268301e2">More...</a><br /></td></tr>
+<tr class="separator:ae83c2275d4e30e5be2e4d265268301e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac065483045550ac62b47f6bd6ef27b9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ac065483045550ac62b47f6bd6ef27b9c">pathExists</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;src, const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;dst)</td></tr>
+<tr class="memdesc:ac065483045550ac62b47f6bd6ef27b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether one source is an ancestor of a destination task.  <a href="classwrench_1_1_workflow.html#ac065483045550ac62b47f6bd6ef27b9c">More...</a><br /></td></tr>
+<tr class="separator:ac065483045550ac62b47f6bd6ef27b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bbe8a67f9c378d0cdd620f080802044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a3bbe8a67f9c378d0cdd620f080802044">removeControlDependency</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;src, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;dest)</td></tr>
+<tr class="memdesc:a3bbe8a67f9c378d0cdd620f080802044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a control dependency between tasks (does nothing if none)  <a href="classwrench_1_1_workflow.html#a3bbe8a67f9c378d0cdd620f080802044">More...</a><br /></td></tr>
+<tr class="separator:a3bbe8a67f9c378d0cdd620f080802044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bc621417be2eac51ba0df9010b73d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a49bc621417be2eac51ba0df9010b73d6">removeFile</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;file)</td></tr>
+<tr class="memdesc:a49bc621417be2eac51ba0df9010b73d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a file from the workflow.  <a href="classwrench_1_1_workflow.html#a49bc621417be2eac51ba0df9010b73d6">More...</a><br /></td></tr>
+<tr class="separator:a49bc621417be2eac51ba0df9010b73d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6948048d8dbc1a0aa28cf57f09df2d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ab6948048d8dbc1a0aa28cf57f09df2d9">removeTask</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;task)</td></tr>
+<tr class="memdesc:ab6948048d8dbc1a0aa28cf57f09df2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a task from the workflow.  <a href="classwrench_1_1_workflow.html#ab6948048d8dbc1a0aa28cf57f09df2d9">More...</a><br /></td></tr>
+<tr class="separator:ab6948048d8dbc1a0aa28cf57f09df2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a24f35326f4693a9623e669333b9b556b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a24f35326f4693a9623e669333b9b556b">getSumFlops</a> (const std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; tasks)</td></tr>
-<tr class="memdesc:a24f35326f4693a9623e669333b9b556b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of flops for a list of tasks.  <a href="classwrench_1_1_workflow.html#a24f35326f4693a9623e669333b9b556b">More...</a><br /></td></tr>
-<tr class="separator:a24f35326f4693a9623e669333b9b556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3353897e9058f5cab24c53c9b17ad956"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a3353897e9058f5cab24c53c9b17ad956">createWorkflow</a> ()</td></tr>
+<tr class="memdesc:a3353897e9058f5cab24c53c9b17ad956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a workflow instance.  <a href="classwrench_1_1_workflow.html#a3353897e9058f5cab24c53c9b17ad956">More...</a><br /></td></tr>
+<tr class="separator:a3353897e9058f5cab24c53c9b17ad956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7459dca396de82c8a2b4e845eca1b8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a9c7459dca396de82c8a2b4e845eca1b8">getSumFlops</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&gt; tasks)</td></tr>
+<tr class="memdesc:a9c7459dca396de82c8a2b4e845eca1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of flops for a list of tasks.  <a href="classwrench_1_1_workflow.html#a9c7459dca396de82c8a2b4e845eca1b8">More...</a><br /></td></tr>
+<tr class="separator:a9c7459dca396de82c8a2b4e845eca1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A workflow (to be executed by a <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a>) </p>
+<div class="textblock"><p>A workflow (to be executed by a WMS) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1249e2430c541344d622d75519e4851b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1249e2430c541344d622d75519e4851b">&#9670;&nbsp;</a></span>addControlDependency()</h2>
+<a id="aabb733338a7953c3893cf013a7b73cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb733338a7953c3893cf013a7b73cf9">&#9670;&nbsp;</a></span>addControlDependency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,13 +273,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::Workflow::addControlDependency </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -305,14 +314,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e1f7dc16f875f18c0990e6bd1843932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e1f7dc16f875f18c0990e6bd1843932">&#9670;&nbsp;</a></span>addFile()</h2>
+<a id="a543a0b3ddf8b2abd1aad80caba51a788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543a0b3ddf8b2abd1aad80caba51a788">&#9670;&nbsp;</a></span>addFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * wrench::Workflow::addFile </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; wrench::Workflow::addFile </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -331,32 +340,26 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add a new file to the workflow. </p>
+<p>Add a file to the workflow. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>a unique string id </td></tr>
-    <tr><td class="paramname">size</td><td>a file size in bytes</td></tr>
+    <tr><td class="paramname">id</td><td>: file name </td></tr>
+    <tr><td class="paramname">size</td><td>: file size in bytes </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classwrench_1_1_workflow_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">WorkflowFile</a> instance</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>a file </dd></dl>
 
 </div>
 </div>
-<a id="ae1a163d52de55fa70695447a40bd9dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1a163d52de55fa70695447a40bd9dfe">&#9670;&nbsp;</a></span>addTask()</h2>
+<a id="ad13d091e48020f40c0ccf10c856c2299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13d091e48020f40c0ccf10c856c2299">&#9670;&nbsp;</a></span>addTask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * wrench::Workflow::addTask </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; wrench::Workflow::addTask </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -414,6 +417,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3353897e9058f5cab24c53c9b17ad956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3353897e9058f5cab24c53c9b17ad956">&#9670;&nbsp;</a></span>createWorkflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt; wrench::Workflow::createWorkflow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a workflow instance. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a73a5f2898f4fdda4cb38933c2c485b28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73a5f2898f4fdda4cb38933c2c485b28">&#9670;&nbsp;</a></span>exportToEPS()</h2>
 
@@ -440,26 +471,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a234829c4fa09adab0e5d91324cf118fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234829c4fa09adab0e5d91324cf118fe">&#9670;&nbsp;</a></span>getCallbackMailbox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string wrench::Workflow::getCallbackMailbox </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the mailbox name associated to this workflow. </p>
-<dl class="section return"><dt>Returns</dt><dd>the mailbox name </dd></dl>
-
-</div>
-</div>
 <a id="ac3a1291469d2c0035352a99f0f964f3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3a1291469d2c0035352a99f0f964f3f">&#9670;&nbsp;</a></span>getCompletionDate()</h2>
 
@@ -480,14 +491,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a945a7abaaba58d66471d73c0593dfa34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945a7abaaba58d66471d73c0593dfa34">&#9670;&nbsp;</a></span>getEntryTaskMap()</h2>
+<a id="aed6849bf4c88721243055e7b90260a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6849bf4c88721243055e7b90260a74">&#9670;&nbsp;</a></span>getEntryTaskMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getEntryTaskMap </td>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getEntryTaskMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -500,14 +511,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a26cfa6934b4278813a689f2b469af88c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26cfa6934b4278813a689f2b469af88c">&#9670;&nbsp;</a></span>getEntryTasks()</h2>
+<a id="a77e3900ffaa74636e159fe9e1f67ac39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e3900ffaa74636e159fe9e1f67ac39">&#9670;&nbsp;</a></span>getEntryTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getEntryTasks </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getEntryTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -520,14 +531,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a84ad1eb390a482254574ee06d65bc566"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ad1eb390a482254574ee06d65bc566">&#9670;&nbsp;</a></span>getExitTaskMap()</h2>
+<a id="a1ff448c5e000ae44140f4422ee93e307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff448c5e000ae44140f4422ee93e307">&#9670;&nbsp;</a></span>getExitTaskMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getExitTaskMap </td>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getExitTaskMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -540,14 +551,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a767fc6c829491ad0da476bd50a9d8cd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a767fc6c829491ad0da476bd50a9d8cd5">&#9670;&nbsp;</a></span>getExitTasks()</h2>
+<a id="ac9afcde3fb3b1d342dcf38fe5e52428a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9afcde3fb3b1d342dcf38fe5e52428a">&#9670;&nbsp;</a></span>getExitTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getExitTasks </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getExitTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -560,14 +571,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a19b3b6f36f684f8c367f42a818b0a0c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19b3b6f36f684f8c367f42a818b0a0c2">&#9670;&nbsp;</a></span>getFileByID()</h2>
+<a id="a269c683a7ced9d88f68bc7f3a1e5a6bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269c683a7ced9d88f68bc7f3a1e5a6bc">&#9670;&nbsp;</a></span>getFileByID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * wrench::Workflow::getFileByID </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; wrench::Workflow::getFileByID </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -576,71 +587,45 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Find a <a class="el" href="classwrench_1_1_workflow_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">WorkflowFile</a> based on its ID. </p>
+<p>Get a file based on its ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>a string id</td></tr>
+    <tr><td class="paramname">id</td><td>: file ID </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classwrench_1_1_workflow_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">WorkflowFile</a> instance (or throws a std::invalid_argument if not found)</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>a file </dd></dl>
 
 </div>
 </div>
-<a id="a2bd4d4f93a5c3da0bd727dba12e6405a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd4d4f93a5c3da0bd727dba12e6405a">&#9670;&nbsp;</a></span>getFileMap()</h2>
+<a id="a248df7131f24b06eb35187dde13ff0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248df7131f24b06eb35187dde13ff0c7">&#9670;&nbsp;</a></span>getFileMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt; wrench::Workflow::getFileMap </td>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt; &amp; wrench::Workflow::getFileMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the list of all files in the workflow. </p>
-<dl class="section return"><dt>Returns</dt><dd>a map of files, indexed by file ID </dd></dl>
+<p>Get the list of all files in the workflow/simulation. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the map of files in the workflow/simulation, indexed by file ID </dd></dl>
 
 </div>
 </div>
-<a id="a52e102422ea021f798426f2f44830e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52e102422ea021f798426f2f44830e09">&#9670;&nbsp;</a></span>getFiles()</h2>
+<a id="a4f16f48e3807e1e511917740901268b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f16f48e3807e1e511917740901268b7">&#9670;&nbsp;</a></span>getInputFileMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt; wrench::Workflow::getFiles </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the list of all files in the workflow. </p>
-<dl class="section return"><dt>Returns</dt><dd>a vector of files </dd></dl>
-
-</div>
-</div>
-<a id="af7966bf3435966993503c5762fd3c470"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7966bf3435966993503c5762fd3c470">&#9670;&nbsp;</a></span>getInputFileMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt; wrench::Workflow::getInputFileMap </td>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt; wrench::Workflow::getInputFileMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -653,14 +638,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9af24c910d8148353d3b5296d5afb99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9af24c910d8148353d3b5296d5afb99">&#9670;&nbsp;</a></span>getInputFiles()</h2>
+<a id="a452993317b0b9104c80867ec7832625c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452993317b0b9104c80867ec7832625c">&#9670;&nbsp;</a></span>getInputFiles()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt; wrench::Workflow::getInputFiles </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt; wrench::Workflow::getInputFiles </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -713,14 +698,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a52a4d7e4ec7e6415def5cd7b55ed1e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52a4d7e4ec7e6415def5cd7b55ed1e3e">&#9670;&nbsp;</a></span>getOutputFileMap()</h2>
+<a id="a8cc681179b77660bcc42e69926d9a584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc681179b77660bcc42e69926d9a584">&#9670;&nbsp;</a></span>getOutputFileMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt; wrench::Workflow::getOutputFileMap </td>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt; wrench::Workflow::getOutputFileMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -733,14 +718,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a23b8214f43ca8d0052f3e46ec780a773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23b8214f43ca8d0052f3e46ec780a773">&#9670;&nbsp;</a></span>getOutputFiles()</h2>
+<a id="ab92a4880b42a54f324e5c7c6ae2a4d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92a4880b42a54f324e5c7c6ae2a4d10">&#9670;&nbsp;</a></span>getOutputFiles()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> * &gt; wrench::Workflow::getOutputFiles </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; &gt; wrench::Workflow::getOutputFiles </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -753,14 +738,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a875d3d3a26eba6316e249169814b853f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a875d3d3a26eba6316e249169814b853f">&#9670;&nbsp;</a></span>getReadyClusters()</h2>
+<a id="ae9d78ad2d544d3230cc3917edca8cc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d78ad2d544d3230cc3917edca8cc57">&#9670;&nbsp;</a></span>getReadyClusters()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; &gt; wrench::Workflow::getReadyClusters </td>
+          <td class="memname">std::map&lt; std::string, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; &gt; wrench::Workflow::getReadyClusters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -773,14 +758,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4834ec73e7a707338bad20d1da8a69ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4834ec73e7a707338bad20d1da8a69ed">&#9670;&nbsp;</a></span>getReadyTasks()</h2>
+<a id="a46fd51d8dde9ce071fbf4043623d9e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fd51d8dde9ce071fbf4043623d9e1c">&#9670;&nbsp;</a></span>getReadyTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getReadyTasks </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getReadyTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -793,8 +778,36 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a24f35326f4693a9623e669333b9b556b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24f35326f4693a9623e669333b9b556b">&#9670;&nbsp;</a></span>getSumFlops()</h2>
+<a id="ad52e99244d031e011704c9784404ed58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52e99244d031e011704c9784404ed58">&#9670;&nbsp;</a></span>getSharedPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classwrench_1_1_workflow.html">Workflow</a>&gt; wrench::Workflow::getSharedPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the shared pointer for this object. </p>
+<dl class="section return"><dt>Returns</dt><dd>a shared pointer to the object </dd></dl>
+
+</div>
+</div>
+<a id="a9c7459dca396de82c8a2b4e845eca1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7459dca396de82c8a2b4e845eca1b8">&#9670;&nbsp;</a></span>getSumFlops()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -805,7 +818,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">double wrench::Workflow::getSumFlops </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&gt;&#160;</td>
           <td class="paramname"><em>tasks</em></td><td>)</td>
           <td></td>
         </tr>
@@ -828,14 +841,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a43d89af79196164d060115ee25200306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43d89af79196164d060115ee25200306">&#9670;&nbsp;</a></span>getTaskByID()</h2>
+<a id="a7aa44965e4547e4921de4035e423ffd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa44965e4547e4921de4035e423ffd4">&#9670;&nbsp;</a></span>getTaskByID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * wrench::Workflow::getTaskByID </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; wrench::Workflow::getTaskByID </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -861,16 +874,16 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a41bac6171a8698b355ffc90f0746d2fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41bac6171a8698b355ffc90f0746d2fd">&#9670;&nbsp;</a></span>getTaskChildren()</h2>
+<a id="a98db1fdd678bf390fefff61c0ee3d9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98db1fdd678bf390fefff61c0ee3d9e5">&#9670;&nbsp;</a></span>getTaskChildren()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getTaskChildren </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getTaskChildren </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
@@ -888,14 +901,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7fc6283de87a8debf15ad2135b54a391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fc6283de87a8debf15ad2135b54a391">&#9670;&nbsp;</a></span>getTaskMap()</h2>
+<a id="a3129625b20bb8cccf03300f537de6be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3129625b20bb8cccf03300f537de6be3">&#9670;&nbsp;</a></span>getTaskMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; std::string, <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getTaskMap </td>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getTaskMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -904,12 +917,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the list of all tasks in the workflow. </p>
-<dl class="section return"><dt>Returns</dt><dd>a map of tasks, indexed by ID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a copy of themap of tasks, indexed by ID </dd></dl>
 
 </div>
 </div>
-<a id="a74bd8a1d8e563da1b814261eb5a980bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74bd8a1d8e563da1b814261eb5a980bf">&#9670;&nbsp;</a></span>getTaskNumberOfChildren()</h2>
+<a id="a35c326eab0ce58769098a91e8c9d4caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c326eab0ce58769098a91e8c9d4caf">&#9670;&nbsp;</a></span>getTaskNumberOfChildren()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -917,7 +930,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">long wrench::Workflow::getTaskNumberOfChildren </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
@@ -935,8 +948,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a542e2b014e0e7eba0d1fe1d52d1b1736"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a542e2b014e0e7eba0d1fe1d52d1b1736">&#9670;&nbsp;</a></span>getTaskNumberOfParents()</h2>
+<a id="ace32cd3c95aa5f9bc51734af700694ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace32cd3c95aa5f9bc51734af700694ae">&#9670;&nbsp;</a></span>getTaskNumberOfParents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -944,7 +957,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">long wrench::Workflow::getTaskNumberOfParents </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
@@ -962,16 +975,16 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af1e29741cd98e691cd2aba0038453176"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1e29741cd98e691cd2aba0038453176">&#9670;&nbsp;</a></span>getTaskParents()</h2>
+<a id="a747ac33220d18abd711fc290422727db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747ac33220d18abd711fc290422727db">&#9670;&nbsp;</a></span>getTaskParents()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getTaskParents </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getTaskParents </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
@@ -989,14 +1002,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abc742b44f0895ae2a42e60c63621f8aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc742b44f0895ae2a42e60c63621f8aa">&#9670;&nbsp;</a></span>getTasks()</h2>
+<a id="a3638f8019836c33d47ba19987f2c2dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3638f8019836c33d47ba19987f2c2dbe">&#9670;&nbsp;</a></span>getTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getTasks </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1009,14 +1022,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d8044bd686157c24b89c53810cb2b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d8044bd686157c24b89c53810cb2b1b">&#9670;&nbsp;</a></span>getTasksInTopLevelRange()</h2>
+<a id="aa5ddd346ae6f20adf42ee3430bc7850b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ddd346ae6f20adf42ee3430bc7850b">&#9670;&nbsp;</a></span>getTasksInTopLevelRange()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::Workflow::getTasksInTopLevelRange </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getTasksInTopLevelRange </td>
           <td>(</td>
           <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>min</em>, </td>
@@ -1047,6 +1060,60 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae5892b949f1f7c1a06bf0fbc7f25dfea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5892b949f1f7c1a06bf0fbc7f25dfea">&#9670;&nbsp;</a></span>getTasksThatInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::Workflow::getTasksThatInput </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find which tasks use a file as input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>: a file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of tasks </dd></dl>
+
+</div>
+</div>
+<a id="a3678851f9cdcaf55f4380329e989e3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3678851f9cdcaf55f4380329e989e3bf">&#9670;&nbsp;</a></span>getTaskThatOutputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; wrench::Workflow::getTaskThatOutputs </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the workflow task for which a file is an output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>a file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>at task (or nullptr) </dd></dl>
+
+</div>
+</div>
 <a id="afc59b67119511acac649652d560f238a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc59b67119511acac649652d560f238a">&#9670;&nbsp;</a></span>isDone()</h2>
 
@@ -1067,8 +1134,35 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af96abc2152c2b4defe6c664834567169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af96abc2152c2b4defe6c664834567169">&#9670;&nbsp;</a></span>pathExists()</h2>
+<a id="ae83c2275d4e30e5be2e4d265268301e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83c2275d4e30e5be2e4d265268301e2">&#9670;&nbsp;</a></span>isFileOutputOfSomeTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::Workflow::isFileOutputOfSomeTask </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a file is output of some task. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>a file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="ac065483045550ac62b47f6bd6ef27b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac065483045550ac62b47f6bd6ef27b9c">&#9670;&nbsp;</a></span>pathExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1076,13 +1170,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool wrench::Workflow::pathExists </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>dst</em>&#160;</td>
         </tr>
         <tr>
@@ -1105,8 +1199,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adf23b90b33c06dfaf8af4884a140de47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf23b90b33c06dfaf8af4884a140de47">&#9670;&nbsp;</a></span>removeControlDependency()</h2>
+<a id="a3bbe8a67f9c378d0cdd620f080802044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bbe8a67f9c378d0cdd620f080802044">&#9670;&nbsp;</a></span>removeControlDependency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1114,13 +1208,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::Workflow::removeControlDependency </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>dst</em>&#160;</td>
         </tr>
         <tr>
@@ -1142,8 +1236,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a343edce64d90995088075b6cf25adc25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343edce64d90995088075b6cf25adc25">&#9670;&nbsp;</a></span>removeFile()</h2>
+<a id="a49bc621417be2eac51ba0df9010b73d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bc621417be2eac51ba0df9010b73d6">&#9670;&nbsp;</a></span>removeFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1151,14 +1245,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::Workflow::removeFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td>
           <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a file from the workflow. WARNING: this method de-allocated memory_manager_service for the file, making any pointer to the file invalid. </p>
+<p>Remove a file from the workflow. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>a file</td></tr>
@@ -1174,8 +1268,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af2361b641261ea13079902bef91e11f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2361b641261ea13079902bef91e11f4">&#9670;&nbsp;</a></span>removeTask()</h2>
+<a id="ab6948048d8dbc1a0aa28cf57f09df2d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6948048d8dbc1a0aa28cf57f09df2d9">&#9670;&nbsp;</a></span>removeTask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1183,14 +1277,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::Workflow::removeTask </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td>
           <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove a task from the workflow. WARNING: this method de-allocated memory_manager_service for the task, making any pointer to the task invalid. </p>
+<p>Remove a task from the workflow. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">task</td><td>a task</td></tr>
@@ -1203,53 +1297,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a6f4f1fc619ef73d279ab6473ee66731b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f4f1fc619ef73d279ab6473ee66731b">&#9670;&nbsp;</a></span>waitForNextExecutionEvent() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt; wrench::Workflow::waitForNextExecutionEvent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for the next workflow execution event. </p>
-<dl class="section return"><dt>Returns</dt><dd>a workflow execution event </dd></dl>
-
-</div>
-</div>
-<a id="a7d2a3a2c0347491f1ae8a9d1088c92f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d2a3a2c0347491f1ae8a9d1088c92f2">&#9670;&nbsp;</a></span>waitForNextExecutionEvent() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_execution_event.html">WorkflowExecutionEvent</a> &gt; wrench::Workflow::waitForNextExecutionEvent </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for the next worklow execution event. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>a timeout value in seconds</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a workflow execution event, or nullptr if a timeout occurred </dd></dl>
 
 </div>
 </div>

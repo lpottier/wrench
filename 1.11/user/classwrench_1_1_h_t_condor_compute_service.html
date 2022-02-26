@@ -134,16 +134,25 @@ Inheritance diagram for wrench::HTCondorComputeService:</div>
  <div class="center">
   <img src="classwrench_1_1_h_t_condor_compute_service.png" usemap="#wrench::HTCondorComputeService_map" alt=""/>
   <map id="wrench::HTCondorComputeService_map" name="wrench::HTCondorComputeService_map">
-<area href="classwrench_1_1_compute_service.html" title="The compute service base class." alt="wrench::ComputeService" shape="rect" coords="0,112,211,136"/>
-<area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="0,56,211,80"/>
+<area href="classwrench_1_1_compute_service.html" title="The compute service base class." alt="wrench::ComputeService" shape="rect" coords="127,112,371,136"/>
+<area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="127,56,371,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a20bcbe116b84473797ff71f7ffd0be6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a20bcbe116b84473797ff71f7ffd0be6b">HTCondorComputeService</a> (const std::string &amp;hostname, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; compute_services, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
-<tr class="memdesc:a20bcbe116b84473797ff71f7ffd0be6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a20bcbe116b84473797ff71f7ffd0be6b">More...</a><br /></td></tr>
-<tr class="separator:a20bcbe116b84473797ff71f7ffd0be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a99976b8584c11c00112e1b4f8ad0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#ad7a99976b8584c11c00112e1b4f8ad0f">HTCondorComputeService</a> (const std::string &amp;hostname, std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&gt; compute_services, WRENCH_PROPERTY_COLLECTION_TYPE property_list={}, WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE messagepayload_list={})</td></tr>
+<tr class="memdesc:ad7a99976b8584c11c00112e1b4f8ad0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_h_t_condor_compute_service.html#ad7a99976b8584c11c00112e1b4f8ad0f">More...</a><br /></td></tr>
+<tr class="separator:ad7a99976b8584c11c00112e1b4f8ad0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32b4b36453d6deef5fe7d031de76d57"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#ab32b4b36453d6deef5fe7d031de76d57">supportsCompoundJobs</a> () override</td></tr>
+<tr class="memdesc:ab32b4b36453d6deef5fe7d031de76d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports compound jobs.  <a href="classwrench_1_1_h_t_condor_compute_service.html#ab32b4b36453d6deef5fe7d031de76d57">More...</a><br /></td></tr>
+<tr class="separator:ab32b4b36453d6deef5fe7d031de76d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcd30b4c1d4781d7c13223c630efbb6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#afbcd30b4c1d4781d7c13223c630efbb6">supportsPilotJobs</a> () override</td></tr>
+<tr class="memdesc:afbcd30b4c1d4781d7c13223c630efbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports pilot jobs.  <a href="classwrench_1_1_h_t_condor_compute_service.html#afbcd30b4c1d4781d7c13223c630efbb6">More...</a><br /></td></tr>
+<tr class="separator:afbcd30b4c1d4781d7c13223c630efbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900e3f5e1d07bcd5048d63c0a132c680"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a900e3f5e1d07bcd5048d63c0a132c680">supportsStandardJobs</a> () override</td></tr>
+<tr class="memdesc:a900e3f5e1d07bcd5048d63c0a132c680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports standard jobs.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a900e3f5e1d07bcd5048d63c0a132c680">More...</a><br /></td></tr>
+<tr class="separator:a900e3f5e1d07bcd5048d63c0a132c680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -160,8 +169,8 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A workload management framework compute service. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a20bcbe116b84473797ff71f7ffd0be6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20bcbe116b84473797ff71f7ffd0be6b">&#9670;&nbsp;</a></span>HTCondorComputeService()</h2>
+<a id="ad7a99976b8584c11c00112e1b4f8ad0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a99976b8584c11c00112e1b4f8ad0f">&#9670;&nbsp;</a></span>HTCondorComputeService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,13 +190,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramtype">WRENCH_PROPERTY_COLLECTION_TYPE&#160;</td>
           <td class="paramname"><em>property_list</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, double &gt;&#160;</td>
+          <td class="paramtype">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE&#160;</td>
           <td class="paramname"><em>messagepayload_list</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -203,7 +212,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the name of the host on which to start the service </td></tr>
     <tr><td class="paramname">compute_services</td><td>a set of 'child' compute services that have been added to the simulation and that are available to and usable through the HTCondor pool.<ul>
-<li><a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> instances will be used for Condor jobs in the "grid" universe</li>
+<li><a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> instances will be used for Condor jobs in the "grid" universe</li>
 <li><a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> instances will be used for Condor jobs not in the "grid" universe</li>
 <li>other types of compute services are disallowed </li>
 </ul>
@@ -219,6 +228,91 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab32b4b36453d6deef5fe7d031de76d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32b4b36453d6deef5fe7d031de76d57">&#9670;&nbsp;</a></span>supportsCompoundJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::HTCondorComputeService::supportsCompoundJobs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the service supports compound jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="afbcd30b4c1d4781d7c13223c630efbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcd30b4c1d4781d7c13223c630efbb6">&#9670;&nbsp;</a></span>supportsPilotJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::HTCondorComputeService::supportsPilotJobs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the service supports pilot jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="a900e3f5e1d07bcd5048d63c0a132c680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900e3f5e1d07bcd5048d63c0a132c680">&#9670;&nbsp;</a></span>supportsStandardJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::HTCondorComputeService::supportsStandardJobs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the service supports standard jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
 
 </div>
 </div>

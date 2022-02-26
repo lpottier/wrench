@@ -125,16 +125,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A batch job, which encapsulates a <a class="el" href="classwrench_1_1_workflow_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">WorkflowJob</a> and additional information used by a batch.  
+<p>A batch_standard_and_pilot_jobs job, which encapsulates a <a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> and additional information used by a batch_standard_and_pilot_jobs.  
  <a href="classwrench_1_1_batch_job.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_batch_job_8h_source.html">BatchJob.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#afcf5fc0d1cc1531937a2a4ec91d13919">BatchJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; job, unsigned long job_id, unsigned long time_in_minutes, unsigned long number_nodes, unsigned long cores_per_node, std::string username, double ending_time_stamp, double arrival_time_stamp)</td></tr>
-<tr class="memdesc:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_job.html#afcf5fc0d1cc1531937a2a4ec91d13919">More...</a><br /></td></tr>
-<tr class="separator:afcf5fc0d1cc1531937a2a4ec91d13919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6f8480fdeb2d4f6659d8a915aff000"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a4f6f8480fdeb2d4f6659d8a915aff000">BatchJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; job, unsigned long job_id, unsigned long time_in_minutes, unsigned long number_nodes, unsigned long cores_per_node, std::string username, double ending_time_stamp, double arrival_time_stamp)</td></tr>
+<tr class="memdesc:a4f6f8480fdeb2d4f6659d8a915aff000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_job.html#a4f6f8480fdeb2d4f6659d8a915aff000">More...</a><br /></td></tr>
+<tr class="separator:a4f6f8480fdeb2d4f6659d8a915aff000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af309cf782163dc32c9fb57e353d8fe12"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#af309cf782163dc32c9fb57e353d8fe12">getAllocatedNodeIndices</a> ()</td></tr>
 <tr class="memdesc:af309cf782163dc32c9fb57e353d8fe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indices of allocated nodes.  <a href="classwrench_1_1_batch_job.html#af309cf782163dc32c9fb57e353d8fe12">More...</a><br /></td></tr>
 <tr class="separator:af309cf782163dc32c9fb57e353d8fe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,13 +142,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2c826d8904363f2f72eb3007012c974d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the arrival time stamp.  <a href="classwrench_1_1_batch_job.html#a2c826d8904363f2f72eb3007012c974d">More...</a><br /></td></tr>
 <tr class="separator:a2c826d8904363f2f72eb3007012c974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d32bcacabc04f5ee0847a2f5ce0522"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a15d32bcacabc04f5ee0847a2f5ce0522">getBeginTimestamp</a> ()</td></tr>
-<tr class="memdesc:a15d32bcacabc04f5ee0847a2f5ce0522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the batch job's begin timestamp.  <a href="classwrench_1_1_batch_job.html#a15d32bcacabc04f5ee0847a2f5ce0522">More...</a><br /></td></tr>
+<tr class="memdesc:a15d32bcacabc04f5ee0847a2f5ce0522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's begin timestamp.  <a href="classwrench_1_1_batch_job.html#a15d32bcacabc04f5ee0847a2f5ce0522">More...</a><br /></td></tr>
 <tr class="separator:a15d32bcacabc04f5ee0847a2f5ce0522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c8b0809c56168da1b3933ce92594b0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#af8c8b0809c56168da1b3933ce92594b0">getCompoundJob</a> ()</td></tr>
+<tr class="memdesc:af8c8b0809c56168da1b3933ce92594b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the compound job corresponding to this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job.  <a href="classwrench_1_1_batch_job.html#af8c8b0809c56168da1b3933ce92594b0">More...</a><br /></td></tr>
+<tr class="separator:af8c8b0809c56168da1b3933ce92594b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6913b448153f72ee21638c791a0ece"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a7a6913b448153f72ee21638c791a0ece">getEndingTimestamp</a> ()</td></tr>
-<tr class="memdesc:a7a6913b448153f72ee21638c791a0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the batch job's end timestamp.  <a href="classwrench_1_1_batch_job.html#a7a6913b448153f72ee21638c791a0ece">More...</a><br /></td></tr>
+<tr class="memdesc:a7a6913b448153f72ee21638c791a0ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's end timestamp.  <a href="classwrench_1_1_batch_job.html#a7a6913b448153f72ee21638c791a0ece">More...</a><br /></td></tr>
 <tr class="separator:a7a6913b448153f72ee21638c791a0ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add51419332d7cd0bec2f6ed3db77a563"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#add51419332d7cd0bec2f6ed3db77a563">getJobID</a> ()</td></tr>
-<tr class="memdesc:add51419332d7cd0bec2f6ed3db77a563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of this batch job.  <a href="classwrench_1_1_batch_job.html#add51419332d7cd0bec2f6ed3db77a563">More...</a><br /></td></tr>
+<tr class="memdesc:add51419332d7cd0bec2f6ed3db77a563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job.  <a href="classwrench_1_1_batch_job.html#add51419332d7cd0bec2f6ed3db77a563">More...</a><br /></td></tr>
 <tr class="separator:add51419332d7cd0bec2f6ed3db77a563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb349b19cdc9975d98227dffbe146bfc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#abb349b19cdc9975d98227dffbe146bfc">getMemoryRequirement</a> ()</td></tr>
 <tr class="memdesc:abb349b19cdc9975d98227dffbe146bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the memory_manager_service requirement.  <a href="classwrench_1_1_batch_job.html#abb349b19cdc9975d98227dffbe146bfc">More...</a><br /></td></tr>
@@ -163,25 +166,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a042b20122d8b9d77b3e3a1a0dadf4a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the requested time.  <a href="classwrench_1_1_batch_job.html#a042b20122d8b9d77b3e3a1a0dadf4a51">More...</a><br /></td></tr>
 <tr class="separator:a042b20122d8b9d77b3e3a1a0dadf4a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22557f2dea0008e1f985b4a373868490"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::tuple&lt; unsigned long, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a22557f2dea0008e1f985b4a373868490">getResourcesAllocated</a> ()</td></tr>
-<tr class="memdesc:a22557f2dea0008e1f985b4a373868490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the resources allocated to this batch job.  <a href="classwrench_1_1_batch_job.html#a22557f2dea0008e1f985b4a373868490">More...</a><br /></td></tr>
+<tr class="memdesc:a22557f2dea0008e1f985b4a373868490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the resources allocated to this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job.  <a href="classwrench_1_1_batch_job.html#a22557f2dea0008e1f985b4a373868490">More...</a><br /></td></tr>
 <tr class="separator:a22557f2dea0008e1f985b4a373868490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae76704f19914ddb392243860fd2700fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#ae76704f19914ddb392243860fd2700fd">getUsername</a> ()</td></tr>
 <tr class="memdesc:ae76704f19914ddb392243860fd2700fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the username.  <a href="classwrench_1_1_batch_job.html#ae76704f19914ddb392243860fd2700fd">More...</a><br /></td></tr>
 <tr class="separator:ae76704f19914ddb392243860fd2700fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc03795c6c4d27d7685938171bfaaf3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a6cc03795c6c4d27d7685938171bfaaf3">getWorkflowJob</a> ()</td></tr>
-<tr class="memdesc:a6cc03795c6c4d27d7685938171bfaaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow job corresponding to this batch job.  <a href="classwrench_1_1_batch_job.html#a6cc03795c6c4d27d7685938171bfaaf3">More...</a><br /></td></tr>
-<tr class="separator:a6cc03795c6c4d27d7685938171bfaaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#ab7bccaf60203ea3164bb80e6be7831b3">setAllocatedNodeIndices</a> (std::vector&lt; int &gt; indices)</td></tr>
 <tr class="memdesc:ab7bccaf60203ea3164bb80e6be7831b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the indices of the allocated nodes.  <a href="classwrench_1_1_batch_job.html#ab7bccaf60203ea3164bb80e6be7831b3">More...</a><br /></td></tr>
 <tr class="separator:ab7bccaf60203ea3164bb80e6be7831b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622540aa4a1015e480731953b4111131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a622540aa4a1015e480731953b4111131">setAllocatedResources</a> (std::map&lt; std::string, std::tuple&lt; unsigned long, double &gt;&gt; resources)</td></tr>
-<tr class="memdesc:a622540aa4a1015e480731953b4111131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the resources allocated to this batch job.  <a href="classwrench_1_1_batch_job.html#a622540aa4a1015e480731953b4111131">More...</a><br /></td></tr>
+<tr class="memdesc:a622540aa4a1015e480731953b4111131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the resources allocated to this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job.  <a href="classwrench_1_1_batch_job.html#a622540aa4a1015e480731953b4111131">More...</a><br /></td></tr>
 <tr class="separator:a622540aa4a1015e480731953b4111131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecfaeef4e7196ee7e2520c1cc425d5c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#aecfaeef4e7196ee7e2520c1cc425d5c2">setBeginTimestamp</a> (double time_stamp)</td></tr>
-<tr class="memdesc:aecfaeef4e7196ee7e2520c1cc425d5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the batch job's begin timestamp.  <a href="classwrench_1_1_batch_job.html#aecfaeef4e7196ee7e2520c1cc425d5c2">More...</a><br /></td></tr>
+<tr class="memdesc:aecfaeef4e7196ee7e2520c1cc425d5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's begin timestamp.  <a href="classwrench_1_1_batch_job.html#aecfaeef4e7196ee7e2520c1cc425d5c2">More...</a><br /></td></tr>
 <tr class="separator:aecfaeef4e7196ee7e2520c1cc425d5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204d7469306b45446901a4173257f02c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a204d7469306b45446901a4173257f02c">setEndingTimestamp</a> (double time_stamp)</td></tr>
-<tr class="memdesc:a204d7469306b45446901a4173257f02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the batch job's end timestamp.  <a href="classwrench_1_1_batch_job.html#a204d7469306b45446901a4173257f02c">More...</a><br /></td></tr>
+<tr class="memdesc:a204d7469306b45446901a4173257f02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's end timestamp.  <a href="classwrench_1_1_batch_job.html#a204d7469306b45446901a4173257f02c">More...</a><br /></td></tr>
 <tr class="separator:a204d7469306b45446901a4173257f02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b4cdfa5e81f591711a1a05be904a54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_job.html#a34b4cdfa5e81f591711a1a05be904a54">setRequestedTime</a> (unsigned long time)</td></tr>
 <tr class="memdesc:a34b4cdfa5e81f591711a1a05be904a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the requested time.  <a href="classwrench_1_1_batch_job.html#a34b4cdfa5e81f591711a1a05be904a54">More...</a><br /></td></tr>
@@ -199,10 +199,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a3b1994a6233be477d05d23115cdfd580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A batch job, which encapsulates a <a class="el" href="classwrench_1_1_workflow_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">WorkflowJob</a> and additional information used by a batch. </p>
+<div class="textblock"><p>A batch_standard_and_pilot_jobs job, which encapsulates a <a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> and additional information used by a batch_standard_and_pilot_jobs. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afcf5fc0d1cc1531937a2a4ec91d13919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcf5fc0d1cc1531937a2a4ec91d13919">&#9670;&nbsp;</a></span>BatchJob()</h2>
+<a id="a4f6f8480fdeb2d4f6659d8a915aff000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6f8480fdeb2d4f6659d8a915aff000">&#9670;&nbsp;</a></span>BatchJob()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         <tr>
           <td class="memname">wrench::BatchJob::BatchJob </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em>, </td>
         </tr>
         <tr>
@@ -266,8 +266,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">job</td><td>the workflow job corresponding to the batch job </td></tr>
-    <tr><td class="paramname">job_id</td><td>the batch job id </td></tr>
+    <tr><td class="paramname">job</td><td>the compound job corresponding to the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job </td></tr>
+    <tr><td class="paramname">job_id</td><td>the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job id </td></tr>
     <tr><td class="paramname">time_in_minutes</td><td>the requested execution time in minutes </td></tr>
     <tr><td class="paramname">num_nodes</td><td>the requested number of compute nodes (hosts) </td></tr>
     <tr><td class="paramname">cores_per_node</td><td>the requested number of cores per node </td></tr>
@@ -344,8 +344,28 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Get the batch job's begin timestamp. </p>
+<p>Get the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's begin timestamp. </p>
 <dl class="section return"><dt>Returns</dt><dd>a date </dd></dl>
+
+</div>
+</div>
+<a id="af8c8b0809c56168da1b3933ce92594b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c8b0809c56168da1b3933ce92594b0">&#9670;&nbsp;</a></span>getCompoundJob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; wrench::BatchJob::getCompoundJob </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the compound job corresponding to this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job. </p>
+<dl class="section return"><dt>Returns</dt><dd>a compound job </dd></dl>
 
 </div>
 </div>
@@ -364,7 +384,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Get the batch job's end timestamp. </p>
+<p>Get the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's end timestamp. </p>
 <dl class="section return"><dt>Returns</dt><dd>a date </dd></dl>
 
 </div>
@@ -384,7 +404,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Get the id of this batch job. </p>
+<p>Get the id of this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job. </p>
 <dl class="section return"><dt>Returns</dt><dd>a string id </dd></dl>
 
 </div>
@@ -484,7 +504,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Get the resources allocated to this batch job. </p>
+<p>Get the resources allocated to this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job. </p>
 <dl class="section return"><dt>Returns</dt><dd>a list of resource, each as a &lt;hostname, number of cores, bytes of RAM&gt; tuple </dd></dl>
 
 </div>
@@ -506,26 +526,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Get the username. </p>
 <dl class="section return"><dt>Returns</dt><dd>a username </dd></dl>
-
-</div>
-</div>
-<a id="a6cc03795c6c4d27d7685938171bfaaf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cc03795c6c4d27d7685938171bfaaf3">&#9670;&nbsp;</a></span>getWorkflowJob()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_job.html">WorkflowJob</a> &gt; wrench::BatchJob::getWorkflowJob </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the workflow job corresponding to this batch job. </p>
-<dl class="section return"><dt>Returns</dt><dd>a workflow job </dd></dl>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Set the resources allocated to this batch job. </p>
+<p>Set the resources allocated to this <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resources</td><td>a list of resource, each as a &lt;hostname, number of cores, bytes of RAM&gt; tuple </td></tr>
@@ -605,7 +605,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Set the batch job's begin timestamp. </p>
+<p>Set the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's begin timestamp. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time_stamp</td><td>a date </td></tr>
@@ -631,7 +631,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 
-<p>Set the batch job's end timestamp. </p>
+<p>Set the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job's end timestamp. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time_stamp</td><td>a date </td></tr>

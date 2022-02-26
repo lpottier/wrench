@@ -118,8 +118,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>The <code><a class="el" href="classwrench_1_1_virtualized_cluster_compute_service.html" title="A virtualized cluster-based compute service.">wrench::VirtualizedClusterComputeService</a></code> derives the <code><a class="el" href="classwrench_1_1_cloud_compute_service.html" title="A cloud-based compute service that manages a set of physical hosts and controls access to their resou...">wrench::CloudComputeService</a></code> class. One interacts with it in almost the same way as one <a class="el" href="guide-102-cloud.html">interacts with a cloud servicde</a>. The one difference between a virtualized cluster service and a cloud service is that the former exposes underlying physical resources, while the latter does not. More simply put, with a virtualized cluster service one can create VM instances on specific hosts, and migrate VM instances between hosts.</p>
 <p>Here is an example interaction with a virtualized cluster service, in which VM instances are created and (live) migrated:</p>
-<div class="fragment"><div class="line"><span class="comment">// Get the first virtualized cluster compute service (assuming there&#39;s at least one)</span></div>
-<div class="line"><span class="keyword">auto</span> virtualized_cluster_cs = *(this-&gt;getAvailableComputeServices&lt;wrench::VirtualizedClusterComputeService&gt;().begin());</div>
+<div class="fragment"><div class="line">std::shared_ptr&lt;wrench::VirtualizedClusterComputeService&gt; virtualized_cluster_cs;</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a VM with 2 cores and 1 GiB of RAM</span></div>
@@ -150,7 +149,7 @@ $(function() {
 <div class="line">virtualized_cluster_cs-&gt;shutdownVM(vm1);</div>
 <div class="line">virtualized_cluster_cs-&gt;shutdownVM(vm2);</div>
 </div><!-- fragment --><p>In the code above the VM instances are not used for anything. See the <a class="el" href="guide-102-cloud.html">interacting with a cloud service page</a> for an example in which jobs are submitted to the VM instances.</p>
-<p>See the WMS implementation in <code>examples/basic-examples/virtualized-cluster-bag-of-tasks/TwoTasksAtATimeVirtualizedClusterWMS.cpp</code> for a more complete example. </p>
+<p>See the execution controller implementation in <code>examples/basic-examples/virtualized-cluster-bag-of-tasks/TwoTasksAtATimeVirtualizedClusterWMS.cpp</code> for a more complete example. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <div class="footer">

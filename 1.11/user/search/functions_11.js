@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['whilereceiving_574',['whileReceiving',['../namespacewrench.html#a1fa6782fde91dab538f577d2608eb640',1,'wrench']]],
-  ['whilesending_575',['whileSending',['../namespacewrench.html#a98a2da5f34bd18fc2c245b364e884b34',1,'wrench']]],
-  ['workflow_576',['Workflow',['../classwrench_1_1_workflow.html#a8447e0cbd59b4874bf47f8e2480a5a4d',1,'wrench::Workflow']]]
+  ['virtualizedclustercomputeservice_696',['VirtualizedClusterComputeService',['../classwrench_1_1_virtualized_cluster_compute_service.html#a59d55e18a16ec347621f6f6d44524222',1,'wrench::VirtualizedClusterComputeService']]]
 ];

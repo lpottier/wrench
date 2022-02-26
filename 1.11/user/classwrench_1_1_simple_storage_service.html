@@ -134,22 +134,22 @@ Inheritance diagram for wrench::SimpleStorageService:</div>
  <div class="center">
   <img src="classwrench_1_1_simple_storage_service.png" usemap="#wrench::SimpleStorageService_map" alt=""/>
   <map id="wrench::SimpleStorageService_map" name="wrench::SimpleStorageService_map">
-<area href="classwrench_1_1_storage_service.html" title="The storage service base class." alt="wrench::StorageService" shape="rect" coords="0,112,185,136"/>
-<area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="0,56,185,80"/>
+<area href="classwrench_1_1_storage_service.html" title="The storage service base class." alt="wrench::StorageService" shape="rect" coords="127,112,371,136"/>
+<area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="127,56,371,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d883b2ef968e9c8e77dd7e9b928b4b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simple_storage_service.html#a1d883b2ef968e9c8e77dd7e9b928b4b7">SimpleStorageService</a> (std::string hostname, std::set&lt; std::string &gt; mount_points, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
-<tr class="memdesc:a1d883b2ef968e9c8e77dd7e9b928b4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public constructor.  <a href="classwrench_1_1_simple_storage_service.html#a1d883b2ef968e9c8e77dd7e9b928b4b7">More...</a><br /></td></tr>
-<tr class="separator:a1d883b2ef968e9c8e77dd7e9b928b4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb07ade9e37015158ef6ac5683521a89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simple_storage_service.html#acb07ade9e37015158ef6ac5683521a89">SimpleStorageService</a> (std::string hostname, std::set&lt; std::string &gt; mount_points, WRENCH_PROPERTY_COLLECTION_TYPE property_list={}, WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE messagepayload_list={})</td></tr>
+<tr class="memdesc:acb07ade9e37015158ef6ac5683521a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public constructor.  <a href="classwrench_1_1_simple_storage_service.html#acb07ade9e37015158ef6ac5683521a89">More...</a><br /></td></tr>
+<tr class="separator:acb07ade9e37015158ef6ac5683521a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A storage service that provides direct access to some storage resources (e.g., one or more disks). An important (configurable) property of the storage service is <a class="el" href="classwrench_1_1_storage_service_property.html#a4a15fb8290bd904973c923a6e7d7ca39" title="Buffer size used when copying/communicating data:">SimpleStorageServiceProperty::BUFFER_SIZE</a> (see documentation thereof), which defines the buffer size that the storage service uses. Specifically, when the storage service receives/sends data from/to the network, it does so in a loop over data "chunks", with pipelined network and disk I/O operations. The smaller the buffer size the more "fluid" the model, but the more time-consuming the simulation. A large buffer size, however, may lead to less realistic simulations. At the extreme, an infinite buffer size would correspond to fully sequential executions (first a network receive/send, and then a disk write/read). Setting the buffer size to "0" corresponds to a fully fluid model in which individual data chunk operations are not simulated, thus achieving both accuracy (unless one specifically wishes to study the effects of buffering) and quick simulation times. For now, setting the buffer size to "0" is not implemented. The default buffer size is 10 MiB (note that the user can always declare a disk with arbitrary bandwidth in the platform description XML). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1d883b2ef968e9c8e77dd7e9b928b4b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d883b2ef968e9c8e77dd7e9b928b4b7">&#9670;&nbsp;</a></span>SimpleStorageService()</h2>
+<a id="acb07ade9e37015158ef6ac5683521a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb07ade9e37015158ef6ac5683521a89">&#9670;&nbsp;</a></span>SimpleStorageService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,13 +169,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramtype">WRENCH_PROPERTY_COLLECTION_TYPE&#160;</td>
           <td class="paramname"><em>property_list</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, double &gt;&#160;</td>
+          <td class="paramtype">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE&#160;</td>
           <td class="paramname"><em>messagepayload_list</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>

@@ -124,7 +124,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Configurable properties for a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>.  
+<p>Configurable properties for a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a>.  
  <a href="classwrench_1_1_batch_compute_service_property.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_batch_compute_service_property_8h_source.html">BatchComputeServiceProperty.h</a>&gt;</code></p>
@@ -142,14 +142,14 @@ Inheritance diagram for wrench::BatchComputeServiceProperty:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a58c3a7a25ee192ff4761f6ed3cea4533"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a58c3a7a25ee192ff4761f6ed3cea4533">BATCH_QUEUE_ORDERING_ALGORITHM</a></td></tr>
-<tr class="memdesc:a58c3a7a25ee192ff4761f6ed3cea4533"><td class="mdescLeft">&#160;</td><td class="mdescRight">The batch queue ordering algorithm. Can be:  <a href="classwrench_1_1_batch_compute_service_property.html#a58c3a7a25ee192ff4761f6ed3cea4533">More...</a><br /></td></tr>
+<tr class="memdesc:a58c3a7a25ee192ff4761f6ed3cea4533"><td class="mdescLeft">&#160;</td><td class="mdescRight">The batch_standard_and_pilot_jobs queue ordering algorithm. Can be:  <a href="classwrench_1_1_batch_compute_service_property.html#a58c3a7a25ee192ff4761f6ed3cea4533">More...</a><br /></td></tr>
 <tr class="separator:a58c3a7a25ee192ff4761f6ed3cea4533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcd8150f9959ce356635519f97b16fe4"><td class="memItemLeft" align="right" valign="top"><a id="adcd8150f9959ce356635519f97b16fe4"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#adcd8150f9959ce356635519f97b16fe4">BATCH_RJMS_PADDING_DELAY</a></td></tr>
-<tr class="memdesc:adcd8150f9959ce356635519f97b16fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral number of seconds that the Batch Scheduler adds to the runtime of each incoming job. This is something production batch systems do to avoid too aggressive job terminations. For instance, if a job says it wants to run for (at most) 60 seconds, the system will actually assume the job wants to run for (at most) 60 + 5 seconds. <br /></td></tr>
+<tr class="memdesc:adcd8150f9959ce356635519f97b16fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral number of seconds that the Batch Scheduler adds to the runtime of each incoming job. This is something production batch_standard_and_pilot_jobs systems do to avoid too aggressive job terminations. For instance, if a job says it wants to run for (at most) 60 seconds, the system will actually assume the job wants to run for (at most) 60 + 5 seconds. <br /></td></tr>
 <tr class="separator:adcd8150f9959ce356635519f97b16fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e88135150aea2df7f815f7d751f03c7"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a4e88135150aea2df7f815f7d751f03c7">BATCH_SCHEDULING_ALGORITHM</a></td></tr>
-<tr class="memdesc:a4e88135150aea2df7f815f7d751f03c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The batch scheduling algorithm. Can be:  <a href="classwrench_1_1_batch_compute_service_property.html#a4e88135150aea2df7f815f7d751f03c7">More...</a><br /></td></tr>
+<tr class="memdesc:a4e88135150aea2df7f815f7d751f03c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The batch_standard_and_pilot_jobs scheduling algorithm. Can be:  <a href="classwrench_1_1_batch_compute_service_property.html#a4e88135150aea2df7f815f7d751f03c7">More...</a><br /></td></tr>
 <tr class="separator:a4e88135150aea2df7f815f7d751f03c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d144deb356f416880972388b948178"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#aa3d144deb356f416880972388b948178">BATSCHED_CONTIGUOUS_ALLOCATION</a></td></tr>
 <tr class="memdesc:aa3d144deb356f416880972388b948178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls Batsched node allocation policy.  <a href="classwrench_1_1_batch_compute_service_property.html#aa3d144deb356f416880972388b948178">More...</a><br /></td></tr>
@@ -167,17 +167,17 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 <tr class="memdesc:ad5790df8b9bda39d5bf0100bc31d1f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to a to-be-generated Batsim-style CSV trace file (e.g. for b3atch schedule visualization purposes).  <a href="classwrench_1_1_batch_compute_service_property.html#ad5790df8b9bda39d5bf0100bc31d1f23">More...</a><br /></td></tr>
 <tr class="separator:ad5790df8b9bda39d5bf0100bc31d1f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2072267c164d046104868ad00aaadc51"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a2072267c164d046104868ad00aaadc51">SIMULATE_COMPUTATION_AS_SLEEP</a></td></tr>
-<tr class="memdesc:a2072267c164d046104868ad00aaadc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulate computation as just a sleep instead of an actual compute thread. This is for scalability reason, and only simulation-valid if one is sure that cores are space shared (i.e., only a single compute thread can ever run on a core at once). Since space-sharing at the core level is typically the case in batch-scheduled clusters, this is likely fine.  <a href="classwrench_1_1_batch_compute_service_property.html#a2072267c164d046104868ad00aaadc51">More...</a><br /></td></tr>
+<tr class="memdesc:a2072267c164d046104868ad00aaadc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulate computation as just a sleep instead of an actual compute thread. This is for scalability reason, and only simulation-valid if one is sure that cores are space shared (i.e., only a single compute thread can ever run on a core at once). Since space-sharing at the core level is typically the case in batch_standard_and_pilot_jobs-scheduled clusters, this is likely fine.  <a href="classwrench_1_1_batch_compute_service_property.html#a2072267c164d046104868ad00aaadc51">More...</a><br /></td></tr>
 <tr class="separator:a2072267c164d046104868ad00aaadc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05cb4a094c38a599591af5b34873394b"><td class="memItemLeft" align="right" valign="top"><a id="a05cb4a094c38a599591af5b34873394b"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a05cb4a094c38a599591af5b34873394b">SIMULATED_WORKLOAD_TRACE_FILE</a></td></tr>
-<tr class="memdesc:a05cb4a094c38a599591af5b34873394b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to a workload trace file to be replayed. The trace file can be be in the SWF format (see <a href="http://www.cs.huji.ac.il/labs/parallel/workload/swf.html">http://www.cs.huji.ac.il/labs/parallel/workload/swf.html</a>), in which case it must have extension ".swf", or in the JSON format as used in the BATSIM project (see <a href="https://github.com/oar-team/batsim">https://github.com/oar-team/batsim</a>), in which case is must have the ".json" extension). The jobs in the trace whose node/host/processor/core requirements exceed the capacity of the batch service will simply be capped at that capacity. Job submission times in the trace files are relative to the batch's start time (i.e., all jobs in the trace files will be replayed assuming that the batch starts at time zero). Note that in the BATSIM JSON format, the trace does not contains requested vs. actual trace runtimes, and to all requested runtimes are 100% accurate. <br /></td></tr>
+<tr class="memdesc:a05cb4a094c38a599591af5b34873394b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to a workload trace file to be replayed. The trace file can be be in the SWF format (see <a href="http://www.cs.huji.ac.il/labs/parallel/workload/swf.html">http://www.cs.huji.ac.il/labs/parallel/workload/swf.html</a>), in which case it must have extension ".swf", or in the JSON format as used in the BATSIM project (see <a href="https://github.com/oar-team/batsim">https://github.com/oar-team/batsim</a>), in which case is must have the ".json" extension). The jobs in the trace whose node/host/processor/core requirements exceed the capacity of the batch_standard_and_pilot_jobs service will simply be capped at that capacity. Job submission times in the trace files are relative to the batch_standard_and_pilot_jobs's start time (i.e., all jobs in the trace files will be replayed assuming that the batch_standard_and_pilot_jobs starts at time zero). Note that in the BATSIM JSON format, the trace does not contains requested vs. actual trace runtimes, and to all requested runtimes are 100% accurate. <br /></td></tr>
 <tr class="separator:a05cb4a094c38a599591af5b34873394b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019f1c83ac3125a6340a776f762395ca"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a019f1c83ac3125a6340a776f762395ca">SUBMIT_TIME_OF_FIRST_JOB_IN_WORKLOAD_TRACE_FILE</a></td></tr>
 <tr class="memdesc:a019f1c83ac3125a6340a776f762395ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A specification of the submit time of the first job in a provided trace file.  <a href="classwrench_1_1_batch_compute_service_property.html#a019f1c83ac3125a6340a776f762395ca">More...</a><br /></td></tr>
 <tr class="separator:a019f1c83ac3125a6340a776f762395ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f56c6740a8edc7189e617db1333b87b"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a3f56c6740a8edc7189e617db1333b87b">TASK_SELECTION_ALGORITHM</a></td></tr>
-<tr class="memdesc:a3f56c6740a8edc7189e617db1333b87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The algorithm to pick which ready computational task (within a standard job executed by the batch service), in case multiple tasks are ready, should run first. This is typically not managed by a batch scheduler, but by some application-level script that executes a set of tasks within compute resources allocated by the batch scheduler. Possible values are:  <a href="classwrench_1_1_batch_compute_service_property.html#a3f56c6740a8edc7189e617db1333b87b">More...</a><br /></td></tr>
+<tr class="memdesc:a3f56c6740a8edc7189e617db1333b87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The algorithm to pick which ready computational task (within a standard job executed by the batch_standard_and_pilot_jobs service), in case multiple tasks are ready, should run first. This is typically not managed by a batch_standard_and_pilot_jobs scheduler, but by some application-level script that executes a set of tasks within compute resources allocated by the batch_standard_and_pilot_jobs scheduler. Possible values are:  <a href="classwrench_1_1_batch_compute_service_property.html#a3f56c6740a8edc7189e617db1333b87b">More...</a><br /></td></tr>
 <tr class="separator:a3f56c6740a8edc7189e617db1333b87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e126dd30a49ac032ec083f1c420f389"><td class="memItemLeft" align="right" valign="top"><a id="a4e126dd30a49ac032ec083f1c420f389"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#a4e126dd30a49ac032ec083f1c420f389">TASK_STARTUP_OVERHEAD</a></td></tr>
@@ -186,18 +186,9 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 <tr class="memitem:ab23395cb693747a3766ce80f78c5c6a4"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service_property.html#ab23395cb693747a3766ce80f78c5c6a4">USE_REAL_RUNTIMES_AS_REQUESTED_RUNTIMES_IN_WORKLOAD_TRACE_FILE</a></td></tr>
 <tr class="memdesc:ab23395cb693747a3766ce80f78c5c6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether, when simulating a workload trace file, to use the actual runtimes as requested runtimes (i.e., simulating users who request exactly what they need) or not (i.e., simulating users who always overestimate what they need, which is typical in the real world):  <a href="classwrench_1_1_batch_compute_service_property.html#ab23395cb693747a3766ce80f78c5c6a4">More...</a><br /></td></tr>
 <tr class="separator:ab23395cb693747a3766ce80f78c5c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_classwrench_1_1_compute_service_property"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classwrench_1_1_compute_service_property')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classwrench_1_1_compute_service_property.html">wrench::ComputeServiceProperty</a></td></tr>
-<tr class="memitem:af0abab1e3bce4932c4482031f0c31ce8 inherit pub_static_attribs_classwrench_1_1_compute_service_property"><td class="memItemLeft" align="right" valign="top"><a id="af0abab1e3bce4932c4482031f0c31ce8"></a>
-static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_property.html#af0abab1e3bce4932c4482031f0c31ce8">SUPPORTS_PILOT_JOBS</a></td></tr>
-<tr class="memdesc:af0abab1e3bce4932c4482031f0c31ce8 inherit pub_static_attribs_classwrench_1_1_compute_service_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the compute service supports pilot jobs (true or false) <br /></td></tr>
-<tr class="separator:af0abab1e3bce4932c4482031f0c31ce8 inherit pub_static_attribs_classwrench_1_1_compute_service_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e1b5e2e1effa86cfac0da608f112c14 inherit pub_static_attribs_classwrench_1_1_compute_service_property"><td class="memItemLeft" align="right" valign="top"><a id="a4e1b5e2e1effa86cfac0da608f112c14"></a>
-static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_property.html#a4e1b5e2e1effa86cfac0da608f112c14">SUPPORTS_STANDARD_JOBS</a></td></tr>
-<tr class="memdesc:a4e1b5e2e1effa86cfac0da608f112c14 inherit pub_static_attribs_classwrench_1_1_compute_service_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the compute service supports standard jobs (true or false) <br /></td></tr>
-<tr class="separator:a4e1b5e2e1effa86cfac0da608f112c14 inherit pub_static_attribs_classwrench_1_1_compute_service_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Configurable properties for a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>. </p>
+<div class="textblock"><p>Configurable properties for a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a>. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a58c3a7a25ee192ff4761f6ed3cea4533"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58c3a7a25ee192ff4761f6ed3cea4533">&#9670;&nbsp;</a></span>BATCH_QUEUE_ORDERING_ALGORITHM</h2>
@@ -219,7 +210,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table>
 </div><div class="memdoc">
 
-<p>The batch queue ordering algorithm. Can be: </p>
+<p>The batch_standard_and_pilot_jobs queue ordering algorithm. Can be: </p>
 <ul>
 <li>If ENABLE_BATSCHED is set to off / not set: ignored</li>
 <li>If ENABLE_BATSCHED is set to on:<ul>
@@ -250,7 +241,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table>
 </div><div class="memdoc">
 
-<p>The batch scheduling algorithm. Can be: </p>
+<p>The batch_standard_and_pilot_jobs scheduling algorithm. Can be: </p>
 <ul>
 <li>If ENABLE_BATSCHED is set to off / not set:<ul>
 <li>"fcfs": First Come First Serve (default)</li>
@@ -440,7 +431,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table>
 </div><div class="memdoc">
 
-<p>Simulate computation as just a sleep instead of an actual compute thread. This is for scalability reason, and only simulation-valid if one is sure that cores are space shared (i.e., only a single compute thread can ever run on a core at once). Since space-sharing at the core level is typically the case in batch-scheduled clusters, this is likely fine. </p>
+<p>Simulate computation as just a sleep instead of an actual compute thread. This is for scalability reason, and only simulation-valid if one is sure that cores are space shared (i.e., only a single compute thread can ever run on a core at once). Since space-sharing at the core level is typically the case in batch_standard_and_pilot_jobs-scheduled clusters, this is likely fine. </p>
 <ul>
 <li>"true": simulate computation as sleep</li>
 <li>"false": do not simulate computation as sleep (default) </li>
@@ -496,7 +487,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table>
 </div><div class="memdoc">
 
-<p>The algorithm to pick which ready computational task (within a standard job executed by the batch service), in case multiple tasks are ready, should run first. This is typically not managed by a batch scheduler, but by some application-level script that executes a set of tasks within compute resources allocated by the batch scheduler. Possible values are: </p>
+<p>The algorithm to pick which ready computational task (within a standard job executed by the batch_standard_and_pilot_jobs service), in case multiple tasks are ready, should run first. This is typically not managed by a batch_standard_and_pilot_jobs scheduler, but by some application-level script that executes a set of tasks within compute resources allocated by the batch_standard_and_pilot_jobs scheduler. Possible values are: </p>
 <ul>
 <li>maximum_flops (default)</li>
 <li>maximum_minimum_cores</li>

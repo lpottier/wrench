@@ -130,7 +130,7 @@ Creating a Simple storage service</h1>
 <ul>
 <li>The name of a host on which to start the service;</li>
 <li>A list of mount points (corresponding to disks attached to the host); and</li>
-<li>Maps (<code>std::map</code>) of configurable properties (<code><a class="el" href="classwrench_1_1_batch_compute_service_property.html" title="Configurable properties for a BatchComputeService.">wrench::BatchComputeServiceProperty</a></code>) and configurable message payloads (<code><a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch.">wrench::BatchComputeServiceMessagePayload</a></code>).</li>
+<li>Maps (<code>std::map</code>) of configurable properties (<code><a class="el" href="classwrench_1_1_batch_compute_service_property.html" title="Configurable properties for a BatchComputeService.">wrench::BatchComputeServiceProperty</a></code>) and configurable message payloads (<code><a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch_standard_and_pilot_jobs.">wrench::BatchComputeServiceMessagePayload</a></code>).</li>
 </ul>
 <p>The example below creates an instance of a Simple storage service that runs on host <code>BigDisk</code>, has access to the disks mounted at paths <code>/data/</code> and <code>/home/</code> at host <code>BigDisk</code>. Furthermore, the number of maximum concurrent data connections supported by the service is configured to be 8, and the message sent to the service to find out its free space is configured to be 1KiB:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> storage_service = simulation-&gt;<a class="code" href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">add</a>(</div>
@@ -143,7 +143,7 @@ Creating a Simple storage service</h1>
 <p>Also see the simulators in the <code>examples/basic-examples/*</code> directories, which all use simple storage services. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
-<div class="ttc" id="aclasswrench_1_1_simulation_html_a7cf70e5793758149a8bf29992d870c91"><div class="ttname"><a href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">wrench::Simulation::add</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; add(T *t)</div><div class="ttdoc">Method to add a service to the simulation.</div><div class="ttdef"><b>Definition:</b> Simulation.h:74</div></div>
+<div class="ttc" id="aclasswrench_1_1_simulation_html_a7cf70e5793758149a8bf29992d870c91"><div class="ttname"><a href="classwrench_1_1_simulation.html#a7cf70e5793758149a8bf29992d870c91">wrench::Simulation::add</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; add(T *t)</div><div class="ttdoc">Method to add a service to the simulation.</div><div class="ttdef"><b>Definition:</b> Simulation.h:85</div></div>
 <div class="ttc" id="aclasswrench_1_1_simple_storage_service_html"><div class="ttname"><a href="classwrench_1_1_simple_storage_service.html">wrench::SimpleStorageService</a></div><div class="ttdoc">A storage service that provides direct access to some storage resources (e.g., one or more disks)....</div><div class="ttdef"><b>Definition:</b> SimpleStorageService.h:44</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">

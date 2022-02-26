@@ -142,15 +142,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9dcb57bf81aae0847c9639e9025f089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#ae9dcb57bf81aae0847c9639e9025f089">dumpPlatformGraphJSON</a> (std::string file_path, bool writing_file=true)</td></tr>
 <tr class="memdesc:ae9dcb57bf81aae0847c9639e9025f089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a JSON file containing all hosts, network links, and the routes between each host.  <a href="classwrench_1_1_simulation_output.html#ae9dcb57bf81aae0847c9639e9025f089">More...</a><br /></td></tr>
 <tr class="separator:ae9dcb57bf81aae0847c9639e9025f089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9522ab6fce55abc329cd91cbf76ebf38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a9522ab6fce55abc329cd91cbf76ebf38">dumpUnifiedJSON</a> (<a class="el" href="classwrench_1_1_workflow.html">Workflow</a> *workflow, std::string file_path, bool include_platform=false, bool include_workflow_exec=true, bool include_workflow_graph=false, bool include_energy=false, bool generate_host_utilization_layout=false, bool include_disk=false, bool include_bandwidth=false)</td></tr>
-<tr class="memdesc:a9522ab6fce55abc329cd91cbf76ebf38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that generates a unified JSON file containing the information specified by boolean arguments.  <a href="classwrench_1_1_simulation_output.html#a9522ab6fce55abc329cd91cbf76ebf38">More...</a><br /></td></tr>
-<tr class="separator:a9522ab6fce55abc329cd91cbf76ebf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8a3b8b2b25fd1bcad46adb395410b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#aad8a3b8b2b25fd1bcad46adb395410b8">dumpWorkflowExecutionJSON</a> (<a class="el" href="classwrench_1_1_workflow.html">Workflow</a> *workflow, std::string file_path, bool generate_host_utilization_layout=false, bool writing_file=true)</td></tr>
-<tr class="memdesc:aad8a3b8b2b25fd1bcad46adb395410b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> execution history for each task to a file, formatted as a JSON array.  <a href="classwrench_1_1_simulation_output.html#aad8a3b8b2b25fd1bcad46adb395410b8">More...</a><br /></td></tr>
-<tr class="separator:aad8a3b8b2b25fd1bcad46adb395410b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a487c3e2c9e34f64137a1f68beb66a558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a487c3e2c9e34f64137a1f68beb66a558">dumpWorkflowGraphJSON</a> (<a class="el" href="classwrench_1_1_workflow.html">wrench::Workflow</a> *workflow, std::string file_path, bool writing_file=true)</td></tr>
-<tr class="memdesc:a487c3e2c9e34f64137a1f68beb66a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file.  <a href="classwrench_1_1_simulation_output.html#a487c3e2c9e34f64137a1f68beb66a558">More...</a><br /></td></tr>
-<tr class="separator:a487c3e2c9e34f64137a1f68beb66a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d3f85496329bcb41236d3769c731c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#ad3d3f85496329bcb41236d3769c731c0">dumpUnifiedJSON</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt; workflow, std::string file_path, bool include_platform=false, bool include_workflow_exec=true, bool include_workflow_graph=false, bool include_energy=false, bool generate_host_utilization_layout=false, bool include_disk=false, bool include_bandwidth=false)</td></tr>
+<tr class="memdesc:ad3d3f85496329bcb41236d3769c731c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that generates a unified JSON file containing the information specified by boolean arguments.  <a href="classwrench_1_1_simulation_output.html#ad3d3f85496329bcb41236d3769c731c0">More...</a><br /></td></tr>
+<tr class="separator:ad3d3f85496329bcb41236d3769c731c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527f78220f37ddc53425431c693c1ed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a527f78220f37ddc53425431c693c1ed2">dumpWorkflowExecutionJSON</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt; workflow, std::string file_path, bool generate_host_utilization_layout=false, bool writing_file=true)</td></tr>
+<tr class="memdesc:a527f78220f37ddc53425431c693c1ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> execution history for each task to a file, formatted as a JSON array.  <a href="classwrench_1_1_simulation_output.html#a527f78220f37ddc53425431c693c1ed2">More...</a><br /></td></tr>
+<tr class="separator:a527f78220f37ddc53425431c693c1ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a8d3ecaef4a834eef1642b145c2feb4f2">dumpWorkflowGraphJSON</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt; workflow, std::string file_path, bool writing_file=true)</td></tr>
+<tr class="memdesc:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file.  <a href="classwrench_1_1_simulation_output.html#a8d3ecaef4a834eef1642b145c2feb4f2">More...</a><br /></td></tr>
+<tr class="separator:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6fa75fc1a64bb16b2a20649ffcaee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a2c6fa75fc1a64bb16b2a20649ffcaee4">enableBandwidthTimestamps</a> (bool enabled)</td></tr>
 <tr class="memdesc:a2c6fa75fc1a64bb16b2a20649ffcaee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Disable the insertion of link-usage-related timestamps in the simulation output (enabled by default)  <a href="classwrench_1_1_simulation_output.html#a2c6fa75fc1a64bb16b2a20649ffcaee4">More...</a><br /></td></tr>
 <tr class="separator:a2c6fa75fc1a64bb16b2a20649ffcaee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -483,8 +483,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9522ab6fce55abc329cd91cbf76ebf38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9522ab6fce55abc329cd91cbf76ebf38">&#9670;&nbsp;</a></span>dumpUnifiedJSON()</h2>
+<a id="ad3d3f85496329bcb41236d3769c731c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d3f85496329bcb41236d3769c731c0">&#9670;&nbsp;</a></span>dumpUnifiedJSON()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +492,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::SimulationOutput::dumpUnifiedJSON </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow.html">Workflow</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt;&#160;</td>
           <td class="paramname"><em>workflow</em>, </td>
         </tr>
         <tr>
@@ -592,8 +592,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aad8a3b8b2b25fd1bcad46adb395410b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad8a3b8b2b25fd1bcad46adb395410b8">&#9670;&nbsp;</a></span>dumpWorkflowExecutionJSON()</h2>
+<a id="a527f78220f37ddc53425431c693c1ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527f78220f37ddc53425431c693c1ed2">&#9670;&nbsp;</a></span>dumpWorkflowExecutionJSON()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +601,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::SimulationOutput::dumpWorkflowExecutionJSON </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow.html">Workflow</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt;&#160;</td>
           <td class="paramname"><em>workflow</em>, </td>
         </tr>
         <tr>
@@ -701,8 +701,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a487c3e2c9e34f64137a1f68beb66a558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a487c3e2c9e34f64137a1f68beb66a558">&#9670;&nbsp;</a></span>dumpWorkflowGraphJSON()</h2>
+<a id="a8d3ecaef4a834eef1642b145c2feb4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3ecaef4a834eef1642b145c2feb4f2">&#9670;&nbsp;</a></span>dumpWorkflowGraphJSON()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +710,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void wrench::SimulationOutput::dumpWorkflowGraphJSON </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwrench_1_1_workflow.html">wrench::Workflow</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt;&#160;</td>
           <td class="paramname"><em>workflow</em>, </td>
         </tr>
         <tr>
@@ -734,7 +734,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file. </p>
-<p>A node is added for each <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> and <a class="el" href="classwrench_1_1_workflow_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">WorkflowFile</a>. A <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> will have the type "task" and a <a class="el" href="classwrench_1_1_workflow_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">WorkflowFile</a> will have the type "file". A directed link is added for each dependency in the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a>.</p>
+<p>A node is added for each <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> and <a class="el" href="classwrench_1_1_data_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">DataFile</a>. A <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> will have the type "task" and a <a class="el" href="classwrench_1_1_data_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">DataFile</a> will have the type "file". A directed link is added for each dependency in the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a>.</p>
 <pre>
 {
      "workflow_graph": {

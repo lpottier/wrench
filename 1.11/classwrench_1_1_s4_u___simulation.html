@@ -181,9 +181,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:aa6e86b42e87be87991c1e5bdf1a90a55"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#aa6e86b42e87be87991c1e5bdf1a90a55">getClock</a> ()</td></tr>
 <tr class="memdesc:aa6e86b42e87be87991c1e5bdf1a90a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current simulation date.  <a href="classwrench_1_1_s4_u___simulation.html#aa6e86b42e87be87991c1e5bdf1a90a55">More...</a><br /></td></tr>
 <tr class="separator:aa6e86b42e87be87991c1e5bdf1a90a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203b09c00201a4d4501c25df69c2aca5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a203b09c00201a4d4501c25df69c2aca5">getCurrentPstate</a> (const std::string &amp;hostname)</td></tr>
-<tr class="memdesc:a203b09c00201a4d4501c25df69c2aca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current power state of a host.  <a href="classwrench_1_1_s4_u___simulation.html#a203b09c00201a4d4501c25df69c2aca5">More...</a><br /></td></tr>
-<tr class="separator:a203b09c00201a4d4501c25df69c2aca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2af5b56e85a34a72c131349e7db595f"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#ac2af5b56e85a34a72c131349e7db595f">getCurrentPstate</a> (const std::string &amp;hostname)</td></tr>
+<tr class="memdesc:ac2af5b56e85a34a72c131349e7db595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current power state of a host.  <a href="classwrench_1_1_s4_u___simulation.html#ac2af5b56e85a34a72c131349e7db595f">More...</a><br /></td></tr>
+<tr class="separator:ac2af5b56e85a34a72c131349e7db595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028ba0e0580c49e4d6cf27d58c02302c"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a028ba0e0580c49e4d6cf27d58c02302c">getDiskCapacity</a> (std::string hostname, std::string mount_point)</td></tr>
 <tr class="memdesc:a028ba0e0580c49e4d6cf27d58c02302c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the capacity of a disk attached to some host for a given mount point.  <a href="classwrench_1_1_s4_u___simulation.html#a028ba0e0580c49e4d6cf27d58c02302c">More...</a><br /></td></tr>
 <tr class="separator:a028ba0e0580c49e4d6cf27d58c02302c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,9 +259,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a180f552d958e60e330ee6bb68259fd11"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a180f552d958e60e330ee6bb68259fd11">readFromDiskAndWriteToDiskConcurrently</a> (double num_bytes_to_read, double num_bytes_to_write, std::string hostname, std::string read_mount_point, std::string write_mount_point)</td></tr>
 <tr class="memdesc:a180f552d958e60e330ee6bb68259fd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from a local disk and write to a local disk concurrently.  <a href="classwrench_1_1_s4_u___simulation.html#a180f552d958e60e330ee6bb68259fd11">More...</a><br /></td></tr>
 <tr class="separator:a180f552d958e60e330ee6bb68259fd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee21fa866cf3bd222e2cbcf27b6d340"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a8ee21fa866cf3bd222e2cbcf27b6d340">setPstate</a> (const std::string &amp;hostname, int pstate)</td></tr>
-<tr class="memdesc:a8ee21fa866cf3bd222e2cbcf27b6d340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the power state of the host.  <a href="classwrench_1_1_s4_u___simulation.html#a8ee21fa866cf3bd222e2cbcf27b6d340">More...</a><br /></td></tr>
-<tr class="separator:a8ee21fa866cf3bd222e2cbcf27b6d340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20146eedbca627588c8975510178fd1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a20146eedbca627588c8975510178fd1e">setHostProperty</a> (std::string hostname, std::string property_name, std::string property_value)</td></tr>
+<tr class="memdesc:a20146eedbca627588c8975510178fd1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a property associated to a host specified in the platform file.  <a href="classwrench_1_1_s4_u___simulation.html#a20146eedbca627588c8975510178fd1e">More...</a><br /></td></tr>
+<tr class="separator:a20146eedbca627588c8975510178fd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761dbf1987cf5a4a70d1ecfcf79d2c92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a761dbf1987cf5a4a70d1ecfcf79d2c92">setPstate</a> (const std::string &amp;hostname, unsigned long pstate)</td></tr>
+<tr class="memdesc:a761dbf1987cf5a4a70d1ecfcf79d2c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the power state of the host.  <a href="classwrench_1_1_s4_u___simulation.html#a761dbf1987cf5a4a70d1ecfcf79d2c92">More...</a><br /></td></tr>
+<tr class="separator:a761dbf1987cf5a4a70d1ecfcf79d2c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af93ef50da20f860de80212a3cff1cfdb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#af93ef50da20f860de80212a3cff1cfdb">sleep</a> (double)</td></tr>
 <tr class="memdesc:af93ef50da20f860de80212a3cff1cfdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates a sleep.  <a href="classwrench_1_1_s4_u___simulation.html#af93ef50da20f860de80212a3cff1cfdb">More...</a><br /></td></tr>
 <tr class="separator:af93ef50da20f860de80212a3cff1cfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,8 +444,8 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 </div>
 </div>
-<a id="a203b09c00201a4d4501c25df69c2aca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a203b09c00201a4d4501c25df69c2aca5">&#9670;&nbsp;</a></span>getCurrentPstate()</h2>
+<a id="ac2af5b56e85a34a72c131349e7db595f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2af5b56e85a34a72c131349e7db595f">&#9670;&nbsp;</a></span>getCurrentPstate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +454,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int wrench::S4U_Simulation::getCurrentPstate </td>
+          <td class="memname">unsigned long wrench::S4U_Simulation::getCurrentPstate </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>hostname</em></td><td>)</td>
@@ -1600,8 +1603,60 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 </div>
 </div>
-<a id="a8ee21fa866cf3bd222e2cbcf27b6d340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ee21fa866cf3bd222e2cbcf27b6d340">&#9670;&nbsp;</a></span>setPstate()</h2>
+<a id="a20146eedbca627588c8975510178fd1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20146eedbca627588c8975510178fd1e">&#9670;&nbsp;</a></span>setHostProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::S4U_Simulation::setHostProperty </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>property_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>property_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a property associated to a host specified in the platform file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostname</td><td>the host name </td></tr>
+    <tr><td class="paramname">property_name</td><td>the property name </td></tr>
+    <tr><td class="paramname">property_value</td><td>the property value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a761dbf1987cf5a4a70d1ecfcf79d2c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761dbf1987cf5a4a70d1ecfcf79d2c92">&#9670;&nbsp;</a></span>setPstate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1618,7 +1673,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>pstate</em>&#160;</td>
         </tr>
         <tr>

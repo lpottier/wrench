@@ -116,10 +116,9 @@ $(function() {
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>task
-: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#ace157e6185c5eea2cc9fb5f6abe3bdad">wrench::SimulationTimestampFileRead</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a830b0777a4aea6fa0f87405ce715f574">wrench::SimulationTimestampFileWrite</a>
+: <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a02a5ba9a38ba88653ccc7d4b1d0aeb76">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a935cc33dff5f2e61b85ea83a9ee63115">wrench::SimulationTimestampFileWrite</a>
 , <a class="el" href="structwrench_1_1_vertex_properties.html#a3287ce739f5dae42f7eb8bd861febea5">wrench::VertexProperties</a>
-, <a class="el" href="classwrench_1_1_workunit.html#a7639e2dcd02bff9f64682279305a7f6a">wrench::Workunit</a>
 </li>
 <li>task_end
 : <a class="el" href="structwrench_1_1_workflow_task_1_1_workflow_task_execution.html#a103425278afc4cd7ce1fff2dcb670aa4">wrench::WorkflowTask::WorkflowTaskExecution</a>
@@ -129,7 +128,6 @@ $(function() {
 </li>
 <li>TASK_SELECTION_ALGORITHM
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a3f56c6740a8edc7189e617db1333b87b">wrench::BatchComputeServiceProperty</a>
-, <a class="el" href="classwrench_1_1_standard_job_executor_property.html#a6dec558a4ba61c4858e29c93cc33c6d6">wrench::StandardJobExecutorProperty</a>
 </li>
 <li>task_start
 : <a class="el" href="structwrench_1_1_workflow_task_1_1_workflow_task_execution.html#a2d755ca6a024a96318067f41efe711c8">wrench::WorkflowTask::WorkflowTaskExecution</a>
@@ -137,13 +135,18 @@ $(function() {
 <li>TASK_STARTUP_OVERHEAD
 : <a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html#adb5768d70f5152bc85ade58cce4f8b47">wrench::BareMetalComputeServiceProperty</a>
 , <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a4e126dd30a49ac032ec083f1c420f389">wrench::BatchComputeServiceProperty</a>
-, <a class="el" href="classwrench_1_1_standard_job_executor_property.html#a9e36c60a58f899edaadf6f073e63e818">wrench::StandardJobExecutorProperty</a>
 </li>
 <li>task_terminated
 : <a class="el" href="structwrench_1_1_workflow_task_1_1_workflow_task_execution.html#a0a41cb1f38b6c6fa3a27fb848d4555e2">wrench::WorkflowTask::WorkflowTaskExecution</a>
 </li>
 <li>tasks
-: <a class="el" href="classwrench_1_1_standard_job.html#a5e5952459506f8cd52cc611ea8e4505a">wrench::StandardJob</a>
+: <a class="el" href="classwrench_1_1_standard_job.html#aae65bd15ff40c3f665187c3fe2d7b206">wrench::StandardJob</a>
+</li>
+<li>TERMINATE_COMPOUND_JOB_ANSWER_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a5b36b5e4e676431b443a1629fc5b148e">wrench::ComputeServiceMessagePayload</a>
+</li>
+<li>TERMINATE_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a28fe167820a9383562e56df3a30a92c5">wrench::ComputeServiceMessagePayload</a>
 </li>
 <li>TERMINATE_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#ad0bf94135d0c642785f4ce490a0dde0b">wrench::ComputeServiceMessagePayload</a>
@@ -158,7 +161,16 @@ $(function() {
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a24f99e315abb2e89e666e719af98d4dc">wrench::ComputeServiceMessagePayload</a>
 </li>
 <li>TERMINATE_WHENEVER_ALL_RESOURCES_ARE_DOWN
-: <a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html#a906dfcf7e533b13e20fa087c9eaddfa6">wrench::BareMetalComputeServiceProperty</a>
+: <a class="el" href="classwrench_1_1_action_execution_service_property.html#a5d24b9ca1a00477d8ca820ee782e544c">wrench::ActionExecutionServiceProperty</a>
+, <a class="el" href="classwrench_1_1_bare_metal_compute_service_property.html#a906dfcf7e533b13e20fa087c9eaddfa6">wrench::BareMetalComputeServiceProperty</a>
+</li>
+<li>termination_cause
+: <a class="el" href="classwrench_1_1_action_execution_service_terminate_action_request_message.html#a748deb0368392a92295ca3fa57fecee3">wrench::ActionExecutionServiceTerminateActionRequestMessage</a>
+, <a class="el" href="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message.html#adacdcb90fd8da9c6a9891ef6187f239d">wrench::CloudComputeServiceShutdownVMRequestMessage</a>
+, <a class="el" href="classwrench_1_1_service_stop_daemon_message.html#a71f28071089a4155f3f94bac34b18525">wrench::ServiceStopDaemonMessage</a>
+</li>
+<li>thread_creation_overhead
+: <a class="el" href="classwrench_1_1_action.html#a7038ac15d4bcf40d07ea6e40bc688d5b">wrench::Action</a>
 </li>
 <li>timestamp
 : <a class="el" href="classwrench_1_1_coordinate_lookup_answer_message.html#a75a8dae06e6fce385591501ce163b99b">wrench::CoordinateLookupAnswerMessage</a>

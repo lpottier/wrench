@@ -126,7 +126,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A standard (i.e., non-pilot) workflow job that can be submitted to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> by a <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> (via a <a class="el" href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by a WMS), which is used to handle all job ex...">JobManager</a>)  
+<p>A standard (i.e., non-pilot) workflow job that can be submitted to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> by a WMS (via a <a class="el" href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by an execution controller),...">JobManager</a>)  
  <a href="classwrench_1_1_standard_job.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_standard_job_8h_source.html">StandardJob.h</a>&gt;</code></p>
@@ -136,7 +136,7 @@ Inheritance diagram for wrench::StandardJob:</div>
  <div class="center">
   <img src="classwrench_1_1_standard_job.png" usemap="#wrench::StandardJob_map" alt=""/>
   <map id="wrench::StandardJob_map" name="wrench::StandardJob_map">
-<area href="classwrench_1_1_workflow_job.html" title="Abstraction of a job used for executing tasks in a Workflow." alt="wrench::WorkflowJob" shape="rect" coords="0,0,133,24"/>
+<area href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow." alt="wrench::Job" shape="rect" coords="0,0,272,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -152,109 +152,118 @@ Public Types</h2></td></tr>
 <a class="el" href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67a0dc6dd4429f05d26102cc6b749a93349">TERMINATED</a>
 <br />
  }</td></tr>
-<tr class="memdesc:adad8bdfd5eb774da5be290864ce89c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standad job states.  <a href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67">More...</a><br /></td></tr>
+<tr class="memdesc:adad8bdfd5eb774da5be290864ce89c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard job states.  <a href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67">More...</a><br /></td></tr>
 <tr class="separator:adad8bdfd5eb774da5be290864ce89c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6bfafc79868422cb6573ceeed072a29"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#ad6bfafc79868422cb6573ceeed072a29">getFileLocations</a> ()</td></tr>
-<tr class="memdesc:ad6bfafc79868422cb6573ceeed072a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file location map for the job.  <a href="classwrench_1_1_standard_job.html#ad6bfafc79868422cb6573ceeed072a29">More...</a><br /></td></tr>
-<tr class="separator:ad6bfafc79868422cb6573ceeed072a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a9e0b3f8cf3eb98da92617944bb1f7513">getMinimumRequiredMemory</a> ()</td></tr>
-<tr class="memdesc:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum RAM capacity required to run the job (i.e., at least one task in the job cannot run if less ram than this minimum is available)  <a href="classwrench_1_1_standard_job.html#a9e0b3f8cf3eb98da92617944bb1f7513">More...</a><br /></td></tr>
-<tr class="separator:a9e0b3f8cf3eb98da92617944bb1f7513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">getMinimumRequiredNumCores</a> ()</td></tr>
-<tr class="memdesc:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum number of cores required to run the job (i.e., at least one task in the job cannot run if fewer cores than this minimum are available)  <a href="classwrench_1_1_standard_job.html#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">More...</a><br /></td></tr>
-<tr class="separator:a5b49ae2d2fcf93e5d5b452b9d14d0a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfe8f307875dcf375fea01bbd9b0fb6"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a7dfe8f307875dcf375fea01bbd9b0fb6">getNumCompletedTasks</a> ()</td></tr>
-<tr class="memdesc:a7dfe8f307875dcf375fea01bbd9b0fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of completed tasks in the job.  <a href="classwrench_1_1_standard_job.html#a7dfe8f307875dcf375fea01bbd9b0fb6">More...</a><br /></td></tr>
-<tr class="separator:a7dfe8f307875dcf375fea01bbd9b0fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5672a5454c94741589dde8edd8d9c56f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a5672a5454c94741589dde8edd8d9c56f">getNumTasks</a> ()</td></tr>
-<tr class="memdesc:a5672a5454c94741589dde8edd8d9c56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of tasks in the job.  <a href="classwrench_1_1_standard_job.html#a5672a5454c94741589dde8edd8d9c56f">More...</a><br /></td></tr>
-<tr class="separator:a5672a5454c94741589dde8edd8d9c56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a408700147ce51e0708944200973c3ec2"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a408700147ce51e0708944200973c3ec2">getFileLocations</a> ()</td></tr>
+<tr class="memdesc:a408700147ce51e0708944200973c3ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file location map for the job.  <a href="classwrench_1_1_standard_job.html#a408700147ce51e0708944200973c3ec2">More...</a><br /></td></tr>
+<tr class="separator:a408700147ce51e0708944200973c3ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c7a8b6e4a0c11568f1882f2d7f8f0b"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#ae8c7a8b6e4a0c11568f1882f2d7f8f0b">getMinimumRequiredMemory</a> () const</td></tr>
+<tr class="memdesc:ae8c7a8b6e4a0c11568f1882f2d7f8f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum RAM capacity required to run the job (i.e., at least one task in the job cannot run if less ram than this minimum is available)  <a href="classwrench_1_1_standard_job.html#ae8c7a8b6e4a0c11568f1882f2d7f8f0b">More...</a><br /></td></tr>
+<tr class="separator:ae8c7a8b6e4a0c11568f1882f2d7f8f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64234f6e1789738adbd29a398b3ce0d6"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a64234f6e1789738adbd29a398b3ce0d6">getMinimumRequiredNumCores</a> () const</td></tr>
+<tr class="memdesc:a64234f6e1789738adbd29a398b3ce0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum number of cores required to run the job (i.e., at least one task in the job cannot run if fewer cores than this minimum are available)  <a href="classwrench_1_1_standard_job.html#a64234f6e1789738adbd29a398b3ce0d6">More...</a><br /></td></tr>
+<tr class="separator:a64234f6e1789738adbd29a398b3ce0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f90fb0230b5b1b4b4e51f44d02317f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#ad1f90fb0230b5b1b4b4e51f44d02317f">getNumCompletedTasks</a> () const</td></tr>
+<tr class="memdesc:ad1f90fb0230b5b1b4b4e51f44d02317f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of completed tasks in the job.  <a href="classwrench_1_1_standard_job.html#ad1f90fb0230b5b1b4b4e51f44d02317f">More...</a><br /></td></tr>
+<tr class="separator:ad1f90fb0230b5b1b4b4e51f44d02317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f5dba5ba057ecaaa3030389d4e5c57"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a56f5dba5ba057ecaaa3030389d4e5c57">getNumTasks</a> () const</td></tr>
+<tr class="memdesc:a56f5dba5ba057ecaaa3030389d4e5c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of tasks in the job.  <a href="classwrench_1_1_standard_job.html#a56f5dba5ba057ecaaa3030389d4e5c57">More...</a><br /></td></tr>
+<tr class="separator:a56f5dba5ba057ecaaa3030389d4e5c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a984dd558dc654927ec5be2f35fa57d52"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a984dd558dc654927ec5be2f35fa57d52">getPostJobOverheadInSeconds</a> ()</td></tr>
 <tr class="memdesc:a984dd558dc654927ec5be2f35fa57d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the job's post-overhead  <a href="classwrench_1_1_standard_job.html#a984dd558dc654927ec5be2f35fa57d52">More...</a><br /></td></tr>
 <tr class="separator:a984dd558dc654927ec5be2f35fa57d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03bc8b8921dec7ca257b69d8b99aedf8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a03bc8b8921dec7ca257b69d8b99aedf8">getPreJobOverheadInSeconds</a> ()</td></tr>
 <tr class="memdesc:a03bc8b8921dec7ca257b69d8b99aedf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the job's pre-overhead  <a href="classwrench_1_1_standard_job.html#a03bc8b8921dec7ca257b69d8b99aedf8">More...</a><br /></td></tr>
 <tr class="separator:a03bc8b8921dec7ca257b69d8b99aedf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd2014ebe3b2018f49bf1a2b4e699ac"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a1fd2014ebe3b2018f49bf1a2b4e699ac">getPriority</a> ()</td></tr>
-<tr class="memdesc:a1fd2014ebe3b2018f49bf1a2b4e699ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow priority value (the maximum priority from all tasks)  <a href="classwrench_1_1_standard_job.html#a1fd2014ebe3b2018f49bf1a2b4e699ac">More...</a><br /></td></tr>
-<tr class="separator:a1fd2014ebe3b2018f49bf1a2b4e699ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3368e6bcb1990d7eb1f7c08f393957"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#aab3368e6bcb1990d7eb1f7c08f393957">getSharedPtr</a> ()</td></tr>
+<tr class="memdesc:aab3368e6bcb1990d7eb1f7c08f393957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the shared pointer for this object.  <a href="classwrench_1_1_standard_job.html#aab3368e6bcb1990d7eb1f7c08f393957">More...</a><br /></td></tr>
+<tr class="separator:aab3368e6bcb1990d7eb1f7c08f393957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd45aa2f3ab8818d7bbf6d8d6a31a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwrench_1_1_standard_job.html#adad8bdfd5eb774da5be290864ce89c67">StandardJob::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a1fd45aa2f3ab8818d7bbf6d8d6a31a5c">getState</a> ()</td></tr>
 <tr class="memdesc:a1fd45aa2f3ab8818d7bbf6d8d6a31a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of the standard job.  <a href="classwrench_1_1_standard_job.html#a1fd45aa2f3ab8818d7bbf6d8d6a31a5c">More...</a><br /></td></tr>
 <tr class="separator:a1fd45aa2f3ab8818d7bbf6d8d6a31a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a122e212d0136c5559b7fc38b58f8c377"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a122e212d0136c5559b7fc38b58f8c377">getTasks</a> ()</td></tr>
-<tr class="memdesc:a122e212d0136c5559b7fc38b58f8c377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow tasks in the job.  <a href="classwrench_1_1_standard_job.html#a122e212d0136c5559b7fc38b58f8c377">More...</a><br /></td></tr>
-<tr class="separator:a122e212d0136c5559b7fc38b58f8c377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0505125fe4196b13e1afc0910f9fd482"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a0505125fe4196b13e1afc0910f9fd482">getTasks</a> ()</td></tr>
+<tr class="memdesc:a0505125fe4196b13e1afc0910f9fd482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the workflow tasks in the job.  <a href="classwrench_1_1_standard_job.html#a0505125fe4196b13e1afc0910f9fd482">More...</a><br /></td></tr>
+<tr class="separator:a0505125fe4196b13e1afc0910f9fd482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b5993102a836327d0045fb9b64cbe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a37b5993102a836327d0045fb9b64cbe4">setPostJobOverheadInSeconds</a> (double overhead)</td></tr>
 <tr class="memdesc:a37b5993102a836327d0045fb9b64cbe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the job's post-overhead  <a href="classwrench_1_1_standard_job.html#a37b5993102a836327d0045fb9b64cbe4">More...</a><br /></td></tr>
 <tr class="separator:a37b5993102a836327d0045fb9b64cbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34497e421e3e298f2dceb4031c52da50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a34497e421e3e298f2dceb4031c52da50">setPreJobOverheadInSeconds</a> (double overhead)</td></tr>
 <tr class="memdesc:a34497e421e3e298f2dceb4031c52da50"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the job's pre-overhead  <a href="classwrench_1_1_standard_job.html#a34497e421e3e298f2dceb4031c52da50">More...</a><br /></td></tr>
 <tr class="separator:a34497e421e3e298f2dceb4031c52da50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classwrench_1_1_workflow_job"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_workflow_job')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_workflow_job.html">wrench::WorkflowJob</a></td></tr>
-<tr class="memitem:ae57fb8239da5c07797c16b5de0c27bb9 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="ae57fb8239da5c07797c16b5de0c27bb9"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ae57fb8239da5c07797c16b5de0c27bb9">~WorkflowJob</a> ()</td></tr>
-<tr class="memdesc:ae57fb8239da5c07797c16b5de0c27bb9 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:ae57fb8239da5c07797c16b5de0c27bb9 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c0b59f3792d3d6de90efedbff064bc inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a45c0b59f3792d3d6de90efedbff064bc">getCallbackMailbox</a> ()</td></tr>
-<tr class="memdesc:a45c0b59f3792d3d6de90efedbff064bc inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "next" callback mailbox (returns the origin (i.e., workflow) mailbox if the mailbox stack is empty)  <a href="classwrench_1_1_workflow_job.html#a45c0b59f3792d3d6de90efedbff064bc">More...</a><br /></td></tr>
-<tr class="separator:a45c0b59f3792d3d6de90efedbff064bc inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696c3e75679a5b1a7062c4a1324d2d35 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a696c3e75679a5b1a7062c4a1324d2d35">getEndDate</a> ()</td></tr>
-<tr class="memdesc:a696c3e75679a5b1a7062c4a1324d2d35 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job ended (&lt;0 means "never submitted")  <a href="classwrench_1_1_workflow_job.html#a696c3e75679a5b1a7062c4a1324d2d35">More...</a><br /></td></tr>
-<tr class="separator:a696c3e75679a5b1a7062c4a1324d2d35 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a567b35eaf3952997a71eeedd97138794 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a567b35eaf3952997a71eeedd97138794">getName</a> ()</td></tr>
-<tr class="memdesc:a567b35eaf3952997a71eeedd97138794 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job's name.  <a href="classwrench_1_1_workflow_job.html#a567b35eaf3952997a71eeedd97138794">More...</a><br /></td></tr>
-<tr class="separator:a567b35eaf3952997a71eeedd97138794 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33e4d7acda1bceb454506a29e2202ea inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#aa33e4d7acda1bceb454506a29e2202ea">getOriginCallbackMailbox</a> ()</td></tr>
-<tr class="memdesc:aa33e4d7acda1bceb454506a29e2202ea inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "origin" callback mailbox.  <a href="classwrench_1_1_workflow_job.html#aa33e4d7acda1bceb454506a29e2202ea">More...</a><br /></td></tr>
-<tr class="separator:aa33e4d7acda1bceb454506a29e2202ea inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb6fc31fa4d3afea46274c2937cdb501 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#afb6fc31fa4d3afea46274c2937cdb501">getParentComputeService</a> ()</td></tr>
-<tr class="memdesc:afb6fc31fa4d3afea46274c2937cdb501 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parent compute service of the job.  <a href="classwrench_1_1_workflow_job.html#afb6fc31fa4d3afea46274c2937cdb501">More...</a><br /></td></tr>
-<tr class="separator:afb6fc31fa4d3afea46274c2937cdb501 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5ce22d0b057d90fc18dd0cbbfaa692 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a7e5ce22d0b057d90fc18dd0cbbfaa692">getServiceSpecificArguments</a> ()</td></tr>
-<tr class="memdesc:a7e5ce22d0b057d90fc18dd0cbbfaa692 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the service-specific arguments that were used during job submission.  <a href="classwrench_1_1_workflow_job.html#a7e5ce22d0b057d90fc18dd0cbbfaa692">More...</a><br /></td></tr>
-<tr class="separator:a7e5ce22d0b057d90fc18dd0cbbfaa692 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f015d4d97263662bf2d6d617611a34 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a05f015d4d97263662bf2d6d617611a34">getSubmitDate</a> ()</td></tr>
-<tr class="memdesc:a05f015d4d97263662bf2d6d617611a34 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job was last submitted (&lt;0 means "never submitted")  <a href="classwrench_1_1_workflow_job.html#a05f015d4d97263662bf2d6d617611a34">More...</a><br /></td></tr>
-<tr class="separator:a05f015d4d97263662bf2d6d617611a34 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b0cde49a330b62a7e77382e6eddbe1 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a70b0cde49a330b62a7e77382e6eddbe1">popCallbackMailbox</a> ()</td></tr>
-<tr class="memdesc:a70b0cde49a330b62a7e77382e6eddbe1 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "next" callback mailbox (returns the workflow mailbox if the mailbox stack is empty), and pops it.  <a href="classwrench_1_1_workflow_job.html#a70b0cde49a330b62a7e77382e6eddbe1">More...</a><br /></td></tr>
-<tr class="separator:a70b0cde49a330b62a7e77382e6eddbe1 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f62a743be61fe41904c31ab8d6f9ce7 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a1f62a743be61fe41904c31ab8d6f9ce7">pushCallbackMailbox</a> (std::string)</td></tr>
-<tr class="memdesc:a1f62a743be61fe41904c31ab8d6f9ce7 inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a callback mailbox.  <a href="classwrench_1_1_workflow_job.html#a1f62a743be61fe41904c31ab8d6f9ce7">More...</a><br /></td></tr>
-<tr class="separator:a1f62a743be61fe41904c31ab8d6f9ce7 inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac012eb6a083ae687fdf5a13170d9f16d inherit pub_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ac012eb6a083ae687fdf5a13170d9f16d">setParentComputeService</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service)</td></tr>
-<tr class="memdesc:ac012eb6a083ae687fdf5a13170d9f16d inherit pub_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parent compute service of the job.  <a href="classwrench_1_1_workflow_job.html#ac012eb6a083ae687fdf5a13170d9f16d">More...</a><br /></td></tr>
-<tr class="separator:ac012eb6a083ae687fdf5a13170d9f16d inherit pub_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94c19fa44008a977017a179e086ca62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#ad94c19fa44008a977017a179e086ca62">usesScratch</a> ()</td></tr>
+<tr class="memdesc:ad94c19fa44008a977017a179e086ca62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the job's spec uses scratch space.  <a href="classwrench_1_1_standard_job.html#ad94c19fa44008a977017a179e086ca62">More...</a><br /></td></tr>
+<tr class="separator:ad94c19fa44008a977017a179e086ca62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwrench_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_job')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_job.html">wrench::Job</a></td></tr>
+<tr class="memitem:aef70105641519a8f813653bc0e425d7a inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="aef70105641519a8f813653bc0e425d7a"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#aef70105641519a8f813653bc0e425d7a">~Job</a> ()</td></tr>
+<tr class="memdesc:aef70105641519a8f813653bc0e425d7a inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:aef70105641519a8f813653bc0e425d7a inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6249d35b20edfddb007e02e83a2f217e inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">simgrid::s4u::Mailbox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a6249d35b20edfddb007e02e83a2f217e">getCallbackMailbox</a> ()</td></tr>
+<tr class="memdesc:a6249d35b20edfddb007e02e83a2f217e inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job's "next" callback mailbox, without popping it.  <a href="classwrench_1_1_job.html#a6249d35b20edfddb007e02e83a2f217e">More...</a><br /></td></tr>
+<tr class="separator:a6249d35b20edfddb007e02e83a2f217e inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdbbe36f9025a11c50b00d23b8e92b1 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a5cdbbe36f9025a11c50b00d23b8e92b1">getEndDate</a> ()</td></tr>
+<tr class="memdesc:a5cdbbe36f9025a11c50b00d23b8e92b1 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job ended (&lt;0 means "never submitted")  <a href="classwrench_1_1_job.html#a5cdbbe36f9025a11c50b00d23b8e92b1">More...</a><br /></td></tr>
+<tr class="separator:a5cdbbe36f9025a11c50b00d23b8e92b1 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f92b511338a061d7c7c59ac3bab970 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a67f92b511338a061d7c7c59ac3bab970">getName</a> ()</td></tr>
+<tr class="memdesc:a67f92b511338a061d7c7c59ac3bab970 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job's name.  <a href="classwrench_1_1_job.html#a67f92b511338a061d7c7c59ac3bab970">More...</a><br /></td></tr>
+<tr class="separator:a67f92b511338a061d7c7c59ac3bab970 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4e80caf9e554cc998a1905acdaf47b inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">simgrid::s4u::Mailbox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a7c4e80caf9e554cc998a1905acdaf47b">getOriginCallbackMailbox</a> ()</td></tr>
+<tr class="memdesc:a7c4e80caf9e554cc998a1905acdaf47b inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "origin" callback mailbox.  <a href="classwrench_1_1_job.html#a7c4e80caf9e554cc998a1905acdaf47b">More...</a><br /></td></tr>
+<tr class="separator:a7c4e80caf9e554cc998a1905acdaf47b inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60eac5337c7d4636ed17528235fb595 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#ae60eac5337c7d4636ed17528235fb595">getParentComputeService</a> ()</td></tr>
+<tr class="memdesc:ae60eac5337c7d4636ed17528235fb595 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the compute service that is running /ran the job.  <a href="classwrench_1_1_job.html#ae60eac5337c7d4636ed17528235fb595">More...</a><br /></td></tr>
+<tr class="separator:ae60eac5337c7d4636ed17528235fb595 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321a1f81452c397ace0381f28e50e2d8 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a321a1f81452c397ace0381f28e50e2d8">getPriority</a> () const</td></tr>
+<tr class="memdesc:a321a1f81452c397ace0381f28e50e2d8 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job's priority (the higher the priority value, the higher the priority)  <a href="classwrench_1_1_job.html#a321a1f81452c397ace0381f28e50e2d8">More...</a><br /></td></tr>
+<tr class="separator:a321a1f81452c397ace0381f28e50e2d8 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6228d5c43faed3e4934cb1a59b48c35 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#af6228d5c43faed3e4934cb1a59b48c35">getServiceSpecificArguments</a> ()</td></tr>
+<tr class="memdesc:af6228d5c43faed3e4934cb1a59b48c35 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the service-specific arguments that are used during job submission.  <a href="classwrench_1_1_job.html#af6228d5c43faed3e4934cb1a59b48c35">More...</a><br /></td></tr>
+<tr class="separator:af6228d5c43faed3e4934cb1a59b48c35 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1102f33587e9cd4488fdac0a3c6991 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#aae1102f33587e9cd4488fdac0a3c6991">getSubmitDate</a> ()</td></tr>
+<tr class="memdesc:aae1102f33587e9cd4488fdac0a3c6991 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job was last submitted (&lt;0 means "never submitted")  <a href="classwrench_1_1_job.html#aae1102f33587e9cd4488fdac0a3c6991">More...</a><br /></td></tr>
+<tr class="separator:aae1102f33587e9cd4488fdac0a3c6991 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a55752c7f1cdc05f9d36dd43cc4d04 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">simgrid::s4u::Mailbox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a74a55752c7f1cdc05f9d36dd43cc4d04">popCallbackMailbox</a> ()</td></tr>
+<tr class="memdesc:a74a55752c7f1cdc05f9d36dd43cc4d04 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "next" callback mailbox (returns the workflow mailbox if the mailbox stack is empty), and pops it.  <a href="classwrench_1_1_job.html#a74a55752c7f1cdc05f9d36dd43cc4d04">More...</a><br /></td></tr>
+<tr class="separator:a74a55752c7f1cdc05f9d36dd43cc4d04 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011ec4d7cf6ff99b2feaa966fc8a96d7 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a011ec4d7cf6ff99b2feaa966fc8a96d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a011ec4d7cf6ff99b2feaa966fc8a96d7">printCallbackMailboxStack</a> ()</td></tr>
+<tr class="memdesc:a011ec4d7cf6ff99b2feaa966fc8a96d7 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to print the call back stack. <br /></td></tr>
+<tr class="separator:a011ec4d7cf6ff99b2feaa966fc8a96d7 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b79028149fb6f541845d18477fcbda4 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a8b79028149fb6f541845d18477fcbda4">pushCallbackMailbox</a> (simgrid::s4u::Mailbox *mailbox)</td></tr>
+<tr class="memdesc:a8b79028149fb6f541845d18477fcbda4 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a callback mailbox.  <a href="classwrench_1_1_job.html#a8b79028149fb6f541845d18477fcbda4">More...</a><br /></td></tr>
+<tr class="separator:a8b79028149fb6f541845d18477fcbda4 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3bcc025b460c71124735aa1b30d251 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a0d3bcc025b460c71124735aa1b30d251">setParentComputeService</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt; compute_service)</td></tr>
+<tr class="memdesc:a0d3bcc025b460c71124735aa1b30d251 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parent compute service of the job.  <a href="classwrench_1_1_job.html#a0d3bcc025b460c71124735aa1b30d251">More...</a><br /></td></tr>
+<tr class="separator:a0d3bcc025b460c71124735aa1b30d251 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedaebafea7b2397535acc6a0ae81d143 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#aedaebafea7b2397535acc6a0ae81d143">setPriority</a> (double <a class="el" href="classwrench_1_1_job.html#a27d3863735afbe21963a678e23fdc98b">priority</a>)</td></tr>
+<tr class="memdesc:aedaebafea7b2397535acc6a0ae81d143 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the job's priority (the higher the priority value, the higher the priority)  <a href="classwrench_1_1_job.html#aedaebafea7b2397535acc6a0ae81d143">More...</a><br /></td></tr>
+<tr class="separator:aedaebafea7b2397535acc6a0ae81d143 inherit pub_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a99d8056d004ff7db810873b7d110aa06"><td class="memItemLeft" align="right" valign="top"><a id="a99d8056d004ff7db810873b7d110aa06"></a>
-std::vector&lt; std::tuple&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a99d8056d004ff7db810873b7d110aa06">cleanup_file_deletions</a></td></tr>
-<tr class="memdesc:a99d8056d004ff7db810873b7d110aa06"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file deletion operations to perform at the end. <br /></td></tr>
-<tr class="separator:a99d8056d004ff7db810873b7d110aa06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e881b0fd5c52cf26eaefc4c14f8020"><td class="memItemLeft" align="right" valign="top"><a id="a22e881b0fd5c52cf26eaefc4c14f8020"></a>
-std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a22e881b0fd5c52cf26eaefc4c14f8020">file_locations</a></td></tr>
-<tr class="memdesc:a22e881b0fd5c52cf26eaefc4c14f8020"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file locations that tasks should read/write files from/to. Each file is given a list of locations, in preferred order. <br /></td></tr>
-<tr class="separator:a22e881b0fd5c52cf26eaefc4c14f8020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb08d57f0b36a87dcb1d77c89de103b"><td class="memItemLeft" align="right" valign="top"><a id="acbb08d57f0b36a87dcb1d77c89de103b"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#acbb08d57f0b36a87dcb1d77c89de103b">num_completed_tasks</a></td></tr>
-<tr class="memdesc:acbb08d57f0b36a87dcb1d77c89de103b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of computational tasks that have completed. <br /></td></tr>
-<tr class="separator:acbb08d57f0b36a87dcb1d77c89de103b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd69d494f961c28809a5d4ebb30f4f4"><td class="memItemLeft" align="right" valign="top"><a id="a0cd69d494f961c28809a5d4ebb30f4f4"></a>
-std::vector&lt; std::tuple&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a0cd69d494f961c28809a5d4ebb30f4f4">post_file_copies</a></td></tr>
-<tr class="memdesc:a0cd69d494f961c28809a5d4ebb30f4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file copy operations to perform after computational tasks. <br /></td></tr>
-<tr class="separator:a0cd69d494f961c28809a5d4ebb30f4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e24580ce489bdd6f8e15afc48cf10d3"><td class="memItemLeft" align="right" valign="top"><a id="a4e24580ce489bdd6f8e15afc48cf10d3"></a>
-std::vector&lt; std::tuple&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a4e24580ce489bdd6f8e15afc48cf10d3">pre_file_copies</a></td></tr>
-<tr class="memdesc:a4e24580ce489bdd6f8e15afc48cf10d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file copy operations to perform before computational tasks. <br /></td></tr>
-<tr class="separator:a4e24580ce489bdd6f8e15afc48cf10d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5952459506f8cd52cc611ea8e4505a"><td class="memItemLeft" align="right" valign="top"><a id="a5e5952459506f8cd52cc611ea8e4505a"></a>
-std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a5e5952459506f8cd52cc611ea8e4505a">tasks</a></td></tr>
-<tr class="memdesc:a5e5952459506f8cd52cc611ea8e4505a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's computational tasks. <br /></td></tr>
-<tr class="separator:a5e5952459506f8cd52cc611ea8e4505a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e309533ff7ea413bfd1ec4662e9c217"><td class="memItemLeft" align="right" valign="top"><a id="a6e309533ff7ea413bfd1ec4662e9c217"></a>
+std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a6e309533ff7ea413bfd1ec4662e9c217">cleanup_file_deletions</a></td></tr>
+<tr class="memdesc:a6e309533ff7ea413bfd1ec4662e9c217"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file deletion operations to perform at the end. <br /></td></tr>
+<tr class="separator:a6e309533ff7ea413bfd1ec4662e9c217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de8105fae4f097e439619ef9922be06"><td class="memItemLeft" align="right" valign="top"><a id="a9de8105fae4f097e439619ef9922be06"></a>
+std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a9de8105fae4f097e439619ef9922be06">file_locations</a></td></tr>
+<tr class="memdesc:a9de8105fae4f097e439619ef9922be06"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file locations that tasks should read/write files from/to. Each file is given a list of locations, in preferred order. <br /></td></tr>
+<tr class="separator:a9de8105fae4f097e439619ef9922be06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501c563feb6e574fc6689c04d117fefd"><td class="memItemLeft" align="right" valign="top"><a id="a501c563feb6e574fc6689c04d117fefd"></a>
+std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a501c563feb6e574fc6689c04d117fefd">post_file_copies</a></td></tr>
+<tr class="memdesc:a501c563feb6e574fc6689c04d117fefd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file copy operations to perform after computational tasks. <br /></td></tr>
+<tr class="separator:a501c563feb6e574fc6689c04d117fefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7715a075200fb56ac7cd0ab9bdfea35a"><td class="memItemLeft" align="right" valign="top"><a id="a7715a075200fb56ac7cd0ab9bdfea35a"></a>
+std::vector&lt; std::tuple&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a7715a075200fb56ac7cd0ab9bdfea35a">pre_file_copies</a></td></tr>
+<tr class="memdesc:a7715a075200fb56ac7cd0ab9bdfea35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ordered file copy operations to perform before computational tasks. <br /></td></tr>
+<tr class="separator:a7715a075200fb56ac7cd0ab9bdfea35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae65bd15ff40c3f665187c3fe2d7b206"><td class="memItemLeft" align="right" valign="top"><a id="aae65bd15ff40c3f665187c3fe2d7b206"></a>
+std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#aae65bd15ff40c3f665187c3fe2d7b206">tasks</a></td></tr>
+<tr class="memdesc:aae65bd15ff40c3f665187c3fe2d7b206"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's computational tasks. <br /></td></tr>
+<tr class="separator:aae65bd15ff40c3f665187c3fe2d7b206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828c40483b8d94cfbedf09bddddc31be"><td class="memItemLeft" align="right" valign="top"><a id="a828c40483b8d94cfbedf09bddddc31be"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_standard_job.html#a828c40483b8d94cfbedf09bddddc31be">total_flops</a></td></tr>
 <tr class="memdesc:a828c40483b8d94cfbedf09bddddc31be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's total computational cost (in flops) <br /></td></tr>
@@ -262,45 +271,60 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classwrench_1_1_workflow_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwrench_1_1_workflow_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwrench_1_1_workflow_job.html">wrench::WorkflowJob</a></td></tr>
-<tr class="memitem:a4a20b0ddbf4cd0749502aca820f8d807 inherit pro_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a4a20b0ddbf4cd0749502aca820f8d807">WorkflowJob</a> ()</td></tr>
-<tr class="memdesc:a4a20b0ddbf4cd0749502aca820f8d807 inherit pro_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_workflow_job.html#a4a20b0ddbf4cd0749502aca820f8d807">More...</a><br /></td></tr>
-<tr class="separator:a4a20b0ddbf4cd0749502aca820f8d807 inherit pro_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7aac4964471e2bac76be5c4ba1c119c inherit pro_methods_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ae7aac4964471e2bac76be5c4ba1c119c">getNewUniqueNumber</a> ()</td></tr>
-<tr class="memdesc:ae7aac4964471e2bac76be5c4ba1c119c inherit pro_methods_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a unique number (for each newly generated job)  <a href="classwrench_1_1_workflow_job.html#ae7aac4964471e2bac76be5c4ba1c119c">More...</a><br /></td></tr>
-<tr class="separator:ae7aac4964471e2bac76be5c4ba1c119c inherit pro_methods_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classwrench_1_1_workflow_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwrench_1_1_workflow_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classwrench_1_1_workflow_job.html">wrench::WorkflowJob</a></td></tr>
-<tr class="memitem:ab2c1544d499e081a35f2998f53a02278 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="ab2c1544d499e081a35f2998f53a02278"></a>
-std::stack&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ab2c1544d499e081a35f2998f53a02278">callback_mailbox_stack</a></td></tr>
-<tr class="memdesc:ab2c1544d499e081a35f2998f53a02278 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack of callback mailboxes (to pop notifications) <br /></td></tr>
-<tr class="separator:ab2c1544d499e081a35f2998f53a02278 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17408466d759dcb0beaae69ffc106e1 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="ab17408466d759dcb0beaae69ffc106e1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#ab17408466d759dcb0beaae69ffc106e1">end_date</a></td></tr>
-<tr class="memdesc:ab17408466d759dcb0beaae69ffc106e1 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date at which the job ended (with success or failure) <br /></td></tr>
-<tr class="separator:ab17408466d759dcb0beaae69ffc106e1 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a098ede62860e053e09ae646500e1e8c7 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="a098ede62860e053e09ae646500e1e8c7"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a098ede62860e053e09ae646500e1e8c7">name</a></td></tr>
-<tr class="memdesc:a098ede62860e053e09ae646500e1e8c7 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's name. <br /></td></tr>
-<tr class="separator:a098ede62860e053e09ae646500e1e8c7 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185058028c02ea4b6886bd79808d8424 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="a185058028c02ea4b6886bd79808d8424"></a>
-std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a185058028c02ea4b6886bd79808d8424">parent_compute_service</a></td></tr>
-<tr class="memdesc:a185058028c02ea4b6886bd79808d8424 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The compute service to which the job was submitted. <br /></td></tr>
-<tr class="separator:a185058028c02ea4b6886bd79808d8424 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24db446e553bf3879fa3a5903067f259 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="a24db446e553bf3879fa3a5903067f259"></a>
-std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a24db446e553bf3879fa3a5903067f259">service_specific_args</a></td></tr>
-<tr class="memdesc:a24db446e553bf3879fa3a5903067f259 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service-specific arguments used during job submission. <br /></td></tr>
-<tr class="separator:a24db446e553bf3879fa3a5903067f259 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3c7ad93f7a2515e7923370681f86d5 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="a0b3c7ad93f7a2515e7923370681f86d5"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a0b3c7ad93f7a2515e7923370681f86d5">submit_date</a></td></tr>
-<tr class="memdesc:a0b3c7ad93f7a2515e7923370681f86d5 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date at which the job was last submitted. <br /></td></tr>
-<tr class="separator:a0b3c7ad93f7a2515e7923370681f86d5 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18dad640a929bcb2ad6838c81a7dc3a8 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memItemLeft" align="right" valign="top"><a id="a18dad640a929bcb2ad6838c81a7dc3a8"></a>
-<a class="el" href="classwrench_1_1_workflow.html">Workflow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_job.html#a18dad640a929bcb2ad6838c81a7dc3a8">workflow</a></td></tr>
-<tr class="memdesc:a18dad640a929bcb2ad6838c81a7dc3a8 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The workflow this job belong to. <br /></td></tr>
-<tr class="separator:a18dad640a929bcb2ad6838c81a7dc3a8 inherit pro_attribs_classwrench_1_1_workflow_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classwrench_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwrench_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwrench_1_1_job.html">wrench::Job</a></td></tr>
+<tr class="memitem:a3c44766bbba0f88a068dc1842f1ccad2 inherit pro_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a3c44766bbba0f88a068dc1842f1ccad2">Job</a> (std::string <a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a>, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job_manager.html">JobManager</a> &gt; <a class="el" href="classwrench_1_1_job.html#a19e40eb799c0fb55cd12eba9fbcf1766">job_manager</a>)</td></tr>
+<tr class="memdesc:a3c44766bbba0f88a068dc1842f1ccad2 inherit pro_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_job.html#a3c44766bbba0f88a068dc1842f1ccad2">More...</a><br /></td></tr>
+<tr class="separator:a3c44766bbba0f88a068dc1842f1ccad2 inherit pro_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091fd13b15dc2ada456e6b6d637793c2 inherit pro_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a091fd13b15dc2ada456e6b6d637793c2">getNewUniqueNumber</a> ()</td></tr>
+<tr class="memdesc:a091fd13b15dc2ada456e6b6d637793c2 inherit pro_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a unique number (for each newly generated job)  <a href="classwrench_1_1_job.html#a091fd13b15dc2ada456e6b6d637793c2">More...</a><br /></td></tr>
+<tr class="separator:a091fd13b15dc2ada456e6b6d637793c2 inherit pro_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6077c82b8ba40b5310af47f83b33dd1 inherit pro_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#af6077c82b8ba40b5310af47f83b33dd1">setServiceSpecificArguments</a> (std::map&lt; std::string, std::string &gt; args)</td></tr>
+<tr class="memdesc:af6077c82b8ba40b5310af47f83b33dd1 inherit pro_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the service-specific arguments that are used during job submission.  <a href="classwrench_1_1_job.html#af6077c82b8ba40b5310af47f83b33dd1">More...</a><br /></td></tr>
+<tr class="separator:af6077c82b8ba40b5310af47f83b33dd1 inherit pro_methods_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classwrench_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwrench_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classwrench_1_1_job.html">wrench::Job</a></td></tr>
+<tr class="memitem:aa66d463ceddb3448832917258fefaa13 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="aa66d463ceddb3448832917258fefaa13"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#aa66d463ceddb3448832917258fefaa13">already_submitted_to_job_manager</a> = false</td></tr>
+<tr class="memdesc:aa66d463ceddb3448832917258fefaa13 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the job has already been submitted to the job manager. <br /></td></tr>
+<tr class="separator:aa66d463ceddb3448832917258fefaa13 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93964859b2f45979a36fee5e3e178888 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a93964859b2f45979a36fee5e3e178888"></a>
+std::stack&lt; simgrid::s4u::Mailbox * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a93964859b2f45979a36fee5e3e178888">callback_mailbox_stack</a></td></tr>
+<tr class="memdesc:a93964859b2f45979a36fee5e3e178888 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack of callback mailboxes (to pop notifications) <br /></td></tr>
+<tr class="separator:a93964859b2f45979a36fee5e3e178888 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69573e354a65564075dafe498dfa4c6b inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a69573e354a65564075dafe498dfa4c6b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a69573e354a65564075dafe498dfa4c6b">end_date</a></td></tr>
+<tr class="memdesc:a69573e354a65564075dafe498dfa4c6b inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date at which the job ended (with success or failure) <br /></td></tr>
+<tr class="separator:a69573e354a65564075dafe498dfa4c6b inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e40eb799c0fb55cd12eba9fbcf1766 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a19e40eb799c0fb55cd12eba9fbcf1766"></a>
+std::shared_ptr&lt; <a class="el" href="classwrench_1_1_job_manager.html">JobManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a19e40eb799c0fb55cd12eba9fbcf1766">job_manager</a></td></tr>
+<tr class="memdesc:a19e40eb799c0fb55cd12eba9fbcf1766 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> Manager in charge of this job. <br /></td></tr>
+<tr class="separator:a19e40eb799c0fb55cd12eba9fbcf1766 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaafcaef6d9a20ddd7b7bdba5005a88c inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="afaafcaef6d9a20ddd7b7bdba5005a88c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#afaafcaef6d9a20ddd7b7bdba5005a88c">name</a></td></tr>
+<tr class="memdesc:afaafcaef6d9a20ddd7b7bdba5005a88c inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's name. <br /></td></tr>
+<tr class="separator:afaafcaef6d9a20ddd7b7bdba5005a88c inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6898f224d80fd71ec86283a7850517 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a4a6898f224d80fd71ec86283a7850517"></a>
+simgrid::s4u::Mailbox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a4a6898f224d80fd71ec86283a7850517">originator_mailbox</a></td></tr>
+<tr class="memdesc:a4a6898f224d80fd71ec86283a7850517 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The originator's mailbox. <br /></td></tr>
+<tr class="separator:a4a6898f224d80fd71ec86283a7850517 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c1b5bb8566e28f327b7c8200798a16 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="af4c1b5bb8566e28f327b7c8200798a16"></a>
+std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_service.html">ComputeService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#af4c1b5bb8566e28f327b7c8200798a16">parent_compute_service</a></td></tr>
+<tr class="memdesc:af4c1b5bb8566e28f327b7c8200798a16 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The compute service to which the job was submitted. <br /></td></tr>
+<tr class="separator:af4c1b5bb8566e28f327b7c8200798a16 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d3863735afbe21963a678e23fdc98b inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a27d3863735afbe21963a678e23fdc98b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a27d3863735afbe21963a678e23fdc98b">priority</a> = 0.0</td></tr>
+<tr class="memdesc:a27d3863735afbe21963a678e23fdc98b inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The job's priority (the higher the number, the higher the priority) <br /></td></tr>
+<tr class="separator:a27d3863735afbe21963a678e23fdc98b inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f18d7e3317482530f8dc891592c583 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a01f18d7e3317482530f8dc891592c583"></a>
+std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a01f18d7e3317482530f8dc891592c583">service_specific_args</a></td></tr>
+<tr class="memdesc:a01f18d7e3317482530f8dc891592c583 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service-specific arguments used during job submission. <br /></td></tr>
+<tr class="separator:a01f18d7e3317482530f8dc891592c583 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8a1688487af86749826089332841b0 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="a0f8a1688487af86749826089332841b0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a0f8a1688487af86749826089332841b0">submit_date</a></td></tr>
+<tr class="memdesc:a0f8a1688487af86749826089332841b0 inherit pro_attribs_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">The date at which the job was last submitted. <br /></td></tr>
+<tr class="separator:a0f8a1688487af86749826089332841b0 inherit pro_attribs_classwrench_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A standard (i.e., non-pilot) workflow job that can be submitted to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> by a <a class="el" href="classwrench_1_1_w_m_s.html" title="A workflow management system (WMS)">WMS</a> (via a <a class="el" href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by a WMS), which is used to handle all job ex...">JobManager</a>) </p>
+<div class="textblock"><p>A standard (i.e., non-pilot) workflow job that can be submitted to a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a> by a WMS (via a <a class="el" href="classwrench_1_1_job_manager.html" title="A helper daemon (co-located with and explicitly started by an execution controller),...">JobManager</a>) </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="adad8bdfd5eb774da5be290864ce89c67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adad8bdfd5eb774da5be290864ce89c67">&#9670;&nbsp;</a></span>State</h2>
@@ -314,7 +338,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
 </div><div class="memdoc">
 
-<p>Standad job states. </p>
+<p>Standard job states. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adad8bdfd5eb774da5be290864ce89c67a1dcb6554c663781e960d2797b3ab4259"></a>NOT_SUBMITTED&#160;</td><td class="fielddoc"><p>Not submitted yet. </p>
 </td></tr>
@@ -333,14 +357,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad6bfafc79868422cb6573ceeed072a29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6bfafc79868422cb6573ceeed072a29">&#9670;&nbsp;</a></span>getFileLocations()</h2>
+<a id="a408700147ce51e0708944200973c3ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408700147ce51e0708944200973c3ec2">&#9670;&nbsp;</a></span>getFileLocations()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; <a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt; wrench::StandardJob::getFileLocations </td>
+          <td class="memname">std::map&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; &gt; wrench::StandardJob::getFileLocations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -353,8 +377,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a9e0b3f8cf3eb98da92617944bb1f7513"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e0b3f8cf3eb98da92617944bb1f7513">&#9670;&nbsp;</a></span>getMinimumRequiredMemory()</h2>
+<a id="ae8c7a8b6e4a0c11568f1882f2d7f8f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c7a8b6e4a0c11568f1882f2d7f8f0b">&#9670;&nbsp;</a></span>getMinimumRequiredMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +387,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="memname">unsigned long wrench::StandardJob::getMinimumRequiredMemory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -373,8 +397,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a5b49ae2d2fcf93e5d5b452b9d14d0a1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b49ae2d2fcf93e5d5b452b9d14d0a1f">&#9670;&nbsp;</a></span>getMinimumRequiredNumCores()</h2>
+<a id="a64234f6e1789738adbd29a398b3ce0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64234f6e1789738adbd29a398b3ce0d6">&#9670;&nbsp;</a></span>getMinimumRequiredNumCores()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,7 +407,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="memname">unsigned long wrench::StandardJob::getMinimumRequiredNumCores </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -393,8 +417,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a7dfe8f307875dcf375fea01bbd9b0fb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dfe8f307875dcf375fea01bbd9b0fb6">&#9670;&nbsp;</a></span>getNumCompletedTasks()</h2>
+<a id="ad1f90fb0230b5b1b4b4e51f44d02317f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f90fb0230b5b1b4b4e51f44d02317f">&#9670;&nbsp;</a></span>getNumCompletedTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +427,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="memname">unsigned long wrench::StandardJob::getNumCompletedTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -413,8 +437,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a5672a5454c94741589dde8edd8d9c56f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5672a5454c94741589dde8edd8d9c56f">&#9670;&nbsp;</a></span>getNumTasks()</h2>
+<a id="a56f5dba5ba057ecaaa3030389d4e5c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f5dba5ba057ecaaa3030389d4e5c57">&#9670;&nbsp;</a></span>getNumTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +447,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="memname">unsigned long wrench::StandardJob::getNumTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -473,8 +497,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a1fd2014ebe3b2018f49bf1a2b4e699ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fd2014ebe3b2018f49bf1a2b4e699ac">&#9670;&nbsp;</a></span>getPriority()</h2>
+<a id="aab3368e6bcb1990d7eb1f7c08f393957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3368e6bcb1990d7eb1f7c08f393957">&#9670;&nbsp;</a></span>getSharedPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +507,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long wrench::StandardJob::getPriority </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classwrench_1_1_standard_job.html">StandardJob</a>&gt; wrench::StandardJob::getSharedPtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -491,15 +515,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the workflow priority value (the maximum priority from all tasks) </p>
-<dl class="section return"><dt>Returns</dt><dd>the job priority value </dd></dl>
-
-<p>Reimplemented from <a class="el" href="classwrench_1_1_workflow_job.html#a519acc83be842a2ec046fa244dce0cde">wrench::WorkflowJob</a>.</p>
+<p>Get the shared pointer for this object. </p>
+<dl class="section return"><dt>Returns</dt><dd>a shared pointer to the object </dd></dl>
 
 </div>
 </div>
@@ -523,14 +545,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a122e212d0136c5559b7fc38b58f8c377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a122e212d0136c5559b7fc38b58f8c377">&#9670;&nbsp;</a></span>getTasks()</h2>
+<a id="a0505125fe4196b13e1afc0910f9fd482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0505125fe4196b13e1afc0910f9fd482">&#9670;&nbsp;</a></span>getTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> * &gt; wrench::StandardJob::getTasks </td>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; &gt; wrench::StandardJob::getTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -592,6 +614,26 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad94c19fa44008a977017a179e086ca62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94c19fa44008a977017a179e086ca62">&#9670;&nbsp;</a></span>usesScratch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::StandardJob::usesScratch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether the job's spec uses scratch space. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>

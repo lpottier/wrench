@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['readfile_928',['readFile',['../classwrench_1_1_storage_service.html#ad969be2879e8d0ecca8a322b112e062e',1,'wrench::StorageService']]],
-  ['removecontroldependency_929',['removeControlDependency',['../classwrench_1_1_workflow.html#adf23b90b33c06dfaf8af4884a140de47',1,'wrench::Workflow']]],
-  ['removeentry_930',['removeEntry',['../classwrench_1_1_file_registry_service.html#a6bf6982726cdd789cd3956ecf360c07f',1,'wrench::FileRegistryService']]],
-  ['removefile_931',['removeFile',['../classwrench_1_1_workflow.html#a343edce64d90995088075b6cf25adc25',1,'wrench::Workflow']]],
-  ['removetask_932',['removeTask',['../classwrench_1_1_workflow.html#af2361b641261ea13079902bef91e11f4',1,'wrench::Workflow']]],
-  ['resume_933',['resume',['../classwrench_1_1_service.html#ae88d4368c4b08ae2142d03cdea3694fb',1,'wrench::Service']]],
-  ['resumevm_934',['resumeVM',['../classwrench_1_1_cloud_compute_service.html#acd71eac59e42f21d752776b05cf8b6cf',1,'wrench::CloudComputeService']]],
-  ['rundynamicoptimizations_935',['runDynamicOptimizations',['../classwrench_1_1_w_m_s.html#a7f216c7fc960d9ce7c4accd37f6ef8ca',1,'wrench::WMS']]],
-  ['runstaticoptimizations_936',['runStaticOptimizations',['../classwrench_1_1_w_m_s.html#a6ce8628812f5bd8c813c92ad51265f6d',1,'wrench::WMS']]]
+  ['readfile_1012',['readFile',['../classwrench_1_1_storage_service.html#aa6fc9fd5eb1f9111b7cde74d533b3bb1',1,'wrench::StorageService::readFile(std::shared_ptr&lt; DataFile &gt;file, std::shared_ptr&lt; FileLocation &gt; location)'],['../classwrench_1_1_storage_service.html#ab01622f90b208d764cfedec5db58d862',1,'wrench::StorageService::readFile(std::shared_ptr&lt; DataFile &gt;file, std::shared_ptr&lt; FileLocation &gt; location, double num_bytes)']]],
+  ['removecontroldependency_1013',['removeControlDependency',['../classwrench_1_1_workflow.html#a3bbe8a67f9c378d0cdd620f080802044',1,'wrench::Workflow']]],
+  ['removeentry_1014',['removeEntry',['../classwrench_1_1_file_registry_service.html#aa7a07ee3d44086375b0dafc984de9422',1,'wrench::FileRegistryService']]],
+  ['removefile_1015',['removeFile',['../classwrench_1_1_simulation.html#ad1c89e958ffa6be3c2cdbf45b52c93fd',1,'wrench::Simulation::removeFile()'],['../classwrench_1_1_workflow.html#a49bc621417be2eac51ba0df9010b73d6',1,'wrench::Workflow::removeFile()']]],
+  ['removetask_1016',['removeTask',['../classwrench_1_1_workflow.html#ab6948048d8dbc1a0aa28cf57f09df2d9',1,'wrench::Workflow']]],
+  ['resume_1017',['resume',['../classwrench_1_1_service.html#ae88d4368c4b08ae2142d03cdea3694fb',1,'wrench::Service']]],
+  ['resumevm_1018',['resumeVM',['../classwrench_1_1_cloud_compute_service.html#acd71eac59e42f21d752776b05cf8b6cf',1,'wrench::CloudComputeService']]]
 ];

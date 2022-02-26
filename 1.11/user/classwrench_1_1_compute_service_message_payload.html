@@ -136,7 +136,7 @@ Inheritance diagram for wrench::ComputeServiceMessagePayload:</div>
   <map id="wrench::ComputeServiceMessagePayload_map" name="wrench::ComputeServiceMessagePayload_map">
 <area href="classwrench_1_1_service_message_payload.html" title="Configurable message payloads for a Service." alt="wrench::ServiceMessagePayload" shape="rect" coords="540,0,890,24"/>
 <area href="classwrench_1_1_bare_metal_compute_service_message_payload.html" title="Configurable message payloads for a MultiHostMulticoreComputeService." alt="wrench::BareMetalComputeServiceMessagePayload" shape="rect" coords="0,112,350,136"/>
-<area href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch." alt="wrench::BatchComputeServiceMessagePayload" shape="rect" coords="360,112,710,136"/>
+<area href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch_standard_and_pilot_jobs." alt="wrench::BatchComputeServiceMessagePayload" shape="rect" coords="360,112,710,136"/>
 <area href="classwrench_1_1_cloud_compute_service_message_payload.html" title="Configurable message payloads for a CloudService." alt="wrench::CloudComputeServiceMessagePayload" shape="rect" coords="720,112,1070,136"/>
 <area href="classwrench_1_1_h_t_condor_compute_service_message_payload.html" title="Configurable message payloads for an htcondor." alt="wrench::HTCondorComputeServiceMessagePayload" shape="rect" coords="1080,112,1430,136"/>
 <area href="classwrench_1_1_virtualized_cluster_compute_service_message_payload.html" title="Configurable message payloads for a VirtualizedClusterComputeService." alt="wrench::VirtualizedClusterComputeServiceMessagePayload" shape="rect" coords="720,168,1070,192"/>
@@ -145,6 +145,14 @@ Inheritance diagram for wrench::ComputeServiceMessagePayload:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a80902dbaba0f390c4d3e97c3e1b53400"><td class="memItemLeft" align="right" valign="top"><a id="a80902dbaba0f390c4d3e97c3e1b53400"></a>
+static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a80902dbaba0f390c4d3e97c3e1b53400">COMPOUND_JOB_DONE_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:a80902dbaba0f390c4d3e97c3e1b53400"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to state that it has completed a compound job. <br /></td></tr>
+<tr class="separator:a80902dbaba0f390c4d3e97c3e1b53400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2249f61e2193366465243bb6231b4abe"><td class="memItemLeft" align="right" valign="top"><a id="a2249f61e2193366465243bb6231b4abe"></a>
+static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a2249f61e2193366465243bb6231b4abe">COMPOUND_JOB_FAILED_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:a2249f61e2193366465243bb6231b4abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to state that a running compound job has failed. <br /></td></tr>
+<tr class="separator:a2249f61e2193366465243bb6231b4abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d94ad63ac707456dcc912b41126533"><td class="memItemLeft" align="right" valign="top"><a id="a59d94ad63ac707456dcc912b41126533"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a59d94ad63ac707456dcc912b41126533">IS_THERE_AT_LEAST_ONE_HOST_WITH_AVAILABLE_RESOURCES_ANSWER_MESSAGE_PAYLOAD</a></td></tr>
 <tr class="memdesc:a59d94ad63ac707456dcc912b41126533"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to ask is one host has some resources available. <br /></td></tr>
@@ -175,7 +183,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 <tr class="separator:a110f501ef6361a70627833e8ab5ab511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfd5cdb62efb21fb3ebf7764b9c7ad47"><td class="memItemLeft" align="right" valign="top"><a id="abfd5cdb62efb21fb3ebf7764b9c7ad47"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#abfd5cdb62efb21fb3ebf7764b9c7ad47">RESOURCE_DESCRIPTION_REQUEST_MESSAGE_PAYLOAD</a></td></tr>
-<tr class="memdesc:abfd5cdb62efb21fb3ebf7764b9c7ad47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to ask it for information on its resources. <br /></td></tr>
+<tr class="memdesc:abfd5cdb62efb21fb3ebf7764b9c7ad47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to request information on its resources. <br /></td></tr>
 <tr class="separator:abfd5cdb62efb21fb3ebf7764b9c7ad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba0560d8901349f0fbd2ab7e6eb3862"><td class="memItemLeft" align="right" valign="top"><a id="a3ba0560d8901349f0fbd2ab7e6eb3862"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a3ba0560d8901349f0fbd2ab7e6eb3862">STANDARD_JOB_DONE_MESSAGE_PAYLOAD</a></td></tr>
@@ -185,6 +193,13 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#aafb88e732f10b7e26bd1fe39356457bf">STANDARD_JOB_FAILED_MESSAGE_PAYLOAD</a></td></tr>
 <tr class="memdesc:aafb88e732f10b7e26bd1fe39356457bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to state that a running standard job has failed. <br /></td></tr>
 <tr class="separator:aafb88e732f10b7e26bd1fe39356457bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76447f222124633082cc820706ed557"><td class="memItemLeft" align="right" valign="top"><a id="ac76447f222124633082cc820706ed557"></a>
+static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#ac76447f222124633082cc820706ed557">SUBMIT_COMPOUND_JOB_ANSWER_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:ac76447f222124633082cc820706ed557"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to acknowledge a compound job submission. <br /></td></tr>
+<tr class="separator:ac76447f222124633082cc820706ed557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575d4c76575bd6623bbc7f8a235ef9d5"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a575d4c76575bd6623bbc7f8a235ef9d5">SUBMIT_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:a575d4c76575bd6623bbc7f8a235ef9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to submit a pilot job.  <a href="classwrench_1_1_compute_service_message_payload.html#a575d4c76575bd6623bbc7f8a235ef9d5">More...</a><br /></td></tr>
+<tr class="separator:a575d4c76575bd6623bbc7f8a235ef9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a421715521f0d2837e24e9e150da0de4a"><td class="memItemLeft" align="right" valign="top"><a id="a421715521f0d2837e24e9e150da0de4a"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a421715521f0d2837e24e9e150da0de4a">SUBMIT_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD</a></td></tr>
 <tr class="memdesc:a421715521f0d2837e24e9e150da0de4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent from the daemon to acknowledge a pilot job submission. <br /></td></tr>
@@ -201,6 +216,14 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a86cb39a4741f03121d6c8254d8cbaf1c">SUBMIT_STANDARD_JOB_REQUEST_MESSAGE_PAYLOAD</a></td></tr>
 <tr class="memdesc:a86cb39a4741f03121d6c8254d8cbaf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to submit a standard job. <br /></td></tr>
 <tr class="separator:a86cb39a4741f03121d6c8254d8cbaf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b36b5e4e676431b443a1629fc5b148e"><td class="memItemLeft" align="right" valign="top"><a id="a5b36b5e4e676431b443a1629fc5b148e"></a>
+static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a5b36b5e4e676431b443a1629fc5b148e">TERMINATE_COMPOUND_JOB_ANSWER_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:a5b36b5e4e676431b443a1629fc5b148e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to acknowledge a compound job termination. <br /></td></tr>
+<tr class="separator:a5b36b5e4e676431b443a1629fc5b148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fe167820a9383562e56df3a30a92c5"><td class="memItemLeft" align="right" valign="top"><a id="a28fe167820a9383562e56df3a30a92c5"></a>
+static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a28fe167820a9383562e56df3a30a92c5">TERMINATE_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:a28fe167820a9383562e56df3a30a92c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to terminate a compound job. <br /></td></tr>
+<tr class="separator:a28fe167820a9383562e56df3a30a92c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0bf94135d0c642785f4ce490a0dde0b"><td class="memItemLeft" align="right" valign="top"><a id="ad0bf94135d0c642785f4ce490a0dde0b"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#ad0bf94135d0c642785f4ce490a0dde0b">TERMINATE_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD</a></td></tr>
 <tr class="memdesc:ad0bf94135d0c642785f4ce490a0dde0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to acknowledge a pilot job termination. <br /></td></tr>
@@ -221,9 +244,8 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a79d0d40e02d24145252b7afb2c526cc5">TTL_ANSWER_MESSAGE_PAYLOAD</a></td></tr>
 <tr class="memdesc:a79d0d40e02d24145252b7afb2c526cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent by the daemon to state its time-to-live. <br /></td></tr>
 <tr class="separator:a79d0d40e02d24145252b7afb2c526cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951187b1bb9fb20d7944e5577b94ae47"><td class="memItemLeft" align="right" valign="top"><a id="a951187b1bb9fb20d7944e5577b94ae47"></a>
-static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a951187b1bb9fb20d7944e5577b94ae47">TTL_REQUEST_MESSAGE_PAYLOAD</a></td></tr>
-<tr class="memdesc:a951187b1bb9fb20d7944e5577b94ae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to ask it for its time-to-live. <br /></td></tr>
+<tr class="memitem:a951187b1bb9fb20d7944e5577b94ae47"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service_message_payload.html#a951187b1bb9fb20d7944e5577b94ae47">TTL_REQUEST_MESSAGE_PAYLOAD</a></td></tr>
+<tr class="memdesc:a951187b1bb9fb20d7944e5577b94ae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in the control message sent to the daemon to ask it for information on its resources.  <a href="classwrench_1_1_compute_service_message_payload.html#a951187b1bb9fb20d7944e5577b94ae47">More...</a><br /></td></tr>
 <tr class="separator:a951187b1bb9fb20d7944e5577b94ae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classwrench_1_1_service_message_payload"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classwrench_1_1_service_message_payload')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classwrench_1_1_service_message_payload.html">wrench::ServiceMessagePayload</a></td></tr>
 <tr class="memitem:aec363c9226bc8285c41d9fff8c2814a9 inherit pub_static_attribs_classwrench_1_1_service_message_payload"><td class="memItemLeft" align="right" valign="top"><a id="aec363c9226bc8285c41d9fff8c2814a9"></a>
@@ -237,7 +259,58 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a c
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configurable message payloads for a <a class="el" href="classwrench_1_1_compute_service.html" title="The compute service base class.">ComputeService</a>. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a575d4c76575bd6623bbc7f8a235ef9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575d4c76575bd6623bbc7f8a235ef9d5">&#9670;&nbsp;</a></span>SUBMIT_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string wrench::ComputeServiceMessagePayload::SUBMIT_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of bytes in the control message sent to the daemon to submit a pilot job. </p>
+<p>The number of bytes in the control message sent to the daemon to submit a compound job </p>
+
+</div>
+</div>
+<a id="a951187b1bb9fb20d7944e5577b94ae47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951187b1bb9fb20d7944e5577b94ae47">&#9670;&nbsp;</a></span>TTL_REQUEST_MESSAGE_PAYLOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string wrench::ComputeServiceMessagePayload::TTL_REQUEST_MESSAGE_PAYLOAD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The number of bytes in the control message sent to the daemon to ask it for information on its resources. </p>
+<p>The number of bytes in the control message sent to the daemon to ask it for its time-to-live </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_compute_service_message_payload_8h_source.html">ComputeServiceMessagePayload.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef WRENCH_BATSCHEDNETWORKLISTENER_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define WRENCH_BATSCHEDNETWORKLISTENER_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;wrench/services/Service.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;wrench/services/Service.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;BatchComputeServiceProperty.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
@@ -142,17 +142,17 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        BatschedNetworkListener(std::string hostname, std::shared_ptr&lt;BatchComputeService&gt; batch_service,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                std::string batch_service_mailbox, std::string sched_port,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                std::string data_to_send,std::map&lt;std::string, std::string&gt; property_list = {});</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                simgrid::s4u::Mailbox *batch_service_mailbox, std::string sched_port,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                std::string data_to_send,WRENCH_PROPERTY_COLLECTION_TYPE property_list = {});</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::map&lt;std::string, std::string&gt; default_property_values = {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        WRENCH_PROPERTY_COLLECTION_TYPE default_property_values = {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::map&lt;std::string, double&gt; default_messagepayload_values = {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE  default_messagepayload_values = {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        BatschedNetworkListener(std::string, std::shared_ptr&lt;BatchComputeService&gt; batch_service, std::string batch_service_mailbox, std::string sched_port,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                             std::string data_to_send, std::map&lt;std::string, std::string&gt; property_list, std::string suffix);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        BatschedNetworkListener(std::string, std::shared_ptr&lt;BatchComputeService&gt; batch_service, simgrid::s4u::Mailbox *batch_service_mailbox, std::string sched_port,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                             std::string data_to_send, WRENCH_PROPERTY_COLLECTION_TYPE property_list, std::string suffix);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">int</span> main() <span class="keyword">override</span>;</div>
@@ -161,31 +161,29 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::string data_to_send;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::string reply_received;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::shared_ptr&lt;BatchComputeService&gt; batch_service;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::string batch_service_mailbox;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        simgrid::s4u::Mailbox *batch_service_mailbox;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> sendExecuteMessageToBatchComputeService(std::string answer_mailbox, std::string execute_job_reply_data);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> sendQueryAnswerMessageToBatchComputeService(<span class="keywordtype">double</span> estimated_waiting_time);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> send_receive();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> sendExecuteMessageToBatchComputeService(simgrid::s4u::Mailbox *answer_mailbox, std::string execute_job_reply_data);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> sendQueryAnswerMessageToBatchComputeService(<span class="keywordtype">double</span> estimated_waiting_time);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> send_receive();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#else // ENABLE_BATSCHED</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#else // ENABLE_BATSCHED</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classwrench_1_1_batsched_network_listener.html">   66</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_batsched_network_listener.html">BatschedNetworkListener</a> {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classwrench_1_1_batsched_network_listener.html">   64</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_batsched_network_listener.html">BatschedNetworkListener</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    /***********************/</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif //WRENCH_BATSCHEDNETWORKLISTENER_H</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif //WRENCH_BATSCHEDNETWORKLISTENER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
-<div class="ttc" id="aclasswrench_1_1_batsched_network_listener_html"><div class="ttname"><a href="classwrench_1_1_batsched_network_listener.html">wrench::BatschedNetworkListener</a></div><div class="ttdoc">An empty class to make Doxygen happy when Batsched is not enabled.</div><div class="ttdef"><b>Definition:</b> BatschedNetworkListener.h:66</div></div>
+<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
+<div class="ttc" id="aclasswrench_1_1_batsched_network_listener_html"><div class="ttname"><a href="classwrench_1_1_batsched_network_listener.html">wrench::BatschedNetworkListener</a></div><div class="ttdoc">An empty class to make Doxygen happy when Batsched is not enabled.</div><div class="ttdef"><b>Definition:</b> BatschedNetworkListener.h:64</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
         <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>

@@ -112,7 +112,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a946ec3d4951f0462f08b8eca24d53fc.html">wrench</a></li><li class="navelem"><a class="el" href="dir_78f69c8f37113f3c52ce286c8cb26c80.html">services</a></li><li class="navelem"><a class="el" href="dir_af02edd4132f2ff440960f1c763574bd.html">helpers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_a946ec3d4951f0462f08b8eca24d53fc.html">wrench</a></li><li class="navelem"><a class="el" href="dir_78f69c8f37113f3c52ce286c8cb26c80.html">services</a></li><li class="navelem"><a class="el" href="dir_d93a1f623651d61fb41302876ee7da8c.html">helper_services</a></li><li class="navelem"><a class="el" href="dir_fe813b66285ab49676dbbfcebfdbe9b1.html">service_termination_detector</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -136,34 +136,35 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classwrench_1_1_service_termination_detector.html#afde2167fdeffee9aa13e4eead4ee448e">ServiceTerminationDetector</a>(std::string host_on_which_to_run, std::shared_ptr&lt;Service&gt; service_to_monitor, std::string mailbox_to_notify, <span class="keywordtype">bool</span> notify_on_crash, <span class="keywordtype">bool</span> notify_on_termination);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classwrench_1_1_service_termination_detector.html#a2583504ac136880b5285b7c7363c3feb">ServiceTerminationDetector</a>(std::string host_on_which_to_run, std::shared_ptr&lt;Service&gt; service_to_monitor,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                            simgrid::s4u::Mailbox *mailbox_to_notify, <span class="keywordtype">bool</span> notify_on_crash, <span class="keywordtype">bool</span> notify_on_termination);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::shared_ptr&lt;Service&gt; service_to_monitor;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::string mailbox_to_notify;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">int</span> main() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">bool</span> notify_on_crash;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> notify_on_termination;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::shared_ptr&lt;Service&gt; service_to_monitor;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        simgrid::s4u::Mailbox *mailbox_to_notify;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">int</span> main() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> notify_on_crash;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">bool</span> notify_on_termination;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    /***********************/</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif //WRENCH_FAILUREDETECTOR_H</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif //WRENCH_FAILUREDETECTOR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_service_termination_detector_html"><div class="ttname"><a href="classwrench_1_1_service_termination_detector.html">wrench::ServiceTerminationDetector</a></div><div class="ttdoc">A service that immediately detects when some service crashes and then notifies some other service of ...</div><div class="ttdef"><b>Definition:</b> ServiceTerminationDetector.h:26</div></div>
-<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Alarm.cpp:20</div></div>
-<div class="ttc" id="aclasswrench_1_1_service_termination_detector_html_afde2167fdeffee9aa13e4eead4ee448e"><div class="ttname"><a href="classwrench_1_1_service_termination_detector.html#afde2167fdeffee9aa13e4eead4ee448e">wrench::ServiceTerminationDetector::ServiceTerminationDetector</a></div><div class="ttdeci">ServiceTerminationDetector(std::string host_on_which_to_run, std::shared_ptr&lt; Service &gt; service_to_monitor, std::string mailbox_to_notify, bool notify_on_crash, bool notify_on_termination)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> ServiceTerminationDetector.cpp:26</div></div>
-<div class="ttc" id="aclasswrench_1_1_service_html"><div class="ttname"><a href="classwrench_1_1_service.html">wrench::Service</a></div><div class="ttdoc">A service that can be added to the simulation and that can be used by a WMS when executing a workflow...</div><div class="ttdef"><b>Definition:</b> Service.h:26</div></div>
+<div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
+<div class="ttc" id="aclasswrench_1_1_service_termination_detector_html_a2583504ac136880b5285b7c7363c3feb"><div class="ttname"><a href="classwrench_1_1_service_termination_detector.html#a2583504ac136880b5285b7c7363c3feb">wrench::ServiceTerminationDetector::ServiceTerminationDetector</a></div><div class="ttdeci">ServiceTerminationDetector(std::string host_on_which_to_run, std::shared_ptr&lt; Service &gt; service_to_monitor, simgrid::s4u::Mailbox *mailbox_to_notify, bool notify_on_crash, bool notify_on_termination)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> ServiceTerminationDetector.cpp:26</div></div>
+<div class="ttc" id="aclasswrench_1_1_service_html"><div class="ttname"><a href="classwrench_1_1_service.html">wrench::Service</a></div><div class="ttdoc">A service that can be added to the simulation and that can be used by a WMS when executing a workflow...</div><div class="ttdef"><b>Definition:</b> Service.h:31</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
         <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>

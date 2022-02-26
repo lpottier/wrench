@@ -116,7 +116,7 @@ $(function() {
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>scheduled_jobs
-: <a class="el" href="classwrench_1_1_negotiator_completion_message.html#ac4961f4ea60f3056e322dec139e42327">wrench::NegotiatorCompletionMessage</a>
+: <a class="el" href="classwrench_1_1_negotiator_completion_message.html#a0abf99b1c96b4d8a810f408eb572c0c3">wrench::NegotiatorCompletionMessage</a>
 </li>
 <li>SCRATCH
 : <a class="el" href="classwrench_1_1_file_location.html#a7dd382c599ef44a68528be08985c1145">wrench::FileLocation</a>
@@ -124,16 +124,19 @@ $(function() {
 <li>scratch_space_storage_service
 : <a class="el" href="classwrench_1_1_compute_service.html#af4f361b7a08621a766e27085b8adc345">wrench::ComputeService</a>
 </li>
+<li>send_failure_notifications
+: <a class="el" href="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message.html#a9bd74ee1470aa02bca1be127e8bbc766">wrench::CloudComputeServiceShutdownVMRequestMessage</a>
+, <a class="el" href="classwrench_1_1_service_stop_daemon_message.html#a4f1f124595ae790032994a800c4014e7">wrench::ServiceStopDaemonMessage</a>
+</li>
 <li>service
 : <a class="el" href="classwrench_1_1_service_has_crashed_message.html#a4f213434f2770cf7a229f22ac8c6ab65">wrench::ServiceHasCrashedMessage</a>
 , <a class="el" href="classwrench_1_1_service_has_terminated_message.html#af6fa0fc3a749232a76443f8bf8d21bbf">wrench::ServiceHasTerminatedMessage</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#aa49edb0de0b2203395e8de98167e31c9">wrench::SimulationTimestampFileRead</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#a879078b59915d018bf127eac7853b1ec">wrench::SimulationTimestampFileWrite</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#aa6f875a496bd1d92571452863d33253a">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_write.html#ab9ab701e2256af36101ce295f4719490">wrench::SimulationTimestampFileWrite</a>
 </li>
 <li>service_specific_args
-: <a class="el" href="classwrench_1_1_compute_service_submit_pilot_job_request_message.html#af88e80196f64d6530548dbe17df006de">wrench::ComputeServiceSubmitPilotJobRequestMessage</a>
-, <a class="el" href="classwrench_1_1_compute_service_submit_standard_job_request_message.html#a35f19a63653c0028c0a2da3cb94f8f17">wrench::ComputeServiceSubmitStandardJobRequestMessage</a>
-, <a class="el" href="classwrench_1_1_workflow_job.html#a24db446e553bf3879fa3a5903067f259">wrench::WorkflowJob</a>
+: <a class="el" href="classwrench_1_1_compute_service_submit_compound_job_request_message.html#a0b08e6e9f45f03c5668669abccf47075">wrench::ComputeServiceSubmitCompoundJobRequestMessage</a>
+, <a class="el" href="classwrench_1_1_job.html#a01f18d7e3317482530f8dc891592c583">wrench::Job</a>
 </li>
 <li>SHUTDOWN_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#ad2e8891c37b6269969a7c64542b24bd4">wrench::CloudComputeServiceMessagePayload</a>
@@ -141,9 +144,14 @@ $(function() {
 <li>SHUTDOWN_VM_REQUEST_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a0a15e60d6cc2acbb2b9301bf31b50865">wrench::CloudComputeServiceMessagePayload</a>
 </li>
+<li>shutting_down
+: <a class="el" href="classwrench_1_1_service.html#aa533b5fe259025c9daaf59775be175c8">wrench::Service</a>
+</li>
+<li>simulate_computation_as_sleep
+: <a class="el" href="classwrench_1_1_action.html#a0e7d91cb4353e3df27680b7186128158">wrench::Action</a>
+</li>
 <li>SIMULATE_COMPUTATION_AS_SLEEP
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a2072267c164d046104868ad00aaadc51">wrench::BatchComputeServiceProperty</a>
-, <a class="el" href="classwrench_1_1_standard_job_executor_property.html#a52911ff1a2857c2b375aac08ad8019a1">wrench::StandardJobExecutorProperty</a>
 </li>
 <li>SIMULATED_WORKLOAD_TRACE_FILE
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a05cb4a094c38a599591af5b34873394b">wrench::BatchComputeServiceProperty</a>
@@ -154,12 +162,12 @@ $(function() {
 <li>simulation_message
 : <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#ae72d7e9697f88bef7e84625fbda8a417">wrench::S4U_PendingCommunication</a>
 </li>
-<li>sleep_time
-: <a class="el" href="classwrench_1_1_workunit.html#a1919dbe0c0efdcd9eb025cd0a1ab451c">wrench::Workunit</a>
+<li>size
+: <a class="el" href="classwrench_1_1_data_file.html#ad171e10bb7d3b3bcf77250d9999952b1">wrench::DataFile</a>
 </li>
 <li>source
 : <a class="el" href="classwrench_1_1_simulation_timestamp_file_copy.html#a2b2806c8956bb1dc7f504648564fe636">wrench::SimulationTimestampFileCopy</a>
-, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a4a8a4ee52b9959666407f0ce4b8e3ddb">wrench::SimulationTimestampFileRead</a>
+, <a class="el" href="classwrench_1_1_simulation_timestamp_file_read.html#a486f25af4189d6e844f9667a187b9241">wrench::SimulationTimestampFileRead</a>
 </li>
 <li>speed
 : <a class="el" href="classwrench_1_1_host_has_changed_speed_message.html#a4bed70ad0734db2b5ad394121ed61ac7">wrench::HostHasChangedSpeedMessage</a>
@@ -174,7 +182,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_file_transfer_thread_notification_message.html#afa69069805fbc8be0ee04d2c519a4126">wrench::FileTransferThreadNotificationMessage</a>
 </li>
 <li>src_mailbox
-: <a class="el" href="classwrench_1_1_file_transfer_thread_notification_message.html#ae119698033cd9c0fef51edc1e55b69eb">wrench::FileTransferThreadNotificationMessage</a>
+: <a class="el" href="classwrench_1_1_file_transfer_thread_notification_message.html#ac13c8b83ec4871cb2c7535761fa5c6c1">wrench::FileTransferThreadNotificationMessage</a>
 </li>
 <li>standard_job
 : <a class="el" href="classwrench_1_1_standard_job_completed_event.html#a04f8a10bc04e639256537ce19b7afae9">wrench::StandardJobCompletedEvent</a>
@@ -182,14 +190,12 @@ $(function() {
 </li>
 <li>STANDARD_JOB_DONE_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a3ba0560d8901349f0fbd2ab7e6eb3862">wrench::ComputeServiceMessagePayload</a>
-, <a class="el" href="classwrench_1_1_standard_job_executor_message_payload.html#a70624f111b00520237a8b5bde88d977a">wrench::StandardJobExecutorMessagePayload</a>
 </li>
 <li>STANDARD_JOB_FAILED_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#aafb88e732f10b7e26bd1fe39356457bf">wrench::ComputeServiceMessagePayload</a>
-, <a class="el" href="classwrench_1_1_standard_job_executor_message_payload.html#a64c84913aae6554e5e2aae38e9b129fe">wrench::StandardJobExecutorMessagePayload</a>
 </li>
-<li>STANDARD_JOB_FILES_STORED_IN_SCRATCH
-: <a class="el" href="classwrench_1_1_standard_job_executor_property.html#afe3bbcf355a149223aa8b484e78b9681">wrench::StandardJobExecutorProperty</a>
+<li>start_date
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#a773e2d7641c5e75c7f9a44258121d843">wrench::Action::ActionExecution</a>
 </li>
 <li>START_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a68c56fe5237c1ccfa397dbd7f7679c06">wrench::CloudComputeServiceMessagePayload</a>
@@ -198,7 +204,8 @@ $(function() {
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#a3ca3dbc25faa31c21f81b9387e6e6b76">wrench::CloudComputeServiceMessagePayload</a>
 </li>
 <li>state
-: <a class="el" href="classwrench_1_1_s4_u___daemon.html#a15353b51fce12254190299f9c7550dd1">wrench::S4U_Daemon</a>
+: <a class="el" href="structwrench_1_1_action_1_1_action_execution.html#aeaaa0f119f6c24f605f19933fbf97edd">wrench::Action::ActionExecution</a>
+, <a class="el" href="classwrench_1_1_s4_u___daemon.html#a15353b51fce12254190299f9c7550dd1">wrench::S4U_Daemon</a>
 </li>
 <li>STOP_DAEMON_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_service_message_payload.html#a9efb4a6b2c8876e17a3f636ba5ac17f6">wrench::ServiceMessagePayload</a>
@@ -206,8 +213,14 @@ $(function() {
 <li>storage_service
 : <a class="el" href="classwrench_1_1_storage_service_file_delete_answer_message.html#abcaba7a8135ca5a29f3343f986af6221">wrench::StorageServiceFileDeleteAnswerMessage</a>
 </li>
+<li>SUBMIT_COMPOUND_JOB_ANSWER_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#ac76447f222124633082cc820706ed557">wrench::ComputeServiceMessagePayload</a>
+</li>
+<li>SUBMIT_COMPOUND_JOB_REQUEST_MESSAGE_PAYLOAD
+: <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a575d4c76575bd6623bbc7f8a235ef9d5">wrench::ComputeServiceMessagePayload</a>
+</li>
 <li>submit_date
-: <a class="el" href="classwrench_1_1_workflow_job.html#a0b3c7ad93f7a2515e7923370681f86d5">wrench::WorkflowJob</a>
+: <a class="el" href="classwrench_1_1_job.html#a0f8a1688487af86749826089332841b0">wrench::Job</a>
 </li>
 <li>SUBMIT_PILOT_JOB_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_compute_service_message_payload.html#a421715521f0d2837e24e9e150da0de4a">wrench::ComputeServiceMessagePayload</a>
@@ -225,16 +238,17 @@ $(function() {
 : <a class="el" href="classwrench_1_1_batch_compute_service_property.html#a019f1c83ac3125a6340a776f762395ca">wrench::BatchComputeServiceProperty</a>
 </li>
 <li>success
-: <a class="el" href="classwrench_1_1_cloud_compute_service_create_v_m_answer_message.html#ace40bc5716c73386a6ded4e2241db4c5">wrench::CloudComputeServiceCreateVMAnswerMessage</a>
+: <a class="el" href="classwrench_1_1_action_execution_service_submit_action_answer_message.html#a2a2f01b3ca310e2966aa9e04509c2f63">wrench::ActionExecutionServiceSubmitActionAnswerMessage</a>
+, <a class="el" href="classwrench_1_1_action_execution_service_terminate_action_answer_message.html#ac97d192168943bd247653fd33bf0b5d6">wrench::ActionExecutionServiceTerminateActionAnswerMessage</a>
+, <a class="el" href="classwrench_1_1_cloud_compute_service_create_v_m_answer_message.html#ace40bc5716c73386a6ded4e2241db4c5">wrench::CloudComputeServiceCreateVMAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_cloud_compute_service_destroy_v_m_answer_message.html#ade641d9da82ef4d7d249df90937227fe">wrench::CloudComputeServiceDestroyVMAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_cloud_compute_service_resume_v_m_answer_message.html#a0f2b4838ef891cf75d1e89d38abd88b9">wrench::CloudComputeServiceResumeVMAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_cloud_compute_service_shutdown_v_m_answer_message.html#a6c45a88466f15241a9eff3cf9b9f2bd9">wrench::CloudComputeServiceShutdownVMAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_cloud_compute_service_start_v_m_answer_message.html#a2c76c2f62cf0d6dde9317f29c72d02af">wrench::CloudComputeServiceStartVMAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_cloud_compute_service_suspend_v_m_answer_message.html#a61a9f874c7be9d346aef9922b8df3e51">wrench::CloudComputeServiceSuspendVMAnswerMessage</a>
-, <a class="el" href="classwrench_1_1_compute_service_submit_pilot_job_answer_message.html#a6890ec4e5c27a7a2265e9608a1d495d1">wrench::ComputeServiceSubmitPilotJobAnswerMessage</a>
-, <a class="el" href="classwrench_1_1_compute_service_submit_standard_job_answer_message.html#a0cbc290754685f5a05beb6e1f07cc292">wrench::ComputeServiceSubmitStandardJobAnswerMessage</a>
+, <a class="el" href="classwrench_1_1_compute_service_submit_compound_job_answer_message.html#aee0153094c821338c9ac3c8cbb12e10a">wrench::ComputeServiceSubmitCompoundJobAnswerMessage</a>
+, <a class="el" href="classwrench_1_1_compute_service_terminate_compound_job_answer_message.html#ad1776b77abc6e1a1ee189ae5d96451f6">wrench::ComputeServiceTerminateCompoundJobAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_compute_service_terminate_pilot_job_answer_message.html#afa2b6acd7eb6b7ad23470402ef2badf0">wrench::ComputeServiceTerminatePilotJobAnswerMessage</a>
-, <a class="el" href="classwrench_1_1_compute_service_terminate_standard_job_answer_message.html#a20d4cc317832380680745cc0989e66c1">wrench::ComputeServiceTerminateStandardJobAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_coordinate_lookup_answer_message.html#ad856d864ff7be2981b0aa5cc6aef15bb">wrench::CoordinateLookupAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_file_registry_remove_entry_answer_message.html#a5edfc1eaec9d8bc8ea7795bc4a114dd1">wrench::FileRegistryRemoveEntryAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_file_transfer_thread_notification_message.html#afb1ca0b5261fe0674ed9548589c8d204">wrench::FileTransferThreadNotificationMessage</a>
@@ -243,12 +257,6 @@ $(function() {
 , <a class="el" href="classwrench_1_1_storage_service_file_read_answer_message.html#a19bf68d23a61a4bd21ebd3dc48987e00">wrench::StorageServiceFileReadAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_storage_service_file_write_answer_message.html#ac9808808da262acae22aa726be7d0b9b">wrench::StorageServiceFileWriteAnswerMessage</a>
 , <a class="el" href="classwrench_1_1_virtualized_cluster_compute_service_migrate_v_m_answer_message.html#a76ec5453cbabea3e223fe080946c2423">wrench::VirtualizedClusterComputeServiceMigrateVMAnswerMessage</a>
-</li>
-<li>SUPPORTS_PILOT_JOBS
-: <a class="el" href="classwrench_1_1_compute_service_property.html#af0abab1e3bce4932c4482031f0c31ce8">wrench::ComputeServiceProperty</a>
-</li>
-<li>SUPPORTS_STANDARD_JOBS
-: <a class="el" href="classwrench_1_1_compute_service_property.html#a4e1b5e2e1effa86cfac0da608f112c14">wrench::ComputeServiceProperty</a>
 </li>
 <li>SUSPEND_VM_ANSWER_MESSAGE_PAYLOAD
 : <a class="el" href="classwrench_1_1_cloud_compute_service_message_payload.html#aa32a7bd0331f1919551ccd0efef42a25">wrench::CloudComputeServiceMessagePayload</a>

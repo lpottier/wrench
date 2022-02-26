@@ -142,12 +142,15 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a59f690fbc16d6fede6f4ffb922b523b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a59f690fbc16d6fede6f4ffb922b523b7">S4U_PendingCommunication</a> (std::string <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a9b33327c778cdb7cb43a7bb75454cf1e">mailbox_name</a>, <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a8724fc176568165de45e8e3007db0de5">OperationType</a> <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#ada3c577b4e190b2eaa1c10e62209cafd">operation_type</a>)</td></tr>
-<tr class="memdesc:a59f690fbc16d6fede6f4ffb922b523b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_s4_u___pending_communication.html#a59f690fbc16d6fede6f4ffb922b523b7">More...</a><br /></td></tr>
-<tr class="separator:a59f690fbc16d6fede6f4ffb922b523b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1beaa15f3dd3844c2d562c507d41e8e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a1beaa15f3dd3844c2d562c507d41e8e4">S4U_PendingCommunication</a> (simgrid::s4u::Mailbox *<a class="el" href="classwrench_1_1_s4_u___pending_communication.html#acd3d226fdb5e7c3f06432029dc5bb701">mailbox</a>, <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a8724fc176568165de45e8e3007db0de5">OperationType</a> <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#ada3c577b4e190b2eaa1c10e62209cafd">operation_type</a>)</td></tr>
+<tr class="memdesc:a1beaa15f3dd3844c2d562c507d41e8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_s4_u___pending_communication.html#a1beaa15f3dd3844c2d562c507d41e8e4">More...</a><br /></td></tr>
+<tr class="separator:a1beaa15f3dd3844c2d562c507d41e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50dec7ef82e3a95eb2961591b40c583"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#ae50dec7ef82e3a95eb2961591b40c583">wait</a> ()</td></tr>
 <tr class="memdesc:ae50dec7ef82e3a95eb2961591b40c583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the pending communication to complete.  <a href="classwrench_1_1_s4_u___pending_communication.html#ae50dec7ef82e3a95eb2961591b40c583">More...</a><br /></td></tr>
 <tr class="separator:ae50dec7ef82e3a95eb2961591b40c583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdba4deda93ec97b8a99533932ce560d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#acdba4deda93ec97b8a99533932ce560d">wait</a> (double timeout)</td></tr>
+<tr class="memdesc:acdba4deda93ec97b8a99533932ce560d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the pending communication to complete with a timeout.  <a href="classwrench_1_1_s4_u___pending_communication.html#acdba4deda93ec97b8a99533932ce560d">More...</a><br /></td></tr>
+<tr class="separator:acdba4deda93ec97b8a99533932ce560d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -164,10 +167,10 @@ Public Attributes</h2></td></tr>
 simgrid::s4u::CommPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a1a19cb294e5be0f790181f00daf3c62e">comm_ptr</a></td></tr>
 <tr class="memdesc:a1a19cb294e5be0f790181f00daf3c62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SimGrid communication handle. <br /></td></tr>
 <tr class="separator:a1a19cb294e5be0f790181f00daf3c62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b33327c778cdb7cb43a7bb75454cf1e"><td class="memItemLeft" align="right" valign="top"><a id="a9b33327c778cdb7cb43a7bb75454cf1e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a9b33327c778cdb7cb43a7bb75454cf1e">mailbox_name</a></td></tr>
-<tr class="memdesc:a9b33327c778cdb7cb43a7bb75454cf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mailbox name. <br /></td></tr>
-<tr class="separator:a9b33327c778cdb7cb43a7bb75454cf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3d226fdb5e7c3f06432029dc5bb701"><td class="memItemLeft" align="right" valign="top"><a id="acd3d226fdb5e7c3f06432029dc5bb701"></a>
+simgrid::s4u::Mailbox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#acd3d226fdb5e7c3f06432029dc5bb701">mailbox</a></td></tr>
+<tr class="memdesc:acd3d226fdb5e7c3f06432029dc5bb701"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mailbox. <br /></td></tr>
+<tr class="separator:acd3d226fdb5e7c3f06432029dc5bb701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3c577b4e190b2eaa1c10e62209cafd"><td class="memItemLeft" align="right" valign="top"><a id="ada3c577b4e190b2eaa1c10e62209cafd"></a>
 <a class="el" href="classwrench_1_1_s4_u___pending_communication.html#a8724fc176568165de45e8e3007db0de5">OperationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___pending_communication.html#ada3c577b4e190b2eaa1c10e62209cafd">operation_type</a></td></tr>
 <tr class="memdesc:ada3c577b4e190b2eaa1c10e62209cafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation type. <br /></td></tr>
@@ -180,8 +183,8 @@ std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html"
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a simple wrapper class around S4U asynchronous communication checking methods. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a59f690fbc16d6fede6f4ffb922b523b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59f690fbc16d6fede6f4ffb922b523b7">&#9670;&nbsp;</a></span>S4U_PendingCommunication()</h2>
+<a id="a1beaa15f3dd3844c2d562c507d41e8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1beaa15f3dd3844c2d562c507d41e8e4">&#9670;&nbsp;</a></span>S4U_PendingCommunication()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,8 +195,8 @@ std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html"
         <tr>
           <td class="memname">wrench::S4U_PendingCommunication::S4U_PendingCommunication </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>mailbox_name</em>, </td>
+          <td class="paramtype">simgrid::s4u::Mailbox *&#160;</td>
+          <td class="paramname"><em>mailbox</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -217,7 +220,7 @@ std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html"
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mailbox_name</td><td>the mailbox name </td></tr>
+    <tr><td class="paramname">mailbox</td><td>the mailbox </td></tr>
     <tr><td class="paramname">operation_type</td><td>the operation type </td></tr>
   </table>
   </dd>
@@ -227,7 +230,7 @@ std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html"
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae50dec7ef82e3a95eb2961591b40c583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae50dec7ef82e3a95eb2961591b40c583">&#9670;&nbsp;</a></span>wait()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50dec7ef82e3a95eb2961591b40c583">&#9670;&nbsp;</a></span>wait() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,6 +245,39 @@ std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html"
 </div><div class="memdoc">
 
 <p>Wait for the pending communication to complete. </p>
+<dl class="section return"><dt>Returns</dt><dd>A (unique pointer to a) simulation message</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::shared_ptr&lt;NetworkError&gt;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdba4deda93ec97b8a99533932ce560d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdba4deda93ec97b8a99533932ce560d">&#9670;&nbsp;</a></span>wait() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classwrench_1_1_simulation_message.html">SimulationMessage</a> &gt; wrench::S4U_PendingCommunication::wait </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for the pending communication to complete with a timeout. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>a timeout in seconds</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>A (unique pointer to a) simulation message</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">

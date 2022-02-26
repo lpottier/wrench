@@ -1,14 +1,21 @@
 var searchData=
 [
-  ['failurecause_586',['FailureCause',['../classwrench_1_1_failure_cause.html',1,'wrench']]],
-  ['fatalfailure_587',['FatalFailure',['../classwrench_1_1_fatal_failure.html',1,'wrench']]],
-  ['filealreadybeingcopied_588',['FileAlreadyBeingCopied',['../classwrench_1_1_file_already_being_copied.html',1,'wrench']]],
-  ['filecopycompletedevent_589',['FileCopyCompletedEvent',['../classwrench_1_1_file_copy_completed_event.html',1,'wrench']]],
-  ['filecopyfailedevent_590',['FileCopyFailedEvent',['../classwrench_1_1_file_copy_failed_event.html',1,'wrench']]],
-  ['filelocation_591',['FileLocation',['../classwrench_1_1_file_location.html',1,'wrench']]],
-  ['filenotfound_592',['FileNotFound',['../classwrench_1_1_file_not_found.html',1,'wrench']]],
-  ['fileregistryservice_593',['FileRegistryService',['../classwrench_1_1_file_registry_service.html',1,'wrench']]],
-  ['fileregistryservicemessagepayload_594',['FileRegistryServiceMessagePayload',['../classwrench_1_1_file_registry_service_message_payload.html',1,'wrench']]],
-  ['fileregistryserviceproperty_595',['FileRegistryServiceProperty',['../classwrench_1_1_file_registry_service_property.html',1,'wrench']]],
-  ['functionalitynotavailable_596',['FunctionalityNotAvailable',['../classwrench_1_1_functionality_not_available.html',1,'wrench']]]
+  ['failurecause_648',['FailureCause',['../classwrench_1_1_failure_cause.html',1,'wrench']]],
+  ['fatalfailure_649',['FatalFailure',['../classwrench_1_1_fatal_failure.html',1,'wrench']]],
+  ['filealreadybeingcopied_650',['FileAlreadyBeingCopied',['../classwrench_1_1_file_already_being_copied.html',1,'wrench']]],
+  ['filecopyaction_651',['FileCopyAction',['../classwrench_1_1_file_copy_action.html',1,'wrench']]],
+  ['filecopycompletedevent_652',['FileCopyCompletedEvent',['../classwrench_1_1_file_copy_completed_event.html',1,'wrench']]],
+  ['filecopyfailedevent_653',['FileCopyFailedEvent',['../classwrench_1_1_file_copy_failed_event.html',1,'wrench']]],
+  ['filedeleteaction_654',['FileDeleteAction',['../classwrench_1_1_file_delete_action.html',1,'wrench']]],
+  ['filelocation_655',['FileLocation',['../classwrench_1_1_file_location.html',1,'wrench']]],
+  ['filenotfound_656',['FileNotFound',['../classwrench_1_1_file_not_found.html',1,'wrench']]],
+  ['filereadaction_657',['FileReadAction',['../classwrench_1_1_file_read_action.html',1,'wrench']]],
+  ['fileregistryaction_658',['FileRegistryAction',['../classwrench_1_1_file_registry_action.html',1,'wrench']]],
+  ['fileregistryaddentryaction_659',['FileRegistryAddEntryAction',['../classwrench_1_1_file_registry_add_entry_action.html',1,'wrench']]],
+  ['fileregistrydeleteentryaction_660',['FileRegistryDeleteEntryAction',['../classwrench_1_1_file_registry_delete_entry_action.html',1,'wrench']]],
+  ['fileregistryservice_661',['FileRegistryService',['../classwrench_1_1_file_registry_service.html',1,'wrench']]],
+  ['fileregistryservicemessagepayload_662',['FileRegistryServiceMessagePayload',['../classwrench_1_1_file_registry_service_message_payload.html',1,'wrench']]],
+  ['fileregistryserviceproperty_663',['FileRegistryServiceProperty',['../classwrench_1_1_file_registry_service_property.html',1,'wrench']]],
+  ['filewriteaction_664',['FileWriteAction',['../classwrench_1_1_file_write_action.html',1,'wrench']]],
+  ['functionalitynotavailable_665',['FunctionalityNotAvailable',['../classwrench_1_1_functionality_not_available.html',1,'wrench']]]
 ];

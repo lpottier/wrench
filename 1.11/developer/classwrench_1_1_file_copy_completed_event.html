@@ -125,7 +125,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A "file copy has completed" <a class="el" href="classwrench_1_1_workflow_execution_event.html" title="A class to represent the various execution events that are relevant to the execution of a workflow.">WorkflowExecutionEvent</a>.  
+<p>A "file copy has completed" <a class="el" href="classwrench_1_1_execution_event.html" title="A class to represent the various execution events that are relevant to the execution of a workflow.">ExecutionEvent</a>.  
  <a href="classwrench_1_1_file_copy_completed_event.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_file_copy_completed_event_8h_source.html">FileCopyCompletedEvent.h</a>&gt;</code></p>
@@ -135,7 +135,7 @@ Inheritance diagram for wrench::FileCopyCompletedEvent:</div>
  <div class="center">
   <img src="classwrench_1_1_file_copy_completed_event.png" usemap="#wrench::FileCopyCompletedEvent_map" alt=""/>
   <map id="wrench::FileCopyCompletedEvent_map" name="wrench::FileCopyCompletedEvent_map">
-<area href="classwrench_1_1_workflow_execution_event.html" title="A class to represent the various execution events that are relevant to the execution of a workflow." alt="wrench::WorkflowExecutionEvent" shape="rect" coords="0,0,202,24"/>
+<area href="classwrench_1_1_execution_event.html" title="A class to represent the various execution events that are relevant to the execution of a workflow." alt="wrench::ExecutionEvent" shape="rect" coords="0,0,202,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -151,10 +151,10 @@ Public Attributes</h2></td></tr>
 std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_copy_completed_event.html#af42e32bee9a2a5b00d05184f5733b2cd">dst</a></td></tr>
 <tr class="memdesc:af42e32bee9a2a5b00d05184f5733b2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destination location. <br /></td></tr>
 <tr class="separator:af42e32bee9a2a5b00d05184f5733b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed62752926d496a4335ec83dd5b8b028"><td class="memItemLeft" align="right" valign="top"><a id="aed62752926d496a4335ec83dd5b8b028"></a>
-<a class="el" href="classwrench_1_1_workflow_file.html">WorkflowFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_copy_completed_event.html#aed62752926d496a4335ec83dd5b8b028">file</a></td></tr>
-<tr class="memdesc:aed62752926d496a4335ec83dd5b8b028"><td class="mdescLeft">&#160;</td><td class="mdescRight">The workflow file that has successfully been copied. <br /></td></tr>
-<tr class="separator:aed62752926d496a4335ec83dd5b8b028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c41f10fa936203e7cbe2149771a46b"><td class="memItemLeft" align="right" valign="top"><a id="af6c41f10fa936203e7cbe2149771a46b"></a>
+std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_copy_completed_event.html#af6c41f10fa936203e7cbe2149771a46b">file</a></td></tr>
+<tr class="memdesc:af6c41f10fa936203e7cbe2149771a46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The workflow file that has successfully been copied. <br /></td></tr>
+<tr class="separator:af6c41f10fa936203e7cbe2149771a46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa8fdb1783ea3c5531052dd8f825966"><td class="memItemLeft" align="right" valign="top"><a id="a2aa8fdb1783ea3c5531052dd8f825966"></a>
 std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_file_copy_completed_event.html#a2aa8fdb1783ea3c5531052dd8f825966">file_registry_service</a></td></tr>
 <tr class="memdesc:a2aa8fdb1783ea3c5531052dd8f825966"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file registry service that was supposed to be updated (or nullptr if none) <br /></td></tr>
@@ -169,7 +169,7 @@ std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">File
 <tr class="separator:ad5e17716ff3bd5c08904d34113a7a2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A "file copy has completed" <a class="el" href="classwrench_1_1_workflow_execution_event.html" title="A class to represent the various execution events that are relevant to the execution of a workflow.">WorkflowExecutionEvent</a>. </p>
+<div class="textblock"><p>A "file copy has completed" <a class="el" href="classwrench_1_1_execution_event.html" title="A class to represent the various execution events that are relevant to the execution of a workflow.">ExecutionEvent</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a26e4e9c1e8dca482c92a1cff6df46526"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26e4e9c1e8dca482c92a1cff6df46526">&#9670;&nbsp;</a></span>toString()</h2>

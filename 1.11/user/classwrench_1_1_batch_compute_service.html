@@ -124,7 +124,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A batch-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch queue.  
+<p>A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch_standard_and_pilot_jobs queue.  
  <a href="classwrench_1_1_batch_compute_service.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_batch_compute_service_8h_source.html">BatchComputeService.h</a>&gt;</code></p>
@@ -134,16 +134,25 @@ Inheritance diagram for wrench::BatchComputeService:</div>
  <div class="center">
   <img src="classwrench_1_1_batch_compute_service.png" usemap="#wrench::BatchComputeService_map" alt=""/>
   <map id="wrench::BatchComputeService_map" name="wrench::BatchComputeService_map">
-<area href="classwrench_1_1_compute_service.html" title="The compute service base class." alt="wrench::ComputeService" shape="rect" coords="0,112,185,136"/>
-<area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="0,56,185,80"/>
+<area href="classwrench_1_1_compute_service.html" title="The compute service base class." alt="wrench::ComputeService" shape="rect" coords="127,112,371,136"/>
+<area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="127,56,371,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11544f6fad77b499b63fc809c75d78f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a11544f6fad77b499b63fc809c75d78f4">BatchComputeService</a> (const std::string &amp;hostname, std::vector&lt; std::string &gt; compute_hosts, std::string scratch_space_mount_point, std::map&lt; std::string, std::string &gt; property_list={}, std::map&lt; std::string, double &gt; messagepayload_list={})</td></tr>
-<tr class="memdesc:a11544f6fad77b499b63fc809c75d78f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_compute_service.html#a11544f6fad77b499b63fc809c75d78f4">More...</a><br /></td></tr>
-<tr class="separator:a11544f6fad77b499b63fc809c75d78f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add580d500c6ac06788c3d72e3b989bca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#add580d500c6ac06788c3d72e3b989bca">BatchComputeService</a> (const std::string &amp;hostname, std::vector&lt; std::string &gt; compute_hosts, std::string scratch_space_mount_point, WRENCH_PROPERTY_COLLECTION_TYPE property_list={}, WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE messagepayload_list={})</td></tr>
+<tr class="memdesc:add580d500c6ac06788c3d72e3b989bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_batch_compute_service.html#add580d500c6ac06788c3d72e3b989bca">More...</a><br /></td></tr>
+<tr class="separator:add580d500c6ac06788c3d72e3b989bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1162f826bf064b9317b67c93e526ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a4d1162f826bf064b9317b67c93e526ef">supportsCompoundJobs</a> () override</td></tr>
+<tr class="memdesc:a4d1162f826bf064b9317b67c93e526ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports compound jobs.  <a href="classwrench_1_1_batch_compute_service.html#a4d1162f826bf064b9317b67c93e526ef">More...</a><br /></td></tr>
+<tr class="separator:a4d1162f826bf064b9317b67c93e526ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2bb0043524b2ab6bed055356bf144f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a0a2bb0043524b2ab6bed055356bf144f">supportsPilotJobs</a> () override</td></tr>
+<tr class="memdesc:a0a2bb0043524b2ab6bed055356bf144f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports pilot jobs.  <a href="classwrench_1_1_batch_compute_service.html#a0a2bb0043524b2ab6bed055356bf144f">More...</a><br /></td></tr>
+<tr class="separator:a0a2bb0043524b2ab6bed055356bf144f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c1817228159aafbc5c31adf8af5432"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_batch_compute_service.html#a97c1817228159aafbc5c31adf8af5432">supportsStandardJobs</a> () override</td></tr>
+<tr class="memdesc:a97c1817228159aafbc5c31adf8af5432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports standard jobs.  <a href="classwrench_1_1_batch_compute_service.html#a97c1817228159aafbc5c31adf8af5432">More...</a><br /></td></tr>
+<tr class="separator:a97c1817228159aafbc5c31adf8af5432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -158,11 +167,11 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="separator:abc4fe0bad59f544b4b34d0e7d4012d44 inherit pub_static_attribs_classwrench_1_1_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A batch-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch queue. </p>
+<div class="textblock"><p>A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch_standard_and_pilot_jobs queue. </p>
 <p>In the current implementation of this service, like for many of its real-world counterparts, memory_manager_service partitioning among jobs onq the same host is not handled. When multiple jobs share hosts, which can happen when jobs require only a few cores per host and can thus be co-located on the same hosts in a non-exclusive fashion, each job simply runs as if it had access to the full RAM of each compute host it is scheduled on. The simulation of these memory_manager_service contended scenarios is thus, for now, not realistic as there is no simulation of the effects of memory_manager_service sharing (e.g., swapping). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a11544f6fad77b499b63fc809c75d78f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11544f6fad77b499b63fc809c75d78f4">&#9670;&nbsp;</a></span>BatchComputeService()</h2>
+<a id="add580d500c6ac06788c3d72e3b989bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add580d500c6ac06788c3d72e3b989bca">&#9670;&nbsp;</a></span>BatchComputeService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,13 +197,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, std::string &gt;&#160;</td>
+          <td class="paramtype">WRENCH_PROPERTY_COLLECTION_TYPE&#160;</td>
           <td class="paramname"><em>property_list</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; std::string, double &gt;&#160;</td>
+          <td class="paramtype">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE&#160;</td>
           <td class="paramname"><em>messagepayload_list</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -211,16 +220,101 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
     <tr><td class="paramname">hostname</td><td>the hostname on which to start the service </td></tr>
     <tr><td class="paramname">compute_hosts</td><td>the list of names of the available compute hosts<ul>
 <li>the hosts must be homogeneous (speed, number of cores, and RAM size)</li>
-<li>all cores are usable by the batch service on each host</li>
-<li>all RAM is usable by the batch service on each host </li>
+<li>all cores are usable by the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> service on each host</li>
+<li>all RAM is usable by the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> service on each host </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">scratch_space_mount_point</td><td>the mount point of the scratch storage space for the service ("" means "no scratch space") </td></tr>
     <tr><td class="paramname">property_list</td><td>a property list that specifies <a class="el" href="classwrench_1_1_batch_compute_service_property.html" title="Configurable properties for a BatchComputeService.">BatchComputeServiceProperty</a> values ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list that specifies <a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch.">BatchComputeServiceMessagePayload</a> values ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">messagepayload_list</td><td>a message payload list that specifies <a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch_standard_and_pilot_jobs.">BatchComputeServiceMessagePayload</a> values ({} means "use all defaults") </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d1162f826bf064b9317b67c93e526ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1162f826bf064b9317b67c93e526ef">&#9670;&nbsp;</a></span>supportsCompoundJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::BatchComputeService::supportsCompoundJobs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the service supports compound jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="a0a2bb0043524b2ab6bed055356bf144f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2bb0043524b2ab6bed055356bf144f">&#9670;&nbsp;</a></span>supportsPilotJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::BatchComputeService::supportsPilotJobs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the service supports pilot jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="a97c1817228159aafbc5c31adf8af5432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c1817228159aafbc5c31adf8af5432">&#9670;&nbsp;</a></span>supportsStandardJobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::BatchComputeService::supportsStandardJobs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the service supports standard jobs. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
 
 </div>
 </div>

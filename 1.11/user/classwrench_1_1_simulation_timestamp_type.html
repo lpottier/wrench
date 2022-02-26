@@ -118,6 +118,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classwrench_1_1_simulation_timestamp_type-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">wrench::SimulationTimestampType Class Reference</div>  </div>
@@ -177,10 +178,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a368777b7c9babbf679725029135f5b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_timestamp_type.html#a7a368777b7c9babbf679725029135f5b">getDate</a> ()</td></tr>
 <tr class="memdesc:a7a368777b7c9babbf679725029135f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the date recorded for this timestamp.  <a href="classwrench_1_1_simulation_timestamp_type.html#a7a368777b7c9babbf679725029135f5b">More...</a><br /></td></tr>
 <tr class="separator:a7a368777b7c9babbf679725029135f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8bbc3714e2962ddbc210c60c05687cfd"><td class="memItemLeft" align="right" valign="top"><a id="a8bbc3714e2962ddbc210c60c05687cfd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_timestamp_type.html#a8bbc3714e2962ddbc210c60c05687cfd">date</a> = -0.1</td></tr>
+<tr class="memdesc:a8bbc3714e2962ddbc210c60c05687cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date. <br /></td></tr>
+<tr class="separator:a8bbc3714e2962ddbc210c60c05687cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File, Source, Whoami used to be hashed as key for unordered multimap for ongoing file operations. </p>
-<p>typedef std::tuple&lt;WorkflowFile *, FileLocation *, StorageService *&gt; File; </p><dl class="params"><dt>Parameters</dt><dd>
+<p>typedef std::tuple&lt;std::shared_ptr&lt;DataFile&gt;, std::shared_ptr&lt;FileLocation&gt; , std::shared_ptr&lt;StorageService&gt; &gt; File; </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>- tuple of three strings relating to File, Source and Whoami </td></tr>
   </table>

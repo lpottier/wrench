@@ -135,64 +135,37 @@ Inheritance diagram for wrench::SimulationMessage:</div>
  <div class="center">
   <img src="classwrench_1_1_simulation_message.png" usemap="#wrench::SimulationMessage_map" alt=""/>
   <map id="wrench::SimulationMessage_map" name="wrench::SimulationMessage_map">
-<area href="classwrench_1_1_host_state_change_detector_message.html" title="Top-level class for messages received/sent by a HostStateChangeDetector." alt="wrench::HostStateChangeDetectorMessage" shape="rect" coords="0,56,305,80"/>
-<area href="classwrench_1_1_job_manager_message.html" title="Top-level class for messages received/sent by a JobManager." alt="wrench::JobManagerMessage" shape="rect" coords="630,56,935,80"/>
-<area href="classwrench_1_1_service_message.html" title="Top-level class for messages received/sent by a Service." alt="wrench::ServiceMessage" shape="rect" coords="1260,56,1565,80"/>
-<area href="classwrench_1_1_service_termination_detector_message.html" title="Top-level class for messages received/sent by a ServiceTerminationDetector." alt="wrench::ServiceTerminationDetectorMessage" shape="rect" coords="1890,56,2195,80"/>
-<area href="classwrench_1_1_standard_job_executor_message.html" title="Top-level class for messages received/sent by a StandardJobExecutor." alt="wrench::StandardJobExecutorMessage" shape="rect" coords="2520,56,2825,80"/>
-<area href="classwrench_1_1_w_m_s_message.html" title="Top-level class for messages received/sent by a WMS." alt="wrench::WMSMessage" shape="rect" coords="3150,56,3455,80"/>
-<area href="classwrench_1_1_host_has_changed_speed_message.html" title="A message sent by the HostStateChangeDetector to notify some listener that a host has changed speed." alt="wrench::HostHasChangedSpeedMessage" shape="rect" coords="315,112,620,136"/>
-<area href="classwrench_1_1_host_has_turned_off_message.html" title="A message sent by the HostStateChangeDetector to notify some listener that a host has turned off." alt="wrench::HostHasTurnedOffMessage" shape="rect" coords="315,168,620,192"/>
-<area href="classwrench_1_1_host_has_turned_on_message.html" title="A message sent by the HostStateChangeDetector to notify some listener that a host has turned on." alt="wrench::HostHasTurnedOnMessage" shape="rect" coords="315,224,620,248"/>
-<area href="classwrench_1_1_job_manager_standard_job_done_message.html" title="A message sent by the JobManager to notify some submitter that a StandardJob has completed." alt="wrench::JobManagerStandardJobDoneMessage" shape="rect" coords="945,112,1250,136"/>
-<area href="classwrench_1_1_job_manager_standard_job_failed_message.html" title="A message sent by the JobManager to notify some submitter that a StandardJob has failed." alt="wrench::JobManagerStandardJobFailedMessage" shape="rect" coords="945,168,1250,192"/>
-<area href="classwrench_1_1_alarm_job_time_out_message.html" title="A message sent by an alarm when a job goes over its requested execution time." alt="wrench::AlarmJobTimeOutMessage" shape="rect" coords="1575,112,1880,136"/>
-<area href="classwrench_1_1_compute_service_message.html" title="Top-level class for messages received/sent by a ComputeService." alt="wrench::ComputeServiceMessage" shape="rect" coords="1575,168,1880,192"/>
-<area href="classwrench_1_1_file_registry_message.html" title="Top-level FileRegistryMessage class." alt="wrench::FileRegistryMessage" shape="rect" coords="1575,224,1880,248"/>
-<area href="classwrench_1_1_file_transfer_thread_message.html" title="Top-level class for messages received/sent by a DataCommunicationThread." alt="wrench::FileTransferThreadMessage" shape="rect" coords="1575,280,1880,304"/>
-<area href="classwrench_1_1_h_t_condor_central_manager_service_message.html" title="Top-level class for messages received/sent by a HTCondorCentralManagerService." alt="wrench::HTCondorCentralManagerServiceMessage" shape="rect" coords="1575,336,1880,360"/>
-<area href="classwrench_1_1_network_proximity_message.html" title="Top-level class for messages received/sent by a NetworkProximityService." alt="wrench::NetworkProximityMessage" shape="rect" coords="1575,392,1880,416"/>
-<area href="classwrench_1_1_service_daemon_stopped_message.html" title="A message sent by a Service to acknowledge a terminate request." alt="wrench::ServiceDaemonStoppedMessage" shape="rect" coords="1575,448,1880,472"/>
-<area href="classwrench_1_1_service_stop_daemon_message.html" title="A message sent to a Service to request for it to terminate." alt="wrench::ServiceStopDaemonMessage" shape="rect" coords="1575,504,1880,528"/>
-<area href="classwrench_1_1_service_t_t_l_expired_message.html" title="A message sent to a Service to notify it that its time-to-live has expired (which will cause the serv..." alt="wrench::ServiceTTLExpiredMessage" shape="rect" coords="1575,560,1880,584"/>
-<area href="classwrench_1_1_storage_service_message.html" title="Top-level class for messages received/sent by a StorageService." alt="wrench::StorageServiceMessage" shape="rect" coords="1575,616,1880,640"/>
-<area href="classwrench_1_1_service_has_crashed_message.html" title="A message sent by the ServiceTerminationDetector to notify some listener that the monitored service h..." alt="wrench::ServiceHasCrashedMessage" shape="rect" coords="2205,112,2510,136"/>
-<area href="classwrench_1_1_service_has_terminated_message.html" title="A message sent by the ServiceTerminationDetector to notify some listener that the monitored service h..." alt="wrench::ServiceHasTerminatedMessage" shape="rect" coords="2205,168,2510,192"/>
-<area href="classwrench_1_1_compute_thread_done_message.html" title="A message sent by a ComputeThread once it&#39;s done performing its computation." alt="wrench::ComputeThreadDoneMessage" shape="rect" coords="2835,112,3140,136"/>
-<area href="classwrench_1_1_standard_job_executor_done_message.html" title="A message sent by a StandardJobExecutor to notify that it has completed a StandardJob." alt="wrench::StandardJobExecutorDoneMessage" shape="rect" coords="2835,168,3140,192"/>
-<area href="classwrench_1_1_standard_job_executor_failed_message.html" title="A message sent by a StandardJobExecutor to notify that its StandardJob has failed." alt="wrench::StandardJobExecutorFailedMessage" shape="rect" coords="2835,224,3140,248"/>
-<area href="classwrench_1_1_workunit_executor_done_message.html" title="A message sent by a WorkunitExecutor to notify that it has completed a WorkUnit." alt="wrench::WorkunitExecutorDoneMessage" shape="rect" coords="2835,280,3140,304"/>
-<area href="classwrench_1_1_workunit_executor_failed_message.html" title="A message sent by a WorkunitExecutor to notify that its WorkUnit as failed." alt="wrench::WorkunitExecutorFailedMessage" shape="rect" coords="2835,336,3140,360"/>
-<area href="classwrench_1_1_alarm_w_m_s_deferred_start_message.html" title="Message sent by an alarm to a WMS to tell it that it can start executing its workflow." alt="wrench::AlarmWMSDeferredStartMessage" shape="rect" coords="3465,112,3770,136"/>
-<area href="classwrench_1_1_alarm_w_m_s_timer_message.html" title="Message sent when a timer set by a WMS goes off." alt="wrench::AlarmWMSTimerMessage" shape="rect" coords="3465,168,3770,192"/>
+<area href="classwrench_1_1_action_execution_service_message.html" title="Top-level class for messages received/sent by a ActionExecutionService." alt="wrench::ActionExecutionServiceMessage" shape="rect" coords="278,56,546,80"/>
+<area href="classwrench_1_1_action_executor_message.html" title="Top-level class for messages received/sent by an ActionExecutor." alt="wrench::ActionExecutorMessage" shape="rect" coords="278,112,546,136"/>
+<area href="classwrench_1_1_compute_thread_message.html" title="Top-level class for messages received/sent by an ComputeThread." alt="wrench::ComputeThreadMessage" shape="rect" coords="278,168,546,192"/>
+<area href="classwrench_1_1_execution_controller_message.html" title="Top-level class for messages received/sent by a ExecutionController." alt="wrench::ExecutionControllerMessage" shape="rect" coords="278,224,546,248"/>
+<area href="classwrench_1_1_host_state_change_detector_message.html" title="Top-level class for messages received/sent by a HostStateChangeDetector." alt="wrench::HostStateChangeDetectorMessage" shape="rect" coords="278,280,546,304"/>
+<area href="classwrench_1_1_job_manager_message.html" title="Top-level class for messages received/sent by a JobManager." alt="wrench::JobManagerMessage" shape="rect" coords="278,336,546,360"/>
+<area href="classwrench_1_1_service_message.html" title="Top-level class for messages received/sent by a Service." alt="wrench::ServiceMessage" shape="rect" coords="278,392,546,416"/>
+<area href="classwrench_1_1_service_termination_detector_message.html" title="Top-level class for messages received/sent by a ServiceTerminationDetector." alt="wrench::ServiceTerminationDetectorMessage" shape="rect" coords="278,448,546,472"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5fbc8bd2864ceb9cdb2dc70c6e916c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_message.html#af5fbc8bd2864ceb9cdb2dc70c6e916c6">SimulationMessage</a> (std::string <a class="el" href="classwrench_1_1_simulation_message.html#ab224f6dd8ec5ee2e7f65bfcdf2b8a86b">name</a>, double <a class="el" href="classwrench_1_1_simulation_message.html#a914f2732713f7c02898e66f05a7cb8a1">payload</a>)</td></tr>
-<tr class="memdesc:af5fbc8bd2864ceb9cdb2dc70c6e916c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_simulation_message.html#af5fbc8bd2864ceb9cdb2dc70c6e916c6">More...</a><br /></td></tr>
-<tr class="separator:af5fbc8bd2864ceb9cdb2dc70c6e916c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8fd3aec804d328f33a01b3c538f92d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_message.html#a9d8fd3aec804d328f33a01b3c538f92d">SimulationMessage</a> (double <a class="el" href="classwrench_1_1_simulation_message.html#a914f2732713f7c02898e66f05a7cb8a1">payload</a>)</td></tr>
+<tr class="memdesc:a9d8fd3aec804d328f33a01b3c538f92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_simulation_message.html#a9d8fd3aec804d328f33a01b3c538f92d">More...</a><br /></td></tr>
+<tr class="separator:a9d8fd3aec804d328f33a01b3c538f92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22bcfd675a4f9de8bb2a833f097bb484"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_message.html#a22bcfd675a4f9de8bb2a833f097bb484">getName</a> ()</td></tr>
 <tr class="memdesc:a22bcfd675a4f9de8bb2a833f097bb484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the message name.  <a href="classwrench_1_1_simulation_message.html#a22bcfd675a4f9de8bb2a833f097bb484">More...</a><br /></td></tr>
 <tr class="separator:a22bcfd675a4f9de8bb2a833f097bb484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab224f6dd8ec5ee2e7f65bfcdf2b8a86b"><td class="memItemLeft" align="right" valign="top"><a id="ab224f6dd8ec5ee2e7f65bfcdf2b8a86b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_message.html#ab224f6dd8ec5ee2e7f65bfcdf2b8a86b">name</a></td></tr>
-<tr class="memdesc:ab224f6dd8ec5ee2e7f65bfcdf2b8a86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message name. <br /></td></tr>
-<tr class="separator:ab224f6dd8ec5ee2e7f65bfcdf2b8a86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914f2732713f7c02898e66f05a7cb8a1"><td class="memItemLeft" align="right" valign="top"><a id="a914f2732713f7c02898e66f05a7cb8a1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_message.html#a914f2732713f7c02898e66f05a7cb8a1">payload</a></td></tr>
-<tr class="memdesc:a914f2732713f7c02898e66f05a7cb8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message size in bytes. <br /></td></tr>
+<tr class="memitem:a914f2732713f7c02898e66f05a7cb8a1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_message.html#a914f2732713f7c02898e66f05a7cb8a1">payload</a></td></tr>
+<tr class="memdesc:a914f2732713f7c02898e66f05a7cb8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message name.  <a href="classwrench_1_1_simulation_message.html#a914f2732713f7c02898e66f05a7cb8a1">More...</a><br /></td></tr>
 <tr class="separator:a914f2732713f7c02898e66f05a7cb8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Top-level class to describe a message communicated by processes in the simulation. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af5fbc8bd2864ceb9cdb2dc70c6e916c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5fbc8bd2864ceb9cdb2dc70c6e916c6">&#9670;&nbsp;</a></span>SimulationMessage()</h2>
+<a id="a9d8fd3aec804d328f33a01b3c538f92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8fd3aec804d328f33a01b3c538f92d">&#9670;&nbsp;</a></span>SimulationMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,19 +173,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="memname">wrench::SimulationMessage::SimulationMessage </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>payload</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>payload</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -254,6 +217,24 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 <p>Retrieve the message name. </p>
 <dl class="section return"><dt>Returns</dt><dd>the name </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a914f2732713f7c02898e66f05a7cb8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914f2732713f7c02898e66f05a7cb8a1">&#9670;&nbsp;</a></span>payload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double wrench::SimulationMessage::payload</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The message name. </p>
+<p>The message size in bytes </p>
 
 </div>
 </div>
