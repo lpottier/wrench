@@ -414,7 +414,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aa582021cddc376956d3b5d678291c4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Process a VM shutdown request  <a href="classwrench_1_1_cloud_compute_service.html#aa582021cddc376956d3b5d678291c4f1">More...</a><br /></td></tr>
 <tr class="separator:aa582021cddc376956d3b5d678291c4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72d11cec35477dc376b5f0456708f2e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#a72d11cec35477dc376b5f0456708f2e4">processStartVM</a> (simgrid::s4u::Mailbox *answer_mailbox, const std::string &amp;vm_name, const std::string &amp;pm_name)</td></tr>
-<tr class="memdesc:a72d11cec35477dc376b5f0456708f2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Process a VM start request by startibnng a VM on a host (using best fit for RAM first, and then for cores)  <a href="classwrench_1_1_cloud_compute_service.html#a72d11cec35477dc376b5f0456708f2e4">More...</a><br /></td></tr>
+<tr class="memdesc:a72d11cec35477dc376b5f0456708f2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Process a VM start request by starting a VM on a host (using best fit for RAM first, and then for cores)  <a href="classwrench_1_1_cloud_compute_service.html#a72d11cec35477dc376b5f0456708f2e4">More...</a><br /></td></tr>
 <tr class="separator:a72d11cec35477dc376b5f0456708f2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa675c739258629c16ddb3fd3b6ad7069"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_cloud_compute_service.html#aa675c739258629c16ddb3fd3b6ad7069">processSuspendVM</a> (simgrid::s4u::Mailbox *answer_mailbox, const std::string &amp;vm_name)</td></tr>
 <tr class="memdesc:aa675c739258629c16ddb3fd3b6ad7069"><td class="mdescLeft">&#160;</td><td class="mdescRight">: Process a VM suspend request  <a href="classwrench_1_1_cloud_compute_service.html#aa675c739258629c16ddb3fd3b6ad7069">More...</a><br /></td></tr>
@@ -1591,7 +1591,7 @@ static std::unordered_map&lt; aid_t, simgrid::s4u::Mailbox * &gt;&#160;</td><td 
 </table>
 </div><div class="memdoc">
 
-<p>: Process a VM start request by startibnng a VM on a host (using best fit for RAM first, and then for cores) </p>
+<p>: Process a VM start request by starting a VM on a host (using best fit for RAM first, and then for cores) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">answer_mailbox</td><td>the mailbox to which the answer message should be sent </td></tr>
