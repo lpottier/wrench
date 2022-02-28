@@ -142,7 +142,7 @@ Inheritance diagram for wrench::StorageService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3670e4f065a732e8430114d332eef7f3"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a3670e4f065a732e8430114d332eef7f3">getFreeSpace</a> ()</td></tr>
+<tr class="memitem:a3670e4f065a732e8430114d332eef7f3"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a3670e4f065a732e8430114d332eef7f3">getFreeSpace</a> ()</td></tr>
 <tr class="memdesc:a3670e4f065a732e8430114d332eef7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously asks the storage service for its capacity at all its mount points.  <a href="classwrench_1_1_storage_service.html#a3670e4f065a732e8430114d332eef7f3">More...</a><br /></td></tr>
 <tr class="separator:a3670e4f065a732e8430114d332eef7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba4d10739c26dbf126c85ec4ef777c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a9ba4d10739c26dbf126c85ec4ef777c5">getMountPoint</a> ()</td></tr>
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af04773f6114046d229bb1c118dde74cb"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#af04773f6114046d229bb1c118dde74cb">getMountPoints</a> ()</td></tr>
 <tr class="memdesc:af04773f6114046d229bb1c118dde74cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the set of mount points.  <a href="classwrench_1_1_storage_service.html#af04773f6114046d229bb1c118dde74cb">More...</a><br /></td></tr>
 <tr class="separator:af04773f6114046d229bb1c118dde74cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b3bede77f3e9a9384f882816adc4648"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a9b3bede77f3e9a9384f882816adc4648">getTotalSpace</a> ()</td></tr>
+<tr class="memitem:a9b3bede77f3e9a9384f882816adc4648"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#a9b3bede77f3e9a9384f882816adc4648">getTotalSpace</a> ()</td></tr>
 <tr class="memdesc:a9b3bede77f3e9a9384f882816adc4648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total static capacity of the storage service (in zero simulation time)  <a href="classwrench_1_1_storage_service.html#a9b3bede77f3e9a9384f882816adc4648">More...</a><br /></td></tr>
 <tr class="separator:a9b3bede77f3e9a9384f882816adc4648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa491df0b08aecaf5b5e7d37cc99ad3fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_storage_service.html#aa491df0b08aecaf5b5e7d37cc99ad3fd">hasMountPoint</a> (std::string mp)</td></tr>
@@ -346,9 +346,6 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::map&lt; std::string, double &gt; wrench::StorageService::getFreeSpace </td>
@@ -357,11 +354,6 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Synchronously asks the storage service for its capacity at all its mount points. </p>
@@ -421,9 +413,6 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::map&lt; std::string, double &gt; wrench::StorageService::getTotalSpace </td>
@@ -432,11 +421,6 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the total static capacity of the storage service (in zero simulation time) </p>

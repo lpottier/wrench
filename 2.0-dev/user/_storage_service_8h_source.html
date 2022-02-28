@@ -153,9 +153,9 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> stop() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> std::map&lt;std::string, double&gt; getFreeSpace();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::map&lt;std::string, double&gt; getFreeSpace();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> std::map&lt;std::string, double&gt; getTotalSpace();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::map&lt;std::string, double&gt; getTotalSpace();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::string getMountPoint();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::set&lt;std::string&gt; getMountPoints();</div>
@@ -164,7 +164,7 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> lookupFile(std::shared_ptr&lt;DataFile&gt;file, std::shared_ptr&lt;FileLocation&gt; location);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> deleteFile(std::shared_ptr&lt;DataFile&gt;file, std::shared_ptr&lt;FileLocation&gt; location,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                std::shared_ptr&lt;FileRegistryService&gt; file_registry_service = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    std::shared_ptr&lt;FileRegistryService&gt; file_registry_service = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> readFile(std::shared_ptr&lt;DataFile&gt;file, std::shared_ptr&lt;FileLocation&gt; location);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> readFile(std::shared_ptr&lt;DataFile&gt;file, std::shared_ptr&lt;FileLocation&gt; location, <span class="keywordtype">double</span> num_bytes);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> writeFile(std::shared_ptr&lt;DataFile&gt;file, std::shared_ptr&lt;FileLocation&gt; location);</div>
