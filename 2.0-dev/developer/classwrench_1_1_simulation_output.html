@@ -734,6 +734,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file, in the WfFormat format which is defined at: <a href="https://wfcommons.org/format">https://wfcommons.org/format</a>. </p>
+<p>Note that in the output JSON, the machines::cpu::speed is give as a GHz clock rate while in WRENCH core speeds are in Flop/sec. The GHz clock rate is computed by dividing the flop rate by 10^9 (so it's not really a clock rate).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">workflow</td><td>a pointer to the workflow </td></tr>
