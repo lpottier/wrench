@@ -135,7 +135,7 @@ Prerequisites</h1>
 <h2><a class="anchor" id="install-prerequisites-dependencies"></a>
 Required Dependencies</h2>
 <ul>
-<li><a href="https://simgrid.org/">SimGrid</a> &ndash; version 3.29</li>
+<li><a href="https://simgrid.org/">SimGrid</a> &ndash; version 3.30</li>
 <li><a href="http://pugixml.org/">PugiXML</a> &ndash; version 1.8 or higher</li>
 <li><a href="https://github.com/nlohmann/json">JSON for Modern C++</a> &ndash; version 3.9.0 or higher</li>
 </ul>
@@ -145,14 +145,14 @@ Optional Dependencies</h2>
 <ul>
 <li><a href="https://github.com/google/googletest">Google Test</a> &ndash; version 1.8 or higher (only required for running tests)</li>
 <li><a href="http://www.doxygen.org">Doxygen</a> &ndash; version 1.8 or higher (only required for generating documentation)</li>
-<li><a href="https://gitlab.inria.fr/batsim/batsched">Batsched</a> &ndash; only needed for realistic simulation of compute resources managed by production batch schedulers</li>
+<li><a href="https://gitlab.inria.fr/batsim/batsched">Batsched</a> &ndash; version 1.4 - useful for expanded batch-scheduled resource simulation capabilities</li>
 </ul>
 <h1><a class="anchor" id="install-source"></a>
 Source Install</h1>
 <h2><a class="anchor" id="install-source-build"></a>
 Building WRENCH</h2>
 <p>You can download the <code>wrench-2.0-dev.tar.gz</code> archive from the <a href="https://github.com/wrench-project/wrench/releases">GitHub releases</a> page. Once you have installed dependencies (see above), you can install WRENCH as follows:</p>
-<div class="fragment"> <div class="line">tar xf wrench-2.0-dev.tar.gz</div> <div class="line">cd wrench-2.0-dev</div> <div class="line">cmake .</div> <div class="line">make -j8</div> <div class="line">make install # try "sudo make install" if you do not have write privileges</div> </div><p>If you want to see actual compiler and linker invocations, add VERBOSE=1 to the compilation command:</p>
+<div class="fragment"> <div class="line">tar xf wrench-2.0-dev.tar.gz</div> <div class="line">cd wrench-2.0-dev</div> <div class="line">mkdir build</div> <div class="line">cd build</div> <div class="line">cmake ..</div> <div class="line">make -j8</div> <div class="line">make install # try "sudo make install" if you do not have write privileges</div> </div><p>If you want to see actual compiler and linker invocations, add <code>VERBOSE=1</code> to the compilation command:</p>
 <div class="fragment"><div class="line">make -j8 VERBOSE=1</div>
 </div><!-- fragment --><p>To enable the use of Batsched (provided you have installed that package, see above): </p><div class="fragment"><div class="line">cmake -DENABLE_BATSCHED=on .</div>
 </div><!-- fragment --><p>If you want to stay on the bleeding edge, you should get the latest git version, and recompile it as you would do for an official archive:</p>
@@ -160,9 +160,14 @@ Building WRENCH</h2>
 </div><!-- fragment --><h2><a class="anchor" id="install-unit-tests"></a>
 Compiling and running unit tests</h2>
 <p>Building and running the unit tests, which requires Google Test, is done as:</p>
-<div class="fragment"><div class="line">make -j8 unit_tests      </div>
+<div class="fragment"><div class="line">make -j8 unit_tests</div>
 <div class="line">./unit_tests</div>
-</div><!-- fragment --><h2><a class="anchor" id="install-troubleshooting"></a>
+</div><!-- fragment --><h2><a class="anchor" id="install-examples"></a>
+Compiling and running examples</h2>
+<p>Building the examples is done as:</p>
+<div class="fragment"><div class="line">make -j8 examples</div>
+</div><!-- fragment --><p>All binaries for the examples are then created in subdictories of <code>build/examples/</code></p>
+<h2><a class="anchor" id="install-troubleshooting"></a>
 Installation Troubleshooting</h2>
 <h4>Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE)</h4>
 <ul>
@@ -185,7 +190,7 @@ Docker Containers</h1>
 <div class="fragment"><div class="line">docker pull wrenchproject/wrench </div>
 <div class="line"># or</div>
 <div class="line">docker run --rm -it wrenchproject/wrench /bin/bash</div>
-</div><!-- fragment --><p>The <code>unstable</code> tag provides a container with the current code in the GitHub's <code>master</code> branch:</p>
+</div><!-- fragment --><p>The <code>unstable</code> tag provides a container with the (almost) current code in the GitHub's <code>master</code> branch:</p>
 <div class="fragment"><div class="line">docker pull wrenchproject/wrench:unstable</div>
 <div class="line"># or</div>
 <div class="line">docker run --rm -it wrenchproject/wrench:unstable /bin/bash</div>
