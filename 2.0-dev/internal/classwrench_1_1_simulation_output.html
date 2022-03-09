@@ -219,7 +219,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a527f78220f37ddc53425431c693c1ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> execution history for each task to a file, formatted as a JSON array.  <a href="classwrench_1_1_simulation_output.html#a527f78220f37ddc53425431c693c1ed2">More...</a><br /></td></tr>
 <tr class="separator:a527f78220f37ddc53425431c693c1ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a8d3ecaef4a834eef1642b145c2feb4f2">dumpWorkflowGraphJSON</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow.html">Workflow</a> &gt; workflow, std::string file_path, bool writing_file=true)</td></tr>
-<tr class="memdesc:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file, in the WfFormat format which is defined at: <a href="https://wfcommons.org/format">https://wfcommons.org/format</a>.  <a href="classwrench_1_1_simulation_output.html#a8d3ecaef4a834eef1642b145c2feb4f2">More...</a><br /></td></tr>
+<tr class="memdesc:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file.  <a href="classwrench_1_1_simulation_output.html#a8d3ecaef4a834eef1642b145c2feb4f2">More...</a><br /></td></tr>
 <tr class="separator:a8d3ecaef4a834eef1642b145c2feb4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6fa75fc1a64bb16b2a20649ffcaee4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_simulation_output.html#a2c6fa75fc1a64bb16b2a20649ffcaee4">enableBandwidthTimestamps</a> (bool enabled)</td></tr>
 <tr class="memdesc:a2c6fa75fc1a64bb16b2a20649ffcaee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Disable the insertion of link-usage-related timestamps in the simulation output (enabled by default)  <a href="classwrench_1_1_simulation_output.html#a2c6fa75fc1a64bb16b2a20649ffcaee4">More...</a><br /></td></tr>
@@ -1442,7 +1442,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Writes a JSON file containing disk operation information as a JSON array. </p>
-<p>&gt;&gt;&gt;&gt;NOTE&lt;&lt;&lt;&lt; The timestamps the JSON is generated from are disabled by default. Enable them with <a class="el" href="classwrench_1_1_simulation_output.html#a8036ce1d66c704673043463faaafaf52" title="Enable or Disable the insertion of disk-related timestamps in the simulation output (enabled by defau...">SimulationOutput::enableDiskTimestamps()</a> to use.</p>
+<p>&gt;&gt;&gt;&gt;&gt;NOTE&lt;&lt;&lt;&lt;&lt; The timestamps the JSON is generated from are disabled by default. Enable them with <a class="el" href="classwrench_1_1_simulation_output.html#a8036ce1d66c704673043463faaafaf52" title="Enable or Disable the insertion of disk-related timestamps in the simulation output (enabled by defau...">SimulationOutput::enableDiskTimestamps()</a> to use.</p>
 <p>The JSON array has the following format:</p>
 <pre>
 {
@@ -1974,9 +1974,35 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file, in the WfFormat format which is defined at: <a href="https://wfcommons.org/format">https://wfcommons.org/format</a>. </p>
-<p>Note that in the output JSON, the machines::cpu::speed is give as a GHz clock rate while in WRENCH core speeds are in Flop/sec. The GHz clock rate is computed by dividing the flop rate by 10^9 (so it's not really a clock rate).</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Writes a JSON graph representation of the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a> to a file. </p>
+<p>A node is added for each <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> and <a class="el" href="classwrench_1_1_data_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">DataFile</a>. A <a class="el" href="classwrench_1_1_workflow_task.html" title="A computational task in a Workflow.">WorkflowTask</a> will have the type "task" and a <a class="el" href="classwrench_1_1_data_file.html" title="A data file used/produced by a WorkflowTask in a Workflow.">DataFile</a> will have the type "file". A directed link is added for each dependency in the <a class="el" href="classwrench_1_1_workflow.html" title="A workflow (to be executed by a WMS)">Workflow</a>.</p>
+<pre>
+{
+     "workflow_graph": {
+         vertices: [
+             {
+                 type: &lt;"task"&gt;,
+                 id: &lt;string&gt;,
+                 flops: &lt;double&gt;,
+                 min_cores: &lt;unsigned_long&gt;,
+                 max_cores: &lt;unsigned_long&gt;,
+                 memory_manager_service: &lt;double&gt;,
+             },
+             {
+                 type: &lt;"file"&gt;,
+                 id: &lt;string&gt;,
+                 size: &lt;double&gt;
+             }, . . .
+         ],
+         edges: [
+             {
+                 source: &lt;string&gt;,
+                 target: &lt;string&gt;
+             }, . . .
+         ]
+     }
+ }
+ </pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">workflow</td><td>a pointer to the workflow </td></tr>
     <tr><td class="paramname">file_path</td><td>the path to write the file </td></tr>
