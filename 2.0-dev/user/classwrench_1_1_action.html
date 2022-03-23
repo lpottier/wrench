@@ -122,7 +122,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classwrench_1_1_action-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">wrench::Action Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -221,12 +220,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f0f1d5361fcafbb488e76f41715122e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#a4f0f1d5361fcafbb488e76f41715122e">setPriority</a> (double priority)</td></tr>
 <tr class="memdesc:a4f0f1d5361fcafbb488e76f41715122e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action's priority.  <a href="classwrench_1_1_action.html#a4f0f1d5361fcafbb488e76f41715122e">More...</a><br /></td></tr>
 <tr class="separator:a4f0f1d5361fcafbb488e76f41715122e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b62fd49fa77b8cb354d894ccda453fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#a5b62fd49fa77b8cb354d894ccda453fb">setSimulateComputationAsSleep</a> (bool <a class="el" href="classwrench_1_1_action.html#a0e7d91cb4353e3df27680b7186128158">simulate_computation_as_sleep</a>)</td></tr>
-<tr class="memdesc:a5b62fd49fa77b8cb354d894ccda453fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether simulation should be simulated as sleep (default = false)  <a href="classwrench_1_1_action.html#a5b62fd49fa77b8cb354d894ccda453fb">More...</a><br /></td></tr>
-<tr class="separator:a5b62fd49fa77b8cb354d894ccda453fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69121b38c1808d479242047fab5fea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#ad69121b38c1808d479242047fab5fea0">setThreadCreationOverhead</a> (double overhead_in_seconds)</td></tr>
-<tr class="memdesc:ad69121b38c1808d479242047fab5fea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the thread creation overhead (default = zero)  <a href="classwrench_1_1_action.html#ad69121b38c1808d479242047fab5fea0">More...</a><br /></td></tr>
-<tr class="separator:ad69121b38c1808d479242047fab5fea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0316297847e6a8bba2583ef464f7272"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#ae0316297847e6a8bba2583ef464f7272">usesScratch</a> () const</td></tr>
 <tr class="memdesc:ae0316297847e6a8bba2583ef464f7272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the action uses scratch.  <a href="classwrench_1_1_action.html#ae0316297847e6a8bba2583ef464f7272">More...</a><br /></td></tr>
 <tr class="separator:ae0316297847e6a8bba2583ef464f7272"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,17 +272,6 @@ Protected Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#a0772b660fc9fa7d2318b0138947dab07">updateState</a> ()</td></tr>
 <tr class="memdesc:a0772b660fc9fa7d2318b0138947dab07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the action's state. <br /></td></tr>
 <tr class="separator:a0772b660fc9fa7d2318b0138947dab07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0e7d91cb4353e3df27680b7186128158"><td class="memItemLeft" align="right" valign="top"><a id="a0e7d91cb4353e3df27680b7186128158"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#a0e7d91cb4353e3df27680b7186128158">simulate_computation_as_sleep</a></td></tr>
-<tr class="memdesc:a0e7d91cb4353e3df27680b7186128158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to simulate the computation as sleep. <br /></td></tr>
-<tr class="separator:a0e7d91cb4353e3df27680b7186128158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7038ac15d4bcf40d07ea6e40bc688d5b"><td class="memItemLeft" align="right" valign="top"><a id="a7038ac15d4bcf40d07ea6e40bc688d5b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action.html#a7038ac15d4bcf40d07ea6e40bc688d5b">thread_creation_overhead</a></td></tr>
-<tr class="memdesc:a7038ac15d4bcf40d07ea6e40bc688d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread creation overhead in seconds. <br /></td></tr>
-<tr class="separator:a7038ac15d4bcf40d07ea6e40bc688d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class that implements the concept of an action. </p>
@@ -1017,32 +999,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a5b62fd49fa77b8cb354d894ccda453fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b62fd49fa77b8cb354d894ccda453fb">&#9670;&nbsp;</a></span>setSimulateComputationAsSleep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wrench::Action::setSimulateComputationAsSleep </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>simulate_computation_as_sleep</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set whether simulation should be simulated as sleep (default = false) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">simulate_computation_as_sleep</td><td>true or false </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a28fdb091bf63b54bd01b892bd0843982"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28fdb091bf63b54bd01b892bd0843982">&#9670;&nbsp;</a></span>setStartDate()</h2>
 
@@ -1105,32 +1061,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">new_state</td><td>the new state </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad69121b38c1808d479242047fab5fea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad69121b38c1808d479242047fab5fea0">&#9670;&nbsp;</a></span>setThreadCreationOverhead()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wrench::Action::setThreadCreationOverhead </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>overhead_in_seconds</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the thread creation overhead (default = zero) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">overhead_in_seconds</td><td>overhead in seconds </td></tr>
   </table>
   </dd>
 </dl>

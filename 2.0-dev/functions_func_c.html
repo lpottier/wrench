@@ -124,7 +124,6 @@ $(function() {
 <li>cleanup()
 : <a class="el" href="classwrench_1_1_action_executor.html#aa75a757b32e67015fd5ef3310a2b7ec6">wrench::ActionExecutor</a>
 , <a class="el" href="classwrench_1_1_bare_metal_compute_service.html#a6967be59e526ead29519847dcb21c160">wrench::BareMetalComputeService</a>
-, <a class="el" href="classwrench_1_1_compute_thread.html#aae6ca8e1ef22282405d02edd026059c7">wrench::ComputeThread</a>
 , <a class="el" href="classwrench_1_1_file_transfer_thread.html#a296e47665620ea1d60c58275f787491a">wrench::FileTransferThread</a>
 , <a class="el" href="classwrench_1_1_s4_u___daemon.html#ab6fe4db53ea5c0a934b507b146c504d1">wrench::S4U_Daemon</a>
 , <a class="el" href="classwrench_1_1_simple_storage_service.html#ae0ba4c5a15170331c65eba4e154c7943">wrench::SimpleStorageService</a>
@@ -190,9 +189,15 @@ $(function() {
 <li>CompoundJob()
 : <a class="el" href="classwrench_1_1_compound_job.html#a13fae8cbc8c58c7ad49df5aa1abe7586">wrench::CompoundJob</a>
 </li>
+<li>ComputationHasDied()
+: <a class="el" href="classwrench_1_1_computation_has_died.html#aad79e5239f76b0c49ce8bceb47a4e3bd">wrench::ComputationHasDied</a>
+</li>
 <li>compute()
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#a3be8d3823b30b2b7ebb27771a8baa0cd">wrench::S4U_Simulation</a>
 , <a class="el" href="classwrench_1_1_simulation.html#a26092a37ea422703f0880748844cf820">wrench::Simulation</a>
+</li>
+<li>compute_multi_threaded()
+: <a class="el" href="classwrench_1_1_s4_u___simulation.html#a54ad2f4b3cb19bf67d5ab41be109d6ec">wrench::S4U_Simulation</a>
 </li>
 <li>ComputeAction()
 : <a class="el" href="classwrench_1_1_compute_action.html#a712c18a444302cd7421f6c34cdb487cd">wrench::ComputeAction</a>
@@ -248,18 +253,6 @@ $(function() {
 <li>ComputeServiceTerminatePilotJobRequestMessage()
 : <a class="el" href="classwrench_1_1_compute_service_terminate_pilot_job_request_message.html#a0391071e1c6b323b1674e424667d8185">wrench::ComputeServiceTerminatePilotJobRequestMessage</a>
 </li>
-<li>ComputeThread()
-: <a class="el" href="classwrench_1_1_compute_thread.html#a1ba43fe30f122a6fa0b3e220856636f2">wrench::ComputeThread</a>
-</li>
-<li>ComputeThreadDoneMessage()
-: <a class="el" href="classwrench_1_1_compute_thread_done_message.html#a4530b9e35cfc117e37ef9e4f25aa15e1">wrench::ComputeThreadDoneMessage</a>
-</li>
-<li>ComputeThreadHasDied()
-: <a class="el" href="classwrench_1_1_compute_thread_has_died.html#aae50c72393efaaad0d409ca552142e98">wrench::ComputeThreadHasDied</a>
-</li>
-<li>ComputeThreadMessage()
-: <a class="el" href="classwrench_1_1_compute_thread_message.html#a08265668fcb6ca710d5396d72e8c5651">wrench::ComputeThreadMessage</a>
-</li>
 <li>computeZeroFlop()
 : <a class="el" href="classwrench_1_1_s4_u___simulation.html#a5c4aa7aa025722d5f5b8bae6338066f0">wrench::S4U_Simulation</a>
 </li>
@@ -297,7 +290,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_logical_file_system.html#a1b8832fbedba81b1df215c41f5fc7923">wrench::LogicalFileSystem</a>
 </li>
 <li>createEnergyMeter()
-: <a class="el" href="classwrench_1_1_execution_controller.html#a939b60d329e7181d7874da7a410ea7a8">wrench::ExecutionController</a>
+: <a class="el" href="classwrench_1_1_execution_controller.html#afcca39456b34adf1e364c7d663b8257f">wrench::ExecutionController</a>
 </li>
 <li>createExecutableWorkflowFromJSON()
 : <a class="el" href="classwrench_1_1_wf_commons_workflow_parser.html#a8be7b6fb50b03148c73da9190680b836">wrench::WfCommonsWorkflowParser</a>
@@ -321,7 +314,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_simulation.html#a097bd998f4f43f8ce859ac864a463e07">wrench::Simulation</a>
 </li>
 <li>createStandardJob()
-: <a class="el" href="classwrench_1_1_job_manager.html#affbf92681043af8a2602876215d8485e">wrench::JobManager</a>
+: <a class="el" href="classwrench_1_1_job_manager.html#afc8d5eaeddc64b6d765146f870a8b909">wrench::JobManager</a>
 </li>
 <li>createVM()
 : <a class="el" href="classwrench_1_1_cloud_compute_service.html#ab1c537fb8cc361afbbec1797f8eddaff">wrench::CloudComputeService</a>
@@ -333,7 +326,7 @@ $(function() {
 : <a class="el" href="classwrench_1_1_wf_commons_workflow_parser.html#ae4192c93cf65a2cbe5a25da58c4f9068">wrench::WfCommonsWorkflowParser</a>
 </li>
 <li>CUSTOM()
-: <a class="el" href="classwrench_1_1_parallel_model.html#ac21a98fa14693e5425a5ce5121636498">wrench::ParallelModel</a>
+: <a class="el" href="classwrench_1_1_parallel_model.html#a64b79851d7feecd0b4ea9d4db2d81836">wrench::ParallelModel</a>
 </li>
 <li>CustomAction()
 : <a class="el" href="classwrench_1_1_custom_action.html#a4eba710217017bce854c107d824fd1ec">wrench::CustomAction</a>

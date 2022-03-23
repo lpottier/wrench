@@ -142,9 +142,9 @@ Inheritance diagram for wrench::ActionExecutor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5b83600ae202087b3c1a0942b469d24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#ab5b83600ae202087b3c1a0942b469d24">ActionExecutor</a> (std::string <a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, unsigned long num_cores, double ram_footprint, simgrid::s4u::Mailbox *callback_mailbox, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; action, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action_execution_service.html">ActionExecutionService</a> &gt; action_execution_service)</td></tr>
-<tr class="memdesc:ab5b83600ae202087b3c1a0942b469d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_action_executor.html#ab5b83600ae202087b3c1a0942b469d24">More...</a><br /></td></tr>
-<tr class="separator:ab5b83600ae202087b3c1a0942b469d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6f1bd13056b57e873edd552b0dcc96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#a4e6f1bd13056b57e873edd552b0dcc96">ActionExecutor</a> (std::string <a class="el" href="classwrench_1_1_s4_u___daemon.html#a52bc0b9a6cd248310749dac086819f00">hostname</a>, unsigned long num_cores, double ram_footprint, double thread_creation_overhead, bool simulate_computation_as_sleep, simgrid::s4u::Mailbox *callback_mailbox, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; action, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action_execution_service.html">ActionExecutionService</a> &gt; action_execution_service)</td></tr>
+<tr class="memdesc:a4e6f1bd13056b57e873edd552b0dcc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classwrench_1_1_action_executor.html#a4e6f1bd13056b57e873edd552b0dcc96">More...</a><br /></td></tr>
+<tr class="separator:a4e6f1bd13056b57e873edd552b0dcc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa75a757b32e67015fd5ef3310a2b7ec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#aa75a757b32e67015fd5ef3310a2b7ec6">cleanup</a> (bool has_returned_from_main, int return_value) override</td></tr>
 <tr class="memdesc:aa75a757b32e67015fd5ef3310a2b7ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup method that implements the cleanup basics.  <a href="classwrench_1_1_action_executor.html#aa75a757b32e67015fd5ef3310a2b7ec6">More...</a><br /></td></tr>
 <tr class="separator:aa75a757b32e67015fd5ef3310a2b7ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +160,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac55c51ca2948e6f6a4bd0ea5e646818e"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#ac55c51ca2948e6f6a4bd0ea5e646818e">getNumCoresAllocated</a> () const</td></tr>
 <tr class="memdesc:ac55c51ca2948e6f6a4bd0ea5e646818e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the action executor's allocated nuber of cores.  <a href="classwrench_1_1_action_executor.html#ac55c51ca2948e6f6a4bd0ea5e646818e">More...</a><br /></td></tr>
 <tr class="separator:ac55c51ca2948e6f6a4bd0ea5e646818e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1d58f5f6fabf9886ee28e34552d01b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#a5a1d58f5f6fabf9886ee28e34552d01b">getSimulateComputationAsSleep</a> ()</td></tr>
+<tr class="memdesc:a5a1d58f5f6fabf9886ee28e34552d01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether computation should be simulated as sleep.  <a href="classwrench_1_1_action_executor.html#a5a1d58f5f6fabf9886ee28e34552d01b">More...</a><br /></td></tr>
+<tr class="separator:a5a1d58f5f6fabf9886ee28e34552d01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f441d593666784770fb5119fd80f68"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#a68f441d593666784770fb5119fd80f68">getThreadCreationOverhead</a> ()</td></tr>
+<tr class="memdesc:a68f441d593666784770fb5119fd80f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the executor's thread creation overhead.  <a href="classwrench_1_1_action_executor.html#a68f441d593666784770fb5119fd80f68">More...</a><br /></td></tr>
+<tr class="separator:a68f441d593666784770fb5119fd80f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498981d8967025090cd8c2b76430441c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_action_executor.html#a498981d8967025090cd8c2b76430441c">kill</a> (bool job_termination)</td></tr>
 <tr class="memdesc:a498981d8967025090cd8c2b76430441c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kill the worker thread.  <a href="classwrench_1_1_action_executor.html#a498981d8967025090cd8c2b76430441c">More...</a><br /></td></tr>
 <tr class="separator:a498981d8967025090cd8c2b76430441c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,8 +463,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An service that performs an <a class="el" href="classwrench_1_1_action.html" title="An abstract class that implements the concept of an action.">Action</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab5b83600ae202087b3c1a0942b469d24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5b83600ae202087b3c1a0942b469d24">&#9670;&nbsp;</a></span>ActionExecutor()</h2>
+<a id="a4e6f1bd13056b57e873edd552b0dcc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6f1bd13056b57e873edd552b0dcc96">&#9670;&nbsp;</a></span>ActionExecutor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,6 +486,18 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>ram_footprint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>thread_creation_overhead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>simulate_computation_as_sleep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -513,6 +531,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
     <tr><td class="paramname">hostname</td><td>the name of the host on which the action executor will run </td></tr>
     <tr><td class="paramname">num_cores</td><td>the number of cores </td></tr>
     <tr><td class="paramname">ram_footprint</td><td>the RAM footprint </td></tr>
+    <tr><td class="paramname">thread_creation_overhead</td><td>the thread creation overhead in seconds </td></tr>
+    <tr><td class="paramname">simulate_computation_as_sleep</td><td>whether to simulate computation as sleep </td></tr>
     <tr><td class="paramname">callback_mailbox</td><td>the callback mailbox to which a "action done" or "action failed" message will be sent </td></tr>
     <tr><td class="paramname">action</td><td>the action to perform </td></tr>
     <tr><td class="paramname">action_execution_service</td><td>the parent action execution service </td></tr>
@@ -647,6 +667,46 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Return the action executor's allocated nuber of cores. </p>
 <dl class="section return"><dt>Returns</dt><dd>a number of cores </dd></dl>
+
+</div>
+</div>
+<a id="a5a1d58f5f6fabf9886ee28e34552d01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1d58f5f6fabf9886ee28e34552d01b">&#9670;&nbsp;</a></span>getSimulateComputationAsSleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wrench::ActionExecutor::getSimulateComputationAsSleep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether computation should be simulated as sleep. </p>
+<dl class="section return"><dt>Returns</dt><dd>true or false </dd></dl>
+
+</div>
+</div>
+<a id="a68f441d593666784770fb5119fd80f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f441d593666784770fb5119fd80f68">&#9670;&nbsp;</a></span>getThreadCreationOverhead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double wrench::ActionExecutor::getThreadCreationOverhead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the executor's thread creation overhead. </p>
+<dl class="section return"><dt>Returns</dt><dd>an overhead (in seconds) </dd></dl>
 
 </div>
 </div>

@@ -165,6 +165,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3be8d3823b30b2b7ebb27771a8baa0cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a3be8d3823b30b2b7ebb27771a8baa0cd">compute</a> (double)</td></tr>
 <tr class="memdesc:a3be8d3823b30b2b7ebb27771a8baa0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates a computation on host on which the calling actor is running.  <a href="classwrench_1_1_s4_u___simulation.html#a3be8d3823b30b2b7ebb27771a8baa0cd">More...</a><br /></td></tr>
 <tr class="separator:a3be8d3823b30b2b7ebb27771a8baa0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ad2f4b3cb19bf67d5ab41be109d6ec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a54ad2f4b3cb19bf67d5ab41be109d6ec">compute_multi_threaded</a> (unsigned long num_threads, double thread_creation_overhead, double sequential_work, double parallel_per_thread_work)</td></tr>
+<tr class="memdesc:a54ad2f4b3cb19bf67d5ab41be109d6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates a multi-threaded computation.  <a href="classwrench_1_1_s4_u___simulation.html#a54ad2f4b3cb19bf67d5ab41be109d6ec">More...</a><br /></td></tr>
+<tr class="separator:a54ad2f4b3cb19bf67d5ab41be109d6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c4aa7aa025722d5f5b8bae6338066f0"><td class="memItemLeft" align="right" valign="top"><a id="a5c4aa7aa025722d5f5b8bae6338066f0"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a5c4aa7aa025722d5f5b8bae6338066f0">computeZeroFlop</a> ()</td></tr>
 <tr class="memdesc:a5c4aa7aa025722d5f5b8bae6338066f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute zero flop, which take zero time but will block if the host's pstate has a zero flop/sec speed, until the host's pstate is changed to a pstate with non-zero flop/sec speed. <br /></td></tr>
@@ -326,6 +329,65 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">flops</td><td>the number of flops </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54ad2f4b3cb19bf67d5ab41be109d6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ad2f4b3cb19bf67d5ab41be109d6ec">&#9670;&nbsp;</a></span>compute_multi_threaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::S4U_Simulation::compute_multi_threaded </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>num_threads</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>thread_creation_overhead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sequential_work</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>parallel_per_thread_work</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Simulates a multi-threaded computation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_threads</td><td>the number of threads </td></tr>
+    <tr><td class="paramname">thread_creation_overhead</td><td>the thread creation overhead in seconds </td></tr>
+    <tr><td class="paramname">sequential_work</td><td>the sequential work (in flops) </td></tr>
+    <tr><td class="paramname">parallel_per_thread_work</td><td>the parallel per thread work (in flops) </td></tr>
   </table>
   </dd>
 </dl>

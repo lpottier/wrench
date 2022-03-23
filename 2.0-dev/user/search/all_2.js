@@ -21,7 +21,7 @@ var searchData=
   ['createsimulation_49',['createSimulation',['../classwrench_1_1_simulation.html#a097bd998f4f43f8ce859ac864a463e07',1,'wrench::Simulation']]],
   ['createworkflow_50',['createWorkflow',['../classwrench_1_1_workflow.html#a3353897e9058f5cab24c53c9b17ad956',1,'wrench::Workflow']]],
   ['createworkflowfromjson_51',['createWorkflowFromJSON',['../classwrench_1_1_wf_commons_workflow_parser.html#ae4192c93cf65a2cbe5a25da58c4f9068',1,'wrench::WfCommonsWorkflowParser']]],
-  ['custom_52',['CUSTOM',['../classwrench_1_1_parallel_model.html#ac21a98fa14693e5425a5ce5121636498',1,'wrench::ParallelModel']]],
+  ['custom_52',['CUSTOM',['../classwrench_1_1_parallel_model.html#a64b79851d7feecd0b4ea9d4db2d81836',1,'wrench::ParallelModel']]],
   ['customaction_53',['CustomAction',['../classwrench_1_1_custom_action.html',1,'wrench::CustomAction'],['../classwrench_1_1_custom_action.html#a4eba710217017bce854c107d824fd1ec',1,'wrench::CustomAction::CustomAction()']]],
   ['customparallelmodel_54',['CustomParallelModel',['../classwrench_1_1_custom_parallel_model.html',1,'wrench']]]
 ];

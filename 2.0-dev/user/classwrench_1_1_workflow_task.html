@@ -179,6 +179,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac23bd3458b42962c743195551603e07b"><td class="memItemLeft" align="right" valign="top"><a id="ac23bd3458b42962c743195551603e07b"></a>
 std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSharedPtr</b> ()</td></tr>
 <tr class="separator:ac23bd3458b42962c743195551603e07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eeef368dca138fe64a65bdb6d727ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a5eeef368dca138fe64a65bdb6d727ed1">setFlops</a> (double flops)</td></tr>
+<tr class="memdesc:a5eeef368dca138fe64a65bdb6d727ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of flops of the task (to be used only in very specific cases in which it is guaranteed that changing a task's work after that task has been created is a valid thing to do)  <a href="classwrench_1_1_workflow_task.html#a5eeef368dca138fe64a65bdb6d727ed1">More...</a><br /></td></tr>
+<tr class="separator:a5eeef368dca138fe64a65bdb6d727ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a789d01615f762cca3d1da32ac6b3d725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a789d01615f762cca3d1da32ac6b3d725">setParallelModel</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_parallel_model.html">ParallelModel</a> &gt; model)</td></tr>
 <tr class="memdesc:a789d01615f762cca3d1da32ac6b3d725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the task's parallel model.  <a href="classwrench_1_1_workflow_task.html#a789d01615f762cca3d1da32ac6b3d725">More...</a><br /></td></tr>
 <tr class="separator:a789d01615f762cca3d1da32ac6b3d725"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -461,6 +464,32 @@ std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">Work
 
 <p>Get the parents of a task. </p>
 <dl class="section return"><dt>Returns</dt><dd>a list of workflow tasks </dd></dl>
+
+</div>
+</div>
+<a id="a5eeef368dca138fe64a65bdb6d727ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eeef368dca138fe64a65bdb6d727ed1">&#9670;&nbsp;</a></span>setFlops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::WorkflowTask::setFlops </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>flops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the number of flops of the task (to be used only in very specific cases in which it is guaranteed that changing a task's work after that task has been created is a valid thing to do) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flops</td><td>the number of flops </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

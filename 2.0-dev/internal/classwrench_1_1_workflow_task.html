@@ -331,6 +331,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a03f9ebebaa0ec710e6b094f04eb221f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a03f9ebebaa0ec710e6b094f04eb221f5">setFailureDate</a> (double date)</td></tr>
 <tr class="memdesc:a03f9ebebaa0ec710e6b094f04eb221f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the date when the task has failed.  <a href="classwrench_1_1_workflow_task.html#a03f9ebebaa0ec710e6b094f04eb221f5">More...</a><br /></td></tr>
 <tr class="separator:a03f9ebebaa0ec710e6b094f04eb221f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eeef368dca138fe64a65bdb6d727ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a5eeef368dca138fe64a65bdb6d727ed1">setFlops</a> (double flops)</td></tr>
+<tr class="memdesc:a5eeef368dca138fe64a65bdb6d727ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of flops of the task (to be used only in very specific cases in which it is guaranteed that changing a task's work after that task has been created is a valid thing to do)  <a href="classwrench_1_1_workflow_task.html#a5eeef368dca138fe64a65bdb6d727ed1">More...</a><br /></td></tr>
+<tr class="separator:a5eeef368dca138fe64a65bdb6d727ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6747db4a0eb51f1017f55345d7a5e2d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow_task.html#a6747db4a0eb51f1017f55345d7a5e2d9">setInternalState</a> (<a class="el" href="classwrench_1_1_workflow_task.html#aa2b860941b37263c26385fd076502e04">WorkflowTask::InternalState</a>)</td></tr>
 <tr class="memdesc:a6747db4a0eb51f1017f55345d7a5e2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the internal state of the task.  <a href="classwrench_1_1_workflow_task.html#a6747db4a0eb51f1017f55345d7a5e2d9">More...</a><br /></td></tr>
 <tr class="separator:a6747db4a0eb51f1017f55345d7a5e2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1530,6 +1533,32 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">date</td><td>the date when the task has failed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5eeef368dca138fe64a65bdb6d727ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eeef368dca138fe64a65bdb6d727ed1">&#9670;&nbsp;</a></span>setFlops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::WorkflowTask::setFlops </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>flops</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the number of flops of the task (to be used only in very specific cases in which it is guaranteed that changing a task's work after that task has been created is a valid thing to do) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flops</td><td>the number of flops </td></tr>
   </table>
   </dd>
 </dl>
