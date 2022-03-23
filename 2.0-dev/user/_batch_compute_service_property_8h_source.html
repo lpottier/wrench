@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classwrench_1_1_batch_compute_service_property.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_batch_compute_service_property.html">BatchComputeServiceProperty</a>: <span class="keyword">public</span> <a class="code" href="classwrench_1_1_compute_service_property.html">ComputeServiceProperty</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classwrench_1_1_batch_compute_service_property.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_batch_compute_service_property.html">BatchComputeServiceProperty</a> : <span class="keyword">public</span> <a class="code" href="classwrench_1_1_compute_service_property.html">ComputeServiceProperty</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classwrench_1_1_batch_compute_service_property.html#a4e126dd30a49ac032ec083f1c420f389">   27</a></span>&#160;        DECLARE_PROPERTY_NAME(<a class="code" href="classwrench_1_1_batch_compute_service_property.html#a4e126dd30a49ac032ec083f1c420f389">TASK_STARTUP_OVERHEAD</a>);</div>
@@ -161,33 +161,30 @@ $(function() {
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classwrench_1_1_batch_compute_service_property.html#aa3d144deb356f416880972388b948178">  160</a></span>&#160;        DECLARE_PROPERTY_NAME(<a class="code" href="classwrench_1_1_batch_compute_service_property.html#aa3d144deb356f416880972388b948178">BATSCHED_CONTIGUOUS_ALLOCATION</a>);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">//        /** @brief Overhead delay in seconds between condor and slurm for the start of execution</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">//         *      - defaults to calibrated figure</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">//         *      - property is set on first receiving grid universe job.</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">//         */</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">//        DECLARE_PROPERTY_NAME(GRID_PRE_EXECUTION_DELAY);</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">//        /** @brief Overhead delay in seconds between condor and slurm for the completion of execution</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">//         *      - defaults to calibrated figure</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//         *      - property is set on first receiving grid universe job.</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">//         */</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">//        DECLARE_PROPERTY_NAME(GRID_POST_EXECUTION_DELAY);</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//        /** @brief Overhead delay in seconds between condor and slurm for the start of execution</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="comment">//         *      - defaults to calibrated figure</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">//         *      - property is set on first receiving grid universe job.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment">//         */</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">//        DECLARE_PROPERTY_NAME(GRID_PRE_EXECUTION_DELAY);</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">//        /** @brief Overhead delay in seconds between condor and slurm for the completion of execution</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="comment">//         *      - defaults to calibrated figure</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="comment">//         *      - property is set on first receiving grid universe job.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="comment">//         */</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="comment">//        DECLARE_PROPERTY_NAME(GRID_POST_EXECUTION_DELAY);</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    };</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    };</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif //WRENCH_BATCHSERVICEPROPERTY_H</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif//WRENCH_BATCHSERVICEPROPERTY_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_batch_compute_service_property_html_a2072267c164d046104868ad00aaadc51"><div class="ttname"><a href="classwrench_1_1_batch_compute_service_property.html#a2072267c164d046104868ad00aaadc51">wrench::BatchComputeServiceProperty::SIMULATE_COMPUTATION_AS_SLEEP</a></div><div class="ttdeci">static const std::string SIMULATE_COMPUTATION_AS_SLEEP</div><div class="ttdoc">Simulate computation as just a sleep instead of an actual compute thread. This is for scalability rea...</div><div class="ttdef"><b>Definition:</b> BatchComputeServiceProperty.h:142</div></div>
 <div class="ttc" id="aclasswrench_1_1_batch_compute_service_property_html_a493c47199d12e12d41db176b39b1ea12"><div class="ttname"><a href="classwrench_1_1_batch_compute_service_property.html#a493c47199d12e12d41db176b39b1ea12">wrench::BatchComputeServiceProperty::IGNORE_INVALID_JOBS_IN_WORKLOAD_TRACE_FILE</a></div><div class="ttdeci">static const std::string IGNORE_INVALID_JOBS_IN_WORKLOAD_TRACE_FILE</div><div class="ttdoc">Whether, when simulating a workload trace file, to abort when there is an invalid job specification (...</div><div class="ttdef"><b>Definition:</b> BatchComputeServiceProperty.h:104</div></div>

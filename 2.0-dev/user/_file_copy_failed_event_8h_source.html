@@ -152,40 +152,36 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">class </span>FileCopyFailedEvent : <span class="keyword">public</span> ExecutionEvent {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>ExecutionEvent;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        FileCopyFailedEvent(std::shared_ptr&lt;DataFile&gt;file,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                            std::shared_ptr&lt;FileLocation&gt; src,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                            std::shared_ptr&lt;FileLocation&gt; dst,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                            std::shared_ptr&lt;FailureCause&gt; failure_cause</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        )</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                : file(file), src(src), dst(dst),</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                  failure_cause(failure_cause) {}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::shared_ptr&lt;DataFile&gt;file;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::shared_ptr&lt;FileLocation&gt; src;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::shared_ptr&lt;FileLocation&gt; dst;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::shared_ptr&lt;FailureCause&gt; failure_cause;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::string <a class="code" href="namespacewrench.html#a941eaa1c8b736c0447b682f79ac280eb">toString</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;FileCopyFailedEvent (file: &quot;</span> + this-&gt;file-&gt;getID() +</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                   <span class="stringliteral">&quot;; src = &quot;</span> + this-&gt;src-&gt;toString() +</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                   <span class="stringliteral">&quot;; dst = &quot;</span> + this-&gt;dst-&gt;toString() +</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                   <span class="stringliteral">&quot;; cause: &quot;</span> + this-&gt;failure_cause-&gt;toString() + <span class="stringliteral">&quot;)&quot;</span>;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>ExecutionEvent;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        FileCopyFailedEvent(std::shared_ptr&lt;DataFile&gt; file,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            std::shared_ptr&lt;FileLocation&gt; src,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                            std::shared_ptr&lt;FileLocation&gt; dst,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                            std::shared_ptr&lt;FailureCause&gt; failure_cause)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            : file(file), src(src), dst(dst),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              failure_cause(failure_cause) {}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        std::shared_ptr&lt;DataFile&gt; file;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::shared_ptr&lt;FileLocation&gt; src;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::shared_ptr&lt;FileLocation&gt; dst;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::shared_ptr&lt;FailureCause&gt; failure_cause;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        std::string <a class="code" href="namespacewrench.html#a941eaa1c8b736c0447b682f79ac280eb">toString</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;FileCopyFailedEvent (file: &quot;</span> + this-&gt;file-&gt;getID() +</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                   <span class="stringliteral">&quot;; src = &quot;</span> + this-&gt;src-&gt;toString() +</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                   <span class="stringliteral">&quot;; dst = &quot;</span> + this-&gt;dst-&gt;toString() +</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                   <span class="stringliteral">&quot;; cause: &quot;</span> + this-&gt;failure_cause-&gt;toString() + <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/***********************/</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/***********************/</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif //WRENCH_FILE_COPY_FAILED_EVENT_H</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif//WRENCH_FILE_COPY_FAILED_EVENT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacewrench_html_a941eaa1c8b736c0447b682f79ac280eb"><div class="ttname"><a href="namespacewrench.html#a941eaa1c8b736c0447b682f79ac280eb">wrench::toString</a></div><div class="ttdeci">std::string toString() override</div><div class="ttdoc">Return an error message that describes the failure cause (to be overridden)</div><div class="ttdef"><b>Definition:</b> ComputationHasDied.cpp:29</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>

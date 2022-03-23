@@ -136,25 +136,24 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html">WorkloadTraceFileReplayerEventReceiver</a> : <span class="keyword">public</span> <a class="code" href="classwrench_1_1_execution_controller.html">ExecutionController</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d">   35</a></span>&#160;        <a class="code" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d">WorkloadTraceFileReplayerEventReceiver</a>(std::string hostname, std::shared_ptr&lt;JobManager&gt; job_manager) :</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="classwrench_1_1_execution_controller.html">ExecutionController</a>(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        hostname,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        <span class="stringliteral">&quot;workload_trace_file_replayer_event_receiver&quot;</span>),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                job_manager(job_manager) {}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#af8ddb6f527d5f49a8b67bcc8a184c628">main</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string hostname;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::shared_ptr&lt;JobManager&gt; job_manager;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/***********************/</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/***********************/</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif //WRENCH_ONEJOBWMS_H</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d">   35</a></span>&#160;        <a class="code" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d">WorkloadTraceFileReplayerEventReceiver</a>(std::string hostname, std::shared_ptr&lt;JobManager&gt; job_manager) : <a class="code" href="classwrench_1_1_execution_controller.html">ExecutionController</a>(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                                                                        hostname,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                                                                        <span class="stringliteral">&quot;workload_trace_file_replayer_event_receiver&quot;</span>),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                                                                                job_manager(job_manager) {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#af8ddb6f527d5f49a8b67bcc8a184c628">main</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string hostname;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::shared_ptr&lt;JobManager&gt; job_manager;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};<span class="comment">// namespace wrench</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif//WRENCH_ONEJOBWMS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_workload_trace_file_replayer_event_receiver_html_af8ddb6f527d5f49a8b67bcc8a184c628"><div class="ttname"><a href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#af8ddb6f527d5f49a8b67bcc8a184c628">wrench::WorkloadTraceFileReplayerEventReceiver::main</a></div><div class="ttdeci">int main() override</div><div class="ttdoc">main method of the WorkloadTraceFileReplayerEventReceiver daemon</div><div class="ttdef"><b>Definition:</b> WorkloadTraceFileReplayerEventReceiver.cpp:23</div></div>
 <div class="ttc" id="aclasswrench_1_1_workload_trace_file_replayer_event_receiver_html_abc417862cd19293eb3a44ebbed985b9d"><div class="ttname"><a href="classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d">wrench::WorkloadTraceFileReplayerEventReceiver::WorkloadTraceFileReplayerEventReceiver</a></div><div class="ttdeci">WorkloadTraceFileReplayerEventReceiver(std::string hostname, std::shared_ptr&lt; JobManager &gt; job_manager)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> WorkloadTraceFileReplayerEventReceiver.h:35</div></div>

@@ -164,8 +164,8 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::shared_ptr&lt;ComputeService&gt; compute_service;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::shared_ptr&lt;FailureCause&gt; cause;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">class </span>JobManagerStandardJobCompletedMessage : <span class="keyword">public</span> JobManagerMessage {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        JobManagerStandardJobCompletedMessage(std::shared_ptr&lt;StandardJob&gt; job, std::shared_ptr&lt;ComputeService&gt; compute_service,</div>
@@ -195,8 +195,8 @@ $(function() {
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">class </span>JobManagerPilotJobFailedMessage : <span class="keyword">public</span> JobManagerMessage {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        JobManagerPilotJobFailedMessage(std::shared_ptr&lt;PilotJob&gt; job,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                           std::shared_ptr&lt;ComputeService&gt; compute_service,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                           std::shared_ptr&lt;FailureCause&gt; cause);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                        std::shared_ptr&lt;ComputeService&gt; compute_service,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                        std::shared_ptr&lt;FailureCause&gt; cause);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        std::shared_ptr&lt;PilotJob&gt; job;</div>
@@ -207,9 +207,9 @@ $(function() {
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">    /***********************/</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">    /***********************/</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif //WRENCH_JOBMANAGERMESSAGE_H</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif//WRENCH_JOBMANAGERMESSAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
 <div class="footer">

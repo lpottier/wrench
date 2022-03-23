@@ -135,36 +135,35 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classwrench_1_1_simulation_timestamp.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_simulation_timestamp.html">SimulationTimestamp</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">   35</a></span>&#160;        T * <span class="keyword">const</span> <a class="code" href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">getContent</a>() {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          <span class="keywordflow">return</span> this-&gt;content.get();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classwrench_1_1_simulation_timestamp.html#a706030fdac38ad1e853e588f7260c499">   44</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classwrench_1_1_simulation_timestamp.html#a706030fdac38ad1e853e588f7260c499">getDate</a>()  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">getContent</a>()-&gt;getDate();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classwrench_1_1_simulation_timestamp.html">SimulationTimestamp</a>(T *content) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            this-&gt;content = std::unique_ptr&lt;T&gt;(content);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::unique_ptr&lt;T&gt;content;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif //WRENCH_SIMULATIONTIMESTAMP_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">   34</a></span>&#160;        T *<span class="keyword">const</span> <a class="code" href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">getContent</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> this-&gt;content.get();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classwrench_1_1_simulation_timestamp.html#a706030fdac38ad1e853e588f7260c499">   43</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classwrench_1_1_simulation_timestamp.html#a706030fdac38ad1e853e588f7260c499">getDate</a>() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">getContent</a>()-&gt;getDate();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classwrench_1_1_simulation_timestamp.html">SimulationTimestamp</a>(T *content) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            this-&gt;content = std::unique_ptr&lt;T&gt;(content);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        std::unique_ptr&lt;T&gt; content;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};<span class="comment">// namespace wrench</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif//WRENCH_SIMULATIONTIMESTAMP_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_simulation_timestamp_html"><div class="ttname"><a href="classwrench_1_1_simulation_timestamp.html">wrench::SimulationTimestamp</a></div><div class="ttdoc">A time-stamped simulation event stored in SimulationOutput.</div><div class="ttdef"><b>Definition:</b> SimulationTimestamp.h:26</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
-<div class="ttc" id="aclasswrench_1_1_simulation_timestamp_html_a706030fdac38ad1e853e588f7260c499"><div class="ttname"><a href="classwrench_1_1_simulation_timestamp.html#a706030fdac38ad1e853e588f7260c499">wrench::SimulationTimestamp::getDate</a></div><div class="ttdeci">double getDate()</div><div class="ttdef"><b>Definition:</b> SimulationTimestamp.h:44</div></div>
-<div class="ttc" id="aclasswrench_1_1_simulation_timestamp_html_a8ae8b15faae854fb1615a700fd620ab8"><div class="ttname"><a href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">wrench::SimulationTimestamp::getContent</a></div><div class="ttdeci">T *const getContent()</div><div class="ttdef"><b>Definition:</b> SimulationTimestamp.h:35</div></div>
+<div class="ttc" id="aclasswrench_1_1_simulation_timestamp_html_a706030fdac38ad1e853e588f7260c499"><div class="ttname"><a href="classwrench_1_1_simulation_timestamp.html#a706030fdac38ad1e853e588f7260c499">wrench::SimulationTimestamp::getDate</a></div><div class="ttdeci">double getDate()</div><div class="ttdef"><b>Definition:</b> SimulationTimestamp.h:43</div></div>
+<div class="ttc" id="aclasswrench_1_1_simulation_timestamp_html_a8ae8b15faae854fb1615a700fd620ab8"><div class="ttname"><a href="classwrench_1_1_simulation_timestamp.html#a8ae8b15faae854fb1615a700fd620ab8">wrench::SimulationTimestamp::getContent</a></div><div class="ttdeci">T *const getContent()</div><div class="ttdef"><b>Definition:</b> SimulationTimestamp.h:34</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
         <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['datafile_1593',['DataFile',['../classwrench_1_1_data_file.html#a697e29355be1779672efb4c7b1ae39fe',1,'wrench::DataFile']]],
   ['datamovementmanager_1594',['DataMovementManager',['../classwrench_1_1_data_movement_manager.html#a4248dc6519bf90e45c8cd080882b9722',1,'wrench::DataMovementManager']]],
-  ['deletefile_1595',['deleteFile',['../classwrench_1_1_storage_service.html#aa758b015c959fba84a7b5d3c30cdb2d8',1,'wrench::StorageService']]],
+  ['deletefile_1595',['deleteFile',['../classwrench_1_1_storage_service.html#a07ded4afc6f7b801262e7b55f9de27ba',1,'wrench::StorageService']]],
   ['destroyvm_1596',['destroyVM',['../classwrench_1_1_cloud_compute_service.html#a8778343de392ce6f1ec1f1d9b52183be',1,'wrench::CloudComputeService']]],
   ['disablecolor_1597',['disableColor',['../classwrench_1_1_terminal_output.html#a77b3b0be090defaef3a56d8f98e1e68b',1,'wrench::TerminalOutput']]],
   ['dispatchreadyactions_1598',['dispatchReadyActions',['../classwrench_1_1_bare_metal_compute_service.html#a1a44eea15c3064d36ad4315827bd82bc',1,'wrench::BareMetalComputeService']]],
@@ -11,7 +11,7 @@ var searchData=
   ['doeshostexist_1601',['doesHostExist',['../classwrench_1_1_simulation.html#a90dd21c0628fb1c53a4c504068ce6f9f',1,'wrench::Simulation']]],
   ['doeslinkexist_1602',['doesLinkExist',['../classwrench_1_1_simulation.html#a58a1ce644e6200074cf2a55cc0c27011',1,'wrench::Simulation']]],
   ['doespathexist_1603',['doesPathExist',['../classwrench_1_1_dag_of_tasks.html#a53af1d9677380893f766cf273ba6190e',1,'wrench::DagOfTasks']]],
-  ['dosynchronousfilecopy_1604',['doSynchronousFileCopy',['../classwrench_1_1_data_movement_manager.html#a3bef0f56f16c7bb4dc9cbe585749bf13',1,'wrench::DataMovementManager']]],
+  ['dosynchronousfilecopy_1604',['doSynchronousFileCopy',['../classwrench_1_1_data_movement_manager.html#a851c3b5b836cbc5524363d04d36f3ab0',1,'wrench::DataMovementManager']]],
   ['dputmessage_1605',['dputMessage',['../classwrench_1_1_s4_u___mailbox.html#abbafbd2fc73ddefb21dee13e12c054f3',1,'wrench::S4U_Mailbox']]],
   ['dumpdiskoperationsjson_1606',['dumpDiskOperationsJSON',['../classwrench_1_1_simulation_output.html#a34edc8ef23bbc4e4ef18c39de6a35613',1,'wrench::SimulationOutput']]],
   ['dumphostenergyconsumptionjson_1607',['dumpHostEnergyConsumptionJSON',['../classwrench_1_1_simulation_output.html#a8763a007e7c8171242af16acd90a76e0',1,'wrench::SimulationOutput']]],

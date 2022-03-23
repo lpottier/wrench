@@ -133,30 +133,28 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classwrench_1_1_parallel_model.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_parallel_model.html">ParallelModel</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;ParallelModel&gt; <a class="code" href="classwrench_1_1_parallel_model.html#ac4be2af98e027f7f7363110deddada0a">AMDAHL</a>(<span class="keywordtype">double</span> alpha);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;ParallelModel&gt; <a class="code" href="classwrench_1_1_parallel_model.html#a01d4f7eb0b4876a778a46861b2861395">CONSTANTEFFICIENCY</a>(<span class="keywordtype">double</span> efficiency);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;ParallelModel&gt; <a class="code" href="classwrench_1_1_parallel_model.html#a64b79851d7feecd0b4ea9d4db2d81836">CUSTOM</a>(std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>, <span class="keywordtype">long</span>)&gt; lambda_sequential, std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>, <span class="keywordtype">long</span>)&gt; lambda_per_thread);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//        virtual std::vector&lt;double&gt; getWorkPerThread(double total_work, unsigned long num_threads) = 0;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">getPurelySequentialWork</a>(<span class="keywordtype">double</span> total_work, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_threads) = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> getParallelPerThreadWork(<span class="keywordtype">double</span> total_work, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_threads) = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classwrench_1_1_parallel_model.html">ParallelModel</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;ParallelModel&gt; <a class="code" href="classwrench_1_1_parallel_model.html#ac4be2af98e027f7f7363110deddada0a">AMDAHL</a>(<span class="keywordtype">double</span> alpha);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;ParallelModel&gt; <a class="code" href="classwrench_1_1_parallel_model.html#a01d4f7eb0b4876a778a46861b2861395">CONSTANTEFFICIENCY</a>(<span class="keywordtype">double</span> efficiency);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;ParallelModel&gt; <a class="code" href="classwrench_1_1_parallel_model.html#a64b79851d7feecd0b4ea9d4db2d81836">CUSTOM</a>(std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>, <span class="keywordtype">long</span>)&gt; lambda_sequential, std::function&lt;<span class="keywordtype">double</span>(<span class="keywordtype">double</span>, <span class="keywordtype">long</span>)&gt; lambda_per_thread);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">//        virtual std::vector&lt;double&gt; getWorkPerThread(double total_work, unsigned long num_threads) = 0;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">getPurelySequentialWork</a>(<span class="keywordtype">double</span> total_work, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_threads) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> getParallelPerThreadWork(<span class="keywordtype">double</span> total_work, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_threads) = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classwrench_1_1_parallel_model.html">ParallelModel</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif //WRENCH_PARALLELMODEL_H</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif//WRENCH_PARALLELMODEL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_parallel_model_html_ac4be2af98e027f7f7363110deddada0a"><div class="ttname"><a href="classwrench_1_1_parallel_model.html#ac4be2af98e027f7f7363110deddada0a">wrench::ParallelModel::AMDAHL</a></div><div class="ttdeci">static std::shared_ptr&lt; ParallelModel &gt; AMDAHL(double alpha)</div><div class="ttdoc">Create an instance of an &quot;Amdahl&quot; parallel model.</div><div class="ttdef"><b>Definition:</b> ParallelModel.cpp:31</div></div>
 <div class="ttc" id="aclasswrench_1_1_parallel_model_html_a1f39bb964efed69aac7c2652ffd48c5e"><div class="ttname"><a href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">wrench::ParallelModel::getPurelySequentialWork</a></div><div class="ttdeci">virtual double getPurelySequentialWork(double total_work, unsigned long num_threads)=0</div><div class="ttdoc">A method the, for this parallel model, computes how much work each thread that is part of a parallel ...</div></div>

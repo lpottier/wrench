@@ -134,53 +134,51 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    /***********************/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html">   33</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classwrench_1_1_execution_exception.html">ExecutionException</a>: <span class="keyword">public</span> std::exception {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html">   33</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_execution_exception.html">ExecutionException</a> : <span class="keyword">public</span> std::exception {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                std::shared_ptr&lt;FailureCause&gt; cause;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::shared_ptr&lt;FailureCause&gt; cause;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html#a3a2ff31ae152804e9a253304a7044dc4">   44</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classwrench_1_1_execution_exception.html#a3a2ff31ae152804e9a253304a7044dc4">what</a>() <span class="keyword">const</span> throw()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          <span class="comment">// Without the strdup() below, we get some valgrind warnings...</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">return</span> strdup(cause-&gt;toString().c_str());</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html#adadf20a95ddee5c856c803e1449609f7">   54</a></span>&#160;        std::shared_ptr&lt;FailureCause&gt; <a class="code" href="classwrench_1_1_execution_exception.html#adadf20a95ddee5c856c803e1449609f7">getCause</a>() {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          <span class="keywordflow">return</span> this-&gt;cause;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">                /***********************/</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">                /***********************/</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac">   67</a></span>&#160;                <span class="keyword">explicit</span> <a class="code" href="classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac">ExecutionException</a>(std::shared_ptr&lt;FailureCause&gt; cause) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    this-&gt;cause = std::move(cause);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">                /***********************/</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">                /***********************/</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">        /***********************/</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html#a3a2ff31ae152804e9a253304a7044dc4">   43</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="classwrench_1_1_execution_exception.html#a3a2ff31ae152804e9a253304a7044dc4">what</a>() <span class="keyword">const</span> throw() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="comment">// Without the strdup() below, we get some valgrind warnings...</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> strdup(cause-&gt;toString().c_str());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html#adadf20a95ddee5c856c803e1449609f7">   52</a></span>&#160;        std::shared_ptr&lt;FailureCause&gt; <a class="code" href="classwrench_1_1_execution_exception.html#adadf20a95ddee5c856c803e1449609f7">getCause</a>() {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> this-&gt;cause;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac">   65</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac">ExecutionException</a>(std::shared_ptr&lt;FailureCause&gt; cause) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            this-&gt;cause = std::move(cause);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">        /***********************/</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif //WRENCH_EXECUTION_EXCEPTION_H</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif//WRENCH_EXECUTION_EXCEPTION_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasswrench_1_1_execution_exception_html_adadf20a95ddee5c856c803e1449609f7"><div class="ttname"><a href="classwrench_1_1_execution_exception.html#adadf20a95ddee5c856c803e1449609f7">wrench::ExecutionException::getCause</a></div><div class="ttdeci">std::shared_ptr&lt; FailureCause &gt; getCause()</div><div class="ttdoc">Get the failure cause.</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:54</div></div>
+<div class="ttc" id="aclasswrench_1_1_execution_exception_html_adadf20a95ddee5c856c803e1449609f7"><div class="ttname"><a href="classwrench_1_1_execution_exception.html#adadf20a95ddee5c856c803e1449609f7">wrench::ExecutionException::getCause</a></div><div class="ttdeci">std::shared_ptr&lt; FailureCause &gt; getCause()</div><div class="ttdoc">Get the failure cause.</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:52</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
 <div class="ttc" id="aclasswrench_1_1_execution_exception_html"><div class="ttname"><a href="classwrench_1_1_execution_exception.html">wrench::ExecutionException</a></div><div class="ttdoc">An generic exception that is thrown whenever something unexpected (but simulation-valid) occurs durin...</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:33</div></div>
-<div class="ttc" id="aclasswrench_1_1_execution_exception_html_aded139610456f075eac5a2836af8b3ac"><div class="ttname"><a href="classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac">wrench::ExecutionException::ExecutionException</a></div><div class="ttdeci">ExecutionException(std::shared_ptr&lt; FailureCause &gt; cause)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:67</div></div>
-<div class="ttc" id="aclasswrench_1_1_execution_exception_html_a3a2ff31ae152804e9a253304a7044dc4"><div class="ttname"><a href="classwrench_1_1_execution_exception.html#a3a2ff31ae152804e9a253304a7044dc4">wrench::ExecutionException::what</a></div><div class="ttdeci">virtual const char * what() const</div><div class="ttdoc">Get the exception's error message.</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:44</div></div>
+<div class="ttc" id="aclasswrench_1_1_execution_exception_html_aded139610456f075eac5a2836af8b3ac"><div class="ttname"><a href="classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac">wrench::ExecutionException::ExecutionException</a></div><div class="ttdeci">ExecutionException(std::shared_ptr&lt; FailureCause &gt; cause)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:65</div></div>
+<div class="ttc" id="aclasswrench_1_1_execution_exception_html_a3a2ff31ae152804e9a253304a7044dc4"><div class="ttname"><a href="classwrench_1_1_execution_exception.html#a3a2ff31ae152804e9a253304a7044dc4">wrench::ExecutionException::what</a></div><div class="ttdeci">virtual const char * what() const</div><div class="ttdoc">Get the exception's error message.</div><div class="ttdef"><b>Definition:</b> ExecutionException.h:43</div></div>
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
         <p style="font-size: 0.8em"><strong>&copy;2017-2021 WRENCH. All Rights Reserved.</strong><br/></p>

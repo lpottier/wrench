@@ -136,21 +136,22 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classwrench_1_1_trace_file_loader.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwrench_1_1_trace_file_loader.html">TraceFileLoader</a> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> std::vector&lt;std::tuple&lt;std::string, double, double, double, double, unsigned int, std::string&gt;&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;           <a class="code" href="classwrench_1_1_trace_file_loader.html#a1c15d4eb92506b69decbb2bb9b49d65a">loadFromTraceFile</a>(std::string filename, <span class="keywordtype">bool</span> ignore_invalid_jobs, <span class="keywordtype">double</span> desired_submit_time_of_first_job);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">static</span> std::vector&lt;std::tuple&lt;std::string, double, double, double, double, unsigned int, std::string&gt;&gt;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        loadFromTraceFileSWF(std::string filename, <span class="keywordtype">bool</span> ignore_invalid_jobs, <span class="keywordtype">double</span> desired_submit_time_of_first_job);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">static</span> std::vector&lt;std::tuple&lt;std::string, double, double, double, double, unsigned int, std::string&gt;&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        loadFromTraceFileJSON(std::string filename, <span class="keywordtype">bool</span> ignore_invalid_jobs, <span class="keywordtype">double</span> desired_submit_time_of_first_job);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    /***********************/</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classwrench_1_1_trace_file_loader.html#a1c15d4eb92506b69decbb2bb9b49d65a">loadFromTraceFile</a>(std::string filename, <span class="keywordtype">bool</span> ignore_invalid_jobs, <span class="keywordtype">double</span> desired_submit_time_of_first_job);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">static</span> std::vector&lt;std::tuple&lt;std::string, double, double, double, double, unsigned int, std::string&gt;&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        loadFromTraceFileSWF(std::string filename, <span class="keywordtype">bool</span> ignore_invalid_jobs, <span class="keywordtype">double</span> desired_submit_time_of_first_job);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">static</span> std::vector&lt;std::tuple&lt;std::string, double, double, double, double, unsigned int, std::string&gt;&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        loadFromTraceFileJSON(std::string filename, <span class="keywordtype">bool</span> ignore_invalid_jobs, <span class="keywordtype">double</span> desired_submit_time_of_first_job);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    /***********************/</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif //WRENCH_TRACEFILELOADER_H</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif//WRENCH_TRACEFILELOADER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_trace_file_loader_html"><div class="ttname"><a href="classwrench_1_1_trace_file_loader.html">wrench::TraceFileLoader</a></div><div class="ttdoc">A class that can load a job submission trace (a.k.a. supercomputer workload) in the SWF format (see h...</div><div class="ttdef"><b>Definition:</b> TraceFileLoader.h:28</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>

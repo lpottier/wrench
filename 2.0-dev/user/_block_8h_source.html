@@ -136,7 +136,7 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        Block(std::string fid, std::shared_ptr&lt;FileLocation&gt; location, <span class="keywordtype">double</span> sz,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     <span class="keywordtype">double</span> last_access, <span class="keywordtype">bool</span> is_dirty, <span class="keywordtype">double</span> dirty_time);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;              <span class="keywordtype">double</span> last_access, <span class="keywordtype">bool</span> is_dirty, <span class="keywordtype">double</span> dirty_time);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        Block(Block *blk);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
@@ -144,9 +144,9 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> setFileId(std::string &amp;fid);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//        std::string getMountpoint();</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">//        std::string getMountpoint();</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//        void setMountpoint(std::string mountpoint);</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//        void setMountpoint(std::string mountpoint);</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">double</span> getSize() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
@@ -166,11 +166,11 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> std::shared_ptr&lt;FileLocation&gt; &amp;<a class="code" href="namespacewrench.html#a32962b67eef329698757ee85c5f02639">getLocation</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Block* split(<span class="keywordtype">double</span> remaining);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        Block *split(<span class="keywordtype">double</span> remaining);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        std::string file_id;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//        std::string mountpoint;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//        std::string mountpoint;</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::shared_ptr&lt;FileLocation&gt; location;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">double</span> size;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">double</span> last_access;</div>
@@ -181,9 +181,9 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">        /***********************/</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif //WRENCH_BLOCK_H</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif//WRENCH_BLOCK_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
 <div class="ttc" id="anamespacewrench_html_a32962b67eef329698757ee85c5f02639"><div class="ttname"><a href="namespacewrench.html#a32962b67eef329698757ee85c5f02639">wrench::getLocation</a></div><div class="ttdeci">std::shared_ptr&lt; FileLocation &gt; getLocation()</div><div class="ttdoc">Getter.</div><div class="ttdef"><b>Definition:</b> FileNotFound.cpp:42</div></div>

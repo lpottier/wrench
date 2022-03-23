@@ -125,15 +125,15 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define WRENCH_SERVICEMESSAGEPAYLOAD_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">int</span> WRENCH_MESSAGEPAYLOAD_TYPE;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">extern</span> WRENCH_MESSAGEPAYLOAD_TYPE WRENCH_MESSAGEPAYLOAD_COUNT;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}<span class="comment">// namespace wrench</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define DECLARE_MESSAGEPAYLOAD_NAME(name) static const WRENCH_MESSAGEPAYLOAD_TYPE name</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define SET_MESSAGEPAYLOAD_NAME(classname, name) const WRENCH_MESSAGEPAYLOAD_TYPE classname::name=++WRENCH_MESSAGEPAYLOAD_COUNT</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define SET_MESSAGEPAYLOAD_NAME(classname, name) const WRENCH_MESSAGEPAYLOAD_TYPE classname::name = ++WRENCH_MESSAGEPAYLOAD_COUNT</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//#name</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//++WRENCH_MESSAGEPAYLOAD_COUNT</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewrench.html">wrench</a> {</div>
@@ -143,13 +143,12 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classwrench_1_1_service_message_payload.html#a9efb4a6b2c8876e17a3f636ba5ac17f6">   35</a></span>&#160;        DECLARE_MESSAGEPAYLOAD_NAME(<a class="code" href="classwrench_1_1_service_message_payload.html#a9efb4a6b2c8876e17a3f636ba5ac17f6">STOP_DAEMON_MESSAGE_PAYLOAD</a>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classwrench_1_1_service_message_payload.html#aec363c9226bc8285c41d9fff8c2814a9">   37</a></span>&#160;        DECLARE_MESSAGEPAYLOAD_NAME(<a class="code" href="classwrench_1_1_service_message_payload.html#aec363c9226bc8285c41d9fff8c2814a9">DAEMON_STOPPED_MESSAGE_PAYLOAD</a>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};<span class="comment">// namespace wrench</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif //WRENCH_SERVICEMESSAGEPAYLOAD_H</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif//WRENCH_SERVICEMESSAGEPAYLOAD_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasswrench_1_1_service_message_payload_html_aec363c9226bc8285c41d9fff8c2814a9"><div class="ttname"><a href="classwrench_1_1_service_message_payload.html#aec363c9226bc8285c41d9fff8c2814a9">wrench::ServiceMessagePayload::DAEMON_STOPPED_MESSAGE_PAYLOAD</a></div><div class="ttdeci">static const std::string DAEMON_STOPPED_MESSAGE_PAYLOAD</div><div class="ttdoc">The number of bytes in the control message sent by the daemon to confirm it has terminated.</div><div class="ttdef"><b>Definition:</b> ServiceMessagePayload.h:37</div></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>

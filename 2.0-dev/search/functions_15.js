@@ -12,9 +12,9 @@ var searchData=
   ['workloadtracefilereplayer_2244',['WorkloadTraceFileReplayer',['../classwrench_1_1_workload_trace_file_replayer.html#a9931d1d68d42edc4bef128d8e11a5ac1',1,'wrench::WorkloadTraceFileReplayer']]],
   ['workloadtracefilereplayereventreceiver_2245',['WorkloadTraceFileReplayerEventReceiver',['../classwrench_1_1_workload_trace_file_replayer_event_receiver.html#abc417862cd19293eb3a44ebbed985b9d',1,'wrench::WorkloadTraceFileReplayerEventReceiver']]],
   ['writebacktocache_2246',['writebackToCache',['../classwrench_1_1_memory_manager.html#ac6bbfc327d09f6e0b22d52666dd4b926',1,'wrench::MemoryManager']]],
-  ['writebackwithmemorycache_2247',['writebackWithMemoryCache',['../classwrench_1_1_simulation.html#a12c1efae8d335175cab9c53c7c9d0b46',1,'wrench::Simulation']]],
-  ['writefile_2248',['writeFile',['../classwrench_1_1_storage_service.html#a839bf5adede0d19fd96be1a9a428a932',1,'wrench::StorageService']]],
+  ['writebackwithmemorycache_2247',['writebackWithMemoryCache',['../classwrench_1_1_simulation.html#abe08335388904416a259f6300b02bc2d',1,'wrench::Simulation']]],
+  ['writefile_2248',['writeFile',['../classwrench_1_1_storage_service.html#aa4a9240b172b58ac9a08e65576e92d87',1,'wrench::StorageService']]],
   ['writefiles_2249',['writeFiles',['../classwrench_1_1_storage_service.html#ae852b97df8856ccdcf8b4ec98a0097ed',1,'wrench::StorageService']]],
-  ['writethroughwithmemorycache_2250',['writeThroughWithMemoryCache',['../classwrench_1_1_simulation.html#a2fa5db552f825a502aada2627e2731cd',1,'wrench::Simulation']]],
+  ['writethroughwithmemorycache_2250',['writeThroughWithMemoryCache',['../classwrench_1_1_simulation.html#a56f72dfbd401f1f6e836850813b06792',1,'wrench::Simulation']]],
   ['writetodisk_2251',['writeToDisk',['../classwrench_1_1_s4_u___simulation.html#a5780ba490a813e72061708bf83385d11',1,'wrench::S4U_Simulation::writeToDisk()'],['../classwrench_1_1_simulation.html#abc3c97ca35314f5436d4533e48eac1f8',1,'wrench::Simulation::writeToDisk()']]]
 ];

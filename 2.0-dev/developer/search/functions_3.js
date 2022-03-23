@@ -1,11 +1,11 @@
 var searchData=
 [
   ['datafile_778',['DataFile',['../classwrench_1_1_data_file.html#a697e29355be1779672efb4c7b1ae39fe',1,'wrench::DataFile']]],
-  ['deletefile_779',['deleteFile',['../classwrench_1_1_storage_service.html#aa758b015c959fba84a7b5d3c30cdb2d8',1,'wrench::StorageService']]],
+  ['deletefile_779',['deleteFile',['../classwrench_1_1_storage_service.html#a07ded4afc6f7b801262e7b55f9de27ba',1,'wrench::StorageService']]],
   ['destroyvm_780',['destroyVM',['../classwrench_1_1_cloud_compute_service.html#a8778343de392ce6f1ec1f1d9b52183be',1,'wrench::CloudComputeService']]],
   ['doeshostexist_781',['doesHostExist',['../classwrench_1_1_simulation.html#a90dd21c0628fb1c53a4c504068ce6f9f',1,'wrench::Simulation']]],
   ['doeslinkexist_782',['doesLinkExist',['../classwrench_1_1_simulation.html#a58a1ce644e6200074cf2a55cc0c27011',1,'wrench::Simulation']]],
-  ['dosynchronousfilecopy_783',['doSynchronousFileCopy',['../classwrench_1_1_data_movement_manager.html#a3bef0f56f16c7bb4dc9cbe585749bf13',1,'wrench::DataMovementManager']]],
+  ['dosynchronousfilecopy_783',['doSynchronousFileCopy',['../classwrench_1_1_data_movement_manager.html#a851c3b5b836cbc5524363d04d36f3ab0',1,'wrench::DataMovementManager']]],
   ['dumpdiskoperationsjson_784',['dumpDiskOperationsJSON',['../classwrench_1_1_simulation_output.html#a34edc8ef23bbc4e4ef18c39de6a35613',1,'wrench::SimulationOutput']]],
   ['dumphostenergyconsumptionjson_785',['dumpHostEnergyConsumptionJSON',['../classwrench_1_1_simulation_output.html#a8763a007e7c8171242af16acd90a76e0',1,'wrench::SimulationOutput']]],
   ['dumplinkusagejson_786',['dumpLinkUsageJSON',['../classwrench_1_1_simulation_output.html#aa7e6fd0418472cf22323cd8cc4f6ca16',1,'wrench::SimulationOutput']]],

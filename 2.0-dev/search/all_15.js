@@ -20,9 +20,9 @@ var searchData=
   ['write_5foutput_5fend_1165',['write_output_end',['../structwrench_1_1_workflow_task_1_1_workflow_task_execution.html#a92b2b57919e6f8ecd2f991f9a98c7b56',1,'wrench::WorkflowTask::WorkflowTaskExecution']]],
   ['write_5foutput_5fstart_1166',['write_output_start',['../structwrench_1_1_workflow_task_1_1_workflow_task_execution.html#ad0f0c1f1b720d2b8413228a8320c3837',1,'wrench::WorkflowTask::WorkflowTaskExecution']]],
   ['writebacktocache_1167',['writebackToCache',['../classwrench_1_1_memory_manager.html#ac6bbfc327d09f6e0b22d52666dd4b926',1,'wrench::MemoryManager']]],
-  ['writebackwithmemorycache_1168',['writebackWithMemoryCache',['../classwrench_1_1_simulation.html#a12c1efae8d335175cab9c53c7c9d0b46',1,'wrench::Simulation']]],
-  ['writefile_1169',['writeFile',['../classwrench_1_1_storage_service.html#a839bf5adede0d19fd96be1a9a428a932',1,'wrench::StorageService']]],
+  ['writebackwithmemorycache_1168',['writebackWithMemoryCache',['../classwrench_1_1_simulation.html#abe08335388904416a259f6300b02bc2d',1,'wrench::Simulation']]],
+  ['writefile_1169',['writeFile',['../classwrench_1_1_storage_service.html#aa4a9240b172b58ac9a08e65576e92d87',1,'wrench::StorageService']]],
   ['writefiles_1170',['writeFiles',['../classwrench_1_1_storage_service.html#ae852b97df8856ccdcf8b4ec98a0097ed',1,'wrench::StorageService']]],
-  ['writethroughwithmemorycache_1171',['writeThroughWithMemoryCache',['../classwrench_1_1_simulation.html#a2fa5db552f825a502aada2627e2731cd',1,'wrench::Simulation']]],
+  ['writethroughwithmemorycache_1171',['writeThroughWithMemoryCache',['../classwrench_1_1_simulation.html#a56f72dfbd401f1f6e836850813b06792',1,'wrench::Simulation']]],
   ['writetodisk_1172',['writeToDisk',['../classwrench_1_1_s4_u___simulation.html#a5780ba490a813e72061708bf83385d11',1,'wrench::S4U_Simulation::writeToDisk()'],['../classwrench_1_1_simulation.html#abc3c97ca35314f5436d4533e48eac1f8',1,'wrench::Simulation::writeToDisk()']]]
 ];
