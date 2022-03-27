@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['whilereceiving_694',['whileReceiving',['../namespacewrench.html#a1fa6782fde91dab538f577d2608eb640',1,'wrench']]],
-  ['whilesending_695',['whileSending',['../namespacewrench.html#a98a2da5f34bd18fc2c245b364e884b34',1,'wrench']]]
+  ['_7esimulation_0',['~Simulation',['../classwrench_1_1_simulation.html#a9ff9d68136e0234eab82592290b7f459',1,'wrench::Simulation']]]
 ];
