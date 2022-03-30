@@ -16,7 +16,7 @@ var searchData=
   ['pm_5fname_13',['pm_name',['../classwrench_1_1_cloud_compute_service_start_v_m_request_message.html#a8945c770a07f96e59eae8665be1c725d',1,'wrench::CloudComputeServiceStartVMRequestMessage']]],
   ['post_5ffile_5fcopies_14',['post_file_copies',['../classwrench_1_1_standard_job.html#ae1bf0e2f16064282c9d306d7cd28874c',1,'wrench::StandardJob']]],
   ['pre_5ffile_5fcopies_15',['pre_file_copies',['../classwrench_1_1_standard_job.html#a01f926957f9a402a1b5b829b4ebf0d72',1,'wrench::StandardJob']]],
-  ['priority_16',['priority',['../classwrench_1_1_job.html#a27d3863735afbe21963a678e23fdc98b',1,'wrench::Job']]],
+  ['priority_16',['priority',['../classwrench_1_1_compound_job.html#aabcf8368739b33b6b989948f3a7e101e',1,'wrench::CompoundJob::priority()'],['../classwrench_1_1_job.html#a27d3863735afbe21963a678e23fdc98b',1,'wrench::Job::priority()']]],
   ['process_5fname_17',['process_name',['../classwrench_1_1_s4_u___daemon.html#a1d2ace7c5ba85d790b8db6a54d61aeec',1,'wrench::S4U_Daemon']]],
   ['property_5flist_18',['property_list',['../classwrench_1_1_cloud_compute_service_create_v_m_request_message.html#a98fb72c00685c4489ac7e568bf80f4ad',1,'wrench::CloudComputeServiceCreateVMRequestMessage::property_list()'],['../classwrench_1_1_service.html#a40c7aff1e3f9d2c97c3f09da9447927b',1,'wrench::Service::property_list()']]],
   ['proximity_5fvalue_19',['proximity_value',['../classwrench_1_1_network_proximity_lookup_answer_message.html#ad61e10c5bb5aca65080cae5a1e0c5eb6',1,'wrench::NetworkProximityLookupAnswerMessage::proximity_value()'],['../classwrench_1_1_network_proximity_compute_answer_message.html#a51d2cd8c0e2b0fcc7b11abe64970021c',1,'wrench::NetworkProximityComputeAnswerMessage::proximity_value()']]]

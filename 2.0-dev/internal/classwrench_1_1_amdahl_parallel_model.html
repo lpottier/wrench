@@ -144,18 +144,19 @@ Inheritance diagram for wrench::AmdahlParallelModel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc6bb7766de12dd05f212c056ea44f0a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_amdahl_parallel_model.html#abc6bb7766de12dd05f212c056ea44f0a">getAlpha</a> ()</td></tr>
-<tr class="memdesc:abc6bb7766de12dd05f212c056ea44f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the.  <a href="classwrench_1_1_amdahl_parallel_model.html#abc6bb7766de12dd05f212c056ea44f0a">More...</a><br /></td></tr>
+<tr class="memdesc:abc6bb7766de12dd05f212c056ea44f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Amdahl Law's alpha parameter.  <a href="classwrench_1_1_amdahl_parallel_model.html#abc6bb7766de12dd05f212c056ea44f0a">More...</a><br /></td></tr>
 <tr class="separator:abc6bb7766de12dd05f212c056ea44f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24925654b453b9e947c0c23513442050"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_amdahl_parallel_model.html#a24925654b453b9e947c0c23513442050">getParallelPerThreadWork</a> (double total_work, unsigned long num_threads) override</td></tr>
+<tr class="memdesc:a24925654b453b9e947c0c23513442050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of per-thread parallel work.  <a href="classwrench_1_1_amdahl_parallel_model.html#a24925654b453b9e947c0c23513442050">More...</a><br /></td></tr>
 <tr class="separator:a24925654b453b9e947c0c23513442050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da20eefb9d85c7c8d1f0ed1f4ccce3f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_amdahl_parallel_model.html#a3da20eefb9d85c7c8d1f0ed1f4ccce3f">getPurelySequentialWork</a> (double total_work, unsigned long num_threads) override</td></tr>
-<tr class="memdesc:a3da20eefb9d85c7c8d1f0ed1f4ccce3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method the, for this parallel model, computes how much work each thread that is part of a parallel task should do.  <a href="classwrench_1_1_amdahl_parallel_model.html#a3da20eefb9d85c7c8d1f0ed1f4ccce3f">More...</a><br /></td></tr>
+<tr class="memdesc:a3da20eefb9d85c7c8d1f0ed1f4ccce3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of purely sequential work.  <a href="classwrench_1_1_amdahl_parallel_model.html#a3da20eefb9d85c7c8d1f0ed1f4ccce3f">More...</a><br /></td></tr>
 <tr class="separator:a3da20eefb9d85c7c8d1f0ed1f4ccce3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc073fa9758877239a8983ddbaa99b24"><td class="memItemLeft" align="right" valign="top"><a id="adc073fa9758877239a8983ddbaa99b24" name="adc073fa9758877239a8983ddbaa99b24"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getParallelPerThreadWork</b> (double total_work, unsigned long num_threads)=0</td></tr>
+<tr class="memitem:adc073fa9758877239a8983ddbaa99b24"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_parallel_model.html#adc073fa9758877239a8983ddbaa99b24">getParallelPerThreadWork</a> (double total_work, unsigned long num_threads)=0</td></tr>
+<tr class="memdesc:adc073fa9758877239a8983ddbaa99b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method that computes the amount of per-thread parallel work.  <a href="classwrench_1_1_parallel_model.html#adc073fa9758877239a8983ddbaa99b24">More...</a><br /></td></tr>
 <tr class="separator:adc073fa9758877239a8983ddbaa99b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f39bb964efed69aac7c2652ffd48c5e"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">getPurelySequentialWork</a> (double total_work, unsigned long num_threads)=0</td></tr>
-<tr class="memdesc:a1f39bb964efed69aac7c2652ffd48c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method the, for this parallel model, computes how much work each thread that is part of a parallel task should do.  <a href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">More...</a><br /></td></tr>
+<tr class="memdesc:a1f39bb964efed69aac7c2652ffd48c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method that computes the amount of purely sequential work.  <a href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">More...</a><br /></td></tr>
 <tr class="separator:a1f39bb964efed69aac7c2652ffd48c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -189,8 +190,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the. </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Get the Amdahl Law's alpha parameter. </p>
+<dl class="section return"><dt>Returns</dt><dd>the alpha parameter </dd></dl>
 
 </div>
 </div>
@@ -228,7 +229,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classwrench_1_1_parallel_model.html">wrench::ParallelModel</a>.</p>
+<p>Get the amount of per-thread parallel work. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">total_work</td><td>the total work </td></tr>
+    <tr><td class="paramname">num_threads</td><td>the number of threads </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an amount of work in flops </dd></dl>
+
+<p>Implements <a class="el" href="classwrench_1_1_parallel_model.html#adc073fa9758877239a8983ddbaa99b24">wrench::ParallelModel</a>.</p>
 
 </div>
 </div>
@@ -266,15 +277,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A method the, for this parallel model, computes how much work each thread that is part of a parallel task should do. </p>
+<p>Get the amount of purely sequential work. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">total_work</td><td>the total amount of work (in flops) </td></tr>
-    <tr><td class="paramname">num_threads</td><td>the number of threads</td></tr>
+    <tr><td class="paramname">total_work</td><td>the total work </td></tr>
+    <tr><td class="paramname">num_threads</td><td>the number of threads </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an amount of work (in flop) per thread </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an amount of work in flops </dd></dl>
 
 <p>Implements <a class="el" href="classwrench_1_1_parallel_model.html#a1f39bb964efed69aac7c2652ffd48c5e">wrench::ParallelModel</a>.</p>
 

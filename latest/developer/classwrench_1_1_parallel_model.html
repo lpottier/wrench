@@ -265,7 +265,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Create an instance of a "Custom" parallel model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lambda</td><td>a function that, when given a total flop amount and a number of threads, returns a vector of per-thread work amounts</td></tr>
+    <tr><td class="paramname">lambda_sequential</td><td>a function that, when given a total flop amount and a number of threads, returns the amount of purely sequential work, in flops </td></tr>
+    <tr><td class="paramname">lambda_per_thread</td><td>a function that, when given a total flop amount and a number of threads, returns the amount of per-thread parallel work, in flops</td></tr>
   </table>
   </dd>
 </dl>

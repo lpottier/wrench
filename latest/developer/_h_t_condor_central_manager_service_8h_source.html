@@ -138,9 +138,9 @@ $(function() {
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">class </span>HTCondorCentralManagerService : <span class="keyword">public</span> ComputeService {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        WRENCH_PROPERTY_COLLECTION_TYPE default_property_values = {};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_typedef" href="namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152">WRENCH_PROPERTY_COLLECTION_TYPE</a> default_property_values = {};</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE default_messagepayload_values = {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_typedef" href="namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</a> default_messagepayload_values = {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                {HTCondorCentralManagerServiceMessagePayload::STOP_DAEMON_MESSAGE_PAYLOAD, 1024},</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                {HTCondorCentralManagerServiceMessagePayload::DAEMON_STOPPED_MESSAGE_PAYLOAD, 1024},</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                {HTCondorCentralManagerServiceMessagePayload::SUBMIT_STANDARD_JOB_REQUEST_MESSAGE_PAYLOAD, 1024},</div>
@@ -160,8 +160,8 @@ $(function() {
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        HTCondorCentralManagerService(<span class="keyword">const</span> std::string &amp;hostname,</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                      <span class="keywordtype">double</span> negotiator_startup_overhead,</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                      std::set&lt;std::shared_ptr&lt;ComputeService&gt;&gt; compute_services,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                      WRENCH_PROPERTY_COLLECTION_TYPE property_list = {},</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                      WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE messagepayload_list = {});</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                      <a class="code hl_typedef" href="namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152">WRENCH_PROPERTY_COLLECTION_TYPE</a> property_list = {},</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                      <a class="code hl_typedef" href="namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</a> messagepayload_list = {});</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supportsStandardJobs() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supportsCompoundJobs() <span class="keyword">override</span>;</div>
@@ -229,6 +229,8 @@ $(function() {
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif</span><span class="comment">//WRENCH_HTCONDORCENTRALMANAGERSERVICE_H</span></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
+<div class="ttc" id="anamespacewrench_html_a1f5818cfe3fd34f0f8d04cca1abf9152"><div class="ttname"><a href="namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152">wrench::WRENCH_PROPERTY_COLLECTION_TYPE</a></div><div class="ttdeci">std::map&lt; WRENCH_PROPERTY_TYPE, std::string &gt; WRENCH_PROPERTY_COLLECTION_TYPE</div><div class="ttdoc">Abstraction of a service property collection type.</div><div class="ttdef"><b>Definition:</b> Service.h:26</div></div>
+<div class="ttc" id="anamespacewrench_html_aa8566486a4c3a2da139a5fba59e22195"><div class="ttname"><a href="namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195">wrench::WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</a></div><div class="ttdeci">std::unordered_map&lt; WRENCH_MESSAGEPAYLOAD_TYPE, double &gt; WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</div><div class="ttdoc">Abstraction of a service message payload collection type.</div><div class="ttdef"><b>Definition:</b> Service.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">

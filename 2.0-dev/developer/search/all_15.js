@@ -11,5 +11,8 @@ var searchData=
   ['wrench_8',['wrench',['../namespacewrench.html',1,'']]],
   ['wrench_20101_9',['WRENCH 101',['../wrench-101.html',1,'']]],
   ['wrench_20102_10',['WRENCH 102',['../wrench-102.html',1,'']]],
-  ['writefile_11',['writeFile',['../classwrench_1_1_storage_service.html#aa4a9240b172b58ac9a08e65576e92d87',1,'wrench::StorageService']]]
+  ['wrench_5fmessage_5fpayloadcollection_5ftype_11',['WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE',['../namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195',1,'wrench']]],
+  ['wrench_5fproperty_5fcollection_5ftype_12',['WRENCH_PROPERTY_COLLECTION_TYPE',['../namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152',1,'wrench']]],
+  ['wrench_5fproperty_5fcount_13',['WRENCH_PROPERTY_COUNT',['../namespacewrench.html#afb3306b693063b83ed9db8fadccca979',1,'wrench']]],
+  ['writefile_14',['writeFile',['../classwrench_1_1_storage_service.html#aa4a9240b172b58ac9a08e65576e92d87',1,'wrench::StorageService']]]
 ];

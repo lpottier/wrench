@@ -19,6 +19,7 @@ var searchData=
   ['thread_5fcreation_5foverhead_16',['THREAD_CREATION_OVERHEAD',['../classwrench_1_1_action_execution_service_property.html#aeb6288792974f6656629c230bae16279',1,'wrench::ActionExecutionServiceProperty']]],
   ['timestamp_17',['timestamp',['../classwrench_1_1_network_proximity_lookup_answer_message.html#abd5890d415e1e9aa742f66c3dca4e94b',1,'wrench::NetworkProximityLookupAnswerMessage::timestamp()'],['../classwrench_1_1_coordinate_lookup_answer_message.html#a75a8dae06e6fce385591501ce163b99b',1,'wrench::CoordinateLookupAnswerMessage::timestamp()']]],
   ['total_5fflops_18',['total_flops',['../classwrench_1_1_standard_job.html#a828c40483b8d94cfbedf09bddddc31be',1,'wrench::StandardJob']]],
-  ['ttl_5fanswer_5fmessage_5fpayload_19',['TTL_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a79d0d40e02d24145252b7afb2c526cc5',1,'wrench::ComputeServiceMessagePayload']]],
-  ['ttl_5frequest_5fmessage_5fpayload_20',['TTL_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a951187b1bb9fb20d7944e5577b94ae47',1,'wrench::ComputeServiceMessagePayload']]]
+  ['ttl_19',['ttl',['../classwrench_1_1_bare_metal_compute_service.html#a4158e225cea2e10839705f01243dbd40',1,'wrench::BareMetalComputeService']]],
+  ['ttl_5fanswer_5fmessage_5fpayload_20',['TTL_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a79d0d40e02d24145252b7afb2c526cc5',1,'wrench::ComputeServiceMessagePayload']]],
+  ['ttl_5frequest_5fmessage_5fpayload_21',['TTL_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a951187b1bb9fb20d7944e5577b94ae47',1,'wrench::ComputeServiceMessagePayload']]]
 ];

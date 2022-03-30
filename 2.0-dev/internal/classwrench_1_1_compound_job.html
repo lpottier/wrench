@@ -236,7 +236,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>printTaskMap</b> ()</
 <tr class="memitem:a448296c7745ae2ec538a64cacb4ca496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a448296c7745ae2ec538a64cacb4ca496">removeAction</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &amp;action)</td></tr>
 <tr class="memdesc:a448296c7745ae2ec538a64cacb4ca496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an action from the job.  <a href="classwrench_1_1_compound_job.html#a448296c7745ae2ec538a64cacb4ca496">More...</a><br /></td></tr>
 <tr class="separator:a448296c7745ae2ec538a64cacb4ca496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc934ad980fd55357c50c20333325e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#afc934ad980fd55357c50c20333325e43">setPriority</a> (double priority) override</td></tr>
+<tr class="memitem:afc934ad980fd55357c50c20333325e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#afc934ad980fd55357c50c20333325e43">setPriority</a> (double <a class="el" href="classwrench_1_1_compound_job.html#aabcf8368739b33b6b989948f3a7e101e">priority</a>) override</td></tr>
 <tr class="memdesc:afc934ad980fd55357c50c20333325e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the job's priority (the higher the priority value, the higher the priority)  <a href="classwrench_1_1_compound_job.html#afc934ad980fd55357c50c20333325e43">More...</a><br /></td></tr>
 <tr class="separator:afc934ad980fd55357c50c20333325e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77fda3cc27df6c3aca4d3d8ce58a40dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a77fda3cc27df6c3aca4d3d8ce58a40dd">usesScratch</a> ()</td></tr>
@@ -326,15 +326,19 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:adb94815c298b4326d77de54cfa4bbba2"><td class="memItemLeft" align="right" valign="top"><a id="adb94815c298b4326d77de54cfa4bbba2" name="adb94815c298b4326d77de54cfa4bbba2"></a>
 std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>actions</b></td></tr>
+<tr class="memdesc:adb94815c298b4326d77de54cfa4bbba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actions in the job. <br /></td></tr>
 <tr class="separator:adb94815c298b4326d77de54cfa4bbba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46cbfa24849f7ae6f26eb7fbc879a651"><td class="memItemLeft" align="right" valign="top"><a id="a46cbfa24849f7ae6f26eb7fbc879a651" name="a46cbfa24849f7ae6f26eb7fbc879a651"></a>
 std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>name_map</b></td></tr>
+<tr class="memdesc:a46cbfa24849f7ae6f26eb7fbc879a651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of action names to actions. <br /></td></tr>
 <tr class="separator:a46cbfa24849f7ae6f26eb7fbc879a651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabcf8368739b33b6b989948f3a7e101e"><td class="memItemLeft" align="right" valign="top"><a id="aabcf8368739b33b6b989948f3a7e101e" name="aabcf8368739b33b6b989948f3a7e101e"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>priority</b></td></tr>
+<tr class="memdesc:aabcf8368739b33b6b989948f3a7e101e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> priority. <br /></td></tr>
 <tr class="separator:aabcf8368739b33b6b989948f3a7e101e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac846da3d916c0367f850bd6b8b7f46a8"><td class="memItemLeft" align="right" valign="top"><a id="ac846da3d916c0367f850bd6b8b7f46a8" name="ac846da3d916c0367f850bd6b8b7f46a8"></a>
 <a class="el" href="classwrench_1_1_compound_job.html#abd9194d84b704e30370b51db1737fe01">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memdesc:ac846da3d916c0367f850bd6b8b7f46a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classwrench_1_1_job.html" title="Abstraction of a job used for executing tasks in a Workflow.">Job</a> state. <br /></td></tr>
 <tr class="separator:ac846da3d916c0367f850bd6b8b7f46a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classwrench_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwrench_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classwrench_1_1_job.html">wrench::Job</a></td></tr>
 <tr class="memitem:aa66d463ceddb3448832917258fefaa13 inherit pro_attribs_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top"><a id="aa66d463ceddb3448832917258fefaa13" name="aa66d463ceddb3448832917258fefaa13"></a>

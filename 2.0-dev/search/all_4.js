@@ -21,7 +21,7 @@ var searchData=
   ['executioncontrollermessage_18',['ExecutionControllerMessage',['../classwrench_1_1_execution_controller_message.html#ab238110e9bfea87b6b67fc3e6af98771',1,'wrench::ExecutionControllerMessage::ExecutionControllerMessage()'],['../classwrench_1_1_execution_controller_message.html',1,'wrench::ExecutionControllerMessage']]],
   ['executionevent_19',['ExecutionEvent',['../classwrench_1_1_execution_event.html',1,'wrench']]],
   ['executionexception_20',['ExecutionException',['../classwrench_1_1_execution_exception.html#aded139610456f075eac5a2836af8b3ac',1,'wrench::ExecutionException::ExecutionException()'],['../classwrench_1_1_execution_exception.html',1,'wrench::ExecutionException']]],
-  ['exit_5fcode_21',['exit_code',['../classwrench_1_1_service_has_terminated_message.html#a2a152fe11800776f94dc95c0ef342f08',1,'wrench::ServiceHasTerminatedMessage']]],
+  ['exit_5fcode_21',['exit_code',['../classwrench_1_1_bare_metal_compute_service.html#a2504d0b1ae64e2db1ce0832bc722dc8c',1,'wrench::BareMetalComputeService::exit_code()'],['../classwrench_1_1_service_has_terminated_message.html#a2a152fe11800776f94dc95c0ef342f08',1,'wrench::ServiceHasTerminatedMessage::exit_code()']]],
   ['expired_22',['EXPIRED',['../classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8adb2cdc68dca41bf37d4e7e2703010381',1,'wrench::PilotJob']]],
   ['export_5flog_23',['export_log',['../classwrench_1_1_memory_manager.html#a8cf5938cbe18397a0bd070d3ce52303e',1,'wrench::MemoryManager']]],
   ['exporttoeps_24',['exportToEPS',['../classwrench_1_1_workflow.html#a73a5f2898f4fdda4cb38933c2c485b28',1,'wrench::Workflow']]]

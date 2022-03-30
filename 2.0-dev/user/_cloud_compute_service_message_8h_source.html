@@ -164,8 +164,8 @@ $(function() {
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_cores,</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                                  <span class="keywordtype">double</span> ram_memory,</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                                  std::string desired_vm_name,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                                  WRENCH_PROPERTY_COLLECTION_TYPE property_list,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                  WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE messagepayload_list,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                                  <a class="code hl_typedef" href="namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152">WRENCH_PROPERTY_COLLECTION_TYPE</a> property_list,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                  <a class="code hl_typedef" href="namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</a> messagepayload_list,</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                                  <span class="keywordtype">double</span> payload);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span>:</div>
@@ -173,8 +173,8 @@ $(function() {
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> num_cores;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">double</span> ram_memory;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        std::string desired_vm_name;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        WRENCH_PROPERTY_COLLECTION_TYPE property_list;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE messagepayload_list;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_typedef" href="namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152">WRENCH_PROPERTY_COLLECTION_TYPE</a> property_list;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_typedef" href="namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</a> messagepayload_list;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    };</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">class </span>CloudComputeServiceCreateVMAnswerMessage : <span class="keyword">public</span> CloudComputeServiceMessage {</div>
@@ -306,6 +306,8 @@ $(function() {
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">#endif</span><span class="comment">//WRENCH_CLOUDSERVICEMESSAGE_H</span></div>
 <div class="ttc" id="anamespacewrench_html"><div class="ttname"><a href="namespacewrench.html">wrench</a></div><div class="ttdef"><b>Definition:</b> Action.cpp:28</div></div>
+<div class="ttc" id="anamespacewrench_html_a1f5818cfe3fd34f0f8d04cca1abf9152"><div class="ttname"><a href="namespacewrench.html#a1f5818cfe3fd34f0f8d04cca1abf9152">wrench::WRENCH_PROPERTY_COLLECTION_TYPE</a></div><div class="ttdeci">std::map&lt; WRENCH_PROPERTY_TYPE, std::string &gt; WRENCH_PROPERTY_COLLECTION_TYPE</div><div class="ttdoc">Abstraction of a service property collection type.</div><div class="ttdef"><b>Definition:</b> Service.h:26</div></div>
+<div class="ttc" id="anamespacewrench_html_aa8566486a4c3a2da139a5fba59e22195"><div class="ttname"><a href="namespacewrench.html#aa8566486a4c3a2da139a5fba59e22195">wrench::WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</a></div><div class="ttdeci">std::unordered_map&lt; WRENCH_MESSAGEPAYLOAD_TYPE, double &gt; WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</div><div class="ttdoc">Abstraction of a service message payload collection type.</div><div class="ttdef"><b>Definition:</b> Service.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="footer">
     <div style="float: left; width: 40%; padding-left: 2em; padding-bottom: 4em !important;">
