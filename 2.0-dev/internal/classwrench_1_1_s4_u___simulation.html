@@ -175,18 +175,30 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>computeZeroFlop</b> ()</td></tr>
 <tr class="memdesc:a5c4aa7aa025722d5f5b8bae6338066f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute zero flop, which take zero time but will block if the host's pstate has a zero flop/sec speed, until the host's pstate is changed to a pstate with non-zero flop/sec speed. <br /></td></tr>
 <tr class="separator:a5c4aa7aa025722d5f5b8bae6338066f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad084d3704e94105edd28316a43da73c0"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#ad084d3704e94105edd28316a43da73c0">getAllClusterIDsByZone</a> ()</td></tr>
+<tr class="memdesc:ad084d3704e94105edd28316a43da73c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of ids of all ClusterZone in the platform within each zone (&lt;cluster&gt; XML tag in the platform XML description)  <a href="classwrench_1_1_s4_u___simulation.html#ad084d3704e94105edd28316a43da73c0">More...</a><br /></td></tr>
+<tr class="separator:ad084d3704e94105edd28316a43da73c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72770be3bff81efae817e322b8b228d6"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a72770be3bff81efae817e322b8b228d6">getAllHostnames</a> ()</td></tr>
 <tr class="memdesc:a72770be3bff81efae817e322b8b228d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of physical hostnames.  <a href="classwrench_1_1_s4_u___simulation.html#a72770be3bff81efae817e322b8b228d6">More...</a><br /></td></tr>
 <tr class="separator:a72770be3bff81efae817e322b8b228d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f45613070010a4d280b1a37af4c5061"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a9f45613070010a4d280b1a37af4c5061">getAllHostnamesByCluster</a> ()</td></tr>
-<tr class="memdesc:a9f45613070010a4d280b1a37af4c5061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the by-cluster structure of the platform.  <a href="classwrench_1_1_s4_u___simulation.html#a9f45613070010a4d280b1a37af4c5061">More...</a><br /></td></tr>
+<tr class="memdesc:a9f45613070010a4d280b1a37af4c5061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of hostnames in each ClusterZone in the platform (&lt;cluster&gt; XML tag in the platform XML description)  <a href="classwrench_1_1_s4_u___simulation.html#a9f45613070010a4d280b1a37af4c5061">More...</a><br /></td></tr>
 <tr class="separator:a9f45613070010a4d280b1a37af4c5061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd163070a943b2975836269429dcac1f"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#abd163070a943b2975836269429dcac1f">getAllHostnamesByZone</a> ()</td></tr>
+<tr class="memdesc:abd163070a943b2975836269429dcac1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of hostnames in each NetZone (&lt;zone&gt; and &lt;cluster&gt; tags in the platform XML description). Note that this method does not recurse into sub-zones, so it only returns the hosts that are declared directly under the &lt;zone&gt; and or &lt;cluster&gt; tags.  <a href="classwrench_1_1_s4_u___simulation.html#abd163070a943b2975836269429dcac1f">More...</a><br /></td></tr>
+<tr class="separator:abd163070a943b2975836269429dcac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cb2a0e327c4da9cd6f0109df4e9724e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a3cb2a0e327c4da9cd6f0109df4e9724e">getAllLinknames</a> ()</td></tr>
 <tr class="memdesc:a3cb2a0e327c4da9cd6f0109df4e9724e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of link names.  <a href="classwrench_1_1_s4_u___simulation.html#a3cb2a0e327c4da9cd6f0109df4e9724e">More...</a><br /></td></tr>
 <tr class="separator:a3cb2a0e327c4da9cd6f0109df4e9724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818fd2b158e1575eb68b44d4989e9b5a"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a818fd2b158e1575eb68b44d4989e9b5a">getAllSubZoneIDsByZone</a> ()</td></tr>
+<tr class="memdesc:a818fd2b158e1575eb68b44d4989e9b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of ids of all (sub-)zones in the platform within each zone (&lt;zone&gt; XML tag in the platform XML description)  <a href="classwrench_1_1_s4_u___simulation.html#a818fd2b158e1575eb68b44d4989e9b5a">More...</a><br /></td></tr>
+<tr class="separator:a818fd2b158e1575eb68b44d4989e9b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e86b42e87be87991c1e5bdf1a90a55"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#aa6e86b42e87be87991c1e5bdf1a90a55">getClock</a> ()</td></tr>
 <tr class="memdesc:aa6e86b42e87be87991c1e5bdf1a90a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current simulation date.  <a href="classwrench_1_1_s4_u___simulation.html#aa6e86b42e87be87991c1e5bdf1a90a55">More...</a><br /></td></tr>
 <tr class="separator:aa6e86b42e87be87991c1e5bdf1a90a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ffa699d26e4fc61903112883051a41"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#ae5ffa699d26e4fc61903112883051a41">getClusterProperty</a> (std::string cluster_id, std::string property_name)</td></tr>
+<tr class="memdesc:ae5ffa699d26e4fc61903112883051a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the property associated to a cluster specified in the platform file.  <a href="classwrench_1_1_s4_u___simulation.html#ae5ffa699d26e4fc61903112883051a41">More...</a><br /></td></tr>
+<tr class="separator:ae5ffa699d26e4fc61903112883051a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2af5b56e85a34a72c131349e7db595f"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#ac2af5b56e85a34a72c131349e7db595f">getCurrentPstate</a> (const std::string &amp;hostname)</td></tr>
 <tr class="memdesc:ac2af5b56e85a34a72c131349e7db595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current power state of a host.  <a href="classwrench_1_1_s4_u___simulation.html#ac2af5b56e85a34a72c131349e7db595f">More...</a><br /></td></tr>
 <tr class="separator:ac2af5b56e85a34a72c131349e7db595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,7 +227,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>computeZeroFlo
 <tr class="memdesc:a1f64ef3a7e311e360ce7581e051b58fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of cores of a host.  <a href="classwrench_1_1_s4_u___simulation.html#a1f64ef3a7e311e360ce7581e051b58fd">More...</a><br /></td></tr>
 <tr class="separator:a1f64ef3a7e311e360ce7581e051b58fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5321cc7b90ea82a95357695cad1b8370"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a5321cc7b90ea82a95357695cad1b8370">getHostProperty</a> (std::string hostname, std::string property_name)</td></tr>
-<tr class="memdesc:a5321cc7b90ea82a95357695cad1b8370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the property associated to the host specified in the platform file.  <a href="classwrench_1_1_s4_u___simulation.html#a5321cc7b90ea82a95357695cad1b8370">More...</a><br /></td></tr>
+<tr class="memdesc:a5321cc7b90ea82a95357695cad1b8370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the property associated to a host specified in the platform file.  <a href="classwrench_1_1_s4_u___simulation.html#a5321cc7b90ea82a95357695cad1b8370">More...</a><br /></td></tr>
 <tr class="separator:a5321cc7b90ea82a95357695cad1b8370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6947e71502ef447928ea05d1a9ad915b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a6947e71502ef447928ea05d1a9ad915b">getLinkBandwidth</a> (std::string name)</td></tr>
 <tr class="memdesc:a6947e71502ef447928ea05d1a9ad915b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a link's bandwidth.  <a href="classwrench_1_1_s4_u___simulation.html#a6947e71502ef447928ea05d1a9ad915b">More...</a><br /></td></tr>
@@ -397,6 +409,34 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>DE
 
 </div>
 </div>
+<a id="ad084d3704e94105edd28316a43da73c0" name="ad084d3704e94105edd28316a43da73c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad084d3704e94105edd28316a43da73c0">&#9670;&nbsp;</a></span>getAllClusterIDsByZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; wrench::S4U_Simulation::getAllClusterIDsByZone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the list of ids of all ClusterZone in the platform within each zone (&lt;cluster&gt; XML tag in the platform XML description) </p>
+<dl class="section return"><dt>Returns</dt><dd>a map of zone ids and the list of cluster ids </dd></dl>
+
+</div>
+</div>
 <a id="a72770be3bff81efae817e322b8b228d6" name="a72770be3bff81efae817e322b8b228d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72770be3bff81efae817e322b8b228d6">&#9670;&nbsp;</a></span>getAllHostnames()</h2>
 
@@ -448,8 +488,36 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>DE
 </table>
 </div><div class="memdoc">
 
-<p>Get the by-cluster structure of the platform. </p>
-<dl class="section return"><dt>Returns</dt><dd>a map of all cluster names and their associated hostname list </dd></dl>
+<p>Get the list of hostnames in each ClusterZone in the platform (&lt;cluster&gt; XML tag in the platform XML description) </p>
+<dl class="section return"><dt>Returns</dt><dd>a map of all cluster ids and lists of hostnames </dd></dl>
+
+</div>
+</div>
+<a id="abd163070a943b2975836269429dcac1f" name="abd163070a943b2975836269429dcac1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd163070a943b2975836269429dcac1f">&#9670;&nbsp;</a></span>getAllHostnamesByZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; wrench::S4U_Simulation::getAllHostnamesByZone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the list of hostnames in each NetZone (&lt;zone&gt; and &lt;cluster&gt; tags in the platform XML description). Note that this method does not recurse into sub-zones, so it only returns the hosts that are declared directly under the &lt;zone&gt; and or &lt;cluster&gt; tags. </p>
+<dl class="section return"><dt>Returns</dt><dd>a map of all zone ids and lists of hostnames </dd></dl>
 
 </div>
 </div>
@@ -481,6 +549,34 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>DE
 
 </div>
 </div>
+<a id="a818fd2b158e1575eb68b44d4989e9b5a" name="a818fd2b158e1575eb68b44d4989e9b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818fd2b158e1575eb68b44d4989e9b5a">&#9670;&nbsp;</a></span>getAllSubZoneIDsByZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; wrench::S4U_Simulation::getAllSubZoneIDsByZone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the list of ids of all (sub-)zones in the platform within each zone (&lt;zone&gt; XML tag in the platform XML description) </p>
+<dl class="section return"><dt>Returns</dt><dd>a map of zone ids and the list of (sub-)zone ids </dd></dl>
+
+</div>
+</div>
 <a id="aa6e86b42e87be87991c1e5bdf1a90a55" name="aa6e86b42e87be87991c1e5bdf1a90a55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6e86b42e87be87991c1e5bdf1a90a55">&#9670;&nbsp;</a></span>getClock()</h2>
 
@@ -506,6 +602,52 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>DE
 
 <p>Get the current simulation date. </p>
 <dl class="section return"><dt>Returns</dt><dd>the simulation clock </dd></dl>
+
+</div>
+</div>
+<a id="ae5ffa699d26e4fc61903112883051a41" name="ae5ffa699d26e4fc61903112883051a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ffa699d26e4fc61903112883051a41">&#9670;&nbsp;</a></span>getClusterProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wrench::S4U_Simulation::getClusterProperty </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cluster_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>property_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the property associated to a cluster specified in the platform file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cluster_id</td><td>the cluster id </td></tr>
+    <tr><td class="paramname">property_name</td><td>the property name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a string relating to the property specified in the platform file </dd></dl>
 
 </div>
 </div>
@@ -898,7 +1040,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>DE
 </table>
 </div><div class="memdoc">
 
-<p>Get the property associated to the host specified in the platform file. </p>
+<p>Get the property associated to a host specified in the platform file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the host name </td></tr>
