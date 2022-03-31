@@ -175,6 +175,9 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>computeZeroFlop</b> ()</td></tr>
 <tr class="memdesc:a5c4aa7aa025722d5f5b8bae6338066f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute zero flop, which take zero time but will block if the host's pstate has a zero flop/sec speed, until the host's pstate is changed to a pstate with non-zero flop/sec speed. <br /></td></tr>
 <tr class="separator:a5c4aa7aa025722d5f5b8bae6338066f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973f720028bc74f3cec04d63ade5e99e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#a973f720028bc74f3cec04d63ade5e99e">createNewDisk</a> (const std::string &amp;hostname, const std::string &amp;disk_id, double read_bandwidth_in_bytes_per_sec, double write_bandwidth_in_bytes_per_sec, double capacity_in_bytes, const std::string &amp;mount_point)</td></tr>
+<tr class="memdesc:a973f720028bc74f3cec04d63ade5e99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to create, programmatically, a new disk.  <a href="classwrench_1_1_s4_u___simulation.html#a973f720028bc74f3cec04d63ade5e99e">More...</a><br /></td></tr>
+<tr class="separator:a973f720028bc74f3cec04d63ade5e99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad084d3704e94105edd28316a43da73c0"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_s4_u___simulation.html#ad084d3704e94105edd28316a43da73c0">getAllClusterIDsByZone</a> ()</td></tr>
 <tr class="memdesc:ad084d3704e94105edd28316a43da73c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of ids of all ClusterZone in the platform within each zone (&lt;cluster&gt; XML tag in the platform XML description)  <a href="classwrench_1_1_s4_u___simulation.html#ad084d3704e94105edd28316a43da73c0">More...</a><br /></td></tr>
 <tr class="separator:ad084d3704e94105edd28316a43da73c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,6 +406,79 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>DE
     <tr><td class="paramname">thread_creation_overhead</td><td>the thread creation overhead in seconds </td></tr>
     <tr><td class="paramname">sequential_work</td><td>the sequential work (in flops) </td></tr>
     <tr><td class="paramname">parallel_per_thread_work</td><td>the parallel per thread work (in flops) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a973f720028bc74f3cec04d63ade5e99e" name="a973f720028bc74f3cec04d63ade5e99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973f720028bc74f3cec04d63ade5e99e">&#9670;&nbsp;</a></span>createNewDisk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wrench::S4U_Simulation::createNewDisk </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>disk_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>read_bandwidth_in_bytes_per_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>write_bandwidth_in_bytes_per_sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>capacity_in_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>mount_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method to create, programmatically, a new disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostname</td><td>the name of the host to which the disk should be attaced </td></tr>
+    <tr><td class="paramname">disk_id</td><td>the nae of the disk </td></tr>
+    <tr><td class="paramname">read_bandwidth_in_bytes_per_sec</td><td>the disk's read bandwidth in byte/sec </td></tr>
+    <tr><td class="paramname">write_bandwidth_in_bytes_per_sec</td><td>the disk's write bandwidth in byte/sec </td></tr>
+    <tr><td class="paramname">capacity_in_bytes</td><td>the disk's capacity in bytes </td></tr>
+    <tr><td class="paramname">mount_point</td><td>the disk's mount point (most people use "/") </td></tr>
   </table>
   </dd>
 </dl>
