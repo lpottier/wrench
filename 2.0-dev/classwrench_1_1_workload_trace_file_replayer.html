@@ -127,7 +127,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A service that goes through a job submission trace (as loaded by a <a class="el" href="classwrench_1_1_trace_file_loader.html" title="A class that can load a job submission trace (a.k.a. supercomputer workload) in the SWF format (see h...">TraceFileLoader</a>), and "replays" it on a given <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a>.  
+<p>A service that goes through a job submission trace (as loaded by a <a class="el" href="classwrench_1_1_trace_file_loader.html" title="A class that can load a job submission trace (a.k.a. supercomputer workload) in the SWF format (see h...">TraceFileLoader</a>), and "replays" it on a given <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>.  
  <a href="classwrench_1_1_workload_trace_file_replayer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_workload_trace_file_replayer_8h_source.html">WorkloadTraceFileReplayer.h</a>&gt;</code></p>
@@ -444,7 +444,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>num_starts</b
 <tr class="separator:a15353b51fce12254190299f9c7550dd1 inherit pro_attribs_classwrench_1_1_s4_u___daemon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A service that goes through a job submission trace (as loaded by a <a class="el" href="classwrench_1_1_trace_file_loader.html" title="A class that can load a job submission trace (a.k.a. supercomputer workload) in the SWF format (see h...">TraceFileLoader</a>), and "replays" it on a given <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a>. </p>
+<div class="textblock"><p >A service that goes through a job submission trace (as loaded by a <a class="el" href="classwrench_1_1_trace_file_loader.html" title="A class that can load a job submission trace (a.k.a. supercomputer workload) in the SWF format (see h...">TraceFileLoader</a>), and "replays" it on a given <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fa0a31cec35dc328d7a514960f86a29" name="a9fa0a31cec35dc328d7a514960f86a29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fa0a31cec35dc328d7a514960f86a29">&#9670;&nbsp;</a></span>WorkloadTraceFileReplayer()</h2>
@@ -494,8 +494,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>num_starts</b
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the name of the host on which the trace file replayer will be started </td></tr>
-    <tr><td class="paramname">batch_service</td><td>the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> service to which it submits jobs </td></tr>
-    <tr><td class="paramname">num_cores_per_node</td><td>the number of cores per host on the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> service </td></tr>
+    <tr><td class="paramname">batch_service</td><td>the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> service to which it submits jobs </td></tr>
+    <tr><td class="paramname">num_cores_per_node</td><td>the number of cores per host on the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> service </td></tr>
     <tr><td class="paramname">use_actual_runtimes_as_requested_runtimes</td><td>if true, use actual runtimes as requested runtimes </td></tr>
     <tr><td class="paramname">workload_trace</td><td>the workload trace to be replayed </td></tr>
   </table>

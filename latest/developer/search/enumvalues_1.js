@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expired_0',['EXPIRED',['../classwrench_1_1_pilot_job.html#a0540139dbc8b0a8506a87b2f55020fc8adb2cdc68dca41bf37d4e7e2703010381',1,'wrench::PilotJob']]]
+  ['discontinued_0',['DISCONTINUED',['../classwrench_1_1_compound_job.html#abd9194d84b704e30370b51db1737fe01a9352a053a632186c7eb9b4d9d9210559',1,'wrench::CompoundJob']]]
 ];

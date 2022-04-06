@@ -128,7 +128,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>An abstract class that defines a batch_standard_and_pilot_jobs scheduler.  
+<p>An abstract class that defines a batch scheduler.  
  <a href="classwrench_1_1_batch_scheduler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_batch_scheduler_8h_source.html">BatchScheduler.h</a>&gt;</code></p>
@@ -138,11 +138,11 @@ Inheritance diagram for wrench::BatchScheduler:</div>
  <div class="center">
   <img src="classwrench_1_1_batch_scheduler.png" usemap="#wrench::BatchScheduler_map" alt=""/>
   <map id="wrench::BatchScheduler_map" name="wrench::BatchScheduler_map">
-<area href="classwrench_1_1_batsched_batch_scheduler.html" title="A class that defines a batsched batch_standard_and_pilot_jobs scheduler." alt="wrench::BatschedBatchScheduler" shape="rect" coords="0,56,342,80"/>
-<area href="classwrench_1_1_homegrown_batch_scheduler.html" title="An abstract class that defines a batch_standard_and_pilot_jobs scheduler." alt="wrench::HomegrownBatchScheduler" shape="rect" coords="352,56,694,80"/>
-<area href="classwrench_1_1_conservative_backfilling_batch_scheduler.html" title="A class that defines a conservative backfilling batch_standard_and_pilot_jobs scheduler." alt="wrench::ConservativeBackfillingBatchScheduler" shape="rect" coords="0,112,342,136"/>
-<area href="classwrench_1_1_conservative_backfilling_batch_scheduler_core_level.html" title="A class that defines a conservative backfilling batch_standard_and_pilot_jobs scheduler." alt="wrench::ConservativeBackfillingBatchSchedulerCoreLevel" shape="rect" coords="352,112,694,136"/>
-<area href="classwrench_1_1_f_c_f_s_batch_scheduler.html" title="A class that implements a FCFS batch_standard_and_pilot_jobs scheduler." alt="wrench::FCFSBatchScheduler" shape="rect" coords="704,112,1046,136"/>
+<area href="classwrench_1_1_batsched_batch_scheduler.html" title="A class that defines a batsched batch scheduler." alt="wrench::BatschedBatchScheduler" shape="rect" coords="0,56,342,80"/>
+<area href="classwrench_1_1_homegrown_batch_scheduler.html" title="An abstract class that defines a batch scheduler." alt="wrench::HomegrownBatchScheduler" shape="rect" coords="352,56,694,80"/>
+<area href="classwrench_1_1_conservative_backfilling_batch_scheduler.html" title="A class that defines a conservative backfilling batch scheduler." alt="wrench::ConservativeBackfillingBatchScheduler" shape="rect" coords="0,112,342,136"/>
+<area href="classwrench_1_1_conservative_backfilling_batch_scheduler_core_level.html" title="A class that defines a conservative backfilling batch scheduler." alt="wrench::ConservativeBackfillingBatchSchedulerCoreLevel" shape="rect" coords="352,112,694,136"/>
+<area href="classwrench_1_1_f_c_f_s_batch_scheduler.html" title="A class that implements a FCFS batch scheduler." alt="wrench::FCFSBatchScheduler" shape="rect" coords="704,112,1046,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -194,7 +194,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8d7fc2963b0e9abd58c7b72ead16f6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >An abstract class that defines a batch_standard_and_pilot_jobs scheduler. </p>
+<div class="textblock"><p >An abstract class that defines a batch scheduler. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abab9a8c2943192fa55ff02093160c6e1" name="abab9a8c2943192fa55ff02093160c6e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abab9a8c2943192fa55ff02093160c6e1">&#9670;&nbsp;</a></span>BatchScheduler()</h2>
@@ -223,7 +223,7 @@ Protected Attributes</h2></td></tr>
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cs</td><td>the batch_standard_and_pilot_jobs compute service to which this scheduler is associated </td></tr>
+    <tr><td class="paramname">cs</td><td>the batch compute service to which this scheduler is associated </td></tr>
   </table>
   </dd>
 </dl>
@@ -354,7 +354,7 @@ Protected Attributes</h2></td></tr>
 <p>Method to process a job completion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>the batch_standard_and_pilot_jobs job that has completed </td></tr>
+    <tr><td class="paramname">batch_job</td><td>the batch job that has completed </td></tr>
   </table>
   </dd>
 </dl>
@@ -390,7 +390,7 @@ Protected Attributes</h2></td></tr>
 <p>Method to process a job failure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>the batch_standard_and_pilot_jobs job that has failed </td></tr>
+    <tr><td class="paramname">batch_job</td><td>the batch job that has failed </td></tr>
   </table>
   </dd>
 </dl>
@@ -426,7 +426,7 @@ Protected Attributes</h2></td></tr>
 <p>Method to process a job submission. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>the batch_standard_and_pilot_jobs job that was submitted </td></tr>
+    <tr><td class="paramname">batch_job</td><td>the batch job that was submitted </td></tr>
   </table>
   </dd>
 </dl>
@@ -462,7 +462,7 @@ Protected Attributes</h2></td></tr>
 <p>Method to process a job termination. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>the batch_standard_and_pilot_jobs job that was terminated </td></tr>
+    <tr><td class="paramname">batch_job</td><td>the batch job that was terminated </td></tr>
   </table>
   </dd>
 </dl>
@@ -527,7 +527,7 @@ Protected Attributes</h2></td></tr>
 <p>Method to process a job termination when the job is already forgotten (useful for batsched) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">job_id</td><td>the id of the batch_standard_and_pilot_jobs job that was terminated </td></tr>
+    <tr><td class="paramname">job_id</td><td>the id of the batch job that was terminated </td></tr>
   </table>
   </dd>
 </dl>

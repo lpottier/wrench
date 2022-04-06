@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26ee7448273c4fa1269156aafb6bbe87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a26ee7448273c4fa1269156aafb6bbe87">setLocalStorageService</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_storage_service.html">StorageService</a> &gt; local_storage_service)</td></tr>
 <tr class="memdesc:a26ee7448273c4fa1269156aafb6bbe87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the service's local storage service.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a26ee7448273c4fa1269156aafb6bbe87">More...</a><br /></td></tr>
 <tr class="separator:a26ee7448273c4fa1269156aafb6bbe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069efd57bbb719959f0d15fb0b87ace3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a069efd57bbb719959f0d15fb0b87ace3">submitCompoundJob</a> (std::shared_ptr&lt; CompoundJob &gt; job, const std::map&lt; std::string, std::string &gt; &amp;service_specific_arguments) override</td></tr>
+<tr class="memitem:a069efd57bbb719959f0d15fb0b87ace3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a069efd57bbb719959f0d15fb0b87ace3">submitCompoundJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; job, const std::map&lt; std::string, std::string &gt; &amp;service_specific_arguments) override</td></tr>
 <tr class="memdesc:a069efd57bbb719959f0d15fb0b87ace3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a compound job to the HTCondor service.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a069efd57bbb719959f0d15fb0b87ace3">More...</a><br /></td></tr>
 <tr class="separator:a069efd57bbb719959f0d15fb0b87ace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab32b4b36453d6deef5fe7d031de76d57"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#ab32b4b36453d6deef5fe7d031de76d57">supportsCompoundJobs</a> () override</td></tr>
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e7147b63ab07c1fcdf1afe67f3bbcfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#a8e7147b63ab07c1fcdf1afe67f3bbcfa">validateJobsUseOfScratch</a> (std::map&lt; std::string, std::string &gt; &amp;service_specific_args) override</td></tr>
 <tr class="memdesc:a8e7147b63ab07c1fcdf1afe67f3bbcfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether compute service has scratch.  <a href="classwrench_1_1_h_t_condor_compute_service.html#a8e7147b63ab07c1fcdf1afe67f3bbcfa">More...</a><br /></td></tr>
 <tr class="separator:a8e7147b63ab07c1fcdf1afe67f3bbcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3d111aa0da6340d67d9b2488999aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#aec3d111aa0da6340d67d9b2488999aa5">validateServiceSpecificArguments</a> (std::shared_ptr&lt; CompoundJob &gt; compound_job, std::map&lt; std::string, std::string &gt; &amp;service_specific_args) override</td></tr>
+<tr class="memitem:aec3d111aa0da6340d67d9b2488999aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_h_t_condor_compute_service.html#aec3d111aa0da6340d67d9b2488999aa5">validateServiceSpecificArguments</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; compound_job, std::map&lt; std::string, std::string &gt; &amp;service_specific_args) override</td></tr>
 <tr class="memdesc:aec3d111aa0da6340d67d9b2488999aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method the validates service-specific arguments (throws std::invalid_argument if invalid)  <a href="classwrench_1_1_h_t_condor_compute_service.html#aec3d111aa0da6340d67d9b2488999aa5">More...</a><br /></td></tr>
 <tr class="separator:aec3d111aa0da6340d67d9b2488999aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwrench_1_1_compute_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_compute_service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_compute_service.html">wrench::ComputeService</a></td></tr>
@@ -235,7 +235,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a962fa9ee4fe18884cfd9ad309889484e inherit pub_methods_classwrench_1_1_compute_service"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a962fa9ee4fe18884cfd9ad309889484e">supportsStandardJobs</a> ()=0</td></tr>
 <tr class="memdesc:a962fa9ee4fe18884cfd9ad309889484e inherit pub_methods_classwrench_1_1_compute_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports standard jobs.  <a href="classwrench_1_1_compute_service.html#a962fa9ee4fe18884cfd9ad309889484e">More...</a><br /></td></tr>
 <tr class="separator:a962fa9ee4fe18884cfd9ad309889484e inherit pub_methods_classwrench_1_1_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d8c8f7051f5654cf2d0951f3d66c5f inherit pub_methods_classwrench_1_1_compute_service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a77d8c8f7051f5654cf2d0951f3d66c5f">terminateJob</a> (std::shared_ptr&lt; CompoundJob &gt; job)</td></tr>
+<tr class="memitem:a77d8c8f7051f5654cf2d0951f3d66c5f inherit pub_methods_classwrench_1_1_compute_service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a77d8c8f7051f5654cf2d0951f3d66c5f">terminateJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; job)</td></tr>
 <tr class="memdesc:a77d8c8f7051f5654cf2d0951f3d66c5f inherit pub_methods_classwrench_1_1_compute_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a previously-submitted job (which may or may not be running yet)  <a href="classwrench_1_1_compute_service.html#a77d8c8f7051f5654cf2d0951f3d66c5f">More...</a><br /></td></tr>
 <tr class="separator:a77d8c8f7051f5654cf2d0951f3d66c5f inherit pub_methods_classwrench_1_1_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwrench_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_service.html">wrench::Service</a></td></tr>
@@ -349,7 +349,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>AL
   <table class="params">
     <tr><td class="paramname">hostname</td><td>the name of the host on which to start the service </td></tr>
     <tr><td class="paramname">compute_services</td><td>a set of 'child' compute services that have been added to the simulation and that are available to and usable through the HTCondor pool.<ul>
-<li><a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> instances will be used for Condor jobs in the "grid" universe</li>
+<li><a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> instances will be used for Condor jobs in the "grid" universe</li>
 <li><a class="el" href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc...">BareMetalComputeService</a> instances will be used for Condor jobs not in the "grid" universe</li>
 <li>other types of compute services are disallowed </li>
 </ul>
@@ -453,7 +453,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>AL
         <tr>
           <td class="memname">void wrench::HTCondorComputeService::submitCompoundJob </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; CompoundJob &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em>, </td>
         </tr>
         <tr>
@@ -629,7 +629,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>AL
         <tr>
           <td class="memname">void wrench::HTCondorComputeService::validateServiceSpecificArguments </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; CompoundJob &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em>, </td>
         </tr>
         <tr>

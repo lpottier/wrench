@@ -144,7 +144,7 @@ Inheritance diagram for wrench::ComputeService:</div>
 <area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="540,56,800,80"/>
 <area href="classwrench_1_1_s4_u___daemon.html" title="A generic &quot;running daemon&quot; abstraction that serves as a basis for all simulated processes." alt="wrench::S4U_Daemon" shape="rect" coords="405,0,665,24"/>
 <area href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc..." alt="wrench::BareMetalComputeService" shape="rect" coords="0,168,260,192"/>
-<area href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con..." alt="wrench::BatchComputeService" shape="rect" coords="270,168,530,192"/>
+<area href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re..." alt="wrench::BatchComputeService" shape="rect" coords="270,168,530,192"/>
 <area href="classwrench_1_1_cloud_compute_service.html" title="A cloud-based compute service that manages a set of physical hosts and controls access to their resou..." alt="wrench::CloudComputeService" shape="rect" coords="540,168,800,192"/>
 <area href="classwrench_1_1_h_t_condor_central_manager_service.html" title="A HTCondor central manager service implementation." alt="wrench::HTCondorCentralManagerService" shape="rect" coords="810,168,1070,192"/>
 <area href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service." alt="wrench::HTCondorComputeService" shape="rect" coords="1080,168,1340,192"/>
@@ -1206,7 +1206,7 @@ simgrid::s4u::Mailbox *&#160;</td><td class="memItemRight" valign="bottom"><b>re
 <li>If a hostname and a number of cores is provided (e.g., {"action1", "host1:12"}, the service will run the action on that host with the specified number of cores</li>
 </ul>
 </li>
-<li>to a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a>: {"-t":"&lt;int&gt;","-N":"&lt;int&gt;","-c":"&lt;int&gt;"[,{"-u":"&lt;string&gt;"}], [{actionID:[host[:num_cores]]}<ul>
+<li>to a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a>: {"-t":"&lt;int&gt;","-N":"&lt;int&gt;","-c":"&lt;int&gt;"[,{"-u":"&lt;string&gt;"}], [{actionID:[host[:num_cores]]}<ul>
 <li>"-t": number of requested job duration in minutes</li>
 <li>"-N": number of requested compute hosts</li>
 <li>"-c": number of requested cores per compute host</li>

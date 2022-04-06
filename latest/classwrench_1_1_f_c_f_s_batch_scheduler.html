@@ -127,7 +127,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class that implements a FCFS batch_standard_and_pilot_jobs scheduler.  
+<p>A class that implements a FCFS batch scheduler.  
  <a href="classwrench_1_1_f_c_f_s_batch_scheduler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_f_c_f_s_batch_scheduler_8h_source.html">FCFSBatchScheduler.h</a>&gt;</code></p>
@@ -137,8 +137,8 @@ Inheritance diagram for wrench::FCFSBatchScheduler:</div>
  <div class="center">
   <img src="classwrench_1_1_f_c_f_s_batch_scheduler.png" usemap="#wrench::FCFSBatchScheduler_map" alt=""/>
   <map id="wrench::FCFSBatchScheduler_map" name="wrench::FCFSBatchScheduler_map">
-<area href="classwrench_1_1_homegrown_batch_scheduler.html" title="An abstract class that defines a batch_standard_and_pilot_jobs scheduler." alt="wrench::HomegrownBatchScheduler" shape="rect" coords="0,56,217,80"/>
-<area href="classwrench_1_1_batch_scheduler.html" title="An abstract class that defines a batch_standard_and_pilot_jobs scheduler." alt="wrench::BatchScheduler" shape="rect" coords="0,0,217,24"/>
+<area href="classwrench_1_1_homegrown_batch_scheduler.html" title="An abstract class that defines a batch scheduler." alt="wrench::HomegrownBatchScheduler" shape="rect" coords="0,56,217,80"/>
+<area href="classwrench_1_1_batch_scheduler.html" title="An abstract class that defines a batch scheduler." alt="wrench::BatchScheduler" shape="rect" coords="0,0,217,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -238,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8d7fc2963b0e9abd58c7b72ead16f6cb inherit pro_attribs_classwrench_1_1_batch_scheduler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A class that implements a FCFS batch_standard_and_pilot_jobs scheduler. </p>
+<div class="textblock"><p >A class that implements a FCFS batch scheduler. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeff58aa2b21aa12ef01a14acb20d0732" name="aeff58aa2b21aa12ef01a14acb20d0732"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeff58aa2b21aa12ef01a14acb20d0732">&#9670;&nbsp;</a></span>FCFSBatchScheduler()</h2>
@@ -267,7 +267,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cs</td><td>the batch_standard_and_pilot_jobs compute service for which this scheduler is operating </td></tr>
+    <tr><td class="paramname">cs</td><td>the batch compute service for which this scheduler is operating </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,7 +328,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overriden Method to pick the next job to schedule. </p>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job, or nullptr is none is found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> job, or nullptr is none is found </dd></dl>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 <p>No-op method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job </td></tr>
+    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> job </td></tr>
   </table>
   </dd>
 </dl>
@@ -395,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
 <p>No-op method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job </td></tr>
+    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> job </td></tr>
   </table>
   </dd>
 </dl>
@@ -431,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 <p>No-op method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job </td></tr>
+    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> job </td></tr>
   </table>
   </dd>
 </dl>
@@ -467,7 +467,7 @@ Additional Inherited Members</h2></td></tr>
 <p>No-op method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> job </td></tr>
+    <tr><td class="paramname">batch_job</td><td>a <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> job </td></tr>
   </table>
   </dd>
 </dl>

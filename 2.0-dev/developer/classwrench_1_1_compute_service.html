@@ -141,7 +141,7 @@ Inheritance diagram for wrench::ComputeService:</div>
   <map id="wrench::ComputeService_map" name="wrench::ComputeService_map">
 <area href="classwrench_1_1_service.html" title="A service that can be added to the simulation and that can be used by a WMS when executing a workflow..." alt="wrench::Service" shape="rect" coords="394,56,647,80"/>
 <area href="classwrench_1_1_bare_metal_compute_service.html" title="A compute service that manages a set of multi-core compute hosts and provides access to their resourc..." alt="wrench::BareMetalComputeService" shape="rect" coords="0,168,253,192"/>
-<area href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con..." alt="wrench::BatchComputeService" shape="rect" coords="263,168,516,192"/>
+<area href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re..." alt="wrench::BatchComputeService" shape="rect" coords="263,168,516,192"/>
 <area href="classwrench_1_1_cloud_compute_service.html" title="A cloud-based compute service that manages a set of physical hosts and controls access to their resou..." alt="wrench::CloudComputeService" shape="rect" coords="526,168,779,192"/>
 <area href="classwrench_1_1_h_t_condor_compute_service.html" title="A workload management framework compute service." alt="wrench::HTCondorComputeService" shape="rect" coords="789,168,1042,192"/>
 <area href="classwrench_1_1_virtualized_cluster_compute_service.html" title="A virtualized cluster-based compute service." alt="wrench::VirtualizedClusterComputeService" shape="rect" coords="526,224,779,248"/>
@@ -220,7 +220,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a962fa9ee4fe18884cfd9ad309889484e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a962fa9ee4fe18884cfd9ad309889484e">supportsStandardJobs</a> ()=0</td></tr>
 <tr class="memdesc:a962fa9ee4fe18884cfd9ad309889484e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the service supports standard jobs.  <a href="classwrench_1_1_compute_service.html#a962fa9ee4fe18884cfd9ad309889484e">More...</a><br /></td></tr>
 <tr class="separator:a962fa9ee4fe18884cfd9ad309889484e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d8c8f7051f5654cf2d0951f3d66c5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a77d8c8f7051f5654cf2d0951f3d66c5f">terminateJob</a> (std::shared_ptr&lt; CompoundJob &gt; job)</td></tr>
+<tr class="memitem:a77d8c8f7051f5654cf2d0951f3d66c5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compute_service.html#a77d8c8f7051f5654cf2d0951f3d66c5f">terminateJob</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; job)</td></tr>
 <tr class="memdesc:a77d8c8f7051f5654cf2d0951f3d66c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a previously-submitted job (which may or may not be running yet)  <a href="classwrench_1_1_compute_service.html#a77d8c8f7051f5654cf2d0951f3d66c5f">More...</a><br /></td></tr>
 <tr class="separator:a77d8c8f7051f5654cf2d0951f3d66c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwrench_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_service.html">wrench::Service</a></td></tr>
@@ -865,7 +865,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>AL
         <tr>
           <td class="memname">void wrench::ComputeService::terminateJob </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; CompoundJob &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt;&#160;</td>
           <td class="paramname"><em>job</em></td><td>)</td>
           <td></td>
         </tr>

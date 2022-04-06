@@ -134,7 +134,7 @@ Creating a Simple storage service</h1>
 <ul>
 <li>The name of a host on which to start the service;</li>
 <li>A list of mount points (corresponding to disks attached to the host); and</li>
-<li>Maps (<code>std::map</code>) of configurable properties (<code><a class="el" href="classwrench_1_1_batch_compute_service_property.html" title="Configurable properties for a BatchComputeService.">wrench::BatchComputeServiceProperty</a></code>) and configurable message payloads (<code><a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch_standard_and_pilot_jobs.">wrench::BatchComputeServiceMessagePayload</a></code>).</li>
+<li>Maps (<code>std::map</code>) of configurable properties (<code><a class="el" href="classwrench_1_1_batch_compute_service_property.html" title="Configurable properties for a BatchComputeService.">wrench::BatchComputeServiceProperty</a></code>) and configurable message payloads (<code><a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch.">wrench::BatchComputeServiceMessagePayload</a></code>).</li>
 </ul>
 <p >The example below creates an instance of a Simple storage service that runs on host <code>BigDisk</code>, has access to the disks mounted at paths <code>/data/</code> and <code>/home/</code> at host <code>BigDisk</code>. Furthermore, the number of maximum concurrent data connections supported by the service is configured to be 8, and the message sent to the service to find out its free space is configured to be 1KiB:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> storage_service = simulation-&gt;add(</div>

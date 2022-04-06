@@ -127,7 +127,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch_standard_and_pilot_jobs queue.  
+<p>A batch-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch queue.  
  <a href="classwrench_1_1_batch_compute_service.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_batch_compute_service_8h_source.html">BatchComputeService.h</a>&gt;</code></p>
@@ -170,7 +170,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>AL
 <tr class="separator:abc4fe0bad59f544b4b34d0e7d4012d44 inherit pub_static_attribs_classwrench_1_1_compute_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch_standard_and_pilot_jobs queue. </p>
+<div class="textblock"><p >A batch-scheduled compute service that manages a set of compute hosts and controls access to their resource via a batch queue. </p>
 <p >In the current implementation of this service, like for many of its real-world counterparts, memory_manager_service partitioning among jobs onq the same host is not handled. When multiple jobs share hosts, which can happen when jobs require only a few cores per host and can thus be co-located on the same hosts in a non-exclusive fashion, each job simply runs as if it had access to the full RAM of each compute host it is scheduled on. The simulation of these memory_manager_service contended scenarios is thus, for now, not realistic as there is no simulation of the effects of memory_manager_service sharing (e.g., swapping). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add580d500c6ac06788c3d72e3b989bca" name="add580d500c6ac06788c3d72e3b989bca"></a>
@@ -223,13 +223,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>AL
     <tr><td class="paramname">hostname</td><td>the hostname on which to start the service </td></tr>
     <tr><td class="paramname">compute_hosts</td><td>the list of names of the available compute hosts<ul>
 <li>the hosts must be homogeneous (speed, number of cores, and RAM size)</li>
-<li>all cores are usable by the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> service on each host</li>
-<li>all RAM is usable by the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch_standard_and_pilot_jobs-scheduled compute service that manages a set of compute hosts and con...">BatchComputeService</a> service on each host </li>
+<li>all cores are usable by the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> service on each host</li>
+<li>all RAM is usable by the <a class="el" href="classwrench_1_1_batch_compute_service.html" title="A batch-scheduled compute service that manages a set of compute hosts and controls access to their re...">BatchComputeService</a> service on each host </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">scratch_space_mount_point</td><td>the mount point of the scratch storage space for the service ("" means "no scratch space") </td></tr>
     <tr><td class="paramname">property_list</td><td>a property list that specifies <a class="el" href="classwrench_1_1_batch_compute_service_property.html" title="Configurable properties for a BatchComputeService.">BatchComputeServiceProperty</a> values ({} means "use all defaults") </td></tr>
-    <tr><td class="paramname">messagepayload_list</td><td>a message payload list that specifies <a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch_standard_and_pilot_jobs.">BatchComputeServiceMessagePayload</a> values ({} means "use all defaults") </td></tr>
+    <tr><td class="paramname">messagepayload_list</td><td>a message payload list that specifies <a class="el" href="classwrench_1_1_batch_compute_service_message_payload.html" title="Configurable message payloads for a batch.">BatchComputeServiceMessagePayload</a> values ({} means "use all defaults") </td></tr>
   </table>
   </dd>
 </dl>
