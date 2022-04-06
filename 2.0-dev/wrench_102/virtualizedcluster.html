@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interacting with a virtualized cluster service &mdash; WRENCH 2.0-dev documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> WRENCH
+          </a>
+              <div class="version">
+                2.0-dev
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quickstart</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installing WRENCH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../simulation_101.html">Simulation 101</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrench_101.html">WRENCH 101</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrench_102.html">WRENCH 102</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_user.html">WRENCH User API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_developer.html">WRENCH Developer API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_internal.html">WRENCH Internal API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WRENCH</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Interacting with a virtualized cluster service</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/wrench_102/virtualizedcluster.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="interacting-with-a-virtualized-cluster-service">
+<span id="guide-102-virtualizedcluster"></span><h1>Interacting with a virtualized cluster service<a class="headerlink" href="#interacting-with-a-virtualized-cluster-service" title="Permalink to this headline"></a></h1>
+<p>The <a class="reference internal" href="../api_developer/classwrench_1_1_virtualized_cluster_compute_service.html#_CPPv4N6wrench32VirtualizedClusterComputeServiceE" title="wrench::VirtualizedClusterComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::VirtualizedClusterComputeService</span></code></a> derives the
+<a class="reference internal" href="../api_developer/classwrench_1_1_cloud_compute_service.html#_CPPv4N6wrench19CloudComputeServiceE" title="wrench::CloudComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::CloudComputeService</span></code></a> class. One interacts with it in almost
+the same way as one <a class="reference internal" href="cloud.html#guide-102-cloud"><span class="std std-ref">interacts with a cloud
+servicde</span></a>. The one difference between a
+virtualized cluster service and a cloud service is that the former
+exposes underlying physical resources, while the latter does not. More
+simply put, with a virtualized cluster service one can create VM
+instances on specific hosts, and migrate VM instances between hosts.</p>
+<p>Here is an example interaction with a virtualized cluster service, in
+which VM instances are created and (live) migrated:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">wrench</span><span class="o">::</span><span class="n">VirtualizedClusterComputeService</span><span class="o">&gt;</span><span class="w"> </span><span class="n">virtualized_cluster_cs</span><span class="p">;</span><span class="w"></span>
+
+
+<span class="c1">// Create a VM with 2 cores and 1 GiB of RAM</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">vm1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">createVM</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">30</span><span class="p">));</span><span class="w"></span>
+
+<span class="c1">// Create a VM with 4 cores and 2 GiB of RAM</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">vm2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">createVM</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">31</span><span class="p">));</span><span class="w"></span>
+
+<span class="p">[...]</span><span class="w"></span>
+
+<span class="c1">// Start the first VM on Host1</span>
+<span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">startVM</span><span class="p">(</span><span class="n">vm1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Host1&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// Start the second VM on Host2</span>
+<span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">startVM</span><span class="p">(</span><span class="n">vm1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Host2&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="p">[...]</span><span class="w"></span>
+
+<span class="c1">// Live migrate vm1 to host3</span>
+<span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">migrateVM</span><span class="p">(</span><span class="n">vm1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;host3&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="c1">// Live migrate vm2 to host4</span>
+<span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">migrateVM</span><span class="p">(</span><span class="n">vm2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;host4&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="p">[...]</span><span class="w"></span>
+
+<span class="c1">// Shutdown the VMs</span>
+<span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">shutdownVM</span><span class="p">(</span><span class="n">vm1</span><span class="p">);</span><span class="w"></span>
+<span class="n">virtualized_cluster_cs</span><span class="o">-&gt;</span><span class="n">shutdownVM</span><span class="p">(</span><span class="n">vm2</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In the code above the VM instances are not used for anything. See the
+<a class="reference internal" href="cloud.html#guide-102-cloud"><span class="std std-ref">interacting with a cloud service page</span></a> for
+an example in which jobs are submitted to the VM instances.</p>
+<p>See the execution controller implementation in
+<code class="docutils literal notranslate"><span class="pre">examples/basic-examples/virtualized-cluster-bag-of-tasks/TwoTasksAtATimeVirtualizedClusterWMS.cpp</span></code>
+for a more complete example.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, WRENCH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

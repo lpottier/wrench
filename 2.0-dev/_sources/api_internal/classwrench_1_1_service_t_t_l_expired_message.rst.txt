@@ -1,0 +1,8 @@
+.. _ServiceTTLExpiredMessage:
+wrench::ServiceTTLExpiredMessage
+********************************
+
+.. doxygenclass:: wrench::ServiceTTLExpiredMessage
+   :project: internal
+   :members:
+
