@@ -720,7 +720,7 @@
 <dd><p>Set the task average CPU usage. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>average_cpu</strong> – task average CPU usage </p>
+<dd class="field-odd"><p><strong>a_cpu</strong> – task average CPU usage </p>
 </dd>
 </dl>
 </dd></dl>
@@ -731,7 +731,7 @@
 <dd><p>Set the number of bytes read by the task. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>bytes_read</strong> – number of bytes read by the task in KB </p>
+<dd class="field-odd"><p><strong>b_read</strong> – number of bytes read by the task in KB </p>
 </dd>
 </dl>
 </dd></dl>
@@ -742,18 +742,18 @@
 <dd><p>Set the number of bytes written by the task. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>bytes_written</strong> – number of bytes written by the task in KB </p>
+<dd class="field-odd"><p><strong>b_written</strong> – number of bytes written by the task in KB </p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N6wrench12WorkflowTask12setClusterIDENSt6stringE">
-<span id="_CPPv3N6wrench12WorkflowTask12setClusterIDENSt6stringE"></span><span id="_CPPv2N6wrench12WorkflowTask12setClusterIDENSt6stringE"></span><span id="wrench::WorkflowTask::setClusterID__ss"></span><span class="target" id="classwrench_1_1_workflow_task_1ab8d621c9cf50b489fd6b092bea59872a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setClusterID</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench12WorkflowTask12setClusterIDENSt6stringE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Set the cluster id for the task. </p>
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench12WorkflowTask12setClusterIDERKNSt6stringE">
+<span id="_CPPv3N6wrench12WorkflowTask12setClusterIDERKNSt6stringE"></span><span id="_CPPv2N6wrench12WorkflowTask12setClusterIDERKNSt6stringE"></span><span id="wrench::WorkflowTask::setClusterID__ssCR"></span><span class="target" id="classwrench_1_1_workflow_task_1a8e2579e57c6671c82c68f507b4af256e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setClusterID</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench12WorkflowTask12setClusterIDERKNSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Set the cluster c_id for the task. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>id</strong> – cluster id the task belongs to </p>
+<dd class="field-odd"><p><strong>c_id</strong> – cluster c_id the task belongs to </p>
 </dd>
 </dl>
 </dd></dl>
@@ -794,10 +794,10 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N6wrench12WorkflowTask11setPriorityEl">
 <span id="_CPPv3N6wrench12WorkflowTask11setPriorityEl"></span><span id="_CPPv2N6wrench12WorkflowTask11setPriorityEl"></span><span id="wrench::WorkflowTask::setPriority__l"></span><span class="target" id="classwrench_1_1_workflow_task_1ae5101ae5e4e386705a549e4e91432049"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPriority</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">long</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench12WorkflowTask11setPriorityEl" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Set the task priority. </p>
+<dd><p>Set the task p. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>priority</strong> – task priority </p>
+<dd class="field-odd"><p><strong>p</strong> – task p </p>
 </dd>
 </dl>
 </dd></dl>
@@ -806,8 +806,8 @@
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N6wrench12WorkflowTask13stateToStringEN12WorkflowTask5StateE">
-<span id="_CPPv3N6wrench12WorkflowTask13stateToStringEN12WorkflowTask5StateE"></span><span id="_CPPv2N6wrench12WorkflowTask13stateToStringEN12WorkflowTask5StateE"></span><span id="wrench::WorkflowTask::stateToString__WorkflowTask::State"></span><span class="target" id="classwrench_1_1_workflow_task_1a542a6f96bea2d2e67d21bc32c0151e73"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stateToString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N6wrench12WorkflowTaskE" title="wrench::WorkflowTask"><span class="n"><span class="pre">WorkflowTask</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N6wrench12WorkflowTask5StateE" title="wrench::WorkflowTask::State"><span class="n"><span class="pre">State</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench12WorkflowTask13stateToStringEN12WorkflowTask5StateE" title="Permalink to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench12WorkflowTask13stateToStringE5State">
+<span id="_CPPv3N6wrench12WorkflowTask13stateToStringE5State"></span><span id="_CPPv2N6wrench12WorkflowTask13stateToStringE5State"></span><span id="wrench::WorkflowTask::stateToString__State"></span><span class="target" id="classwrench_1_1_workflow_task_1a753aeeb3dc680f5c57eec3dec03ca3cc"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stateToString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N6wrench12WorkflowTask5StateE" title="wrench::WorkflowTask::State"><span class="n"><span class="pre">State</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench12WorkflowTask13stateToStringE5State" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Convert task state to a string (useful for output, debugging, logging, etc.) </p>
 <p>Get a task internal state as a string.</p>
 <dl class="field-list simple">
