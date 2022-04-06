@@ -148,9 +148,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a543a0b3ddf8b2abd1aad80caba51a788"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a543a0b3ddf8b2abd1aad80caba51a788">addFile</a> (std::string id, double size)</td></tr>
 <tr class="memdesc:a543a0b3ddf8b2abd1aad80caba51a788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the workflow.  <a href="classwrench_1_1_workflow.html#a543a0b3ddf8b2abd1aad80caba51a788">More...</a><br /></td></tr>
 <tr class="separator:a543a0b3ddf8b2abd1aad80caba51a788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13d091e48020f40c0ccf10c856c2299"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#ad13d091e48020f40c0ccf10c856c2299">addTask</a> (std::string, double flops, unsigned long min_num_cores, unsigned long max_num_cores, double memory_requirement)</td></tr>
-<tr class="memdesc:ad13d091e48020f40c0ccf10c856c2299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and add a new computational task to the workflow.  <a href="classwrench_1_1_workflow.html#ad13d091e48020f40c0ccf10c856c2299">More...</a><br /></td></tr>
-<tr class="separator:ad13d091e48020f40c0ccf10c856c2299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92afbada18c5bcd182c6aa96e47d0dbf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_workflow.html#a92afbada18c5bcd182c6aa96e47d0dbf">addTask</a> (const std::string &amp;, double flops, unsigned long min_num_cores, unsigned long max_num_cores, double memory_requirement)</td></tr>
+<tr class="memdesc:a92afbada18c5bcd182c6aa96e47d0dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and add a new computational task to the workflow.  <a href="classwrench_1_1_workflow.html#a92afbada18c5bcd182c6aa96e47d0dbf">More...</a><br /></td></tr>
+<tr class="separator:a92afbada18c5bcd182c6aa96e47d0dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abebf8b242fbb41c4c6048539d958e894"><td class="memItemLeft" align="right" valign="top"><a id="abebf8b242fbb41c4c6048539d958e894" name="abebf8b242fbb41c4c6048539d958e894"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="memdesc:abebf8b242fbb41c4c6048539d958e894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that will delete all workflow tasks and all files used by these tasks. <br /></td></tr>
@@ -346,8 +346,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad13d091e48020f40c0ccf10c856c2299" name="ad13d091e48020f40c0ccf10c856c2299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13d091e48020f40c0ccf10c856c2299">&#9670;&nbsp;</a></span>addTask()</h2>
+<a id="a92afbada18c5bcd182c6aa96e47d0dbf" name="a92afbada18c5bcd182c6aa96e47d0dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92afbada18c5bcd182c6aa96e47d0dbf">&#9670;&nbsp;</a></span>addTask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +355,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_workflow_task.html">WorkflowTask</a> &gt; wrench::Workflow::addTask </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>

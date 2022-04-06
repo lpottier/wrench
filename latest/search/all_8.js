@@ -12,7 +12,7 @@ var searchData=
   ['initiatefilecopy_9',['initiateFileCopy',['../classwrench_1_1_storage_service.html#a76f5fa405b5bfb104c76a0fc9c0fe161',1,'wrench::StorageService']]],
   ['initiateinstance_10',['initiateInstance',['../classwrench_1_1_bare_metal_compute_service.html#a5618d60cd8de5da869d02f40abb2c132',1,'wrench::BareMetalComputeService']]],
   ['installing_20wrench_11',['Installing WRENCH',['../install.html',1,'']]],
-  ['instantiateplatform_12',['instantiatePlatform',['../classwrench_1_1_simulation.html#ae22639abf6ede9f345b382f5ffe19b0e',1,'wrench::Simulation::instantiatePlatform(std::string)'],['../classwrench_1_1_simulation.html#abd47288a02e96c0eb11e61d9518f369c',1,'wrench::Simulation::instantiatePlatform(const std::function&lt; void()&gt; &amp;)']]],
+  ['instantiateplatform_12',['instantiatePlatform',['../classwrench_1_1_simulation.html#ad50c2a6661711a24325d538bcc0d5a00',1,'wrench::Simulation::instantiatePlatform(const std::string &amp;)'],['../classwrench_1_1_simulation.html#abd47288a02e96c0eb11e61d9518f369c',1,'wrench::Simulation::instantiatePlatform(const std::function&lt; void()&gt; &amp;)']]],
   ['interacting_20with_20a_20bare_2dmetal_20compute_20service_13',['Interacting with a bare-metal compute service',['../guide-102-baremetal.html',1,'']]],
   ['interacting_20with_20a_20batch_20compute_20service_14',['Interacting with a batch compute service',['../guide-102-batch.html',1,'']]],
   ['interacting_20with_20a_20cloud_20compute_20service_15',['Interacting with a cloud compute service',['../guide-102-cloud.html',1,'']]],

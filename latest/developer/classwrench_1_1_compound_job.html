@@ -160,39 +160,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7410193dc27d902295e664f36a6040a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#ae7410193dc27d902295e664f36a6040a">addChildJob</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; &amp;child)</td></tr>
 <tr class="memdesc:ae7410193dc27d902295e664f36a6040a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child job to this job (be careful not to add circular dependencies, which may lead to deadlocks)  <a href="classwrench_1_1_compound_job.html#ae7410193dc27d902295e664f36a6040a">More...</a><br /></td></tr>
 <tr class="separator:ae7410193dc27d902295e664f36a6040a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6433d7bf35b91d5999e96bfbf6429636"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_action.html">ComputeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a6433d7bf35b91d5999e96bfbf6429636">addComputeAction</a> (std::string name, double flops, double ram, unsigned long min_num_cores, unsigned long max_num_cores, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_parallel_model.html">ParallelModel</a> &gt; parallel_model)</td></tr>
-<tr class="memdesc:a6433d7bf35b91d5999e96bfbf6429636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a compute action to the job.  <a href="classwrench_1_1_compound_job.html#a6433d7bf35b91d5999e96bfbf6429636">More...</a><br /></td></tr>
-<tr class="separator:a6433d7bf35b91d5999e96bfbf6429636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace95cde0298bd02e18f1e2bb424069db"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_custom_action.html">CustomAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#ace95cde0298bd02e18f1e2bb424069db">addCustomAction</a> (std::string name, double ram, unsigned long num_cores, const std::function&lt; void(std::shared_ptr&lt; ActionExecutor &gt; action_executor)&gt; &amp;lambda_execute, const std::function&lt; void(std::shared_ptr&lt; ActionExecutor &gt; action_executor)&gt; &amp;lambda_terminate)</td></tr>
-<tr class="memdesc:ace95cde0298bd02e18f1e2bb424069db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom action to the job.  <a href="classwrench_1_1_compound_job.html#ace95cde0298bd02e18f1e2bb424069db">More...</a><br /></td></tr>
-<tr class="separator:ace95cde0298bd02e18f1e2bb424069db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e623218554ba5b65535c8ef36c83b11"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_copy_action.html">FileCopyAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a9e623218554ba5b65535c8ef36c83b11">addFileCopyAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; src_file_location, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; dst_file_location)</td></tr>
-<tr class="memdesc:a9e623218554ba5b65535c8ef36c83b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file copy action to the job.  <a href="classwrench_1_1_compound_job.html#a9e623218554ba5b65535c8ef36c83b11">More...</a><br /></td></tr>
-<tr class="separator:a9e623218554ba5b65535c8ef36c83b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ef009b6dc3b2d92074db01f1e9717d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_delete_action.html">FileDeleteAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#ae6ef009b6dc3b2d92074db01f1e9717d">addFileDeleteAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
-<tr class="memdesc:ae6ef009b6dc3b2d92074db01f1e9717d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file delete action to the job.  <a href="classwrench_1_1_compound_job.html#ae6ef009b6dc3b2d92074db01f1e9717d">More...</a><br /></td></tr>
-<tr class="separator:ae6ef009b6dc3b2d92074db01f1e9717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184d0246f1ab1eb2f97742fe739050a3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a184d0246f1ab1eb2f97742fe739050a3">addFileReadAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
-<tr class="memdesc:a184d0246f1ab1eb2f97742fe739050a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a184d0246f1ab1eb2f97742fe739050a3">More...</a><br /></td></tr>
-<tr class="separator:a184d0246f1ab1eb2f97742fe739050a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ec0bd1f3f0e645444acebd3f6f854fc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a3ec0bd1f3f0e645444acebd3f6f854fc">addFileReadAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; file_locations)</td></tr>
-<tr class="memdesc:a3ec0bd1f3f0e645444acebd3f6f854fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a3ec0bd1f3f0e645444acebd3f6f854fc">More...</a><br /></td></tr>
-<tr class="separator:a3ec0bd1f3f0e645444acebd3f6f854fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b09e95cf037a2c27bf671eb8a60bf4f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_add_entry_action.html">FileRegistryAddEntryAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a1b09e95cf037a2c27bf671eb8a60bf4f">addFileRegistryAddEntryAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt; file_registry, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
-<tr class="memdesc:a1b09e95cf037a2c27bf671eb8a60bf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file registry add entry action.  <a href="classwrench_1_1_compound_job.html#a1b09e95cf037a2c27bf671eb8a60bf4f">More...</a><br /></td></tr>
-<tr class="separator:a1b09e95cf037a2c27bf671eb8a60bf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a967622a54239bc5d5729d633206c04f8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_delete_entry_action.html">FileRegistryDeleteEntryAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a967622a54239bc5d5729d633206c04f8">addFileRegistryDeleteEntryAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt; file_registry, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
-<tr class="memdesc:a967622a54239bc5d5729d633206c04f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file registry add entry action.  <a href="classwrench_1_1_compound_job.html#a967622a54239bc5d5729d633206c04f8">More...</a><br /></td></tr>
-<tr class="separator:a967622a54239bc5d5729d633206c04f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ca7ba9b5532fd67593bcfcf6893ad8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_write_action.html">FileWriteAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a95ca7ba9b5532fd67593bcfcf6893ad8">addFileWriteAction</a> (std::string name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
-<tr class="memdesc:a95ca7ba9b5532fd67593bcfcf6893ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file write action to the job.  <a href="classwrench_1_1_compound_job.html#a95ca7ba9b5532fd67593bcfcf6893ad8">More...</a><br /></td></tr>
-<tr class="separator:a95ca7ba9b5532fd67593bcfcf6893ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7c8453b869cdf1de80b0d37e13c347"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_action.html">ComputeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a3e7c8453b869cdf1de80b0d37e13c347">addComputeAction</a> (const std::string &amp;name, double flops, double ram, unsigned long min_num_cores, unsigned long max_num_cores, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_parallel_model.html">ParallelModel</a> &gt; parallel_model)</td></tr>
+<tr class="memdesc:a3e7c8453b869cdf1de80b0d37e13c347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a compute action to the job.  <a href="classwrench_1_1_compound_job.html#a3e7c8453b869cdf1de80b0d37e13c347">More...</a><br /></td></tr>
+<tr class="separator:a3e7c8453b869cdf1de80b0d37e13c347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f196aafb3ec24b72b95aed643e7d375"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_custom_action.html">CustomAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a3f196aafb3ec24b72b95aed643e7d375">addCustomAction</a> (const std::string &amp;name, double ram, unsigned long num_cores, const std::function&lt; void(std::shared_ptr&lt; ActionExecutor &gt; action_executor)&gt; &amp;lambda_execute, const std::function&lt; void(std::shared_ptr&lt; ActionExecutor &gt; action_executor)&gt; &amp;lambda_terminate)</td></tr>
+<tr class="memdesc:a3f196aafb3ec24b72b95aed643e7d375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom action to the job.  <a href="classwrench_1_1_compound_job.html#a3f196aafb3ec24b72b95aed643e7d375">More...</a><br /></td></tr>
+<tr class="separator:a3f196aafb3ec24b72b95aed643e7d375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31b78d51ac5b2b61ab0b8aa0211949d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_copy_action.html">FileCopyAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#ac31b78d51ac5b2b61ab0b8aa0211949d">addFileCopyAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; src_file_location, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; dst_file_location)</td></tr>
+<tr class="memdesc:ac31b78d51ac5b2b61ab0b8aa0211949d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file copy action to the job.  <a href="classwrench_1_1_compound_job.html#ac31b78d51ac5b2b61ab0b8aa0211949d">More...</a><br /></td></tr>
+<tr class="separator:ac31b78d51ac5b2b61ab0b8aa0211949d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9d7417005920e1627e815cb6fb4229"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_delete_action.html">FileDeleteAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a1b9d7417005920e1627e815cb6fb4229">addFileDeleteAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
+<tr class="memdesc:a1b9d7417005920e1627e815cb6fb4229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file delete action to the job.  <a href="classwrench_1_1_compound_job.html#a1b9d7417005920e1627e815cb6fb4229">More...</a><br /></td></tr>
+<tr class="separator:a1b9d7417005920e1627e815cb6fb4229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7f3d78084cfd34f732868fc612e007"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a6d7f3d78084cfd34f732868fc612e007">addFileReadAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
+<tr class="memdesc:a6d7f3d78084cfd34f732868fc612e007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a6d7f3d78084cfd34f732868fc612e007">More...</a><br /></td></tr>
+<tr class="separator:a6d7f3d78084cfd34f732868fc612e007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3244429cdf7e7db497ce6910eecfe482"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a3244429cdf7e7db497ce6910eecfe482">addFileReadAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; &gt; file_locations)</td></tr>
+<tr class="memdesc:a3244429cdf7e7db497ce6910eecfe482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file read action to the job.  <a href="classwrench_1_1_compound_job.html#a3244429cdf7e7db497ce6910eecfe482">More...</a><br /></td></tr>
+<tr class="separator:a3244429cdf7e7db497ce6910eecfe482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfed87bc73e9228ec0127ad92c71a364"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_add_entry_action.html">FileRegistryAddEntryAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#adfed87bc73e9228ec0127ad92c71a364">addFileRegistryAddEntryAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt; file_registry, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
+<tr class="memdesc:adfed87bc73e9228ec0127ad92c71a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file registry add entry action.  <a href="classwrench_1_1_compound_job.html#adfed87bc73e9228ec0127ad92c71a364">More...</a><br /></td></tr>
+<tr class="separator:adfed87bc73e9228ec0127ad92c71a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f080eef477cd9ca8d11104ec9cad00"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_delete_entry_action.html">FileRegistryDeleteEntryAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a63f080eef477cd9ca8d11104ec9cad00">addFileRegistryDeleteEntryAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_service.html">FileRegistryService</a> &gt; file_registry, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
+<tr class="memdesc:a63f080eef477cd9ca8d11104ec9cad00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file registry add entry action.  <a href="classwrench_1_1_compound_job.html#a63f080eef477cd9ca8d11104ec9cad00">More...</a><br /></td></tr>
+<tr class="separator:a63f080eef477cd9ca8d11104ec9cad00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4faa13adce7ce4c25d140a19ad9203b7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_write_action.html">FileWriteAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a4faa13adce7ce4c25d140a19ad9203b7">addFileWriteAction</a> (const std::string &amp;name, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_data_file.html">DataFile</a> &gt; file, std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_location.html">FileLocation</a> &gt; file_location)</td></tr>
+<tr class="memdesc:a4faa13adce7ce4c25d140a19ad9203b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file write action to the job.  <a href="classwrench_1_1_compound_job.html#a4faa13adce7ce4c25d140a19ad9203b7">More...</a><br /></td></tr>
+<tr class="separator:a4faa13adce7ce4c25d140a19ad9203b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad507c942b3d75a54ea5275495134499c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#ad507c942b3d75a54ea5275495134499c">addParentJob</a> (const std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compound_job.html">CompoundJob</a> &gt; &amp;parent)</td></tr>
 <tr class="memdesc:ad507c942b3d75a54ea5275495134499c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a parent job to this job (be careful not to add circular dependencies, which may lead to deadlocks)  <a href="classwrench_1_1_compound_job.html#ad507c942b3d75a54ea5275495134499c">More...</a><br /></td></tr>
 <tr class="separator:ad507c942b3d75a54ea5275495134499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac04c4c578c4d41229e179eb5fed354"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_sleep_action.html">SleepAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a0ac04c4c578c4d41229e179eb5fed354">addSleepAction</a> (std::string name, double sleep_time)</td></tr>
-<tr class="memdesc:a0ac04c4c578c4d41229e179eb5fed354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a sleep action to the job.  <a href="classwrench_1_1_compound_job.html#a0ac04c4c578c4d41229e179eb5fed354">More...</a><br /></td></tr>
-<tr class="separator:a0ac04c4c578c4d41229e179eb5fed354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e29d28a69a423d79c6cc33722806f3c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_sleep_action.html">SleepAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a1e29d28a69a423d79c6cc33722806f3c">addSleepAction</a> (const std::string &amp;name, double sleep_time)</td></tr>
+<tr class="memdesc:a1e29d28a69a423d79c6cc33722806f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a sleep action to the job.  <a href="classwrench_1_1_compound_job.html#a1e29d28a69a423d79c6cc33722806f3c">More...</a><br /></td></tr>
+<tr class="separator:a1e29d28a69a423d79c6cc33722806f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c90cff1ee3a7ff0a8fec8d4af2e864e"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a0c90cff1ee3a7ff0a8fec8d4af2e864e">getActions</a> ()</td></tr>
 <tr class="memdesc:a0c90cff1ee3a7ff0a8fec8d4af2e864e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the job's actions.  <a href="classwrench_1_1_compound_job.html#a0c90cff1ee3a7ff0a8fec8d4af2e864e">More...</a><br /></td></tr>
 <tr class="separator:a0c90cff1ee3a7ff0a8fec8d4af2e864e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,9 +226,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a448296c7745ae2ec538a64cacb4ca496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a448296c7745ae2ec538a64cacb4ca496">removeAction</a> (std::shared_ptr&lt; <a class="el" href="classwrench_1_1_action.html">Action</a> &gt; &amp;action)</td></tr>
 <tr class="memdesc:a448296c7745ae2ec538a64cacb4ca496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an action from the job.  <a href="classwrench_1_1_compound_job.html#a448296c7745ae2ec538a64cacb4ca496">More...</a><br /></td></tr>
 <tr class="separator:a448296c7745ae2ec538a64cacb4ca496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc934ad980fd55357c50c20333325e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#afc934ad980fd55357c50c20333325e43">setPriority</a> (double priority) override</td></tr>
-<tr class="memdesc:afc934ad980fd55357c50c20333325e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the job's priority (the higher the priority value, the higher the priority)  <a href="classwrench_1_1_compound_job.html#afc934ad980fd55357c50c20333325e43">More...</a><br /></td></tr>
-<tr class="separator:afc934ad980fd55357c50c20333325e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5500e81885d9f42a4ce2c24e7d8a487c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_compound_job.html#a5500e81885d9f42a4ce2c24e7d8a487c">setPriority</a> (double p) override</td></tr>
+<tr class="memdesc:a5500e81885d9f42a4ce2c24e7d8a487c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the job's priority (the higher the value, the higher the priority)  <a href="classwrench_1_1_compound_job.html#a5500e81885d9f42a4ce2c24e7d8a487c">More...</a><br /></td></tr>
+<tr class="separator:a5500e81885d9f42a4ce2c24e7d8a487c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwrench_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwrench_1_1_job')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwrench_1_1_job.html">wrench::Job</a></td></tr>
 <tr class="memitem:a5cdbbe36f9025a11c50b00d23b8e92b1 inherit pub_methods_classwrench_1_1_job"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwrench_1_1_job.html#a5cdbbe36f9025a11c50b00d23b8e92b1">getEndDate</a> ()</td></tr>
 <tr class="memdesc:a5cdbbe36f9025a11c50b00d23b8e92b1 inherit pub_methods_classwrench_1_1_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date at which the job ended (&lt;0 means "never submitted")  <a href="classwrench_1_1_job.html#a5cdbbe36f9025a11c50b00d23b8e92b1">More...</a><br /></td></tr>
@@ -333,8 +333,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6433d7bf35b91d5999e96bfbf6429636" name="a6433d7bf35b91d5999e96bfbf6429636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6433d7bf35b91d5999e96bfbf6429636">&#9670;&nbsp;</a></span>addComputeAction()</h2>
+<a id="a3e7c8453b869cdf1de80b0d37e13c347" name="a3e7c8453b869cdf1de80b0d37e13c347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7c8453b869cdf1de80b0d37e13c347">&#9670;&nbsp;</a></span>addComputeAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +342,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_compute_action.html">ComputeAction</a> &gt; wrench::CompoundJob::addComputeAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -399,8 +399,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace95cde0298bd02e18f1e2bb424069db" name="ace95cde0298bd02e18f1e2bb424069db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace95cde0298bd02e18f1e2bb424069db">&#9670;&nbsp;</a></span>addCustomAction()</h2>
+<a id="a3f196aafb3ec24b72b95aed643e7d375" name="a3f196aafb3ec24b72b95aed643e7d375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f196aafb3ec24b72b95aed643e7d375">&#9670;&nbsp;</a></span>addCustomAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +408,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_custom_action.html">CustomAction</a> &gt; wrench::CompoundJob::addCustomAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -458,8 +458,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9e623218554ba5b65535c8ef36c83b11" name="a9e623218554ba5b65535c8ef36c83b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e623218554ba5b65535c8ef36c83b11">&#9670;&nbsp;</a></span>addFileCopyAction()</h2>
+<a id="ac31b78d51ac5b2b61ab0b8aa0211949d" name="ac31b78d51ac5b2b61ab0b8aa0211949d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31b78d51ac5b2b61ab0b8aa0211949d">&#9670;&nbsp;</a></span>addFileCopyAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +467,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_copy_action.html">FileCopyAction</a> &gt; wrench::CompoundJob::addFileCopyAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -510,8 +510,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6ef009b6dc3b2d92074db01f1e9717d" name="ae6ef009b6dc3b2d92074db01f1e9717d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6ef009b6dc3b2d92074db01f1e9717d">&#9670;&nbsp;</a></span>addFileDeleteAction()</h2>
+<a id="a1b9d7417005920e1627e815cb6fb4229" name="a1b9d7417005920e1627e815cb6fb4229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9d7417005920e1627e815cb6fb4229">&#9670;&nbsp;</a></span>addFileDeleteAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,7 +519,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_delete_action.html">FileDeleteAction</a> &gt; wrench::CompoundJob::addFileDeleteAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -555,8 +555,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a184d0246f1ab1eb2f97742fe739050a3" name="a184d0246f1ab1eb2f97742fe739050a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184d0246f1ab1eb2f97742fe739050a3">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[1/2]</span></h2>
+<a id="a6d7f3d78084cfd34f732868fc612e007" name="a6d7f3d78084cfd34f732868fc612e007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7f3d78084cfd34f732868fc612e007">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +564,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt; wrench::CompoundJob::addFileReadAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -600,8 +600,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3ec0bd1f3f0e645444acebd3f6f854fc" name="a3ec0bd1f3f0e645444acebd3f6f854fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ec0bd1f3f0e645444acebd3f6f854fc">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[2/2]</span></h2>
+<a id="a3244429cdf7e7db497ce6910eecfe482" name="a3244429cdf7e7db497ce6910eecfe482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3244429cdf7e7db497ce6910eecfe482">&#9670;&nbsp;</a></span>addFileReadAction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +609,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_read_action.html">FileReadAction</a> &gt; wrench::CompoundJob::addFileReadAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -645,8 +645,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b09e95cf037a2c27bf671eb8a60bf4f" name="a1b09e95cf037a2c27bf671eb8a60bf4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b09e95cf037a2c27bf671eb8a60bf4f">&#9670;&nbsp;</a></span>addFileRegistryAddEntryAction()</h2>
+<a id="adfed87bc73e9228ec0127ad92c71a364" name="adfed87bc73e9228ec0127ad92c71a364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfed87bc73e9228ec0127ad92c71a364">&#9670;&nbsp;</a></span>addFileRegistryAddEntryAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -654,7 +654,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_add_entry_action.html">FileRegistryAddEntryAction</a> &gt; wrench::CompoundJob::addFileRegistryAddEntryAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -697,8 +697,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a967622a54239bc5d5729d633206c04f8" name="a967622a54239bc5d5729d633206c04f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a967622a54239bc5d5729d633206c04f8">&#9670;&nbsp;</a></span>addFileRegistryDeleteEntryAction()</h2>
+<a id="a63f080eef477cd9ca8d11104ec9cad00" name="a63f080eef477cd9ca8d11104ec9cad00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f080eef477cd9ca8d11104ec9cad00">&#9670;&nbsp;</a></span>addFileRegistryDeleteEntryAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -706,7 +706,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_registry_delete_entry_action.html">FileRegistryDeleteEntryAction</a> &gt; wrench::CompoundJob::addFileRegistryDeleteEntryAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -749,8 +749,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a95ca7ba9b5532fd67593bcfcf6893ad8" name="a95ca7ba9b5532fd67593bcfcf6893ad8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95ca7ba9b5532fd67593bcfcf6893ad8">&#9670;&nbsp;</a></span>addFileWriteAction()</h2>
+<a id="a4faa13adce7ce4c25d140a19ad9203b7" name="a4faa13adce7ce4c25d140a19ad9203b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4faa13adce7ce4c25d140a19ad9203b7">&#9670;&nbsp;</a></span>addFileWriteAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -758,7 +758,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_file_write_action.html">FileWriteAction</a> &gt; wrench::CompoundJob::addFileWriteAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -820,8 +820,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ac04c4c578c4d41229e179eb5fed354" name="a0ac04c4c578c4d41229e179eb5fed354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac04c4c578c4d41229e179eb5fed354">&#9670;&nbsp;</a></span>addSleepAction()</h2>
+<a id="a1e29d28a69a423d79c6cc33722806f3c" name="a1e29d28a69a423d79c6cc33722806f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e29d28a69a423d79c6cc33722806f3c">&#9670;&nbsp;</a></span>addSleepAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,7 +829,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classwrench_1_1_sleep_action.html">SleepAction</a> &gt; wrench::CompoundJob::addSleepAction </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -1092,8 +1092,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afc934ad980fd55357c50c20333325e43" name="afc934ad980fd55357c50c20333325e43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc934ad980fd55357c50c20333325e43">&#9670;&nbsp;</a></span>setPriority()</h2>
+<a id="a5500e81885d9f42a4ce2c24e7d8a487c" name="a5500e81885d9f42a4ce2c24e7d8a487c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5500e81885d9f42a4ce2c24e7d8a487c">&#9670;&nbsp;</a></span>setPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1105,7 +1105,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void wrench::CompoundJob::setPriority </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>priority</em></td><td>)</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1116,10 +1116,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the job's priority (the higher the priority value, the higher the priority) </p>
+<p>Set the job's priority (the higher the value, the higher the priority) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">priority</td><td>a priority </td></tr>
+    <tr><td class="paramname">p</td><td>a priority </td></tr>
   </table>
   </dd>
 </dl>

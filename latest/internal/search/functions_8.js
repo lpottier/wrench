@@ -8,7 +8,7 @@ var searchData=
   ['initiateasynchronousfilecopy_5',['initiateAsynchronousFileCopy',['../classwrench_1_1_data_movement_manager.html#a01f446e132a0819d5bd3ed334f56642e',1,'wrench::DataMovementManager']]],
   ['initiatefilecopy_6',['initiateFileCopy',['../classwrench_1_1_storage_service.html#a76f5fa405b5bfb104c76a0fc9c0fe161',1,'wrench::StorageService']]],
   ['initiateinstance_7',['initiateInstance',['../classwrench_1_1_bare_metal_compute_service.html#a5618d60cd8de5da869d02f40abb2c132',1,'wrench::BareMetalComputeService']]],
-  ['instantiateplatform_8',['instantiatePlatform',['../classwrench_1_1_simulation.html#ae22639abf6ede9f345b382f5ffe19b0e',1,'wrench::Simulation::instantiatePlatform(std::string)'],['../classwrench_1_1_simulation.html#abd47288a02e96c0eb11e61d9518f369c',1,'wrench::Simulation::instantiatePlatform(const std::function&lt; void()&gt; &amp;)']]],
+  ['instantiateplatform_8',['instantiatePlatform',['../classwrench_1_1_simulation.html#ad50c2a6661711a24325d538bcc0d5a00',1,'wrench::Simulation::instantiatePlatform(const std::string &amp;)'],['../classwrench_1_1_simulation.html#abd47288a02e96c0eb11e61d9518f369c',1,'wrench::Simulation::instantiatePlatform(const std::function&lt; void()&gt; &amp;)']]],
   ['invaliddirectorypath_9',['InvalidDirectoryPath',['../classwrench_1_1_invalid_directory_path.html#a73b41026b29711d3f80e6b787fa4ea70',1,'wrench::InvalidDirectoryPath']]],
   ['iputmessage_10',['iputMessage',['../classwrench_1_1_s4_u___mailbox.html#a37f193039f3d23c943cabd5cd8d69a1e',1,'wrench::S4U_Mailbox']]],
   ['isdaemonized_11',['isDaemonized',['../classwrench_1_1_s4_u___daemon.html#a14ffe0c5e4e6864c11c05f3455987d6c',1,'wrench::S4U_Daemon']]],

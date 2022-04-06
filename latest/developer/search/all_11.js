@@ -22,7 +22,7 @@ var searchData=
   ['setnetworktimeoutvalue_19',['setNetworkTimeoutValue',['../classwrench_1_1_service.html#a2bdf99201280d83b44a03c0b78ebdf90',1,'wrench::Service']]],
   ['setnumcoresallocated_20',['setNumCoresAllocated',['../classwrench_1_1_action.html#af6a0f48111a1783060017f13864cde04',1,'wrench::Action']]],
   ['setparallelmodel_21',['setParallelModel',['../classwrench_1_1_workflow_task.html#a789d01615f762cca3d1da32ac6b3d725',1,'wrench::WorkflowTask']]],
-  ['setpriority_22',['setPriority',['../classwrench_1_1_action.html#a4f0f1d5361fcafbb488e76f41715122e',1,'wrench::Action::setPriority()'],['../classwrench_1_1_compound_job.html#afc934ad980fd55357c50c20333325e43',1,'wrench::CompoundJob::setPriority()'],['../classwrench_1_1_workflow_task.html#ae5101ae5e4e386705a549e4e91432049',1,'wrench::WorkflowTask::setPriority()']]],
+  ['setpriority_22',['setPriority',['../classwrench_1_1_action.html#a4f0f1d5361fcafbb488e76f41715122e',1,'wrench::Action::setPriority()'],['../classwrench_1_1_compound_job.html#a5500e81885d9f42a4ce2c24e7d8a487c',1,'wrench::CompoundJob::setPriority()'],['../classwrench_1_1_workflow_task.html#ae5101ae5e4e386705a549e4e91432049',1,'wrench::WorkflowTask::setPriority()']]],
   ['setpstate_23',['setPstate',['../classwrench_1_1_simulation.html#adf4675a8c9c62c93bfbd3dc4a4e46556',1,'wrench::Simulation']]],
   ['setramallocated_24',['setRAMAllocated',['../classwrench_1_1_action.html#a36f3fa43fee50cbaecefe6571f73bbc5',1,'wrench::Action']]],
   ['setstartdate_25',['setStartDate',['../classwrench_1_1_action.html#a28fdb091bf63b54bd01b892bd0843982',1,'wrench::Action']]],

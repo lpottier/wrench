@@ -137,8 +137,8 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewrench.html">wrench</a> {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    /***********************/</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">    /***********************/</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/***********************/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/***********************/</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">class </span>Workflow;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">class </span>ComputeService;</div>
@@ -152,8 +152,8 @@ $(function() {
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">double</span> <a class="code hl_function" href="classwrench_1_1_job.html#aae1102f33587e9cd4488fdac0a3c6991">getSubmitDate</a>();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">double</span> <a class="code hl_function" href="classwrench_1_1_job.html#a5cdbbe36f9025a11c50b00d23b8e92b1">getEndDate</a>();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">        /***********************/</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        /***********************/</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/***********************/</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/***********************/</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        simgrid::s4u::Mailbox *popCallbackMailbox();</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -172,7 +172,7 @@ $(function() {
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classwrench_1_1_job.html">~Job</a>();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPriority(<span class="keywordtype">double</span> priority);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPriority(<span class="keywordtype">double</span> p);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">double</span> getPriority() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
@@ -203,17 +203,18 @@ $(function() {
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordtype">double</span> priority = 0.0;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">        /***********************/</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">        /***********************/</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">    /***********************/</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">    /***********************/</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};<span class="comment">// namespace wrench</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">/***********************/</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">/***********************/</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    };</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">/***********************/</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/***********************/</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};<span class="comment">// namespace wrench</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif</span><span class="comment">//WRENCH_JOB_H</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span><span class="comment">//WRENCH_JOB_H</span></div>
 <div class="ttc" id="aclasswrench_1_1_job_html"><div class="ttname"><a href="classwrench_1_1_job.html">wrench::Job</a></div><div class="ttdoc">Abstraction of a job used for executing tasks in a Workflow.</div><div class="ttdef"><b>Definition:</b> Job.h:34</div></div>
 <div class="ttc" id="aclasswrench_1_1_job_html_a5cdbbe36f9025a11c50b00d23b8e92b1"><div class="ttname"><a href="classwrench_1_1_job.html#a5cdbbe36f9025a11c50b00d23b8e92b1">wrench::Job::getEndDate</a></div><div class="ttdeci">double getEndDate()</div><div class="ttdoc">Get the date at which the job ended (&lt;0 means &quot;never submitted&quot;)</div><div class="ttdef"><b>Definition:</b> Job.cpp:156</div></div>
 <div class="ttc" id="aclasswrench_1_1_job_html_a67f92b511338a061d7c7c59ac3bab970"><div class="ttname"><a href="classwrench_1_1_job.html#a67f92b511338a061d7c7c59ac3bab970">wrench::Job::getName</a></div><div class="ttdeci">std::string getName()</div><div class="ttdoc">Get the job's name.</div><div class="ttdef"><b>Definition:</b> Job.cpp:55</div></div>
