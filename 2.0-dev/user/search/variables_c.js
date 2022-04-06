@@ -16,6 +16,5 @@ var searchData=
   ['non_5fgrid_5fpost_5fexecution_5fdelay_13',['NON_GRID_POST_EXECUTION_DELAY',['../classwrench_1_1_h_t_condor_compute_service_property.html#a5339a3711bc4d51e544dde52d2b98dc6',1,'wrench::HTCondorComputeServiceProperty']]],
   ['non_5fgrid_5fpre_5fexecution_5fdelay_14',['NON_GRID_PRE_EXECUTION_DELAY',['../classwrench_1_1_h_t_condor_compute_service_property.html#a0adde70fa5558e4e6e2a4a9d0bc6f09d',1,'wrench::HTCondorComputeServiceProperty']]],
   ['not_5fenough_5fcores_5fmessage_5fpayload_15',['NOT_ENOUGH_CORES_MESSAGE_PAYLOAD',['../classwrench_1_1_bare_metal_compute_service_message_payload.html#ae7c1a15d40447d30f00bee194929fd70',1,'wrench::BareMetalComputeServiceMessagePayload']]],
-  ['not_5fenough_5fstorage_5fspace_5fmessage_5fpayload_16',['NOT_ENOUGH_STORAGE_SPACE_MESSAGE_PAYLOAD',['../classwrench_1_1_storage_service_message_payload.html#ae0d8ee8f07c557944f77e8363ec8334a',1,'wrench::StorageServiceMessagePayload']]],
-  ['num_5fcores_5fallocated_17',['num_cores_allocated',['../structwrench_1_1_action_1_1_action_execution.html#ab5b26165a2e1d2ccf5ed83bc515db9f7',1,'wrench::Action::ActionExecution']]]
+  ['not_5fenough_5fstorage_5fspace_5fmessage_5fpayload_16',['NOT_ENOUGH_STORAGE_SPACE_MESSAGE_PAYLOAD',['../classwrench_1_1_storage_service_message_payload.html#ae0d8ee8f07c557944f77e8363ec8334a',1,'wrench::StorageServiceMessagePayload']]]
 ];

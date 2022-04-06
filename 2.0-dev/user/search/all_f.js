@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['parallelmodel_0',['ParallelModel',['../classwrench_1_1_parallel_model.html',1,'wrench']]],
-  ['parseresourcespec_1',['parseResourceSpec',['../namespacewrench.html#a3b5119b56be2d857c79f283bae7e89a8',1,'wrench']]],
-  ['pathexists_2',['pathExists',['../classwrench_1_1_workflow.html#a3afb5b6a3fa560b89119f3f7f5b6d3cb',1,'wrench::Workflow']]],
-  ['pending_5fdisk_5freads_3',['pending_disk_reads',['../classwrench_1_1_simulation_timestamp_disk_read.html#aad8fe41e938cf857f8674d6fb2b718ab',1,'wrench::SimulationTimestampDiskRead']]],
-  ['pending_5fdisk_5fwrites_4',['pending_disk_writes',['../classwrench_1_1_simulation_timestamp_disk_write.html#a5038fbdcc2a252409e6c01fa2658cd51',1,'wrench::SimulationTimestampDiskWrite']]],
-  ['pending_5ffile_5fcopies_5',['pending_file_copies',['../classwrench_1_1_simulation_timestamp_file_copy.html#af3b9468524e77703feb7ab3b61a0c5b0',1,'wrench::SimulationTimestampFileCopy']]],
-  ['pending_5ffile_5freads_6',['pending_file_reads',['../classwrench_1_1_simulation_timestamp_file_read.html#a9eb619a9619c7448527c81868e2e3913',1,'wrench::SimulationTimestampFileRead']]],
-  ['pending_5ffile_5fwrites_7',['pending_file_writes',['../classwrench_1_1_simulation_timestamp_file_write.html#a117bc39b15a2e03c27e313bd806dffd1',1,'wrench::SimulationTimestampFileWrite']]],
-  ['pending_5ftask_5ftimestamps_8',['pending_task_timestamps',['../classwrench_1_1_simulation_timestamp_task.html#a2700cf4cf255e0c7e5fbccf0cdc13ae5',1,'wrench::SimulationTimestampTask']]],
-  ['physical_5fexecution_5fhost_9',['physical_execution_host',['../structwrench_1_1_action_1_1_action_execution.html#a8437e74f66324ca44f9f66f1cb5adc2b',1,'wrench::Action::ActionExecution']]],
-  ['pilot_5fjob_5fexpired_5fmessage_5fpayload_10',['PILOT_JOB_EXPIRED_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a1f5b40748d7fe90fb682d735395de3af',1,'wrench::ComputeServiceMessagePayload']]],
-  ['pilot_5fjob_5ffailed_5fmessage_5fpayload_11',['PILOT_JOB_FAILED_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a6b614da3139f4735421ed8e918556c0c',1,'wrench::ComputeServiceMessagePayload']]],
-  ['pilot_5fjob_5fstarted_5fmessage_5fpayload_12',['PILOT_JOB_STARTED_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a0a91a957ed0eeba0bb35daea55b25fa5',1,'wrench::ComputeServiceMessagePayload']]],
-  ['processunknownjobtermination_13',['processUnknownJobTermination',['../namespacewrench.html#a2523a69db2b2754eae6e115cba3d7773',1,'wrench']]]
+  ['remove_5fentry_5fanswer_5fmessage_5fpayload_0',['REMOVE_ENTRY_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_file_registry_service_message_payload.html#a143ee2e1ad8b0861b040fa67efb17db8',1,'wrench::FileRegistryServiceMessagePayload']]],
+  ['remove_5fentry_5fcompute_5fcost_1',['REMOVE_ENTRY_COMPUTE_COST',['../classwrench_1_1_file_registry_service_property.html#aa365ab3efd713b23827f22ee48626e46',1,'wrench::FileRegistryServiceProperty']]],
+  ['remove_5fentry_5frequest_5fmessage_5fpayload_2',['REMOVE_ENTRY_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_file_registry_service_message_payload.html#a1c16af0799b8ba26a3863ca0d253fbf1',1,'wrench::FileRegistryServiceMessagePayload']]],
+  ['removecontroldependency_3',['removeControlDependency',['../classwrench_1_1_workflow.html#a4fdc3a0a829f47cd85896f011e2a8430',1,'wrench::Workflow']]],
+  ['removefile_4',['removeFile',['../classwrench_1_1_simulation.html#ade020199a0fa17c252d7a5e637c2c0cc',1,'wrench::Simulation::removeFile()'],['../classwrench_1_1_workflow.html#a54994f8655b2fe2e15f83bf61ba5e9bc',1,'wrench::Workflow::removeFile(std::shared_ptr&lt; DataFile &gt; file)']]],
+  ['removetask_5',['removeTask',['../classwrench_1_1_workflow.html#a87ee9a9ce73cd67f64cbc5ba08e8deea',1,'wrench::Workflow']]],
+  ['resource_5fdescription_5fanswer_5fmessage_5fpayload_6',['RESOURCE_DESCRIPTION_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#a110f501ef6361a70627833e8ab5ab511',1,'wrench::ComputeServiceMessagePayload']]],
+  ['resource_5fdescription_5frequest_5fmessage_5fpayload_7',['RESOURCE_DESCRIPTION_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_compute_service_message_payload.html#abfd5cdb62efb21fb3ebf7764b9c7ad47',1,'wrench::ComputeServiceMessagePayload']]],
+  ['resume_5fvm_5fanswer_5fmessage_5fpayload_8',['RESUME_VM_ANSWER_MESSAGE_PAYLOAD',['../classwrench_1_1_cloud_compute_service_message_payload.html#a7bdd8a360bd0bbf41f687610b4abc528',1,'wrench::CloudComputeServiceMessagePayload']]],
+  ['resume_5fvm_5frequest_5fmessage_5fpayload_9',['RESUME_VM_REQUEST_MESSAGE_PAYLOAD',['../classwrench_1_1_cloud_compute_service_message_payload.html#a8bf74f7119d78b6806bdb2f16504c14f',1,'wrench::CloudComputeServiceMessagePayload']]]
 ];

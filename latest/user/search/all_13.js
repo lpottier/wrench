@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['updatestate_0',['updateState',['../classwrench_1_1_action.html#a0772b660fc9fa7d2318b0138947dab07',1,'wrench::Action']]],
-  ['use_5freal_5fruntimes_5fas_5frequested_5fruntimes_5fin_5fworkload_5ftrace_5ffile_1',['USE_REAL_RUNTIMES_AS_REQUESTED_RUNTIMES_IN_WORKLOAD_TRACE_FILE',['../classwrench_1_1_batch_compute_service_property.html#ab23395cb693747a3766ce80f78c5c6a4',1,'wrench::BatchComputeServiceProperty']]],
-  ['usesscratch_2',['usesScratch',['../classwrench_1_1_action.html#ae0316297847e6a8bba2583ef464f7272',1,'wrench::Action::usesScratch()'],['../classwrench_1_1_file_copy_action.html#a6aadb8a427dd0bb7d986780f5c6c0e34',1,'wrench::FileCopyAction::usesScratch()'],['../classwrench_1_1_file_delete_action.html#aaadaa32cfec1d442d4b48bc9b3a20669',1,'wrench::FileDeleteAction::usesScratch()'],['../classwrench_1_1_file_read_action.html#a12b5091c884e8c2f80059c3021d10ba2',1,'wrench::FileReadAction::usesScratch()'],['../classwrench_1_1_file_write_action.html#a99bdb1742bd73f384d37e856cf4d145f',1,'wrench::FileWriteAction::usesScratch()']]]
+  ['virtualizedclustercomputeservice_0',['VirtualizedClusterComputeService',['../classwrench_1_1_virtualized_cluster_compute_service.html#a59d55e18a16ec347621f6f6d44524222',1,'wrench::VirtualizedClusterComputeService::VirtualizedClusterComputeService()'],['../classwrench_1_1_virtualized_cluster_compute_service.html',1,'wrench::VirtualizedClusterComputeService']]],
+  ['virtualizedclustercomputeservicemessagepayload_1',['VirtualizedClusterComputeServiceMessagePayload',['../classwrench_1_1_virtualized_cluster_compute_service_message_payload.html',1,'wrench']]],
+  ['virtualizedclustercomputeserviceproperty_2',['VirtualizedClusterComputeServiceProperty',['../classwrench_1_1_virtualized_cluster_compute_service_property.html',1,'wrench']]],
+  ['vm_5fboot_5foverhead_5fin_5fseconds_3',['VM_BOOT_OVERHEAD_IN_SECONDS',['../classwrench_1_1_cloud_compute_service_property.html#abe4ada614f43f5d8cc5cfbbeaaaa21f0',1,'wrench::CloudComputeServiceProperty']]],
+  ['vm_5fresource_5fallocation_5falgorithm_4',['VM_RESOURCE_ALLOCATION_ALGORITHM',['../classwrench_1_1_cloud_compute_service_property.html#afb10f34e1cf1714393bd451e52de926c',1,'wrench::CloudComputeServiceProperty']]]
 ];

@@ -39,7 +39,6 @@ var searchData=
   ['simulationtimestamptaskstart_36',['SimulationTimestampTaskStart',['../classwrench_1_1_simulation_timestamp_task_start.html',1,'wrench']]],
   ['simulationtimestamptasktermination_37',['SimulationTimestampTaskTermination',['../classwrench_1_1_simulation_timestamp_task_termination.html',1,'wrench']]],
   ['simulationtimestamptype_38',['SimulationTimestampType',['../classwrench_1_1_simulation_timestamp_type.html',1,'wrench']]],
-  ['sleepaction_39',['SleepAction',['../classwrench_1_1_sleep_action.html',1,'wrench']]],
-  ['storageservicemessagepayload_40',['StorageServiceMessagePayload',['../classwrench_1_1_storage_service_message_payload.html',1,'wrench']]],
-  ['storageserviceproperty_41',['StorageServiceProperty',['../classwrench_1_1_storage_service_property.html',1,'wrench']]]
+  ['storageservicemessagepayload_39',['StorageServiceMessagePayload',['../classwrench_1_1_storage_service_message_payload.html',1,'wrench']]],
+  ['storageserviceproperty_40',['StorageServiceProperty',['../classwrench_1_1_storage_service_property.html',1,'wrench']]]
 ];
