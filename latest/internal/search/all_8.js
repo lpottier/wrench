@@ -25,7 +25,7 @@ var searchData=
   ['isenergysimulationenabled_22',['isEnergySimulationEnabled',['../classwrench_1_1_simulation.html#ad4283844acaa4232b17f48f3af2f1b06',1,'wrench::Simulation']]],
   ['isfileindirectory_23',['isFileInDirectory',['../classwrench_1_1_logical_file_system.html#a1807226b0b6b24a883063709785b1f78',1,'wrench::LogicalFileSystem']]],
   ['isfileoutputofsometask_24',['isFileOutputOfSomeTask',['../classwrench_1_1_workflow.html#ae83c2275d4e30e5be2e4d265268301e2',1,'wrench::Workflow']]],
-  ['ishoston_25',['isHostOn',['../classwrench_1_1_simulation.html#aea87ea367873efdb53478945b880fc72',1,'wrench::Simulation::isHostOn()'],['../classwrench_1_1_s4_u___simulation.html#a0750045121f81a8d3881f369da1c29e8',1,'wrench::S4U_Simulation::isHostOn()']]],
+  ['ishoston_25',['isHostOn',['../classwrench_1_1_simulation.html#aea87ea367873efdb53478945b880fc72',1,'wrench::Simulation::isHostOn()'],['../classwrench_1_1_s4_u___simulation.html#abca2b66dc6946c67f48f2592ff98d9f8',1,'wrench::S4U_Simulation::isHostOn()']]],
   ['ishostshutdownsimulationenabled_26',['isHostShutdownSimulationEnabled',['../classwrench_1_1_simulation.html#ab905c85414fb56d05fc15516751e6205',1,'wrench::Simulation']]],
   ['isinitialized_27',['isInitialized',['../classwrench_1_1_s4_u___simulation.html#a0139f6818fee5e36c1ac3cc18c417be7',1,'wrench::S4U_Simulation::isInitialized()'],['../classwrench_1_1_simulation.html#af7ef29fe89c0a2b3a7379da1af721fdc',1,'wrench::Simulation::isInitialized()']]],
   ['islinkon_28',['isLinkOn',['../classwrench_1_1_s4_u___simulation.html#abb5876eb5ea77e99e37a35da1f7d7e32',1,'wrench::S4U_Simulation::isLinkOn()'],['../classwrench_1_1_simulation.html#ad8d3bac626795f838dd6a752d7fb57e4',1,'wrench::Simulation::isLinkOn(std::string linkname)']]],

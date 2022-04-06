@@ -54,7 +54,7 @@ var searchData=
   ['setfailuredate_51',['setFailureDate',['../classwrench_1_1_workflow_task.html#a03f9ebebaa0ec710e6b094f04eb221f5',1,'wrench::WorkflowTask']]],
   ['setfileid_52',['setFileId',['../classwrench_1_1_block.html#a368cb81b2fff2318e5a8d2bf71151502',1,'wrench::Block']]],
   ['setflops_53',['setFlops',['../classwrench_1_1_workflow_task.html#a5eeef368dca138fe64a65bdb6d727ed1',1,'wrench::WorkflowTask']]],
-  ['sethostproperty_54',['setHostProperty',['../classwrench_1_1_s4_u___simulation.html#a20146eedbca627588c8975510178fd1e',1,'wrench::S4U_Simulation']]],
+  ['sethostproperty_54',['setHostProperty',['../classwrench_1_1_s4_u___simulation.html#ac55ba6f3da6cd75db2eb562ccd21c8cd',1,'wrench::S4U_Simulation']]],
   ['setinternalstate_55',['setInternalState',['../classwrench_1_1_workflow_task.html#a6747db4a0eb51f1017f55345d7a5e2d9',1,'wrench::WorkflowTask']]],
   ['setjob_56',['setJob',['../classwrench_1_1_workflow_task.html#a7c21521cf33dadad90c6f9f19e056718',1,'wrench::WorkflowTask']]],
   ['setlastaccess_57',['setLastAccess',['../classwrench_1_1_block.html#a94cd19cce0bfd42143c67d9780a358fa',1,'wrench::Block']]],
