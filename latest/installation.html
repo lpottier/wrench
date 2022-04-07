@@ -110,10 +110,10 @@
 thus older compilers may fail to compile it. Therefore, we strongly
 recommend users to satisfy the following requirements:</p>
 <ul class="simple">
-<li><p><strong>CMake</strong> - version 3.10 or higher</p></li>
+<li><p><strong>CMake</strong> - version 3.7 or higher</p></li>
 </ul>
-<p>And, one of the following: - <strong>g++</strong> - version 7.5 or higher - <strong>clang</strong>
-- version 9.0 or higher</p>
+<p>And, one of the following: - <strong>g++</strong> - version 6.3 or higher - <strong>clang</strong>
+- version 3.8 or higher</p>
 <section id="required-dependencies">
 <span id="install-prerequisites-dependencies"></span><h3>Required Dependencies<a class="headerlink" href="#required-dependencies" title="Permalink to this headline"></a></h3>
 <ul class="simple">
@@ -131,10 +131,6 @@ installing dependencies)</p>
 or higher (only required for running tests)</p></li>
 <li><p><a class="reference external" href="http://www.doxygen.org">Doxygen</a> – version 1.8 or higher (only
 required for generating documentation)</p></li>
-<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/installation.html">Sphinx</a> -
-version 4.5 or higher along with the following Python packages:
-<code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">sphinx-rtd-theme</span> <span class="pre">breathe</span> <span class="pre">recommonmark</span></code>  (only required
-for generating documentation)</p></li>
 <li><p><a class="reference external" href="https://gitlab.inria.fr/batsim/batsched">Batsched</a> – version 1.4
 - useful for expanded batch-scheduled resource simulation
 capabilities</p></li>
@@ -145,17 +141,17 @@ capabilities</p></li>
 <span id="install-source"></span><h2>Source Install<a class="headerlink" href="#source-install" title="Permalink to this headline"></a></h2>
 <section id="building-wrench">
 <span id="install-source-build"></span><h3>Building WRENCH<a class="headerlink" href="#building-wrench" title="Permalink to this headline"></a></h3>
-<p>You can download the <code class="docutils literal notranslate"><span class="pre">wrench-&lt;version&gt;.tar.gz</span></code> archive from the <a class="reference external" href="https://github.com/wrench-project/wrench/releases">GitHub
+<p>You can download the <code class="docutils literal notranslate"><span class="pre">&#64;WRENCHRelease.tar.gz</span></code> archive from the <a class="reference external" href="https://github.com/wrench-project/wrench/releases">GitHub
 releases</a> page.
 Once you have installed dependencies (see above), you can install WRENCH
 as follows:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>tar xf wrench-&lt;version&gt;.tar.gz
-<span class="nb">cd</span> wrench-&lt;version&gt;
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>tar xf @WRENCHRelease.tar.gz
+<span class="nb">cd</span> @WRENCHRelease
 mkdir build
 <span class="nb">cd</span> build
 cmake ..
 make -j8
-make install <span class="c1"># try &quot;sudo make install&quot; if you do not have write privileges</span>
+make install <span class="c1"># try “sudo make install” if you do not have write privileges</span>
 </pre></div>
 </div>
 <p>If you want to see actual compiler and linker invocations, add
