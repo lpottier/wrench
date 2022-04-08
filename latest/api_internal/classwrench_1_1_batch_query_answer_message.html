@@ -360,10 +360,41 @@
              
   <section id="wrench-batchqueryanswermessage">
 <h1>wrench::BatchQueryAnswerMessage<a class="headerlink" href="#wrench-batchqueryanswermessage" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench23BatchQueryAnswerMessageE">
+<span id="_CPPv3N6wrench23BatchQueryAnswerMessageE"></span><span id="_CPPv2N6wrench23BatchQueryAnswerMessageE"></span><span id="wrench::BatchQueryAnswerMessage"></span><span class="target" id="classwrench_1_1_batch_query_answer_message"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">BatchQueryAnswerMessage</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classwrench_1_1_batch_compute_service_message.html#_CPPv4N6wrench26BatchComputeServiceMessageE" title="wrench::BatchComputeServiceMessage"><span class="n"><span class="pre">BatchComputeServiceMessage</span></span></a><a class="headerlink" href="#_CPPv4N6wrench23BatchQueryAnswerMessageE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A message send by a <a class="reference internal" href="classwrench_1_1_batsched_network_listener.html#classwrench_1_1_batsched_network_listener"><span class="std std-ref">BatschedNetworkListener</span></a> to a Batsched-enabled <a class="reference internal" href="../api_user/classwrench_1_1_batch_compute_service.html#classwrench_1_1_batch_compute_service"><span class="std std-ref">BatchComputeService</span></a> with a job start time estimate obtained from Batsched. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench23BatchQueryAnswerMessage23BatchQueryAnswerMessageEdd">
+<span id="_CPPv3N6wrench23BatchQueryAnswerMessage23BatchQueryAnswerMessageEdd"></span><span id="_CPPv2N6wrench23BatchQueryAnswerMessage23BatchQueryAnswerMessageEdd"></span><span id="wrench::BatchQueryAnswerMessage::BatchQueryAnswerMessage__double.double"></span><span class="target" id="classwrench_1_1_batch_query_answer_message_1a10b010b2246f82e9ec6d2803a97b6597"></span><span class="sig-name descname"><span class="n"><span class="pre">BatchQueryAnswerMessage</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">estimated_job_start_time</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">payload</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench23BatchQueryAnswerMessage23BatchQueryAnswerMessageEdd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>estimated_job_start_time</strong> – the estimated job start time </p></li>
+<li><p><strong>payload</strong> – the message size in bytes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench23BatchQueryAnswerMessage20estimated_start_timeE">
+<span id="_CPPv3N6wrench23BatchQueryAnswerMessage20estimated_start_timeE"></span><span id="_CPPv2N6wrench23BatchQueryAnswerMessage20estimated_start_timeE"></span><span id="wrench::BatchQueryAnswerMessage::estimated_start_time__double"></span><span class="target" id="classwrench_1_1_batch_query_answer_message_1aca0da5540e9f1d5fdef6b16af7315d41"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">estimated_start_time</span></span></span><a class="headerlink" href="#_CPPv4N6wrench23BatchQueryAnswerMessage20estimated_start_timeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The estimated job start time. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 

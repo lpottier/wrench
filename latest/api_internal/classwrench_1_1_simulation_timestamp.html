@@ -360,10 +360,53 @@
              
   <section id="wrench-simulationtimestamp">
 <h1>wrench::SimulationTimestamp<a class="headerlink" href="#wrench-simulationtimestamp" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN6wrench19SimulationTimestampE">
+<span id="_CPPv3I0EN6wrench19SimulationTimestampE"></span><span id="_CPPv2I0EN6wrench19SimulationTimestampE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classwrench_1_1_simulation_timestamp"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SimulationTimestamp</span></span></span><br /></dt>
+<dd><p>A time-stamped simulation event stored in <a class="reference internal" href="../api_user/classwrench_1_1_simulation_output.html#classwrench_1_1_simulation_output"><span class="std std-ref">SimulationOutput</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters</dt>
+<dd class="field-odd"><p><strong>a</strong> – particular SimulationTimestampXXXX class (defined in SimulationTimestampTypes.h) </p>
+</dd>
+</dl>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench19SimulationTimestamp19SimulationTimestampEP1T">
+<span id="_CPPv3N6wrench19SimulationTimestamp19SimulationTimestampEP1T"></span><span id="_CPPv2N6wrench19SimulationTimestamp19SimulationTimestampEP1T"></span><span id="wrench::SimulationTimestamp::SimulationTimestamp__TP"></span><span class="target" id="classwrench_1_1_simulation_timestamp_1ad09714038c918230df20966d78b0201e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SimulationTimestamp</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../api_developer/classwrench_1_1_simulation_timestamp.html#_CPPv4I0EN6wrench19SimulationTimestampE" title="wrench::SimulationTimestamp::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">content</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>content</strong> – a pointer to a object of class T, i.e., a particular SimulationTimestampXXXX class (defined in SimulationTimestampTypes.h) </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench19SimulationTimestamp10getContentEv">
+<span id="_CPPv3N6wrench19SimulationTimestamp10getContentEv"></span><span id="_CPPv2N6wrench19SimulationTimestamp10getContentEv"></span><span id="wrench::SimulationTimestamp::getContent"></span><span class="target" id="classwrench_1_1_simulation_timestamp_1a8ae8b15faae854fb1615a700fd620ab8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="../api_developer/classwrench_1_1_simulation_timestamp.html#_CPPv4I0EN6wrench19SimulationTimestampE" title="wrench::SimulationTimestamp::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getContent</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Retrieve the timestamp’s content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a pointer to a object of class T, i.e., a particular SimulationTimestampXXXX class (defined in SimulationTimestampTypes.h) </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench19SimulationTimestamp7getDateEv">
+<span id="_CPPv3N6wrench19SimulationTimestamp7getDateEv"></span><span id="_CPPv2N6wrench19SimulationTimestamp7getDateEv"></span><span id="wrench::SimulationTimestamp::getDate"></span><span class="target" id="classwrench_1_1_simulation_timestamp_1a706030fdac38ad1e853e588f7260c499"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Retrieve the recorded time of the timestamp</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the recorded time of the timestamp </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

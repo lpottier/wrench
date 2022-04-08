@@ -360,10 +360,62 @@
              
   <section id="wrench-cloudcomputeserviceshutdownvmrequestmessage">
 <h1>wrench::CloudComputeServiceShutdownVMRequestMessage<a class="headerlink" href="#wrench-cloudcomputeserviceshutdownvmrequestmessage" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessageE">
+<span id="_CPPv3N6wrench43CloudComputeServiceShutdownVMRequestMessageE"></span><span id="_CPPv2N6wrench43CloudComputeServiceShutdownVMRequestMessageE"></span><span id="wrench::CloudComputeServiceShutdownVMRequestMessage"></span><span class="target" id="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CloudComputeServiceShutdownVMRequestMessage</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classwrench_1_1_cloud_compute_service_message.html#_CPPv4N6wrench26CloudComputeServiceMessageE" title="wrench::CloudComputeServiceMessage"><span class="n"><span class="pre">CloudComputeServiceMessage</span></span></a><a class="headerlink" href="#_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessageE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A message sent to a <a class="reference internal" href="../api_user/classwrench_1_1_cloud_compute_service.html#classwrench_1_1_cloud_compute_service"><span class="std std-ref">CloudComputeService</span></a> to request a VM shutdown. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage43CloudComputeServiceShutdownVMRequestMessageEPN7simgrid3s4u7MailboxERKNSt6stringEbN14ComputeService16TerminationCauseEd">
+<span id="_CPPv3N6wrench43CloudComputeServiceShutdownVMRequestMessage43CloudComputeServiceShutdownVMRequestMessageEPN7simgrid3s4u7MailboxERKNSt6stringEbN14ComputeService16TerminationCauseEd"></span><span id="_CPPv2N6wrench43CloudComputeServiceShutdownVMRequestMessage43CloudComputeServiceShutdownVMRequestMessageEPN7simgrid3s4u7MailboxERKNSt6stringEbN14ComputeService16TerminationCauseEd"></span><span id="wrench::CloudComputeServiceShutdownVMRequestMessage::CloudComputeServiceShutdownVMRequestMessage__simgrid::s4u::MailboxP.ssCR.b.ComputeService::TerminationCause.double"></span><span class="target" id="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message_1a0e9d1936bbe5e7865f8e8c58015a90c0"></span><span class="sig-name descname"><span class="n"><span class="pre">CloudComputeServiceShutdownVMRequestMessage</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simgrid</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">s4u</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Mailbox</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">answer_mailbox</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vm_name</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">send_failure_notifications</span></span>, <a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeServiceE" title="wrench::ComputeService"><span class="n"><span class="pre">ComputeService</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeService16TerminationCauseE" title="wrench::ComputeService::TerminationCause"><span class="n"><span class="pre">TerminationCause</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">termination_cause</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">payload</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage43CloudComputeServiceShutdownVMRequestMessageEPN7simgrid3s4u7MailboxERKNSt6stringEbN14ComputeService16TerminationCauseEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>answer_mailbox</strong> – the mailbox to which to send the answer </p></li>
+<li><p><strong>vm_name</strong> – the name of the VM host </p></li>
+<li><p><strong>send_failure_notifications</strong> – whether to send job failure notifications </p></li>
+<li><p><strong>termination_cause</strong> – termination cause (for failure notifications) </p></li>
+<li><p><strong>payload</strong> – the message size in bytes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage14answer_mailboxE">
+<span id="_CPPv3N6wrench43CloudComputeServiceShutdownVMRequestMessage14answer_mailboxE"></span><span id="_CPPv2N6wrench43CloudComputeServiceShutdownVMRequestMessage14answer_mailboxE"></span><span id="wrench::CloudComputeServiceShutdownVMRequestMessage::answer_mailbox__simgrid::s4u::MailboxP"></span><span class="target" id="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message_1a9e33ec95b3f7bc63ffcd7d1cc8694e68"></span><span class="n"><span class="pre">simgrid</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">s4u</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Mailbox</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">answer_mailbox</span></span></span><a class="headerlink" href="#_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage14answer_mailboxE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The mailbox to which the answer message should be sent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage26send_failure_notificationsE">
+<span id="_CPPv3N6wrench43CloudComputeServiceShutdownVMRequestMessage26send_failure_notificationsE"></span><span id="_CPPv2N6wrench43CloudComputeServiceShutdownVMRequestMessage26send_failure_notificationsE"></span><span id="wrench::CloudComputeServiceShutdownVMRequestMessage::send_failure_notifications__b"></span><span class="target" id="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message_1a9bd74ee1470aa02bca1be127e8bbc766"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">send_failure_notifications</span></span></span><a class="headerlink" href="#_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage26send_failure_notificationsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Whether to send failure notifications. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage17termination_causeE">
+<span id="_CPPv3N6wrench43CloudComputeServiceShutdownVMRequestMessage17termination_causeE"></span><span id="_CPPv2N6wrench43CloudComputeServiceShutdownVMRequestMessage17termination_causeE"></span><span id="wrench::CloudComputeServiceShutdownVMRequestMessage::termination_cause__ComputeService::TerminationCause"></span><span class="target" id="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message_1adacdcb90fd8da9c6a9891ef6187f239d"></span><a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeServiceE" title="wrench::ComputeService"><span class="n"><span class="pre">ComputeService</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeService16TerminationCauseE" title="wrench::ComputeService::TerminationCause"><span class="n"><span class="pre">TerminationCause</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">termination_cause</span></span></span><a class="headerlink" href="#_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage17termination_causeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Termination cause (in case failure notifications are sent) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage7vm_nameE">
+<span id="_CPPv3N6wrench43CloudComputeServiceShutdownVMRequestMessage7vm_nameE"></span><span id="_CPPv2N6wrench43CloudComputeServiceShutdownVMRequestMessage7vm_nameE"></span><span id="wrench::CloudComputeServiceShutdownVMRequestMessage::vm_name__ss"></span><span class="target" id="classwrench_1_1_cloud_compute_service_shutdown_v_m_request_message_1a70be6202e7c725594e14407ccee162b7"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vm_name</span></span></span><a class="headerlink" href="#_CPPv4N6wrench43CloudComputeServiceShutdownVMRequestMessage7vm_nameE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The name of the new VM host. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 

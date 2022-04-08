@@ -214,10 +214,38 @@
              
   <section id="wrench-simulationtimestamptype">
 <h1>wrench::SimulationTimestampType<a class="headerlink" href="#wrench-simulationtimestamptype" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/developer/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench23SimulationTimestampTypeE">
+<span id="_CPPv3N6wrench23SimulationTimestampTypeE"></span><span id="_CPPv2N6wrench23SimulationTimestampTypeE"></span><span id="wrench::SimulationTimestampType"></span><span class="target" id="classwrench_1_1_simulation_timestamp_type"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SimulationTimestampType</span></span></span><a class="headerlink" href="#_CPPv4N6wrench23SimulationTimestampTypeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>File, Source, Whoami used to be hashed as key for unordered multimap for ongoing file operations. </p>
+<p><p>typedef std::tuple&lt;std::shared_ptr&lt;DataFile&gt;, std::shared_ptr&lt;FileLocation&gt; , std::shared_ptr&lt;StorageService&gt; &gt; File;</p>
+<p>A top-level base class for simulation timestamps</p>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param file</dt>
+<dd class="field-odd"><p>- tuple of three strings relating to File, Source and Whoami </p>
+</dd>
+<dt class="field-even">Return</dt>
+<dd class="field-even"><p>XOR of hashes of file size_t file_hash( const File &amp; file );</p>
+</dd>
+</dl>
+<p>Subclassed by <a class="reference internal" href="../api_user/classwrench_1_1_simulation_timestamp_energy_consumption.html#classwrench_1_1_simulation_timestamp_energy_consumption"><span class="std std-ref">wrench::SimulationTimestampEnergyConsumption</span></a>, <a class="reference internal" href="../api_user/classwrench_1_1_simulation_timestamp_link_usage.html#classwrench_1_1_simulation_timestamp_link_usage"><span class="std std-ref">wrench::SimulationTimestampLinkUsage</span></a>, <a class="reference internal" href="../api_user/classwrench_1_1_simulation_timestamp_pair.html#classwrench_1_1_simulation_timestamp_pair"><span class="std std-ref">wrench::SimulationTimestampPair</span></a>, <a class="reference internal" href="../api_user/classwrench_1_1_simulation_timestamp_pstate_set.html#classwrench_1_1_simulation_timestamp_pstate_set"><span class="std std-ref">wrench::SimulationTimestampPstateSet</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6wrench23SimulationTimestampType7getDateEv">
+<span id="_CPPv3NK6wrench23SimulationTimestampType7getDateEv"></span><span id="_CPPv2NK6wrench23SimulationTimestampType7getDateEv"></span><span id="wrench::SimulationTimestampType::getDateC"></span><span class="target" id="classwrench_1_1_simulation_timestamp_type_1a1773f70af7c74b8d1c1d2cdbf344ebbc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6wrench23SimulationTimestampType7getDateEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieve the date recorded for this timestamp. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the date of this timestamp </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

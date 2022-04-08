@@ -360,10 +360,29 @@
              
   <section id="wrench-storageserviceproperty">
 <h1>wrench::StorageServiceProperty<a class="headerlink" href="#wrench-storageserviceproperty" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench22StorageServicePropertyE">
+<span id="_CPPv3N6wrench22StorageServicePropertyE"></span><span id="_CPPv2N6wrench22StorageServicePropertyE"></span><span id="wrench::StorageServiceProperty"></span><span class="target" id="classwrench_1_1_storage_service_property"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">StorageServiceProperty</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_service_property.html#_CPPv4N6wrench15ServicePropertyE" title="wrench::ServiceProperty"><span class="n"><span class="pre">ServiceProperty</span></span></a><br /></dt>
+<dd><p>Configurable properties for a <a class="reference internal" href="../api_user/classwrench_1_1_storage_service.html#classwrench_1_1_storage_service"><span class="std std-ref">StorageService</span></a>. </p>
+<p>Subclassed by <a class="reference internal" href="../api_user/classwrench_1_1_simple_storage_service_property.html#classwrench_1_1_simple_storage_service_property"><span class="std std-ref">wrench::SimpleStorageServiceProperty</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench22StorageServiceProperty11BUFFER_SIZEE">
+<span id="_CPPv3N6wrench22StorageServiceProperty11BUFFER_SIZEE"></span><span id="_CPPv2N6wrench22StorageServiceProperty11BUFFER_SIZEE"></span><span id="wrench::StorageServiceProperty::BUFFER_SIZE__ssC"></span><span class="target" id="classwrench_1_1_storage_service_property_1a4a15fb8290bd904973c923a6e7d7ca39"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BUFFER_SIZE</span></span></span><br /></dt>
+<dd><p>Buffer size used when copying/communicating data: </p>
+<p><ul class="simple">
+<li><p>“infinity”: full buffering (read/write and forward model)</p></li>
+<li><p>”0”: an ideal fluid model</p></li>
+<li><p>any integral value in between: an actual buffer size (the smaller the buffer size, the slower the simulation)</p></li>
+<li><p>Default value: “1048576” (1 MiB) </p></li>
+</ul>
+</p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

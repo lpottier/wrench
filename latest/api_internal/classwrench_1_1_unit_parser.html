@@ -360,10 +360,49 @@
              
   <section id="wrench-unitparser">
 <h1>wrench::UnitParser<a class="headerlink" href="#wrench-unitparser" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench10UnitParserE">
+<span id="_CPPv3N6wrench10UnitParserE"></span><span id="_CPPv2N6wrench10UnitParserE"></span><span id="wrench::UnitParser"></span><span class="target" id="classwrench_1_1_unit_parser"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">UnitParser</span></span></span><a class="headerlink" href="#_CPPv4N6wrench10UnitParserE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A class used to part string specification of values with units into a single value (e.g., “2KB” -&gt; 2048 bytes, “2Kb” -&gt; 256 bytes) </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench10UnitParser19parse_compute_speedENSt6stringE">
+<span id="_CPPv3N6wrench10UnitParser19parse_compute_speedENSt6stringE"></span><span id="_CPPv2N6wrench10UnitParser19parse_compute_speedENSt6stringE"></span><span id="wrench::UnitParser::parse_compute_speed__ss"></span><span class="target" id="classwrench_1_1_unit_parser_1acecafdaf98911db93c720caf954207d1"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parse_compute_speed</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">string</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench10UnitParser19parse_compute_speedENSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Given a string compute speed specification with units (e.g., “3f”, “10Gf”) return the size in bytes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> – the size specification </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – </p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the size in bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench10UnitParser10parse_sizeENSt6stringE">
+<span id="_CPPv3N6wrench10UnitParser10parse_sizeENSt6stringE"></span><span id="_CPPv2N6wrench10UnitParser10parse_sizeENSt6stringE"></span><span id="wrench::UnitParser::parse_size__ss"></span><span class="target" id="classwrench_1_1_unit_parser_1ad57b7f7b520c57fa1faf6c97cf66973b"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parse_size</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">string</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench10UnitParser10parse_sizeENSt6stringE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Given a string size specification with units (e.g., “13Mb”) return the size in bytes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> – the size specification </p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – </p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the size in bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

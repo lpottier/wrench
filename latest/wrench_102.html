@@ -121,7 +121,7 @@ which are accessed by including a single header file:</p>
 </pre></div>
 </div>
 <p>An execution controller implementation must derive the
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code> class, which means that it must override
+<a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionControllerE" title="wrench::ExecutionController"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code></a> class, which means that it must override
 several the virtual <code class="docutils literal notranslate"><span class="pre">main()</span></code> member function. A typical such
 implementation of this function goes through a simple loop as follows:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>// A<span class="o">)</span> create/retrieve application workload to execute
@@ -143,21 +143,21 @@ features and functionality relevant to execution controller development.</p>
 <p>Services that the execution controller can use are typically passed to
 its constructor. Most service classes provide member functions to get
 information about the capabilities and properties of the services. For
-instance, a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ComputeService</span></code> has a
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ComputeService::getNumHosts()</span></code> member function that returns
+instance, a <a class="reference internal" href="api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeServiceE" title="wrench::ComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ComputeService</span></code></a> has a
+<a class="reference internal" href="api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeService11getNumHostsEv" title="wrench::ComputeService::getNumHosts"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ComputeService::getNumHosts()</span></code></a> member function that returns
 how many compute hosts the service has access to in total. A
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code> has a
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService::getFreeSpace()</span></code> member function to find out
+<a class="reference internal" href="api_developer/classwrench_1_1_storage_service.html#_CPPv4N6wrench14StorageServiceE" title="wrench::StorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code></a> has a
+<a class="reference internal" href="api_developer/classwrench_1_1_storage_service.html#_CPPv4N6wrench14StorageService12getFreeSpaceEv" title="wrench::StorageService::getFreeSpace"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService::getFreeSpace()</span></code></a> member function to find out
 how many bytes of free space are available on it. And so on…</p>
 <p>To take a concrete example, consider the execution controller
 implementation in
 <code class="docutils literal notranslate"><span class="pre">examples/basic-examples/batch-bag-of-tasks/TwoTasksAtATimeBatchWMS.cpp</span></code>.
 This WMS finds out the compute speed of the cores of the compute nodes
-available to a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code> as:</p>
+available to a <a class="reference internal" href="api_developer/classwrench_1_1_batch_compute_service.html#_CPPv4N6wrench19BatchComputeServiceE" title="wrench::BatchComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code></a> as:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span><span class="w"> </span><span class="n">core_flop_rate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">batch_service</span><span class="o">-&gt;</span><span class="n">getCoreFlopRate</span><span class="p">().</span><span class="n">begin</span><span class="p">())).</span><span class="n">second</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Member function <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ComputeService::getCoreFlopRate()</span></code> returns a
+<p>Member function <a class="reference internal" href="api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeService15getCoreFlopRateEv" title="wrench::ComputeService::getCoreFlopRate"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ComputeService::getCoreFlopRate()</span></code></a> returns a
 map of core compute speeds indexed by hostname (the map thus has one
 element per compute node available to the service). Since the compute
 nodes of a batch compute service are homogeneous, the above code simply
@@ -205,12 +205,12 @@ or alternately register many callbacks. Instead, WRENCH provides
 all asynchronous interactions with services, and which have been
 implemented for your convenience to make interacting with services easy.</p>
 <p>There are two managers: a <strong>job manager</strong>
-(class <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager</span></code>) and a <strong>data movement manager</strong> (class
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager</span></code>). The base
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code> class provides two member functions for
+(class <a class="reference internal" href="api_developer/classwrench_1_1_job_manager.html#_CPPv4N6wrench10JobManagerE" title="wrench::JobManager"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager</span></code></a>) and a <strong>data movement manager</strong> (class
+<a class="reference internal" href="api_developer/classwrench_1_1_data_movement_manager.html#_CPPv4N6wrench19DataMovementManagerE" title="wrench::DataMovementManager"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager</span></code></a>). The base
+<a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionControllerE" title="wrench::ExecutionController"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code></a> class provides two member functions for
 instantiating and starting these managers:
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::createJobManager()</span></code> and
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::createDataMovementManager()</span></code>.</p>
+<a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController16createJobManagerEv" title="wrench::ExecutionController::createJobManager"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::createJobManager()</span></code></a> and
+<a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController25createDataMovementManagerEv" title="wrench::ExecutionController::createDataMovementManager"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::createDataMovementManager()</span></code></a>.</p>
 <p>Creating one or two of these managers typically is the first thing an
 execution controller does. For instance, the execution controller in
 <code class="docutils literal notranslate"><span class="pre">examples/basic-examples/bare-metal-data-movement/DataMovementWMS.cpp</span></code>
@@ -237,14 +237,14 @@ but included for completeness)</p></li>
 <li><p>Asynchronously copy a file from one storage service to another</p></li>
 </ul>
 <p>The first 4 interactions above are done by calling member functions of
-the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code> class. The last two are done via a Data
+the <a class="reference internal" href="api_developer/classwrench_1_1_storage_service.html#_CPPv4N6wrench14StorageServiceE" title="wrench::StorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code></a> class. The last two are done via a Data
 Movement Manager, i.e., by calling member functions of the
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager</span></code> class. Some of these member functions
-take an optional <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileRegistryService</span></code> argument, in which case
+<a class="reference internal" href="api_developer/classwrench_1_1_data_movement_manager.html#_CPPv4N6wrench19DataMovementManagerE" title="wrench::DataMovementManager"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager</span></code></a> class. Some of these member functions
+take an optional <a class="reference internal" href="api_developer/classwrench_1_1_file_registry_service.html#_CPPv4N6wrench19FileRegistryServiceE" title="wrench::FileRegistryService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileRegistryService</span></code></a> argument, in which case
 they will also update entries in a file registry service (e.g., removing
 an entry when a file is deleted).</p>
 <p>See <a class="reference internal" href="wrench_102/simplestorage.html#guide-102-simplestorage"><span class="std std-ref">this page</span></a> for concrete examples
-of interactions with a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::SimpleStorageService</span></code>.</p>
+of interactions with a <a class="reference internal" href="api_developer/classwrench_1_1_simple_storage_service.html#_CPPv4N6wrench20SimpleStorageServiceE" title="wrench::SimpleStorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::SimpleStorageService</span></code></a>.</p>
 </section>
 <section id="interacting-with-compute-services">
 <span id="wrench-102-controller-services-compute"></span><h3>Interacting with compute services<a class="headerlink" href="#interacting-with-compute-services" title="Permalink to this headline"></a></h3>
@@ -256,12 +256,12 @@ compute services, an execution controller must create “jobs”, which can
 comprise multiple tasks and involve data copy/deletion operations. The
 job abstraction is powerful and greatly simplifies the task of an
 execution controller while affording flexibility.</p>
-<p><strong>There are three kinds of jobs in WRENCH</strong>: <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::CompoundJob</span></code>,
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StandardJob</span></code>, and <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::PilotJob</span></code>.</p>
+<p><strong>There are three kinds of jobs in WRENCH</strong>: <a class="reference internal" href="api_developer/classwrench_1_1_compound_job.html#_CPPv4N6wrench11CompoundJobE" title="wrench::CompoundJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::CompoundJob</span></code></a>,
+<a class="reference internal" href="api_developer/classwrench_1_1_standard_job.html#_CPPv4N6wrench11StandardJobE" title="wrench::StandardJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StandardJob</span></code></a>, and <a class="reference internal" href="api_developer/classwrench_1_1_pilot_job.html#_CPPv4N6wrench8PilotJobE" title="wrench::PilotJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::PilotJob</span></code></a>.</p>
 <p>A <strong>Compound Job</strong> is simply set of actions to be performed, with
 possible control dependencies between actions. It is the most generic,
 flexible, and expressive kind of job. See the API documentation for the
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::CompoundJob</span></code> class and the examples in the
+<a class="reference internal" href="api_developer/classwrench_1_1_compound_job.html#_CPPv4N6wrench11CompoundJobE" title="wrench::CompoundJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::CompoundJob</span></code></a> class and the examples in the
 <code class="docutils literal notranslate"><span class="pre">examples/action_api</span></code> directory. The other types of jobs below are
 actually implemented internally as compound jobs. The Compound Job
 abstraction is the most recent addition to the WRENCH API, and vastly
@@ -295,19 +295,19 @@ is a concept that is mostly relevant for batch scheduling. In a
 nutshell, it is a job that allows late binding of tasks to resources. It
 is submitted to a compute service (provided that service supports pilot
 jobs), and when it starts it just looks to the execution controller like
-a short-lived <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BareMetalComputeService</span></code> to which compound
+a short-lived <a class="reference internal" href="api_developer/classwrench_1_1_bare_metal_compute_service.html#_CPPv4N6wrench23BareMetalComputeServiceE" title="wrench::BareMetalComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BareMetalComputeService</span></code></a> to which compound
 and/or standard jobs can be submitted.</p>
 <p>All jobs are created via the job manager, which provides
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::createCompoundJob()</span></code>,
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::createStandardJob()</span></code>, and
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::createPilotJob()</span></code> member functions (the job
+<a class="reference internal" href="api_developer/classwrench_1_1_job_manager.html#_CPPv4N6wrench10JobManager17createCompoundJobENSt6stringE" title="wrench::JobManager::createCompoundJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::createCompoundJob()</span></code></a>,
+<a class="reference internal" href="api_developer/classwrench_1_1_job_manager.html#_CPPv4N6wrench10JobManager17createStandardJobERKNSt10shared_ptrI12WorkflowTaskEE" title="wrench::JobManager::createStandardJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::createStandardJob()</span></code></a>, and
+<a class="reference internal" href="api_developer/classwrench_1_1_job_manager.html#_CPPv4N6wrench10JobManager14createPilotJobEv" title="wrench::JobManager::createPilotJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::createPilotJob()</span></code></a> member functions (the job
 manager is thus a job factory).</p>
 <p>In addition to member functions for job creation, the job manager also
 provides the following:</p>
 <ul class="simple">
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::submitJob()</span></code>: asynchronous submission of a job
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_job_manager.html#_CPPv4N6wrench10JobManager9submitJobERKNSt10shared_ptrI11CompoundJobEERKNSt10shared_ptrI14ComputeServiceEENSt3mapINSt6stringENSt6stringEEE" title="wrench::JobManager::submitJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::submitJob()</span></code></a>: asynchronous submission of a job
 to a compute service.</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::terminateJob()</span></code>: synchronous termination of a
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_job_manager.html#_CPPv4N6wrench10JobManager12terminateJobERKNSt10shared_ptrI11CompoundJobEE" title="wrench::JobManager::terminateJob"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::JobManager::terminateJob()</span></code></a>: synchronous termination of a
 previously submitted job.</p></li>
 </ul>
 <p>The next section gives examples of interactions with each kind of
@@ -326,10 +326,10 @@ of how jobs are submitted to each compute service type:</p>
 <section id="interacting-with-file-registry-services">
 <span id="wrench-102-controller-services-registry"></span><h3>Interacting with file registry services<a class="headerlink" href="#interacting-with-file-registry-services" title="Permalink to this headline"></a></h3>
 <p>Interaction with a file registry service is straightforward and done by
-directly calling member functions of the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileRegistryService</span></code>
+directly calling member functions of the <a class="reference internal" href="api_developer/classwrench_1_1_file_registry_service.html#_CPPv4N6wrench19FileRegistryServiceE" title="wrench::FileRegistryService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileRegistryService</span></code></a>
 class. Note that often file registry service entries are managed
-automatically, e.g., via calls to <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager</span></code> and
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code> member functions. So often an execution
+automatically, e.g., via calls to <a class="reference internal" href="api_developer/classwrench_1_1_data_movement_manager.html#_CPPv4N6wrench19DataMovementManagerE" title="wrench::DataMovementManager"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager</span></code></a> and
+<a class="reference internal" href="api_developer/classwrench_1_1_storage_service.html#_CPPv4N6wrench14StorageServiceE" title="wrench::StorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code></a> member functions. So often an execution
 controller does not need to interact with the file registry service.</p>
 <p>Adding/removing an entry to a file registry service is done as follows:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>std::shared_ptr&lt;wrench::FileRegistryService&gt; file_registry<span class="p">;</span>
@@ -342,7 +342,7 @@ file_registry-&gt;addEntry<span class="o">(</span>some_file, wrench::FileLocatio
 file_registry-&gt;removeEntry<span class="o">(</span>some_file, wrench::FileLocatio::LOCATION<span class="o">(</span>some_storage_service<span class="o">))</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>The <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileLocation</span></code> class is a convenient abstraction for a
+<p>The <a class="reference internal" href="api_developer/classwrench_1_1_file_location.html#_CPPv4N6wrench12FileLocationE" title="wrench::FileLocation"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileLocation</span></code></a> class is a convenient abstraction for a
 file copy available at some storage service (with optionally a directory
 path at that service).</p>
 <p>Retrieving all entries for a given file is done as follows:</p>
@@ -369,7 +369,7 @@ instance:</p>
 <span class="k">auto</span><span class="w"> </span><span class="n">entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fr_service</span><span class="o">-&gt;</span><span class="n">lookupEntry</span><span class="p">(</span><span class="n">some_file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ReferenceHost&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">np_service</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>See the documentation of <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileRegistryService</span></code>
+<p>See the documentation of <a class="reference internal" href="api_developer/classwrench_1_1_file_registry_service.html#_CPPv4N6wrench19FileRegistryServiceE" title="wrench::FileRegistryService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FileRegistryService</span></code></a>
 for more API member functions.</p>
 </section>
 <section id="interacting-with-network-proximity-services">
@@ -391,7 +391,7 @@ any given host:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">coords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np_service</span><span class="o">-&gt;</span><span class="n">getCoordinates</span><span class="p">(</span><span class="s">&quot;Host1&quot;</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>See the documentation of <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::NetworkProximityService</span></code>
+<p>See the documentation of <a class="reference internal" href="api_developer/classwrench_1_1_network_proximity_service.html#_CPPv4N6wrench23NetworkProximityServiceE" title="wrench::NetworkProximityService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::NetworkProximityService</span></code></a>
 for more API member functions.</p>
 </section>
 </section>
@@ -399,34 +399,34 @@ for more API member functions.</p>
 <span id="wrench-102-controller-events"></span><h2>C) Workflow execution events<a class="headerlink" href="#c-workflow-execution-events" title="Permalink to this headline"></a></h2>
 <p>Because the execution controller performs asynchronous operations, it
 needs to wait for and re-act to events. This is done by calling the
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::waitForAndProcessNextEvent()</span></code> member
+<a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController26waitForAndProcessNextEventEv" title="wrench::ExecutionController::waitForAndProcessNextEvent"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::waitForAndProcessNextEvent()</span></code></a> member
 function implemented by the base <code class="docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code> class.
 A call to this member function blocks until some event occurs and then
 calls a callback member function. The possible event classes all derive
-from the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionEvent</span></code> class, and an execution controller
+from the <a class="reference internal" href="api_developer/classwrench_1_1_execution_event.html#_CPPv4N6wrench14ExecutionEventE" title="wrench::ExecutionEvent"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionEvent</span></code></a> class, and an execution controller
 can override the callback member function for each possible event (the
 default member function does nothing but print some log message). These
 overridable callback member functions are:</p>
 <ul class="simple">
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventCompoundJobCompletion()</span></code>:
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController33processEventCompoundJobCompletionENSt10shared_ptrI25CompoundJobCompletedEventEE" title="wrench::ExecutionController::processEventCompoundJobCompletion"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventCompoundJobCompletion()</span></code></a>:
 react to a compound job completion</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventCompoundJobFailure()</span></code>:
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController30processEventCompoundJobFailureENSt10shared_ptrI22CompoundJobFailedEventEE" title="wrench::ExecutionController::processEventCompoundJobFailure"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventCompoundJobFailure()</span></code></a>:
 react to a compound job failure</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventStandardJobCompletion()</span></code>:
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController33processEventStandardJobCompletionENSt10shared_ptrI25StandardJobCompletedEventEE" title="wrench::ExecutionController::processEventStandardJobCompletion"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventStandardJobCompletion()</span></code></a>:
 react to a standard job completion</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventStandardJobFailure()</span></code>:
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController30processEventStandardJobFailureENSt10shared_ptrI22StandardJobFailedEventEE" title="wrench::ExecutionController::processEventStandardJobFailure"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventStandardJobFailure()</span></code></a>:
 react to a standard job failure</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventPilotJobStart()</span></code>: react
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController25processEventPilotJobStartENSt10shared_ptrI20PilotJobStartedEventEE" title="wrench::ExecutionController::processEventPilotJobStart"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventPilotJobStart()</span></code></a>: react
 to a pilot job beginning execution</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventPilotJobExpiration()</span></code>:
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController30processEventPilotJobExpirationENSt10shared_ptrI20PilotJobExpiredEventEE" title="wrench::ExecutionController::processEventPilotJobExpiration"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventPilotJobExpiration()</span></code></a>:
 react to a pilot job expiration</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventFileCopyCompletion()</span></code>:
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController30processEventFileCopyCompletionENSt10shared_ptrI22FileCopyCompletedEventEE" title="wrench::ExecutionController::processEventFileCopyCompletion"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventFileCopyCompletion()</span></code></a>:
 react to a file copy completion</p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventFileCopyFailure()</span></code>: react
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionController27processEventFileCopyFailureENSt10shared_ptrI19FileCopyFailedEventEE" title="wrench::ExecutionController::processEventFileCopyFailure"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController::processEventFileCopyFailure()</span></code></a>: react
 to a file copy failure</p></li>
 </ul>
 <p>Each member function above takes in an event object as parameter. In the
-case of failure, the event includes a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FailureCause</span></code> object,
+case of failure, the event includes a <a class="reference internal" href="api_developer/classwrench_1_1_failure_cause.html#_CPPv4N6wrench12FailureCauseE" title="wrench::FailureCause"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FailureCause</span></code></a> object,
 which can be accessed to analyze (or just display) the root cause of the
 failure.</p>
 <p>Consider the execution controller in
@@ -506,7 +506,7 @@ catching these exceptions.</p>
 <p>Some exceptions correspond to failures during the simulated workflow
 executions (i.e., errors that would occur in a real-world execution and
 are thus part of the simulation). Each such exception contains a
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FailureCause</span></code> object, which can be accessed to understand the
+<a class="reference internal" href="api_developer/classwrench_1_1_failure_cause.html#_CPPv4N6wrench12FailureCauseE" title="wrench::FailureCause"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::FailureCause</span></code></a> object, which can be accessed to understand the
 root cause of the execution failure. Other exceptions (e.g.,
 <code class="docutils literal notranslate"><span class="pre">std::invalid_arguments</span></code>, <code class="docutils literal notranslate"><span class="pre">std::runtime_error</span></code>) are thrown as well,
 which are used for detecting misuses of the WRENCH API or internal
@@ -514,12 +514,12 @@ WRENCH errors.</p>
 </section>
 <section id="finding-information-and-interacting-with-hardware-resources">
 <span id="wrench-102-controller-hardware"></span><h2>Finding information and interacting with hardware resources<a class="headerlink" href="#finding-information-and-interacting-with-hardware-resources" title="Permalink to this headline"></a></h2>
-<p>The <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::Simulation</span></code> class provides many member functions to
+<p>The <a class="reference internal" href="api_developer/classwrench_1_1_simulation.html#_CPPv4N6wrench10SimulationE" title="wrench::Simulation"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::Simulation</span></code></a> class provides many member functions to
 discover information about the (simulated) hardware platform and
 interact with it. It also provides other useful information about the
 simulation itself, such as the current simulation date. Some of these
 member functions are static, but others are not. The
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code> class includes a <code class="docutils literal notranslate"><span class="pre">simulation</span></code> object.
+<a class="reference internal" href="api_developer/classwrench_1_1_execution_controller.html#_CPPv4N6wrench19ExecutionControllerE" title="wrench::ExecutionController"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::ExecutionController</span></code></a> class includes a <code class="docutils literal notranslate"><span class="pre">simulation</span></code> object.
 Thus, the execution controller can call member functions on the
 <code class="docutils literal notranslate"><span class="pre">this-&gt;simulation</span></code> object. For instance, this fragment of code shows
 how an execution controller can figure out the current simulated date
@@ -531,7 +531,7 @@ and then check that a host exists (given a hostname) and, if so, set its
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>See the documentation of the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::Simulation</span></code> class for all
+<p>See the documentation of the <a class="reference internal" href="api_developer/classwrench_1_1_simulation.html#_CPPv4N6wrench10SimulationE" title="wrench::Simulation"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::Simulation</span></code></a> class for all
 details. Specifically regarding host pstates, see the example execution
 controller in
 <code class="docutils literal notranslate"><span class="pre">examples/basic-examples/cloud-bag-of-tasks-energy/TwoTasksAtATimeCloudWMS.cpp</span></code>,
@@ -550,17 +550,17 @@ level in SimGrid. See the <span class="xref std std-ref">SimGrid logging
 documentation</span> for all
 details.</p>
 <p>Furthermore, one can change the color of the log messages with the
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::setThisProcessLoggingColor()</span></code> member
+<a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput26setThisProcessLoggingColorE5Color" title="wrench::TerminalOutput::setThisProcessLoggingColor"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::setThisProcessLoggingColor()</span></code></a> member
 function, which takes as parameter a color specification:</p>
 <ul class="simple">
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_BLACK</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_RED</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_GREEN</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_YELLOW</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_BLUE</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_MAGENTA</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_CYAN</span></code></p></li>
-<li><p><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_WHITE</span></code></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color11COLOR_BLACKE" title="wrench::TerminalOutput::COLOR_BLACK"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_BLACK</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color9COLOR_REDE" title="wrench::TerminalOutput::COLOR_RED"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_RED</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color11COLOR_GREENE" title="wrench::TerminalOutput::COLOR_GREEN"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_GREEN</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color12COLOR_YELLOWE" title="wrench::TerminalOutput::COLOR_YELLOW"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_YELLOW</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color10COLOR_BLUEE" title="wrench::TerminalOutput::COLOR_BLUE"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_BLUE</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color13COLOR_MAGENTAE" title="wrench::TerminalOutput::COLOR_MAGENTA"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_MAGENTA</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color10COLOR_CYANE" title="wrench::TerminalOutput::COLOR_CYAN"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_CYAN</span></code></a></p></li>
+<li><p><a class="reference internal" href="api_developer/classwrench_1_1_terminal_output.html#_CPPv4N6wrench14TerminalOutput5Color11COLOR_WHITEE" title="wrench::TerminalOutput::COLOR_WHITE"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::TerminalOutput::COLOR_WHITE</span></code></a></p></li>
 </ul>
 <p>When inspecting the code of the execution controllers in the example
 simulators you will find many examples of calls to

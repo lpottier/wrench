@@ -360,10 +360,62 @@
              
   <section id="wrench-storageservicefilewriterequestmessage">
 <h1>wrench::StorageServiceFileWriteRequestMessage<a class="headerlink" href="#wrench-storageservicefilewriterequestmessage" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench37StorageServiceFileWriteRequestMessageE">
+<span id="_CPPv3N6wrench37StorageServiceFileWriteRequestMessageE"></span><span id="_CPPv2N6wrench37StorageServiceFileWriteRequestMessageE"></span><span id="wrench::StorageServiceFileWriteRequestMessage"></span><span class="target" id="classwrench_1_1_storage_service_file_write_request_message"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">StorageServiceFileWriteRequestMessage</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classwrench_1_1_storage_service_message.html#_CPPv4N6wrench21StorageServiceMessageE" title="wrench::StorageServiceMessage"><span class="n"><span class="pre">StorageServiceMessage</span></span></a><a class="headerlink" href="#_CPPv4N6wrench37StorageServiceFileWriteRequestMessageE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A message sent to a <a class="reference internal" href="../api_user/classwrench_1_1_storage_service.html#classwrench_1_1_storage_service"><span class="std std-ref">StorageService</span></a> to write a file. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench37StorageServiceFileWriteRequestMessage37StorageServiceFileWriteRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI8DataFileEENSt10shared_ptrI12FileLocationEEmd">
+<span id="_CPPv3N6wrench37StorageServiceFileWriteRequestMessage37StorageServiceFileWriteRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI8DataFileEENSt10shared_ptrI12FileLocationEEmd"></span><span id="_CPPv2N6wrench37StorageServiceFileWriteRequestMessage37StorageServiceFileWriteRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI8DataFileEENSt10shared_ptrI12FileLocationEEmd"></span><span id="wrench::StorageServiceFileWriteRequestMessage::StorageServiceFileWriteRequestMessage__simgrid::s4u::MailboxP.std::shared_ptr:DataFile:.std::shared_ptr:FileLocation:.unsigned-l.double"></span><span class="target" id="classwrench_1_1_storage_service_file_write_request_message_1a978fbd2fe4791472941b4503fe7d2570"></span><span class="sig-name descname"><span class="n"><span class="pre">StorageServiceFileWriteRequestMessage</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simgrid</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">s4u</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Mailbox</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">answer_mailbox</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_data_file.html#_CPPv4N6wrench8DataFileE" title="wrench::DataFile"><span class="n"><span class="pre">DataFile</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">file</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_file_location.html#_CPPv4N6wrench12FileLocationE" title="wrench::FileLocation"><span class="n"><span class="pre">FileLocation</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">location</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">buffer_size</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">payload</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench37StorageServiceFileWriteRequestMessage37StorageServiceFileWriteRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI8DataFileEENSt10shared_ptrI12FileLocationEEmd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>answer_mailbox</strong> – the mailbox to which to send the answer </p></li>
+<li><p><strong>file</strong> – the file </p></li>
+<li><p><strong>location</strong> – the file location </p></li>
+<li><p><strong>buffer_size</strong> – the buffer size </p></li>
+<li><p><strong>payload</strong> – the message size in bytes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench37StorageServiceFileWriteRequestMessage14answer_mailboxE">
+<span id="_CPPv3N6wrench37StorageServiceFileWriteRequestMessage14answer_mailboxE"></span><span id="_CPPv2N6wrench37StorageServiceFileWriteRequestMessage14answer_mailboxE"></span><span id="wrench::StorageServiceFileWriteRequestMessage::answer_mailbox__simgrid::s4u::MailboxP"></span><span class="target" id="classwrench_1_1_storage_service_file_write_request_message_1a7659025c2e1bac504b086c1be0f07daa"></span><span class="n"><span class="pre">simgrid</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">s4u</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Mailbox</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">answer_mailbox</span></span></span><a class="headerlink" href="#_CPPv4N6wrench37StorageServiceFileWriteRequestMessage14answer_mailboxE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Mailbox to which the answer message should be sent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench37StorageServiceFileWriteRequestMessage11buffer_sizeE">
+<span id="_CPPv3N6wrench37StorageServiceFileWriteRequestMessage11buffer_sizeE"></span><span id="_CPPv2N6wrench37StorageServiceFileWriteRequestMessage11buffer_sizeE"></span><span id="wrench::StorageServiceFileWriteRequestMessage::buffer_size__unsigned-l"></span><span class="target" id="classwrench_1_1_storage_service_file_write_request_message_1aba8d5e7f61d718d8ff46406d5b9c2bac"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">buffer_size</span></span></span><a class="headerlink" href="#_CPPv4N6wrench37StorageServiceFileWriteRequestMessage11buffer_sizeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The buffer size to use. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench37StorageServiceFileWriteRequestMessage4fileE">
+<span id="_CPPv3N6wrench37StorageServiceFileWriteRequestMessage4fileE"></span><span id="_CPPv2N6wrench37StorageServiceFileWriteRequestMessage4fileE"></span><span id="wrench::StorageServiceFileWriteRequestMessage::file__std::shared_ptr:DataFile:"></span><span class="target" id="classwrench_1_1_storage_service_file_write_request_message_1a03dbbb243eb4a7be6be72acd286361c7"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_data_file.html#_CPPv4N6wrench8DataFileE" title="wrench::DataFile"><span class="n"><span class="pre">DataFile</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">file</span></span></span><a class="headerlink" href="#_CPPv4N6wrench37StorageServiceFileWriteRequestMessage4fileE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The file to write. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench37StorageServiceFileWriteRequestMessage8locationE">
+<span id="_CPPv3N6wrench37StorageServiceFileWriteRequestMessage8locationE"></span><span id="_CPPv2N6wrench37StorageServiceFileWriteRequestMessage8locationE"></span><span id="wrench::StorageServiceFileWriteRequestMessage::location__std::shared_ptr:FileLocation:"></span><span class="target" id="classwrench_1_1_storage_service_file_write_request_message_1aecf887722789be8f62f40eeb89c3687e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_file_location.html#_CPPv4N6wrench12FileLocationE" title="wrench::FileLocation"><span class="n"><span class="pre">FileLocation</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">location</span></span></span><a class="headerlink" href="#_CPPv4N6wrench37StorageServiceFileWriteRequestMessage8locationE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The location to write the file to. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 

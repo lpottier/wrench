@@ -214,10 +214,61 @@
              
   <section id="wrench-parallelmodel">
 <h1>wrench::ParallelModel<a class="headerlink" href="#wrench-parallelmodel" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/developer/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench13ParallelModelE">
+<span id="_CPPv3N6wrench13ParallelModelE"></span><span id="_CPPv2N6wrench13ParallelModelE"></span><span id="wrench::ParallelModel"></span><span class="target" id="classwrench_1_1_parallel_model"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ParallelModel</span></span></span><a class="headerlink" href="#_CPPv4N6wrench13ParallelModelE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A virtual class (with convenient static methods) to define parallel task performance models. </p>
+<p>Subclassed by <a class="reference internal" href="../api_user/classwrench_1_1_amdahl_parallel_model.html#classwrench_1_1_amdahl_parallel_model"><span class="std std-ref">wrench::AmdahlParallelModel</span></a>, <a class="reference internal" href="../api_user/classwrench_1_1_constant_efficiency_parallel_model.html#classwrench_1_1_constant_efficiency_parallel_model"><span class="std std-ref">wrench::ConstantEfficiencyParallelModel</span></a>, <a class="reference internal" href="../api_user/classwrench_1_1_custom_parallel_model.html#classwrench_1_1_custom_parallel_model"><span class="std std-ref">wrench::CustomParallelModel</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench13ParallelModel6AMDAHLEd">
+<span id="_CPPv3N6wrench13ParallelModel6AMDAHLEd"></span><span id="_CPPv2N6wrench13ParallelModel6AMDAHLEd"></span><span id="wrench::ParallelModel::AMDAHL__double"></span><span class="target" id="classwrench_1_1_parallel_model_1ac4be2af98e027f7f7363110deddada0a"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N6wrench13ParallelModelE" title="wrench::ParallelModel"><span class="n"><span class="pre">ParallelModel</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AMDAHL</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">alpha</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench13ParallelModel6AMDAHLEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Create an instance of an “Amdahl” parallel model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>alpha</strong> – the fraction (i.e., a number between 0.0 and 1.0) of the task’s work that is perfectly parallelizable. Setting this value to 0 means that the task is purely sequential, and setting it to 1 means that the task is perfectly parallelizable.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a model instance </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench13ParallelModel18CONSTANTEFFICIENCYEd">
+<span id="_CPPv3N6wrench13ParallelModel18CONSTANTEFFICIENCYEd"></span><span id="_CPPv2N6wrench13ParallelModel18CONSTANTEFFICIENCYEd"></span><span id="wrench::ParallelModel::CONSTANTEFFICIENCY__double"></span><span class="target" id="classwrench_1_1_parallel_model_1a01d4f7eb0b4876a778a46861b2861395"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N6wrench13ParallelModelE" title="wrench::ParallelModel"><span class="n"><span class="pre">ParallelModel</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CONSTANTEFFICIENCY</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">efficiency</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench13ParallelModel18CONSTANTEFFICIENCYEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Create an instance of a “Constant Efficiency” parallel model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>efficiency</strong> – the parallel efficiency (which does not depend on the number of threads/cores).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a model instance </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench13ParallelModel6CUSTOMENSt8functionIFddlEEENSt8functionIFddlEEE">
+<span id="_CPPv3N6wrench13ParallelModel6CUSTOMENSt8functionIFddlEEENSt8functionIFddlEEE"></span><span id="_CPPv2N6wrench13ParallelModel6CUSTOMENSt8functionIFddlEEENSt8functionIFddlEEE"></span><span class="target" id="classwrench_1_1_parallel_model_1a64b79851d7feecd0b4ea9d4db2d81836"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N6wrench13ParallelModelE" title="wrench::ParallelModel"><span class="n"><span class="pre">ParallelModel</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CUSTOM</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">lambda_sequential</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">lambda_per_thread</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench13ParallelModel6CUSTOMENSt8functionIFddlEEENSt8functionIFddlEEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Create an instance of a “Custom” parallel model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda_sequential</strong> – a function that, when given a total flop amount and a number of threads, returns the amount of purely sequential work, in flops </p></li>
+<li><p><strong>lambda_per_thread</strong> – a function that, when given a total flop amount and a number of threads, returns the amount of per-thread parallel work, in flops</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a model instance </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

@@ -177,13 +177,13 @@ processes (a.k.a. daemons) running on the cluster, implements
 sophisticated algorithms to decide which job should run next, makes sure
 jobs do not run on the same cores, etc. WRENCH provides an
 already-implemented compute service called a
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code> that does all this for you,
+<a class="reference internal" href="api_developer/classwrench_1_1_batch_compute_service.html#_CPPv4N6wrench19BatchComputeServiceE" title="wrench::BatchComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code></a> that does all this for you,
 under the cover.</p>
 <p>For example, the well-known batch scheduler
 <span class="xref std std-ref">Slurm</span> uses several daemons to schedule
 and manage jobs(e.g., the process <strong>slurmd</strong> runs on each compute node
 and one <strong>slurmctld</strong> daemon controls everything). In this example, an
-instance of <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code> could represent
+instance of <a class="reference internal" href="api_developer/classwrench_1_1_batch_compute_service.html#_CPPv4N6wrench19BatchComputeServiceE" title="wrench::BatchComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code></a> could represent
 one Slurm cluster with one <strong>slurmctld</strong> process and
 multiple <strong>slurmd</strong> processes.</p>
 <p>A storage service is a runtime system to which you can say “here is some
@@ -193,18 +193,18 @@ real world consists of several processes (e.g., to handle bounded
 numbers of concurrent reads/writes from different clients) and can use
 non-trivial algorithms (e.g., for overlapping network communication and
 disk accesses). Here again, WRENCH comes with an already-implemented
-storage service called <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::SimpleStorageService</span></code> that does all
+storage service called <a class="reference internal" href="api_developer/classwrench_1_1_simple_storage_service.html#_CPPv4N6wrench20SimpleStorageServiceE" title="wrench::SimpleStorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::SimpleStorageService</span></code></a> that does all
 this for you and comes with a straightforward, high-level API.
 Note that a storage service does not provide by default capabilities
 traditionally offered by parallel file systems such as
 <span class="xref std std-ref">Lustre</span>
 (i.e., no stripping among storage nodes, no dedicated metadata servers).
 If you want to model such storage back-end, you can do it by extending
-the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::SimpleStorageService</span></code>.</p>
+the <a class="reference internal" href="api_developer/classwrench_1_1_simple_storage_service.html#_CPPv4N6wrench20SimpleStorageServiceE" title="wrench::SimpleStorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::SimpleStorageService</span></code></a>.</p>
 <p>Each service in WRENCH comes with configurable <em>properties</em>, that are
 well-documented and can be used to specify particular features and/or
 behaviors (e.g., a specific scheduling algorithm for a
-given <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code>).
+given <a class="reference internal" href="api_developer/classwrench_1_1_batch_compute_service.html#_CPPv4N6wrench19BatchComputeServiceE" title="wrench::BatchComputeService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::BatchComputeService</span></code></a>).
 Each service also comes with <em>configurable message payloads</em>,
 which specify the size in bytes of the control messages that underlying
 processes exchange with each other to implement the service’s

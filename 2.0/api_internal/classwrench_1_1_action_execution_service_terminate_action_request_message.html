@@ -360,10 +360,52 @@
              
   <section id="wrench-actionexecutionserviceterminateactionrequestmessage">
 <h1>wrench::ActionExecutionServiceTerminateActionRequestMessage<a class="headerlink" href="#wrench-actionexecutionserviceterminateactionrequestmessage" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessageE">
+<span id="_CPPv3N6wrench51ActionExecutionServiceTerminateActionRequestMessageE"></span><span id="_CPPv2N6wrench51ActionExecutionServiceTerminateActionRequestMessageE"></span><span id="wrench::ActionExecutionServiceTerminateActionRequestMessage"></span><span class="target" id="classwrench_1_1_action_execution_service_terminate_action_request_message"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ActionExecutionServiceTerminateActionRequestMessage</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classwrench_1_1_action_execution_service_message.html#_CPPv4N6wrench29ActionExecutionServiceMessageE" title="wrench::ActionExecutionServiceMessage"><span class="n"><span class="pre">ActionExecutionServiceMessage</span></span></a><a class="headerlink" href="#_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessageE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A message sent to an <a class="reference internal" href="classwrench_1_1_action_execution_service.html#classwrench_1_1_action_execution_service"><span class="std std-ref">ActionExecutionService</span></a> to terminate an <a class="reference internal" href="classwrench_1_1_action.html#classwrench_1_1_action"><span class="std std-ref">Action</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage51ActionExecutionServiceTerminateActionRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI6ActionEEN14ComputeService16TerminationCauseEd">
+<span id="_CPPv3N6wrench51ActionExecutionServiceTerminateActionRequestMessage51ActionExecutionServiceTerminateActionRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI6ActionEEN14ComputeService16TerminationCauseEd"></span><span id="_CPPv2N6wrench51ActionExecutionServiceTerminateActionRequestMessage51ActionExecutionServiceTerminateActionRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI6ActionEEN14ComputeService16TerminationCauseEd"></span><span id="wrench::ActionExecutionServiceTerminateActionRequestMessage::ActionExecutionServiceTerminateActionRequestMessage__simgrid::s4u::MailboxP.std::shared_ptr:Action:.ComputeService::TerminationCause.double"></span><span class="target" id="classwrench_1_1_action_execution_service_terminate_action_request_message_1aadf2ba469c3fa8a75a80f2acbe39af5d"></span><span class="sig-name descname"><span class="n"><span class="pre">ActionExecutionServiceTerminateActionRequestMessage</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">simgrid</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">s4u</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Mailbox</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">reply_mailbox</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_action.html#_CPPv4N6wrench6ActionE" title="wrench::Action"><span class="n"><span class="pre">Action</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">action</span></span>, <a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeServiceE" title="wrench::ComputeService"><span class="n"><span class="pre">ComputeService</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeService16TerminationCauseE" title="wrench::ComputeService::TerminationCause"><span class="n"><span class="pre">TerminationCause</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">termination_cause</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">payload</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage51ActionExecutionServiceTerminateActionRequestMessageEPN7simgrid3s4u7MailboxENSt10shared_ptrI6ActionEEN14ComputeService16TerminationCauseEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reply_mailbox</strong> – the reply mailbox </p></li>
+<li><p><strong>action</strong> – the action to terminate </p></li>
+<li><p><strong>termination_cause</strong> – the termination cause </p></li>
+<li><p><strong>payload</strong> – the message size in bytes </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage6actionE">
+<span id="_CPPv3N6wrench51ActionExecutionServiceTerminateActionRequestMessage6actionE"></span><span id="_CPPv2N6wrench51ActionExecutionServiceTerminateActionRequestMessage6actionE"></span><span id="wrench::ActionExecutionServiceTerminateActionRequestMessage::action__std::shared_ptr:Action:"></span><span class="target" id="classwrench_1_1_action_execution_service_terminate_action_request_message_1abfffbcac9cc593ac14ad3a9ed1c52a1d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_action.html#_CPPv4N6wrench6ActionE" title="wrench::Action"><span class="n"><span class="pre">Action</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">action</span></span></span><a class="headerlink" href="#_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage6actionE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The action to terminate </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage13reply_mailboxE">
+<span id="_CPPv3N6wrench51ActionExecutionServiceTerminateActionRequestMessage13reply_mailboxE"></span><span id="_CPPv2N6wrench51ActionExecutionServiceTerminateActionRequestMessage13reply_mailboxE"></span><span id="wrench::ActionExecutionServiceTerminateActionRequestMessage::reply_mailbox__simgrid::s4u::MailboxP"></span><span class="target" id="classwrench_1_1_action_execution_service_terminate_action_request_message_1a4eb010fddcb8b801009d1ab98279ef53"></span><span class="n"><span class="pre">simgrid</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">s4u</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Mailbox</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">reply_mailbox</span></span></span><a class="headerlink" href="#_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage13reply_mailboxE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The reply mailbox. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage17termination_causeE">
+<span id="_CPPv3N6wrench51ActionExecutionServiceTerminateActionRequestMessage17termination_causeE"></span><span id="_CPPv2N6wrench51ActionExecutionServiceTerminateActionRequestMessage17termination_causeE"></span><span id="wrench::ActionExecutionServiceTerminateActionRequestMessage::termination_cause__ComputeService::TerminationCause"></span><span class="target" id="classwrench_1_1_action_execution_service_terminate_action_request_message_1a748deb0368392a92295ca3fa57fecee3"></span><a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeServiceE" title="wrench::ComputeService"><span class="n"><span class="pre">ComputeService</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_compute_service.html#_CPPv4N6wrench14ComputeService16TerminationCauseE" title="wrench::ComputeService::TerminationCause"><span class="n"><span class="pre">TerminationCause</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">termination_cause</span></span></span><a class="headerlink" href="#_CPPv4N6wrench51ActionExecutionServiceTerminateActionRequestMessage17termination_causeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The termination cause. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 

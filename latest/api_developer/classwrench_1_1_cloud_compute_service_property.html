@@ -214,10 +214,34 @@
              
   <section id="wrench-cloudcomputeserviceproperty">
 <h1>wrench::CloudComputeServiceProperty<a class="headerlink" href="#wrench-cloudcomputeserviceproperty" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/developer/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench27CloudComputeServicePropertyE">
+<span id="_CPPv3N6wrench27CloudComputeServicePropertyE"></span><span id="_CPPv2N6wrench27CloudComputeServicePropertyE"></span><span id="wrench::CloudComputeServiceProperty"></span><span class="target" id="classwrench_1_1_cloud_compute_service_property"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CloudComputeServiceProperty</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classwrench_1_1_compute_service_property.html#_CPPv4N6wrench22ComputeServicePropertyE" title="wrench::ComputeServiceProperty"><span class="n"><span class="pre">ComputeServiceProperty</span></span></a><a class="headerlink" href="#_CPPv4N6wrench27CloudComputeServicePropertyE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Configurable properties for a <a class="reference internal" href="../api_user/classwrench_1_1_cloud_compute_service.html#classwrench_1_1_cloud_compute_service"><span class="std std-ref">CloudComputeService</span></a>. </p>
+<p>Subclassed by <a class="reference internal" href="../api_user/classwrench_1_1_virtualized_cluster_compute_service_property.html#classwrench_1_1_virtualized_cluster_compute_service_property"><span class="std std-ref">wrench::VirtualizedClusterComputeServiceProperty</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-attributes">Public Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench27CloudComputeServiceProperty27VM_BOOT_OVERHEAD_IN_SECONDSE">
+<span id="_CPPv3N6wrench27CloudComputeServiceProperty27VM_BOOT_OVERHEAD_IN_SECONDSE"></span><span id="_CPPv2N6wrench27CloudComputeServiceProperty27VM_BOOT_OVERHEAD_IN_SECONDSE"></span><span id="wrench::CloudComputeServiceProperty::VM_BOOT_OVERHEAD_IN_SECONDS__ssC"></span><span class="target" id="classwrench_1_1_cloud_compute_service_property_1abe4ada614f43f5d8cc5cfbbeaaaa21f0"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VM_BOOT_OVERHEAD_IN_SECONDS</span></span></span><a class="headerlink" href="#_CPPv4N6wrench27CloudComputeServiceProperty27VM_BOOT_OVERHEAD_IN_SECONDSE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The overhead, in seconds, to boot a VM. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench27CloudComputeServiceProperty32VM_RESOURCE_ALLOCATION_ALGORITHME">
+<span id="_CPPv3N6wrench27CloudComputeServiceProperty32VM_RESOURCE_ALLOCATION_ALGORITHME"></span><span id="_CPPv2N6wrench27CloudComputeServiceProperty32VM_RESOURCE_ALLOCATION_ALGORITHME"></span><span id="wrench::CloudComputeServiceProperty::VM_RESOURCE_ALLOCATION_ALGORITHM__ssC"></span><span class="target" id="classwrench_1_1_cloud_compute_service_property_1afb10f34e1cf1714393bd451e52de926c"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VM_RESOURCE_ALLOCATION_ALGORITHM</span></span></span><a class="headerlink" href="#_CPPv4N6wrench27CloudComputeServiceProperty32VM_RESOURCE_ALLOCATION_ALGORITHME" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The VM resource allocation algorithm by which VMs are started on physical hosts. Possible values are: </p>
+<p><ul class="simple">
+<li><p>best-fit-ram-first (default): Start VMs on hosts using a best-fit algorithm, considering first the RAM and then the number of cores</p></li>
+<li><p>best-fit-cores-first: Start VMs on hosts using a best-fit algorithm, considering first the number of cores and then then RAM</p></li>
+<li><p>first-fit: a first-fit algorithm based on the order of the physical host list </p></li>
+</ul>
+</p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

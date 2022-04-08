@@ -360,10 +360,54 @@
              
   <section id="wrench-simulationtrace">
 <h1>wrench::SimulationTrace<a class="headerlink" href="#wrench-simulationtrace" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN6wrench15SimulationTraceE">
+<span id="_CPPv3I0EN6wrench15SimulationTraceE"></span><span id="_CPPv2I0EN6wrench15SimulationTraceE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classwrench_1_1_simulation_trace"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SimulationTrace</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">GenericSimulationTrace</span></span><a class="headerlink" href="#_CPPv4I0EN6wrench15SimulationTraceE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A template class to represent a trace of timestamps. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters</dt>
+<dd class="field-odd"><p><strong>a</strong> – particular SimulationTimestampXXXX class (defined in SimulationTimestampTypes.h) </p>
+</dd>
+</dl>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench15SimulationTraceD0Ev">
+<span id="_CPPv3N6wrench15SimulationTraceD0Ev"></span><span id="_CPPv2N6wrench15SimulationTraceD0Ev"></span><span id="wrench::SimulationTrace::~SimulationTrace"></span><span class="target" id="classwrench_1_1_simulation_trace_1a588924b771cc7ca089ba06e4a0e62c66"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~SimulationTrace</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench15SimulationTraceD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench15SimulationTrace12addTimestampEP19SimulationTimestampI1TE">
+<span id="_CPPv3N6wrench15SimulationTrace12addTimestampEP19SimulationTimestampI1TE"></span><span id="_CPPv2N6wrench15SimulationTrace12addTimestampEP19SimulationTimestampI1TE"></span><span id="wrench::SimulationTrace::addTimestamp__SimulationTimestamp:T:P"></span><span class="target" id="classwrench_1_1_simulation_trace_1a95e17346a956bc157a6aaec1add38bdc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addTimestamp</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../api_developer/classwrench_1_1_simulation_timestamp.html#_CPPv4I0EN6wrench19SimulationTimestampE" title="wrench::SimulationTimestamp"><span class="n"><span class="pre">SimulationTimestamp</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN6wrench15SimulationTraceE" title="wrench::SimulationTrace::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">timestamp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench15SimulationTrace12addTimestampEP19SimulationTimestampI1TE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Append a timestamp to the trace. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timestamp</strong> – a pointer to a SimulationTimestamp&lt;T&gt; object </p>
+</dd>
+<dt class="field-even">Template Parameters</dt>
+<dd class="field-even"><p><strong>a</strong> – particular SimulationTimestampXXXX class (defined in SimulationTimestampTypes.h) </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench15SimulationTrace8getTraceEv">
+<span id="_CPPv3N6wrench15SimulationTrace8getTraceEv"></span><span id="_CPPv2N6wrench15SimulationTrace8getTraceEv"></span><span id="wrench::SimulationTrace::getTrace"></span><span class="target" id="classwrench_1_1_simulation_trace_1a577ad7d82202763c62f0fda28ca8bc56"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_simulation_timestamp.html#_CPPv4I0EN6wrench19SimulationTimestampE" title="wrench::SimulationTimestamp"><span class="n"><span class="pre">SimulationTimestamp</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0EN6wrench15SimulationTraceE" title="wrench::SimulationTrace::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTrace</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench15SimulationTrace8getTraceEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieve the trace as a vector of timestamps. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters</dt>
+<dd class="field-odd"><p><strong>a</strong> – particular SimulationTimestampXXXX class (defined in SimulationTimestampTypes.h) </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a vector of pointers to SimulationTimestamp&lt;T&gt; objects </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

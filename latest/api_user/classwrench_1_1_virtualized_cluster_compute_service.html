@@ -164,10 +164,35 @@
              
   <section id="wrench-virtualizedclustercomputeservice">
 <h1>wrench::VirtualizedClusterComputeService<a class="headerlink" href="#wrench-virtualizedclustercomputeservice" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/user/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench32VirtualizedClusterComputeServiceE">
+<span id="_CPPv3N6wrench32VirtualizedClusterComputeServiceE"></span><span id="_CPPv2N6wrench32VirtualizedClusterComputeServiceE"></span><span id="wrench::VirtualizedClusterComputeService"></span><span class="target" id="classwrench_1_1_virtualized_cluster_compute_service"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">VirtualizedClusterComputeService</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_cloud_compute_service.html#_CPPv4N6wrench19CloudComputeServiceE" title="wrench::CloudComputeService"><span class="n"><span class="pre">CloudComputeService</span></span></a><br /></dt>
+<dd><p>A virtualized cluster-based compute service. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench32VirtualizedClusterComputeService32VirtualizedClusterComputeServiceERKNSt6stringERNSt6vectorINSt6stringEEENSt6stringE31WRENCH_PROPERTY_COLLECTION_TYPE37WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE">
+<span id="_CPPv3N6wrench32VirtualizedClusterComputeService32VirtualizedClusterComputeServiceERKNSt6stringERNSt6vectorINSt6stringEEENSt6stringE31WRENCH_PROPERTY_COLLECTION_TYPE37WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE"></span><span id="_CPPv2N6wrench32VirtualizedClusterComputeService32VirtualizedClusterComputeServiceERKNSt6stringERNSt6vectorINSt6stringEEENSt6stringE31WRENCH_PROPERTY_COLLECTION_TYPE37WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE"></span><span id="wrench::VirtualizedClusterComputeService::VirtualizedClusterComputeService__ssCR.std::vector:ss:R.ss.WRENCH_PROPERTY_COLLECTION_TYPE.WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE"></span><span class="target" id="classwrench_1_1_virtualized_cluster_compute_service_1a59d55e18a16ec347621f6f6d44524222"></span><span class="sig-name descname"><span class="n"><span class="pre">VirtualizedClusterComputeService</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">hostname</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">execution_hosts</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scratch_space_mount_point</span></span>, <span class="n"><span class="pre">WRENCH_PROPERTY_COLLECTION_TYPE</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">property_list</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span>, <span class="n"><span class="pre">WRENCH_MESSAGE_PAYLOADCOLLECTION_TYPE</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">messagepayload_list</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hostname</strong> – the name of the hostcreate on which to start the service </p></li>
+<li><p><strong>execution_hosts</strong> – the hosts available for running virtual machines </p></li>
+<li><p><strong>scratch_space_mount_point</strong> – the mount of of the scratch space of the cloud service (”” means none) </p></li>
+<li><p><strong>property_list</strong> – a property list ({} means “use all defaults”) </p></li>
+<li><p><strong>messagepayload_list</strong> – a message payload list ({} means “use all defaults”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">runtime_error</span></span></span> – </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

@@ -84,7 +84,7 @@
   <section id="interacting-with-a-storage-service">
 <span id="guide-102-simplestorage"></span><h1>Interacting with a storage service<a class="headerlink" href="#interacting-with-a-storage-service" title="Permalink to this headline"></a></h1>
 <p>Several interactions with a storage service are done simple by calling
-<strong>static methods</strong> of the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code> class. These make
+<strong>static methods</strong> of the <a class="reference internal" href="../api_developer/classwrench_1_1_storage_service.html#_CPPv4N6wrench14StorageServiceE" title="wrench::StorageService"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService</span></code></a> class. These make
 it possible to lookup, delete, read, and write files. For instance:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">wrench</span><span class="o">::</span><span class="n">SimpleStorageService</span><span class="o">&gt;</span><span class="w"> </span><span class="n">storage_service</span><span class="p">;</span><span class="w"></span>
 <span class="c1">// Get the file registry service</span>
@@ -103,7 +103,7 @@ it possible to lookup, delete, read, and write files. For instance:</p>
 </pre></div>
 </div>
 <p>Note that the file registry service is passed to the
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService::deleteFile()</span></code> method since the file deletion
+<a class="reference internal" href="../api_developer/classwrench_1_1_storage_service.html#_CPPv4N6wrench14StorageService10deleteFileERKNSt10shared_ptrI8DataFileEERKNSt10shared_ptrI12FileLocationEERKNSt10shared_ptrI19FileRegistryServiceEE" title="wrench::StorageService::deleteFile"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::StorageService::deleteFile()</span></code></a> method since the file deletion
 should cause the file registry to remove one of its entries.</p>
 <p>Reading and writing files is something an execution controller typically
 does not do directly (instead, workflow tasks read and write files as
@@ -125,8 +125,8 @@ This is typically done by <a class="reference internal" href="../wrench_102.html
 standard jobs</span></a>.
 But it can also be done manually by the execution controller via the
 data movement manager’s methods
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager::doSynchronousFileCopy()</span></code> and
-<code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager::initiateAsynchronousFileCopy()</span></code>. Here is
+<a class="reference internal" href="../api_developer/classwrench_1_1_data_movement_manager.html#_CPPv4N6wrench19DataMovementManager21doSynchronousFileCopyENSt10shared_ptrI8DataFileEENSt10shared_ptrI12FileLocationEENSt10shared_ptrI12FileLocationEENSt10shared_ptrI19FileRegistryServiceEE" title="wrench::DataMovementManager::doSynchronousFileCopy"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager::doSynchronousFileCopy()</span></code></a> and
+<a class="reference internal" href="../api_developer/classwrench_1_1_data_movement_manager.html#_CPPv4N6wrench19DataMovementManager28initiateAsynchronousFileCopyENSt10shared_ptrI8DataFileEENSt10shared_ptrI12FileLocationEENSt10shared_ptrI12FileLocationEENSt10shared_ptrI19FileRegistryServiceEE" title="wrench::DataMovementManager::initiateAsynchronousFileCopy"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">wrench::DataMovementManager::initiateAsynchronousFileCopy()</span></code></a>. Here is
 an example in which a file is copied between storage services:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Create a data movement manager</span>
 <span class="k">auto</span><span class="w"> </span><span class="n">data_movement_manager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">createDataMovementManager</span><span class="p">();</span><span class="w"></span>

@@ -360,10 +360,38 @@
              
   <section id="wrench-negotiatorcompletionmessage">
 <h1>wrench::NegotiatorCompletionMessage<a class="headerlink" href="#wrench-negotiatorcompletionmessage" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench27NegotiatorCompletionMessageE">
+<span id="_CPPv3N6wrench27NegotiatorCompletionMessageE"></span><span id="_CPPv2N6wrench27NegotiatorCompletionMessageE"></span><span id="wrench::NegotiatorCompletionMessage"></span><span class="target" id="classwrench_1_1_negotiator_completion_message"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NegotiatorCompletionMessage</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classwrench_1_1_h_t_condor_central_manager_service_message.html#_CPPv4N6wrench36HTCondorCentralManagerServiceMessageE" title="wrench::HTCondorCentralManagerServiceMessage"><span class="n"><span class="pre">HTCondorCentralManagerServiceMessage</span></span></a><a class="headerlink" href="#_CPPv4N6wrench27NegotiatorCompletionMessageE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A message received by a <a class="reference internal" href="classwrench_1_1_h_t_condor_central_manager_service.html#classwrench_1_1_h_t_condor_central_manager_service"><span class="std std-ref">HTCondorCentralManagerService</span></a> so that it is notified of a negotiator cycle completion. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench27NegotiatorCompletionMessage27NegotiatorCompletionMessageENSt6vectorINSt10shared_ptrI3JobEEEEd">
+<span id="_CPPv3N6wrench27NegotiatorCompletionMessage27NegotiatorCompletionMessageENSt6vectorINSt10shared_ptrI3JobEEEEd"></span><span id="_CPPv2N6wrench27NegotiatorCompletionMessage27NegotiatorCompletionMessageENSt6vectorINSt10shared_ptrI3JobEEEEd"></span><span id="wrench::NegotiatorCompletionMessage::NegotiatorCompletionMessage__std::vector:std::shared_ptr:Job::.double"></span><span class="target" id="classwrench_1_1_negotiator_completion_message_1a5e75d8c8fcd6193f71b99f08a1b3b9f0"></span><span class="sig-name descname"><span class="n"><span class="pre">NegotiatorCompletionMessage</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_job.html#_CPPv4N6wrench3JobE" title="wrench::Job"><span class="n"><span class="pre">Job</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scheduled_jobs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">payload</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench27NegotiatorCompletionMessage27NegotiatorCompletionMessageENSt6vectorINSt10shared_ptrI3JobEEEEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scheduled_jobs</strong> – list of pending jobs upon negotiator completion </p></li>
+<li><p><strong>payload</strong> – the message size in bytes </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench27NegotiatorCompletionMessage14scheduled_jobsE">
+<span id="_CPPv3N6wrench27NegotiatorCompletionMessage14scheduled_jobsE"></span><span id="_CPPv2N6wrench27NegotiatorCompletionMessage14scheduled_jobsE"></span><span id="wrench::NegotiatorCompletionMessage::scheduled_jobs__std::vector:std::shared_ptr:Job::"></span><span class="target" id="classwrench_1_1_negotiator_completion_message_1a0abf99b1c96b4d8a810f408eb572c0c3"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_job.html#_CPPv4N6wrench3JobE" title="wrench::Job"><span class="n"><span class="pre">Job</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">scheduled_jobs</span></span></span><a class="headerlink" href="#_CPPv4N6wrench27NegotiatorCompletionMessage14scheduled_jobsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>List of scheduled jobs. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 

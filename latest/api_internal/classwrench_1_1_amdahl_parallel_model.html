@@ -360,10 +360,60 @@
              
   <section id="wrench-amdahlparallelmodel">
 <h1>wrench::AmdahlParallelModel<a class="headerlink" href="#wrench-amdahlparallelmodel" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench19AmdahlParallelModelE">
+<span id="_CPPv3N6wrench19AmdahlParallelModelE"></span><span id="_CPPv2N6wrench19AmdahlParallelModelE"></span><span id="wrench::AmdahlParallelModel"></span><span class="target" id="classwrench_1_1_amdahl_parallel_model"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">AmdahlParallelModel</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="../api_developer/classwrench_1_1_parallel_model.html#_CPPv4N6wrench13ParallelModelE" title="wrench::ParallelModel"><span class="n"><span class="pre">ParallelModel</span></span></a><br /></dt>
+<dd><p>A class that defines an Amdahl’s Law-based parallel task performance model. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6wrench19AmdahlParallelModel8getAlphaEv">
+<span id="_CPPv3NK6wrench19AmdahlParallelModel8getAlphaEv"></span><span id="_CPPv2NK6wrench19AmdahlParallelModel8getAlphaEv"></span><span id="wrench::AmdahlParallelModel::getAlphaC"></span><span class="target" id="classwrench_1_1_amdahl_parallel_model_1a2341c58cd0f2123312cd520c511f5f9d"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAlpha</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get the Amdahl Law’s alpha parameter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the alpha parameter </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench19AmdahlParallelModel24getParallelPerThreadWorkEdm">
+<span id="_CPPv3N6wrench19AmdahlParallelModel24getParallelPerThreadWorkEdm"></span><span id="_CPPv2N6wrench19AmdahlParallelModel24getParallelPerThreadWorkEdm"></span><span id="wrench::AmdahlParallelModel::getParallelPerThreadWork__double.unsigned-l"></span><span class="target" id="classwrench_1_1_amdahl_parallel_model_1a24925654b453b9e947c0c23513442050"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getParallelPerThreadWork</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">total_work</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">num_threads</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6wrench19AmdahlParallelModel24getParallelPerThreadWorkEdm" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the amount of per-thread parallel work. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>total_work</strong> – the total work </p></li>
+<li><p><strong>num_threads</strong> – the number of threads </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>an amount of work in flops </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench19AmdahlParallelModel23getPurelySequentialWorkEdm">
+<span id="_CPPv3N6wrench19AmdahlParallelModel23getPurelySequentialWorkEdm"></span><span id="_CPPv2N6wrench19AmdahlParallelModel23getPurelySequentialWorkEdm"></span><span id="wrench::AmdahlParallelModel::getPurelySequentialWork__double.unsigned-l"></span><span class="target" id="classwrench_1_1_amdahl_parallel_model_1a3da20eefb9d85c7c8d1f0ed1f4ccce3f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPurelySequentialWork</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">total_work</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">num_threads</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6wrench19AmdahlParallelModel23getPurelySequentialWorkEdm" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the amount of purely sequential work. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>total_work</strong> – the total work </p></li>
+<li><p><strong>num_threads</strong> – the number of threads </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>an amount of work in flops </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 

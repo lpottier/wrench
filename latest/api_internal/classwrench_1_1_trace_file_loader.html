@@ -360,10 +360,45 @@
              
   <section id="wrench-tracefileloader">
 <h1>wrench::TraceFileLoader<a class="headerlink" href="#wrench-tracefileloader" title="Permalink to this headline"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/wrench/wrench/docs/2.0-dev/internal/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench15TraceFileLoaderE">
+<span id="_CPPv3N6wrench15TraceFileLoaderE"></span><span id="_CPPv2N6wrench15TraceFileLoaderE"></span><span id="wrench::TraceFileLoader"></span><span class="target" id="classwrench_1_1_trace_file_loader"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">wrench</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">TraceFileLoader</span></span></span><a class="headerlink" href="#_CPPv4N6wrench15TraceFileLoaderE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A class that can load a job submission trace (a.k.a. supercomputer workload) in the SWF format (see <a class="reference external" href="http://www.cs.huji.ac.il/labs/parallel/workload/swf.html">http://www.cs.huji.ac.il/labs/parallel/workload/swf.html</a>) and store it as a vector of simulation-relevant fields. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6wrench15TraceFileLoader17loadFromTraceFileENSt6stringEbd">
+<span id="_CPPv3N6wrench15TraceFileLoader17loadFromTraceFileENSt6stringEbd"></span><span id="_CPPv2N6wrench15TraceFileLoader17loadFromTraceFileENSt6stringEbd"></span><span id="wrench::TraceFileLoader::loadFromTraceFile__ss.b.double"></span><span class="target" id="classwrench_1_1_trace_file_loader_1a1c15d4eb92506b69decbb2bb9b49d65a"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">tuple</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadFromTraceFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">filename</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ignore_invalid_jobs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">desired_submit_time_of_first_job</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6wrench15TraceFileLoader17loadFromTraceFileENSt6stringEbd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Load the workflow trace file. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – the path to the trace file in SWF format or in JSON format </p></li>
+<li><p><strong>ignore_invalid_jobs</strong> – whether to ignore invalid job specifications </p></li>
+<li><p><strong>desired_submit_time_of_first_job</strong> – the desired submit of of the first job (-1 means “use whatever time is in the trace file”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">std</span><span class="p">::</span><span class="n">invalid_argument</span></span></span> – </p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a vector of tuples, where each tuple is a job description with the following fields:<ul class="simple">
+<li><p>job id</p></li>
+<li><p>submission time</p></li>
+<li><p>actual time</p></li>
+<li><p>requested time,</p></li>
+<li><p>requested ram</p></li>
+<li><p>requested number of nodes</p></li>
+<li><p>username</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 
 
