@@ -1,0 +1,8 @@
+.. _ComputeServicePilotJobFailedMessage:
+wrench::ComputeServicePilotJobFailedMessage
+*******************************************
+
+.. doxygenclass:: wrench::ComputeServicePilotJobFailedMessage
+   :project: internal
+   :members:
+
