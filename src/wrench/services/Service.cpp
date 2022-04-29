@@ -219,6 +219,15 @@ namespace wrench {
     }
 
     /**
+     * @brief Get all the properties the Service
+     * @return the property list
+     *
+     */
+    const std::map<std::string, std::string>& Service::getPropertyList() const {
+        return this->property_list;
+    }    
+
+    /**
      * @brief Get a property of the Service as a boolean
      * @param property: the property
      * @return the property value as a boolean
